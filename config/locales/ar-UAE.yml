@@ -1,0 +1,2688 @@
+---
+ar-UAE:
+  activerecord:
+    attributes:
+      project_address:
+        name: اسم
+        email: البريد الإلكتروني
+        phone_no: رقم الهاتف
+        address_line1: خط العنوان الأول
+        address_line2: خط العنوان الثاني
+        address_line3: خط العنوان الثالث
+        country_code: الرقم الدولي
+        city: مدينة
+        state_code: قانون الولاية
+        postal_code: الرمز البريدي
+        created_at: أنشئت
+        updated_at: محدث
+      project:
+        name: اسم
+        organization: زبون
+        product: المنتج
+        status: شرط
+        created_at: أنشئت
+        updated_at: محدث
+        completion_date: موعد الإكمال
+        report_date: تاريخ التقرير
+        printed_interpretation_manual: دليل التفسير المطبوع
+        pdf_interpretation_manual: دليل التفسير تقرير المشارك
+        comment_questions: أسئلة التعليق
+        evaluators_policy: تقييم السياسة
+        participant_report_qty: كمية تقارير المشاركين
+        participant_report_pdf: الملف البي دي
+        participant_graph_qty: كمية الرسم البياني للطباعة
+        participant_graph_pdf: ملف الرسم البياني الرقمي
+        coach_report_qty: مدرب كمية التقرير
+        coach_report_pdf: المدرب تقرير ملف رقمي
+        demographics_policy: المعلومات السكانية
+        survey_focus: محور الدراسة
+        survey_focus_description: وصف
+        group_report_pdf: تقرير جماعي الملف الرقمي
+        user: ممثل العميل
+        billing_address: عنوان الفواتير
+        shipping_address: عنوان الشحن
+        binder_address: عنوان الشحن للموثق
+        deliverable_option: خيارات التسليم
+        consultant: مستشار
+        minimum_evaluations_per_participant: الحد الأدنى من التقييمات لكل مشارك
+        certified_consultant: مستشار معتمد
+        promo_code: الرقم التسلسلي للخصم
+    errors:
+      messages:
+        passwords:
+          cannot_contain: ".لا يمكن أن يحتوي على جميع أو جزء من الاسم أو البريد الالكتروني"
+          does_not_match_security_requirements: ".A-Z, a-z, 0-9:لا يتطابق مع إجراءات الأمان. يجب أن تحتوي كلمة المرور على 1 أو 3 من مجموعات الحروف التالية"
+          must_be_at_least: ".يجب أن يكون 8 حروف على الأقل"
+        record_invalid: "%{errors}:فشل التحقق "
+        restrict_dependent_destroy:
+          has_many:  "تابع %{record}لا يمكن حذف السجل بسبب وجود"
+          has_one: "تابع %{record}لا يمكن حذف السجل بسبب وجود"
+        should_be_greater_or_equal: يجب أن يكون أكبر أو يساوي تاريخ الانتهاء
+  addresses:
+    region:
+      regionnametitleize_regionabbre: "%{regionnametitleize} (%{regionabbreviation})"
+  application:
+    change_password_required: يجب تغيير كلمة المرور قبل تسجيل الدخول للمرة الأولى
+    user_not_authorized:
+      forbidden: محظور
+  companies:
+    edit:
+      edit_company: تحرير العميل
+      manage_users: إدارة المستخدمين
+    index:
+      companiestotal_count: "(%{companiestotal_count})"
+      company_name: اسم العميل
+      create_company: إنشاء عميل
+      industry: المجال
+      manage_company: إدارة العميل
+      my_clients: عملائي
+      number_of_projects: عدد المشاريع
+      sort_by_company_name: تصنيف حسب اسم العميل
+      sort_by_created_date: تصنيف حسب تاريخ الإنشاء
+      sort_by_industry: تصنيف حسب المجال
+      sort_by_number_of_projects: تصنيف حسب عدد المشاريع
+      start_creating_companies_now: البدء في إنشاء العملاء الآن
+      you_have_no_companies_to_manage: ليس هناك عملاء لإدارتهم
+    new:
+      consulting_company: شركة استشارية
+      create_company: إنشاء عميل
+      new_company: اسم عميل جديد
+    partials:
+      delete_company:
+        cname_corganization_typename: "%{cname} (%{corganization_typename})"
+        existing_projects_top_10: ":المشاريع القائمة (أفضل 10)"
+        please_notice_that_it_will_als: " :الرجاء ملاحظة أن ذلك سوف يحذف المؤسسات التابعة الحالية التالية"
+        thomeindexare_you_sure_want_to: "هذه الشركة %{thomeindexare_you_sure_want_to}"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_comp: "الشركة %{thomeindexyes_delete_this}"
+    show:
+      create_group_report: إنشاء تقرير جماعي
+      create_new_project: إنشاء مشروع جديد
+      delete_company: حذف العميل
+      tsharedmore_actions: "%{tsharedmore_actions}"
+      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant} %{tsharedcertified_consultants}"
+  concerns:
+    role_management:
+      create_user_role:
+        success: نجاح
+      update_user_role:
+        success: نجاح
+  consultants:
+    saved_successfully: تمت إضافة المستشار بنجاح!
+    title: المستشار
+  date:
+    abbr_day_names:
+    - الأحد
+    - الاثنين
+    - الثلاثاء
+    - الأربعاء
+    - الخميس
+    - الجمعة
+    - السبت
+    abbr_month_names:
+    -
+    - يناير
+    - فبراير
+    - مارس
+    - إبريل
+    - مايو
+    - يونيو
+    - يوليو
+    - أغسطس
+    - سبتمبر
+    - أكتوبر
+    - نوفمبر
+    - ديسمبر
+    day_names:
+    - الأحد
+    - الاثنين
+    - الثلاثاء
+    - الأربعاء
+    - الخميس
+    - الجمعة
+    - السبت
+    formats:
+      default: "%m-%d-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    -
+    - يناير
+    - فبراير
+    - مارس
+    - إبريل
+    - مايو
+    - يونيو
+    - يوليو
+    - أغسطس
+    - سبتمبر
+    - أكتوبر
+    - نوفمبر
+    - ديسمبر
+    order:
+    - الشهر:
+    - اليوم:
+    - السنة:
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: "ساعة واحدة تقريبا"
+        other: "ساعات تقريباً %{count}" 
+      about_x_months:
+        one: "شهر واحد تقريبا"
+        other: "أشهر تقريباً %{count}"
+      about_x_years:
+        one: "سنة واحدة تقريبا"
+        other: "سنوات تقريباً %{count}"
+      almost_x_years:
+        one: "سنة واحدة تقريبا"
+        other: "سنوات تقريباً %{count}"
+      half_a_minute: "نصف دقيقة"
+      less_than_x_minutes:
+        one: "أقل من دقيقة"
+        other: "دقائق %{count} أقل من"
+      less_than_x_seconds:
+        one: "أقل من ثانية واحدة"
+        other: "ثواني %{count} أقل من"
+      over_x_years:
+        one: "أكثر من سنة واحدة"
+        other: "سنوات %{count} أكثر من"
+      x_days:
+        one: يوم واحد
+        other: "أيام %{count}"
+      x_minutes:
+        one: دقيقة واحدة
+        other: "دقائق %{count}"
+      x_months:
+        one: شهر واحد
+        other: "أشهر %{count}"
+      x_seconds:
+        one: ثانية
+        other: "ثواني %{count}"
+    prompts:
+      day: يوم
+      hour: ساعة
+      minute: دقيقة
+      month: شهر
+      second: ثانية
+      year: سنة
+  devise:
+    confirmations:
+      confirmed: ".تم تأكيد البريد الالكتروني بنجاح"
+      new:
+        resend_confirmation_instructio: إعادة إرسال تعليمات التأكيد
+      send_instructions: ".سوف تتلقى بريد يحتوي على تعليمات كيفية تأكيد البريد الالكتروني خلال دقائق"
+      send_paranoid_instructions: ".إذا كان البريد الالكتروني موجود في قاعدة البيانات من قبل، سوف تتلقى بريد يحتوي على تعليمات كيفية تأكيد البريد الالكتروني خلال دقائق"
+    failure:
+      user:
+        already_authenticated: ".أنت مسجل الدخول من قبل"
+        inactive: ".لم يتم تنشيط حسابك بعد"
+        invalid: ".غير صحيحة %{authentication_keys} أو كلمة المرور"
+        last_attempt: ".تبقى محاولة واحدة قبل حظر حسابك"
+        locked: ".لقد تم حظر حسابك"
+        not_found_in_database: ".غير صحيحة %{authentication_keys} أو كلمة المرور"
+        timeout: ".انتهت الجلسة. الرجاء تسجيل الدخول مرة أخرى للاستمرار"
+        unauthenticated: ".يجب تسجيل الدخول أو الاشتراك قبل الاستمرار"
+        unconfirmed: ".يجب تأكيد البريد الالكتروني قبل الاستمرار"
+    invalid_captcha: "!كلمة التحقق غير صحيحة"
+    mailer:
+      confirmation_instructions:
+        confirm_my_account: تأكيد حسابي
+        user_subject: تعليمات التأكيد
+        welcome_email: "! %{email} أهلا"
+        you_can_confirm_your_account_e: " :يمكنك تأكيد البريد الالكتروني من خلال الرابط أدناه"
+      reset_password_instructions:
+        change_my_password: تغيير كلمة المرور
+        hello_resourceemail: "!%{resourceemail} مرحبا"
+        if_you_didnt_request_this_plea: " .إذا لم تطلب هذا، الرجاء تجاهل هذه الرسالة"
+        someone_has_requested_a_link_t: ".طلب شخص ما رابط تغيير كلمة المرور. يمكنك فعل هذا من خلال الرابط أدناه"
+        user_subject: "تعليمات إعادة تعيين كلمة المرور "
+        your_password_wont_change_unti: ".لا يمكن تغيير كلمة المرور حتى يتم الضغط على الرابط أعلاه وإنشاء واحد جديد"
+      unlock_instructions:
+        click_the_link_below_to_unlock: " :انقر على الرابط أدناه لإلغاء حظر الحساب"
+        hello_resourceemail: "!%{resourceemail} مرحبا "
+        unlock_my_account: إلغاء حظر الحساب
+        user_subject: تعليمات إلغاء الحظر
+        your_account_has_been_locked_d: ".تم حظر حسابك بسبب تكرار محاولات تسجيل الدخول الخاطئة"
+    omniauth_callbacks:
+      failure: ".%{reason} بسبب %{kind} لا يمكن مصادقتك من"
+      success: ".حساب %{kind}تمت مصادقتك بنجاح من"
+    password_expired:
+      change_required: ".انتهت صلاحية كلمة المرور. الرجاء تجديد كلمة المرور"
+      updated: ".تم حفظ كلمة المرور الجديدة"
+    passwords:
+      edit:
+        change_my_password: تغيير كلمة المرور
+        change_your_password: تغيير كلمة المرور
+        dont_have_an_account: "ليس لديك حساب؟"
+        return_to_the_leadership_circl: "العودة إلى حلقة القيادة: التقييم الذاتي"
+        sign_up: الاشتراك
+        weak: ضعيف
+        good: جيد
+        medium: متوسط
+        strong: قوي
+        very_strong: قوي جدا
+        password_should_be_at_least: "!يجب أن تتكون كلمة المرور من 8 أحرف على الأقل"
+        lower_and_uppercase_letters: "أقل والحروف الكبيرة"
+        numbers: أعداد
+        symbols: الرموز
+        password_should_include: يجب أن تتضمن كلمة المرور
+        and: و
+        confirm_no_success: "!كلمة السر غير مطابقة"
+        confirm_success: "!كلمات السر متطابقة"
+      new:
+        dont_have_an_account: "ليس لديك حساب؟"
+        forgot_your_password: "نسيت كلمة المرور؟"
+        log_in: تسجيل الدخول
+        return_to_the_leadership_circl: "العودة إلى حلقة القيادة: التقييم الذاتي"
+        send_me_reset_password_instruc: "أرسل تعليمات إعادة تعيين كلمة المرور"
+        sign_up: الاشتراك
+      send_instructions: إرسال التعليمات
+      user:
+        no_token: ".للأغراض أمنية لا يمكنك الوصول إلى الصفحة السابقة دون قادمين مباشرة من البريد الإلكتروني إعادة تعيين كلمة المرور. إذا كنت لا تأتي من البريد الإلكتروني إعادة تعيين كلمة المرور، من فضلك تأكد من استخدام عنوان URL الكامل المنصوص عليه في البريد الإلكتروني"
+        send_instructions: ".سوف تتلقى بريد يحتوي على تعليمات كيفية إعادة تعيين كلمة المرور خلال دقائق"
+        send_paranoid_instructions: ".إذا كان البريد الالكتروني موجود في قاعدة البيانات، سوف تتلقى بريد يحتوي رابط استرجاع كلمة المرور خلال دقائق"
+        updated: ".تم تغيير كلمة المرور بنجاح. أنت مسجل الدخول الآن"
+        updated_not_active: ".تم تغيير كلمة المرور بنجاح"
+    registrations:
+      destroyed: "!تم إلغاء حسابك بنجاح. نأمل أن نراك قريبا"
+      edit:
+        current_password: كلمة المرور الحالية
+        currently_waiting_confirmation: "%{resourceunconfirmed_email}جاري انتظار التأكيد حاليا لـ"
+        edit_resource_nameto_shumanize: "%{resource_nameto_shumanize} تحرير"
+        password: كلمة المرور
+        password_confirmation: تأكيد كلمة المرور
+        update_password: تحديث كلمة المرور
+        we_need_your_current_password_: نحتاج كلمة المرور الحالية لتأكيد التغييرات
+        you_must_change_your_password_: ".يجب تغيير كلمة المرور قبل تسجيل الدخول للمرة الأولى"
+      new:
+        log_in: تسجيل الدخول
+        sign_up: الاشتراك
+      signed_up: ".أهلا! لقد سجلت الاشتراك بنجاح"
+      signed_up_but_inactive: ".لقد سجلت الاشتراك بنجاح. ولكن، لا يمكن تسجيل الدخول لأن حسابك غير منشط حتى الآن"
+      signed_up_but_locked: ".لقد سجلت الاشتراك بنجاح. ولكن، لا يمكن تسجيل الدخول لأن حسابك محظور"
+      signed_up_but_unconfirmed: ".لقد تم إرسال بريد يحتوي على رابط التأكيد. الرجاء إتباع الرابط لتنشيط الحساب"
+      update_needs_confirmation: ".تم تحديث الحساب بنجاح، ولكن نحتاج إلى التحقق من البريد الالكتروني. الرجاء التحقق من البريد الالكتروني وإتباع رابط التأكيد لتأكيد البريد الالكتروني"
+      updated: ".تم تحديث حسابك بنجاح"
+    sessions:
+      new:
+        dont_have_an_account: "ليس لديك حساب؟"
+        forgot_your_password: "نسيت كلمة المرور؟"
+        login: تسجيل الدخول
+        login_to_your_account: تسجيل الدخول إلى الحساب
+        return_to_the_leadership_circl: "العودة إلى حلقة القيادة: التقييم الذاتي"
+        sign_up: الاشتراك
+      user:
+        already_signed_out: ".تم تسجيل الخروج بنجاح"
+        signed_in: ".تم تسجيل الدخول بنجاح"
+        signed_out: ".تم تسجيل الخروج بنجاح"
+    shared:
+      links:
+        didnt_receive_confirmation_ins: "لم تتلقى تعليمات التأكيد؟"
+        didnt_receive_unlock_instructi: "لم تتلقى تعليمات إلغاء الحظر؟"
+        forgot_your_password: "نسيت كلمة المرور؟"
+        log_in: تسجيل الدخول
+        sign_in_with_providerto_stitle: "%{providerto_stitleize}تسجيل الدخول بـ" 
+        sign_up: الاشتراك
+    unlocks:
+      new:
+        resend_unlock_instructions: إعادة فتح تعليمات
+      send_instructions: ".سوف تتلقى بريد يحتوي على تعليمات كيفية إلغاء حظر الحساب خلال دقائق"
+      send_paranoid_instructions: ".إذا كان حسابك موجود، سوف تتلقى بريد يحتوي على تعليمات كيفية إلغاء الحظر خلال دقائق"
+      unlocked: ".تم إلغاء حظر حسابك بنجاح. الرجاء تسجيل الدخول للاستمرار"
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: يجب أن يكون مقبول
+      already_confirmed: تم تأكيده من قبل، الرجاء محاولة تسجيل الدخول
+      blank: لا يمكن تركه فارغا
+      confirmation: "%{attribute} لا يتطابق"
+      confirmation_period_expired: "%{period} الرجاء طلب واحد جديد. يجب تأكيده خلال"
+      empty: لا يمكن تركه فارغا
+      equal_to: "%{count}يجب أن يكون مساوي لـ"
+      equal_to_current_password: "!يجب أن يكون مختلف عن كلمة المرور الحالية"
+      even: يجب أن يكون متساوي
+      exclusion: محفوظ
+      expired: انتهى، الرجاء طلب واحد جديد
+      greater_than: "%{count} يجب ان يكون أكبر من"
+      greater_than_or_equal_to: "%{count}يجب أن يكون أكبر من أو مساوي لـ"
+      inclusion: غير متضمن في القائمة
+      invalid: غير صحيح
+      less_than: "%{count} يجب أن يكون أقل من"
+      less_than_or_equal_to: "%{count}يجب أن يكون أقل من أو مساوي لـ"  
+      model_invalid: "%{errors}: فشلت عملية التحقق"
+      not_a_number: ليس رقم
+      not_an_integer: يجب أن يكون عددا صحيحا
+      not_found: غير موجود
+      not_locked: لم يكن محظور
+      not_saved:
+        one: ":من تحديثه %{resource} خطأ واحد منع هذا"
+        other: ":من حفظه %{resource} أخطاء منعت هذا %{count}"
+      odd: يجب ان يكون فردي
+      other_than: "%{count} يجب أن يكون غير" 
+      password_format: يجب أن يحتوي على حروف كبيرة وصغيرة وأرقام
+      password_not_saved: ".خطأ واحد منع كلمة المرور من تحديثه"
+      present: يجب أن يكون فارغا
+      required: يجب أن يكون موجود
+      taken: مستخدم مسبقا
+      taken_in_past: استخدم مسبقا في السابق
+      too_long:
+        one: "طويل جدا (الحد الأقصى حرف واحد)"
+        other: "(أحرف %{count} الحد الأقصى)طويل جدا" 
+      too_short:
+        one: "قصير جدا (الحد الأدنى حرف واحد)"
+        other: "(أحرف %{count} الحد الأدنى) قصير جدا" 
+      wrong_length:
+        one: "طول خاطئ (يجب أن يكون حرف واحد)"
+        other: "(أحرف %{count} يجب أن يكون) طول خاطئ"
+    template:
+      body: ":هناك أخطاء في الحقول التالية"
+      header:
+        one: "من حفظه {model}% خطأ واحد منع هذا"
+        other: "من حفظه %{model} أخطاء منع هذا %{count}"
+  evaluators:
+    edit:
+      edit_evaluator: تحرير المقيم
+    new:
+      add_evaluator: إضافة مقيم
+    partials:
+      evaluator:
+        add_participant: إضافة مشارك
+        edit_evaluator: تحرير المقيم
+        email_evaluatoremail: "%{evaluatoremail} :البريد الالكتروني"
+        evaluatorevaluation_surveys_fo: "%{total} من %{done} التقييمات"
+        evaluatorself_surveys_forproje: "%{total} من %{done} المسوحات الذاتية"
+        language_evaluatorlanguage_nam: "%{evaluatorlanguage_name} : اللغة"
+      evaluator_form:
+        cancel_changes: إلغاء التغييرات
+        delete_evaluator: حذف المقيم
+      import_evaluators:
+        email_address: البريد الالكتروني
+        first_name: الاسم الأول
+        is_there_something_wrong_a_hre: "هل هناك خطأ ما؟ <a href="#import--evaluators" class="open-popup-link">تحميل ملف جديد</a>"
+        its_right_complete_import: "صحيح! استيراد كامل"
+        language: اللغة
+        last_name: اسم العائلة
+        participant: المشارك
+        relationship: العلاقة
+        strongevaluatorscount_evaluato: ":موجود .<strong>%{evaluatorscount} مقيم</strong>. الرجاء تأكيد صحة التطابق"
+        survey_language: لغة المسح
+        were_almost_there: "... أوشكنا على الانتهاء"
+      import_evaluators_modal:
+        cancel: إلغاء
+        import_evaluators_from_csv_fil: "CSV استيراد مقيمين من ملف"
+        not_sure_about_the_format_of_t: غير متأكد من صيغة الملف؟  <a href="%{download_sample_csv_project_ev}" class='link'>حمل صيغة CSV</a>
+        upload_evaluators: تحميل المقيمين
+        upload_your_csv_file: " :CSV تحميل ملف"
+      index:
+        actions: الإجراءات
+        add_evaluator: إضافة مقيم
+        download_evaluator_status_deta: CSV تحميل تفاصيل حالة المقيم كملف
+        evaluation_status: حالة التقييم
+        evaluator_details: تفاصيل المقيم
+        import_evaluators: استيراد مقيمين
+        participant_status: حالة المشارك
+      participant:
+        completed_on_levaluatorevaluat: "%{levaluatorevaluation_survey_fo} أنجز في" 
+        edit_participant: تحرير المشاركين
+        evaluation_status: حالة المقيم
+        evaluatorevaluation_survey_for: "%{all} من %{done} أسئلة"
+        evaluatorself_survey_forprojec: "%{evaluatorself_survey_forprojec} من %{evaluatorself_survey_forprojec} أسئلة المسح الذاتي"
+        language_evaluatorevaluation_s: "%{evaluatorevaluation_survey_for} : اللغة"
+        participantfull_name: "%{participantfull_name}"
+        relationship: " :العلاقة"
+        selfsurvey_completed_on_levalu: "%{levaluatorself_survey_forproje} اكتمل المسح الذاتي في"
+        send_invite: إرسال دعوة
+      participant_form:
+        cancel_changes: إلغاء التغييرات
+        delete_participant: حذف المشارك
+    participants:
+      edit:
+        edit_participant: تحرير المشاركين
+      new:
+        add_participant: إضافة مشارك
+    sort_options:
+      evaluation_status: تصنيف حسب حالة التقييمات
+      evaluator_name: تصنيف حسب اسم المقيم
+      number_of_evaluations: تصنيف حسب عدد التقييمات
+  gflash:
+    titles:
+      error: خطأ
+      notice: إشعار
+      progress: تقدم
+      success: نجاح
+      warning: تحذير
+    users:
+      impersonate:
+        notice: تستخدم هوية شخص آخر.
+        title: استخدام هوية مستخدم
+      stop_impersonating:
+        notice: ".عدت الآن"
+        title: استخدام هوية مستخدم
+  helpers:
+    label:
+      project:
+        1st_option:  "1 خيار"
+        2nd_option:  "2 خيار"
+        i_will_invite: أود أن أضيف الناس الذين سوف تقييم المشاركين
+        my_participant_will_invite: يمكن للمشاركين أيضا دعوة الناس للقيام التقييمات
+    select:
+      prompt: الرجاء تحديد
+    submit:
+      create: "%{model} إنشاء"
+      submit: "%{model} حفظ"
+      update: "%{model} تحديث"
+  high: عالي
+  history:
+    show:
+      before: قبل
+      by: " بواسطة "
+      changes_made_at: "تمت التغييرات في "
+      field: الحقل
+      now: الآن
+  home:
+    index:
+      agents: العملاء
+      are_you_sure_want_to_delete: هل أنت متأكد من حذف
+      are_you_sure_want_to_delete_project: "لا يمكن التراجع عن حذف المشروع. هل أنت متأكد من حذف هذا المشروع؟"
+      are_you_sure_want_to_delete_project_with_expired_date_explanation: ".عذرا، لا يمكن الحذف بسبب انتهاء تاريخ اكتمال هذا المشروع"
+      are_you_sure_want_to_delete_project_with_expired_date_title: تحذير
+      coaches_or_consultants: المستشارون
+      companies_or_clients: العملاء
+      consultant_companies: الشركات الاستشارية
+      consultant_company: شركة استشارية
+      distributors: الموزعون
+      licensees: الرخص
+      no_dont_delete: لا، إيقاف الحذف
+      participants: المشاركون
+      please_enter_a_new_name_for_the_organization: "%{organization_type}الرجاء إدخال اسم جديد لـ"  
+      projects: مشاريع
+      rename_organization: "%{organization_type} إعادة تسمية" 
+      unable_to_delete_company_warning: ".لا يمكن الحذف، هناك مشاريع مرتبطة بهذه الشركة. الرجاء حذف المشاريع أولا"
+      unable_to_delete_got_it: فهم
+      unable_to_delete_project_warning: ".لا يمكن الحذف، هناك مشاركون مرتبطون بهذه الشركة. الرجاء حذف المشاركين أولا"
+      yes_delete_this: "نعم، احذف هذا"
+    partials:
+      blank_slate:
+        create_new_project: "إنشاء مشروع جديد"
+        start_adding_projects_now: ".البدء في إضافة المشاريع الآن"
+        you_have_no_projects_to_manage: ".ليس هناك مشاريع لإدارتها"
+      breadcrumbs:
+        coaches_consultants: المدربون والاستشاريون
+        search_by: بحث حسب
+      child_node_content:
+        organizationorganization_typen: "(أنقر للإدارة) %{organizationorganization_typen}"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou} %{tsharedcertified_consultants}"
+      content:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} مستشار؟"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} مستشار"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount} %{tsharedpeople}"
+      modals:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} %{parentorganization_typename}?"
+        thomeindexyes_delete_this_pare: "%{thomeindexyes_delete_this} %{parentorganization_typename}"
+        tsharedcancel: "%{tsharedcancel}"
+        tsharedsave_changes: "%{tsharedsave_changes}"
+      organization_users:
+        practitioners_userstotal_count: "(%{userstotal_count}) المشاركون" 
+      search_organization:
+        click_to_manage: "(أنقر للإدارة )"
+        manage_consultants: "(إدارة المستشارين)"
+        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization} %{tsharedwere_found}"
+        thomeindexare_you_sure_want_to: "مستشار؟ %{thomeindexare_you_sure_want_to}"
+        thomeindexyes_delete_this_cons: "مستشار %{thomeindexyes_delete_this}"
+      sidebar:
+        add: إضافة
+  i18n:
+    transliterate:
+      rule:
+        ü: u
+  javascript:
+    1st_option: 1 خيار
+    2nd_option: 2 خيار
+    add_another_company: إضافة شركة أخرى
+    admin_role_name: مدير النظام
+    ajax_popup_error: ".لا يمكن تحميل المحتوى"
+    apt_suite_bldg: رقم المبنى
+    binder_with_tabs: 3-حلقة الموثق مع علامات التبويب والصفحات المطبوعة على أن تعطى للمشارك
+    browse_file: استعراض ملف
+    cancel_schedule_announcement: هل أنت واثق؟ سيتم إلغاء الجدول الزمني وسيتم إرسال رسائل البريد الإلكتروني خلال 15 دقيقة القادمة
+    choose_age_ranges: اختيار الفئات العمرية
+    choose_countries: اختيار البلدان
+    choose_direct_report_ranges: اختيار نطاقات تقرير مباشر
+    choose_education_levels: اختيار مستويات التعليم
+    choose_ethnic_groups: اختيار المجموعات العرقية
+    choose_industries: اختيار صناعات
+    choose_management_levels: اختيار مستويات الإدارة
+    choose_professions: اختيار المهن
+    click_the_link_below_and_we_will_contact: ".انقر على الرابط أدناه وسنقوم تحصل على اتصال مع المدرب الذي سوف توجه لكم من خلال هذه العملية"
+    coach_report: تقرير المدرب
+    company_revenue: دخل الشركة
+    completion_date_asc: تاريخ الانتهاء تصاعدي
+    completion_date_desc: تاريخ الانتهاء الهابطة
+    contact_info: معلومات الاتصال
+    correct_email_required: الرجاء إدخال التنسيق الصحيح للبريد الإلكتروني
+    created_at: "تم الإنشاء في"
+    custom_demographics: التركيبة السكانية حسب الطلب
+    default_demographics: التركيبة السكانية الافتراضي
+    deliverable_options: خيارات للتسليم
+    delivery_options: خيارات التوصيل
+    did_you_enjoy_your_survey_taker: "هل تمتعت بالفحص ؟ خذ التقييم 360 الكامل من Leadership Circle Profile  والبصيرة العميقة التي تأتي من تسمح لك لتصبح أكثر فعالية وبارع في فن وممارسة القيادة.وتعلم كيفية أصحاب المصلحة الرئيسيين الخاص بك (أرباب العمل، والأقران، التقارير المباشرة، وغيرها) تجربة القيادة الخاصة بك."
+    email_required: البريد الالكتروني مطلوب
+    error: حدث خطأ ما!
+    filter_by_role: تصنيف حسب الدور
+    first_name_required: الاسم الأول مطلوب
+    full_path: ":المسار الكامل :"
+    gcsr_role_name: ممثل دعم العملاء العالمي
+    granted_at: منح في
+    graph_high: عالي
+    graph_identity: هوية
+    graph_low: منخفض
+    graph_medium: متوسط
+    high: عالي
+    invite_another_user: دعوة مستخدم آخر
+    language_required: الرجاء اختيار اللغة
+    last_name_required: اسم العائلة مطلوب
+    leaders_managers_eval: "في هذا القسم سوف تقيم قادرة/مدراء "
+    low: منخفض
+    members_eval: "في هذا القسم سوف تقيم أعضاء  "
+    message_required: الرسالة مطلوبة
+    minimum_evaluations_per_participant:  "لعدد من المقيمين لتمكين المسح الذاتي (%{min_count}) يجب دعوة الحد الأدنى" 
+    never_sent: لم ترسل
+    no_record_found: " :لا توجد سجلات مطابقة"
+    organization_and_report_type:  تنظيم ونوع التقرير
+    organization_small: المؤسسة
+    participant_graph: مشارك الرسم البياني
+    participant_report: تقرير مشارك
+    please_wait: "...يرجى الانتظار"
+    preparing: ".جاري التحضير. أرجو الإنتظار"
+    processing: جاري المعالجة
+    project_access_control: التحكم في الوصول مشروع
+    project_access_control_description: وصول مشروع مراجعة المستخدم
+    project_details: تفاصيل المشروع
+    project_name_placeholder: " ...مثلاً الرئيس التنفيذي، مدير، مدير فريق القيادة، وغيرها"
+    project_time_zone: المنطقة الزمنية المشروع
+    relationship_required: الرجاء اختيار العلاقة
+    report_options: خيارات تقرير
+    role: دور
+    search_results: نتائج البحث
+    select_age: حدد عمرك
+    select_client: حدد العميل
+    select_consulting_company: اختيار الشركة الاستشارية
+    select_country: حدد الدولة
+    select_ethnic_group: اختر المجموعة العرقية
+    select_industry: اختر الصناعة
+    select_practitioner: حدد المستشار
+    select_region: حدد الدولة أو الإقليم
+    select_your_companys_industry: حدد قطاع الشركة الخاص بك
+    select_your_education_level: اختر لمستوى التعليم
+    select_your_gender: اختر جنسك
+    select_your_management_level: تحديد مستوى إدارة الخاص بك
+    select_your_profession: اختيار المهنة الخاصة بك
+    select_your_residing_country: بلدك
+    select_your_number_of_direct_reports: عدد التقارير المباشرة
+    sent_on: أرسلت في
+    size_of_organization: حجم المنظمة
+    street_address_example: عنوان الشارع
+    subject_required: الموضوع مطلوب
+    surveys_focus: "تحديد تركيز المسح الخاص بك (التسويق والمبيعات والموارد البشرية وغيرها...)"
+    team_small: الفريق
+    type: ":النوع"
+    type_the_referral_email: "اكتب البريد الإلكتروني الإحالة"
+    type_user_email: "... اكتب البريد الالكتروني للمستخدم" 
+    type_your_company_name: ".اكتب اسم شركتك"
+    user_email: العضو مراسلة
+    user_name: اسم المستخدم
+    user_role_name: المستخدم
+    zip_post_code: الكود البريدى
+    password_hint: "يجب أن تحتوي كلمة المرور على 8 أحرف كحد أدنى مع رقم واحد على الأقل (0-9) وحرف واحد كبير (A-Z) .لا يمكنك استخدام واحدة من كلمات السر 8 السابقة"
+    select_project: اكتب هنا للبحث عن مشروع الوجهة بالاسم
+  kaminari:
+    next_page:
+      next: التالي
+    prev_page:
+      prev: السابق
+  low: اسم المستخدم
+  mailer:
+    reminder:
+      body_1: "!يبدو أنك لم تكمل المسح بعد. إذا ترغب في المشاركة، انقر أدناه"
+      body_2: ":اتبع الرابط التالي للوصول إلى المسح"
+      body_3: ".%{planned_completion_date} الرجاء ملاحظة انه يجب إكمال المسح في موعد أقصاه"
+      header: " ,%{practitioner_full_name} عزيزي"
+      regards: مع أطيب الأمنيات، فريق حلقة القيادة
+      subject: "%{product_name} تذكير"
+    welcome:
+      subject: "!أهلا بك في معبئ المسوح"
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: بليون
+          million: مليون
+          quadrillion: Quadrillion
+          thousand: ألف
+          trillion: ترليون
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: بايت
+            other: بايت
+          gb: جيجابايت
+          kb: كيلوبايت
+          mb: ميجابايت
+          tb: تيرابايت
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  order_steps:
+    deliverable_options:
+      next: التالي
+      previous: السابق
+    delivery_options:
+      cancel_order: إلغاء الطلب
+      create_report: إنشاء تقرير
+      previous: السابق
+    group_report_summary:
+      cancel_order: إلغاء الطلب
+      pdf_report: تقرير PDF
+      selected_count_tordersgr_summa: "(%{selected_count} %{tordersgr_summaryparticipants_})"
+      tordersgr_summarybilling_conta: ":%{tordersgr_summarybilling_conta}"
+      tordersgr_summaryorganization: ":%{tordersgr_summaryorganization}"
+      tordersgr_summaryreport_contac: ":%{tordersgr_summaryreport_contac}"
+      tordersgr_summaryreport_due_da: ":%{tordersgr_summaryreport_due_da}"
+      tordersgr_summaryreport_metric: ":%{tordersgr_summaryreport_metric}"
+      tordersgr_summaryreview_report: ":%{tordersgr_summaryreview_report}"
+      tordersgr_summaryselected_part: ":%{tordersgr_summaryselected_part}"
+      tordersindexreport_name: ": %{tordersindexreport_name}"
+      tshareddemographicpluralize: ":%{tshareddemographicpluralize}"
+      tsharedreportpluralize: " :%{tsharedreportpluralize}"
+    organization_and_report_type:
+      cancel_order: إلغاء الطلب
+      next: التالي
+    partials:
+      address_modal:
+        select_from_my_account_address: تحديد من سجل عناوين البريد الالكتروني
+        there_are_no_addresses_related: ليس هناك عنوانين بريد الكتروني مرتبطة بهذا المستخدم
+      contact_info:
+        billing_address: عنوان الفواتير
+        new_address: عنوان جديد
+        report_address: عنوان التقرير
+        same_as_the_billing_address: مثل عنوان الفواتير
+        select_an_address_from_my_acco: تحديد عنوان من حسابي
+        this_is_the_address_where_the_: ".هذا هو العنوان الذي سيتم إرسال النسخ المطبوعة من تقرير المشارك والرسم البياني للمشارك وتقرير المدرب إليه"
+        this_is_the_person_or_company_: ".هذا هو الشخص أو الشركة التي سيتم إرسال فاتورة الطلب إليه"
+      deliverable_options:
+        coach_report: تقرير المدرب
+        digital_graph: الرسم البياني الرقمي
+        group_report: التقرير الجماعي
+        how_many_copies_per_participan: "كم عدد النسخ لكل مشارك؟"
+        i_want_pdf_and_printed_copies_: ".من التقارير PDF أريد نسخ مطبوعة ونسخ" 
+        i_want_the_pdf_copies_only: "فقط PDF أريد نسخ"
+        participant_graph: الرسم البياني للمشارك
+        participant_report: تقرير المشارك
+        pdf_file_that_practitioner_ema: "الذي يرسله المستشار إلى المشارك PDF ملف"
+        please_choose_below_which_ones: " :الرجاء اختيار من الأسفل أي النسخ التي تريد طباعتها"
+        profile_interpretation_manual: دليل تفسير الملف الشخصي
+        reports: التقارير
+        you_will_get_a_digital_version: " :سوف تحصل على نسخة رقمية من العناصر التالية"
+        you_will_get_only_the_digital_: " :سوف تحصل على نسخة رقمية فقط من دليل تفسير الملف الشخصي والتقارير التالية"
+        you_will_get_the_digital_versi: ".سوف تحصل على نسخة رقمية من دليل تفسير الملف الشخصي وكافة التقارير"
+        your_project_will_include: " :سوف يتضمن مشروعك"
+    participants:
+      cancel_order: إلغاء الطلب
+      choose_the_participants_you_wo: ".اختر المشاركين الذين ترغب بتضمينهم في التقرير"
+      next: التالي
+      of: " من "
+      only_add_participants_who_have: ".قم بإضافة المشاركين الذين أكملوا المسوح فقط"
+      organizationname: "%{organizationname}"
+      participants_selected: " تم تحديد المشاركين"
+      previous: السابق
+      select_all_available_participa: حدد جميع المشاركين المتاحين من الشركة
+      select_participants: تحديد المشاركين
+    project:
+      add_all_participants: إضافة جميع المشاركين
+      of: من
+      participants_selected: تم تحديد المشاركين
+    report_options:
+      cancel_order: إلغاء الطلب
+      choose_metrics: اختر القياسات
+      how_calculation_is_made: كيف تتم عملية الحساب
+      next: التالي
+      previous: السابق
+      report_demographics: ديموغرافيات التقرير
+      report_language: لغة التقرير
+  orders:
+    details:
+      coach_report: " :تقرير المدرب"
+      comment_questions: " :أسئلة التعليق"
+      copies_per_participant: نسخ لكل مشارك
+      copy_per_participant: نسخة لكل مشارك
+      demographics: "الديموغرافيات"
+      included_participants: " :المشاركون المتضمنون"
+      participant_graph: " :الرسم البياني للمشارك"
+      participant_report: " :تقرير المشارك"
+      participants:
+        one: مشارك واحد
+        other: "مشارك %{count}"
+      processing_date: " :تاريخ المعالجة"
+      product_type: " :نوع المنتج"
+      profile_interpretation_manual: " :دليل تفسير الملف الشخصي"
+      report_type: " :نوع التقرير"
+      utilties_order_details: تفاصيل الطلب
+    gr_summary:
+      billing_contact: عنوان الفواتير
+      coach_report: تقرير المدرب
+      organization: المؤسسة
+      participant_graph: الرسم البياني للشمارك
+      participant_report: تقرير المشارك
+      participants_selected: تم تحديد المشاركين
+      place_order: طلب
+      report_contact: عنوان التقرير
+      report_due_date: تاريخ استحقاق الطلب
+      report_metrics: قياسات التقرير
+      review_report_summary: الرجاء مراجعة ملخص التقرير
+      selected_participants: المشاركون المحددون
+    index:
+      actions: الإجراءات
+      active_orders: الطلبات النشطة
+      all_orders: جميع الطلبات
+      delete_order: حذف الطلب
+      finished_orders: الطلبات المنجزة
+      my_orders: طلباتي
+      number_of_participants: عدد المشاركين
+      order: طلب
+      order_date: تاريخ الطلب
+      owner: المالك
+      print_reports: طباعة التقارير
+      product_type: نوع المنتج
+      report_name: اسم التقرير
+      sort_by_company: تصنيف حسب الشركة
+      sort_by_number_of_participants: تصنيف حسب عدد المشاركين
+      sort_by_ordered_date: تصنيف حسب تاريخ الطلب
+      sort_by_product: تصنيف حسب المنتج
+      sort_by_report_name: تصنيف حسب اسم التقرير
+      utilties_order: "# الطلب"
+    order:
+      see_order: عرض الطلب
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    partials:
+      pick_order_modal:
+        cancel: إلغاء
+        choose_order: اختيار الطلب
+        choose_order_for_project: اختيار طلب للمشروع
+        date_order_number: التاريخ ورقم الطلب
+        locreated_atto_date_format_lon: "%{locreated_atto_date_format_lon} / %{oorder_number}"
+    prepare_download:
+      cancel: إلغاء
+      download_reports_zip: "(ZIP) تحميل التقارير" 
+      please_wait: "...الرجاء الانتظار"
+      preparing_reports_for_download: جاري تجهيز التقارير للتحميل
+    printed_participant:
+      digital_reports_to_be_sent_pdf: "(PDFs) التقارير الرقمية المعدة للإرسال" 
+      download_copies_ordersingle_re: "(%{ordersingle_report_copies_coun})تحميل النسخ"
+      download_manual: تحميل الدليل
+      evaluators_printed_participant: "كامل %{printed_participantparticipant} من %{printed_participantparticipant} : المقيمون"
+      manual_to_be_printed: الدليل المعد للطباعة
+      mark_all_as_not_printed: تحديد الكل كغير مطبوع
+      mark_all_as_not_sent: تحديد الكل كغير مرسل
+      mark_all_as_printed: تحديد الكل كمطبوع
+      mark_all_as_sent: تحديد الكل كمرسل
+      mark_all_as_shipped: تحديد الكل كمشحون
+      printed_participantparticipant: "(%{printed_participantparticipant})"
+      reports_to_be_printed: التقارير المعدة للطباعة
+      self_survey_printed_participan: "%{printed_participantstatus} :المسح الذاتي"
+      send_digital_reports: إرسال التقارير الرقمية
+      status_printed_participantmanu: "%{printed_participantmanual_repo} : الحالة"
+      status_printed_participantprin: "%{printed_participantprint_repor} : الحالة"
+      status_printed_participantsend: "%{printed_participantsend_report} : الحالة"
+    show:
+      billing_contact: عنوان الفواتير
+      binder_contact: عنوان الغلاف
+      coaching_report: " :تقرير التدريب"
+      comment_questions: " :أسئلة التقرير"
+      company: الشركة
+      demographics: " :الديموغرافيات"
+      download_profile_interpretatio: "(PDF)تحميل دليل تفسير الملف الشخصي"
+      download_reports_zip: "(ZIP) تحميل التقارير"
+      find_the_order_details_below_y: ".مضغوط يحتوي على كل تقارير PDF تفاصيل الطلب أدناه. يمكنك أيضا تحميل ملف  "
+      included_participants: " :المشاركون المتضمنون"
+      list_of_participants: قائمة المشاركين
+      order_details: تفاصيل الطلب
+      order_number: " :رقم الطلب"
+      ordercoach_report_qty_copies: "نسخة %{ordercoach_report_qty}"
+      orderparticipant_graph_qty_cop: " نسخة لكل مشارك %{orderparticipant_graph_qty}"
+      orderparticipant_report_qty_co: " نسخة لكل مشارك %{orderparticipant_report_qty}"
+      participant_graph: " :الرسم البياني للمشارك"
+      participant_report: " :تقرير المشارك"
+      pdf: PDF
+      planned_completion_date: " :تاريخ الإنجاز المحدد"
+      print_order_details_pdf: "(PDF) طباعة تفاصيل الطلب" 
+      processing_date: " :تاريخ المعالجة"
+      product_type: " :نوع المنتج"
+      profile_interpretation_manual: " :دليل تفسير الملف الشخصي"
+      questions_about_your_order: "أسئلة حول الطلب؟"
+      report_contact: عنوان التقرير
+      report_name: " :اسم التقرير"
+      report_type: " :نوع التقرير"
+      show_project: عرض المشروع
+      thank_you_for_your_order: " .شكرا لك على طلبك"
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    show_print_report:
+      1_copy: نسخة واحدة
+      copies_per_participant:
+        one: "لكل مشترك نسخة واحدة"
+        other: "نسخة لكل مشترك %{count}"
+      Demography: 'التركيبة السكانية'
+      action: الإجراء
+      application:
+        order_not_valid: الطلب غير صحيح
+        reports_sent: تم إرسال التقارير
+        statuses_updated: تم تحديث الحالات
+      coach_report: تقرير المدرب
+      coach_rpt: تقرير المدرب
+      coaching_report: " :تقرير التدريب"
+      comment_questions: " :أسئلة التعليق"
+      company: الشركة
+      complete: كامل
+      deliverable_instructions: تعليمات التسليم
+      demographics: الديموغرافيات
+      digital_reports: " :التقارير الرقمية"
+      digital_rpt: التقرير الرقمي
+      download_all_copies_ordercopie: " (%{ordercopies_count}) تحميل جميع النسخ" 
+      download_all_manuals_orderused: " (%{orderused_languagescount}) تحميل جميع الأدلة" 
+      english_manual: 'دليل باللغة الانجليزية:'
+      evaluators: المقيمون
+      find_below_all_the_deliverable: ".شاهد بالأسفل تسليمات هذا الطلب ومعلومات الشحن لكل طلب منهم"
+      graph: الرسم البياني
+      included_participants: " :المشاركون المتضمنون"
+      manual: الدليل
+      mark_all_digital_reports_as_no: حدد جميع التقارير الرقمية كغير مرسل
+      mark_all_digital_reports_as_se: حدد جميع التقارير الرقمية كمرسل
+      mark_all_printed_copies_as_not: حدد جميع النسخ المطبوعة كغير مطبوعة
+      mark_all_printed_copies_as_pri: حدد جميع النسخ المطبوعة كمطبوع
+      mark_all_printed_copies_as_shi: حدد جميع النسخ المطبوعة كمشحون
+      mark_order_as_finished: حدد الطلب كمكتمل
+      no_participants: لا يوجد مشتركين
+      order_details: تفاصيل الطلب
+      order_number: " :رقم الطلب"
+      order_participantparticipantco: "%{order_participantparticipantev} من %{order_participantparticipantco}"
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} نسخة"
+      orderparticipant_graph_qty_cop: "نسخة لكل مشارك %{orderparticipant_graph_qty}"
+      orderparticipant_report_qty_co: "نسخة لكل مشارك %{orderparticipant_report_qty}"
+      participant: مشارك
+      participant_graph: الرسم البياني للمشارك
+      participant_report: تقرير المشارك
+      participants_orderself_surveys: "(%{orderself_surveyscount}): مشاركون"
+      pdf: PDF
+      pdfs: PDFs
+      planned_completion_date: تاريخ الإنجاز المحدد
+      print_and_ship_copies_of_the_f: " :طباعة وشحن نسخ التقارير التالية"
+      printed: مطبوع
+      printed_copies: " :النسخ المطبوعة"
+      processing_date: " :تاريخ المعالجة"
+      product_type: " :نوع المنتج"
+      profile: الملف الشخصي
+      profile_interpretation_manual: " :دليل تفسير الملف الشخصي"
+      questions_about_your_order: أسئلة حول الطلب؟
+      report_name: " :اسم التقرير"
+      report_type: نوع التقرير
+      self_survey: المسح الذاتي
+      send_digital_reports_pdfs: "(PDFs) إرسال التقارير الرقمية"
+      send_the_pdf_version_of_the_fo: " : من التقارير التالية PDFإرسال نسخة"
+      sent: Sent
+      ship_the_3ring_binder_with_tab: شحن الملف مع الصفحات المطبوعة
+      shipping_info: " :معلومات الشحن"
+      status: " :الحالة"
+      submit: تسليم
+    show_send_digital_reports:
+      cancel: إلغاء
+      consultantcoach_orderprojectco: " %{orderprojectconsultant_orderpr} : المستشار أو المدرب"
+      send_digital_reports: إرسال التقارير الرقمية
+      send_digital_reports_to_practi: إرسال التقارير الرقمية إلى المستشار
+  organization_users:
+    new:
+      tsharedadd_consultant_tsharedt: "%{tsharedadd} مستشار %{tsharedto} '%{organizationname}'"
+  organizations:
+    actions:
+      tsharedadd_typename: "%{tsharedadd} %{typename}"
+    collab:
+      add_and_delete_shared_users: ".يمكن إضافة وحذف المستخدمين المشتركين في أي وقت"
+      allow_users_edit_view: السماح للمستخدمين تحرير وعرض
+      certified_consultants: المستشارون
+      collaborators_for: متعاونون لـ
+      delete_collaborator: حذف المتعاون
+      invite_more_people: دعوة المزيد من الناس
+      invite_user_by_typing_email: دعوة مستخدم جديد عن طريق كتابة بريده الالكتروني في الأسفل
+      sharing_access_certified_consultant: مشاركة الوصول يعطي المستشار الآخر نفس الوظيفة التي تمتلكها كمالك
+      sharing_top_level_company: "مشاركة (الشركة) سوف يمنح كل شيء تحت الشركة (مجموعات المنتج والمشاركين)"
+      this_licensor_is_not_shared: هذه المؤسسة غير مشاركة حاليا
+    collaborator:
+      success: نجاح!
+    collaborators:
+      role_urolename: "%{urolename} : الدور"
+      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount} %{torganizationscollabcertified_}"
+    delete_collaborator:
+      success: "!نجاح"
+    dnd:
+      drag:
+        add_user: إضافة مستخدم
+        confirmation: تأكيد
+        confirmation_text_goes_here: "...نص التأكيد هنا"
+        finish: إنهاء
+        next: التالي
+        organizations_type: نوع المؤسسة
+        please_confirm_user_permission: ".الرجاء تأكيد السماح للمستخدم لهذه المؤسسة. لا يتعين عليك تغيير أي شيء. سيتم إضافة المستخدمين المعينين للمؤسسات الأم بشكل تلقائي"
+        previous: السابق
+        privilages: الامتيازات
+        role: الدور
+        user: المستخدم
+        you_are_about_to_move_one_orga: ".أنت على وشك نقل مؤسسة إلى أخرى. الرجاء التحقق من ما إذا كان نوع المؤسسة التي تريد نقلها صحيح. يمكنك تغيير ذلك هنا. أدناه أنواع المؤسسات المسموح بها"
+      user:
+        remove: إزالة
+    form:
+      tsharedname: "%{tsharedname}:"
+    help:
+      tree_help:
+        quick_help: مساعدة سريعة
+        to_edit_add_users_or_add_a_new: "لتحرير وإضافة مستخدمين أو إضافة مستخدم جديد، انقر عليه في الشجرة وحدد الإجراء المطلوب من القائمة في الزاوية اليمنى العليا من لوحة الشجرة"
+        to_find_an_organization_simply: "لتحديد مؤسسة ببساطة اكتب في صندوق البحث أدناه، انقر دخول عند الانتهاء"
+        to_move_the_organization_to_an: "لنقل مؤسسة لمؤسسة أخرى ببساطة قم بسحبها ومن ثم إسقاطها"
+    modals:
+      delete_organization:
+        thomeindexare_you_sure_want_to: "هذه المؤسسة %{thomeindexare_you_sure_want_to}"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_orga: "المؤسسة %{thomeindexyes_delete_this}"
+    move:
+      success: نجاح!
+    new:
+      active_consultant_label_info: إذا لم يكن المستشار محدد كمستشار نشط، سوف يتم تعليق حسابه، ولا يمكنه الوصول إلى النظام
+      administrator_email: البريد الالكتروني للمدير
+      administrator_first_name: الاسم الأول للمدير
+      administrator_last_name: اسم العائلة للمدير
+      choose_countries: اختر الدول
+      coach_consultant_email: البريد الالكتروني للمستشار
+      coach_consultant_first_name: الاسم الأول للمستشار
+      coach_consultant_last_name: اسم العائلة للمستشار
+      coach_consultant_name: الاسم الكامل للمستشار
+      company_client_name: اسم العميل
+      consultant_label_info: المستشار الذي لا يعمل داخليا في أي مؤسسة ولكن مع العديد من العملاء والمؤسسات
+      contract_start_date: تاريخ بداية العقد
+      countries_covered: الدول المغطية
+      must_be_certified: يجب أن يكون هذا البريد الالكتروني للمستشار
+      select_an_industry: حدد المجال
+      the_project_center: مركز المشاريع
+      this_active_consultant: هذا مستشار نشط
+      this_independent_consultant: هذا مستشار مستقل
+      top_node: أعلى نقطة
+      torganizationsnewmust_be_certi: "(%{torganizationsnewmust_be_certi})"
+      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} '%{parentname}'"
+      type_the_name_of_coach_consultant: اكتب اسم المدرب أو المستشار
+      type_the_name_of_company_client: اكتب اسم العميل
+      type_the_name_of_the: اكتب اسم
+      you_are_adding_a: أنت تضيف
+    roles:
+      collaborator:
+        delete: حذف
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{organizationname}"
+    search:
+      local: محلي
+      search_by: تصنيف حسب
+      search_by_company_participant_evaluator: "بحث حسب الشركة أو المشارك أو المقيم "
+      searching: "... جاري البحث"
+    share:
+      success: نجاح!
+    show:
+      event: الحدث
+      history: السجل
+      impersonate: استخدام هوية
+      no_child_data: لم يتم العثور على بيانات الطفل!
+      organization_information: معلومات المؤسسة
+      tshareddate_created: " :%{tshareddate_created}"
+    undo_share:
+      success: "!نجاح"
+    tsharedadd_typename: "%{tsharedadd} %{typename} تمت إضافة مشاركة"
+  participants:
+    cannot_destroy:
+      cannot_delete_the_selected_par: " :لا يمكن حذف المشارك المحدد لأن السجل مرتبط ببيانات أخرى لا يمكن حذفها. الرجاء التحقق من القائمة أدناه"
+      orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
+      orders: " :طلبات"
+    evaluators:
+      add_evaluator: إضافة مقيم
+      start_adding_evaluators_now: ".البدء في إضافة المقيمين الآن"
+      this_participant_has_no_evalua: "هذا المشارك ليس له مقيمين"
+    form:
+      form:
+        action_text: "%{action_text}"
+        cancel_changes: إلغاء التغييرات
+        delete_participant: حذف المشارك
+    import_csv:
+      close: إغلاق
+      importing_participants: استيراد مشاركين
+      please_wait: " ...الرجاء الانتظار"
+    import_participants:
+      email_address: البريد الالكتروني
+      empty_row: صف فارغ
+      existing_first_name: " :الاسم الأول الحالي"
+      existing_last_name: " :اسم العائلة الحالي"
+      first_name: الاسم الأول
+      is_there_something_wrong_uploa: هل هناك شيء ما خطأ؟ تحديث ملف جديد
+      its_right_complete_import: صحيح! استيراد كامل
+      last_name: اسم العائلة
+      strongparticipantscount_partic: " :الرجاء تأكيد صحة التطابق . <strong>%{participantscount} مشاركين</strong> هنالك"
+      user_with_this_email_already_e: مستخدم هذا البريد الالكتروني موجود مسبقا
+    import_participants_modal:
+      cancel: إلغاء
+      import_participants_from_csv_f: استيراد مشاركين من ملف CSV
+      upload_participants: تحميل مشاركين
+      upload_your_csv_file: ": CSV تحميل ملف"
+    index:
+      completion_date_is_over: ".تاريخ الإنجاز منتهي"
+      download_participants_csv_status: " CSV تحميل تفاصيل حالة المشارك كملف"
+      evaluator_status: حالة المقيم
+      got_it: "!فهمت"
+      participant_details: تفاصيل المشارك     
+      projectself_surveyswherestatus: "%{projectreport_datestrftimeb_d} تقييمات غير كاملة. يمكنك نقل المشاركين إلى مشاريع أخرى حتى بداية تاريخ التقرير في %{projectparticipantswith_not_en} مشاركون  لم ينهوا المسح الذاتي وهنالك %{projectself_surveyswherestatus}"
+      self_survey_status: حالة المسح الذاتي
+    logs_modal:
+      created_logsnew: "%{logsnew} :تم إنشاء"
+      failed_logsfailed: "%{logsfailed} : فشل"
+      got_it: "!فهمت"
+      import_is_done: ".انتهت عملية الاستيراد"
+      import_logs: " :سجلات الاستيراد"
+      not_changed_logsuntouched: "%{logsuntouched}:سجلات لم يطرأ أي تغير فيها"
+      participant_groups_logsgroups: "%{logsgroups}: مجموعات المشارك"
+      total_participants_logstotal: "%{logstotal} : مجموع المشاركين"
+      updated_logsupdated: " %{logsupdated}: تم تحديث"
+    manage_group:
+      continue_managing_your_group: الاستمرار في إدارة المجموعة
+      edit_evaluators_invitation: تحرير دعوة المقيمين
+      edit_participants_invitation: تحرير دعوة المشاركين
+      participants_can_be_added_to_y: يمكن إضافة المشاركين إلى المجموعة الجديدة الآن أو في تاريخ لاحق
+      send_all_new_emails: إرسال جميع العناوين الجديدة
+    participant_header:
+      add_participants: إضافة مشاركين
+      choose_products: اختيار منتجات
+      confirm_order: تأكيد الطلب
+      edit_invitation_email: تحرير بريد الدعوة
+      review_order_details: مراجعة تفاصيل الطلب
+      select_options: تحديد الخيارات
+      send_emails: إرسال الرسائل
+      setup_group: إنشاء مجموعة
+      update_addresses: تحديث العناوين
+    send_email_to_evaluator:
+      last_reminder_sent_on_surveyem: " %{surveyemail_sent} تم إرسال التذكير الأخير في"  
+    send_email_to_participant:
+      last_reminder_sent_on_surveyem: " %{surveyemail_sent} تم إرسال التذكير الأخير في"  
+    show_evaluator:
+      evaluation_status: حالة التقييم
+      language: اللغة
+      last_reminder_never_sent: لم يتم إرسال التذكير الأخير
+      last_reminder_sent_on: تم إرسال التذكير الأخير في
+      relationship: " :العلاقة"
+      send_reminder: إرسال دعوة
+      surveycompleted_questions_coun: "%{tsharedquestions} %{surveyquestions_count} %{tsharedof} %{surveycompleted_questions_coun} "
+      surveyevaluatortryfirst_name_s: "%{surveyevaluatortrylast_name} %{surveyevaluatortryfirst_name}"
+      tparticipantsshow_evaluatorlan: "%{surveyevaluatorlanguagename} : %{tparticipantsshow_evaluatorlan}"
+      tparticipantsshow_evaluatorlas: "%{surveyemail_sent} %{tparticipantsshow_evaluatorlas}"
+      tsharedcompleted_at_lsurveycom: "%{lsurveycompleted_atto_date_for} %{tsharedcompleted_at}"
+    show_participant:
+      completed_on_lparticipantself_: "%{lparticipantself_surveycomplet} تم الاكتمال في" 
+      edit_participant: تحرير المشارك
+      email_participantuseremail: " %{participantuseremail}: البريد الالكتروني"
+      language_participantuserlangua: " %{participantuserlanguagename} : اللغة"
+      na: غير متطابق
+      participantcompleted_evaluatio: "مقيم %{participantevaluationscount} من %{participantcompleted_evaluatio}"
+      participantself_surveycomplete: "أسئلة %{participantself_surveyquestion} من %{participantself_surveycomplete}"
+      participantuserfirst_name_part: "%{participantuserfirst_name} %{participantuserlast_name}"
+      resend_reports_to_gcsr: إعادة إرسال التقارير إلى ممثل دعم العملاء العالمي
+      send_invite: إرسال دعوة
+    sort_options:
+      evaluator_status: تصنيف حسب حالة المقيم
+      number_of_evaluators: تصنيف حسب عدد المقيمين
+      participant_name: تصنيف حسب اسم المقيم
+      survey_status: تصنيف حسب حالة المسح الذاتي
+  people:
+    account_notification_title: تحديث الحساب
+    account_updated: "!تم تحديث الحساب"
+    active_management:
+      error: خطأ
+      success: نجاح
+    cannot_delete: ".لا يمكن الحذف، لا زالت هناك مشاريع مرتبطة بهذا المستخدم"
+    destroy:
+      success: "!نجاح"
+    index:
+      disabled: معطل
+      filtering_by_client: " :تصنيف حسب العميل"
+      invite_new_users: دعوة مستخديمن جدد
+      invited: مدعو
+      join_date: تاريخ الانظمام
+      self_assessment: تقييم ذاتي
+      shared_organizations: المؤسسات المشاركة
+      sort_by: تصنيف حسب
+      sort_by_join_date: تصنيف حسب تاريخ الانضمام
+      sort_by_org_number: تصنيف حسب عدد المؤسسات
+      sort_by_user_name: تصنيف حسب اسم المستخدم
+      survey_takers: معبئو المسوح
+      user_details: تفاصيل المستخدم
+      users: المستخدمون
+    manual_unlock:
+      error: "!حدث خطأ ما"
+      success: "!نجاح"
+    new:
+      choose_the_user_main_role_you_: "...اختر الدور الأساسي للمستخدم. يمكنك تعديل الامتيازات لاحقا"
+      invite_another_user: دعوة مستخدم آخر
+      invite_new_users: دعوة مستخدمين جدد
+    partials:
+      active_surveys:
+        company: الشركة
+        completed: ":انجز"
+        completion_date: تاريخ الإنجاز
+        evaluated: " تم التقييم"
+        evaluation_surveyscount_people: "شخص %{evaluation_surveyscount}"
+        no_completed_evaluating_survey: " .لا يوجد مسوح تقييم مكتملة"
+        no_completed_self_surveys: لا يوجد مسوح ذاتية مكتملة
+        no_evaluating_surveys_to_compl: ".لا يوجد مسوح تقييم لإكمالها"
+        no_self_surveys_to_complete: ".لا يوجد مسوح ذاتية لإكمالها"
+        not_valid: غير صحيح
+        participant_and_product_type: نوع المنتج والمشارك
+        product_type: نوع المنتج
+        project: المشروع
+        self_survey: مسح ذاتي
+        self_surveyscount_self_survey: "مسح ذاتي %{self_surveyscount}"
+        to_complete: " :لإنجاز"
+        to_evaluate: " :لتقييم"
+      settings:
+        a_practitioner_that_does_not_w: "المستشار الذي لا يعمل داخليا في أي مؤسسة ولكن مع العديد من العملاء والمؤسسات"
+        account_status: حسالة الحساب
+        delete_account_person_pathuser: مسح الحساب
+        'false': لا
+        gcsr_or_system_administrator_h: يتمتع ممثل دعم العملاء العالمي أو مدير النظام بحق الوصول إلى جميع المؤسسات
+        is_this_an_independent_practit: هل هذا مستشار مستقل؟
+        'no': لا
+        practitioner_information: بيانات المستشار
+        the_referring_practitioner_wil: ".سوف يتلقى المستشار الموجه ملف شخصي مجاني."
+        this_user_has_been_active_sinc: هذا المستخدم نشط منذ
+        user_role: دور المستخدم
+        users_can_only_manage_the_orga: ".يمكن للمستخدمين إدارة المؤسسات المشاركة معهم فقط"
+        was_this_practitioner_referred: "هل تم توجيه هذا المستشار من قبل مستشار آخر في النظام؟"
+        'yes': نعم
+      shared_organization:
+        edit_user_role: تحرير دور المستخدم
+        shared_organizationorganizatio: "(%{shared_organizationorganizatio})"
+      shared_organizations:
+        are_being_shared_with: يتم مشاركته مع
+        new_shared_organization: مؤسسة مشاركة جديدة
+        role: الدور
+        shared_organizations: المؤسسات المشاركة
+        type: النوع
+        userfull_name: ": %{userfull_name}"
+        userorganization_userscount_or: "مؤسسة %{userorganization_userscount}"
+      surveys:
+        active_surveys_useractive_surv: "مسوح النشطة (%{useractive_surveyscount})"
+        survey_history_userhistorical_: "سجل المسوح (%{userhistorical_surveyscount})"
+      user_information:
+        address: العنوان
+        date_of_birth: ":تاريخ الولادة"
+        edit: حرر كتب
+        education: " :التعليم"
+        email: " :البريد الالكتروني"
+        full_name: " :الاسم الكامل"
+        gender: " :الجنس"
+        language: ' :اللغة:'
+        number_of_direct_reports: ' :عدد التقارير المباشرة'
+        organization_level: " :مستوى المؤسسة"
+        personal_information: المعلومات الشخصية
+        phone_number: رقم الهاتف
+        profession: " :المهنة"
+        professional_information: المعلومات الشخصية
+        residing_country: ':البلد المقیم'
+        you_havent_added_any_addresses: ".لم تضيف أي عناوين"
+        you_havent_added_any_phone_num: ".لم تضيف أي أرقام هواتف"
+      user_information_address:
+        user_information_addressname: ":%{user_information_addressname}"
+        user_information_addressregion: "%{user_information_addressregion} ,%{user_information_addresscity}"
+      user_information_phone:
+        user_information_phonename: ":%{user_information_phonename}"
+    person:
+      consultant: المستشار
+      csr: ممثل دعم العملاء
+      gcsr: ممثل دعم العملاء العالمي
+      manage_user: إدارة المستخدم
+      system_administrator: مدير النظام
+    roles:
+      added_successfully: "!تم تعيين المستخدم إلى هذه المؤسسة"
+      edit_user_role:
+        cancel: إلغاء
+        companyname: "''%{companyname}''"
+        remove_access_to_this_organiza: إزالة حق الوصول إلى هذه المؤسسة
+        role_on: الدور في
+        save: حفظ
+        select: تحديد
+        userfirst_names: "%{userfirst_name}"
+      new_user_role:
+        choose_an_organization_to_shar: اختر مؤسسة لمشاركتها مع
+        share_organization: مشاركة المؤسسة
+        user_role: ":دور المستخدم"
+      title: أدوار المستخدم
+    send_unlock_instructions:
+      error: "!حدث خطأ ما"
+      success: "!نجاح"
+    show:
+      account_status: ":حالة الحساب"
+      are_you_sure: "هل أنت متأكد؟"
+      delete_account: حذف الحساب
+      disable_account: تعطيل الحساب
+      enable_account: تمكين الحساب
+      send_unlock_instructions: إرسال تعليمات إلغاء الحظر
+      settings: الإعدادات
+      shared_organizations: المؤسسات المشتركة
+      surveys: المسوح
+      unlock_account: إلغاء حظر الحساب
+      user_information: بيانات المستخدم
+    users:
+      sort_by: ترتيب حسب
+      sort_by_join_date: ترتيب حسب تاريخ تسجيل
+      sort_by_org_number: الترتيب حسب عدد في المؤسسة
+      sort_by_user_name: "الترتيب حسب عدد المستخدمين"
+  phones:
+    index:
+      add_phone: إضافة رقم
+      name: الاسم
+      number: الرقم
+    phone:
+      delete: حذف
+  project_steps:
+    contact_info:
+      create_project: إنشاء مشروع
+      previous: السابق
+    deliverable_option:
+      next: التالي
+      previous: السابق
+    project_detail:
+      124‪_‬questions: "اسئلة (124)"		       
+      62_actual_and_62_ideal_culture: "اسئلة فعلية (62) واسئلة ثقافية مثالية (62)"
+      84_questions: "اسئلة (84)" 
+      8_summary_and_29_outer_dimensi: "(29) ملخص (8) وأبعاد خارجية"
+      8_summary_and_31_outer_dimensi: "(31) ملخص (8) وأبعاد خارجية"
+      me_summary_and_outer_dimensi: "(21) ملخص(6) وأبعاد خارجية" # ME
+      audience_is_csuite_presidents_: "الجمهور هو كبار المسؤولين التنفيذيين، الرئيس، نائب رئيس، المدراء، مدير الأعمال التنفيذية، القادة أصحاب المهارات العالية"
+      audience_is_midlevel_managers_: "الجمهور من هو المدراء المتوسطون، المشرفين، المدراء التنفيذيين، قادة الفرق، القادة الناشئين"
+      choose_a_name_that_will_help_y: "اختر اسم يساعد في تحديد المشاركين"
+      choose_an_existing_client: اختر عميل حالي
+      client: العميل
+      consulting_company: شركة استشارية
+      create_a_new_client: إنشاء عميل جديد
+      focus_is_organization_or_team: التركيز على مؤسسة أو فريق
+      leadership_circle_profile: Leadership Circle Profile
+      leadership_circle_profile_mana: Leadership Circle Profile Manager Edition
+      leadership_culture_survey: Leadership Culture Survey
+      or: أو
+      practitioner: المستشار
+      select_product: حدد المنتج
+  projects:
+    collab:
+      add_and_delete_shared_users: يمكنك إضافة وحذف المستخدمين المشتركين في أي وقت
+      allow_users_edit_view: السماح للمستخدمين بطباعة أو عرض الطلبات
+      delete_collaborator: حذف المتعاون
+      invite_more_people: دعوة المزيد من الناس
+      invite_user_by_typing_email: دعوة مستخدم جديد عن طريق كتابة البريد الالكتروني الخاص بالأسفل
+      printers: الطابعات
+      sharing_access_certified_consultant: مشاركة حق الوصول يعطي المستخدم الآخر حق الوصول إلى الطلبات
+      this_licensor_is_not_shared: هذا المشروع ليس مشترك حاليا
+    delete_collaborator:
+      success: ".تم إزالة المستخدم من المشروع"
+    new:
+      itemparameterize: "#%{itemparameterize}"
+      next: التالي
+      previous: السابق
+    partials:
+      edit_form:
+        cancel_changes: إلغاء التغييرات
+        deliverables_and_printing_opti: خيارات الطباعة والتسليمات
+        project_options: خيارات المشروع
+        save_all_changes: حفظ حميع التغييرات
+      evaluator_invitation:
+        if_you_have_already_sent_a_mes: ".إذا قمت بإرسال رسالة إلى المشاركين، يمكنك إرسال رسالة محدثة من خلال المشروع"
+        invitations: الدعوات
+        modifying_this_message_will_ch: ".تعديل هذه الرسالة سوف يغير الرسالة الترحيبية لجميع المشاركين بمسح اللغة الانجليزية"
+        please_do_not_modify_any_text_: "الرجاء لا تعدل أي نص داخل القوسين ([ ]). فهي عبارة عن كلمات رئيسية سوف يتم استبدالها بمعلومات المشارك عند إرسال الرسالة"
+        reminders: التذكيرات
+        warnings: التحذيرات
+      evaluators_blank_slate:
+        add_evaluator: إضافة مقيم
+        import_evaluators: استيراد مقيمين
+        start_adding_evaluators_now: ".ابدأ في إضافة المقيمين الآن"
+        there_are_no_evaluators_in_thi: "لا يوجد مقيمين في هذا المشروع"
+      header:
+        comments: تعليقات الطابعة
+        client: العميل
+        completion_date: تاريخ الإنجاز
+        consulting_settings: الإعدادات الاستشارية
+        consutling_company: " :الشركة الاستشارية"
+        create_group_report: إنشاء تقرير جماعي
+        delete_project: حذف المشروع
+        deleteproject: حذف المشروع
+        generate_draft_reports: توليد مشروع تقارير
+        practitioner: " :المستشار"
+        printing_access: وصول الطباعة
+        project_id: " :رقم المشروع"
+        project_time_zone: المنطقة الزمنية المشروع
+        rename_project: إعادة تسمية المشروع
+        run_new_report: بدء تقرير جديد
+        run_report_date: بدء تاريخ المشروع
+        send_all_reminders: إرسال كافة التذكيرات
+        send_new_emails_projectsurveys: "(%{projectsurveyswhereemail_sent_}) إرسال رسائل جديدة" 
+        shared_with: مشارك مع
+        show_orders: عرض الطلبات
+        starting_date: " :تاريخ البدء"
+        status: " :الحالة"
+        users_project_access: إعدادات المشتركة
+        view_orders: عرض الطلبات
+      import_participants_modal:
+        cancel: إلغاء
+        import_participants_from_csv_f: " CSV استيراد المشاركين من ملف"
+        not_sure_about_the_format_of_t: "<a href='#'>تحميل ملف بصيغة CSV. </a> غير متأكد من صيغة الملف؟"
+        upload_participants: تحميل المشاركين
+        upload_your_csv_file: ":CSV تحميل ملف"
+      modals:
+        delete_project:
+          thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}"
+          thomeindexunable_to_delete_pro: "%{thomeindexunable_to_delete_pro}"
+          thomeindexyes_delete_this_proj: "مشروع %{thomeindexyes_delete_this}"
+        no_data_for_preview_warning:
+          at_least_one_survey_must_be_co: ".يجب أن يكون مسح واحد على الأقل كامل قبل عمل تقرير المعاينة"
+          not_enough_data_to_generate_pr: لا يوجد معلومات كافية لإنشاء المعاينة
+        rename:
+          cancel: إلغاء
+          please_enter_a_new_name_for_th: " :الرجاء إدخال اسم جديد للمشروع"
+          rename_project: إعادة تسمية المشروع
+          save_changes: حفظ التغييرات
+        show_orders:
+          orderorder_number_click: ",(انقر) %{orderorder_number} "
+          projects_orders: طلبات المشروع
+          the_orders_created_by_a_projec: ".تم إنشاء الطلبات بواسطة مشروع"
+      new_project:
+        address_form:
+          select_an_address_from_my_acco: تحديد عنوان من حسابي
+        address_modal:
+          select_from_my_account_address: تحديد من عناوين حسابي
+          there_are_no_addresses_related: لا توجد عناوين مرتبطة بالمستخدم
+        contact_info:
+          billing_address: عنوان الفواتير
+          binder_address: عنوان الملف
+          contact_information: معلومات الاتصال
+          new_address: عنوان جديد
+          same_as_shipping_address: مثل عنوان الفواتير
+          same_as_the_billing_address: مثل عنوان الفواتير
+          shipping_address: عنوان الشحن
+          this_contact_is_the_only_perso: هذا الشخص الوحيد الذي يمكنه مشاهدة معلومات الفواتير من حلقة القيادة
+          this_is_the_address_where_the_: هذا هو العنوان الذي سيتم إرسال الملف إليه.
+          this_is_the_address_where_the_3_ring:  ".هذا هو العنوان الذي سوف يتم تسليم الموثق"
+        deliverable_options:
+          binder_with_tabs: '3 عصابة الموثق '
+          coach_report: تقرير المدرب
+          digital_graph: بدف من الرسم البياني
+          group_report: تقرير المجموعة
+          how_many_copies_per_participan: عدد النسخ لكل مشارك
+          i_want_pdf_and_printed_copies_: أريد ملفات بدف ونسخ مطبوعة من التقارير
+          i_want_the_pdf_copies_only: أريد فقط التقارير في بدف
+          participant_graph: الرسم البياني للمشارك
+          participant_report: تقرير المشارك
+          pdf_file_that_practitioner_ema: "الذي يرسله المستشار للمشارك PDF ملف" 
+          please_choose_below_which_ones: " :الرجاء اختيار من الأسفل التقارير الذي تريد طباعتها"
+          profile_interpretation_manual: دليل تفسير الملف الشخصي
+          reports: " :التقارير"
+          you_will_get_a_digital_version: " :سوف تحصل على نسخة بدف الرقمية"
+          you_will_get_only_the_digital_: "سوف تحصل فقط على نسخة بدف الرقمية"
+          you_will_get_the_digital_versi: "سوف تحصل على النسخة الرقمية من دليل التفسير الملف الشخصي وجميع التقارير"
+          your_project_will_include: " :سيتضمن المشروع"
+        demographics:
+          custom:
+            age_ranges: الفئات العمرية
+            all: الكل
+            country: الدولة
+            demographic_options: الخيارات الديموغرافية
+            direct_report_ranges: نطاقات التقرير المباشر
+            education_levels: المستويات التعليمية
+            ethnic_groups: المجموعات العرقية
+            female: أنثى
+            gender: الجنس
+            if_you_choose_to_run_a_custom_: ".إذا قررت إنشاء تقرير مخصص حول مجموعة ديموغرافية صغيرة جدا، ستكون النتيجة تقرير يحتوي على بيانات غير دقيقة. المزيد من المعلومات الديموغرافية متاحة في قسم المصادر. يمكنك تغيير الخيار إلى المعلومات الديموغرافية الافتراضية. يمكنك التواصل والاستفسار عن ذلك من ممثل خدمة العملاء"
+            industries: المجالات
+            male: ذكر
+            management_levels: مستويات الإدارة
+            professions: المهن
+          summary:
+            age_ranges: ":الفئات العمرية"
+            countries: "الدول"
+            demographic_definition: التعريف الديموغرافي
+            demographic_details: " :التفاصيل الديموغرافية"
+            demographic_size: " :الحجم الديموغرافي"
+            direct_report_ranges: نطاقات التقرير المباشر
+            education_levels: " :المستويات التعليمية"
+            ethnic_groups: " :المجموعات العرقية"
+            gender: " :الجنس"
+            industry: " :المجال"
+            languages: " :اللغة"
+            lcp_participants: مشاركو ملف حلقة القيادة
+            lcs_participants: مشاركو مسح حلقة القيادة
+            management_levels: مستويات الإدارة"
+            me_participants: مشاركو نسخة المدير
+            participants: المشاركون
+            professions: 'المهن:'
+            sa_participants: مشاركو التقييم الذاتي
+            this_is_the_number_of_people_y: هذا هو عدد الأشخاص الذين ستقارن أعضاء المشروع معهم.
+        project_details:
+          all_surveys_should_be_complete: يجب إكمال كافة المسوح بحلول هذا التاريخ.
+          cancel: إلغاء
+          date_reports_are_available: تقارير التاريخ متاحة.
+          next: التالي
+          project_options: خيارات المشروع
+          specify_a_timeline_for_the_pro: حدد الوقت الزمني للمشروع
+        project_options:
+          1st_option: "الخيار الأول"
+          2nd_option: "الخيار الثاني"
+          cancel_schedule_announcement: "إلغاء البريد الإلكتروني المقرر"
+          comment_questions_to_be_includ: حدد نوع أسئلة التعليق المراد تضمينها
+          evaluators_are_bosses_peers_di: ".المقيمون هم الرؤساء، الزملاء، التقارير المباشرة، وغيرهم ممن تلقوا دعوات لتقديم معلومات حول المشارك"
+          how_evaluators_are_invited_to_: حدد كيفية دعوة الأشخاص لتقييم المشاركين
+          i_will_invite: "فقط يمكنني دعوة الناس لتقييم المشاركين"
+          if_the_participant_is_responsi: ".إذا كان المشارك مسؤولا عن دعوة الناس إلى تقييمها، يجب عليهم دعوة هذا الحد الأدنى من الأشخاص قبل بدء المسح الذاتي الخاص بهم"
+          in_this_section_you_will_be_ev: في هذا القسم سوف تقيم
+          indicate_if_the_survey_will_be: ".حدد ما إذا كان الاستبيان سيتركز على المنظمة بأكملها، أو مجموعة من أعضاء الفريق"
+          leaders_managers: زعماء / مدراء
+          members_of_team: أعضاء فريق
+          minimum_evaluations_per_partic: حدد الحد الأدنى لعدد الأشخاص لتقييم كل مشارك
+          my_participant_will_invite: "كما سيدعو المشاركون الناس إلى تقييمها"
+          organization: منظمة
+          participants_will_see_the_focu: يرى المشاركون الذين يتناولون الاستطلاع الغرض كما هو مبين في المربع على اليمين
+          q1_in_your_opinion_what_is_thi: "في رأيك، ما هي أفضل ميزة قيادية أو مهارة أو موهبة يمتلكها هذا الشخص، وما هي اقتراحاتك لرفع مستوى هذه المقومات؟"
+          q1_what_should_heshe_stop_doin: "ماذا ينبغي عليه وهاعليه التوقف عن فعله؟"
+          q2_in_your_opinion_what_is_thi: "في رأيك، بالنسبة لهذا الشخص القائد، ما هو التحدي الأكبر الذي يواجهه"
+          q2_what_can_heshe_improve: "ماذا يمكنه تطوير أو تحسين؟"
+          q3_what_have_you_observed_abou: "ما هو الأمر الذي لاحظته عند هذا الشخص وتود أن تزوده بملاحظات إضافية عنه، والذي لم يُتناول في هذا التقييم؟"
+          q3_what_should_heshe_start_doi: "ماذا ينبغي أن تبدأ في القيام؟"
+          regardless_of_who_invites_eval: سيكون المستشار دائما قادرا على رؤية جميع الناس في المشروع في لوحة تحكم المشروع
+          report_demographics: ديموغرافيات التقرير
+          schedule_sending_of_invitation: حدد التاريخ والوقت لإرسال الرسائل الإلكترونية تلقائيا لدعوة الأشخاص
+          send_now: إرسال رسائل البريد الإلكتروني على الفور
+          survey_focus: تركيز االغرض من المسح
+          survey_focus_description: وصف المسح
+          survey_instructions: "تعليمات"
+          team: الفريق
+          the_invitations_can_be_schedul: ويمكن إرسال رسائل البريد الإلكتروني في وقت وتاريخ محدد
+          this_is_the_minimum_number_of_: ".هذا هو الحد الأدنى من التقييمات الكاملة التي يجب أن يضمنها المشارك في التقرير. الحد الأدنى المسوح به هو 5 تقييمات"
+          promo_code: الرقم التسلسلي للخصم
+          comment_placeholder: "(تعليمات الطابعة والتسليم).اكتب رسالتك هنا,ثم اضغط على إرسال" 
+      participant_invitation:
+        if_you_have_already_sent_a_mes: ".إذا أرسلت رسالة للمشاركين من قبل، يمكنك إرسال رسالة تحديث من خلال المشروع"
+        invitations: الدعوات
+        modifying_this_message_will_ch: "تعديل هذه الرسالة سوف يغير المشاركين من مسح اللغة الانجليزية"
+        please_do_not_modify_the_text_: الرجاء لا تعدل أي نص داخل القوسين (*| |*). فهي عبارة عن كلمات رئيسية سوف يتم استبدالها بمعلومات المشارك عند إرسال الرسالة
+        reminders: التذكيرات
+        warnings: التحذيرات
+      participants_blank_slate:
+        add_participant: إضافة مشارك
+        import_participants: استيراد المشاركين
+        start_adding_participants_now: ".البدء في إضافة المشاركين الآن"
+        there_are_no_participants_in_t: ".لا يوجد مشاركين في هذا المشروع ليتم تقييمهم"
+      reminders:
+        if_you_have_already_sent_a_mes: ".إذا أرسلت رسالة للمشاركين من قبل، يمكنك إرسال رسالة تحديث من خلال المشروع"
+        langname_reminder: "%{langname} تذكير"
+        modifying_this_message_will_ch: ".تعديل هذه الرسالة سوف يغير المشاركين من مسح اللغة الانجليزية"
+        please_do_not_modify_the_text_: الرجاء لا تعدل أي نص داخل القوسين (*| |*). فهي عبارة عن كلمات رئيسية سوف يتم استبدالها بمعلومات المشارك عند إرسال الرسالة
+        warnings: التحذيرات
+      report_preview:
+        boss: الرئيس
+        bosss_boss: رئيس الرئيس
+        direct_report: التقرير المباشر
+        evaluators: المقيمون
+        other: أخرى
+        participant: " :المشارك"
+        peer: زميل
+        select_categories: " :تحديد الفئات"
+        self: ذاتي
+        skill: مهارة
+      resend_emails:
+        last_reminde: تذكير الماضي
+        last_reminder_sent_on: تم إرسال آخر تذكير في
+        never_sent: لم يرسل بعد
+        participantuseremail: "(%{participantuseremail})"
+        select_all_participants_evalua: حدد جميع مقيمي المشارك
+        surveyevaluatoremail: "(%{surveyevaluatoremail})"
+      statuses:
+        completed_evaluating: التقييم الكامل
+        completed_selfsurveys: المسوح الذاتية الكاملة
+        in_progress: جاري
+        not_started: لم يبدأ بعد
+        statcompleted_count_of_stattot: "مكتمل %{statrelation_namepluralize} %{stattotal_count} من %{statcompleted_count}"
+        statusestotal_relations_comple: "تقييمات المكتملة %{statusestotal_relations} من %{statusestotal_relations_comple}"
+        total_of_evaluators: مجموع التقييمات
+        total_of_participants: مجموع المشاركين
+        evaluations_completed: "%{total} تقييم منجز من %{completed}"
+        self_completed: "%{total} تقييم ذاتي منجز من %{completed}"
+        boss_completed: "%{total} تقييم منجز من المدير من %{completed}"
+        peer_completed: "%{total} تقييم منجز من زميل من %{completed}"
+        direct_report_completed: "%{total} تقيم منجز من تابع مباشر  %{completed}"
+        other_completed: "%{total} تقييم منجز من غير زميل من %{completed}"
+        boss_boss_completed: "%{total} تقيم منجز من مدير المدير من  %{completed}"
+      tooltip:
+        of: من
+        pluralizecompleted_count_relat: "مكتملة %{pluralizecompleted_count_relat}"
+    project:
+      manage_project: إدارة المشروع
+      resend_emails: إعادة إرسال الرسائل
+    project_header:
+      create_group_report: إنشاء تقرير جماعي
+      create_new_project: إنشاء مشروع جديد
+    project_table:
+      actions: الإجراءات
+      all_projects: 'جميع المشاريع '
+      completion_date: تاريخ الإنجاز
+      last_reminder: آخر تذكير
+      product: المنتج
+      project: المشروع
+      status: الحالة
+    report_preview:
+      '0': "0%"
+      categories: ":الفئات"
+      evaluators: ":المقيمون"
+      participant: ":المشارك"
+      self: ذاتي
+      skill: مهارة
+    resend_emails:
+      cancel: إلغاء
+      select_all_evaluators: تحديد جميع المقيمين
+      select_all_participants: تحديد جميع المشاركين
+      select_the_unfinished_particip: ".تحديد المشاركين والمقيمين الغير منتهين الذين ترغب بمراسلتهم. اختر نوع البريد الالكتروني لإرسال الرسالة إلى مستخدمي المسح المحددين"
+      send_emails_to_participants_ev: ".إرسال الرسائل إلى المقيمين والمشاركين"
+      send_invitation_email: " إرسال رسالة دعوة "
+      send_reminder_email: " إرسال رسالة تذكير"
+    roles:
+      collaborator:
+        delete: حذف
+      collaborators:
+        torganizationscollabcollaborat: "%{projectname} %{torganizationscollabcollaborat}"
+        tsharedshared_with_project_use: "%{tprojectscollabprinters}%{tsharedshared_with}%{project_userscount}"
+    send_all_reminders:
+      close: إغلاق
+      please_wait: "... الرجاء الانتظار"
+      sending_all_reminders: جاري إرسال التذكيرات
+    share:
+      success: نجاح
+    show:
+      evaluator_email: البريد الالكتروني للمقيم
+      evaluators: المقيمون
+      options: الخيارات
+      participant_email: البريد الالكتروني للمشارك
+      participants: المشاركون
+    show_consulting_settings:
+      consulting_company: شركة استشارية
+      consulting_settings: الإعدادات الاستشارية
+      practitioner: المستشار
+    undo_share:
+      success: نجاح
+  sa_survey_mailer:
+    request_invitation_email:
+      have_a_nice_day: "!أتمنى لك نهارا سعيد"
+      hello: مرحبا،
+      participant_email: " :البريد الالكتروني للمشارك"
+      participant_name: ": اسم المشارك"
+      selfsurvey_completed_at: " :اكتمل المسح الذاتي في"
+      selfsurvey_id: " :رقم المسح الذاتي"
+      we_recorded_a_new_request_for_: " :سجلنا طلب جديد للحصول على دعوة من مستخدم"
+    survey_completed_email:
+      age_range: الفئة العمرية
+      basic_data: البيانات الأساسية
+      company_name: " :اسم الشركة"
+      company_revenue: عائد الشركة
+      country: الدولة
+      demographics: البيانات الديموغرافية
+      education_level: المستوى التعليمي
+      ethnic_group: الفئة العرقية
+      gender: الجنس
+      have_a_nice_day: "!أتمنى لك نهارا سعيد"
+      hello: ",مرحبا"
+      industry: المجال
+      management_level: مستوى الإدارة
+      organization_size: حجم المؤسسة
+      participant_email: " :البريد الالكتروني للمشارك"
+      participant_name: " :اسم المشارك"
+      participant_phone_number: " :رقم هاتف المشارك"
+      please_check_the_attachment_re: " .PDF يرجى التحقق من المرفق - يجب أن تكون التقارير بصيغة"
+      profession: المهنة
+      reports: التقارير
+      selfsurvey_completed_at: " :اكتمل المسح الذاتي في"
+      selfsurvey_created_at: " :تم إنشاء المسح الذاتي في"
+      selfsurvey_id: " :رقم المسح الذاتي"
+      tlc_consultant_who_referred: " :مستشار حلقة القيادة الذي وجه"
+      we_noticed_that_the_new_selfsu: " :لاحظنا إنشاء المسح الذاتي الجديد. التفاصيل في الأسفل"
+    survey_completed_participant_email:
+      dear_userfull_name: " ,%{userfull_name} عزيزي"
+      if_youd_like_to_understand_how: ".إذا كنت ترغب في معرفة قدراتك في مجال القيادة، يسعدني أن أقدم لك لمحو حول ملف حلقة القيادة الكامل، التي توفر التغذية الراجعة من الأشخاص الذين تقودهم أو تعمل معهم - التقارير المباشرة، وزملاء العمل وأرباب العمل"
+      please_do_not_hesitate_to_reac: ".الرجاء لا تتردد في التواصل معنا. يسعدني تقديم المساعدة لك بأي شكل كان"
+      request_a_full_lcp: طلب ملف حلقة القيادة الكامل
+      thank_you_again: " ,شكرا مرة اخرى"
+      thank_you_for_taking_the_leade: ".شكرا لأخذ ملف حلقة القيادة: التقييم الذاتي. نأمل أن تكون قد استمتعت بقراءة إتقان القيادة، ووجدت هذا التقرير والمعلومات المتاحة مفيدة خلال مواصلة رحلة القيادة"
+      to_help_you_better_understand_: ".لمساعدتك على فهم تقرير التقييم الذاتي بشكل أفضل، قمت بتضمين دليل التفسير الذي يفسر كل جانب من جوانب الرسم البياني والتقرير الخاص بك"
+  sa_surveys:
+    demographics:
+      before_you_begin: قبل البدء
+      company_details: تفاصيل الشركة
+      continue_to_survey: الاستمرار إلى المسح
+      need_help: "تحتاج مساعدة؟"
+      personal_information: المعلومات الشخصية
+      tlc_would_like_to_gather_some_:  ".ترغب في جمع بعض المعلومات لأغراض البحث الداخلي فقط. نحن لا نشارك المعلومات الخاصة بك. سنكون ممتنين إذا كنت الإجابة على الأسئلة. ومع ذلك، يمكنك دائما تحديد يفضل عدم الإجابة أو أخرى TLC"
+      we_need_a_little_more_informat: "...نحن بحاجة إلى بعض المعلومات الشخصية"
+    expanding_development:
+      discover_more_about_the_leader: تعرف المزيد حول حلقة القيادة
+      need_help: "تحتاج مساعدة؟"
+      request_invitation: طلب دعوة
+      would_you_like_to_continue_exp: "هل ترغب في الاستمرار في تحسين القيادة؟"
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    registration:
+      complete_the_registration_belo: ".أكمل التسجيل أدناه لإكمال المسح. إذا لم تتمكن من إكمال التقييم الذاتي خلال جلسة واحدة، يمكنك تسجيل الدخول لاحقا لإكماله. سيتم إرسال النتائج إلى البريد الالكتروني المسجل بعد إكمال التقييم الذاتي"
+      did_a_tlc_consultant_refer_you: "? <b>إتقان القيادة</b> حل وجهك مستشار حلقة القيادة إلى كتابنا"
+      false: خاطئة
+      i_agree_to_tlc: أوافق على
+      ja: نعم فعلا
+      need_help: "تحتاج مساعدة؟"
+      nein: لا
+      no: لا
+      privacy_and_policy_terms: شروط سياسة الخصوصية الخاصة بـحلقة القيادة
+      take_the_survey: تعبئة المسح
+      thank_you_for_your_interest: ".شكرا لك على اهتمامك"
+      yes: نعم
+    thank_you_participant:
+      did_you_enjoy_your_survey_shar: ".هل استمتعت بالمسح؟ شاركه مع أصدقائك"
+      discover_more_about_the_leader: تعرف المزيد حول حلقة القيادة
+      facebook: الفيسبوك
+      for_taking_the_leadership_circ: "لتعبئة ملف حلقة القيادة – التقييم الذاتي. سوف يتم إرسال التقارير مع النتائج إلى البريد الالكتروني خلال دقائق"
+      linkedin: ينكدين
+      need_help: تحتاج مساعدة؟
+      request_invitation: طلب دعوة
+      thank_you_practitionerfull_nam: "%{practitionerfull_name} , شكرا" 
+      twitter: تويتر
+      would_you_like_to_take_the_bfu: "انقر على الرابط أدناه للتواصل مع احد المدربين الذي سيرشدك خلال هذه العملية للتعرف على وضعك مع طاقم العمل ولزملاء وأرباب العمل؟"  
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    welcome:
+      bget_your_copy_hereb: "<b>احصل على نسختك من هنا </b>"
+      coming_back: "العودة؟"
+      login: تسجيل الدخول
+      need_help: "تحتاج مساعدة؟"
+      sorry_but_your_answers_are_inc: ".عذرا، ولكن إجاباتك غير صحيحة. حاول مرة اخرى"
+      submit_answers: إرسال الإجابات
+      this_area_is_a_special_section: هذا قسم خاص لقرائنا. نأمل أن تكون قد استمتعت بكتابنا .يمكن إيجاد الإجابة في الكتاب <b>إتقان القيادة </b>. هل لديك الكتاب؟
+      welcome_to: "أهلا بك في"
+  search:
+    index:
+      actions: الإجراءات
+      client_name: اسم العميل
+      clients: العملاء
+      consultant_companies: شركات المستشار
+      created_at: تم الإنشاء في
+      email: البريد الالكتروني
+      evaluations: التقييمات
+      industry: المجال
+      name: الاسم
+      number_of_participants: عدد المشاركين
+      number_of_projects: عدد المشاريع
+      order: طلب
+      order_date: تاريخ الطلب
+      orders: الطلبات
+      practitioners: المستشارون
+      product_type: نوع المنتج
+      projects: المشاريع
+      report_name: اسم التقرير
+      results_limited_to_20_please_u: النتائج محدودة حتى 20، الرجاء استخدم المزيد من البحث
+      search_results_total_count: نتائج البحث
+      selfsurveys: المسوح الذاتية
+      status: الحالة
+    orders_search:
+      number_of_participants: عدد المشاركين
+      order: طلب
+      order_date: تاريخ الطلب
+      orders: الطلبات
+      product_type: نوع المنتج
+      report_name: اسم التقرير
+      search_results_total_count: "(%{total_count}) نتائج البحث"
+      status: الحالة
+    partials:
+      index:
+        actions: الإجراءات
+        client_name: اسم العميل
+        clients: العملاء
+        completion_date: تاريخ الإنجاز
+        created_at: تم الإنشاء في
+        email: البريد الالكتروني
+        evaluations: التقييمات
+        industry: المجال
+        last_reminder: التذكير الأخير
+        name: الاسم
+        number_of_participants: عدد المشاركين
+        number_of_projects: عدد المشاريع
+        order: طلب
+        order_date: تاريخ الطلب
+        orders: الطلبات
+        practitioners: المستشارون
+        product: المنتج
+        product_type: نوع المنتج
+        project: المشروع
+        projects: المشاريع
+        report_name: اسم التقرير
+        search_results: نتائج البحث
+        selfsurveys: المسوح الذاتية
+        status: الحالة
+      order:
+        not_found_record_invalid: "!غير موجود! سجل غير صالح"
+      organization:
+        create_group_report: إنشاء تقرير جماعي
+        manage_client: إدارة العميل
+      practitioner:
+        preview_user: عرض المستخدم
+    projects_search:
+      projects: المشاريع
+      search_results_total_count: "(%{total_count}) نتائج البحث"
+    surveys_search:
+      actions: الإجراءات
+      completed_on: أنجز في
+      completion_date: تاريخ الإنجاز
+      delete: حذف
+      evaluating: تقييم
+      evaluations: التقييمات
+      language: اللغة
+      last_logged_in: أخر دخول
+      more_actions: المزيد من الإجراءات
+      move: نقل
+      not_started: لم يبدأ
+      of: من
+      project_name: اسم المشروع
+      questions: الأسئلة
+      reset: إعادة تعيين
+      role: الدور
+      search_results_total_count: "(%{total_count}) نتائج البحث"
+      self_surveys: المسوح الذاتية
+      survey_taker_details: تفاصيل معبئ المسح
+    users_search:
+      actions: الإجراءات
+      created_at: تم الإنشاء في
+      email: البريد الالكتروني
+      evaluations: التقييمات
+      name: الاسم
+      practitioners: المستشارون
+      search_results_total_count: "(%{total_count}) نائج البحث"
+      selfsurveys: المسوح الذاتية
+  shared:
+    1_printed_copy_per_participant: نسخة مطبوعة لكل مشارك
+    actions: الإجراءات
+    add: إضافة
+    add_participant: إضافة مشارك
+    cancel: إلغاء
+    certified_consultants: المستشارون
+    companies: العملاء
+    complete_by: ينجز بـ
+    completed_at: أنجز في
+    confirm: هل أنت متأكد؟
+    create_group_report: إنشاء تقرير جماعي
+    created_at: تم الإنشاء في
+    date_created: تاريخ الإنشاء
+    delete: حذف
+    demographic: ديموغرافي
+    details: التفاصيل
+    edit: حرر كتب
+    edit_evaluator: تحرير المقيم
+    email: البريد الالكتروني
+    import_participants: استيراد مشاركين
+    kind: النوع
+    licensor: المرخص
+    manage_evaluators: إدارة المقيمين
+    menu:
+      dashboard: لوحة التحكم
+      disabled: معطل
+      invited: مدعو
+      orders: الطلبات
+      print_reports: طباعة التقارير
+      project_center: مركز المشاريع
+      survey_takers: معبئو المسح
+      utilities: أدوات مساعدة
+    more_actions: المزيد من الإجراءات
+    name: الاسم
+    new:
+      footer:
+        current_useremail: "(%{current_useremail})"
+        go_back_to_the_csr_project_cen: العودة إلى مركز مشاريع ممثل دعم العملاء
+        you_true_useremail_are_imperso: "أنت تمثل المستشار,(%{true_useremail})"
+        your_password_will_expire: 'تنتهي صلاحية كلمة المرور الخاصة بك خلال %{days_to_expire} يوم'
+        renew_your_password: 'يرجى تغيير كلمة المرور الخاصة بك.'
+      header:
+        go_to_project_center: العودة إلى مركز مشاريع
+        link_to_class_logo__link_do: "/"
+        selfassessment: تقييم ذاتي
+        the_leadership_circle: "The Leadership Circle"
+        the_leadership_circle_profilet: "The Leadership Circle Profile"
+        the_leadership_circle_selfasse: "The Leadership Circle: التقييم الذاتي"
+      modal_search:
+        all: الكل
+        orders: الطلبات
+        projects: المشاريع
+        survey_takers: معبئو المسح
+        users: المستخدمين
+      modal_wait:
+        importing_participants: استيراد المشاركين
+        please_wait: "...يرجى الانتظار"
+      nav:
+        my_clients: عملائي
+        my_orders: طلباتي
+        people: الناس
+        print_reports: طباعة التقارير
+        project_center: مركز المشاريع
+        utilities: أدوات مساعدة
+        my_surveys: بلديالمسوح ا
+        active_projects: المشاريع النشطة
+      navigation_mobile:
+        logout: تسجيل الخروج
+        my_account: حسابي
+      session_timeout_modal:
+        attention: انتباه!
+        logout: تسجيل الخروج
+        more_time: المزيد من الوقت
+        you_have_been_inactive_and_you: "سوف يتم تسجيل الخروج تلقائيا بسبب عدم النشاط خلال 5 دقائق. هل تريد المزيد من الوقت؟"
+        session_timeout_remodal_modal:
+        attention: "!انتباه"
+        logout: تسجيل الخروج
+        more_time: المزيد من الوقت
+        you_have_been_inactive_and_you: "سوف يتم تسجيل الخروج تلقائيا بسبب عدم النشاط خلال 5 دقائق. هل تريد المزيد من الوقت؟"   
+      user_navigation:
+        logout: تسجيل الخروج
+        my_account: حسابي
+        stop_impersonating_current_use: "%{current_userfull_name} إيقاف تمثيل"
+        take_selfassessment: تعبئة التقييم الذاتي
+    next_page: الصفحة التالية
+    not_set: لم يحدد
+    notify:
+      delete_warning: ".لا يمكن حذف المقيم الذي أكمل هذا المسح من قبل"
+      success: ".تم حفظ البيانات"
+      update_warning: ".لا يمكن تغيير المقيم الذي أكمل هذا المسح من قبل"
+    number: العدد
+    of: من
+    old:
+      forbidden:
+        forbidden: ممنوع
+    participants: المستشارون
+    pdf_report: PDF تقرير
+    people: الناس
+    percent_complete: " مكتمل %"
+    please_remove_children: لا يمكن حذف البيانات بسبب وجود بيانات مرتبطة بها (مؤسسات، مشاريع)
+    preview: عرض
+    preview_report: عرض التقرير
+    previous: السابق
+    printing_access: وصول الطباعة
+    projects: المشاريع
+    questions: الأسئلة
+    rename: إعادة تسمية
+    report: تقرير
+    report_for: تقرير لـ
+    reset_password: إعادة تعيين كلمة المرور
+    reset_password_confirm: "هل أنت متأكد من إعادة تعيين كلمة المرور؟"
+    role: الدور
+    save: حفظ
+    save_changes: حفظ التغييرات
+    send_invitations: إرسال دعوات
+    shared_settings: الإعدادات المشتركة
+    shared_with: مشارك مع
+    status: الحالة
+    system: النظام
+    to: إلى
+    total: المجموع
+    users: المستخدمون
+    were_found: وجد
+    when: متى
+    who: من
+    retake: خذ مجددا
+  support:
+    array:
+      last_word_connector: ", و "
+      two_words_connector: " و "
+      words_connector: ", "
+  surveys:
+    another_show:
+      surveyproductname: "%{surveyproductname}"
+      tsurveysshowsurvey_for_surveye: "%{tsurveysshowsurvey_for} %{surveyevaluatorfull_name}"
+    answers:
+      are_you_sure_undone: "هل أنت متأكد؟ الرجاء، التحقق من كافة الإجابات. لا يمكن التراجع عن هذه الخطوة"
+      back_to_surveys: العودة إلى المسوح
+      finish_survey: إنهاء المسح
+      next_section: القسم التالي
+      previous_section: القسم السابق
+      questions_completed: انتهت الأسئلة
+    before_you_begin:
+      back_to_main_page: العودة إلى الصفحة الرئيسية
+      before_you_begin: قبل أن تبدأ
+      continue_to_survey: الاستمرار إلى المسح
+      need_help: تحتاج مساعدة؟
+      tlc_would_like_to_gather_some_: '".ترغب في جمع بعض المعلومات لأغراض البحث الداخلي فقط. نحن لا نشارك المعلومات الخاصة بك. سنكون ممتنين إذا كنت الإجابة على الأسئلة. ومع ذلك، يمكنك دائما تحديد يفضل عدم الإجابة أو أخرى TLC"      we_need_a_little_more_informat: "...نحن بحاجة لبعض المعلومات الشخصية"'
+      we_need_a_little_more_informat: نحن بحاجة لبعض المعلومات الشخصية ...
+    demographic:
+      before_you_begin: قبل أن تبدأ
+      tlc_would_like_to_gather_some_: ".ترغب في جمع بعض المعلومات لأغراض البحث الداخلي فقط. نحن لا نشارك المعلومات الخاصة بك. سنكون ممتنين إذا كنت الإجابة على الأسئلة. ومع ذلك، يمكنك دائما تحديد يفضل عدم الإجابة أو أخرى TLC"
+      we_need_a_little_more_informat: "... نحن بحاجة لبعض المعلومات الشخصية"
+    done: ".تم الإكتمال من المسح بنجاح"
+    index:
+      active_surveys: المسوح النشطة
+      complete_active_surveys: ".يرجى استكمال جميع المسوح النشطة أدناه"
+      content: المحتوى
+      my_active_surveys: المسوح على استعداد لاتخاذها
+      need_help: "تحتاج مساعدة؟"
+      self_survey: مسح ذاتي
+      survey_history: سجل المسوح
+      take_survey: تعبئة مسح
+    invite_evaluators:
+      add_evaluator: إضافة مقيم
+      back_to_survey_list: العودة إلى قائمة المسوح
+      evaluators_provide_feedback_on: ".يقدم المقيمين التقييمات ووجهات النظر حول المهارات والكفاءات القيادية من خلال هذه المسوح"
+      invite_evaluators: دعوة المقيمين
+      need_help: تحتاج مساعدة؟
+      take_the_survey: تعبئة المسح
+      you_have_enough_evaluators_to_: "أنت بحاجة لعدد أكبر من المقيمن . نوصي بأن يكون العدد على الأقل 10 مقيمين"  
+      you_must_add_at_least_span_cla: ".مقيمين لتعبئة المسح %{current_userinvitee_surveys} يجب أن تضيف على الأقل"
+    not_enough_invited_evaluators: ".يمكن للمشارك دعوة المقيمين. ليس هناك ما يكفي من المقيمين لإجراء الاستطلاع"
+    not_valid: ".عذرا، لم يعد هذا المسح صالحا"
+    partials:
+      continue_survey:
+        '100': "100%"
+        culture_survey_for: مسح الثقافة ل
+        current_userfirst_name_current: "%{current_userfirst_name} %{current_userlast_name}"
+        review_your_answers: مراجعة إجاباتك
+        self_survey_for: مسح ذاتي لـ
+        thanks_current_userfirst_name: " ,%{current_userfirst_name} شكرا"
+        you_are_currently_taking_secti: "%{surveysectionscount} من %{paramssection_page} تقوم حاليا بتعبئة قسم" 
+        you_have_answered_all_the_ques: ".%{paramssection_page} أجبت على جميع أسئلة قسم" 
+      evaluator_form:
+        cancel: إلغاء
+        update_evaluator: تحديث المقيم
+      evaluators:
+        edit_evaluator: تحرير المقيم
+        evaluator_details: تفاصيل المقيم
+        language: اللغة
+        relationship: العلاقة
+      modal:
+        add_evaluator: إضافة مقيم
+        always: دائما
+        cancel: إلغاء
+        edit_evaluator: تحرير المقيم
+        na: لا ينطبق
+        never: أبدا
+        often: غالبا
+        once_added_an_email_will_be_im: سوف يتم إرسال رسالة دعوة إلى المقيم للمشاركة بمجرد إضافته إلى القائمة
+        previous_question: السؤال السابق
+        review_your_answers: مراجعة إجاباتك
+        seldom: نادرا
+        self_survey_for_bthe_most_effe: <b>لأفضل قيادي أعرفه</b> مسح ذاتي
+        sometimes: أحيانا
+      my_active_surveys:
+        complete_by: ينجز بـ
+        current_userinvitee_completed_: "تقييمات مكتملة %{current_userinvitee_surveyssel} من %{current_userinvitee_completed_} "
+        evaluator_setup: إنشاء مقيم
+        my_active_surveys: المسوح على استعداد لاتخاذها
+        please_complete_all_of_your_ac: ".يرجى استكمال جميع المسوح النشطة أدناه"
+        self_survey: مسح ذاتي
+        take_the_survey: تعبئة المسح
+        self_evaluations_left:
+          one: "متبق <b> تقييم ذاتي</b>لديك "
+          other: ":متبق <b>تقييم الذاتي %{count}</b> لديك"
+        evaluations_self:
+          one: ":لديك تقييمواحد متبق"
+          other: ":تقييم متبق %{count} لديك"
+        you_have_bpluralizecurrent_use: 'أنت <b>%{pluralizecurrent_useractive_ev}</b> لتقييم:'
+        you_must_invite_at_least_self_: ".أشخاص قبل أن تتمكن من إجراء المسح الذاتي الخاص بك %{self_surveyprojectminimum_eval} يجب عليك دعوة ما لا يقل عن" 
+      new_or_pending:
+        continue_the_survey: الاسالمتابعة إلى استطلاع الرأيح
+        current_sectionquestionscount_: "سؤال %{current_sectionquestionscount}"
+        go_back_to_survey_list: العودة إلى قائمة المسوح
+        need_help: "تحتاج مساعدة؟"
+        of: من
+        previous_section: القسم السابق
+        restart_previous_survey: إعادة المسح السابق
+        start_the_survey: ابدأ المسح
+        you_have_answered: لقد أجبت
+      no_evaluators:
+        add_evaluator: إضافة مقيم
+        why_do_i_have_to_invite_evalua: " "
+        you_currently_do_not_have_any_: ".لا يوجد أي مقيمين"
+        you_need_to_have_at_least_span: ".مقيمين لتعبئة المسح %{minimum_evals} يجب أن تضيف على الأقل"
+      question:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: دائما
+        culture_survey_for: مسح الثقافة ل
+        na: لا ينطبق
+        never: أبدا
+        of: من
+        often: غالبا
+        perc_progress: "%{perc_progress}%"
+        previous_question: السؤال السابق
+        providing_feedback_for: تقديم تقييم لـ
+        question: سؤال
+        seldom: نادرا
+        self_survey_for: مسح ذاتي لـ
+        sometimes: أحيانا
+        very_strongly_agree: أوافق بشدة جدا
+        strongly_agree: موافق بشدة
+        agree: يوافق على
+        slightly_agree: أوافق قليلا
+        slightly_disagree: لا أوافق قليلا
+        disagree: تعارض
+        strongly_disagree: لا أوافق بشدة
+        very_strongly_disagree: أختلف بشدة جدا
+        you_are_currently_taking_secti: "%{surveysectionscount} من %{sections_page} تعبئ حاليا قسم"
+        "×": "×"
+      review:
+        finish_your_survey: إنهاء المسح
+        need_help: "تحتاج مساعدة؟"
+        next_section: القسم التالي
+        previous_section: القسم السابق
+        review_continue: مراجعة ومتابعة
+        review_your_answers_to_the_lea: ".راجع إجابات ملف القيادة. يمكن تعديل أي إجابة عن طريق النقر عليها"
+        section_sectionscurrent_page_o: "%{sectionstotal_pages} من %{sectionscurrent_page} قسم"
+        your_survey_is_almost_complete: "المسح على وشك الانتهاء. الرجاء مراجعة إجابتك"
+        your_survey_is_not_yet_complet:  "قسم لإكماله %{sectionstotal_pages_sectionscu} المسح على وشك الانتهاء. لديك"
+      review_form:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: دائما
+        cancel: إلغاء
+        na: لا ينطبق
+        never: أبدا
+        often: غالبا
+        seldom: نادرا
+        sometimes: أحيانا
+        very_strongly_agree: أوافق بشدة
+        strongly_agree: موافق بشدة
+        agree: يوافق على
+        slightly_agree: أوافق قليلا
+        slightly_disagree: لا أوافق قليلا
+        disagree: تعارض
+        strongly_disagree: يعارض بشده
+        very_strongly_disagree: لا أوافق بشدة
+        update: تحديث
+      sections:
+        survey_taker_evaluator_section_1_description:
+          leadership_profile: ملف القيادة
+          providing_feedback_section_sec: " %{sectionstotal_pages} من %{sectionscurrent_page} تقديم قسم تقييم"
+          you_will_be_able_to_review_and: ".يمكنك مراجعة وتعديل إجاباتك عند نهاية هذا القسم"
+        survey_taker_section_1_description:
+          culture_survey: مسح الثقافة
+          leadership_profile: ملف القيادة
+          section_sectionscurrent_page_o: "%{sectionstotal_pages} من %{sectionscurrent_page} قسم"
+          you_will_be_able_to_review_and: ".يمكنك مراجعة وتعديل إجاباتك عند نهاية هذا القسم"
+        survey_taker_section_2_description:
+          at_the_end_of_this_section_you: ".يمكنك مراجعة وتعديل إجاباتك عند نهاية هذا القسم"
+          most_effective_leader: القائد الأكثر فعالية
+          section_sectionscurrent_page_o: "%{sectionstotal_pages} من %{sectionscurrent_page} قسم"
+      survey_history:
+        completed_on: أنجز في
+        evaluator_setup: إنشاء مقيم
+        my_survey_history: سجل مسوحي
+        self_survey: مسح ذاتي
+        this_is_the_list_of_all_the_su: ".هذه قائمة المسوح التي شاركت فيها"
+        you_have_completed_bpluralizec: " :<b>%{pluralizecurrent_usercompleted}</b> لقد أكملت"
+        self_evaluations_completed:
+          one: ":أنجزت 1 تقييم ذاتي"
+          other: ": تقييم ذاتي %{count}  أنجزت"
+        evaluations_completed:
+          one: ":أنجزت تقييماً واحداً"
+          other: ":تقييما %{count} لقد أكملت"
+      thanks:
+        all_your_answers_have_been_sub: ".تم حفظ وإرسال جميع إجاباتك. شكرا لك"
+        go_back_to_survey_list: العودة إلى قائمة المسوح
+        log_out: تسجيل الخروج
+        thanks_current_userfirst_name_: ".على تعبئة هذا المسح %{current_userfirst_name} شكرا"
+    process_error: ".هناك خطأ ما في هذا المسح"
+    questions:
+      put_your_answer_here: ضع إجابتك هنا
+    questions_completed: أسئلة الانتهاء
+    sa_request: ".شكرا لك، سوف نبقى على اتصال"
+    sections:
+      current_leadership_culture: ".مهمتك هي وصف سلوكيات القيادة التي يمارسها ويشجعها ويسمح بها القادة. هناك العديد من المعايير التي تؤثر على الخبرة العامة للقيادة في المؤسسة أو فريق المؤسسة. ومثال ذلك، يحظى مدرين مختلفين بأسلوب قيادي مختلف، ولكل واحد منهم تأثير على الثقافة القيادية للمؤسسة أو الفريق. أوصف السلوك الذي له تأثير كبير على تجربتك وخبرتكفي هذا القسم، سوف تقيم  %{participant}" 
+      desired_leadership_culture: في هذا القسم، الرجاء الإجابة على الأسئلة بناء على الطريقة التي ترغب ان تكون فيها الثقافة القيادية لـ  <b>%{participant}</b> أجب على كل الأسئلة على أساس أن الثقافة القيادية مثالية - واحد من شأنه أن يسمح لها أن تزدهر في البيئات الحالية والمستقبلية.
+      ideal_to_ideal: ''
+      leadership_profile: هذا القسم مخصص لبناء ملف القيادة لـ  <b>%{participant}</b>. أجب على الأسئلة بسرعة باستخدام الانطباع الأول. استخدم خيار غير متطابق إذا كنت لا تعرف الإجابة على أي سؤال أو إذا كان السؤال لا يتطابق.
+      manager_profile: هذا القسم مخصص لبناء ملف المدير لـ<b>%{participant}</b>. أجب على الأسئلة بسرعة باستخدام الانطباع الأول. استخدم خيار غير متطابق إذا كنت لا تعرف الإجابة على أي سؤال أو إذا كان السؤال لا يتطابق.
+      most_effective_leader: |-
+        في هذا القسم، لن تقيم  <b>%{participant}</b>.
+        ولكن، حدد أفضل قائد تعاملت معه (بشكل مباشر أو غير مباشر). <b>أجب على الأسئلة التالية بناء على معرفتك بهذا القائد.</b>
+        في نهاية القسم، يمكنك مراجعة وتعديل الإجابات.
+      write_in_feedback: في هذا القسم، الرجاء إضافة تقييم إضافي مكتوب لـ  <b>%{participant}</b>. يجد المشاركون التقييمات والتعليقات المكتوبة مفيدة لفهم نتائجهم. يمكن أن يتضمن تعليقك جوانب لا يحتويها هذا المسح، أو أمثلة توضح تقييمك لـ  <b>%{participant}</b> أو أي شيء آخر مهم لـ  <b>%{participant}</b> لكي يعرفه.
+    self:
+      end_section: " .في نهاية القسم، يمكنك مراجعة وتعديل الإجابات"
+      identify_effective_leader: ولكن، حدد أفضل قائد تعاملت معه (بشكل مباشر أو غير مباشر)
+      most_effective_leader: القائد الأكثر فعالية
+      no_longer_be_evaluating: في هذا القسم، لن تقيم
+      surveyproductname: "%{surveyproductname}"
+      that_person_in_mind: أجب على الأسئلة التالية بناء على معرفتك بهذا القائد
+      tsurveysselfno_longer_be_evalu: ".%{surveyevaluatorfull_name} %{tsurveysselfno_longer_be_evalu}"
+    show:
+      survey_for: مسح لـ
+    survey:
+      tsharedcompleted_at_lsurveycom: "%{lsurveycompleted_at_format_lon} %{tsharedcompleted_at}"
+    survey_progress:
+      current_sectionanswers_forsurv: "%{current_sectionanswers_forsurv}/%{current_sectionquestionscount}"
+      current_sectionpercentage_comp: "%{tsharedpercent_complete}%{current_sectionpercentage_comp}"
+  system_history:
+    announcement_send_at_changed: "%{date}تغيرت تذكير موعد إرسالها إلى" 
+    change_history: تغيير التاريخ
+    comment_questions_changed: "%{value}الأسئلة تعليق تغيرت ل"
+    completion_date_changed: "%{date}تغيير تاريخ الانتهاء ل" 
+    create_participant: " مكون %{participant}مشارك" 
+    delete_participant: "محذوف %{participant} مشارك"
+    demographics_policy_changed: "%{value}التركيبة السكانية تقرير تغيرت ل"
+    description: "%{created_date}وفيما يلي التغييرات التي أثرت على سعر هذا النظام منذ إنشائه على" 
+    pdf_copies_only_changed: "مختارة فقط PDF نسخ"
+    printed_copies_changed: "ونسخ مطبوعة PDF"    
+    project_created: مشروع تم إنشاؤه
+    report_date_changed: "%{date}تغيير تاريخ تقرير ل"
+    retake_added: "%{participant} استعادة لوأضاف"
+    retake_removed: "%{participant} إستعادة لإزالة"
+  templates:
+    form:
+      form:
+        if_you_have_already_sent_the_m: ".إذا أرسلت هذه الرسالة للمشاركين من قبل، يتعين عليك إعادة إرسالها من خلال المشروع لهم للحصول على الرسالة المحدثة"
+        modifying_this_message_will_ch: ".سوف يغير تعديل هذه الرسالة الترحيبية للمشاركين بلغة المسح الانجليزية"
+        please_do_not_modify_any_text_: ".الرجاء لا تعدل النص المتاح بين (*||*) بالأسفل. هذه عبارة عن كلمات رئيسية سوف يتم استبدالها بمعلومات المشارك عند إرسال الرسالة"
+        reset_english_message: إعادة تعيين الرسالة الإنجليزية
+        return_to_list: العودة إلى القائمة
+        update_english_message: تحديث الرسالة الإنجليزية
+    participant_invitation_msg:
+      message: الرسالة
+      reset_english_message: إعادة تعيين الرسالة الإنجليزية
+      save_templatelanguagename_mess: "%{templatelanguagename}حفظ رسالة"  
+      subject: الموضوع
+  time:
+    am: صباحا
+    formats:
+      default: "%a, %d %b %Y %I:%M:%S %p %Z"
+      long: "%B %d, %Y %I:%M %p"
+      short: "%d %b %I:%M %p"
+    pm: مساء
+  timezones:
+    Abu Dhabi: "ابو ظبي"
+    Adelaide: أديلايد
+    Alaska: ألاسكا
+    Almaty: ألماتي
+    American Samoa: "ساموا الأمريكية"
+    Amsterdam: أمستردام
+    Arizona: أريزونا
+    Astana: أستانا
+    Athens: "أثينا"
+    Atlantic Time (Canada): "توقيت المحيط الأطلسي (كندا)"
+    Auckland: أوكلاند
+    Azores: الأزور
+    Baghdad: بغداد
+    Baku: باكو
+    Bangkok: بانكوك
+    Beijing: بيكين
+    Belgrade: بلغراد
+    Berlin: برلين
+    Bern: لرن
+    Bogota: بوغوتا
+    Brasilia: برازيليا
+    Bratislava: براتيسلافا
+    Brisbane: بريسبان
+    Brussels: بروكسيل
+    Bucharest: "بوخارست"
+    Budapest: بودابست
+    Buenos Aires: "بوينس آيرس"
+    Cairo: القاهرة
+    Canberra: كانبيرا
+    Cape Verde Is.: "جزيرة كيب فيردي"
+    Caracas: كراكاس
+    Casablanca: الدار البيضاء
+    Central America: "أمريكا الوسطى"
+    Central Time (US & Canada): "التوقيت المركزي (الولايات المتحدة وكندا)"
+    Chatham Is.: "جزيرة تشاتام"
+    Chennai: تشيناي
+    Chihuahua: تشيهواهوا
+    Chongqing: تشونغتشينغ
+    Copenhagen: كوبنهاغن
+    Darwin: داروين
+    Dhaka: دكا
+    Dublin: دبلن
+    Eastern Time (US & Canada): "التوقيت الشرقى (الولايات المتحدة وكندا)"
+    Edinburgh: أدنبرة
+    Ekaterinburg: " ايكاترينبرغ"
+    Fiji: فيجي
+    Georgetown: جورج تاون
+    Greenland: جرينلاند
+    Guadalajara: غوادالاخارا
+    Guam: غوام
+    Hanoi: هانوي
+    Harare: هراري
+    Hawaii: هاواي
+    Helsinki: هلسنكي
+    Hobart: هوبارت
+    Hong Kong: "هونغ كونغ"
+    Indiana (East): "إنديانا (شرق)"
+    International Date Line West: "خط التوقيت الدولي الغربي"
+    Irkutsk: " إيركوتسك "
+    Islamabad: إسلام أباد
+    Istanbul: اسطنبول
+    Jakarta: جاكرتا
+    Jerusalem: القدس
+    Kabul: كابول
+    Kaliningrad: كالينينغراد
+    Kamchatka: " كامتشاتكا "
+    Karachi: كراتشي
+    Kathmandu: " كاتماندو"
+    Kolkata: كالكوتا
+    Krasnoyarsk: " كراسنويارسك "
+    Kuala Lumpur: "كوالا لمبور"
+    Kuwait: الكويت
+    Kyev: كييف
+    Kyiv: كييف
+    La Paz: "لاباز"
+    Lima: ليما
+    Lisbon: لشبونة
+    Ljubljana: ليوبليانا
+    London: لندن
+    Madrid: مدريد
+    Magadan: ماغادان
+    Marshall Is.: "جزر مارشال"
+    Mazatlan: مازاتلان
+    Melbourne: ملبورن
+    Mexico City: "المكسيك"
+    Mid-Atlantic: "منتصف المحيط الأطلسي"
+    Midway Island: "جزيرة ميدواي"
+    Minsk: مينسك
+    Monrovia: مونروفيا
+    Monterrey: مونتيري
+    Montevideo: مونتيفيديو
+    Moscow: موسكو
+    Mountain Time (US & Canada): "توقيت جبال الروكي (الولايات المتحدة وكندا)"
+    Mumbai: بومباي
+    Muscat: مسقط
+    Nairobi: " نيروبي"
+    New Caledonia: "نوفيل-كاليدونيا"
+    New Delhi: "نيودلهي"
+    Newfoundland: "نيوفاوندلاند"
+    Novosibirsk: " نوفوسيبيرسك "
+    Nuku'alofa: "نوكوالوفا"
+    Osaka: "أوساكا"
+    Pacific Time (US & Canada): "توقيت المحيط الهادي (الولايات المتحدة وكندا)"
+    Paris: باريس
+    Perth: بيرث
+    Port Moresby: "بورت مورسبي"
+    Prague: براغ
+    Pretoria: بريتوريا
+    Quito: كيتو
+    Rangoon: رانغون
+    Riga: ريغا
+    Riyadh: الرياض
+    Rome: روما
+    Samara: "سامارا, روسيا"
+    Samoa: ساموا
+    Santiago: سانتياغو
+    Sapporo: سابورو
+    Sarajevo: سراييفو
+    Saskatchewan: ساسكاتشوان
+    Seoul: سيول
+    Singapore: " سنغافورة "
+    Skopje: سكوبي
+    Sofia: صوفيا
+    Solomon Is.: "جزر سليمان"
+    Srednekolymsk: سريدنكوليمسك
+    Sri Jayawardenepura: " سري جاياواردنابورا "
+    St. Petersburg: "سان بطرسبرج"
+    Stockholm: ستوكهولم
+    Sydney: سيدني
+    Taipei: تايبيه
+    Tallinn: تالين
+    Tashkent: " طشقند"
+    Tbilisi: تبيليسي
+    Tehran: طهران
+    Tijuana: تيخوانا
+    Tokelau Is.: "جزيرة توكيلاو"
+    Tokyo: طوكيو
+    UTC: التوقيت العالمي
+    Ulaan Bataar: "أولان باتور"
+    Ulaanbaatar: "أولان باتور"
+    Urumqi: أورومتشي
+    Vienna: " فيينا"
+    Vilnius: " فيلنيوس"
+    Vladivostok: فلاديفوستوك
+    Volgograd: فولغوغراد
+    Warsaw: وارسو
+    Wellington: ويلينغتون
+    West Central Africa: "غرب ووسط أفريقيا"
+    Yakutsk: " ياكوتسك "
+    Yerevan: يريفان
+    Zagreb: " زغرب"
+    Zurich: زيوريخ
+  users:
+    avatar_upload:
+      error: ".حدث خطأ ما خلال التحميل. الرجاء المحاولة مرة أخرى"
+      success: تم تحميل الصورة بنجاح.
+    demographic:
+      demographics: الديموغرافيات
+    demographic_form:
+      company_details: تفاصيل الشركة
+      continue_to_survey: الاستمرار إلى المسح
+      need_help: "تحتاج مساعدة؟"
+      personal_information: المعلومات الشخصية
+    edit:
+      add_address: إضافة هذا العنوان
+      add_phone: إضافة رقم هاتف
+      address_type: وع العنوان
+      addresses: العناوين
+      age: ":العمر"
+      back_to_settings: العودة إلى الإعدادات
+      cancel: إلغاء
+      change_password: تغيير كلمة المرور
+      change_profile_picture: تغيير صورة الملف الشخصي
+      city: المدينة
+      company_details: تفاصيل الشركة
+      company_name: اسم الشركة
+      company_revenue: عائد الشركة
+      confirm_password: ":تأكيد كلمة المرور"
+      country_address: الدولة
+      current_password: كلمة المرور الحالية
+      date_of_birth: تاريخ الميلاد
+      education: التعليم
+      email: البريد الالكتروني
+      ethnic_group: المجموعة العرقية
+      fax: الفاكس
+      first_name: الاسم الأول
+      gender: الجنس
+      home: المنزل
+      industry: المجال
+      language: اللغة
+      last_name: اسم العائلة
+      management_level: مستوى الإدارة
+      mobile: الجوال
+      new_password: كلمة مرور جديدة
+      number_of_direct_reports: عدد التقارير المباشرة
+      organization_level: مستوى المؤسسة
+      password: كلمة المرور
+      password_label: ":كلمة المرور"
+      personal_information: المعلومات الشخصية
+      phone_numbers: أرقام الهاتف
+      please_enter_address_name: الرجاء إدخال اسم العنوان
+      please_enter_email: الرجاء إدخال البريد الالكتروني
+      please_enter_new_confirmation_: الرجاء إدخال كلمة مرور التأكيد الجديدة
+      please_enter_new_password: الرجاء إدخال كلمة المرور الجديدة
+      please_enter_phone_number: الرجاء إدخال رقم الهاتف
+      please_enter_valid_confirmatio: الرجاء إدخال كلمة مرور التأكيد الصحيحة
+      please_enter_valid_email: الرجاء إدخال بريد الكتروني صحيح
+      profession: المهنة
+      professional_information: المعلومات المهنية
+      profile_picture: صورة الملف الشخصي
+      reenter_new_password: إعادة إدخال كلمة المرور الجديدة
+      remove_address: إزالة هذا العنوان
+      remove_phone: إزالة رقم الهاتف
+      remove_profile_picture: إزالة الصورة الشخصية
+      residing_country: دولة الإقامة
+      retype_password: "...أعد كتابة كلمة المرور الجديدة"
+      save_changes: حفظ التغييرات
+      size_of_organization: حجم المؤسسة
+      state_province: المحافظة
+      street_address: عنوان الشارع
+      use_the_form_below_to_change_t: ".استخدم الطلب أدناه لتغيير كلمة مرور حساب حلقة القيادة"
+      user_roles: أدوار المستخدم
+      users_placeholder: "... اكتب اسم المستخدم أو عنوان البريد الإلكتروني"
+      work: العمل
+      working_address: عنوان العمل
+      zip_code_address: الرمز البريدي
+      password_must_have_at_least: "يجب أن تحتوي كلمة مرورك على ما يلي:"
+      9_characters: "9 أحرف"
+      1_lowercase_letter: "1 حرف صغير"
+      1_uppercase_letter: "1 حرف كبير"
+      1_number: رقم واحد
+      1_special_character: 1 الطابع الخاص
+      passwords_dont_match: كلمات المرور غير متطابقة
+      good_so_far: جيد حتى الان
+      match: مباراة
+      good: جيد
+      too_week: ضعيف جدا
+    modify:
+      success: ".تم تحديث المستخدم بنجاح"
+    take_self_assessment:
+      error: "!حدث خطأ ما"
+    update_demographics:
+      error: ".حدث خطأ ما بالمعلومات الديموغرافية. الرجاء المحاولة مرة أخرى"
+      success: ".تم تحديث المعلومات الديموغرافية بنجاح"
+    update_password:
+      success: ".تم تحديث كلمة المرور بنجاح"
+  utilities:
+    index:
+      all: الكل
+      billings: الفواتير
+      false: لا
+      filter: تصنيف
+      filter_by_in_voiced: ":تصنيف حسب الموفتر"
+      filter_by_order_status: " :تصنيف حسب حالة الطلب" 
+      filter_by_region: " :تصنيف حسب المنطقة"
+      finished: انتهى
+      no: 'لا '
+      ordered: تم الطلب
+      orders: الطلبات
+      orders_placeholder: "... اكتب اسم الطلب أو رقم الطلب"
+      projects: المشاريع
+      projects_placeholder: " ... نوع اسم المشروع "
+      search: بحث
+      survey_takers: " معبئو المسوح "
+      surveys_placeholder: "... اكتب اسم المستخدم أو عنوان البريد الإلكتروني "
+      users: المستخدمون
+      users_placeholder: " ...اكتب اسم المستخدم أو عنوان البريد الإلكتروني"
+      #'yes': نعم
+      yes: نعم
+    new_sa:
+      generate: إنشاء
+      select_score_for_answers: " :حدد الدرجة للإجابات"
+      users_email: " :البريد الإلكتروني للمستخدم"
+    partials:
+      billing_table:
+        invoiced: مفوتر
+      search_orders:
+        found_order: طلب موجود
+        no_order_is_found: "!لم يتم العثور على طلبات"
+      search_orders_details:
+        ordercoach_report_qty: "%{ordercoach_report_qty}"
+        ordercoach_report_qty_tordersd: "%{tordersdetailscopy_per_partici} %{ordercoach_report_qty}"
+        orderparticipant_graph_qty: "%{orderparticipant_graph_qty}"
+        orderparticipant_graph_qty_tor: "%{tordersdetailscopy_per_partici} %{orderparticipant_graph_qty}"
+        orderparticipant_report_qty: "%{orderparticipant_report_qty}"
+        orderparticipant_report_qty_to: "%{tordersdetailscopy_per_partici} %{orderparticipant_report_qty} "
+        pdf: PDF
+      search_projects:
+        no_projects_are_found: "!لم يتم العثور على مشاريع"
+      search_surveys:
+        actions: الإجراءات
+        completed_on: أنجز في
+        completion_date: تاريخ الإنجاز
+        delete: حذف
+        evaluating: تقييم
+        evaluations: التقييمات
+        found_survey_taker: وجد معبئ مسوح
+        language: اللغة
+        last_logged_in: أخر دخول
+        more_actions: المزيد من الإجراءات
+        move: نقل
+        no_survey_is_found: "!لم يتم العثور على مسح"
+        not_started: لم يبدأ
+        of: من
+        project_name: اسم المشروع
+        questions: الأسئلة
+        reset: إعادة تعيين
+        role: الدور
+        self_surveys: مسوح ذاتية
+        survey_taker_details: تفاصيل معبئ المسح
+      search_users:
+        back: العودة
+        email: ":البريد الالكتروني"
+        found_user: وجد مستخدم
+        impersonate: تمثيل
+        name: ":الاسم"
+        no_user_is_found: "!لم يتم العثور على مستخدمين"
+      survey:
+        reset: إعادة تعيين
+    show_order:
+      billing_contact: عنوان الفواتير
+      binder_contact: عنوان الملف
+      coaching_report: " :تقرير المدرب"
+      comment_questions: " :أسئلة التعليق"
+      company: الشركة
+      demographics: " :الديموغرافيا"
+      included_participants: " :المشاركون المتضمنون"
+      invoice_order: طلب الفاتورة
+      invoiced: ":مفوتر"
+      list_of_participants: قائمة المشاركين
+      mark_order_as_not_invoiced: تحديد الطلب كغير مفوتر
+      order_details: تفاصيل الطلب
+      order_number: ":رقم الطلب"
+      ordercoach_report_qty_copies: "نسخة %{ordercoach_report_qty}"
+      orderparticipant_graph_qty_cop: "نسخة لكل مشارك %{orderparticipant_graph_qty}"
+      orderparticipant_report_qty_co: "نسخة لكل مشارك %{orderparticipant_report_qty}"
+      participant_graph: ":الرسم البياني للمشارك"
+      participant_report: ":تقرير المشارك"
+      pdf: PDF
+      planned_completion_date: " :تاريخ الإنجاز المحدد"
+      processing_date: "تاريخ المعالجة"
+      product_type: " :نوع المنتج"
+      profile_interpretation_manual: " :دليل تفسير الملف الشخصي"
+      report_contact: عنوان التقرير
+      report_name: ":اسم التقرير"
+      report_type: ":نوع التقرير"
+    surveys:
+      created_at: تم الإنشاء في
+      evaluator: المقيم
+      id: رقم
+      new_self_assessment: تقييم ذاتي جديد
+      regular: منتظم
+      self_assessment: تقييم ذاتي
+      status: الحالة
+  views:
+    pagination:
+      first: "الأول &laquo;"
+      last: "&raquo; الأخير" 
+      next: "&rsaquo; التالي" 
+      previous: " السابق &lsaquo;"
+      truncate: "&hellip;"
+  graph_preview:
+    circle_within_circle: ":حلقة ضمن حلقة"
+    inner_circle_profiles: ".توصف الحلقة الداخلية درجة ملخص القيمة المئوية لجميع الأبعاد في ذلك القسم من الدائرة الخارجية"
+    percentile_scores: ":الدرجات المئوية"
+    high: ":مرتفع"
+    scores_from: ".الدرجات من 66 إلى 100 درجة مئوية هي درجة كبيرة "
+    medium: "متوسط:"
+    score_between: ".الدرجة بين 66 إلى 33 تظهر مزيجا من القوة ومجالات التحسين"
+    low: "منخفظ:"
+    score_below: ".الدرجة أقل من 33 هي درجات منخفضة"
+    identity: "هوية"
+    others_assessment: "تقييم الآخرين"
+    self_assessment: "تقييم ذاتي"
+    print_graph: "طباعة الرسم الببياني"
+    culture_survey: " :تجارة ومسح الثقافة"
+    displayed_as_percentile: ".يتم عرض كافة الدرجات بدرجات مئوية مقارنة بدرجاتك حسب القاعدة المعيارية الخاصة بنا"
+    high_scores_are_beyond: ".الدرجات المرتفعة هي ما بعد 67 درجة مئوية"
+    low_scores_are_below: ".الدرجات المنخفضة هي أدنى من 33 درجة مئوية"
+    copy_right: "© The Leadership Circle® | All Rights Reserved"
+    desired_culture: "الثقافة المطلوبة"
+    actual_culture: "الثقافة الفعلية"
+    manager_edition: "نسخة المدير"
+    protecting: 'حماية'
+    evaluators: 'المقيمون'
+    self: 'ذاتي'
+    arrogance: 'غطرسة'
+    being: 'موجود'
+    critical: 'حرج'
+    distance: 'مسافة'
+    complying: 'الامتثال'
+    passive: 'سلبي'
+    belonging: 'الانتماء'
+    pleasing: 'ارضاء'
+    conservative: 'معتدل'
+    relating: 'مرتبط'
+    caring_connection: 'تواصل شخصي'
+    fosters_team_play: 'يعزز عمل الفريق'
+    collaborator: 'متعاون'
+    mentoring_developing: 'توجيه التطوير'
+    interpersonal_intelligence: 'الذكاء الشخصي مع الآخرين'
+    self_awareness: 'الوعي الشخصي'
+    selfless_leader: 'قائد متفاني'
+    balance: 'التوازن'
+    composure: 'رباطة جأش'
+    personal_learner: 'متعلم شخصي'
+    authenticity: 'الموثوقية'
+    integrity: 'النزاهة'
+    courageous_authenticity: 'الموثوقية الشجاعة'
+    systems_awareness: 'وعي النظام'
+    community_concern: 'الاهتمام المجتمعي'
+    sustainable_productivity: 'الإنتاجية المستدامة'
+    systems_thinker: 'مفكر بالنظام'
+    achieving: 'محرز'
+    strategic_focus: 'التركيز الاستراتيجي'
+    purposeful_visionary: 'الرؤية الهادفة'
+    achieves_results: 'يحرز النتائج'
+    decisiveness: 'الحزم'
+    controlling: 'التحكم'
+    perfect: 'مثالي'
+    driven: 'محفز'
+    ambition: 'الطموح'
+    autocratic: 'استبدادي'
+    general_abilities: 'القدرات العامة'
+    leadership_potential_utilization: 'استخدام القدرات القيادية'
+    reactive_creative_scale: 'مقياس الإبداع التفاعلي'
+    leadership_effectiveness: 'فعالية القيادة'
+    relationship_task_balance: 'توازن المهام والعلاقات '
+    creative: 'إبداعي'
+    relationship: 'العلاقة'
+    task: 'المهمة'
+    reactive: 'تفاعلي'
+    graph_low: منخفض
+    graph_medium: متوسط
+    graph_high: عالي
+    graph_identity: هوية

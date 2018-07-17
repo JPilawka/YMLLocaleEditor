@@ -1,0 +1,12 @@
+<h1>Zapisano plik<%=@file%></h1>
+<%@h.each do |key,value|%>
+  <p>
+    <%=@text%> </br>
+      <%=key%>: <br/>
+      <% value.each do |val|%>
+          <%=val[0]%> : <%=val[1]%></br>
+
+      <%end%>
+
+  </p>
+<%end%>

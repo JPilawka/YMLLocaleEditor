@@ -1,0 +1,2639 @@
+---
+fr-CA:
+  activerecord:
+    errors:
+      messages:
+        passwords:
+          cannot_contain: ne doit pas contenir votre nom ou courriel, que ce soit tout ou en partie.
+          does_not_match_security_requirements: 'ne rencontre pas les exigences de sécurité. Le mot de passe doit contenir 1 des 3 groupes de caractères suivant: A-Z, a-z, 0-9.'
+          must_be_at_least: doit contenir au moins 8 caractères.
+        record_invalid: 'Validation échouée: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Vous ne pouvez supprimer l'enregistrement parce qu'il existe %{record} liens dépendants
+          has_one: Vous ne pouvez supprimer l'enregistrement parce qu'il existe %{record} lien dépendant
+        should_be_greater_or_equal: doit être supérieure ou égale à la date d'achèvement
+  addresses:
+    region:
+      regionnametitleize_regionabbre: "%{regionnametitleize} (%{regionabbreviation})"
+  application:
+    change_password_required: Vous devez changer votre mot de passe avant de vous connecter pour la première fois
+    user_not_authorized:
+      forbidden: Interdit
+  companies:
+    edit:
+      edit_company: Éditer la compagnie
+      manage_users: Gérer les utilisateurs
+    index:
+      companiestotal_count: "(%{companiestotal_count})"
+      company_name: Nom de la compagnie
+      create_company: Créer une compagnie
+      industry: Industrie
+      manage_company: Gérer la compagnie
+      my_clients: Mes clients
+      number_of_projects: Nombre de projets
+      sort_by_company_name: Trier par nom du client
+      sort_by_created_date: Trier par date de création
+      sort_by_industry: Trier par industrie
+      sort_by_number_of_projects: Trier par nombre de projets
+      start_creating_companies_now: Commencez à créer des compagnies maintenant
+      you_have_no_companies_to_manage: Aucune compagnie à gérer
+    new:
+      consulting_company: Compagnie de consultation
+      create_company: Créer une compagnie
+      new_company: Nom de la nouvelle compagnie
+    partials:
+      delete_company:
+        cname_corganization_typename: "%{cname} (%{corganization_typename})"
+        existing_projects_top_10: 'Projets existants (top 10):'
+        please_notice_that_it_will_als: 'S''il vous plaît, noter que les organisations soeurs suivantes seront également supprimées:'
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} cette compagnie"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_comp: "%{thomeindexyes_delete_this} compagnie"
+    show:
+      create_group_report: Créer un rapport de groupe
+      create_new_project: Créer un nouveau projet
+      delete_company: Supprimer la compagnie
+      tsharedmore_actions: "%{tsharedmore_actions}"
+      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant} %{tsharedcertified_consultants}"
+  concerns:
+    role_management:
+      create_user_role:
+        success: Réussi
+      update_user_role:
+        success: Réussi
+  consultants:
+    saved_successfully: Le consultant a été ajouté avec succès!
+    title: Consultant
+  date:
+    abbr_day_names:
+    - Dim
+    - Lun
+    - Mar
+    - Mer
+    - Jeu
+    - Ven
+    - Sam
+    abbr_month_names:
+    -
+    - Jan
+    - Fev
+    - Mar
+    - Avr
+    - Mai
+    - Jun
+    - Jul
+    - Aou
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Dimanche
+    - Lundi
+    - Mardi
+    - Mercredi
+    - Jeudi
+    - Vendredi
+    - Samedi
+    formats:
+      default: "%d-%m-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    -
+    - Janvier
+    - Février
+    - Mars
+    - Avril
+    - Mai
+    - Juin
+    - Juillet
+    - Août
+    - Septembre
+    - Octobre
+    - Novembre
+    - Décembre
+    order:
+    - :jour
+    - :mois
+    - :année
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: il y a environ 1 mois
+        other: il y a environ %{count} mois
+      about_x_months:
+        one: environ 1 mois
+        other: environ %{count} mois
+      about_x_years:
+        one: il y a environ 1 an
+        other: il y a environ %{count} ans
+      almost_x_years:
+        one: Presqu'un an
+        other: Presque %{count} ans
+      half_a_minute: une demi-minute
+      less_than_x_minutes:
+        one: moins qu'une minute
+        other: moins que %{count} minutes
+      less_than_x_seconds:
+        one: moins qu'une seconde
+        other: moins que %{count} secondes
+      over_x_years:
+        one: Plus d'un an
+        other: Plus de %{count} ans
+      x_days:
+        one: 1 jour
+        other: "%{count} jours"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
+      x_months:
+        one: 1 mois
+        other: "%{count} mois"
+      x_seconds:
+        one: 1 seconde
+        other: "%{count} secondes"
+    prompts:
+      day: Jour
+      hour: Heure
+      minute: Minute
+      month: Mois
+      second: Secondes
+      year: An
+  devise:
+    confirmations:
+      confirmed: Votre adresse courriel a été confirmée avec succès.
+      new:
+        resend_confirmation_instructio: Renvoyer les instructions de confirmation
+      send_instructions: Vous recevrez dans quelques minutes un courriel avec des instructions sur la façon de confirmer votre adresse courriel.
+      send_paranoid_instructions: Si votre adresse courriel existe déjà dans notre base de données, vous recevrez dans quelques minutes un courriel avec des instructions sur la façon de confirmer votre adresse courriel.
+    failure:
+      user:
+        already_authenticated: Vous êtes déjà connecté.
+        inactive: Votre compte n'est pas encore activé.
+        invalid: "%{authentication_keys} ou mot de passe invalide."
+        last_attempt: Il vous reste une tentative de plus avant que votre compte soit verrouillé.
+        locked: Votre compte est verrouillé.
+        not_found_in_database: "%{authentication_keys} ou mot de passe invalide."
+        timeout: Votre séance est expirée. S'il vous plaît, vous connectez à nouveau pour continuer.
+        unauthenticated: Vous devez vous connecter ou vous inscrire avant de continuer.
+        unconfirmed: Vous devez confirmer votre adresse courriel avant de continuer.
+    invalid_captcha: L'entrée captcha n'est pas valide!
+    mailer:
+      confirmation_instructions:
+        confirm_my_account: Confirmer mon compte
+        user_subject: Instructions de confirmation
+        welcome_email: Bienvenue %{email}!
+        you_can_confirm_your_account_e: 'Vous pouvez confirmer votre courriel via le lien ci-dessous:'
+      reset_password_instructions:
+        change_my_password: Changer mon mot de passe
+        hello_resourceemail: 'Allo %{resourceemail}!'
+        if_you_didnt_request_this_plea: Si vous n'avez pas fait cette demande, s'il vous plaît ignorez ce courriel.
+        someone_has_requested_a_link_t: Quelqu'un a demandé un lien pour changer votre mot de passe. Vous pouvez le faire via le lien ci-dessous.
+        user_subject: Instructions pour réinitialiser mon mot de passe
+        your_password_wont_change_unti: Votre mot de passe ne changera pas jusqu'à ce que vous accédiez le lien ci-dessus et en créer un nouveau.
+      unlock_instructions:
+        click_the_link_below_to_unlock: 'Cliquez sur le lien ci-dessous pour déverrouiller votre compte:'
+        hello_resourceemail: Allo %{resourceemail}!
+        unlock_my_account: Déverrouiller mon compte
+        user_subject: Instructions de déverrouillage
+        your_account_has_been_locked_d: Votre compte a été bloqué en raison d'un nombre excessif de tentatives de connexion sans succès.
+    omniauth_callbacks:
+      failure: Impossible de vous authentifier à partir de %{kind} parce que "%{reason}".
+      success: Authentifié avec succès à partir de %{kind} compte.
+    password_expired:
+      change_required: Votre mot de passe a expiré. S'il vous plaît, renouvelez votre mot de passe!
+      updated: Votre nouveau mot de passe a été sauvegardé.
+    passwords:
+      edit:
+        change_my_password: Modifier mon mot de passe
+        change_your_password: Créez votre mot de passe
+        dont_have_an_account: Vous n'avez pas de compte?
+        return_to_the_leadership_circl: 'Retour au Cercle de Leadership: auto-évaluation'
+        sign_up: S'inscrire
+        weak: Faible
+        good: Bien
+        medium: Moyen
+        strong: Fort
+        very_strong: Très fort
+        password_should_be_at_least: Le mot de passe devrait comporter au moins 8 caractères!
+        lower_and_uppercase_letters: lettres majuscules et minuscules
+        numbers: nombres
+        symbols: symboles
+        password_should_include: Le mot de passe devrait inclure
+        and: et
+        confirm_no_success: Les mots de passe ne correspondent pas!
+        confirm_success: Les mots de passe correspondent!
+      new:
+        dont_have_an_account: Vous n'avez pas de compte?
+        forgot_your_password: Mot de passe oublié?
+        log_in: S'identifier
+        return_to_the_leadership_circl: 'Retour au Cercle de Leadership: auto-évaluation'
+        send_me_reset_password_instruc: Envoyez-moi les instructions pour réinitialiser mon mot de passe
+        sign_up: S'inscrire
+      send_instructions: Envoyez-moi les instructions
+      user:
+        no_token: Pour des raisons de sécurité, vous ne pouvez pas accéder à la page précédente, sauf si vous êtes directement à partir d'un mot de passe reset e-mail. Si vous venez d'un mot de passe reset e-mail, s'il vous plaît assurez-vous que vous avez utilisé l'URL complète dans l'e-mail.
+        send_instructions: Vous recevrez dans quelques minutes un courriel avec des instructions sur la façon de changer votre mot de passe.
+        send_paranoid_instructions: Si votre adresse courriel existe déjà dans notre base de données, vous recevrez un lien pour récupérer votre mot de passe à votre adresse courriel dans quelques minutes.
+        updated: Votre mot de passe a été changé avec succès. Vous êtes maintenant connecté.
+        updated_not_active: Votre mot de passe a été changé avec succès.
+    registrations:
+      destroyed: Au revoir! Votre compte a été supprimé avec succès. Nous espérons vous revoir bientôt.
+      edit:
+        current_password: Mot de passe actuel
+        currently_waiting_confirmation: 'Actuellement en attente de confirmation pour: %{resourceunconfirmed_email}'
+        edit_resource_nameto_shumanize: Éditer %{resource_nameto_shumanize}
+        password: Mot de passe
+        password_confirmation: Confirmation du mot de passe
+        update_password: Mettre à jour votre mot de passe
+        we_need_your_current_password_: nous avons besoin de votre mot de passe actuel pour confirmer vos modifications
+        you_must_change_your_password_: Vous devez changer votre mot de passe avant de vous connecter pour la première fois.
+      new:
+        log_in: S'identifier
+        sign_up: S'inscrire
+      signed_up: Bienvenue! Vous vous êtes connecté avec succès.
+      signed_up_but_inactive: Vous vous êtes connecté avec succès. Cependant, nous ne pouvons vous connecter parce que votre compte n'a pas encore été activé.
+      signed_up_but_locked: Vous vous êtes connecté avec succès. Cependant, nous ne pouvons vous connecter parce que votre compte est vérouillé.
+      signed_up_but_unconfirmed: Un message avec un lien de confirmation a été envoyé à votre adresse courriel. S'il vous plaît, cliquez le lien pour activer votre compte.
+      update_needs_confirmation: Vous avez mis à jour votre compte avec succès, mais nous avons besoin de vérifier votre nouvelle adresse courriel. S'il vous plaît, vérifier votre courriel et cliquez sur le lien de confirmation pour confirmer votre nouvelle adresse courriel.
+      updated: Votre compte a été mis à jour avec succès.
+    sessions:
+      new:
+        dont_have_an_account: Vous n'avez pas de compte?
+        forgot_your_password: Mot de passe oublié?
+        login: Connectez-vous
+        login_to_your_account: Connectez-vous à votre compte
+        return_to_the_leadership_circl: 'Retour au Cercle de Leadership: auto-évaluation'
+        sign_up: S'inscrire
+      user:
+        already_signed_out: Déjà déconnecté.
+        signed_in: Connecté avec succès.
+        signed_out: Déconnecté avec succès.
+    shared:
+      links:
+        didnt_receive_confirmation_ins: Vous n'avez pas reçu les instructions de confirmation?
+        didnt_receive_unlock_instructi: Vous n'avez pas reçu les instructions de déverrouillage?
+        forgot_your_password: Mot de passe oublié?
+        log_in: Connectez-vous
+        sign_in_with_providerto_stitle: Connectez-vous avec %{providerto_stitleize}
+        sign_up: S'inscrire
+    unlocks:
+      new:
+        resend_unlock_instructions: Renvoyer les instructions de déverrouillage
+      send_instructions: Dans quelques minutes, vous recevrez un courriel avec des instructions sur la façon de déverrouiller votre compte.
+      send_paranoid_instructions: Si votre compte existe déjà, dans quelques minutes vous recevrez un courriel avec des instructions sur la façon de déverrouiller votre compte.
+      unlocked: Votre compte a été déverrouillé avec succès. S'il vous plait, connectez-vous pour continuer.
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: doit être accepté
+      already_confirmed: a déjà été confirmé, s'il vous plaît essayez de vous connecter.
+      blank: ne peut être vide
+      confirmation: ne correspond pas %{attribute}
+      confirmation_period_expired: a besoin d'être confirmé dans %{period}, s'il vous plaît, refaites la demande.
+      empty: ne peut être vide
+      equal_to: doit être égal à %{count}
+      equal_to_current_password: doit être différent du mot de passe actuel!
+      even: doit être pair
+      exclusion: est réservé
+      expired: est expiré, s'il vous plaît, refaites une demande
+      greater_than: doit être plus grand que %{count}
+      greater_than_or_equal_to: doit être plus grand ou égal à %{count}
+      inclusion: ne figure pas dans la liste
+      invalid: n'est pas valide
+      less_than: doit être plus petit que %{count}
+      less_than_or_equal_to: doit être plus petit ou égal à %{count}
+      model_invalid: 'Validation échouée: %{errors}'
+      not_a_number: n'est pas un nombre
+      not_an_integer: doit être un nombre entier
+      not_found: pas trouvé
+      not_locked: n'est pas verrouillé
+      not_saved:
+        one: '1 erreur a empêché %{resource} d''être mis à jour:'
+        other: "%{count} erreurs interdit cette %{resource} d'être sauvegardé(e):"
+      odd: doit être impair
+      other_than: doit être différent que %{count}
+      password_format: doit contenir des majuscules, des minuscules et des chiffres
+      password_not_saved: 1 erreur a empêché le mot de passe d'être mis à jour.
+      present: doit être vide
+      required: doit déjà exister
+      taken: a déjà été pris
+      taken_in_past: a déjà été pris dans le passé!
+      too_long:
+        one: est trop long (maximum 1 caractère)
+        other: est trop long (maximum %{count} caractères)
+      too_short:
+        one: est trop court (minimum 1 caractère)
+        other: est trop court (minimum %{count} caractères)
+      wrong_length:
+        one: est d'une longueur incorrecte (devrait être 1 caractère)
+        other: est d'une longueur incorrecte (devrait être %{count} caractères)
+    template:
+      body: 'Il y a des problèmes avec les champs suivants:'
+      header:
+        one: 1 erreur a empêché %{model} d'être sauvegardé
+        other: "%{count} erreurs ont empêché %{model} d'être sauvegardé"
+  evaluators:
+    edit:
+      edit_evaluator: Modifier l'évaluateur
+    new:
+      add_evaluator: Ajouter un évaluateur
+    partials:
+      evaluator:
+        add_participant: Ajouter un participant
+        edit_evaluator: Modifier l'évaluateur
+        email_evaluatoremail: 'Courriel: %{evaluatoremail}'
+        evaluatorevaluation_surveys_fo: "%{done} de %{total} évaluations"
+        evaluatorself_surveys_forproje: "%{done} de %{total} auto-évaluations"
+        language_evaluatorlanguage_nam: 'Langue: %{evaluatorlanguage_name}'
+      evaluator_form:
+        cancel_changes: Annuler les changements
+        delete_evaluator: Supprimer l'évaluateur
+      import_evaluators:
+        email_address: Adresse courriel
+        first_name: Prénom
+        is_there_something_wrong_a_hre: Y a-t-il quelque chose qui ne fonctionne pas? <a href="#import--evaluators" class="open-popup-link">Ajouter un nouveau fichier</a>
+        its_right_complete_import: Terminé! Importation complétée
+        language: Langue
+        last_name: Nom de famille
+        participant: Participant
+        relationship: Liens de parenté
+        strongevaluatorscount_evaluato: "<strong>%{evaluatorscount} évaluateur(s) </strong> trouvé(s). S'il vous plaît, confirmer que l'association est juste:"
+        survey_language: Langue du sondage
+        were_almost_there: Nous y sommes presque...
+      import_evaluators_modal:
+        cancel: Annuler
+        import_evaluators_from_csv_fil: Importer les évaluateurs à partir d'un fichier CSV
+        not_sure_about_the_format_of_t: Pas certain du format du fichier? <a href="%{download_sample_csv_project_ev}" class='link'>Télécharger l'exemple CSV</a>.
+        upload_evaluators: Télécharger les évaluateurs
+        upload_your_csv_file: 'Télécharger votre fichier CSV:'
+      index:
+        actions: Actions
+        add_evaluator: Ajouter un évaluateur
+        download_evaluator_status_deta: Télécharger le détail du statut de l'évaluateur en CSV
+        evaluation_status: Statut de l'évaluation
+        evaluator_details: Détails de l'évaluateur
+        import_evaluators: Importer les évaluateurs
+        participant_status: Statut des participant
+      participant:
+        completed_on_levaluatorevaluat: Complété le %{levaluatorevaluation_survey_fo}
+        edit_participant: Modifier le participant
+        evaluation_status: Statut de l'évaluation
+        evaluatorevaluation_survey_for: "%{done} de %{all} questions"
+        evaluatorself_survey_forprojec: "%{evaluatorself_survey_forprojec} de %{evaluatorself_survey_forprojec} questions de l'auto-évaluation"
+        language_evaluatorevaluation_s: 'Langue: %{evaluatorevaluation_survey_for}'
+        participantfull_name: "%{participantfull_name}"
+        relationship: 'Liens de parenté:'
+        selfsurvey_completed_on_levalu: Auto-évaluation complétée le %{levaluatorself_survey_forproje}
+        send_invite: Envoyer une invitation
+      participant_form:
+        cancel_changes: Annuler les changements
+        delete_participant: Supprimer le participant
+    participants:
+      edit:
+        edit_participant: Modifier le participant
+      new:
+        add_participant: Ajouter un participant
+    sort_options:
+      evaluation_status: Trier par statut d'évaluation
+      evaluator_name: Trier par nom de l'évaluateur
+      number_of_evaluations: Trier par nombre d'évaluations
+  gflash:
+    titles:
+      error: Erreur
+      notice: Attention
+      progress: Avancement
+      success: Succès
+      warning: Avertissement
+    users:
+      impersonate:
+        notice: Vous empruntez l'identité de quelqu'un d'autre.
+        title: Empruntez l'identité de quelqu'un
+      stop_impersonating:
+        notice: Vous êtes maintenant de retour.
+        title: Empruntez l'identité de l'utilisateur
+  helpers:
+    label:
+      project:
+        1st_option: Option 1
+        2nd_option: Option 2
+        i_will_invite: Je vais inviter moi-même les évaluateurs pour mon participant
+        my_participant_will_invite: Mon participant peut inviter les évaluateurs
+    select:
+      prompt: SVP, sélectionner
+    submit:
+      create: Créer un/une %{model}
+      submit: Sauvegarder le/la %{model}
+      update: Mettre à jour le/la %{model}
+  high: Haut
+  history:
+    show:
+      before: Avant
+      by: " d'ici (le) "
+      changes_made_at: 'Changements faits le '
+      field: Champs
+      now: Maintenant
+  home:
+    index:
+      agents: Agents
+      are_you_sure_want_to_delete: Êtes-vous certain de vouloir supprimer?
+      are_you_sure_want_to_delete_project: La suppression d'un projet est permanente. Êtes-vous certain de vouloir supprimer ce projet?
+      are_you_sure_want_to_delete_project_with_expired_date_explanation: Désolé, vous ne pouvez pas le supprimer parce que la date d'achèvement de ce projet est terminée.
+      are_you_sure_want_to_delete_project_with_expired_date_title: Avertissement
+      coaches_or_consultants: Consultants
+      companies_or_clients: Clients
+      consultant_companies: Compagnies du consultant
+      consultant_company: Compagnie du consultant
+      distributors: Distributeurs
+      licensees: Licenciés
+      no_dont_delete: Non, ne pas supprimer
+      participants: Participants
+      please_enter_a_new_name_for_the_organization: SVP, entrer un nouveau nom pour la %{organization_type}
+      projects: Projets
+      rename_organization: Renommer le/la %{organization_type}
+      unable_to_delete_company_warning: Vous ne pouvez pas supprimer; il y a encore des projets rattachés à cette compagnie. SVP, supprimer les projets en premier.
+      unable_to_delete_got_it: Compris
+      unable_to_delete_project_warning: Vous ne pouvez pas supprimer; il y a encore des participants rattachés à cette compagnie. SVP, supprimer les participants en premier.
+      yes_delete_this: Oui, supprimer
+    partials:
+      blank_slate:
+        create_new_project: Créer un nouveau projet
+        start_adding_projects_now: Ajouter des projets maintenant.
+        you_have_no_projects_to_manage: Vous n'avez pas de projet à gérer.
+      breadcrumbs:
+        coaches_consultants: Consultants
+        search_by: Rechercher par
+      child_node_content:
+        organizationorganization_typen: "%{organizationorganization_typen} (cliquer pour gérer)"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou} %{tsharedcertified_consultants}"
+      content:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} consultant?"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} consultant"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount} %{tsharedpeople}"
+      modals:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} %{parentorganization_typename}?"
+        thomeindexyes_delete_this_pare: "%{thomeindexyes_delete_this} %{parentorganization_typename}"
+        tsharedcancel: "%{tsharedcancel}"
+        tsharedsave_changes: "%{tsharedsave_changes}"
+      organization_users:
+        practitioners_userstotal_count: "(%{userstotal_count}) Consultants"
+      search_organization:
+        click_to_manage: "(cliquer pour gérer)"
+        manage_consultants: "(gérer les consultants)"
+        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization} %{tsharedwere_found}"
+        thomeindexare_you_sure_want_to: ' "%{thomeindexare_you_sure_want_to} consultant?"'
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} consultant"
+      sidebar:
+        add: Ajouter
+  i18n:
+    transliterate:
+      rule:
+        ü: u
+  javascript:
+    1st_option: 1ere option
+    2nd_option: 2e option
+    add_another_company: ajouter une autre compagnie
+    admin_role_name: Administrateur du système
+    ajax_popup_error: Le contenu ne peut être chargé.
+    apt_suite_bldg: Appartement, suite, bâtiment...
+    binder_with_tabs: Cartable 3-anneau avec des onglets et des pages imprimées à donner au participant.
+    browse_file: Parcourir fichier
+    cancel_schedule_announcement: Êtes-vous certain? L'horaire sera annulé et les courriels seront envoyés dans les 15 prochaines minutes.
+    choose_age_ranges: Choisissez Ranges âge
+    choose_countries: Choisissez pays
+    choose_direct_report_ranges: Choisissez Rapport Direct Ranges
+    choose_education_levels: Choisissez les niveaux d'éducation
+    choose_ethnic_groups: Choisissez les groupes ethniques
+    choose_industries: Choisissez Industries
+    choose_management_levels: Choisissez les niveaux de gestion
+    choose_professions: Choisissez professions
+    click_the_link_below_and_we_will_contact: Cliquez sur le lien ci-dessous et un entraîneur entrera en contact avec vous et vous guidera à travers le processus.
+    coach_report: Rapport du consultant
+    company_revenue: Revenus de la compagnie
+    completion_date_asc: Date d'achèvement (asc)
+    completion_date_desc: Date d'achèvement (déc)
+    contact_info: Informations de contact
+    correct_email_required: S'il vous plaît, entrer un format adéquat pour le courrier électronique
+    created_at: 'Créé à:'
+    custom_demographics: Démographies personnalisées
+    default_demographics: Démographies par défaut
+    deliverable_options: Options de Livrer
+    delivery_options: Options de livraison
+    did_you_enjoy_your_survey_taker: Avez-vous aimé votre sondage? Faites le sondage aperçu 360 degrés du <b>profil du cercle de leadership</b> et découvrez comment vos principaux intervenants (patrons, pairs, rapports directs et autres) ressentent votre leadership. La connaissance approfondie venant de l'aperçu 360 degrés du profil du cercle de leadership vous permettra de devenir beaucoup plus efficace et magistral dans l'art et la pratique du leadership.
+    email_required: Un courriel est requis
+    error: Une erreur s'est produite!
+    filter_by_role: Filtrer par rôle
+    first_name_required: Un prénom est requis
+    full_path: 'Chemin complet:'
+    gcsr_role_name: CSR Global
+    granted_at: Accordé à
+    graph_high: Haut
+    graph_identity: Identity fr
+    graph_low: Bas
+    graph_medium: Medium fr
+    high: Haute
+    invite_another_user: Inviter un autre utilisateur
+    language_required: S'il vous plaît, choisir une langue
+    last_name_required: Un nom de famille est requis
+    leaders_managers_eval: Dans cette section, vous évaluerez les leaders/gestionnaires de/du
+    low: Faible
+    members_eval: Dans cette section, vous évaluerez les membres de/du
+    message_required: Un message est requis
+    minimum_evaluations_per_participant: Le nombre minimum d'évaluateurs (%{min_count}) doit être invité à permettre à l'enquête de l'auto.
+    never_sent: Jamais envoyé
+    no_record_found: 'Aucun enregistrement correspondant n''a été trouvé:'
+    organization_and_report_type: Organisation et Type de rapport
+    organization_small: organisation
+    participant_graph: Graphique du participant
+    participant_report: Rapport du participant
+    please_wait: S'il vous plaît, patientez...
+    preparing: Préparation en cours. S'il vous plaît, patientez.
+    processing: Traitement en cours
+    project_access_control: Le contrôle d'accès de projet
+    project_access_control_description: Accès Projet d'examen de l'utilisateur
+    project_details: Détails du Projet
+    project_name_placeholder: ' Directeur Général, Directeur, Directeur, équipe de direction ...'
+    project_time_zone: Fuseau horaire du projet
+    relationship_required: S'il vous plaît, choisir une relation
+    report_options: Rapport sur les options
+    role: Rôle
+    search_results: Résultats de la recherche
+    select_age: Sélectionnez votre âge
+    select_client: Sélectionnez client
+    select_consulting_company: Sélectionnez Consulting Company
+    select_country: Sélectionner le pays
+    select_ethnic_group: Sélectionnez votre groupe ethnique
+    select_industry: Sélectionnez Industrie
+    select_practitioner: Sélectionner le consultant
+    select_region: Sélectionnez une province ou région
+    select_your_companys_industry: Sélectionnez l'industrie de votre entreprise
+    select_your_education_level: Sélectionnez votre niveau d'éducation
+    select_your_gender: Sélectionnez votre genre
+    select_your_management_level: Choisissez votre niveau de gestion
+    select_your_profession: Sélectionnez votre profession
+    select_your_residing_country: Sélectionnez votre pays de résidence
+    select_your_number_of_direct_reports: Sélectionnez rapporte directement
+    sent_on: Envoyé sur
+    size_of_organization: Taille de l'organisation
+    street_address_example: Adresse de rue (222 avenue Laurin)...
+    subject_required: Un sujet est requis
+    surveys_focus: 'Définissez l’accent de votre sondage (ex.: marketing, ventes, ressources humaines, etc.)'
+    team_small: équipe
+    type: 'Type:'
+    type_the_referral_email: Tapez l'e-mail de référence
+    type_user_email: entrez le courriel de l'utilisateur...
+    type_your_company_name: Tapez le nom de votre entreprise...
+    user_email: Utilisateur Email
+    user_name: Nom d'utilisateur
+    user_role_name: Utilisateur
+    zip_post_code: Code postal...
+    password_hint: Le mot de passe doit contenir 8 caractères minimum avec au moins un chiffre (0-9) et une lettre majuscule (A-Z). Vous ne pouvez pas utiliser l'un de vos 8 mots de passe précédents.
+  kaminari:
+    next_page:
+      next: Suivant
+    prev_page:
+      prev: Précédent
+  low: Bas
+  mailer:
+    reminder:
+      body_1: Il semble que vous n'avez pas encore terminé votre sondage. Si vous souhaitez continuer à participer, cliquez ci-dessous!
+      body_2: 'Suivez ce lien vers le sondage:'
+      body_3: SVP, notez que votre enquête doit être complétée d'ici le %{planned_completion_date}.
+      header: Cher (chère) %{practitioner_full_name},
+      regards: Cordialement, l'équipe du Cercle de Leadership
+      subject: "%{product_name} Rappel"
+    welcome:
+      subject: Bienvenue à la plateforme sondage!
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Mille
+          trillion: Trillion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  order_steps:
+    deliverable_options:
+      next: Suivant
+      previous: Précédent
+    delivery_options:
+      cancel_order: Annuler la commande
+      create_report: Créer un rapport
+      previous: Précédent
+    group_report_summary:
+      cancel_order: Annuler la commande
+      pdf_report: Rapport PDF
+      selected_count_tordersgr_summa: "(%{selected_count} %{tordersgr_summaryparticipants_})"
+      tordersgr_summarybilling_conta: "%{tordersgr_summarybilling_conta}:"
+      tordersgr_summaryorganization: "%{tordersgr_summaryorganization}:"
+      tordersgr_summaryreport_contac: "%{tordersgr_summaryreport_contac}:"
+      tordersgr_summaryreport_due_da: "%{tordersgr_summaryreport_due_da}:"
+      tordersgr_summaryreport_metric: "%{tordersgr_summaryreport_metric}:"
+      tordersgr_summaryreview_report: "%{tordersgr_summaryreview_report}"
+      tordersgr_summaryselected_part: "%{tordersgr_summaryselected_part}:"
+      tordersindexreport_name: "%{tordersindexreport_name}:"
+      tshareddemographicpluralize: "%{tshareddemographicpluralize}:"
+      tsharedreportpluralize: "%{tsharedreportpluralize}:"
+    organization_and_report_type:
+      cancel_order: Annuler la commande
+      next: Suivant
+    partials:
+      address_modal:
+        select_from_my_account_address: Choisissez parmi vos adresses au compte
+        there_are_no_addresses_related: Il n'y a pas d'adresse liée à l'utilisateur
+      contact_info:
+        billing_address: Adresse de facturation
+        new_address: Nouvelle Adresse
+        report_address: Adresse de rapport
+        same_as_the_billing_address: Même que l'adresse de facturation
+        select_an_address_from_my_acco: Choisissez parmi vos adresses au compte
+        this_is_the_address_where_the_: Ceci est l'adresse où les copies imprimées du rapport participant, participant graphique et consultant seront livrées.
+        this_is_the_person_or_company_: Ceci est la personne ou l'entreprise à laquelle la facture de la commande sera faite.
+      deliverable_options:
+        coach_report: Rapport du consultant
+        digital_graph: Graphique numérique
+        group_report: Rapport de groupe
+        how_many_copies_per_participan: Combien de copies par participant?
+        i_want_pdf_and_printed_copies_: Je veux des copies des rapports PDF et imprimées.
+        i_want_the_pdf_copies_only: Je veux seulement des copies PDF.
+        participant_graph: Graphique du participant
+        participant_report: Rapport du participant
+        pdf_file_that_practitioner_ema: fichier Pdf que le consultant envoie aux participants
+        please_choose_below_which_ones: 'SVP, choisissez ci-dessous ceux qui vous aimeriez imprimer:'
+        profile_interpretation_manual: Manuel d'interprétation de profil
+        reports: 'Rapports:'
+        you_will_get_a_digital_version: 'Vous obtiendrez une version numérique des éléments suivants:'
+        you_will_get_only_the_digital_: 'Vous ne recevrez que la version numérique du manuel d''interprétation de profil et des rapports suivants:'
+        you_will_get_the_digital_versi: Vous obtiendrez la version numérique du manuel d'interprétation de profil et de tous les rapports.
+        your_project_will_include: 'Votre projet comprendra:'
+    participants:
+      cancel_order: Annuler la commande
+      choose_the_participants_you_wo: Choisissez les participants que vous souhaitez inclure dans le présent rapport.
+      next: Suivant
+      of: " de "
+      only_add_participants_who_have: ajoutez seulement des participants qui ont terminé les sondages.
+      organizationname: "%{organizationname}"
+      participants_selected: participants sélectionnés
+      previous: Précédent
+      select_all_available_participa: Sélectionnez tous les participants disponibles de cette compagnie
+      select_participants: Sélectionnez les participants
+    project:
+      add_all_participants: Ajoutez tous les participants
+      of: of
+      participants_selected: participants sélectionnés
+    report_options:
+      cancel_order: Annuler la commande
+      choose_metrics: Choisissez des caractéristiques
+      how_calculation_is_made: Comment le calcul est fait
+      next: Suivant
+      previous: Précédent
+      report_demographics: Démographie des rapports
+      report_language: Langue des rapports
+  orders:
+    details:
+      coach_report: 'Rapport du consultant:'
+      comment_questions: 'Commentez:'
+      copies_per_participant: nombre de copies par participant
+      copy_per_participant: nombre de copie par participant
+      demographics: 'Démographie:'
+      included_participants: 'Participants inclus:'
+      participant_graph: 'Graphique du participant:'
+      participant_report: 'Rapport du participant:'
+      participants:
+        one: 1 participant
+        other: "%{count} participants"
+      processing_date: 'Date de traitement:'
+      product_type: 'Type de produit:'
+      profile_interpretation_manual: 'Manuel d''interprétation de profil:'
+      report_type: 'Type de rapport:'
+      utilties_order_details: DÉTAILS DE LA COMMANDE
+    gr_summary:
+      billing_contact: Contact de facturation
+      coach_report: Rapport du consultant
+      organization: Organisation
+      participant_graph: Graphique du participant
+      participant_report: Rapport du participant
+      participants_selected: Participants sélectionnés
+      place_order: Passer la commande
+      report_contact: Contact du rapoprt
+      report_due_date: Date d'échéance du rapport
+      report_metrics: Caractéristiques du rapport
+      review_report_summary: SVP, LIRE VOTRE RAPPORT SOMMAIRE
+      selected_participants: Participants sélectionnés
+    index:
+      actions: Actions
+      active_orders: Commandes actives
+      all_orders: Toutes les commandes
+      delete_order: Supprimer la commande
+      finished_orders: Terminer la commande
+      my_orders: Mes commandes
+      number_of_participants: Nombre de participants
+      order: Commande
+      order_date: Date de la commande
+      owner: Hôte
+      print_reports: Imprimer les rapports
+      product_type: Type de produit
+      report_name: Nom du rapport
+      sort_by_company: Trier par compagnie
+      sort_by_number_of_participants: Trier par nombre de participants
+      sort_by_ordered_date: Trier par date de commande
+      sort_by_product: Trier par produit
+      sort_by_report_name: Trier par nom de rapport
+      utilties_order: 'Commande #'
+    order:
+      see_order: Voir la commande
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    partials:
+      pick_order_modal:
+        cancel: Annuler
+        choose_order: Choisir une commande
+        choose_order_for_project: Choisissez une commande pour le projet
+        date_order_number: Date / numéro de commande
+        locreated_atto_date_format_lon: "%{locreated_atto_date_format_lon} / %{oorder_number}"
+    prepare_download:
+      cancel: Annuler
+      download_reports_zip: Télécharger les rapports (ZIP)
+      please_wait: SVP, patientez ...
+      preparing_reports_for_download: Préparation des rapports à télécharger
+    printed_participant:
+      digital_reports_to_be_sent_pdf: Rapports numériques à être envoyés (PDFs)
+      download_copies_ordersingle_re: Télécharger les copies (%{ordersingle_report_copies_coun})
+      download_manual: Télécharger le manuel
+      evaluators_printed_participant: 'Évaluateurs: %{printed_participantparticipant} de %{printed_participantparticipant} complété'
+      manual_to_be_printed: Manuel à imprimer
+      mark_all_as_not_printed: Marquer tout comme non imprimé
+      mark_all_as_not_sent: Marquer tout comme non envoyé
+      mark_all_as_printed: Marquer tout comme IMPRIMÉ
+      mark_all_as_sent: Marquer tout comme ENVOYÉ
+      mark_all_as_shipped: Marquer tout comme EXPÉDIÉ
+      printed_participantparticipant: "(%{printed_participantparticipant})"
+      reports_to_be_printed: Rapports à imprimer
+      self_survey_printed_participan: 'Auto-évaluation: %{printed_participantstatus}'
+      send_digital_reports: Envoyer les rapports numériques
+      status_printed_participantmanu: 'Statut: %{printed_participantmanual_repo}'
+      status_printed_participantprin: 'Statut: %{printed_participantprint_repor}'
+      status_printed_participantsend: 'Statut: %{printed_participantsend_report}'
+    show:
+      billing_contact: Contact de facturation
+      binder_contact: Contact du cartable/classeur
+      coaching_report: 'Rapport du consultant:'
+      comment_questions: 'Commentez:'
+      company: Compagnie
+      demographics: 'Démographies:'
+      download_profile_interpretatio: Télécharger le manuel d'interprétation de profil (PDF)
+      download_reports_zip: Télécharger les rapports (ZIP)
+      find_the_order_details_below_y: Voir les détails de la commande ci-dessous. Vous pouvez également télécharger un fichier zip avec tous vos rapports PDF.
+      included_participants: 'Participants inclus:'
+      list_of_participants: Liste des participants
+      order_details: Détails de la commandes
+      order_number: 'Numéro de commande:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} copies"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} copies par participant"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} copies par participant"
+      participant_graph: 'Graphique du participant:'
+      participant_report: 'Rapport du participant:'
+      pdf: PDF
+      planned_completion_date: 'Date d''échéance prévue:'
+      print_order_details_pdf: Imprimer les détails de la commande (PDF)
+      processing_date: 'Date de traitement:'
+      product_type: 'Type de produit:'
+      profile_interpretation_manual: 'Manuel d''interprétation de profil:'
+      questions_about_your_order: Questions concernant votre commande?
+      report_contact: Contact du rapport
+      report_name: 'Nom du rapport:'
+      report_type: 'Type de rapport:'
+      show_project: Voir le project
+      thank_you_for_your_order: Nous vous remercions de votre commande.
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    show_print_report:
+      1_copy: 1 copie
+      3_copies_per_participant: 3 copies par participant
+      Demography: 'Démographie:'
+      action: Action
+      application:
+        order_not_valid: La commande n'est pas valide
+        reports_sent: Rapports envoyés
+        statuses_updated: Statuts mis à jour
+      coach_report: Rapport du consultant
+      coach_rpt: Rpt. consultant
+      coaching_report: 'Rapport d''entraînement:'
+      comment_questions: 'Commentez:'
+      company: Compagnie
+      complete: Complété
+      deliverable_instructions: Instructions des livrables
+      demographics: 'Démographies:'
+      digital_reports: 'Rapports numériques:'
+      digital_rpt: Rpt. numériques
+      download_all_copies_ordercopie: Télécharger toutes les copies (%{ordercopies_count})
+      download_all_manuals_orderused: Télécharger tous les manuels (%{orderused_languagescount})
+      english_manual: 'Manuel anglais:'
+      evaluators: Évaluateurs
+      find_below_all_the_deliverable: Trouvez ci-dessous tous les résultats attendus pour cette commande, ainsi que les informations d'expédition pour chacune d'elles.
+      graph: Graphique
+      included_participants: 'Participants inclus:'
+      manual: Manuel
+      mark_all_digital_reports_as_no: Marquer tout rapport numérique comme non envoyé
+      mark_all_digital_reports_as_se: Marquer tout rapport numérique comme ENVOYÉ
+      mark_all_printed_copies_as_not: Marquer toutes copies comme non imprimées
+      mark_all_printed_copies_as_pri: Marquer toutes copies comme IMPRIMÉES
+      mark_all_printed_copies_as_shi: Marquer toutes copies comme EXPÉDIÉES
+      mark_order_as_finished: Marquer la commande comme terminée
+      no_participants: Aucun participant
+      order_details: Détails de la commande
+      order_number: 'Numéro de commande:'
+      order_participantparticipantco: "%{order_participantparticipantco} de %{order_participantparticipantev}"
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} copie(s)"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} copie(s) par participant"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} copie(s) par participant"
+      participant: Participant
+      participant_graph: Graphique du participant
+      participant_report: Rapport du participant
+      participants_orderself_surveys: Participants (%{orderself_surveyscount})
+      pdf: PDF
+      pdfs: PDFs
+      planned_completion_date: 'Date d''échéance prévue:'
+      print_and_ship_copies_of_the_f: 'Imprimer et expédier les copies des rapports suivants:'
+      printed: Imprimé(es)
+      printed_copies: 'Copies imprimées:'
+      processing_date: 'Date de traitement:'
+      product_type: 'Type de produit:'
+      profile: Profil
+      profile_interpretation_manual: 'Manuel d''interprétation de profil:'
+      questions_about_your_order: Questions concernant votre commande?
+      report_name: 'Nom du rapport:'
+      report_type: 'Type du rapport:'
+      self_survey: Auto-évaluation
+      send_digital_reports_pdfs: Envoyer les rapports numériques (PDFs)
+      send_the_pdf_version_of_the_fo: 'Envoyer la version PDF des rapports suivants:'
+      sent: Sent
+      ship_the_3ring_binder_with_tab: Expédier le cartable 3-anneau avec des onglets et des pages imprimées
+      shipping_info: 'INFORMATION D''EXPÉDITION:'
+      status: 'Statut:'
+      submit: Soumettre
+    show_send_digital_reports:
+      cancel: Annuler
+      consultantcoach_orderprojectco: 'Consultant/Coach: %{orderprojectconsultant_orderpr}'
+      send_digital_reports: Envoyer les rapports numériques
+      send_digital_reports_to_practi: Envoyer les rapports numériques au consultant
+  organization_users:
+    new:
+      tsharedadd_consultant_tsharedt: "%{tsharedadd} Consultant %{tsharedto} '%{organizationname}'"
+  organizations:
+    actions:
+      tsharedadd_typename: "%{tsharedadd} %{typename}"
+    collab:
+      add_and_delete_shared_users: Vous pouvez ajouter ou supprimer des utilisateurs partagés à tout moment
+      allow_users_edit_view: Permettre aux utilisateurs de modifier et visionner
+      certified_consultants: consultants
+      collaborators_for: Collaborateurs pour
+      delete_collaborator: Supprimer le collaborateur
+      invite_more_people: Inviter d'autres personnes
+      invite_user_by_typing_email: Inviter un nouvel utilisateur en entrant son courriel ci-dessous
+      sharing_access_certified_consultant: Partager l'accès donne à l'autre consultant la même fonctionnalité que vous avez en tant qu'hôte
+      sharing_top_level_company: Partager à partir d'un niveau supérieur (de la compagnie) octroiera l'accès à tout niveau inférieur (groupes de produits et participants).
+      this_licensor_is_not_shared: Cette organisation n'est pas partagée présentement
+    collaborator:
+      success: Succès!
+    collaborators:
+      role_urolename: 'Rôle: %{urolename}'
+      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount} %{torganizationscollabcertified_}"
+    delete_collaborator:
+      success: Succès!
+    dnd:
+      drag:
+        add_user: Ajouter un utilisateur
+        confirmation: Confirmation
+        confirmation_text_goes_here: Mettre le texte de confirmation ici ...
+        finish: Terminer
+        next: Suivant
+        organizations_type: Type d'organisation
+        please_confirm_user_permission: SVP, confirmez les autorisations des utilisateurs pour cette organisation. Vous n'avez pas à changer quoi que ce soit. Les utilisateurs affectés aux organisations parentés seront ajoutés automatiquement.
+        previous: Précédent
+        privilages: Privilèges
+        role: Rôle
+        user: Utilisateur
+        you_are_about_to_move_one_orga: Vous êtes sur le point de déplacer une organisation vers une autre. SVP, vérifier si le type d'organisation que vous souhaitez déplacer est correct. Vous pouvez également modifier le type ici. Ci-dessous sont les types d'organisations autorisées.
+      user:
+        remove: Retirer
+    form:
+      tsharedname: "%{tsharedname}:"
+    help:
+      tree_help:
+        quick_help: Aide rapide
+        to_edit_add_users_or_add_a_new: Pour modifier ou ajouter des utilisateurs, il suffit de cliquer dans l'arborescence et sélectionnez l'action souhaitée parmi la liste qui se trouve dans le coin supérieur droit du panneau d'arborescence.
+        to_find_an_organization_simply: Pour trouver une organisation simplement commencer à taper dans la case ci-dessous, lorsque vous avez terminé appuyez sur Entrée.
+        to_move_the_organization_to_an: pour déplacer l'organisation vers une autre organisation, simplement glisser-déposer
+    modals:
+      delete_organization:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} cette organisation"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_orga: "%{thomeindexyes_delete_this} organisation"
+    move:
+      success: Succès!
+    new:
+      active_consultant_label_info: Si le consultant n'est pas marqué comme actif, son compte sera suspendu et il n'aura plus accès au système.
+      administrator_email: Courriel de l'administrateur
+      administrator_first_name: Prénom de l'administrateur
+      administrator_last_name: Nom de famille de l'administrateur
+      choose_countries: Choisir les pays
+      coach_consultant_email: Courriel du consultant
+      coach_consultant_first_name: Prénom du consultant
+      coach_consultant_last_name: Nom de famille du consultant
+      coach_consultant_name: Nom complet du consultant
+      company_client_name: Nom du client
+      consultant_label_info: Un consultant qui ne travaille pas à l'interne, mais plutôt avec plusieurs clients et organisations
+      contract_start_date: Date de début du contrat
+      countries_covered: Pays couverts
+      must_be_certified: cela doit être le courriel du consultant
+      select_an_industry: Sélectionnez une industrie
+      the_project_center: le centre de projets
+      this_active_consultant: Ceci est un consultant actif
+      this_independent_consultant: Ceci est un consultant indépendant
+      top_node: Niveau supérieur
+      torganizationsnewmust_be_certi: "(%{torganizationsnewmust_be_certi})"
+      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} '%{parentname}'"
+      type_the_name_of_coach_consultant: Tapez le nom du coach/consultant
+      type_the_name_of_company_client: Tapez le nom du client
+      type_the_name_of_the: Tapez le nom du
+      you_are_adding_a: Vous ajoutez un(e)
+    roles:
+      collaborator:
+        delete: Supprimer
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{organizationname}"
+    search:
+      local: Local
+      search_by: Trier par
+      search_by_company_participant_evaluator: Rechercher par compagnie / participant / évaluateur
+      searching: Recherche en cours ...
+    share:
+      success: Succès!
+    show:
+      event: Évènement
+      history: Historique
+      impersonate: Empruntez l'identité de quelqu'un
+      no_child_data: Aucune donnée filleul trouvée!
+      organization_information: Information sur l'organisation
+      tshareddate_created: "%{tshareddate_created}:"
+    undo_share:
+      success: Succès!
+    アクション:
+      tsharedadd_typename: La part a été ajoutée pour %{tsharedadd} %{typename}
+  participants:
+    cannot_destroy:
+      cannot_delete_the_selected_par: 'Vous ne pouvez pas supprimer le participant sélectionné parce que le dossier est associé à d''autres données qui ne peuvent pas être supprimées. SVP, vérifier la liste ci-dessous:'
+      orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
+      orders: 'Commandes:'
+    evaluators:
+      add_evaluator: Ajouter un évaluateur
+      start_adding_evaluators_now: Commencez à ajouter un évaluateur maintenant.
+      this_participant_has_no_evalua: Ce participant n'a pas évaluateur.
+    form:
+      form:
+        action_text: "%{action_text}"
+        cancel_changes: Annuler les changements
+        delete_participant: Supprimer le participant
+    import_csv:
+      close: Fermer
+      importing_participants: Importer les participants
+      please_wait: SVP, patientez ...
+    import_participants:
+      email_address: Adresse courriel
+      empty_row: Rangée vide
+      existing_first_name: 'Prénom existant:'
+      existing_last_name: 'Nom de famille existant:'
+      first_name: Prénom
+      is_there_something_wrong_uploa: Y a-t-il quelque chose qui ne fonctionne pas? Téléverser un nouveau fichier
+      its_right_complete_import: Terminé! Importation complétée
+      last_name: Nom de famille
+      strongparticipantscount_partic: "<strong>%{participantscount} participant(s)</strong> ont été trouvés. SVP, confirmer l'association:"
+      user_with_this_email_already_e: Un utilisateur avec ce courriel existe déjà
+    import_participants_modal:
+      cancel: Annuler
+      import_participants_from_csv_f: Importer les participants d'un fichier CSV
+      upload_participants: Télécharger les participants
+      upload_your_csv_file: 'Télécharger votre fichier CSV:'
+    index:
+      completion_date_is_over: La date d'échéance est passée.
+      download_participants_csv_status: Télécharger les détails du statut du participant en CSV
+      evaluator_status: Statut de l'évaluateur
+      got_it: Compris!
+      participant_details: Détails du participant
+      projectself_surveyswherestatus: "%{projectself_surveyswherestatus} participants n'ont pas fini leur auto-évaluation et %{projectparticipantswith_not_en} n'ont pas suffisamment d'évaluations. Vous pouvez déplacer les participants à d'autres projets jusqu'à la date (%{projectreport_datestrftimeb_d_})."
+      self_survey_status: Statut de l'auto-évaluation
+    logs_modal:
+      created_logsnew: 'Créé: %{logsnew}'
+      failed_logsfailed: 'Échoué: %{logsfailed}'
+      got_it: Compris!
+      import_is_done: L'importation est terminée.
+      import_logs: 'Journal de l''importation:'
+      not_changed_logsuntouched: 'Inchangé: %{logsuntouched}'
+      participant_groups_logsgroups: 'Groupes de participants: %{logsgroups}'
+      total_participants_logstotal: 'Participants total: %{logstotal}'
+      updated_logsupdated: 'Mis à jour: %{logsupdated}'
+    manage_group:
+      continue_managing_your_group: Continuer la gestion de votre groupe
+      edit_evaluators_invitation: Éditer l'invitation de l'évaluateur
+      edit_participants_invitation: Éditer l'invitation du participant
+      participants_can_be_added_to_y: Les participants peuvent maintenant être ajoutés à votre nouveau groupe ou à une date ultérieure
+      send_all_new_emails: Envoyer tous les nouveaux courriels
+    participant_header:
+      add_participants: AJOUTER LES PARTICIPANTS
+      choose_products: Choisir des produits
+      confirm_order: CONFIRMER LA COMMANDE
+      edit_invitation_email: Éditer le courriel d'invitation
+      review_order_details: Réviser les détails de la commande
+      select_options: Sélectionner les options
+      send_emails: Envoyer les courriels
+      setup_group: PRÉFÉRENCES DE GROUPE
+      update_addresses: Mettre à jour les adresses
+    send_email_to_evaluator:
+      last_reminder_sent_on_surveyem: Dernier rappel envoyé le %{surveyemail_sent}
+    send_email_to_participant:
+      last_reminder_sent_on_surveyem: Dernier rappel envoyé le %{surveyemail_sent}
+    show_evaluator:
+      evaluation_status: Statut de l'évaluation
+      language: Langue
+      last_reminder_never_sent: Dernier rappel jamais envoyé
+      last_reminder_sent_on: Dernier rappel envoyé le
+      relationship: 'Lien de parenté:'
+      send_reminder: Envoyer l'invitation
+      surveycompleted_questions_coun: "%{surveycompleted_questions_coun} %{tsharedof} %{surveyquestions_count} %{tsharedquestions}"
+      surveyevaluatortryfirst_name_s: "%{surveyevaluatortryfirst_name} %{surveyevaluatortrylast_name}"
+      tparticipantsshow_evaluatorlan: "%{tparticipantsshow_evaluatorlan}: %{surveyevaluatorlanguagename}"
+      tparticipantsshow_evaluatorlas: "%{tparticipantsshow_evaluatorlas} %{surveyemail_sent}"
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_atto_date_for}"
+    show_participant:
+      completed_on_lparticipantself_: Complété le %{lparticipantself_surveycomplet}
+      edit_participant: Éditer le participant
+      email_participantuseremail: 'Courriel: %{participantuseremail}'
+      language_participantuserlangua: 'Langue:  %{participantuserlanguagename}'
+      na: n/a
+      participantcompleted_evaluatio: "%{participantcompleted_evaluatio} de %{participantevaluationscount} évaluateurs"
+      participantself_surveycomplete: "%{participantself_surveycomplete} de %{participantself_surveyquestion} questions"
+      participantuserfirst_name_part: "%{participantuserfirst_name} %{participantuserlast_name}"
+      resend_reports_to_gcsr: Renvoyer les rapports à GCSR
+      send_invite: Envoyer l'invitation
+    sort_options:
+      evaluator_status: Trier par statut d'évaluateur
+      number_of_evaluators: Trier par nombre d'évaluateur
+      participant_name: Trier par nom du participant
+      survey_status: Trier par statut d'auto-évaluation
+  people:
+    account_notification_title: Mise à jour du compte
+    account_updated: Le compte a été mise à jour!
+    active_management:
+      error: Erreur
+      success: Succès
+    cannot_delete: Impossible de supprimer; il y a encore des projets attachés à cet utilisateur.
+    destroy:
+      success: Succès!
+    index:
+      disabled: Désactivé
+      filtering_by_client: 'Trier par client:'
+      invite_new_users: Inviter des nouveaux utilisateurs
+      invited: Invité(s)
+      join_date: Date d'inscription
+      self_assessment: Auto-évaluation
+      shared_organizations: Organisations partagées
+      sort_by: Trier par
+      sort_by_join_date: Trier par date d'adhésion
+      sort_by_org_number: Trier par nombre de compagnie
+      sort_by_user_name: Trier par nom d'utilisateur
+      survey_takers: Répondants
+      user_details: Détails de l'utilisateur
+      users: Utilisateurs
+    manual_unlock:
+      error: Une erreur s'est produite!
+      success: Succès!
+    new:
+      choose_the_user_main_role_you_: Choisissez le rôle principal de l'utilisateur. Vous pouvez modifier les privilèges plus tard.
+      invite_another_user: Inviter un autre utilisateur
+      invite_new_users: Inviter un nouvel utilisateur(s)
+    partials:
+      active_surveys:
+        company: Compagnie
+        completed: complété
+        completion_date: Date complétée
+        evaluated: 'Évalué:'
+        evaluation_surveyscount_people: "%{evaluation_surveyscount} personne(s)"
+        no_completed_evaluating_survey: Aucun sondage d'évaluation complété.
+        no_completed_self_surveys: Aucune auto-évaluation complétée
+        no_evaluating_surveys_to_compl: Aucun sondage à compléter.
+        no_self_surveys_to_complete: Aucune auto-évaluation à compléter.
+        not_valid: invalide
+        participant_and_product_type: Type de produit et participant
+        product_type: Type de produit
+        project: Projet
+        self_survey: Auto-évaluation
+        self_surveyscount_self_survey: "%{self_surveyscount} auto-évaluation(s)"
+        to_complete: 'à compléter:'
+        to_evaluate: 'à évaluer:'
+      settings:
+        a_practitioner_that_does_not_w: Un consultant qui ne travaille pas à l'interne, mais plutôt avec plusieurs clients et organisations.
+        account_status: Statut du compte
+        delete_account_person_pathuser: Supprimer le compte
+        'false': Non
+        gcsr_or_system_administrator_h: Le GCSR ou l'administrateur système ont accès à toutes les organisations.
+        is_this_an_independent_practit: Est-ce un consultant indépendant?
+        'no': non
+        practitioner_information: Information du consultant
+        the_referring_practitioner_wil: Le consultant parrain recevra un profil gratuit.
+        this_user_has_been_active_sinc: Cet utilisateur est actif depuis
+        user_role: Rôle de l'utilisateur
+        users_can_only_manage_the_orga: Les utilisateurs ne peuvent seulement gérer les organisations qui ont été partagées avec eux.
+        was_this_practitioner_referred: Est-ce que ce consultant a été référré par un autre consultant déjà au système?
+        'yes': Oui
+      shared_organization:
+        edit_user_role: Modifier le rôle de l'utilisateur
+        shared_organizationorganizatio: "(%{shared_organizationorganizatio})"
+      shared_organizations:
+        are_being_shared_with: sont partagés avec
+        new_shared_organization: Nouvelle(s) organisation(s) partagée(s)
+        role: Rôle
+        shared_organizations: Organisation(s) partagée(s)
+        type: Type
+        userfull_name: "%{userfull_name}:"
+        userorganization_userscount_or: "%{userorganization_userscount} organisation(s)"
+      surveys:
+        active_surveys_useractive_surv: Sondage actif (%{useractive_surveyscount})
+        survey_history_userhistorical_: Historique de sondage (%{userhistorical_surveyscount})
+      user_information:
+        address: Adresse
+        date_of_birth: 'Date de naissance:'
+        edit: Modifier
+        education: 'Éducation:'
+        email: 'Courriel:'
+        full_name: 'Nom complet:'
+        gender: 'Genre:'
+        language: 'Langue:'
+        number_of_direct_reports: 'Nombre de rapports directs:'
+        organization_level: 'Niveau d''organisation:'
+        personal_information: Information personnelle
+        phone_number: Numéro de téléphone
+        profession: 'Profession:'
+        professional_information: Information professionnelle
+        residing_country: 'Pays de résidence:'
+        you_havent_added_any_addresses: Vous n'avez pas ajouté d'adresse.
+        you_havent_added_any_phone_num: Vous n'avez pas ajouté de numéro de téléphone.
+      user_information_address:
+        user_information_addressname: "%{user_information_addressname}:"
+        user_information_addressregion: "%{user_information_addresscity}, %{user_information_addressregion}"
+      user_information_phone:
+        user_information_phonename: "%{user_information_phonename}:"
+    person:
+      consultant: Consultant
+      csr: CSR
+      gcsr: GCSR
+      manage_user: Gérer l'utilisateur
+      system_administrator: Administrateur de système
+    roles:
+      added_successfully: L'utilisateur a correctement été attribué à l'organisation!
+      edit_user_role:
+        cancel: Annuler
+        companyname: "''%{companyname}''"
+        remove_access_to_this_organiza: Supprimer l'accès à cette organisation
+        role_on: rôle actif
+        save: Sauvegarder
+        select: Sélectionner
+        userfirst_names: "%{userfirst_name}''s"
+      new_user_role:
+        choose_an_organization_to_shar: Choisissez une organisation avec qui partager
+        share_organization: Partager l'organisation
+        user_role: 'Rôle de l''utilisateur:'
+      title: Rôles de l'utilisateur
+    send_unlock_instructions:
+      error: Une erreur s'est produite!
+      success: Succès!
+    show:
+      account_status: 'Statut du compte:'
+      are_you_sure: Are you sure?
+      delete_account: Supprimer le compte
+      disable_account: Désactiver le compte
+      enable_account: Activer le compte
+      send_unlock_instructions: Envoyer les instructions pour déverrouiller
+      settings: Settings
+      shared_organizations: Shared Organizations
+      surveys: Surveys
+      unlock_account: Déverrouiller le compte
+      user_information: User Information
+    users:
+      sort_by: Trier par
+      sort_by_join_date: Trier par date d'enregistrement
+      sort_by_org_number: Trier par numéro dans l'organisation
+      sort_by_user_name: Trier par nombre d'utilisateurs"
+  phones:
+    index:
+      add_phone: Ajouter un numéro de téléphone
+      name: Nom
+      number: Numéro
+    phone:
+      delete: Supprimer
+  project_steps:
+    contact_info:
+      create_project: Créer un projet
+      previous: Précédent
+    deliverable_option:
+      next: Suivant
+      previous: Précédent
+    project_detail:
+      124_questions: 124 questions
+      62_actual_and_62_ideal_culture: 62 questions d'actualité et 62 de culture idéale
+      84_questions: 84 questions
+      8_summary_and_29_outer_dimensi: 6 sommaires et 21 sur dimensions extérieures
+      8_summary_and_31_outer_dimensi: 8 sommaires et 31 sur dimensions extérieures
+      audience_is_csuite_presidents_: L'audience est exécutifs, présidents, vice-présidents, directeurs, détenteurs d'un MBA, leaders à haut potentiel
+      audience_is_midlevel_managers_: L'audience est gestionnaires intermédiaires, superviseurs, détenteurs d'un MBA, leaders d'équipe, "leaders émergeant"
+      choose_a_name_that_will_help_y: Choisissez un nom qui vous aidera à identifier les participants
+      choose_an_existing_client: choisir un client existant
+      client: Client
+      consulting_company: Compagnie de consultation
+      create_a_new_client: créer un nouveau client
+      focus_is_organization_or_team: L'accent est-il sur l'organisation ou l'équipe?
+      leadership_circle_profile: Profil du Cercle de leadership
+      leadership_circle_profile_mana: Profil du Cercle de leadership édition du gestionnaire
+      leadership_culture_survey: Sondage sur la culture de leadership
+      or: ou
+      practitioner: Consultant
+      select_product: Sélectionner un produit
+  projects:
+    collab:
+      add_and_delete_shared_users: Vous pouvez ajouter et supprimer des utilisateurs partagés à tout moment
+      allow_users_edit_view: Permettre aux utilisateurs d'imprimer ou visionner les commandes
+      delete_collaborator: Supprimer le collaborateur
+      invite_more_people: Inviter plus de personnes
+      invite_user_by_typing_email: Inviter un nouvel utilisateur en tapant son courriel ci-dessous
+      printers: Imprimante(s)
+      sharing_access_certified_consultant: Le partage de cet accès donnera l'accès aux commandes à l'autre utilisateur
+      this_licensor_is_not_shared: Ce projet n'est actuellement pas partagé
+    delete_collaborator:
+      success: L'utilisateur a été supprimé du projet.
+    new:
+      itemparameterize: "#%{itemparameterize}"
+      next: Suivant
+      previous: Précédent
+    partials:
+      edit_form:
+        cancel_changes: Annuler les modifications
+        deliverables_and_printing_opti: Options des livrables et impression
+        project_options: Options du projet
+        save_all_changes: Enregistrer toutes les modifications
+      evaluator_invitation:
+        if_you_have_already_sent_a_mes: si vous avez déjà envoyé un message aux participants, vous pouvez renvoyer une mise à jour à partir du projet.
+        invitations: INVITATIONS
+        modifying_this_message_will_ch: Modifier ce message changera le courriel de bienvenue pour tous les participants avec une enquête en langue anglaise.
+        please_do_not_modify_any_text_: S'il vous plaît, ne pas modifier le texte entre crochets ([]). Ce sont des mots-clés qui seront remplacés par des informations sur les participants lorsque le message sera envoyé.
+        reminders: RAPPELS
+        warnings: Avertissements
+      evaluators_blank_slate:
+        add_evaluator: Ajouter l'évaluateur
+        import_evaluators: Importer les évaluateurs
+        start_adding_evaluators_now: Commencez à ajouter des évaluateurs maintenant.
+        there_are_no_evaluators_in_thi: Il n'y a pas d'évaluateurs dans ce projet.
+      header:
+        comments: Commentaires pour l'imprimante
+        client: Client
+        completion_date: Date complétée
+        consulting_settings: Paramètres de consultation
+        consutling_company: 'Compagnie de consultation:'
+        create_group_report: Créer un groupe de rapport
+        delete_project: Supprimer le projet
+        deleteproject: Supprimer le projet
+        generate_draft_reports: Générer projets de rapports
+        practitioner: Consultant
+        printing_access: Accès impression
+        project_id: 'Identité du projet:'
+        project_time_zone: Fuseau horaire du projet
+        rename_project: Renommer le projet
+        run_new_report: Exécutez un nouveau rapport
+        run_report_date: Exécutez la date du rapport
+        send_all_reminders: Envoyer tous les rappels
+        send_new_emails_projectsurveys: Envoyer de nouveaux courriels (%{projectsurveyswhereemail_sent_})
+        shared_with: Partagé avec
+        show_orders: Montrer les commandes
+        starting_date: 'Date de début:'
+        status: 'Statut:'
+        users_project_access: Paramètres partagés
+        view_orders: Voir les commandes
+      import_participants_modal:
+        cancel: Annuler
+        import_participants_from_csv_f: Importer les participants à partir d'un fichier CSV
+        not_sure_about_the_format_of_t: Incertain du format du fichier? <a href='#'>Télécharger un exemple CSV.</a>
+        upload_participants: Télécharger les participants
+        upload_your_csv_file: 'Télécharger votre fichier CSV:'
+      modals:
+        delete_project:
+          thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}"
+          thomeindexunable_to_delete_pro: "%{thomeindexunable_to_delete_pro}"
+          thomeindexyes_delete_this_proj: "%{thomeindexyes_delete_this} projet"
+        no_data_for_preview_warning:
+          at_least_one_survey_must_be_co: Afin que l'aperçu du rapport soit généré, il doit y avoir au moins un sondage de terminé.
+          not_enough_data_to_generate_pr: Nombre de données insuffisant pour générer un aperçu
+        rename:
+          cancel: Annuler
+          please_enter_a_new_name_for_th: 'S''il vous plaît, entrer un nouveau nom pour le projet:'
+          rename_project: Renommer le projet
+          save_changes: Sauvegarder les modifications
+        show_orders:
+          orderorder_number_click: "%{orderorder_number} (cliquez),"
+          projects_orders: Commande du projet
+          the_orders_created_by_a_projec: Les commandes créées par un projet.
+      new_project:
+        address_form:
+          select_an_address_from_my_acco: Sélectionnez une adresse à partir de mon compte
+        address_modal:
+          select_from_my_account_address: Sélectionnez une adresse déjà à mon compte
+          there_are_no_addresses_related: Il n'y a pas d'adresse associée à l'utilisateur
+        contact_info:
+          billing_address: Adresse de facturation
+          binder_address: Adresse du cartable
+          contact_information: Coordonnées du contact
+          new_address: Nouvelle adresse
+          same_as_shipping_address: Même que l'adresse d'expédition
+          same_as_the_billing_address: Même que l'adresse de facturation
+          shipping_address: Adresse d'expédition
+          this_contact_is_the_only_perso: Ce contact est la SEULE personne qui verra toute information de facturation sur The Circle Leadership
+          this_is_the_address_where_the_: Ceci est l'adresse où le cartable 3-anneau sera livré.
+          this_is_the_address_where_the_3_ring: Ceci est l'adresse où le liant 3-anneau sera livré.
+        deliverable_options:
+          binder_with_tabs: '3-anneau sera livré. '
+          coach_report: Rapport de l'entraîneur
+          digital_graph: Graphique numérique
+          group_report: Rapport de groupe
+          how_many_copies_per_participan: Combien de copies par participant?
+          i_want_pdf_and_printed_copies_: Je veux des copies de rapport en PDF et imprimées.
+          i_want_the_pdf_copies_only: Je veux des copies de rapport en PDF seulement.
+          participant_graph: Graphique du participant
+          participant_report: Rapport du participant
+          pdf_file_that_practitioner_ema: Fichier PDF que le consultant envoie par courriel aux participants
+          please_choose_below_which_ones: 'SVP, choisissez ceux que vous aimeriez faire imprimer:'
+          profile_interpretation_manual: Manuel d'interprétation de profil
+          reports: 'Rapports:'
+          you_will_get_a_digital_version: 'Vous recevrez une version numérique des éléments suivants:'
+          you_will_get_only_the_digital_: 'Vous recevrez seulement la version numérique du manuel d''interprétation de profil et des rapports suivants:'
+          you_will_get_the_digital_versi: Vous recevrez la version numérique du manuel d'interprétation de profil et des rapports.
+          your_project_will_include: 'Votre projet comprendra:'
+        demographics:
+          custom:
+            age_ranges: Tranches d'âge
+            all: Tout
+            country: Pays
+            demographic_options: Options démographiques
+            direct_report_ranges: Tranches de rapport
+            education_levels: Niveaux d'éducation
+            ethnic_groups: Groupes ethniques
+            female: Féminin
+            gender: Genre
+            if_you_choose_to_run_a_custom_: Si vous choisissez d'exécuter un rapport personnalisé contre un échantillon démographique trop petit, le résultat pourrait être faussé. La plupart des données démographiques sont disponibles sous la rubrique Ressources. Vous aurez la possibilité de retourner à la sélection démographique par défaut. Contactez votre représentant du service à la clientèle si vous avez des questions.
+            industries: Industries
+            male: Masculin
+            management_levels: Niveaux de gestion
+            professions: Professions
+          summary:
+            age_ranges: 'Tranches d''âge:'
+            countries: 'Pays:'
+            demographic_definition: Définition démographique
+            demographic_details: 'Détails démographiques:'
+            demographic_size: 'Taille démographique:'
+            direct_report_ranges: 'Tranches de rapport:'
+            education_levels: 'Niveaux d''éducation:'
+            ethnic_groups: 'Groupes ethniques:'
+            gender: 'Genre:'
+            industry: 'Industrie:'
+            languages: 'Langue:'
+            lcp_participants: Participants LCP
+            lcs_participants: Participants LCS
+            management_levels: 'Niveaux de gestion:'
+            me_participants: Participants ME
+            participants: participants
+            professions: Professions
+            sa_participants: Participants SA
+            this_is_the_number_of_people_y: Ceci est le nombre de personnes auquel vous comparerez les membres de votre projet.
+        project_details:
+          all_surveys_should_be_complete: Tous les sondages devraient être achevés avant cette date.
+          cancel: Annuler
+          date_reports_are_available: Date à laquelle les rapports seront disponibles.
+          next: Suivant
+          project_options: Options du projet
+          specify_a_timeline_for_the_pro: Spécifiez une chronologie pour le projet
+        project_options:
+          1st_option: Option 1
+          2nd_option: Option 2
+          cancel_schedule_announcement: Annuler l annonce prévue
+          comment_questions_to_be_includ: Commentaire des questions à inclure dans le sondage
+          evaluators_are_bosses_peers_di: Les évaluateurs sont des patrons, des collègues, des personnes auxquels on se rapporte ou qui sont invités à fournir des commentaires sur le participant.
+          how_evaluators_are_invited_to_: La façon dont les évaluateurs sont invités à participer
+          i_will_invite: "j'inviterai"
+          if_the_participant_is_responsi: "Si le participant est responsable d'inviter son/ses évaluateurs, il/elle devra les inviter avant de commencer l'auto-évaluation."
+          in_this_section_you_will_be_ev: Dans cette section, vous évaluerez
+          indicate_if_the_survey_will_be: "Indiquez si l'enquête sera axée sur l'organisation dans son ensemble, ou sur un groupe de membres de l'équipe."
+          leaders_managers: Dirigeants / Gestionnaires
+          members_of_team: Les membres de l'équipe
+          minimum_evaluations_per_partic: "Nombre d'évaluations minimales par participant?"
+          my_participant_will_invite: 'Mes participants inviteront '
+          organization: Organisation
+          participants_will_see_the_focu: Les participants verront la définition clé dans les instructions de sondage comme indiqué dans la case de droite,
+          q1_in_your_opinion_what_is_thi: 'Q1: À votre avis, quel est le plus grand atout de leadership, compétence ou talent de cette personne? Et quelles sont vos suggestions pour en tirer parti?'
+          q1_what_should_heshe_stop_doin: 'Q1: Que doit-il/elle cesser de le faire?'
+          q2_in_your_opinion_what_is_thi: 'Q2: À votre avis, quel est le plus grand défi de leadership de cette personne ou domaine à développer, et quelles suggestions avez-vous pour y arriver?'
+          q2_what_can_heshe_improve: 'Q2: Que peut-il/elle améliorer?'
+          q3_what_have_you_observed_abou: 'Q3: Qu''avez-vous observé à propos de cette personne et que vous aimeriez ajouter comme commentaire qui peut ne pas avoir été préalablement traités dans cette évaluation?'
+          q3_what_should_heshe_start_doi: 'Q3: Que doit-il / elle commencer à faire?'
+          regardless_of_who_invites_eval: Peu importe qui invite les évaluateurs, le consultant sera toujours en mesure de voir la liste des évaluateurs dans le tableau de bord du projet
+          report_demographics: Rapport de démographie
+          schedule_sending_of_invitation: "Planifier l'envoi des courriels d'invitation"
+          send_now: Envoyez maintenant
+          survey_focus: "L'accent du sondage"
+          survey_focus_description: "Description de l'accent du sondage"
+          survey_instructions: 'Instructions du sondage:'
+          team: Équipe
+          the_invitations_can_be_schedul: Les invitations peuvent être programmées pour être envoyées à une date et heure précise
+          this_is_the_minimum_number_of_: Un participant doit avoir un minimum d'évaluations complétées afin d'être inclus dans le rapport. Le minimum requis est de 5 évaluations..
+      participant_invitation:
+        if_you_have_already_sent_a_mes: Si vous avez déjà envoyé un message aux participants, vous pouvez renvoyer une mise à jour à partir du projet.
+        invitations: INVITATIONS
+        modifying_this_message_will_ch: Modifier ce message changera la langue du sondage vers l'anglais tous les participants.
+        please_do_not_modify_the_text_: S'il vous plaît, ne pas modifier le texte dans les crochets (* | | *). Ce sont des mots-clés qui seront remplacées par les informations des participants lorsque le message est envoyé.
+        reminders: RAPPELS
+        warnings: Avertissements
+      participants_blank_slate:
+        add_participant: Ajouter un participant
+        import_participants: Importer les participants
+        start_adding_participants_now: Commencez à ajouter des participants maintenant
+        there_are_no_participants_in_t: Il n'y a pas de participants à évaluer dans ce projet.
+      reminders:
+        if_you_have_already_sent_a_mes: Si vous avez déjà envoyé un message aux participants, vous pouvez renvoyer une mise à jour à partir du projet.
+        langname_reminder: "%{langname} Rappel"
+        modifying_this_message_will_ch: Modifier ce message changera le message de rappel pour les sondages en langue anglaise.
+        please_do_not_modify_the_text_: S'il vous plaît, ne pas modifier le texte dans les crochets (* | | *). Ce sont des mots-clés qui seront remplacées par les informations des participants lorsque le message est envoyé.
+        warnings: Avertissements
+      report_preview:
+        boss: Cadre
+        bosss_boss: DG
+        direct_report: Subalterne
+        evaluators: Évaluateurs
+        other: Autre
+        participant: Participant
+        peer: collègue(s)
+        select_categories: Sélectionnez les catégories
+        self: Soi-même
+        skill: Compétence
+      resend_emails:
+        last_reminde: Dernier rappel
+        last_reminder_sent_on: Le dernier rappel envoyé
+        never_sent: Jamais envoyé
+        participantuseremail: "(%{participantuseremail})"
+        select_all_participants_evalua: Sélectionnez tous les évaluateurs du participant
+        surveyevaluatoremail: "(%{surveyevaluatoremail})"
+      statuses:
+        completed_evaluating: Évaluations terminées
+        completed_selfsurveys: Auto-évaluation termninée
+        in_progress: En progression
+        not_started: Pas commencé(s)
+        statcompleted_count_of_stattot: "%{statcompleted_count} de %{stattotal_count} %{statrelation_namepluralize} complété(s)"
+        statusestotal_relations_comple: "%{statusestotal_relations_comple} de %{statusestotal_relations} évaluations complétées"
+        total_of_evaluators: Total d'évaluateurs
+        total_of_participants: Total de participants
+        evaluations_completed: "%{completed} sur %{total} Évaluations complétées"
+        self_completed: "%{completed} sur %{total} <b>Soi-même</b> complétée"
+        boss_completed: "%{completed} sur %{total} <b>Cadre</b> complétée"
+        peer_completed: "%{completed} sur %{total} <b>Collègues</b> complétée"
+        direct_report_completed: "%{completed} sur %{total} <b>Subalterne</b> complétée"
+        other_completed: "%{completed} sur %{total} <b>Autre</b> complétée"
+        boss_boss_completed: "%{completed} sur %{total} <b>DG</b> complétée"
+      tooltip:
+        of: de
+        pluralizecompleted_count_relat: "%{pluralizecompleted_count_relat} complété(s)"
+    project:
+      manage_project: Gérer le projet
+      resend_emails: Renvoyer le courriel
+    project_header:
+      create_group_report: Créer un groupe de rapport
+      create_new_project: Créer un nouveau projet
+    project_table:
+      actions: Actions
+      all_projects: 'tous les projets '
+      completion_date: Date complétée
+      last_reminder: Dernier rappel
+      product: Produit
+      project: Projet
+      status: Statut
+    report_preview:
+      '0': 0%
+      categories: 'Catégories:'
+      evaluators: Évaluateurs
+      participant: 'Participant:'
+      self: Soi-même
+      skill: Compétence
+    resend_emails:
+      cancel: Annuler
+      select_all_evaluators: Sélectionnez tous les évaluateurs
+      select_all_participants: Sélectionnez tous les participants
+      select_the_unfinished_particip: Sélectionnez les participants et les évaluateurs qui n'ont pas terminé et à qui vous souhaitez envoyer des courriels. Choisissez un type de courriel afin d'envoyer le message aux utilisateurs sélectionnés.
+      send_emails_to_participants_ev: Envoyer le courriel aux participants et évaluateurs
+      send_invitation_email: Envoyer un courriel d'invitation
+      send_reminder_email: Envoyer un courriel de rappel
+    roles:
+      collaborator:
+        delete: Supprimer
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{projectname}"
+        tsharedshared_with_project_use: "%{tsharedshared_with} %{project_userscount} %{tprojectscollabprinters}"
+    send_all_reminders:
+      close: Fermer
+      please_wait: SVP, patientez...
+      sending_all_reminders: Envoi des rappels en cours
+    share:
+      success: Succès
+    show:
+      evaluator_email: Courriel de l'évaluateur
+      evaluators: Évaluateurs
+      options: Options
+      participant_email: Courriel du participant
+      participants: Participants
+    show_consulting_settings:
+      consulting_company: Compagnie de consultation
+      consulting_settings: Paramètres de consultation
+      practitioner: Consultant
+    undo_share:
+      success: Succès
+  sa_survey_mailer:
+    request_invitation_email:
+      have_a_nice_day: Bonne journée!
+      hello: Bonjour,
+      participant_email: 'Courriel du participant:'
+      participant_name: 'Nom du participant:'
+      selfsurvey_completed_at: 'Auto-évaluation complétée le:'
+      selfsurvey_id: "# Identité de l'auto-évaluation:"
+      we_recorded_a_new_request_for_: 'nous avons enregistré une nouvelle demande d''invitation d''un utilisateur:'
+    survey_completed_email:
+      age_range: Tranche d'âge
+      basic_data: Donnée de base
+      company_name: 'Nom de la compagnie:'
+      company_revenue: Revenu de la compagnie
+      country: Pays
+      demographics: Démographies
+      education_level: Niveau d'éducation
+      ethnic_group: Groupe ethnique
+      gender: Genre
+      have_a_nice_day: Bonne journée!
+      hello: Bonjour,
+      industry: Industrie
+      management_level: Niveau de gestion
+      organization_size: Taille de l'organisation
+      participant_email: 'Courriel du participant:'
+      participant_name: 'Nom du participant:'
+      participant_phone_number: 'Numéro de téléphone du participant:'
+      please_check_the_attachment_re: S'il vous plaît, vérifier les pièces jointes - les rapports sont en format PDF.
+      profession: Profession
+      reports: Rapports
+      selfsurvey_completed_at: 'Auto-évaluation complétée le:'
+      selfsurvey_created_at: 'Auto-évaluation créée à:'
+      selfsurvey_id: "# Identité de l'auto-évaluation:"
+      tlc_consultant_who_referred: 'Référé par le consultant TLC:'
+      we_noticed_that_the_new_selfsu: 'nous avons remarqué qu''une nouvelle auto-évaluation a été achevée. Voici les détails:'
+    survey_completed_participant_email:
+      dear_userfull_name: Cher(e) %{userfull_name},
+      if_youd_like_to_understand_how: Si vous souhaitez comprendre la façon dont vous êtes «perçu» quant au leadership, nous pouvons vous présenter le profil complet du Cercle de Leadership qui fournit des commentaires de la part de ceux que vous dirigez et avec qui vous travailler - sublaternes, collèges et patrons..
+      please_do_not_hesitate_to_reac: SVP, n’hésitez pas à nous rejoindre avec toutes questions. Nous sommes heureux d'aider de quelque façon.
+      request_a_full_lcp: Demander un LCP complet
+      thank_you_again: Encore merci,
+      thank_you_for_taking_the_leade: Nous vous remercions d'avoir pris l'auto-évaluation du profil cercle de leadership. Nous espérons que vous avez apprécié la lecture maîtriser le leadership et que vous avez trouvé le rapport et les commentaires utiles pour continuer votre aventure en leadership.
+      to_help_you_better_understand_: Pour vous aider à mieux comprendre votre rapport d'auto-évaluation, j'ai inclus un guide d'interprétation qui explique chaque aspect de votre graphique et le rapport.
+  sa_surveys:
+    demographics:
+      before_you_begin: Avant de commencer
+      company_details: Détails de la compagnie
+      continue_to_survey: Continuer vers le sondage
+      need_help: Besoin d'aide?
+      personal_information: Informations personnelles
+      tlc_would_like_to_gather_some_: Nous aimerions recueillir des informations à des fins de recherche interne seulement. Nous ne partagerons pas vos informations. Nous vous serions très reconnaissants de répondre aux questions; cependant, vous pouvez toujours sélectionner "Je préfère ne pas répondre".
+      we_need_a_little_more_informat: Nous avons besoin d'un peu plus d'informations sur vous...
+    expanding_development:
+      discover_more_about_the_leader: Découvrez davantage sur le cercle de leadership
+      need_help: Besoin d'aide?
+      request_invitation: Demander une invitation
+      would_you_like_to_continue_exp: Voulez-vous continuer à développer votre développement du leadership?
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    registration:
+      complete_the_registration_belo: Compléter votre enregistrement pour prendre votre sondage. Si vous n'êtes pas en mesure de compléter votre auto-évaluation en une seule séance, vous pourrez continuer plus tard. Les résultats seront envoyés à l'adresse courriel enregistrée au compte une fois l'auto-évaluation terminée.
+      did_a_tlc_consultant_refer_you: Est-ce qu'un consultant TLC vous a référé à notre livre <b>Mastering Leadership</b>?
+      'false': Non
+      i_agree_to_tlc: Je suis d'accord avec
+      ja: oui
+      need_help: Besoin d'aide?
+      nein: Non
+      'no': non
+      privacy_and_policy_terms: les termes de la politique de la vie privée
+      take_the_survey: Participer au sondage
+      thank_you_for_your_interest: Merci de votre intérêt.
+      'yes': Oui
+    thank_you_participant:
+      did_you_enjoy_your_survey_shar: Avez-vous apprécié votre sondage? Partagez-le avec vos amis.
+      discover_more_about_the_leader: Découvrez davantage sur le cercle de leadership
+      facebook: Facebook
+      for_taking_the_leadership_circ: de prendre l'auto-évaluation profil cercle de leadership. Vos résultats arriveront par courriel dans quelques minutes.
+      linkedin: Linkedin
+      need_help: Besoin d'aide?
+      request_invitation: Demander une invitation
+      thank_you_practitionerfull_nam: Merci, %{practitionerfull_name}
+      twitter: Twitter
+      would_you_like_to_take_the_bfu: Voulez-vous prendre le  <b>profil 360</b> complet et savoir où vous en êtes vis-à-vis votre personnel, vos collèges et patrons? Cliquez sur le lien ci-dessous et nous vous ferons entrer en contact avec un entraîneur qui vous guidera à travers le processus.
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    welcome:
+      bget_your_copy_hereb: "<b>Obtenez votre copie ici</b>"
+      coming_back: De retour?
+      login: Connexion
+      need_help: Besoin d'aide?
+      sorry_but_your_answers_are_inc: Désolé, mais vos réponses sont incorrectes. Veuillez réessayer.
+      submit_answers: Soumettre les réponses
+      this_area_is_a_special_section: Cette zone est une section réservée pour nos lecteurs. Nous espérons que vous avez apprécié notre livre <b> Mastering Leadership </ b>. S'il vous plaît, répondre à la question ci-dessous pour commencer l'auto-évaluation du cercle de leadership. La réponse peut être trouvée dans le livre. Vous ne l'avez pas?
+      welcome_to: Bienvenue à
+  search:
+    index:
+      actions: Actions
+      client_name: Nom du client
+      clients: Clients
+      consultant_companies: Compagnie de consultation
+      created_at: Créé à
+      email: Courriel
+      evaluations: Évaluations
+      industry: Industrie
+      name: Nom
+      number_of_participants: Nombre de participants
+      number_of_projects: Nombre de projets
+      order: Commande
+      order_date: Date de la commande
+      orders: Commandes
+      practitioners: Consultants
+      product_type: Type de produit
+      projects: Projets
+      report_name: Nom du rapport
+      results_limited_to_20_please_u: Résultats limités à 20, SVP, utiliser une recherche plus exacte
+      search_results_total_count: Résultats de la recherche
+      selfsurveys: Auto-évaluations
+      status: Statut
+    orders_search:
+      number_of_participants: Nombre de participants
+      order: Commande
+      order_date: Date de la commande
+      orders: Commandez
+      product_type: Type de produit
+      report_name: Nom du rapport
+      search_results_total_count: Résultats de la recherche (%{total_count})
+      status: Statut
+    partials:
+      index:
+        actions: Actions
+        client_name: Nom du client
+        clients: Clients
+        completion_date: Date complétée
+        created_at: Créé à
+        email: Courriel
+        evaluations: Évaluations
+        industry: Industrie
+        last_reminder: Dernier rappel
+        name: Nom
+        number_of_participants: Nombre de participants
+        number_of_projects: Nombre de projets
+        order: Commande
+        order_date: Date de la commande
+        orders: Commandes
+        practitioners: Consultants
+        product: Produit
+        product_type: Type de produit
+        project: Projet
+        projects: Projets
+        report_name: Nom du rapport
+        search_results: Résultats de la recherche
+        selfsurveys: Auto-évaluations
+        status: Statut
+      order:
+        not_found_record_invalid: Nous n'avons rien trouvé! Enregistrement invalide.
+      organization:
+        create_group_report: Créer un groupe de rapport
+        manage_client: Gérer le client
+      practitioner:
+        preview_user: Aperçu de l'utilisateur
+    projects_search:
+      projects: Projets
+      search_results_total_count: Résultats de la recherche (%{total_count})
+    surveys_search:
+      actions: Actions
+      completed_on: Complété le
+      completion_date: Date complétée
+      delete: Supprimer
+      evaluating: Évaluation en cours
+      evaluations: Évaluations
+      language: Langue
+      last_logged_in: Dernière connexion
+      more_actions: Plus d'actions
+      move: Déplacer
+      not_started: Pas commencé
+      of: de
+      project_name: Nom du projet
+      questions: questions
+      reset: Réinitialiser
+      role: Rôle
+      search_results_total_count: Résultats de la recherche (%{total_count})
+      self_surveys: Auto-évaluations
+      survey_taker_details: Détails sur le répondant
+    users_search:
+      actions: Actions
+      created_at: Créé à
+      email: Courriel
+      evaluations: Évaluations
+      name: Nom
+      practitioners: Consultants
+      search_results_total_count: Résultats de la recherche (%{total_count})
+      selfsurveys: Auto-évaluations
+  shared:
+    1_printed_copy_per_participant: 1 copie imprimée par participant
+    actions: Actions
+    add: Ajouter
+    add_participant: Ajouter un participant
+    cancel: Annuler
+    certified_consultants: Consultants
+    companies: Clients
+    complete_by: Complété par
+    completed_at: Complété le
+    confirm: Êtes-vous certain?
+    create_group_report: Créer un groupe de rapport
+    created_at: Créé à
+    date_created: Date de création
+    delete: Supprimer
+    demographic: Démographie
+    details: Détails
+    edit: Modifier
+    edit_evaluator: Éditer l'évaluateur
+    email: Courriel
+    import_participants: Importer les participants
+    kind: Sorte
+    licensor: Licencié
+    manage_evaluators: Gérer les évaluateurs
+    menu:
+      dashboard: Portail
+      disabled: Désactivé
+      invited: Invité
+      orders: Commandes
+      print_reports: Imprimer les rapports
+      project_center: Centre de projet
+      survey_takers: Répondants
+      utilities: Utilitaires
+    more_actions: Plus d'actions
+    name: Nom
+    new:
+      footer:
+        current_useremail: "(%{current_useremail})"
+        go_back_to_the_csr_project_cen: Retourner au centre de projet
+        you_true_useremail_are_imperso: Vous (%{true_useremail}) empruntez l'identité du consultant
+        your_password_will_expire: Votre mot de passe expirera dans %{days_to_expire} jours.
+        renew_your_password: S'il vous plaît changer votre mot de passe.
+      header:
+        go_to_project_center: Aller au centre de projet
+        link_to_class_logo__link_do: "/"
+        selfassessment: Auto-évaluation
+        the_leadership_circle: 'Le cercle de leadership:'
+        the_leadership_circle_profilet: Le cercle de leadership profil & métier;
+        the_leadership_circle_selfasse: 'Le cercle de leadership: auto-évaluation'
+      modal_search:
+        all: Tout
+        orders: Commandes
+        projects: Projets
+        survey_takers: Répondants
+        users: Utilisateurs
+      modal_wait:
+        importing_participants: Importer les participants
+        please_wait: SVP, patientez...
+      nav:
+        my_clients: Mes clients
+        my_orders: Mes commandes
+        people: Gens
+        print_reports: Imprimer les rapports
+        project_center: Centre de projet
+        utilities: Utilitaires
+        my_surveys: Mes Enquêtes
+        active_projects: Projets Actifs
+      navigation_mobile:
+        logout: Se déconnecter
+        my_account: Mon compte
+      session_timeout_modal:
+        attention: Attention!
+        logout: Se déconnecter
+        more_time: Ajouter du temps
+        you_have_been_inactive_and_you: Vous avez été inactif pendant un moment et vous serez automatiquement connecté dans <b class="remaining-time">5:00</b> minutes. Voulez-vous plus de temps?
+      session_timeout_remodal_modal:
+        attention: Attention!
+        logout: Se déconnecter
+        more_time: Ajouter du temps
+        you_have_been_inactive_and_you: Vous avez été inactif pendant un moment et vous serez automatiquement connecté dans <b class="remaining-time">5:00</b> minutes. Voulez-vous plus de temps?
+      user_navigation:
+        logout: Se déconnecter
+        my_account: Mon compte
+        stop_impersonating_current_use: Cesser la personnification %{current_userfull_name}
+        take_selfassessment: Faire l'auto-évaluation
+    next_page: Page suivante
+    not_set: Pas encore défini
+    notify:
+      delete_warning: Impossible de supprimer un évaluateur qui a déjà répondu au sondage.
+      success: Données sauvegardées.
+      update_warning: Impossible de changer un évaluateur qui a déjà répondu au sondage.
+    number: Nombre
+    of: de
+    old:
+      forbidden:
+        forbidden: Interdit
+    participants: Participants
+    pdf_report: Rapport PDF
+    people: gens
+    percent_complete: "% Complété"
+    please_remove_children: Vous ne pouvez pas supprimer les données existantes en raison de données dépendantes (organisations, projets)
+    preview: Aperçu
+    preview_report: Aperçu du rapport
+    previous: Précédent
+    printing_access: Accès à l'impression
+    projects: Projets
+    questions: questions
+    rename: Renommer
+    report: Rapport
+    report_for: Rapport pour
+    reset_password: Réinitialiser le mot de passe
+    reset_password_confirm: Êtes-vous certain de vouloir réinitialiser le mot de passe?
+    role: Rôle
+    save: Sauvegarder
+    save_changes: Sauvegarder les changements
+    send_invitations: Envoyer des invitations
+    shared_settings: Paramètres partagés
+    shared_with: Partagés avec
+    status: Statut
+    system: Système
+    to: à
+    total: Total
+    users: Utilisateurs
+    were_found: ont été trouvés
+    when: Quand
+    who: Qui
+  support:
+    array:
+      last_word_connector: ", et "
+      two_words_connector: " et "
+      words_connector: ", "
+  surveys:
+    another_show:
+      surveyproductname: "%{surveyproductname}"
+      tsurveysshowsurvey_for_surveye: "%{tsurveysshowsurvey_for} %{surveyevaluatorfull_name}"
+    answers:
+      are_you_sure_undone: Êtes-vous certain? SVP, vérifiez toutes vos réponses. Cette étape ne peut être annulée.
+      back_to_surveys: Retour aux sondages
+      finish_survey: Terminer le sondage
+      next_section: Section suivante
+      previous_section: Section précédente
+      questions_completed: Questions terminées
+    before_you_begin:
+      back_to_main_page: Retour à la page d'accueil
+      before_you_begin: Avant de commencer
+      continue_to_survey: Continuer vers le sondage
+      need_help: Besoin d'aide?
+      tlc_would_like_to_gather_some_: Nous aimerions recueillir des informations à des fins de recherche interne seulement. Nous ne partagerons pas vos informations. Nous vous serions très reconnaissants de répondre aux questions; cependant, vous pouvez toujours sélectionner "Je préfère ne pas répondre" et cliquez sur “Continuer vers le sondage”.
+      we_need_a_little_more_informat: Nous avons besoin d'un peu plus d'informations sur vous...
+    demographic:
+      before_you_begin: Avant de commencer
+      tlc_would_like_to_gather_some_: Nous aimerions recueillir des informations à des fins de recherche interne seulement. Nous ne partagerons pas vos informations. Nous vous serions très reconnaissants de répondre aux questions; cependant, vous pouvez toujours sélectionner "Je préfère ne pas répondre".
+      we_need_a_little_more_informat: Nous avons besoin d'un peu plus d'informations sur vous...
+    done: Sondage terminé avec succès.
+    index:
+      active_surveys: Sondages actifs
+      complete_active_surveys: S'il vous plaît, compléter tous vos sondages actifs ci-dessous
+      content: Contenu
+      my_active_surveys: Mes sondages actifs
+      need_help: Besoin d'aide?
+      self_survey: Auto-évaluation
+      survey_history: Histoire des sondages
+      take_survey: Faire le sondage
+    invite_evaluators:
+      add_evaluator: Ajouter un évaluateur
+      back_to_survey_list: Retour à la liste de sondages
+      evaluators_provide_feedback_on: Les évaluateurs fournissent des commentaires sur vos aptitudes et compétences de leadership en remplissant le questionnaire.
+      invite_evaluators: Inviter des évaluateurs
+      need_help: Besoin d'aide?
+      take_the_survey: Faire le sondage
+      you_have_enough_evaluators_to_: Vous avez assez d'évaluateurs pour faire le sondage. Bien que nous vous recommandons d'avoir au moins <span class='minimum-evaluators'><b>10 évaluateurs<b></span>.
+      you_must_add_at_least_span_cla: Vous devez ajouter au moins <span class='minimum-evaluators'>%{current_userinvitee_surveys} évaluateurs additionnels</span> pour faire le sondage.
+    not_enough_invited_evaluators: Participant peut inviter les évaluateurs. Not enough evaluators to take the survey.
+    not_valid: Désolé, mais ce sondage n'est plus valable.
+    partials:
+      modals:
+        need_help:
+          description: Veuillez sélectionner un sondage dans la liste ci-dessous pour laquelle vous avez besoin d'aide. Notre conseiller vous contactera le plus tôt possible.
+          main_support: Support principal
+      continue_survey:
+        '100': 100%
+        culture_survey_for: Culture Survey for fr
+        current_userfirst_name_current: "%{current_userfirst_name} %{current_userlast_name}"
+        review_your_answers: Révisez vos réponses
+        self_survey_for: Auto-évaluation pour
+        thanks_current_userfirst_name: Merci %{current_userfirst_name},
+        you_are_currently_taking_secti: Vous êtes présentement en train de faire la section %{paramssection_page} de 2
+        you_have_answered_all_the_ques: Vous avez répondu à toutes les questions pour la section %{paramssection_page}.
+      evaluator_form:
+        cancel: Annuler
+        update_evaluator: Mettre à jour l'évaluateur
+      evaluators:
+        edit_evaluator: Éditer l'évaluateur
+        evaluator_details: Détails de l'évaluateur
+        language: Langue
+        relationship: Liens de parenté
+      modal:
+        add_evaluator: Ajouter l'évaluateur
+        always: Toujours
+        cancel: Annuler
+        edit_evaluator: Éditer l'évaluateur
+        na: N/A
+        never: Jamais
+        often: Souvent
+        once_added_an_email_will_be_im: Une fois ajouté un courriel sera immédiatement envoyé à l'évaluateur les invitant à participer
+        previous_question: Question précédente
+        review_your_answers: Révisez vos réponses
+        seldom: Rarement
+        self_survey_for_bthe_most_effe: Sondage sur <b> Le leader le plus efficace que je connaisse </ b>.
+        sometimes: Parfois
+      my_active_surveys:
+        complete_by: Compléter avant le
+        current_userinvitee_completed_: "%{current_userinvitee_completed_} de %{current_userinvitee_surveyssel} sondages complétés"
+        evaluator_setup: Mise en place de l'évaluateur
+        my_active_surveys: Mes sondages actifs
+        please_complete_all_of_your_ac: S'il vous plaît, compléter tous vos sondages actifs ci-dessous.
+        self_survey: Auto-évaluation
+        take_the_survey: Faire le sondage
+        you_have_bpluralizecurrent_use: 'Vous avez <b>%{pluralizecurrent_useractive_ev}</b> à évaluer:'
+        self_evaluations_left:
+          one: "Vous avez <b>une auto-évaluation</b> à compléter:"
+          other: "Vous avez <b>%{count} auto-évaluations</b> à compléter:"
+        evaluations_self:
+          one: "Vous avez <b>une évaluation</b> à compléter:"
+          other: "Vous avez <b>%{count} évaluations</b> à compléter:"
+        you_must_invite_at_least_self_: Vous devez inviter au moins %{self_surveyprojectminimum_eval} évaluateurs pour faire le sondage.
+      new_or_pending:
+        continue_the_survey: Continuer vers le sondage
+        current_sectionquestionscount_: "%{current_sectionquestionscount} questions"
+        go_back_to_survey_list: Retourner à la liste de sondages
+        need_help: Besoin d'aide?
+        of: de
+        previous_section: Section précédente
+        restart_previous_survey: Recommencer le sondage précédent
+        start_the_survey: Commencer le sondage
+        you_have_answered: Vous avez répondu
+      no_evaluators:
+        add_evaluator: Ajouter un évaluateur
+        why_do_i_have_to_invite_evalua: " "
+        you_currently_do_not_have_any_: Actuellement, vous n'avez pas d'évaluateur.
+        you_need_to_have_at_least_span: Vous devez avoir au moins <span class='minimum-evaluators'>%{minimum_evals} évaluateurs</span> pour faire le sondage.<br>Cliquez sur le bouton ci-dessous pour ajouter un évaluateur à votre liste.
+      question:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: Toujours
+        culture_survey_for: Enquête sur la culture pour
+        na: N/A
+        never: Jamais
+        of: de
+        often: Souvent
+        perc_progress: "%{perc_progress}%"
+        previous_question: Question précédente
+        providing_feedback_for: Donnez une rétroaction à/pour
+        question: Question
+        seldom: Rarement
+        self_survey_for: Auto-évaluation pour
+        sometimes: Parfois
+        very_strongly_agree: Absolument d'accord
+        strongly_agree: Tout à fait d'accord
+        agree: D'accord
+        slightly_agree: Plutôt d'accord
+        slightly_disagree: Plutôt pas d'accord
+        disagree: Pas d'accord
+        strongly_disagree: Pas du tout d'accord
+        very_strongly_disagree: Absolument pas d'accord
+        you_are_currently_taking_secti: Vous faites actuellement la section %{sections_page} de %{surveysectionscount}
+        "×": "×"
+      review:
+        finish_your_survey: Terminer votre sondage
+        need_help: Besoin d'aide?
+        next_section: Section suivante
+        previous_section: Section précédente
+        review_continue: Réviser & continuer
+        review_your_answers_to_the_lea: Réviser vos réponses du profil de leadership. Modifier une réponse en cliquant dessus.
+        section_sectionscurrent_page_o: Section %{sectionscurrent_page} de %{sectionstotal_pages}
+        your_survey_is_almost_complete: Votre sondage est presque terminé. S'il vous plaît, réviser vos réponses pour la section 2 ci-dessous.
+        your_survey_is_not_yet_complet: Votre sondage n'est pas encore terminé. Vous avez %{sectionstotal_pages_sectionscu} section(s) à terminer.
+      review_form:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: Toujours
+        cancel: Annuler
+        na: N/A
+        never: Jamais
+        often: Souvent
+        seldom: Rarement
+        sometimes: Parfois
+        update: Mettre à jour
+        very_strongly_agree: Absolument d'accord
+        strongly_agree: Tout à fait d'accord
+        agree: D'accord
+        slightly_agree: Plutôt d'accord
+        slightly_disagree: Plutôt pas d'accord
+        disagree: Pas d'accord
+        strongly_disagree: Pas du tout d'accord
+        very_strongly_disagree: Absolument pas d'accord
+      sections:
+        survey_taker_evaluator_section_1_description:
+          leadership_profile: Profil de leadership
+          providing_feedback_section_sec: '"Section %{sectionscurrent_page} de %{sectionstotal_pages}" de rétroaction'
+          you_will_be_able_to_review_and: Vous serez en mesure de réviser et modifier vos réponses à la fin de cette section.
+        survey_taker_section_1_description:
+          culture_survey: Sondage sur la culture
+          leadership_profile: Profil de leadership
+          section_sectionscurrent_page_o: '"Section %{sectionscurrent_page} de %{sectionstotal_pages}"'
+          you_will_be_able_to_review_and: Vous serez en mesure de réviser et modifier vos réponses à la fin de cette section.
+        survey_taker_section_2_description:
+          at_the_end_of_this_section_you: À la fin de cette section, vous serez en mesure de réviser et modifier vos réponses.
+          most_effective_leader: Leader le plus efficace
+          section_sectionscurrent_page_o: Section %{sectionscurrent_page} de %{sectionstotal_pages}
+      survey_history:
+        completed_on: Complété le
+        evaluator_setup: Mise en place de l'évaluateur
+        my_survey_history: Historique de mes sondages
+        self_survey: Auto-évaluation
+        this_is_the_list_of_all_the_su: Voici la liste de tous les sondages auxquels vous avez participé.
+        you_have_completed_bpluralizec: 'Vous avez terminé <b>%{pluralizecurrent_usercompleted}</b>:'
+        self_evaluations_completed:
+          one: "Vous avez <b>une auto-évaluation</b> à compléter:"
+          other: "Vous avez <b>%{count} auto-évaluations</b> à compléter"
+        evaluations_completed:
+          one: "Vous avez <b>une évaluation</b> à compléter:"
+          other: "Vous avez <b>%{count} évaluations</b> à compléter:"
+      thanks:
+        all_your_answers_have_been_sub: Toutes vos réponses ont été soumises et enregistrées. Merci pour votre temps.
+        go_back_to_survey_list: Retourner à la liste de sondage
+        log_out: Se déconnecter
+        thanks_current_userfirst_name_: Merci %{current_userfirst_name} d'avoir fait ce sondage.
+    process_error: Quelque chose ne va pas avec le processus de sondage.
+    questions:
+      put_your_answer_here: Mettez votre réponse ici
+    questions_completed: des questions terminée
+    sa_request: Nous vous remercions, nous vous contacterons sous peu.
+    sections:
+      current_leadership_culture: Dans cette section, vous évaluerez <b>%{participant}</b>. Votre tâche est de décrire les comportements de leadership qui sont les plus couramment pratiqués, encouragés ou autorisés par les dirigeants. Il peut y avoir de nombreux facteurs qui influent sur votre expérience de leadership au sein de votre organisation ou de l'équipe. Par exemple, deux gestionnaires peuvent avoir un style de leadership différent et les deux ont une influence importante sur la culture de leadership de cette organisation ou de l'équipe. Décrivez le comportement qui a le plus d'influence sur votre expérience.
+      desired_leadership_culture: Dans cette section, répondre aux questions selon la façon dont vous désirez ou souhaitez que la culture de leadership du <b>%{participant}</b> soit. Répondez à chaque question comme si cette culture de leadership était idéale - celle qui lui permettrait de se développer dans les environnements actuels et futurs.
+      ideal_to_ideal: ''
+      leadership_profile: Cette section est conçue pour construire un profil de leadership pour <b>%{participant}</b>. Répondez rapidement aux questions en utilisant votre première impression. Utilisez l'option N/A si vous ne connaissez pas la réponse à la question ou la question ne s'applique pas.
+      manager_profile: Cette section est conçue pour construire un profil de gestionnaire pour <b>%{participant}</b>. Répondez rapidement aux questions en utilisant votre première impression. Utilisez l'option N/A si vous ne connaissez pas la réponse à la question ou la question ne s'applique pas.
+      most_effective_leader: |-
+        Dans cette section, vous n'évaluerez plus <b>%{participant}</b>.
+        Au lieu de cela, identifier qui est le leader le plus efficace avec qui vous avez déjà travaillé (directement ou indirectement). <B> Répondez à ces questions avec CETTE personne à l'esprit. </ B>
+        À la fin de cette section, vous serez en mesure de réviser et modifier vos réponses.
+      write_in_feedback: Dans cette section, s'il vous plaît, fournir une rétroaction supplémentaire à <b>%{participant}</b>. Les participants trouvent toujours les commentaires écrits particulièrement utiles pour la compréhension de leurs résultats. Vos commentaires pourraient inclure des zones que cette enquête ne couvre pas, ou des exemples qui illustrent pourquoi vous évaluer <b>% {participant} </ b> de la façon dont vous avez fait, ou toute autre chose qui est importante à savoir pour <b>% {participant} </ b>.
+    self:
+      end_section: À la fin de cette section, vous serez en mesure de réviser et modifier vos réponses.
+      identify_effective_leader: Plutôt, identifier qui est le leader le plus efficace avec qui vous avez déjà travaillé (directement ou indirectement).
+      most_effective_leader: Leader le plus efficace
+      no_longer_be_evaluating: Dans cette section, vous n'évaluerez plus
+      surveyproductname: "%{surveyproductname}"
+      that_person_in_mind: Répondez à ces questions avec CETTE personne à l'esprit.
+      tsurveysselfno_longer_be_evalu: "%{tsurveysselfno_longer_be_evalu} %{surveyevaluatorfull_name}."
+    show:
+      survey_for: Sondage pour
+    survey:
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_at_format_lon}"
+    survey_progress:
+      current_sectionanswers_forsurv: "%{current_sectionanswers_forsurv}/%{current_sectionquestionscount}"
+      current_sectionpercentage_comp: "%{current_sectionpercentage_comp}%{tsharedpercent_complete}"
+  system_history:
+    announcement_send_at_changed: Rappel date d'envoi changé %{date}
+    change_history: Historique des Modifications
+    comment_questions_changed: Commentaire des questions modifiées pour '%{value}'
+    completion_date_changed: Date d'achèvement changé %{date}
+    create_participant: Participant Créé %{participant}
+    delete_participant: Supprimé participant %{participant}
+    demographics_policy_changed: Rapport démographique changé pour '%{value}'
+    description: Voici les changements qui ont affecté le prix de cet ordre depuis qu'il a été créé sur %{created_date}
+    pdf_copies_only_changed: Copies PDF uniquement sélectionnées
+    printed_copies_changed: PDF et imprimés copies sélectionnées
+    project_created: Projet créé
+    report_date_changed: Date du rapport changé %{date}
+    retake_added: Reprenez pour %{participant} ajoutée
+    retake_removed: TReprenez pour %{participant} enlevé
+  templates:
+    form:
+      form:
+        if_you_have_already_sent_the_m: Si vous avez déjà envoyé le message aux participants, vous devrez le renvoyer à partir du centre de projet pour qu'ils reçoivent le message mis à jour.
+        modifying_this_message_will_ch: Modifier ce message changera le courriel de bienvenue pour tous les participants avec un sondage en langue anglaise.
+        please_do_not_modify_any_text_: S'il vous plaît, ne pas modifier le texte ci-dessous entre crochets (*||*). Ce sont des mots-clés qui seront remplacés par des informations sur les participants lorsque le message sera envoyé.
+        reset_english_message: Réinitialiser le message anglais
+        return_to_list: Retour à la liste
+        update_english_message: Mettre à jour le message anglais
+    participant_invitation_msg:
+      message: Message
+      reset_english_message: Réinitialiser le message anglais
+      save_templatelanguagename_mess: Sauvegarder le message %{templatelanguagename}
+      subject: Sujet
+  time:
+    am: am
+    formats:
+      default: "%a, %d %b %Y %I:%M:%S %p %Z"
+      long: "%B %d, %Y %I:%M %p"
+      short: "%d %b %I:%M %p"
+    pm: pm
+  timezones:
+    Abu Dhabi: Abou Dabi
+    Adelaide: Adélaïde
+    Alaska: Alaska
+    Almaty: Almaty
+    American Samoa: Samoa américaines
+    Amsterdam: Amsterdam
+    Arizona: Arizona
+    Astana: Astana
+    Athens: Athènes
+    Atlantic Time (Canada): Atlantic Time (Canada)
+    Auckland: Auckland
+    Azores: Açores
+    Baghdad: Bagdad
+    Baku: Bakou
+    Bangkok: Bangkok
+    Beijing: Pékin
+    Belgrade: Belgrade
+    Berlin: Berlin
+    Bern: Berne
+    Bogota: Bogotá
+    Brasilia: Brasilia
+    Bratislava: Bratislava
+    Brisbane: Brisbane
+    Brussels: Bruxelles
+    Bucharest: Bucarest
+    Budapest: Budapest
+    Buenos Aires: Buenos Aires
+    Cairo: Caire
+    Canberra: Canberra
+    Cape Verde Is.: TRME TRME カーボベルデ諸島
+    Caracas: Caracas
+    Casablanca: Casablanca
+    Central America: Amérique centrale
+    Central Time (US & Canada): Central Time (É.-U. et Canada)
+    Chatham Is.: TRME TRME チャタム島
+    Chennai: Chennai
+    Chihuahua: Chihuahua
+    Chongqing: Chongqing
+    Copenhagen: Copenhague
+    Darwin: Darwin
+    Dhaka: Dacca
+    Dublin: Dublin
+    Eastern Time (US & Canada): Heure de l'Est (É.-U. et Canada)
+    Edinburgh: Édimbourg
+    Ekaterinburg: Iekaterinbourg
+    Fiji: Fidji
+    Georgetown: Georgetown
+    Greenland: Groenland
+    Guadalajara: Guadalajara
+    Guam: Guam
+    Hanoi: Hanoï
+    Harare: Harare
+    Hawaii: Hawaï
+    Helsinki: Helsinki
+    Hobart: Hobart
+    Hong Kong: Hong Kong
+    Indiana (East): Indiana (est)
+    International Date Line West: International Date Line West
+    Irkutsk: Irkoutsk
+    Islamabad: Islamabad
+    Istanbul: Istanbul
+    Jakarta: Jakarta
+    Jerusalem: Jérusalem
+    Kabul: Kaboul
+    Kaliningrad: Kaliningrad
+    Kamchatka: Kamtchatka
+    Karachi: Karachi
+    Kathmandu: Katmandou
+    Kolkata: Calcutta
+    Krasnoyarsk: Krasnoïarsk
+    Kuala Lumpur: Kuala Lumpur
+    Kuwait: Koweït
+    Kyev: TRME TRME Kyev
+    Kyiv: Kiev
+    La Paz: La Paz
+    Lima: Lima
+    Lisbon: Lisbonne
+    Ljubljana: Ljubljana
+    London: Londres
+    Madrid: Madrid
+    Magadan: Magadan
+    Marshall Is.: TRME TRME マーシャル諸島
+    Mazatlan: Mazatlán
+    Melbourne: Melbourne
+    Mexico City: Mexico
+    Mid-Atlantic: Mid-Atlantic
+    Midway Island: Îles Midway
+    Minsk: Minsk
+    Monrovia: Monrovia
+    Monterrey: Monterrey
+    Montevideo: Montevideo
+    Moscow: Moscou
+    Mountain Time (US & Canada): Mountain Time (É.-U. et Canada)
+    Mumbai: Bombay
+    Muscat: Mascate
+    Nairobi: Nairobi
+    New Caledonia: Nouvelle-Calédonie
+    New Delhi: New Delhi
+    Newfoundland: Terre-Neuve
+    Novosibirsk: Novossibirsk
+    Nuku'alofa: Nuku'alofa
+    Osaka: Osaka
+    Pacific Time (US & Canada): Pacific Time (É.-U. et Canada)
+    Paris: Paris
+    Perth: Perth
+    Port Moresby: Port Moresby
+    Prague: Prague
+    Pretoria: Pretoria
+    Quito: Quito
+    Rangoon: Rangoun
+    Riga: Riga
+    Riyadh: Riyad
+    Rome: Rome
+    Samara: Samara
+    Samoa: Samoa
+    Santiago: Santiago
+    Sapporo: Sapporo
+    Sarajevo: Sarajevo
+    Saskatchewan: Saskatchewan
+    Seoul: Séoul
+    Singapore: Singapour
+    Skopje: Skopje
+    Sofia: Sofia
+    Solomon Is.: TRME TRME ソロモン諸島
+    Srednekolymsk: Srednekolymsk
+    Sri Jayawardenepura: Sri Jayawardenapura
+    St. Petersburg: TRME TRME サンクトペテルブルク
+    Stockholm: Stockholm
+    Sydney: Sydney
+    Taipei: Taipei
+    Tallinn: Tallinn
+    Tashkent: Tachkent
+    Tbilisi: Tbilissi
+    Tehran: Téhéran
+    Tijuana: Tijuana
+    Tokelau Is.: TRME TRME トケラウ諸島
+    Tokyo: Tokyo
+    UTC: UTC
+    Ulaan Bataar: Oulan-Bator
+    Ulaanbaatar: Oulan-Bator
+    Urumqi: Ürümqi
+    Vienna: Vienne
+    Vilnius: Vilnius
+    Vladivostok: Vladivostok
+    Volgograd: Volgograd
+    Warsaw: Varsovie
+    Wellington: Wellington
+    West Central Africa: Heure d'Afrique occidentale
+    Yakutsk: Iakoutsk
+    Yerevan: Erevan
+    Zagreb: Zagreb
+    Zurich: Zurich
+  users:
+    avatar_upload:
+      error: Quelque chose ne fonctionne pas avec le téléchargement. Veuillez réessayer.
+      success: L'image a été téléchargée avec succès.
+    demographic:
+      demographics: Démographies
+    demographic_form:
+      company_details: Détails de la compagnie
+      continue_to_survey: Continuer vers le sondage
+      need_help: Besoin d'aide?
+      personal_information: Informations personnelles
+    edit:
+      add_address: Ajouter une adresse
+      add_phone: Ajouter un numéro de téléphone
+      address_type: Type d'adresse
+      addresses: Adresses
+      age: 'Âge:'
+      back_to_settings: Retour aux paramètres
+      cancel: Annuler
+      change_password: Changer le mot de passe
+      change_profile_picture: Modifier la photo de profil
+      city: Ville
+      company_details: Détails de la compagnie
+      company_name: Nom de compagnie
+      company_revenue: Revenu de la compagnie
+      confirm_password: 'Confirmez le mot de passe:'
+      country_address: Pays
+      current_password: Mot de passe actuel
+      date_of_birth: Date de naissance
+      education: Éducation
+      email: courriel
+      ethnic_group: Groupe ethnique
+      fax: Fax
+      first_name: Prénom
+      gender: Genre
+      home: Domicile
+      industry: Industrie
+      language: Langue
+      last_name: Nom de famille
+      management_level: Niveau de gestion
+      mobile: Cellulaire
+      new_password: Nouveau mot de passe
+      number_of_direct_reports: Nombre de personnes qui se rapporte directement à vous
+      organization_level: Niveau d'organisation
+      password: Mot de passe
+      password_label: 'Mot de passe:'
+      personal_information: Informations personnelles
+      phone_numbers: Numéro de téléphone
+      please_enter_address_name: S'il vous plaît, nommez l'adresse
+      please_enter_email: S'il vous plaît, entrez le courriel
+      please_enter_new_confirmation_: S'il vous plaît, entrer le nouveau mot de passe
+      please_enter_new_password: S'il vous plaît, entrer le nouveau mot de passe
+      please_enter_phone_number: S'il vous plaît, entrer le numéro de téléphone
+      please_enter_valid_confirmatio: S'il vous plaît, entrer un mot de passe valide
+      please_enter_valid_email: S'il vous plaît, entrer un courriel valide
+      profession: Profession
+      professional_information: Information professionnelle
+      profile_picture: Photo de profil
+      reenter_new_password: Ré-entrez le nouveau mot de passe
+      remove_address: Retirer cette adresse
+      remove_phone: Retirer ce numéro de téléphone
+      remove_profile_picture: Supprimer la photo de profil
+      residing_country: Pays de résidence
+      retype_password: Retapez votre nouveau mot de passe...
+      save_changes: Sauvegarder les changements
+      size_of_organization: Taille de l'organisation
+      state_province: Province
+      street_address: Adresse (numéro, rue, appt)
+      use_the_form_below_to_change_t: Utilisez le formulaire ci-dessous pour changer le mot de passe de votre compte.
+      user_roles: Rôles de l'utilisateur
+      users_placeholder: Espace réservée aux utilisateurs
+      work: Travail
+      working_address: adresse de travail
+      zip_code_address: Code postal
+      password_must_have_at_least: "Votre mot de passe doit avoir:"
+      9_characters: 9 caractères
+      1_lowercase_letter: 1 lettre minuscule
+      1_uppercase_letter: 1 lettre Majuscule
+      1_number: 1 numéro
+      1_special_character: 1 caractère spécial
+      passwords_dont_match: Les mots de passe ne correspondent pas
+      good_so_far: Bien jusqu'à présent
+      match: Accord
+      good: Bien
+      too_week: Trop faible
+    modify:
+      success: L'utilisateur a été mis à jour avec succès.
+    take_self_assessment:
+      error: Une erreur s'est produite!!
+    update_demographics:
+      error: Une erreur s'est produite avec les données démographiques. Veuillez réessayer.
+      success: Les données démographiques ont été mis à jour avec succès.
+    update_password:
+      success: Le mot de passe a été mis à jour avec succès.
+  utilities:
+    index:
+      all: Tout
+      billings: Facturation
+      'false': Non
+      filter: Filtrer
+      filter_by_in_voiced: 'Filtrer par facturé:'
+      filter_by_order_status: 'Filtrer par statut de la commande:'
+      filter_by_region: 'Filtrer par région:'
+      finished: Terminé
+      'no': 'TRME TRME TRME '
+      ordered: Commandé
+      orders: Commandes
+      orders_placeholder: Tapez le nom de la commande ou le numéro de commande...
+      projects: Projets
+      projects_placeholder: Entrer le nom du projet...
+      search: Rechercher
+      survey_takers: Répondants
+      surveys_placeholder: Entrer le nom d'utilisateur ou adresse courriel...
+      users: Utilisateurs
+      users_placeholder: Entrer le nom d'utilisateur ou adresse courriel...
+      'yes': Oui
+    new_sa:
+      generate: Générer
+      select_score_for_answers: 'Notez les questions:'
+      users_email: 'Courriel de l''utilisateur:'
+    partials:
+      billing_table:
+        invoiced: Facturé(s)
+      search_orders:
+        found_order: Commande trouvée
+        no_order_is_found: Aucunne commande trouvée!
+      search_orders_details:
+        ordercoach_report_qty: "%{ordercoach_report_qty}"
+        ordercoach_report_qty_tordersd: "%{ordercoach_report_qty} %{tordersdetailscopy_per_partici}"
+        orderparticipant_graph_qty: "%{orderparticipant_graph_qty}"
+        orderparticipant_graph_qty_tor: "%{orderparticipant_graph_qty} %{tordersdetailscopy_per_partici}"
+        orderparticipant_report_qty: "%{orderparticipant_report_qty}"
+        orderparticipant_report_qty_to: "%{orderparticipant_report_qty} %{tordersdetailscopy_per_partici}"
+        pdf: PDF
+      search_projects:
+        no_projects_are_found: Aucun projet trouvé!
+      search_surveys:
+        actions: Actions
+        completed_on: Complété le
+        completion_date: Date complétée
+        delete: Supprimer
+        evaluating: Évaluation en cours
+        evaluations: Évaluations
+        found_survey_taker: Répondant trouvé
+        language: Langue
+        last_logged_in: Dernière connexion
+        more_actions: Plus d'actions
+        move: Déplacer
+        no_survey_is_found: Aucun sondage trouvé!
+        not_started: Pas commencé
+        of: de
+        project_name: Nom de projet
+        questions: questions
+        reset: Réinitialiser
+        role: Rôle
+        self_surveys: Auto-évaluation
+        survey_taker_details: Information sur le répondant
+      search_users:
+        back: Retour
+        email: 'Courriel:'
+        found_user: Utilisateur trouvé
+        impersonate: Empruntez l'identité de quelqu'un
+        name: 'Nom:'
+        no_user_is_found: Aucun utilisateur trouvé!
+      survey:
+        reset: Réinitialiser
+    show_order:
+      billing_contact: Contact de facturation
+      binder_contact: Contact du cartable
+      coaching_report: 'Rapport du consultant:'
+      comment_questions: 'Commenter les questions:'
+      company: Compagnie
+      demographics: 'Démographies:'
+      included_participants: 'Participants inclus:'
+      invoice_order: Ordre de tri facture
+      invoiced: 'Facturé:'
+      list_of_participants: Liste des participants
+      mark_order_as_not_invoiced: Marquer la commande comme non facturée
+      order_details: Détails de la commande
+      order_number: 'Numéro de commande:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} copie(s)"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} copie(s) par participant"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} copie(s) par participant"
+      participant_graph: 'Graphique du participant:'
+      participant_report: 'Rapport du participant:'
+      pdf: PDF
+      planned_completion_date: 'Date d''échéance prévue:'
+      processing_date: 'Date de traitement:'
+      product_type: 'Type de produit:'
+      profile_interpretation_manual: 'Manuel d''interprétation de profil:'
+      report_contact: Contact des rapports
+      report_name: 'Nom du rapport:'
+      report_type: 'Type de rapport:'
+    surveys:
+      created_at: Créé à
+      evaluator: Évaluateur
+      id: "#Identité"
+      new_self_assessment: Nouvelle auto-évaluation
+      regular: Régulier
+      self_assessment: Auto-évaluation
+      status: Statut
+  views:
+    pagination:
+      first: "&laquo; premier(s)"
+      last: "&raquo; dernier(s)"
+      next: "&rsaquo; suivant(s)"
+      previous: "&lsaquo; précédent(s)"
+      truncate: "&hellip;"
+  graph_preview:
+    circle_within_circle: "Un cercle dans un cercle:"
+    inner_circle_profiles: "Le cercle exclusif dessine un pointage percentile global pour toutes les facettes de cette section du cercle extérieur."
+    percentile_scores: "Pointages percentile:"
+    high: "Haut:"
+    scores_from: "Les pointages inclus entre le 66e et 100e percentile sont des pointages forts."
+    medium: "Moyen:"
+    score_between: "Les pointages inclus entre le 66e et 33e percentile montrent un mélange de force et de domaines à améliorer."
+    low: "Faible:"
+    score_below: "Un pointage en-dessous du 33e percentile est un pointage faible."
+    identity: "Identité"
+    others_assessment: "L'évaluation des autres"
+    self_assessment: "Auto-évaluation"
+    print_graph: "Imprimer le graphique"
+    culture_survey: "Culture sondage & métier;"
+    displayed_as_percentile: "Tous les pointages sont affichés sous forme de percentile comparant vos pointages à nos normes de base."
+    high_scores_are_beyond: "Les pointages élevés sont au-delà du 67e percentile."
+    low_scores_are_below: "Les pointages faibles sont inférieurs au 33e percentile"
+    copy_right: "© The Leadership Circle® | All Rights Reserved"
+    desired_culture: "Culture désirée"
+    actual_culture: "Culture actuelle"
+    manager_edition: "Édition du gestionnaire"
+    protecting: 'Protection'
+    evaluators: 'Évaluateurs'
+    being: "Être"
+    self: 'Soi-même'
+    arrogance: 'Arrogance'
+    critical: 'Critique'
+    distance: 'Distance'
+    complying: 'Conformité'
+    passive: 'Passif'
+    belonging: "Appartenance"
+    pleasing: 'Accommodant'
+    conservative: 'Conservatif'
+    relating: 'Relations'
+    caring_connection: "Souci de-l'autre"
+    fosters_team_play: "Travail en-équipe"
+    collaborator: 'Collaborateur'
+    mentoring_developing: 'Mentorat'
+    interpersonal_intelligence: 'Inter personnelle'
+    self_awareness: 'Connaissance de soi'
+    selfless_leader: 'Leader altruiste'
+    balance: 'Équilibre'
+    composure: 'Calme'
+    personal_learner: "D'apprendre sur-soi"
+    authenticity: 'Authenticité'
+    integrity: 'Intégrité'
+    courageous_authenticity: 'Authenticité courageuse'
+    systems_awareness: 'Conscience des systemes'
+    community_concern: 'Se-préoccupe de-la-communauté'
+    sustainable_productivity: 'Productivité durable'
+    systems_thinker: 'Pensée systémique'
+    achieving: 'Performance'
+    strategic_focus: 'Stratégique'
+    purposeful_visionary: 'Visionnaire'
+    achieves_results: 'Obtient des-résultats'
+    decisiveness: 'Fermeté'
+    controlling: 'Contrôle'
+    perfect: 'Perfection'
+    driven: "Pousse-a l'extréme"
+    ambition: 'Ambition'
+    autocratic: 'Autocratique'
+    general_abilities: 'Aptitudes générales'
+    leadership_potential_utilization: 'Utilisation potentiel du leadership'
+    reactive_creative_scale: 'Échelle réactive-créative'
+    leadership_effectiveness: 'Efficacité du leadership'
+    relationship_task_balance: 'Relations –  Équilibre des tâches'
+    creative: 'Creative'
+    relationship: 'Relations'
+    task: 'Tâche'
+    reactive: 'Reactive'
+    graph_low: Faible
+    graph_medium: Moyen
+    graph_high: Haute
+    graph_identity: Identité

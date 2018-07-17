@@ -1,0 +1,2574 @@
+---
+no-NO:
+  activerecord:
+    attributes:
+      project_address:
+        name: Navn
+        email: E-post
+        phone_no: Telefonnummer
+        address_line1: Adresselinje 1
+        address_line2: Adresselinje 2
+        address_line3: Adresselinje 3
+        country_code: Landskode
+        city: By
+        state_code: Statskode
+        postal_code: Postnummer
+        created_at: Gjort på
+        updated_at: Oppdatert på
+      project:
+        name: Navn
+        organization: Kunde
+        product: Produkt
+        status: Status
+        created_at: Opprettet på
+        updated_at: Oppdatert på
+        completion_date: Fullføringsdato
+        report_date: Rapportdato
+        printed_interpretation_manual: Trykt Tolkingshåndbok
+        pdf_interpretation_manual: PDF Tolkning Manual
+        comment_questions: Kommentar Spørsmål
+        evaluators_policy: Evalueringspolitikk
+        participant_report_qty: Antall deltakerrapporter
+        participant_report_pdf: Deltakerrapport PDF
+        participant_graph_qty: Deltaker Graf Antall
+        participant_graph_pdf: Deltakergraf PDF
+        coach_report_qty: Antall Treningsrapporter
+        coach_report_pdf: Trenerrapport PDF
+        demographics_policy: Demografisk Politikk
+        survey_focus: Undersøkelsens fokus
+        survey_focus_description: Undersøkelse Fokus Beskrivelse
+        group_report_pdf: Grupperapport PDF
+        user: Klientrepresentant
+        billing_address: Fakturaadresse
+        shipping_address: Sendingsadresse
+        binder_address: Binder adresse
+        deliverable_option: Leverbare alternativer
+        consultant: Konsulent
+        minimum_evaluations_per_participant: Minimum vurderinger per deltaker
+        certified_consultant: Sertifisert Konsulent
+        promo_code: Rabattkode
+    errors:
+      messages:
+        passwords:
+          cannot_contain: Kan ikke inneholde hele eller deler av ditt navn eller e-postadresse.
+          does_not_match_security_requirements: 'Samsvarer ikke med sikkerhetskravene. Passordet må inneholde 1 av de 3 følgende tegngruppene: A-Z, a-z, 0-9.'
+          must_be_at_least: Må være minst 8 tegn lang.
+        record_invalid: 'Validering mislyktes: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Kan ikke slette rekord fordi avhengige %{record} eksisterer
+          has_one: Kan ikke slette rekord fordi avhengige %{record} eksisterer
+        should_be_greater_or_equal: Må være større eller lik sluttdato
+  addresses:
+    region:
+      regionnametitleize_regionabbre: "%{regionnametitleize} (%{regionabbreviation})"
+  application:
+    change_password_required: Du må endre passordet ditt før du logger inn for første gang
+    user_not_authorized:
+      forbidden: Forbudt
+  companies:
+    edit:
+      edit_company: Rediger klient
+      manage_users: Administrer Brukere
+    index:
+      companiestotal_count: "(%{companiestotal_count})"
+      company_name: Kunde Navn
+      create_company: Lag klient
+      industry: Industri
+      manage_company: Administrer Klient
+      my_clients: Mine Kunder
+      number_of_projects: Antall Prosjekter
+      sort_by_company_name: Sorter etter Klientens navn
+      sort_by_created_date: Sorter etter Opprettet dato
+      sort_by_industry: Sorter etter Industri
+      sort_by_number_of_projects: Sorter etter antall prosjekter
+      start_creating_companies_now: Start å lage kunder nå
+      you_have_no_companies_to_manage: Du har ingen klienter til å administrere
+    new:
+      consulting_company: Konsulentvirksomhet
+      create_company: Lag klient
+      new_company: Ny Klientens navn
+    partials:
+      delete_company:
+        cname_corganization_typename: "%{cname} (%{corganization_typename})"
+        existing_projects_top_10: 'Eksisterende prosjekter (topp 10):'
+        please_notice_that_it_will_als: 'Vær oppmerksom på at det også vil slette følgende eksisterende barnorganisasjoner:'
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} dette selskapet"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_comp: "%{thomeindexyes_delete_this} selskap"
+    show:
+      create_group_report: Lag grupperapport
+      create_new_project: Opprett nytt prosjekt
+      created_by: Laget av %{creator}
+      delete_company: Slett Klient
+      tsharedmore_actions: "%{tsharedmore_actions}"
+      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant} %{tsharedcertified_consultants}"
+  concerns:
+    role_management:
+      create_user_role:
+        success: Suksess
+      update_user_role:
+        success: Suksess
+  consultants:
+    saved_successfully: Konsulent har blitt lagt til!
+    title: Konsulent
+  date:
+    abbr_day_names:
+    - Søn
+    - Man
+    - Tirs
+    - Ons
+    - Tors
+    - Fre
+    - Lør
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - Mai
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Okt
+    - Nov
+    - Des
+    day_names:
+    - Søndag
+    - Mandag
+    - Tirsdag
+    - Onsdag
+    - Torsdag
+    - Fredag
+    - Lørdag
+    formats:
+      default: "%m-%d-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    -
+    - Januar
+    - Februar
+    - Mars
+    - April
+    - Mai
+    - Juni
+    - Juli
+    - August
+    - September
+    - Oktober
+    - November
+    - Desember
+    order:
+    - :måned
+    - :dag
+    - :år
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: Ca 1 time
+        other: Ca %{count} timer
+      about_x_months:
+        one: Ca 1 måned
+        other: Ca %{count} måneder
+      about_x_years:
+        one: Ca 1 år
+        other: Ca %{count} år
+      almost_x_years:
+        one: Nesten 1 år
+        other: almost %{count} years
+      half_a_minute: half a minute
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
+      less_than_x_seconds:
+        one: less than 1 second
+        other: less than %{count} seconds
+      over_x_years:
+        one: over 1 year
+        other: over %{count} years
+      x_days:
+        one: 1 day
+        other: "%{count} days"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
+      x_months:
+        one: 1 month
+        other: "%{count} months"
+      x_seconds:
+        one: 1 second
+        other: "%{count} seconds"
+    prompts:
+      day: Dag
+      hour: Time
+      minute: Minutt
+      month: Måned
+      second: Måned
+      year: År
+  devise:
+    confirmations:
+      confirmed: Din e-postadresse er bekreftet.
+      new:
+        resend_confirmation_instructio: Send bekreftelsesanvisninger på nytt
+      send_instructions: Du vil motta en e-post med instruksjoner om hvordan du bekrefter e-postadressen din om noen få minutter.
+      send_paranoid_instructions: IF din e-postadresse finnes i vår database, vil du motta en e-post med instruksjoner om hvordan du bekrefter e-postadressen din om noen få minutter.
+    failure:
+      user:
+        already_authenticated: Du er allerede logget på.
+        inactive: Kontoen din er ikke aktivert ennå.
+        invalid: Ugyldig %{authentication_keys} Eller passord.
+        last_attempt: Du har ett forsøk før kontoen din blir låst.
+        locked: Kontoen din er låst.
+        not_found_in_database: Ugyldig %{authentication_keys} Eller passord.
+        timeout: Økten din utløp. Vennligst logg inn igjen for å fortsette.
+        unauthenticated: Du må logge på eller registrere deg før du fortsetter.
+        unconfirmed: Du må bekrefte e-postadressen din før du fortsetter.
+    invalid_captcha: Fangstinngangen er ikke gyldig!
+    mailer:
+      confirmation_instructions:
+        confirm_my_account: Bekreft Min Konto
+        user_subject: Bekreftelsesanvisninger
+        welcome_email: Velkommen %{email}!
+        you_can_confirm_your_account_e: 'Du kan bekrefte e-postadressen din via lenken nedenfor:'
+      reset_password_instructions:
+        change_my_password: Create Password
+        hello_resourceemail: Hallo %{resourceemail}!
+        if_you_didnt_request_this_plea: Hvis du ikke ba om dette, vennligst ignorere denne e-posten.
+        someone_has_requested_a_link_t: Noen har bedt om en link for å endre passordet ditt. Du kan gjøre dette via lenken nedenfor.
+        user_subject: Tilbakestill passord instruksjoner
+        your_password_wont_change_unti: Passordet ditt vil ikke endres før du åpner lenken over og lager en ny.
+      unlock_instructions:
+        click_the_link_below_to_unlock: 'Click the link below to unlock your account:'
+        hello_resourceemail: Hallo %{resourceemail}!
+        unlock_my_account: Lås opp kontoen min
+        user_subject: Lås opp instruksjonene
+        your_account_has_been_locked_d: Kontoen din er låst på grunn av et stort antall mislykkede påloggingsforsøk.
+    omniauth_callbacks:
+      failure: Kunne ikke godkjenne deg fra %{kind} fordi "%{reason}".
+      success: Godkjent godkjent fra %{kind} konto.
+    password_expired:
+      change_required: Ditt passord er utløpt. Vennligst forny ditt passord!
+      updated: Ditt nye passord ble lagret.
+    passwords:
+      edit:
+        change_my_password: Lag passord
+        change_your_password: Lag ditt passord
+        dont_have_an_account: Har du ikke en konto?
+        return_to_the_leadership_circl: 'Gå tilbake til Leadership Circle: Selvvurdering'
+        sign_up: Melde deg på
+        weak: Svak
+        good: Flink
+        medium: Medium
+        strong: Sterk
+        very_strong: Veldig sterk
+        password_should_be_at_least: Passordet skal være minst 8 tegn!
+        lower_and_uppercase_letters: lavere og store bokstaver
+        numbers: tall
+        symbols: symbols
+        password_should_include: Passordet skal inneholde
+        and: og
+        confirm_no_success: Passordene er ikke like!
+        confirm_success: Passordene samsvarer!
+      new:
+        dont_have_an_account: Har du ikke en konto?
+        forgot_your_password: Glemt passordet?
+        log_in: Logg Inn
+        return_to_the_leadership_circl: 'Tilbake til The Leadership Circle: Self-Assessment'
+        send_me_reset_password_instruc: Send meg tilbakestill passord instruksjoner
+        sign_up: Melde deg på
+      send_instructions: Send instruksjoner
+      user:
+        no_token: For sikkerhets skyld kan du ikke få tilgang til forrige side uten å komme direkte fra en e-post med tilbakestilling av passord. Hvis du kommer fra en e-post med tilbakestilling av passord, må du passe på at du brukte den fullstendige nettadressen som er oppgitt i e-posten.
+        send_instructions: Du vil motta en e-post med instruksjoner om hvordan du tilbakestiller passordet ditt om noen få minutter.
+        send_paranoid_instructions: Hvis e-postadressen din finnes i vår database, vil du motta en passordgjenopprettingskobling på e-postadressen din om noen få minutter.
+        updated: Your password has been changed successfully. You are now signed in.
+        updated_not_active: Ditt passord har blitt endret.
+    registrations:
+      destroyed: Ha det! Kontoen din har blitt kansellert. Vi håper å se deg igjen snart.
+      edit:
+        current_password: Nåværende passord
+        currently_waiting_confirmation: 'For tiden venter bekreftelse på: %{resourceunconfirmed_email}'
+        edit_resource_nameto_shumanize: Redigere %{resource_nameto_shumanize}
+        password: Passord
+        password_confirmation: Passord Bekreftelse
+        update_password: Oppdater Passord
+        we_need_your_current_password_: Vi trenger ditt nåværende passord for å bekrefte endringene dine
+        you_must_change_your_password_: Du må endre passordet ditt før du logger inn for første gang.
+      new:
+        log_in: Logg Inn
+        sign_up: Melde deg på
+      signed_up: WVelkommen! Du har registrert deg med suksess.
+      signed_up_but_inactive: Du har registrert deg med suksess. Vi kunne imidlertid ikke logge deg på fordi kontoen din ikke er aktivert ennå.
+      signed_up_but_locked: Du har registrert deg med suksess. Vi kunne imidlertid ikke logge deg på fordi kontoen din er låst.
+      signed_up_but_unconfirmed: En melding med en bekreftelseslink er sendt til e-postadressen din. Vennligst følg lenken for å aktivere kontoen din.
+      update_needs_confirmation: Du har oppdatert kontoen din, men vi må bekrefte den nye e-postadressen din. Vennligst sjekk e-posten din og følg bekreftelseskoblingen for å bekrefte din nye e-postadresse.
+      updated: Kontoen din er oppdatert.
+    sessions:
+      new:
+        dont_have_an_account: Har du ikke en konto?
+        forgot_your_password: Glemt passordet?
+        login: Logg Inn
+        login_to_your_account: Logg inn på kontoen din
+        return_to_the_leadership_circl: 'Tilbake til The Leadership Circle: Self-Assessment'
+        sign_up: Melde deg på
+        privacy_policy: Personvernregler
+      user:
+        already_signed_out: Signert ut med hell.
+        signed_in: Signert inn med hell.
+        signed_out: Signert ut med hell.
+    shared:
+      links:
+        didnt_receive_confirmation_ins: Mottok ikke bekreftelsesinstruksjoner?
+        didnt_receive_unlock_instructi: Mottok ikke opplåsningsanvisninger?
+        forgot_your_password: Glemt passordet?
+        log_in: Logg Inn
+        sign_in_with_providerto_stitle: Logg inn med %{providerto_stitleize}
+        sign_up: Melde deg på
+    unlocks:
+      new:
+        resend_unlock_instructions: Gjenta opplåsningsanvisninger
+      send_instructions: Du vil motta en e-post med instruksjoner for hvordan du låser opp kontoen din om noen minutter.
+      send_paranoid_instructions: Hvis kontoen din eksisterer, vil du motta en e-post med instruksjoner for hvordan du låser opp det om noen minutter.
+      unlocked: Kontoen din har blitt låst opp. Vennligst logg inn for å fortsette.
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: Må aksepteres
+      already_confirmed: Var allerede bekreftet, vennligst prøv å logge inn
+      blank: Kan ikke være tomt
+      confirmation: Stemmer ikke overens %{attribute}
+      confirmation_period_expired: Må bekreftes innenfor %{period}, vennligst be om en ny
+      empty: Kan ikke være tomt
+      equal_to: Må være lik %{count}
+      equal_to_current_password: Må være forskjellig fra det nåværende passordet!
+      even: Må være jevn
+      exclusion: Er reservert
+      expired: Er utløpt, vennligst be om en ny
+      greater_than: Må være større enn %{count}
+      greater_than_or_equal_to: Må være større enn eller lik %{count}
+      inclusion: Er ikke inkludert i listen
+      invalid: er ugyldig
+      less_than: Må være mindre enn %{count}
+      less_than_or_equal_to: Må være mindre enn eller lik %{count}
+      model_invalid: 'Validering mislyktes: %{errors}'
+      not_a_number: Er ikke et tall
+      not_an_integer: Må være et heltall
+      not_found: ikke funnet
+      not_locked: Var ikke låst
+      not_saved:
+        one: '1 feil forhindret dette %{resource} fra å bli oppdatert:'
+        other: "%{count} feil forbudt dette %{resource} fra å bli reddet:"
+      odd: Må være merkelig
+      other_than: Må være annet enn %{count}
+      password_format: Må inneholde store, små bokstaver og sifre
+      password_not_saved: 1 feil forhindret passord fra å bli oppdatert.
+      present: Må være tomt
+      required: Må eksistere
+      taken: har allerede blitt tatt
+      taken_in_past: Var allerede tatt i det siste!
+      too_long:
+        one: Er for lang (maksimum er 1 tegn)
+        other: is too long (maksimum er %{count} tegn)
+      too_short:
+        one: Er for kort (minimum er 1 tegn)
+        other: is too short (minimum er %{count} tegn)
+      wrong_length:
+        one: Er feil lengde (skal være 1 tegn)
+        other: Er feil lengde (skal være %{count} tegn)
+    template:
+      body: 'Det var problemer med følgende felt:'
+      header:
+        one: 1 feil forbudt dette %{model} fra å bli reddet
+        other: "%{count}feil forbød %{model} fra å bli lagret"
+  evaluators:
+    edit:
+      edit_evaluator: Rediger Evaluator Invitasjon
+    new:
+      add_evaluator: Legg til evaluator
+    partials:
+      evaluator:
+        add_participant: Legg til Deltaker
+        edit_evaluator: Rediger Evaluator
+        email_evaluatoremail: 'E-post: %{evaluatoremail}'
+        evaluatorevaluation_surveys_fo: "%{done} of %{total} vurderinger"
+        evaluatorself_surveys_forproje: "%{done} of %{total} self-undersøkelser"
+        language_evaluatorlanguage_nam: 'Språket %{evaluatorlanguage_name}'
+      evaluator_form:
+        cancel_changes: Avbryt Endringer
+        delete_evaluator: Legg til Deltaker
+      import_evaluators:
+        email_address: Epostadresse
+        first_name: Fornavn
+        is_there_something_wrong_a_hre: Er dette riktig? <a href="#import--evaluators" class="open-popup-link">Upload a new file</a>
+        its_right_complete_import: Ja, det stemmer! Komplett import
+        language: Språk
+        last_name: Etternavn
+        participant: Rediger deltaker
+        relationship: Forhold
+        strongevaluatorscount_evaluato: "<strong>%{evaluatorscount} evaluators</strong> were found. Please confirm the match is right:"
+        survey_language: Språk
+        were_almost_there: Vi er nesten ferdige ...
+      import_evaluators_modal:
+        cancel: Avbryt
+        import_evaluators_from_csv_fil: Importer evaluatorer fra CSV-fil
+        not_sure_about_the_format_of_t: Ikke sikker på formatet på filen? <a href='%{download_sample_csv_project_ev}' class='link'>Last ned CSV-prøven</a>.
+        upload_evaluators: Last opp evaluatorer
+        upload_your_csv_file: 'Last opp CSV-filen din:'
+      index:
+        actions: Handlinger
+        add_evaluator: Legg til evaluator
+        download_evaluator_status_deta: Last ned evaluatorstatusdetaljer som CSV
+        evaluation_status: Evalueringsstatus
+        evaluator_details: Evaluatordetaljer
+        import_evaluators: Import Evaluators
+        participant_status: Deltakerstatus
+      participant:
+        completed_on_levaluatorevaluat: Fullført på %{levaluatorevaluation_survey_fo}
+        edit_participant: Rediger deltaker
+        evaluation_status: Evalueringsstatus
+        evaluatorevaluation_survey_for: "%{done} av %{all} spørsmål"
+        evaluatorself_survey_forprojec: "%{evaluatorself_survey_forprojec} av %{evaluatorself_survey_forprojec} Spørsmål om selvundersøkelse"
+        language_evaluatorevaluation_s: 'Undersøkelse Språk: %{evaluatorevaluation_survey_for}'
+        participantfull_name: "%{participantfull_name}"
+        relationship: 'Forhold:'
+        selfsurvey_completed_on_levalu: Selvundersøkelse fullført på %{levaluatorself_survey_forproje}
+        send_invite: Send Invitere
+      participant_form:
+        cancel_changes: Avbryt Endringer
+        delete_participant: Slett Deltaker
+    participants:
+      edit:
+        edit_participant: Rediger deltaker
+      new:
+        add_participant: Legg til Deltaker
+    sort_options:
+      evaluation_status: Sorter etter Vurderinger Status
+      evaluator_name: Sorter Etter Evaluatorens Navn
+      number_of_evaluations: Sorter Etter Antall Vurderinger
+  gflash:
+    titles:
+      error: Feil
+      notice: Notis
+      progress: Framgang
+      success: Suksess
+      warning: Advarsler
+    users:
+      impersonate:
+        notice: Du er på utkikk etter noen andre.
+        title: Forsink Brukeren
+      stop_impersonating:
+        notice: Du lurer ikke lenger på.
+        title: Forsink Brukeren
+  helpers:
+    label:
+      project:
+        1st_option: Valg 1
+        2nd_option: Valg 2
+        i_will_invite: Jeg vil invitere evaluatørene til min deltaker
+        my_participant_will_invite: Min deltaker kan invitere evaluatørene
+    select:
+      prompt: Vennligst Velg
+    submit:
+      create: Skape %{model}
+      submit: Lagre Endringer %{model}
+      update: Oppdater %{model}
+  high: Høy
+  history:
+    show:
+      before: Før
+      by: " av "
+      changes_made_at: 'Endringer gjort på '
+      field: Felt
+      now: Nå
+  home:
+    index:
+      agents: Agents
+      are_you_sure_want_to_delete: Er du sikker på at du vil slette
+      are_you_sure_want_to_delete_project: Slette et prosjekt kan ikke fortrykkes. Er du sikker på at du vil slette dette prosjektet?
+      are_you_sure_want_to_delete_project_with_expired_date_explanation: Beklager, du kan ikke slette fordi sluttdato for dette prosjektet er over.
+      are_you_sure_want_to_delete_project_with_expired_date_title: Advarsler
+      coaches_or_consultants: Rapportdato
+      companies_or_clients: Kunder
+      consultant_companies: Konsulentfirmaer
+      consultant_company: Konsulentfirma
+      distributors: Distributører
+      licensees: Rettighetshavere
+      no_dont_delete: Nei, ikke slett
+      participants: Deltakere
+      please_enter_a_new_name_for_the_organization: Vennligst skriv inn et nytt navn for %{organization_type}
+      projects: Prosjekter
+      rename_organization: Gi Nytt Navn %{organization_type}
+      unable_to_delete_company_warning: Kan ikke slette; Det er fortsatt prosjekter knyttet til dette selskapet. Vennligst slett prosjekter først
+      unable_to_delete_got_it: Got it
+      unable_to_delete_project_warning: Kan ikke slette; Det er fortsatt deltakere knyttet til dette selskapet. Vennligst slett deltakere først
+      yes_delete_this: Ja, slett dette
+    partials:
+      blank_slate:
+        create_new_project: Opprett nytt prosjekt
+        start_adding_projects_now: Begynn å legge til prosjekter nå.
+        you_have_no_projects_to_manage: Du har ingen prosjekter å administrere.
+      breadcrumbs:
+        coaches_consultants: Trenere / Konsulent
+        search_by: Søk av
+      child_node_content:
+        organizationorganization_typen: "%{organizationorganization_typen} (Klikk for å administrere)"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou} %{tsharedcertified_consultants}"
+      content:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} consultant?"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} consultant"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount} %{tsharedpeople}"
+      modals:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} %{parentorganization_typename}?"
+        thomeindexyes_delete_this_pare: "%{thomeindexyes_delete_this} %{parentorganization_typename}"
+        tsharedcancel: "%{tsharedcancel}"
+        tsharedsave_changes: "%{tsharedsave_changes}"
+      organization_users:
+        practitioners_userstotal_count: Konsulent (%{userstotal_count})
+      search_organization:
+        click_to_manage: "(Klikk for å administrere)"
+        manage_consultants: "(Administrere Konsulent)"
+        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization} %{tsharedwere_found}"
+        thomeindexare_you_sure_want_to: ' "%{thomeindexare_you_sure_want_to} Konsulent?"'
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} Konsulent"
+      sidebar:
+        add: Legg til
+  i18n:
+    transliterate:
+      rule:
+        ü: u
+  javascript:
+    1st_option: Valg 1
+    2nd_option: Valg 2
+    person: person
+    add_another_company: Legg til et annet selskap
+    admin_role_name: System Administrator
+    ajax_popup_error: Innholdet kunne ikke lastes inn.
+    apt_suite_bldg: Apt, Suite, Bldg...
+    binder_with_tabs: 3-ring bindemiddel med faner og trykte sider som skal gis til deltaker
+    browse_file: Bla gjennom fil
+    cancel_schedule_announcement: Er du sikker? Planleggingen vil bli kansellert og e-postene vil bli sendt innen de neste 15 minuttene.
+    choose_age_ranges: Velg Aldersgrupper
+    choose_countries: Velg Land
+    choose_direct_report_ranges: Velge Medarbeidere
+    choose_education_levels: Velg utdanningsnivåer
+    choose_ethnic_groups: Choose Ethnic Groups
+    choose_industries: Velg Bransjer
+    choose_management_levels: Velg Ledelsesnivåer
+    choose_professions: Velg Yrker
+    click_the_link_below_and_we_will_contact: Klikk på linken nedenfor, og vi vil få kontakt med en trener som vil veilede deg gjennom prosessen.
+    coach_report: Trenerrapport
+    company_revenue: Bedriftsinntekter
+    completion_date_asc: Fullføringsdato (stig)
+    completion_date_desc: Fullføringsdato (syn)
+    contact_info: Kontaktinfo
+    correct_email_required: Vennligst skriv riktig format for e-post
+    created_at: 'Opprettet på:'
+    custom_demographics: Egendefinert demografi
+    default_demographics: Standard demografi
+    deliverable_options: Leverbare alternativer
+    delivery_options: Leveringsalternativer
+    did_you_enjoy_your_survey_taker: Ta <b>Leadership Cirlce Profile</b> Full 360 vurdering og lære hvordan dine viktige interessenter (sjefer, kolleger, direkte underordnede  og andre) opplever ditt lederskap. Den dype innsikt som kommer fra Lederscirkelprofil full 360, gjør at du kan bli mye mer effektiv og mesterlig innen ledelse og praksis.
+    email_required: E-post er nødvendig
+    error: Beklager, noe gikk galt!
+    filter_by_role: Filtrer etter rolle
+    first_name_required: Fornavn er påkrevd
+    full_path: 'Full sti:'
+    gcsr_role_name: Global CSR
+    granted_at: Tildelt på
+    graph_high: Høy
+    graph_identity: Identitet
+    graph_low: Lav
+    graph_medium: Middels
+    high: Høy
+    invite_another_user: Inviter en annen bruker
+    language_required: Vennligst velg en språk
+    last_name_required: Etternavn er påkrevd
+    leaders_managers_eval: I denne delen vurderer du ledere / ledere av
+    low: Lav
+    members_eval: I denne delen vurderer du medlemmer av
+    message_required: Melding er nødvendig
+    minimum_evaluations_per_participant: The minimum number of evaluators (%{min_count}) må inviteres til å aktivere selvundersøkelsen.
+    never_sent: Aldri sendt
+    no_record_found: 'Ingen poster ble funnet som matchet:'
+    organization_and_report_type: Organisasjon og rapporttype
+    organization_small: Organisasjon
+    participant_graph: Deltakergraf
+    participant_report: Deltakerrapport
+    please_wait: Vennligst vent ...
+    preparing: Forbereder Vennligst vent ...
+    processing: Processing
+    project_access_control: Prosjekttilgangskontroll
+    project_access_control_description: Gå gjennom brukerens prosjekttilgang
+    project_details: Prosjektdetaljer
+    project_name_placeholder: 'Det vil si: konsernsjef, direktør, leder, lederskap mv...'
+    project_time_zone: Prosjekt Tidssone
+    relationship_required: Vennligst velg et forhold
+    report_options: Rapporter alternativer
+    role: Rolle
+    search_results: Søkeresultater
+    select_age: Velg Alder
+    select_client: Velg Klient
+    select_consulting_company: Velg et Konsulentfirma
+    select_country: Velg Land
+    select_ethnic_group: Velg etnisk gruppe
+    select_industry: Velg Industri
+    select_practitioner: Velg Konsulent
+    select_existing_administrator: Velg Eksisterende administrator
+    select_region: Velg Stat eller Region
+    select_your_companys_industry: Velg bedriftens bransje
+    select_your_education_level: Velg utdanningsnivå
+    select_your_gender: Velg kjønn
+    select_your_management_level: Velg styringsnivå
+    select_your_profession: Velg ditt yrke
+    select_your_residing_country: Velg ditt bosatt land
+    select_your_number_of_direct_reports: Antall Medarbeidere
+    sent_on: Sendt på
+    size_of_organization: Organisasjonens størrelse
+    street_address_example: Gateadresse (222 eksempel avenue)...
+    subject_required: Emne er påkrevd
+    surveys_focus: 'Definer undersøkelsens fokus (det vil si: Markedsføring, salg, etc...)'
+    team_small: team
+    type: 'Type:'
+    type_the_referral_email: Skriv inn henvisnings-e-posten
+    type_user_email: Skriv inn brukerens e-postadresse...
+    type_your_company_name: Skriv inn ditt firmanavn...
+    user_email: Bruker Email
+    user_name: Brukernavn
+    user_role_name: Bruker
+    zip_post_code: Postnummer
+    password_hint: Passordet må ha minst 8 tegn med minst ett nummer (0-9) og en stor bokstav (A-Z). Du kan ikke bruke et av de forrige 8 passordene dine.
+    select_project: Skriv her for å søke destinasjonsprosjekt etter navn
+  kaminari:
+    next_page:
+      next: Neste
+    prev_page:
+      prev: Tidligere
+  low: Lav
+  mailer:
+    reminder:
+      body_1: Det ser ut til at du ikke har fullført undersøkelsen din ennå. Hvis du fortsatt vil delta, klikk nedenfor!
+      body_2: 'Følg denne linken til undersøkelsen:'
+      body_3: Vær oppmerksom på at undersøkelsen din må fylles ut av %{planned_completion_date}.
+      header: Kjære %{practitioner_full_name},
+      regards: Beste hilsner, The Leadership Circle Team
+      subject: "%{product_name} Påminnelse"
+    welcome:
+      subject: Velkommen til The Leadership Circle Online Assessment System!
+      header: Kjære %{participant_full_name},
+      body_1: Velkommen til The Leadership Circle Online Assessment System. La oss få deg til å opprette en innlogging og ditt eget passord, slik at du kan begynne å bruke systemet.
+      body_2: Gå til %{web_address} og bruk den nye brukerkonto-loggen din i ID %{user_id} med det midlertidige passordet for %{user_password}.
+      body_3: Når du har opprettet ditt nye passord og svarer på noen få demografiske spørsmål, kan du gå direkte til mine undersøkelser og fullføre eventuelle undersøkelser som kan vente på deg.
+      body_4: Hvis du har problemer med å logge inn, vennligst kontakt oss på %{support_email_address}.
+      regards: Beste hilsner,
+      team: The Survey Taker Team
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: falsk
+        strip_insignificant_zeros: falsk
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: falsk
+      strip_insignificant_zeros: falsk
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Milliarder
+          million: Million
+          quadrillion: Kvadrillion
+          thousand: Tusen
+          trillion: billioner
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: ekte
+        strip_insignificant_zeros: ekte
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  order_steps:
+    deliverable_options:
+      next: Neste
+      previous: Tidligere
+    delivery_options:
+      cancel_order: Avbryt Ordre
+      create_report: Opprett Rapport
+      previous: Tidligere
+    group_report_summary:
+      cancel_order: Avbryt Ordre
+      pdf_report: PDF-Rapport
+      selected_count_tordersgr_summa: "(%{selected_count} %{tordersgr_summaryparticipants_})"
+      tordersgr_summarybilling_conta: "%{tordersgr_summarybilling_conta}:"
+      tordersgr_summaryorganization: "%{tordersgr_summaryorganization}:"
+      tordersgr_summaryreport_contac: "%{tordersgr_summaryreport_contac}:"
+      tordersgr_summaryreport_due_da: "%{tordersgr_summaryreport_due_da}:"
+      tordersgr_summaryreport_metric: "%{tordersgr_summaryreport_metric}:"
+      tordersgr_summaryreview_report: "%{tordersgr_summaryreview_report}"
+      tordersgr_summaryselected_part: "%{tordersgr_summaryselected_part}:"
+      tordersindexreport_name: "%{tordersindexreport_name}:"
+      tshareddemographicpluralize: "%{tshareddemographicpluralize}:"
+      tsharedreportpluralize: "%{tsharedreportpluralize}:"
+    organization_and_report_type:
+      cancel_order: Avbryt Ordre
+      next: Neste
+    partials:
+      address_modal:
+        select_from_my_account_address: Velg fra Mine kontoadresser
+        there_are_no_addresses_related: Det er ingen adresser relatert til brukeren
+      contact_info:
+        billing_address: Fakturaadresse
+        new_address: Ny Adresse
+        report_address: Rapportadresse
+        same_as_the_billing_address: Samme som faktureringsadressen
+        select_an_address_from_my_acco: Velg en adresse fra Min konto
+        this_is_the_address_where_the_: Dette er adressen hvor de trykte kopier av deltakerrapport, deltakergraf og treningsrapport vil bli levert.
+        this_is_the_person_or_company_: Dette er personen eller firmaet som ordrefakturaen skal utarbeides til.
+      deliverable_options:
+        coach_report: Trenerrapport
+        digital_graph: Digital graf
+        group_report: Grupperapport
+        how_many_copies_per_participan: Hvor mange kopier per deltaker?
+        i_want_pdf_and_printed_copies_: Jeg vil ha PDF og trykte kopier av rapportene.
+        i_want_the_pdf_copies_only: I want the PDF copies only.
+        participant_graph: Deltakergraf
+        participant_report: Deltakerrapport
+        pdf_file_that_practitioner_ema: Pdf-fil som konsulent e-post til deltaker
+        please_choose_below_which_ones: 'Vennligst velg hvilke som du vil ha skrevet ut:'
+        profile_interpretation_manual: Profilfortolkingshåndbok
+        reports: 'Rapporter:'
+        you_will_get_a_digital_version: 'Du får en digital versjon av følgende elementer:'
+        you_will_get_only_the_digital_: 'Du får bare den digitale versjonen av profilfortolkingshåndboken og følgende rapporter:'
+        you_will_get_the_digital_versi: Du får den digitale versjonen av profilfortolkingshåndboken og alle rapportene.
+        your_project_will_include: 'Prosjektet ditt vil inkludere:'
+    participants:
+      cancel_order: Avbryt Ordre
+      choose_the_participants_you_wo: Velg deltakerne du vil inkludere i denne rapporten. Du kan
+      next: Neste
+      of: " av "
+      only_add_participants_who_have: bare legg til deltakere som har gjennomført undersøkelser.
+      organizationname: "%{organizationname}"
+      participants_selected: " Deltakere valgt"
+      previous: Tidligere
+      select_all_available_participa: Velg alle tilgjengelige deltakere fra dette firmaet
+      select_participants: Velg Deltakere
+    project:
+      add_all_participants: Legg til alle deltakere
+      of: of
+      participants_selected: Deltakere valgt
+    report_options:
+      cancel_order: Avbryt Ordre
+      choose_metrics: Velg beregninger
+      how_calculation_is_made: Hvordan beregningen er gjort
+      next: Neste
+      previous: Tidligere
+      report_demographics: Rapporter Demografi
+      report_language: Rapporter språk
+  orders:
+    details:
+      coach_report: 'Trenerrapport:'
+      comment_questions: 'Kommentar Spørsmål:'
+      copies_per_participant: Kopier per deltaker
+      copy_per_participant: Kopi per deltaker
+      demographics: 'Demografi:'
+      included_participants: 'Inkludert Deltakere:'
+      participant_graph: 'Deltakergraf:'
+      participant_report: 'Deltakerrapport:'
+      participants:
+        one: 1 deltaker
+        other: "%{count} deltakere"
+      processing_date: 'Behandlingsdato:'
+      product_type: 'Produkttype:'
+      profile_interpretation_manual: 'Profilfortolkingshåndbok:'
+      report_type: 'Rapport type:'
+      utilties_order_details: ORDRE DETALJER
+    gr_summary:
+      billing_contact: Faktureringskontakt
+      coach_report: Trenerrapport
+      organization: Organisasjon
+      participant_graph: Deltakergraf
+      participant_report: Deltakerrapport
+      participants_selected: Deltakere valgt
+      place_order: Legg inn bestilling
+      report_contact: Rapporter Kontakt
+      report_due_date: Rapporter Forfallsdato
+      report_metrics: Rapporter statistikker
+      review_report_summary: VENNLIGST REVISER DIN RAPPORT SAMMENDRAG
+      selected_participants: Utvalgte deltakere
+    index:
+      actions: Handlinger
+      active_orders: Aktive Ordrer
+      all_orders: Alle Bestillinger
+      delete_order: Slett Rekkefølge
+      finished_orders: Ferdige Ordrer
+      my_orders: Mine Rapporter
+      number_of_participants: Antall Deltakere
+      order: Rekkefølge
+      order_date: Bestillingsdato
+      owner: Eieren
+      print_reports: Skriv ut rapporter
+      product_type: Produkttype
+      report_name: Rapportnavn
+      sort_by_company: Sorter etter Selskap
+      sort_by_number_of_participants: Sorter etter antall deltagere
+      sort_by_ordered_date: Sorter etter Bestilt dato
+      sort_by_product: Sorter etter produkt
+      sort_by_report_name: Sorter etter Rapportnavn
+      utilties_order: 'Bestill #'
+    order:
+      see_order: Se Bestill
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    partials:
+      pick_order_modal:
+        cancel: Avbryt
+        choose_order: Velg Bestilling
+        choose_order_for_project: Velg prosjekt Bestill
+        date_order_number: Dato / Bestillingsnummer
+        locreated_atto_date_format_lon: "%{locreated_atto_date_format_lon} / %{oorder_number}"
+    prepare_download:
+      cancel: Avbryt
+      download_reports_zip: Last ned rapporter (ZIP)
+      please_wait: Vennligst vent ...
+      preparing_reports_for_download: Forbereder rapporter for nedlasting
+    printed_participant:
+      digital_reports_to_be_sent_pdf: Digitale rapporter som skal sendes (PDF-filer)
+      download_copies_ordersingle_re: Last ned kopier (%{ordersingle_report_copies_coun})
+      download_manual: Last ned manuell
+      evaluators_printed_participant: 'Sensur: %{printed_participantparticipant} av %{printed_participantparticipant} Fullstendig'
+      manual_to_be_printed: Manuell å bli skrevet ut
+      mark_all_as_not_printed: Merk alt som ikke skrevet ut
+      mark_all_as_not_sent: Merk alt som ikke sendt
+      mark_all_as_printed: Merk alt skrevet ut
+      mark_all_as_sent: Merk alle ble sendt via e-post
+      mark_all_as_shipped: Mark alle var SENDT
+      printed_participantparticipant: "(%{printed_participantparticipant})"
+      reports_to_be_printed: Rapporter som skal skrives ut
+      self_survey_printed_participan: 'Self Survey: %{printed_participantstatus}'
+      send_digital_reports: Send Digitale Rapporter
+      status_printed_participantmanu: 'Status: %{printed_participantmanual_repo}'
+      status_printed_participantprin: 'Status: %{printed_participantprint_repor}'
+      status_printed_participantsend: 'Status: %{printed_participantsend_report}'
+    show:
+      billing_contact: Faktureringskontakt
+      binder_contact: Binder Kontakt
+      coaching_report: 'Coaching-Rapport:'
+      comment_questions: 'Kommentar Spørsmål:'
+      company: Selskap
+      demographics: 'Demografi:'
+      download_profile_interpretatio: Last ned profilfortolkingshåndboken (PDF)
+      download_reports_zip: Nedlasting Rapporter (ZIP)
+      find_the_order_details_below_y: Finn bestillingsinformasjonen nedenfor. Du kan også laste ned en zip-fil med alle PDF-rapportene dine.
+      included_participants: 'Inkludert Deltakere:'
+      list_of_participants: Liste over deltakerne
+      order_details: Ordre Detaljer
+      order_number: 'Ordrenummer:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} kopier"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} kopier per deltaker"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} kopier per deltaker"
+      participant_graph: 'Deltakergraf:'
+      participant_report: 'Deltakerrapport:'
+      pdf: PDF
+      planned_completion_date: 'Planlagt Sluttdato:'
+      print_order_details_pdf: Skriv ut Bestillingsdetaljer (PDF)
+      processing_date: 'Behandlingsdato:'
+      product_type: 'Produkttype:'
+      profile_interpretation_manual: 'Profilfortolkingshåndbok:'
+      questions_about_your_order: Spørsmål om bestillingen din?
+      report_contact: Rapporter Kontakt
+      report_name: 'Rapportnavn:'
+      report_type: 'Rapport Type:'
+      show_project: Vis Prosjekt
+      thank_you_for_your_order: Takk for din Bestilling.
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    show_print_report:
+      1_copy: 1 kopi per deltaker
+      copies_per_participant:
+        one: 1 kopi per deltaker
+        other: "%{count} kopier per deltaker "
+      Demography: 'Demografics:'
+      action: Handling
+      application:
+        order_not_valid: Bestillingen er ikke Gyldig
+        reports_sent: Rapporter Sendt
+        statuses_updated: Status Oppdatert
+      coach_report: Trenerrapport
+      coach_rpt: Coach Rpt.
+      coaching_report: 'Coaching-Rapport:'
+      comment_questions: 'Kommentar Spørsmål:'
+      company: Selskap
+      complete: Fullstendig
+      deliverable_instructions: Leveringsanvisninger
+      demographics: 'Demografi:'
+      digital_reports: 'Digitale Rapporter:'
+      digital_rpt: Digitale Rpt.
+      download_all_copies_ordercopie: Last ned alle kopier (%{ordercopies_count})
+      download_all_manuals_orderused: Last ned alle håndbøker (%{orderused_languagescount})
+      english_manual: 'Norsk Håndbok:'
+      evaluators: Evaluatorer
+      find_below_all_the_deliverable: Finn under alle leveransene for denne bestillingen, så vel som fraktinformasjonen for hver av dem.
+      graph: Graf
+      included_participants: 'Inkludert Deltakere:'
+      manual: Håndbok
+      mark_all_digital_reports_as_no: Merk alle digitale rapporter som ikke SENDT
+      mark_all_digital_reports_as_se: Merk alle digitale rapporter som SENT
+      mark_all_printed_copies_as_not: Merk alle utskrevne kopier som ikke skrevet ut
+      mark_all_printed_copies_as_pri: Merk alle utskrevne kopier har SKREVET
+      mark_all_printed_copies_as_shi: Mark all Printed Copies as SENDT
+      mark_order_as_finished: Merk ordre som Ferdig
+      no_participants: Ingen Deltakere
+      order_details: Ordre Detaljer
+      order_number: 'Ordrenummer:'
+      order_participantparticipantco: "%{order_participantparticipantco} of %{order_participantparticipantev}"
+      ordercoach_report:
+        one: En kopi
+        other: "%{count} kopier"
+      orderparticipant_report:
+        one: En kopi per deltaker
+        other: "%{count} Kopier per deltaker"
+      participant: Deltager
+      participant_graph: Deltakergraf
+      participant_report: Deltakerrapport
+      participants_orderself_surveys: Deltakere (%{orderself_surveyscount})
+      pdf: PDF
+      pdfs: PDFs
+      planned_completion_date: 'Planlagt Sluttdato:'
+      print_and_ship_copies_of_the_f: 'Skriv ut og send kopier av følgende rapporter:'
+      printed: Skrevet ut
+      printed_copies: 'Trykte Kopier:'
+      processing_date: 'Behandlingsdato:'
+      product_type: 'Produkttype:'
+      profile: Profil
+      profile_interpretation_manual: 'Profilfortolkingshåndbok:'
+      questions_about_your_order: Spørsmål om bestillingen din?
+      report_name: 'Rapportnavn:'
+      report_type: 'Rapport type:'
+      self_survey: Selvundersøkelse
+      send_digital_reports_pdfs: Send Digitale Rapporter(PDFs)
+      send_the_pdf_version_of_the_fo: 'Send the PDF version of the following reports:'
+      sent: Sendt
+      ship_the_3ring_binder_with_tab: Send 3-ringen bindemiddel med faner og utskrevne sider
+      shipping_info: 'Fraktinformasjon:'
+      status: 'Status:'
+      submit: Sende inn
+    show_send_digital_reports:
+      cancel: Avbryt
+      consultantcoach_orderprojectco: 'Konsulent: %{orderprojectconsultant_orderpr}'
+      send_digital_reports: Send Digitale Rapporter
+      send_digital_reports_to_practi: Send Digitale Rapporter til Konsulent
+  organization_users:
+    new:
+      tsharedadd_consultant_tsharedt: "%{tsharedadd} Konsulent %{tsharedto} '%{organizationname}'"
+  organizations:
+    actions:
+      tsharedadd_typename: "%{tsharedadd} %{typename}"
+    collab:
+      add_and_delete_shared_users: Du kan når som helst legge til og slette delte brukere
+      allow_users_edit_view: Tillat brukere å redigere og vise
+      certified_consultants: Konsulenter
+      collaborators_for: Samarbeidspartnere for
+      delete_collaborator: Slett Samarbeidspartner
+      invite_more_people: Inviter flere personer
+      invite_user_by_typing_email: Inviter en ny bruker ved å skrive inn e-posten nedenfor
+      sharing_access_certified_consultant: Delingstilgang gir en annen konsulent samme funksjonalitet som eier
+      sharing_top_level_company: Deling på toppnivå (firma) gir tilgang til alt under det (produktgrupper og deltakere)
+      this_licensor_is_not_shared: Denne organisasjonen er foreløpig ikke delt
+    collaborator:
+      success: Suksess!
+    collaborators:
+      role_urolename: 'Role: %{urolename}'
+      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount} %{torganizationscollabcertified_}"
+    delete_collaborator:
+      success: Suksess!
+    dnd:
+      drag:
+        add_user: Legg til bruker
+        confirmation: Bekreftelse
+        confirmation_text_goes_here: Bekreftelsesteksten går her ...
+        finish: Ferdig
+        next: Neste
+        organizations_type: Organisasjonens Type
+        please_confirm_user_permission: Vennligst bekreft brukerrettigheter for denne organisasjonen. Du trenger ikke å endre noe. Brukere som er tilordnet foreldreorganisasjonene, blir lagt til automatisk.
+        previous: Tidligere
+        privilages: Privilegier
+        role: Rolle
+        user: Bruker
+        you_are_about_to_move_one_orga: Du er i ferd med å flytte en organisasjon til en annen. Vennligst sjekk om typen organisasjon du vil flytte er riktig. Du kan også endre den her. Nedenfor er tillatt typer organisasjoner.
+      user:
+        remove: Fjerne
+    form:
+      tsharedname: "%{tsharedname}:"
+    help:
+      tree_help:
+        quick_help: Rask Hjelp
+        to_edit_add_users_or_add_a_new: Å redigere, legge til brukere eller legge til en ny, bare klikk den i treet og velg ønsket handling fra listen øverst til høyre på trepanelet
+        to_find_an_organization_simply: For å finne en organisasjon, bare start å skrive i søkefeltet under, når du er ferdig, trykk Enter
+        to_move_the_organization_to_an: Å flytte organisasjonen til en annen organisasjon bare dra og slipp
+    modals:
+      delete_organization:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} denne organisasjonen"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_orga: "%{thomeindexyes_delete_this} organisasjon"
+    move:
+      success: Suksess!
+    new:
+      active_consultant_label_info: Hvis konsulenten ikke er merket som aktiv, blir kontoen suspendert, og han har ikke lov til å få tilgang til systemet
+      administrator_email: Administratorens E-postadresse
+      administrator_first_name: Administrator Fornavn
+      administrator_last_name: Administratorens Etternavn
+      choose_countries: Velg Land
+      coach_consultant_email: Konsulentens E-postadresse
+      coach_consultant_first_name: Konsulentens Fornavn
+      coach_consultant_last_name: Konsulentens Etternavn
+      coach_consultant_name: Konsulentens Fullt Navn
+      company_client_name: Klientens Navn
+      consultant_label_info: En konsulent som arbeider med flere kunder og organisasjoner
+      contract_start_date: Kontraktens Startdato
+      countries_covered: Land Dekket
+      must_be_certified: Dette må være konsulent e-post
+      select_an_industry: Velg en Bransje
+      the_project_center: de Project Center
+      this_active_consultant: Dette er en Aktiv Konsulent
+      this_independent_consultant: Dette er en Uavhengig Konsulent
+      top_node: Toppnode
+      torganizationsnewmust_be_certi: "(%{torganizationsnewmust_be_certi})"
+      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} '%{parentname}'"
+      type_the_name_of_coach_consultant: Skriv inn Konsulentens Navn
+      type_the_name_of_company_client: Skriv inn navnet på Klienten
+      type_the_name_of_the: Skriv navnet på
+      you_are_adding_a: Du legger til en
+      or_create_an_admin_user: Eller opprett en ny bruker
+    roles:
+      collaborator:
+        delete: Slett
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{organizationname}"
+    search:
+      local: Lokal
+      search_by: Filtrer etter
+      search_by_company_participant_evaluator: Søk etter Bedrift / Deltaker / Evaluator
+      searching: Søker ...
+    share:
+      success: Suksess!
+    show:
+      event: Begivenhet
+      history: Historie
+      impersonate: Ligne
+      no_child_data: Ingen Barndata Funnet!
+      organization_information: Organisasjonsinformasjon
+      tshareddate_created: "%{tshareddate_created}:"
+    undo_share:
+      success: Suksess!
+    アクション:
+      tsharedadd_typename: Del lagt til %{tsharedadd} %{typename}
+  participants:
+    cannot_destroy:
+      cannot_delete_the_selected_par: 'Kan ikke slette den valgte Particiapant fordi posten er knyttet til andre data som ikke kan slettes. Vennligst sjekk listen nedenfor: '
+      orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
+      orders: 'Bestillinger:'
+    evaluators:
+      add_evaluator: Legg til evaluator
+      start_adding_evaluators_now: Begynn å legge til evaluatorer nå.
+      this_participant_has_no_evalua: Denne deltakeren har ingen evaluatorer.
+    form:
+      form:
+        action_text: "%{action_text}"
+        cancel_changes: Avbryt Endringer
+        delete_participant: Slett Deltaker
+    import_csv:
+      close: Lukk
+      importing_participants: Importerer Deltakere
+      please_wait: Vennligst vent ...
+    import_participants:
+      email_address: Epostadresse
+      empty_row: Tom rad
+      existing_first_name: 'Eksisterende fornavn:'
+      existing_last_name: 'Eksisterende etternavn:'
+      first_name: Fornavn
+      is_there_something_wrong_uploa: Is there something wrong? Upload a new file
+      its_right_complete_import: Det er riktig! Komplett import
+      last_name: Etternavn
+      strongparticipantscount_partic: "<strong>%{participantscount} participants</strong> ble funnet. Vennligst bekreft at kampen er riktig: "
+      user_with_this_email_already_e: Bruker med denne e-posten eksisterer allerede
+    import_participants_modal:
+      cancel: Avbryt
+      import_participants_from_csv_f: Importer deltakere fra CSV-fil
+      upload_participants: Last opp deltakere
+      upload_your_csv_file: 'Last opp CSV-filen din:'
+    index:
+      completion_date_is_over: Fullføringsdato er over.
+      download_participants_csv_status: Last ned Deltakerstatusdetaljer som CSV
+      evaluator_status: Evaluator Status
+      got_it: Har det!
+      participant_details: Deltakerdetaljer
+      projectself_surveyswherestatus: "%{projectself_surveyswherestatus} Deltakerne har ikke fullført sin selvundersøkelse og %{projectparticipantswith_not_en} Har ikke nok vurderinger. Du kan flytte deltakere til andre prosjekter til Kjør rapportdato (%{projectreport_datestrftimeb_d_})."
+      self_survey_status: Selvundersøkelsesstatus
+    logs_modal:
+      created_logsnew: 'Laget: %{logsnew}'
+      failed_logsfailed: 'Mislyktes: %{logsfailed}'
+      got_it: Forstått!
+      import_is_done: Importen er Ferdig.
+      import_logs: 'Importer logger:'
+      not_changed_logsuntouched: 'Ikke endret: %{logsuntouched}'
+      participant_groups_logsgroups: 'Deltakergrupper: %{logsgroups}'
+      total_participants_logstotal: 'Totalt deltakere: %{logstotal}'
+      updated_logsupdated: 'Oppdatert: %{logsupdated}'
+    manage_group:
+      continue_managing_your_group: Fortsett å administrere gruppen din
+      edit_evaluators_invitation: Rediger Evaluator Invitasjon
+      edit_participants_invitation: Rediger Deltakerens Invitasjons
+      participants_can_be_added_to_y: Deltakere kan legges til din nye gruppe nå eller senere
+      send_all_new_emails: Send alle nye e-poster
+    participant_header:
+      add_participants: Legg Deltakere
+      choose_products: Velg Produkter
+      confirm_order: BEKREFTER BESTILLING
+      edit_invitation_email: Rediger Invitasjons-e-post
+      review_order_details: Gjennomgå Bestillingsdetaljer
+      select_options: Velg Valg
+      send_emails: Sende E-poster
+      setup_group: Sett opp en Gruppe
+      update_addresses: Oppdater Adresser
+    send_email_to_evaluator:
+      last_reminder_sent_on_surveyem: Siste påminnelse sendt på %{surveyemail_sent}
+    send_email_to_participant:
+      last_reminder_sent_on_surveyem: Siste påminnelse sendt på %{surveyemail_sent}
+    show_evaluator:
+      evaluation_status: Evalueringsstatus
+      language: Språket Undersøkelsen
+      last_reminder_never_sent: Siste påminnelse aldri sendt
+      last_reminder_sent_on: Siste påminnelse sendt på
+      relationship: 'Forhold:'
+      send_reminder: Send Invitere
+      surveycompleted_questions_coun: "%{surveycompleted_questions_coun} %{tsharedof} %{surveyquestions_count} %{tsharedquestions}"
+      surveyevaluatortryfirst_name_s: "%{surveyevaluatortryfirst_name} %{surveyevaluatortrylast_name}"
+      tparticipantsshow_evaluatorlan: "%{tparticipantsshow_evaluatorlan}: %{surveyevaluatorlanguagename}"
+      tparticipantsshow_evaluatorlas: "%{tparticipantsshow_evaluatorlas} %{surveyemail_sent}"
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_atto_date_for}"
+    show_participant:
+      completed_on_lparticipantself_: Fullført på %{lparticipantself_surveycomplet}
+      edit_participant: Rediger Deltaker
+      email_participantuseremail: 'E-post: %{participantuseremail}'
+      language_participantuserlangua: 'Språket Undersøkelsen:  %{participantuserlanguagename}'
+      na: n/a
+      participantcompleted_evaluatio: "%{participantcompleted_evaluatio} of %{participantevaluationscount} evaluatorer"
+      participantself_surveycomplete: "%{participantself_surveycomplete} of %{participantself_surveyquestion} spørsmål"
+      participantuserfirst_name_part: "%{participantuserfirst_name} %{participantuserlast_name}"
+      resend_reports_to_gcsr: Gensend rapporter til GCSR
+      send_invite: Send invitere
+    sort_options:
+      evaluator_status: Sorter etter Evaluator Status
+      number_of_evaluators: Sorter etter antall Evaluatorer
+      participant_name: Sorter etter Deltakerens Navn
+      survey_status: Sorter etter Selvundersøkelsesstatus
+  people:
+    account_notification_title: Kontooppdatering
+    account_updated: Kontoen har blitt Oppdatert!
+    active_management:
+      error: Feil
+      success: Suksess
+    cannot_delete: Kan ikke slette; Det er fortsatt prosjekter knyttet til denne brukeren.
+    destroy:
+      success: Suksess!
+    index:
+      disabled: Funksjonshemmet
+      filtering_by_client: 'Filtrering av Klient:'
+      invite_new_users: Inviter nye Brukere
+      invited: Invitert
+      join_date: Medlem Siden
+      self_assessment: Selvvurdering
+      shared_organizations: Felles Organisasjoner
+      sort_by: Sorter Etter
+      sort_by_join_date: Sorter etter Dato
+      sort_by_org_number: Sorter etter Antall Organisasjoner
+      sort_by_user_name: Sorter etter Brukernavn
+      survey_takers: Undersøkelsesdeltakeren
+      user_details: Brukerdetaljer
+      users: Brukere
+    manual_unlock:
+      error: Noe gikk galt!
+      success: Suksess!
+    new:
+      choose_the_user_main_role_you_: Velg brukerens hovedrolle. Du kan redigere privilegier senere.
+      invite_another_user: Inviter en annen bruker
+      invite_new_users: Inviter ny bruker (e)
+    partials:
+      active_surveys:
+        company: Selskap
+        completed: 'fullført:'
+        completion_date: Fullføringsdato
+        evaluated: 'evaluert:'
+        evaluation_surveyscount_people: "%{evaluation_surveyscount} mennesker"
+        no_completed_evaluating_survey: Ingen gjennomførte evalueringsundersøkelser.
+        no_completed_self_surveys: Ingen gjennomførte selvstudier
+        no_evaluating_surveys_to_compl: Ingen evalueringsundersøkelser for å fullføre.
+        no_self_surveys_to_complete: Ingen selvstudier å fullføre.
+        not_valid: Ikke Gyldig
+        participant_and_product_type: Deltaker og Produkttype
+        product_type: Produkttype
+        project: Prosjekt
+        self_survey: Selvundersøkelse
+        self_surveyscount_self_survey: "%{self_surveyscount} Selvundersøkelse"
+        to_complete: 'å fullføre:'
+        to_evaluate: 'å evaluere:'
+      settings:
+        a_practitioner_that_does_not_w: En konsulent som jobber med mange klienter og organisasjoner.
+        account_status: Konto Status
+        delete_account_person_pathuser: Slett Konto
+        'false':  Nei
+        gcsr_or_system_administrator_h: GCSR eller systemadministrator har tilgang til alle organisasjoner.
+        is_this_an_independent_practit: Er dette en uavhengig konsulent?
+        'no': 'Nei'
+        practitioner_information: Konsulentinformasjon
+        the_referring_practitioner_wil: Henvisningskonsulenten vil motta en gratis profil.
+        this_user_has_been_active_sinc: Denne brukeren har vært aktiv siden
+        user_role: Bruker Rolle
+        users_can_only_manage_the_orga: Brukere kan bare administrere organisasjonene som har blitt delt med dem.
+        was_this_practitioner_referred: Var denne konsulenten henvist av en annen konsulent i systemet?
+        'yes': 'Ja'
+      shared_organization:
+        edit_user_role: Rediger bruker rolle
+        shared_organizationorganizatio: "(%{shared_organizationorganizatio})"
+      shared_organizations:
+        are_being_shared_with: Blir delt med
+        new_shared_organization: Ny delt organisasjon
+        role: Rolle
+        shared_organizations: Felles Organisasjoner
+        type: Type
+        userfull_name: "%{userfull_name}:"
+        userorganization_userscount_or: "%{userorganization_userscount} organizations"
+      surveys:
+        active_surveys_useractive_surv: Aktive Undersøkelser (%{useractive_surveyscount})
+        survey_history_userhistorical_: Historie av Undersøkelsen (%{userhistorical_surveyscount})
+      user_information:
+        address: Adresse
+        date_of_birth: 'Fødselsdato:'
+        edit: Redigere
+        education: 'Utdanning:'
+        email: 'E-post:'
+        full_name: 'Fullt Navn:'
+        gender: 'Kjønn:'
+        language: 'Språk:'
+        number_of_direct_reports: 'Antal Medarbeidere:'
+        organization_level: 'Organisasjonsnivå:'
+        personal_information: Personlig Informasjon
+        phone_number: Telefonnummer
+        profession: 'Yrke:'
+        professional_information: Profesjonell Informasjon
+        residing_country: 'Oppholdsland:'
+        you_havent_added_any_addresses: Du har ikke lagt til noen adresser.
+        you_havent_added_any_phone_num: Du har ikke lagt til noen telefonnumre.
+      user_information_address:
+        user_information_addressname: "%{user_information_addressname}:"
+        user_information_addressregion: "%{user_information_addresscity}, %{user_information_addressregion}"
+      user_information_phone:
+        user_information_phonename: "%{user_information_phonename}:"
+    person:
+      consultant: Konsulent
+      csr: CSR
+      gcsr: GCSR
+      manage_user: Administrer bruker
+      system_administrator: System Administrator
+    roles:
+      added_successfully: Brukeren er riktig tildelt organisasjonen!
+      edit_user_role:
+        cancel: Avbryt
+        companyname: "''%{companyname}''"
+        remove_access_to_this_organiza: Fjern tilgang til denne organisasjonen
+        role_on: Rolle på
+        save: Lagre Endringer
+        select: Plukke ut
+        userfirst_names: "%{userfirst_name}''s"
+      new_user_role:
+        choose_an_organization_to_shar: Velg en organisasjon du vil dele med
+        share_organization: Del Organisasjon
+        user_role: 'Brukerroller:'
+      title: Brukerroller
+    send_unlock_instructions:
+      error: Det har oppstått en feil!
+      success: Suksess!
+    show:
+      account_status: 'Konto Status:'
+      are_you_sure: Er du sikker?
+      delete_account: Slett Konto
+      disable_account: Deaktiver Konto
+      enable_account: Aktiver Konto
+      send_unlock_instructions: Send Unlock Instruksjoner
+      settings: Innstillinger
+      shared_organizations: Felles Organisasjoner
+      surveys: Undersøkelser
+      unlock_account: Lås opp konto
+      user_information: Brukerinformasjon
+    users:
+      sort_by: Sorter etter
+      sort_by_join_date: Sorter vær med på datoen
+      sort_by_org_number: Sorter etter antall organisasjoner
+      sort_by_user_name:  “Sorter etter antall brukere"
+  phones:
+    index:
+      add_phone: Legg til telefon
+      name: Navn
+      number: Antall
+    phone:
+      delete: Slett
+  project_steps:
+    contact_info:
+      create_project: Opprett Prosjekt
+      previous: Tidligere
+    deliverable_option:
+      next: Neste
+      previous: Tidligere
+    project_detail:
+      124_questions: 124 Spørsmål
+      62_actual_and_62_ideal_culture: 62 Aktuelle og 62 Ideelle kulturspørsmål
+      84_questions: 84 spørsmål
+      8_summary_and_29_outer_dimensi: 6 oppsummering og 21 ytre dimensjoner
+      8_summary_and_31_outer_dimensi: 8 sammendrag og 31 ytre dimensjoner
+      audience_is_csuite_presidents_: Publikum er "C-suite", presidenter, visepresident, direktører, EMBA, høyt potensielle ledere
+      audience_is_midlevel_managers_: Målgruppe er Mid-level ledere, Veiledere, MBA, Teamledere, "nye ledere"
+      choose_a_name_that_will_help_y: Velg et navn som vil hjelpe deg med å identifisere deltakerne
+      choose_an_existing_client: Velg en eksisterende klient
+      client: Kunde
+      consulting_company: Konsulentvirksomhet
+      create_a_new_client: Opprett en ny klient
+      focus_is_organization_or_team: Fokus er organisasjon eller team
+      leadership_circle_profile: Leadership Circle Profile
+      leadership_circle_profile_mana: Leadership Circle Profile Manager Edition
+      leadership_culture_survey: Leadership Culture Survey
+      or: eller
+      practitioner: Konsulent
+      select_product: Velg Produkt
+  projects:
+    convert_sa_to_lcp:
+      success: Konverteringen var vellykket.
+      please_set_consulting_company_and_consultant_first: Vennligst sett inn Klienten, Konsulentvirksomheten og Konsulenten først (i Client og Consulting Settings).
+    collab:
+      add_and_delete_shared_users: Du kan når som helst legge til og slette delte brukere
+      allow_users_edit_view: Tillat brukere å skrive ut eller vise ordre
+      delete_collaborator: Slett Samarbeidspartner
+      invite_more_people: Inviter flere personer
+      invite_user_by_typing_email: Inviter en ny bruker ved å skrive e-postadressen nedenfor
+      printers: Skrivere
+      sharing_access_certified_consultant: Delingstilgang gir en annen bruker tilgang til ordrene
+      this_licensor_is_not_shared: Dette prosjektet er foreløpig ikke delt
+    delete_collaborator:
+      success: Brukeren er fjernet fra prosjektet.
+    new:
+      itemparameterize: "#%{itemparameterize}"
+      next: Neste
+      previous: Tidligere
+    partials:
+      edit_form:
+        cancel_changes: Avbryt Endringer
+        deliverables_and_printing_opti: Leveranser og Utskriftsalternativer
+        project_options: Prosjektalternativer
+        save_all_changes: Lagre alle Endringer
+      evaluator_invitation:
+        if_you_have_already_sent_a_mes: Når du allerede har sendt invitasjonsmeldinger til deltakere, kan du etter det sende oppdaterte meldinger til alle deltakere og evaluatorer fra prosjektdashbordet.
+        invitations: INVITASJONER
+        modifying_this_message_will_ch: Hvis du endrer dette, endres evaluatorens invitasjoner eller påminnelsesemails på det valgte språket.
+        please_do_not_modify_any_text_: Vennligst ikke endre teksten i parentesene (| |). Dette er nøkkelord som vil bli erstattet med deltakerens informasjon når meldingen er sendt.
+        reminders: PÅMINNELSER
+        warnings: Advarsler
+      evaluators_blank_slate:
+        add_evaluator: Legg til evaluator
+        import_evaluators: Importer Evaluatorer
+        start_adding_evaluators_now: Begynn å legge til evaluatorer nå.
+        there_are_no_evaluators_in_thi: Det er ingen evaluatorer i dette prosjektet.
+      header:
+        comments: Kommentarer til skriveren
+        client: 'Kunde:'
+        completion_date: Fullføringsdato
+        consulting_settings: Klient og rådgivningsinnstillinger
+        consutling_company: 'Konsulentvirksomhet:'
+        create_group_report: Lag Grupperapport
+        delete_project: Slett Prosjekt
+        deleteproject: Slett Prosjekt
+        generate_draft_reports: Generer Utkastrapporter
+        convert_sa_to_lcp: Konverter til Full LCS
+        practitioner: 'Konsulent:'
+        printing_access: Utskriftstilgang
+        project_id: 'Prosjekt ID:'
+        project_time_zone: Prosjekt Tidssone
+        rename_project: Nytt Navn for Prosjektet
+        run_new_report: Kjør ny Rapport
+        run_report_date: Kjør Rapportdato
+        send_all_reminders: Send alle Påminnelser
+        send_new_emails_projectsurveys: Send nye E-poster (%{projectsurveyswhereemail_sent_})
+        shared_with: Delt Med
+        show_orders: Vis Bestillinger
+        starting_date: 'Startdato:'
+        status: 'Status:'
+        users_project_access: Delte Innstillinger
+        view_orders: Se Bestillinger
+      import_participants_modal:
+        cancel: Avbryt
+        import_participants_from_csv_f: Importer deltakere fra CSV-fil
+        not_sure_about_the_format_of_t: Ikke sikker på formatet på filen? <a href='#'> Last ned CSV-prøven. </a>
+        upload_participants: Last opp deltakere
+        upload_your_csv_file: 'Last opp CSV-filen din:'
+      modals:
+        delete_project:
+          thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}"
+          thomeindexunable_to_delete_pro: "%{thomeindexunable_to_delete_pro}"
+          thomeindexyes_delete_this_proj: "%{thomeindexyes_delete_this} project"
+        no_data_for_preview_warning:
+          at_least_one_survey_must_be_co: Minst én undersøkelse må være fullført før forhåndsrapporten fungerer.
+          not_enough_data_to_generate_pr: Ikke nok data til å generere forhåndsvisning
+        rename:
+          cancel: Avbryt
+          please_enter_a_new_name_for_th: 'Vennligst skriv inn et nytt navn for prosjektet:'
+          rename_project: Nytt navn til prosjektet
+          save_changes: Lagre Endringer Changes
+        show_orders:
+          orderorder_number_click: "%{orderorder_number} (klikk),"
+          projects_orders: Prosjektets Ordrer
+          the_orders_created_by_a_projec: Ordrene opprettet av et prosjekt.
+      new_project:
+        address_form:
+          select_an_address_from_my_acco: Velg en adresse fra Min Konto
+        address_modal:
+          select_from_my_account_address: Velg fra Mine Kontoadresser
+          there_are_no_addresses_related: Det er ingen adresser relatert til brukeren
+        contact_info:
+          billing_address: Fakturaadresse
+          binder_address: Binder Adresse
+          contact_information: Kontaktinformasjon
+          new_address: Ny Adresse
+          same_as_shipping_address: Samme som Rapportadresse
+          same_as_the_billing_address: Samme som Faktureringsadressen
+          shipping_address: Rapportadresse
+          this_contact_is_the_only_perso: Denne kontakten er den eneste personen som vil se noen faktureringsinformasjon fra The Leadership Circle
+          this_is_the_address_where_the_: Dette er adressen der treningsrapporten skal gå til.
+          this_is_the_address_where_the_3_ring: Dette er adressen hvor 3-ring bindematerialet blir levert til.
+        deliverable_options:
+          binder_with_tabs: Binder med profilfortolkingshåndbok
+          coach_report: Trenerrapport
+          digital_graph: Digital Graf
+          group_report: Grupperapport
+          how_many_copies_per_participan: Hvor mange kopier per deltaker?
+          i_want_pdf_and_printed_copies_: Jeg vil ha PDF og trykte kopier av rapportene.
+          i_want_the_pdf_copies_only: Jeg vil bare ha PDF-eksemplarene.
+          participant_graph: Deltakergraf
+          participant_report: Deltakerrapport
+          pdf_file_that_practitioner_ema: PDF-fil som konsulent e-post til deltaker
+          please_choose_below_which_ones: 'Vennligst velg hvilke som du vil ha skrevet ut:'
+          profile_interpretation_manual: Profilfortolkingshåndbok
+          reports: 'Rapporter:'
+          reports_format: 'Rapporter format:'
+          participant_reports_in_csv: 'Nedlastbare rådata'
+          you_will_get_a_digital_version: 'Du får en digital versjon av følgende elementer:'
+          you_will_get_only_the_digital_: 'Du får bare den digitale (e-kopier) versjonen av profilfortolkingshåndboken og de følgende rapportene:'
+          you_will_get_the_digital_versi: Du får den digitale versjonen av profilfortolkingshåndboken og alle rapportene.
+          your_project_will_include: 'Prosjektet ditt vil inkludere:'
+        demographics:
+          custom:
+            age_ranges: Aldersgrupper
+            all: Alle
+            country: Land
+            demographic_options: Demografiske Valg
+            direct_report_ranges: Medarbeidere
+            education_levels: Utdanningsnivåer
+            ethnic_groups: Etniske Grupper
+            female: Hunn
+            gender: Kjønn
+            if_you_choose_to_run_a_custom_: Hvis du velger å kjøre en egendefinert rapport mot en demografisk utvalgsstørrelse som er for liten, kan resultatet være en rapport med skjev data. De fleste demografiske data er tilgjengelig under Ressurser. Du får muligheten til å endre valget ditt tilbake til standard demografi. Kontakt din klienttjenestes representant med spørsmål.
+            industries: Industryoies
+            male: Mann
+            management_levels: Administrasjonsnivåer
+            professions: Yrker
+          summary:
+            age_ranges: 'Aldersgrupper:'
+            countries: 'Land:'
+            demographic_definition: Demografisk Definisjon
+            demographic_details: 'Demografiske Detaljer:'
+            demographic_size: 'Demografisk Størrelse:'
+            direct_report_ranges: 'Medarbeidere:'
+            education_levels: 'Education Levels:'
+            ethnic_groups: 'Etniske Grupper:'
+            gender: 'Kjønn:'
+            industry: 'Industri:'
+            languages: 'Språk:'
+            lcp_participants: LCP Deltakere
+            lcs_participants: LCS Deltakere
+            management_levels: 'Administrasjonsnivåer:'
+            me_participants: ME Deltakere
+            participants: Deltakere
+            professions: 'Yrker:'
+            sa_participants: Seltakerne SA
+            this_is_the_number_of_people_y: Dette er antall personer du vil sammenligne prosjektmedlemmene med.
+        project_details:
+          all_surveys_should_be_complete: Alle undersøkelser bør være ferdig innen denne dato.
+          cancel: Avbryt
+          date_reports_are_available: Datorapporter er tilgjengelige.
+          next: Neste
+          project_options: Prosjektalternativer
+          specify_a_timeline_for_the_pro: Angi en tidslinje for prosjektet
+        project_options:
+          1st_option: 'Valg 1'
+          2nd_option: 'Valg 2'
+          cancel_schedule_announcement: 'Avbryt Planlagt kunngjøring'
+          comment_questions_to_be_includ: Kommentar spørsmål som skal inkluderes i undersøkelsen
+          evaluators_are_bosses_peers_di: Evaluatorer er sjefer, jevnaldrende, medarbeidere og andre som er invitert til å gi innspill om deltaker.
+          how_evaluators_are_invited_to_: Hvordan evaluatorer blir invitert til å delta
+          i_will_invite: 'Jeg vil invitere evaluatørene'
+          if_the_participant_is_responsi: Hvis deltaker er ansvarlig for å invitere sine evaluatorer, må han / hun invitere disse minimumsevaluatorene før du starter selvundersøkelsen.
+          in_this_section_you_will_be_ev: I denne delen vurderer du
+          indicate_if_the_survey_will_be: Angi om undersøkelsen vil være fokusert på Organisasjonen som helhet, eller en gruppe lagmedlemmer.
+          leaders_managers: Ledere
+          members_of_team: De
+          minimum_evaluations_per_partic: Minimum vurderinger per deltaker?
+          my_participant_will_invite: 'Min deltaker vil invitere evaluatorer '
+          organization: Organisasjon
+          participants_will_see_the_focu: Deltakerne vil se fokusdefinisjonen i undersøkelsesinstruksjonene som vist i boksen til høyre
+          q1_in_your_opinion_what_is_thi: 'Q1: Etter din mening, hva er denne personens største ledelsesaktivitet, ferdighet eller talent, og hvilke forslag har du for å utnytte dette? '
+          q1_what_should_heshe_stop_doin: 'Q1: Hva skal han / hun slutte å gjøre?'
+          q2_in_your_opinion_what_is_thi: 'Q2: Etter din mening, hva er denne personens største ledelsesutfordring eller område for utvikling, og hvilke forslag har du for å håndtere dette? '
+          q2_what_can_heshe_improve: 'Q2: Hva kan han / hun forbedre? '
+          q3_what_have_you_observed_abou: 'Q3: Hva har du observert om denne personen om hvilken du vil gi ytterligere tilbakemelding til ham / henne som kanskje ikke har blitt adressert tidligere i denne vurderingen? '
+          q3_what_should_heshe_start_doi: 'Q3: Hva skal han / hun begynne å gjøre? '
+          regardless_of_who_invites_eval: Uansett hvem inviterer evaluatorer, vil konsulenten alltid kunne se listen over evaluatorer i prosjektdashboardet
+          report_demographics: Report Demografi
+          schedule_sending_of_invitation: Planlegg sending av invitasjonsmeldinger
+          send_now: Send Nå
+          survey_focus: Survey Focus
+          survey_focus_description: Undersøkelse Fokus Beskrivelse
+          survey_instructions: 'Survey Instruksjoner:'
+          team: Team
+          the_invitations_can_be_schedul: Invitasjonene kan planlegges å gå ut på en bestemt dato og klokkeslett
+          this_is_the_minimum_number_of_: Dette er det minste antall komplette vurderinger som en deltaker må inngå i rapporten. Minimumsberettiget er 5 vurderinger.
+          promo_code: Rabattkode
+      participant_invitation:
+        if_you_have_already_sent_a_mes: Når du allerede har sendt invitasjonsmeldinger til deltakerne, kan du deretter sende oppdaterte meldinger til alle deltakere og evaluatorer fra prosjektpanelet.
+        invitations: Invitasjoner
+        modifying_this_message_will_ch: Hvis du endrer denne meldingen, endres deltakerens invitasjons- eller påminnelses-e-post med det valgte språket.
+        please_do_not_modify_the_text_: Vennligst ikke endre teksten i parentesene (| |). Dette er nøkkelord som vil bli erstattet med deltakerens informasjon når meldingen er sendt.
+        reminders: PÅMINNELSER
+        warnings: Advarsler
+      participants_blank_slate:
+        add_participant: Legg til Deltaker
+        import_participants: Importer Deltakerne
+        start_adding_participants_now: Begynn å legge til deltakere nå.
+        there_are_no_participants_in_t: Det er ingen deltakere i dette prosjektet som skal evalueres.
+      reminders:
+        if_you_have_already_sent_a_mes: Hvis du allerede har sendt en melding til deltakere, kan oppdaterte meldinger sendes fra prosjektet.
+        langname_reminder: "%{langname} Påminnelse"
+        modifying_this_message_will_ch: Hvis du endrer denne meldingen, endres påminnelsesmeldingen med en engelskspråklig undersøkelse.
+        please_do_not_modify_the_text_: Vennligst ikke endre teksten i parentesene (* | | *). Dette er nøkkelord som vil bli erstattet med deltakerens informasjon når meldingen er sendt.
+        warnings: Advarsler
+      report_preview:
+        boss: Sjef
+        bosss_boss: Leders leder
+        direct_report: Medarbeidere
+        evaluators: Evaluatorer
+        other: Annen
+        participant: 'Deltager:'
+        peer: Sideordnede
+        select_categories: 'Velg Kategorier:'
+        self: Selv
+        skill: Ferdighet
+      resend_emails:
+        last_reminde: Siste Påminnelse
+        last_reminder_sent_on: Siste påminnelse sendt på
+        never_sent: Aldri Sendt
+        participantuseremail: "(%{participantuseremail})"
+        select_all_participants_evalua: Velg alle deltakerens evaluatorer
+        surveyevaluatoremail: "(%{surveyevaluatoremail})"
+      statuses:
+        completed_evaluating: Fullført Evaluering
+        completed_selfsurveys: Fullførte Selvundersøkelser
+        in_progress: I Prosess
+        not_started: Ikke Begynt
+        statcompleted_count_of_stattot: "%{statcompleted_count} av %{stattotal_count} %{statrelation_namepluralize} fullført"
+        statusestotal_relations_comple: "%{statusestotal_relations_comple} av %{statusestotal_relations} Vurderinger Fullført"
+        total_of_evaluators: Totalt Evaluatorer
+        total_of_participants: Totalt antall Deltagere
+        evaluations_completed: "%{completed} of %{total} vurderinger fullført"
+        self_completed: "%{completed} av %{total} <b>Selv</b> fullført"
+        boss_completed: "%{completed} av %{total} <b>Sjef</b> fullført"
+        peer_completed: "%{completed} av %{total} <b>Sideordnede</b> fullført"
+        direct_report_completed: "%{completed} av %{total} <b>Medarbeidere</b> fullført"
+        other_completed: "%{completed} av %{total} <b>Annen</b> fullført"
+        boss_boss_completed: "%{completed} av %{total} <b>Leders leder</b> fullført"
+      tooltip:
+        of: av
+        pluralizecompleted_count_relat: "%{pluralizecompleted_count_relat} fullført"
+    project:
+      manage_project: Administrer Prosjekt
+      resend_emails: Re-send E-post
+    project_header:
+      create_group_report: Lag Grupperapport
+      create_new_project: Opprett nytt Prosjekt
+    project_table:
+      actions: Handlinger
+      all_projects: 'Alle Prosjekter'
+      completion_date: Fullføringsdato
+      last_reminder: Siste Påminnelse
+      product: Produkt
+      project: Prosjekt
+      status: Status
+    report_preview:
+      '0': 0%
+      categories: 'Kategorier:'
+      evaluators: Evaluatorer
+      participant: 'Deltager:'
+      self: Selv
+      skill: Ferdighet
+    resend_emails:
+      cancel: Avbryt
+      select_all_evaluators: Velg alle evaluatorer
+      select_all_participants: Velg alle Deltakere
+      select_the_unfinished_particip: Velg de uferdige deltakerne og evaluatørene du vil sende e-post til. Velg typen e-post for å sende meldingen til dine valgte undersøkelsesbrukere.
+      send_emails_to_participants_ev: Send e-post til deltakere og evaluatorer
+      send_invitation_email: Send Invitasjons e-post
+      send_reminder_email: Send Påminnelses-e-post
+    roles:
+      collaborator:
+        delete: Slett
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{projectname}"
+        tsharedshared_with_project_use: "%{tsharedshared_with} %{project_userscount} %{tprojectscollabprinters}"
+    send_all_reminders:
+      close: Lukk
+      please_wait: Vennligst vent ...
+      sending_all_reminders: Sender alle påminnelser
+    share:
+      success: Suksess
+    show:
+      evaluator_email: Evaluatorens e-postadresse
+      evaluators: Evaluatorer
+      options: Alternativer
+      participant_email: Deltaker E-post
+      participants: Deltakere
+    show_consulting_settings:
+      client: Kunde
+      consulting_company: Konsulentvirksomhet
+      consulting_settings: Klient og rådgivningsinnstillinger
+      practitioner: Konsulent
+    undo_share:
+      success: Suksess
+  sa_survey_mailer:
+    request_invitation_email:
+      have_a_nice_day: Ha en fin dag!
+      hello: Hallo,
+      participant_email: 'Deltaker E-post:'
+      participant_name: 'Deltakernavn:'
+      selfsurvey_completed_at: 'Selvundersøkelse fullført kl:'
+      selfsurvey_id: 'Selvundersøkelse #ID:'
+      we_recorded_a_new_request_for_: 'Vi registrerte en ny forespørsel om invitasjon fra en bruker:'
+    survey_completed_email:
+      age_range: Aldersgruppe
+      basic_data: Grunnleggende data
+      company_name: 'Selskapsnavn:'
+      company_revenue: Bedriftsinntekter
+      country: Land
+      demographics: Demografi
+      education_level: Utdanningsnivå
+      ethnic_group: Etnisk gruppe
+      gender: Kjønn
+      have_a_nice_day: Gutten dag!
+      hello: Hallo,
+      industry: Industri
+      management_level: Ledernivå
+      organization_size: Organisasjonens Størrelse
+      participant_email: 'Deltaker E-post:'
+      participant_name: 'Deltaker Navn:'
+      participant_phone_number: 'Deltaker Telefonnummer:'
+      please_check_the_attachment_re: Vennligst sjekk vedlegg - rapporter er i PDF-format.
+      profession: Yrke
+      reports: Rapporter
+      selfsurvey_completed_at: 'Self-undersøkelse utført på:'
+      selfsurvey_created_at: 'Selvundersøkelse opprettet på:'
+      selfsurvey_id: 'Selvundersøkelse #ID:'
+      tlc_consultant_who_referred: 'TLC konsulent som henvist av:'
+      we_noticed_that_the_new_selfsu: 'Vi la merke gjorde den nye selvundersøkelse er gjennomført. Nedenfor er detaljene:'
+    survey_completed_participant_email:
+      dear_userfull_name: Kjære %{userfull_name},
+      if_youd_like_to_understand_how: Hvis du ønsker å forstå hvordan du er "dukke opp" når det gjelder lederskap, vil jeg være glad for å fortelle deg om den fullstendige Leadership Circle profil, som gir tilbakemeldinger fra dem du lede og arbeide med - direkte rapporter, kolleger og sjefer.
+      please_do_not_hesitate_to_reac: Ikke nøl med å nå ut med noen spørsmål. Jeg er glad for å hjelpe på noen måte.
+      request_a_full_lcp: Be om en full LCP
+      thank_you_again: Takk igjen,
+      thank_you_for_taking_the_leade: 'Takk for at du tok deg Leadership Circle Profil: Self-Assessment. Vi håper du har likt å lese gjorde Maste ledelse, og fant du rapporten nyttig og tilbakemeldinger som du fortsetter ditt lederskap reisen.'
+      to_help_you_better_understand_: For å hjelpe deg å bedre forstå din selvvurderingsrapport , har jeg tatt i Interpretation Guide Forklarer gjorde hvert aspekt av din graf og rapport.
+  sa_surveys:
+    demographics:
+      before_you_begin: Før du begynner
+      company_details: Firma detaljer
+      continue_to_survey: Fortsett til Undersøkelsen
+      need_help: Trenger du hjelp?
+      personal_information: Personlig Informasjon
+      tlc_would_like_to_gather_some_: TLC ønsker å samle litt informasjon for intern forskningsformål. TLC ikke dele din informasjon. Vi ville være takknemlig om du ville svare på spørsmålene; Du kan imidlertid alltid velge "Foretrekker å ikke svare" eller "Annet".
+      we_need_a_little_more_informat: Vi trenger litt mer informasjon om deg ...
+      select_your_gender: 'Velg Kjønn'
+      select_age: 'Velg Alder'
+      select_ethnic_group: 'Velg Etnisk Gruppe'
+      select_your_profession: 'Velg Yrke'
+      select_your_education_level: 'Velg Utdanningsnivå'
+      select_your_residing_country: 'Velg Bosatt Land'
+      street_address: 'Gateadresse (222 Eksempel avenue)...'
+      apt_suite_bldg: 'Apt, Suite, Bldg...'
+      zip_post_code: 'Postnummer'
+      type_your_company_name: 'Skriv inn Selskapsnavn...'
+      select_your_companys_industry: "Velg Selskapets Industri"
+      size_of_organization: "Størrelsen på Organisasjonen"
+      select_your_management_level: "Velg Ledelse Nivå"
+      company_revenue: "Bedriftsinntekter"
+    expanding_development:
+      discover_more_about_the_leader: Oppdag mer om Leadership Circle
+      need_help: Trenger Hjelp?
+      request_invitation: Forespørsel om Invitasjon
+      would_you_like_to_continue_exp: Har du lyst til å fortsette å utvide din lederutvikling?
+      wwwleadershipcirclecom: www.leadershipcircle.com
+      requesting_invitation: 'Be om Invitasjon ...'
+    registration:
+      type_first_name: 'Skriv inn Fornavn...'
+      type_last_name: 'Skriv inn ditt Etternavn...'
+      type_email: 'Skriv inn din E-post...'
+      type_phone_number: 'Skriv inn Telefonnummer...'
+      type_consultant_email: 'Vennligst skriv hans / hennes navn eller e-post...'
+      consultant_error: 'Vi har ikke funnet noen TLC konsulent med denne e-posten. Vennligst skriv inn en annen e-postadresse eller velg "Nei" til alternativet ovenfor.'
+      complete_the_registration_belo: Fullføre registreringen under for å ta undersøkelsen. Hvis du ikke er i stand til å fullføre egenvurdering. Du må fullføre det en innstilling. Resultatene vil bli sendt til den registrerte e-post etter ferdigstillelse av egenvurdering.
+      did_a_tlc_consultant_refer_you: Har en TLC konsulent henvise deg til vår bok <b> Mastering Leadership </b>?
+      'false': Falsk
+      i_agree_to_tlc: Jeg godtar TLC
+      ja: Yes
+      need_help: Trenger Hjelp?
+      nein: ikke
+      'no': 'Ikke'
+      privacy_and_policy_terms: Personvern og bruksvilkår
+      take_the_survey: Ta undersøkelsen
+      thank_you_for_your_interest: Takk for din Interesse.
+      'yes': 'Ja'
+    thank_you_participant:
+      did_you_enjoy_your_survey_shar: Vennligst dele dette med dine venner.
+      discover_more_about_the_leader: Oppdag mer om Leadership Circle
+      facebook: Facebook
+      for_taking_the_leadership_circ: for å ta lederskap Circle profil - Self Assessment. Rapportene med resultatene kommer i e-posten din i et par minutter.
+      linkedin: Linkedin
+      need_help: Trenger Hjelp?
+      request_invitation: Forespørsel om Invitasjon
+      thank_you_practitionerfull_nam: Takk, %{practitionerfull_name}
+      twitter: Twitter
+      would_you_like_to_take_the_bfu: Har du lyst til å ta <b> Full 360 Profiler </b> og finn ut hvor du står med dine ansatte, kolleger og sjefer? Klikk på linken nedenfor, og vi vil få deg i kontakt med en trener som vil lede deg gjennom prosessen.
+      wwwleadershipcirclecom: www.leadershipcircle.com
+      requesting_invitation: 'Be om Invitasjon ...'
+    welcome:
+      bget_your_copy_hereb: "<b>Få ditt eksemplar her</b>"
+      coming_back: Kommer Tilbake?
+      login: Innlogging
+      need_help: Trenger Hjelp?
+      sorry_but_your_answers_are_inc: Beklager, men svarene er feil. Vennligst prøv igjen.
+      submit_answers: Send inn Svar
+      this_area_is_a_special_section: 'Dette området er en egen avdeling for våre lesere. Vi håper du har hatt vår bok <b> Mastering Leadership </b>. Vennligst svar på spørsmålet nedenfor for å starte The Leadership Circle: egenvurdering. Svaret kan finnes i boken. Har du ikke det?'
+      welcome_to: Velkommen til
+  search:
+    index:
+      actions: Handlinger
+      client_name: Klientens navn
+      clients: Kunder
+      consultant_companies: Konsulentfirmaer
+      created_at: Opprettet på
+      email: E-post
+      evaluations: Vurderinger
+      industry: Industri
+      name: Navn
+      number_of_participants: Antall Deltakere
+      number_of_projects: Antall Prosjekter
+      order: Bestilling
+      order_date: Bestillingen Dato
+      orders: Bestillinger
+      practitioners: Rapportdato
+      product_type: Produkttype
+      projects: Prosjekter
+      report_name: Rapportnavn
+      results_limited_to_20_please_u: Resultater begrenset til 20, kan du bruke mer nøyaktig søk
+      search_results_total_count: Søkeresultater
+      selfsurveys: Selvundersøkelser
+      status: Status
+    orders_search:
+      number_of_participants: Antall Deltakere
+      order: Bestilling
+      order_date: Bestillingen Dato
+      orders: Bestillinger
+      product_type: Produkttype
+      report_name: Rapportnavn
+      search_results_total_count: Søkeresultater (%{total_count})
+      status: Status
+    partials:
+      index:
+        actions: Handlinger
+        client_name: Klientens navn
+        clients: Kunder
+        completion_date: Fullføringsdato
+        created_at: Opprettet på
+        email: E-post
+        evaluations: Vurderinger
+        industry: Industri
+        last_reminder: Siste Påminnelse
+        name: Navn
+        number_of_participants: Antall Deltakere
+        number_of_projects: Antall Prosjekter
+        order: Bestilling
+        order_date: Bestillingen Dato
+        orders: Bestillinger
+        practitioners: Rapportdato
+        product: Produkt
+        product_type: Produkttype
+        project: Prosjekt
+        projects: Prosjekter
+        report_name: Rapportnavn
+        search_results: Søkeresultater
+        selfsurveys: Selvundersøkelser
+        status: Status
+      order:
+        not_found_record_invalid: Ikke funnet! Oppfør Ugyldig.
+      organization:
+        create_group_report: Lag Grupperapport
+        manage_client: Administrer Klient
+      practitioner:
+        preview_user: Forhåndsvis Bruker
+    projects_search:
+      projects: Prosjekter
+      search_results_total_count: Søkeresultater (%{total_count})
+    surveys_search:
+      actions: Handlinger
+      completed_on: Fullført på
+      completion_date: Fullføringsdato
+      delete: Slett
+      evaluating: Vurderer
+      evaluations: Vurderinger
+      language: Språk
+      last_logged_in: Sist logget inn
+      more_actions: Flere Handlinger
+      move: Bevege seg
+      not_started: Ikke Begynt
+      of: av
+      project_name: prosjektnavn
+      questions: spørsmål
+      reset: Tilbakestille
+      role: Rolle
+      search_results_total_count:  Søkeresultater (%{total_count})
+      self_surveys: Selvundersøkelser
+      survey_taker_details: Survey Taker Details
+    users_search:
+      actions: Handlinger
+      created_at: Opprettet på
+      email: E-post
+      evaluations: Vurderinger
+      name: Navn
+      practitioners: Rapportdato
+      search_results_total_count:  Søkeresultater (%{total_count})
+      selfsurveys: Selvundersøkelser
+  shared:
+    1_printed_copy_per_participant: 1 Trykt kopi per deltaker
+    actions: Handlinger
+    add: Legg
+    add_participant: Legg til Deltaker
+    cancel: Avbryt
+    certified_consultants: Rapportdato
+    companies: Kunder
+    complete_by:  Komplett av
+    completed_at: Fullført på
+    confirm: Er du Sikker?
+    create_group_report: Lag Grupperapport
+    created_at: Opprettet på
+    date_created: Date Laget
+    delete: Slett
+    demographic: Demographic
+    details: Detaljer
+    edit: Redigere
+    edit_evaluator: Rediger Evaluator
+    email: E-post
+    import_participants: Importer Deltakerne
+    kind: Snill
+    licensor: Lisensgiver
+    manage_evaluators: Administrer Evaluatorer
+    menu:
+      dashboard: Dashbord
+      disabled: Funksjonshemmet
+      invited: Invitert
+      orders: Bestillinger
+      print_reports: Skriv ut Rapporter
+      project_center: Project Center
+      survey_takers: Undersøkelsesdeltakeren
+      utilities: Verktøy
+    more_actions: Flere Handlinger
+    name: Navn
+    new:
+      footer:
+        current_useremail: "(%{current_useremail})"
+        go_back_to_the_csr_project_cen: Gå tilbake til CSR Project Center
+        you_true_useremail_are_imperso: You (%{true_useremail}) are impersonating the consultant
+        your_password_will_expire: Ditt passord utløper i %{days_to_expire} dager. 
+        renew_your_password: Vennligst endre passordet ditt.
+      header:
+        go_to_project_center: Gå til Project Center
+        link_to_class_logo__link_do: "/"
+        selfassessment: Self-Assessment
+        the_leadership_circle: 'The Leadership Circle:'
+        the_leadership_circle_profilet: The Leadership Circle Profile
+        the_leadership_circle_selfasse: 'The Leadership Circle: Self-Assessment'
+      modal_search:
+        all: All
+        orders: Bestillinger
+        projects: Prosjekter
+        survey_takers: Undersøkelsesdeltakeren
+        users: Users
+      modal_wait:
+        importing_participants: Importing Participants
+        please_wait: Vennligst vent ...
+      nav:
+        my_clients: Mine Kunder
+        my_orders: Mine Rapporter
+        active_projects: Aktive Prosjekter
+        my_surveys: Mine Undersøkelser
+        people: Mennesker
+        print_reports: Skriv Rapporter
+        project_center: Project Center
+        utilities: Verktøy
+      navigation_mobile:
+        logout: Logg ut
+        my_account: Min Konto
+      session_timeout_modal:
+        attention: Oppmerksomhet!
+        logout: Logg ut
+        more_time: Mer tid
+        you_have_been_inactive_and_you: You have been inactive and you will be automatically logged out in <b class="remaining-time">5:00</b> minutes. Would you like more time?
+      session_timeout_remodal_modal:
+        attention: Attention!
+        logout: Logg ut
+        more_time: Mer tid
+        you_have_been_inactive_and_you: You have been inactive and you will be automatically logged out in <b class="remaining-time">5:00</b> minutes. Would you like more time?
+      user_navigation:
+        logout: Logg ut
+        my_account: Min Konto
+        stop_impersonating_current_use: Stopp unnskyldning %{current_userfull_name}
+        take_selfassessment: Ta Selvvurdering
+    next_page: Neste side
+    not_set: Ikke satt
+    notify:
+      delete_warning: Kan ikke slette evaluatorer som allerede har fullført undersøkelsen.
+      success: Data Lagret.
+      update_warning: Kan ikke endre evaluatorer som allerede har fullført undersøkelsen.
+      moved_with_success: Deltaker ble flyttet med hell.
+    number: Antall
+    of: av
+    old:
+      forbidden:
+        forbidden: Forbudt
+    participants: Deltakere
+    pdf_report: PDF-Rapport
+    people: Mennesker
+    percent_complete: "% Complete"
+    please_remove_children: Kan ikke slette fordi avhengige data fortsatt eksisterer (organisasjoner, prosjekter). Du må først slette avhengige data.
+    preview: Forhåndsvisning
+    preview_report: Forhåndsvisningsrapport
+    previous: Tidligere
+    printing_access: Utskriftstilgang
+    projects: Prosjekter
+    questions: Spørsmål
+    rename: Nytt Navn
+    report: Rapportere
+    report_for: Rapporter for
+    reset_password: Tilbakestille Passord
+    reset_password_confirm: Er du sikker på at du vil tilbakestille passord?
+    role: Rolle
+    save: Lagre Endringer
+    save_changes: Lagre Endringer Changes
+    send_invitations: Send Invitasjoner
+    shared_settings: Delte Innstillinger
+    shared_with: Delt med
+    status: Status
+    system: System
+    to: til
+    total: Total
+    users: Brukere
+    were_found: Ble funnet
+    when: Når
+    who: Hvem
+    retake: Gjenerobre
+  support:
+    array:
+      last_word_connector: ", og "
+      two_words_connector: " og "
+      words_connector: ", "
+  surveys:
+    another_show:
+      surveyproductname: "%{surveyproductname}"
+      tsurveysshowsurvey_for_surveye: "%{tsurveysshowsurvey_for} %{surveyevaluatorfull_name}"
+    answers:
+      are_you_sure_undone: Er du sikker? Vennligst sjekk alle svarene dine. Dette trinnet kan ikke fortrykkes
+      back_to_surveys: Tilbake til Undersøkelser
+      finish_survey: Komplett Undersøkelse
+      next_section: Neste del
+      previous_section: Tidligere section
+      questions_completed: Spørsmål Fullført
+    before_you_begin:
+      back_to_main_page: Tilbake til hovedsiden
+      before_you_begin: Før du begynner
+      continue_to_survey: Fortsett til Undersøkelsen
+      need_help: Trenger Hjelp?
+      tlc_would_like_to_gather_some_: TLC vil gjerne samle litt informasjon for intern forskningsprosess. TLC deler ikke informasjonen din. Vi ville være takknemlige hvis du skulle svare på spørsmålene. Skulle du velge å ikke delta, velg "Foretrekker ikke å svare" og klikk på "Fortsett til undersøkelse" -knappen.
+      we_need_a_little_more_informat: Vi trenger litt mer informasjon om deg ...
+    demographic:
+      raw_data_only_hint: Disse feltene kreves for pdf-rapporter, men ikke for data bare resultater
+      before_you_begin: Før du Begynner
+      tlc_would_like_to_gather_some_: TLC vil gjerne samle litt informasjon for internt forskningsformål. TLC deler ikke informasjonen din. Vi ville være takknemlige hvis du ville svare på spørsmålene; Du kan imidlertid alltid velge "Foretrekker ikke å svare".
+      we_need_a_little_more_informat: Vi trenger litt mer informasjon om deg ...
+    done: Klikk for å ta oversikt.
+    index:
+      active_surveys: Aktive Undersøkelser
+      complete_active_surveys: Vennligst fyll ut alle dine aktive undersøkelser nedenfor
+      content: Innhold
+      my_active_surveys: Mine Aktive Undersøkelser
+      need_help: Trenger Hjelp?
+      self_survey: Selvundersøkelse
+      survey_history: Survey History
+      take_survey: Ta Undersøkelse
+    invite_evaluators:
+      add_evaluator: Legg til evaluator
+      back_to_survey_list: Tilbake til Undersøkelseslisten
+      evaluators_provide_feedback_on: Evaluatorer gir tilbakemelding på dine lederskapskompetanse og kompetanse ved å fullføre undersøkelsen.
+      invite_evaluators: Invitere Evaluatorer
+      need_help: Trenger Hjelp?
+      take_the_survey: Ta Undersøkelse
+      you_have_enough_evaluators_to_: Du har nok evaluatorer til å ta undersøkelsen. Selv om vi anbefaler at du har minst <span class='minimum-evaluators'><b>10 evaluatorer<b></span>.
+      you_must_add_at_least_span_cla: Du må legge til minst <span class='minimum-evaluators'>%{current_userinvitee_surveys} flere evaluatorer</span> Å ta undersøkelsen.
+    not_enough_invited_evaluators: Deltaker kan invitere evaluatørene. Ikke nok evaluatorer til å ta undersøkelsen.
+    not_valid: Beklager, men denne undersøkelsen er ikke tilgjengelig lenger.
+    partials:
+      modals:
+        need_help:
+          description: Vennligst velg en undersøkelse fra listen nedenfor som du trenger hjelp til. Vår konsulent vil kontakte deg så snart som mulig.
+          main_support: Hovedstøtte
+      continue_survey:
+        '100': 100%
+        culture_survey_for: Kulturundersøkelse for
+        current_userfirst_name_current: "%{current_userfirst_name} %{current_userlast_name}"
+        review_your_answers: Se gjennom svarene dine
+        self_survey_for: Selvundersøkelse for
+        thanks_current_userfirst_name: Takk %{current_userfirst_name},
+        you_are_currently_taking_secti: Du tar for øyeblikket del %{paramssection_page} av %{surveysectionscount}
+        you_have_answered_all_the_ques: Du har besvart alle spørsmålene til Seksjon %{paramssection_page}.
+      evaluator_form:
+        cancel: Avbryt
+        update_evaluator: Oppdater Evaluator
+      evaluators:
+        edit_evaluator: Rediger Evaluator
+        evaluator_details: Evaluatordetaljer
+        language: Språk
+        relationship: Forhold
+      modal:
+        add_evaluator: Legg til evaluator
+        always: Alltid
+        cancel: Avbryt
+        edit_evaluator: Rediger Evaluator
+        na: N/A
+        never: Aldri
+        often: Ofte
+        once_added_an_email_will_be_im: Når en gang er lagt til, sendes en e-post umiddelbart til evaluatoren og inviterer dem til å delta
+        previous_question: Tidligere Spørsmål
+        review_your_answers: Se gjennom svarene dine
+        seldom: Sjelden
+        self_survey_for_bthe_most_effe: Selvundersøkelse for <b>Den mest effektive lederen jeg kjenner</b>
+        sometimes: Noen ganger
+      my_active_surveys:
+        complete_by:  Komplett av
+        current_userinvitee_completed_: "%{current_userinvitee_completed_} av %{current_userinvitee_surveyssel} vurderinger fullført"
+        evaluator_setup: Oppsett Evaluatorer
+        my_active_surveys: Mine aktive Undersøkelser
+        please_complete_all_of_your_ac: Vennligst fyll ut alle dine aktive undersøkelser nedenfor.
+        self_survey: Selvundersøkelse
+        take_the_survey: Ta Undersøkelse
+        self_evaluations_left:
+          one: "Du har <b>En egenvurdering </b> å fullføre:"
+          other: "Du har <b>%{count} egenvurderinger</b> å fullføre:"
+        evaluations_self:
+          one: "Du har <b>one vurdering</b> å fullføre:"
+          other: "Du har <b>%{count} vurderinger</b> å fullføre:"
+        you_must_invite_at_least_self_: Du må invitere minst%{self_surveyprojectminimum_eval} Evaluatorer for å ta undersøkelsen.
+      new_or_pending:
+        continue_the_survey: Fortsett undersøkelsen
+        current_sectionquestionscount_: "%{current_sectionquestionscount} spørsmål"
+        go_back_to_survey_list: Gå tilbake til undersøkelseslisten
+        need_help: Trenger Hjelp?
+        of: av
+        previous_section: Tidligere Avsnitt
+        restart_previous_survey: Start om forrige undersøkelse
+        start_the_survey: Begynn Undersøkelsen
+        you_have_answered: Du har svart på det
+      no_evaluators:
+        add_evaluator: Legg til evaluator
+        why_do_i_have_to_invite_evalua: " "
+        you_currently_do_not_have_any_: Du har for øyeblikket ingen evaluatorer.
+        you_need_to_have_at_least_span: Du må ha minst <span class='minimum-evaluators'>%{minimum_evals} evaluatorer</span> Å ta undersøkelsen.<br> Klikk på knappen nedenfor for å legge til en evaluator på listen din.
+      question:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: Alltid
+        culture_survey_for: Culture Survey for
+        na: N/A
+        never: Aldri
+        of: av
+        often: Ofte
+        perc_progress: "%{perc_progress}%"
+        previous_question: Tidligere Spørsmål
+        providing_feedback_for: Tilbakemelding til
+        question: Spørsmål
+        seldom: Sjelden
+        self_survey_for: Selvundersøkelse for
+        sometimes: Noen ganger
+        very_strongly_agree: Veldig sterkt enig
+        strongly_agree: Sterkt Enig
+        agree: Enig
+        slightly_agree: Litt Enig
+        slightly_disagree: Litt Uenig
+        disagree: Uenig
+        strongly_disagree: Sterkt Uenig
+        very_strongly_disagree: Veldig Sterkt Uenig
+        you_are_currently_taking_secti: Du tar for øyeblikket del %{sections_page} av %{surveysectionscount}
+        "×": "×"
+      review:
+        finish_your_survey: Fullfør din Undersøkelse
+        need_help: Trenger Hjelp?
+        next_section: Neste Seksjon
+        previous_section: Tidligere Seksjon
+        review_continue: Gjennomgå og Fortsett
+        review_your_answers_to_the_lea: Se gjennom svarene dine på %{product_name}. Endre et svar ved å klikke på det.
+        section_sectionscurrent_page_o: Seksjon %{sectionscurrent_page} av %{sectionstotal_pages}
+        your_survey_is_almost_complete: Din undersøkelse er nesten fullført. Vennligst les svarene dine.
+        your_survey_is_not_yet_complet: Din undersøkelse er ikke fullført ennå. Du har %{sectionstotal_pages_sectionscu} flere seksjoner å fullføre.
+      review_form:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: Alltid
+        cancel: Avbryt
+        na: N/A
+        never: Aldri
+        often: Ofte
+        seldom: Sjelden
+        sometimes: Noen ganger
+        update: Oppdater
+      sections:
+        survey_taker_evaluator_section_1_description:
+          leadership_profile: Lederskapsprofil
+          providing_feedback_section_sec: Tilbakemeldingsseksjon %{sectionscurrent_page} av %{sectionstotal_pages}
+          you_will_be_able_to_review_and: Du vil kunne gjennomgå og endre svarene dine på slutten av denne delen.
+        survey_taker_section_1_description:
+          culture_survey: Kulturundersøkelse
+          leadership_profile: Lederskapsprofil
+          section_sectionscurrent_page_o: Seksjon %{sectionscurrent_page} av %{sectionstotal_pages}
+          you_will_be_able_to_review_and: Du vil kunne gjennomgå og endre svarene dine på slutten av denne delen.
+        survey_taker_section_2_description:
+          at_the_end_of_this_section_you: På slutten av denne delen vil du kunne gjennomgå og endre svarene dine.
+          most_effective_leader: Den mest effektive lederen
+          section_sectionscurrent_page_o: Seksjon %{sectionscurrent_page} av %{sectionstotal_pages}
+      survey_history:
+        completed_on: Fullført på
+        evaluator_setup: Oppsett Evaluatorer
+        my_survey_history: Min Oversiktshistorie
+        self_survey: Selvundersøkelse
+        this_is_the_list_of_all_the_su: Dette er listen over alle undersøkelsene du har deltatt.
+        self_evaluations_completed:
+          one: "Du har fullført <b>en egenvurdering</b>:"
+          other: "Du har fullført <b>%{count} Egenvurderinger</b>:"
+        evaluations_completed:
+          one: "Du har fullført <b>En evaluering</b>:"
+          other: "Du har fullført <b>%{count} vurderinger</b>:"
+      thanks:
+        all_your_answers_have_been_sub: Alle svarene dine har blitt sendt inn og lagret. Takk for tiden din.
+        go_back_to_survey_list: Gå tilbake til undersøkelseslisten
+        log_out: Logg ut
+        thanks_current_userfirst_name_: Takk, %{current_userfirst_name}, for å ta denne undersøkelsen.
+    process_error: Noe gikk galt med undersøkelsesprosessen.
+    questions:
+      put_your_answer_here: Sett svaret ditt her
+    questions_completed: Undersøkelsesdeltakeren
+    sa_request: Takk, vi kontakter deg.
+    sections:
+      current_leadership_culture: I denne delen vurderer du <b>%{participant}</b>. Din oppgave er å beskrive ledelsesadferdene som oftest praktiseres, oppfordres eller tillates av ledere. Det kan være mange faktorer som påvirker din generelle erfaring med lederskap i organisasjonen eller laget ditt. For eksempel har to forskjellige ledere kontrasterende lederstiler, og begge har innflytelse på ledelseskulturen til denne organisasjonen eller laget. Beskriv oppførselen som har størst innflytelse på din erfaring.
+      desired_leadership_culture: I denne delen, svar på spørsmålene basert på hvordan du ønsker eller ønsker lederkultur av<b>%{participant}</b> å være. Svar hvert spørsmål som om lederkulturen var ideell - en som ville tillate det å trives i dagens og fremtidige miljøer.
+      ideal_to_ideal: ''
+      leadership_profile: Denne delen er utformet for å bygge en lederskapsprofil for <b>%{participant}</b>. Arbeid raskt gjennom spørsmålene ved å bruke ditt første inntrykk. Bruk alternativet Ikke tilgjengelig hvis du ikke vet svaret på spørsmålet eller spørsmålet ikke gjelder.
+      manager_profile: Denne delen er laget for å bygge en lederprofil for <b>%{participant}</b>. Arbeid raskt gjennom spørsmålene ved å bruke ditt første inntrykk. Bruk alternativet Ikke tilgjengelig hvis du ikke vet svaret på spørsmålet eller spørsmålet ikke gjelder.
+      most_effective_leader: |-
+        I denne delen av undersøkelsen blir du ikke lenger evaluert, <b>%{participant}</b>.
+        I stedet skal du nå tenke på den mest effektive lederen du noen gang har jobbet med (direkte eller indirekte). <b> Vær så snill og svar på disse spørsmål med denne personen i tankene. </b>
+        å slutten av denne delen vil du kunne endre på svarene dine.
+      write_in_feedback: I denne seksjonen, vennligst gi ytterligere skriftlig tilbakemelding for <b>%{participant}</b>. Deltakerne finner alltid skriveinnleggene spesielt hjelpsomme til å forstå resultatene sine. Din tilbakemelding kan inkludere områder som denne undersøkelsen ikke dekker, eller eksempler som illustrerer hvorfor du evaluerte <b>%{participant} </b> slik du gjorde, eller noe annet som er viktig for <b>%{participant}</b> å vite.
+    self:
+      end_section: På slutten av denne delen vil du kunne gjennomgå og endre svarene dine
+      identify_effective_leader: II stedet identifiser hvilken som er den mest effektive leder du noen gang har jobbet med (direkte eller indirekte)
+      most_effective_leader: Mest Effektive Leder
+      no_longer_be_evaluating: I denne delen blir du ikke lenger evaluert
+      surveyproductname: "%{surveyproductname}"
+      that_person_in_mind: Svar disse spørsmålene med denne personen i tankene
+      tsurveysselfno_longer_be_evalu: "%{tsurveysselfno_longer_be_evalu} %{surveyevaluatorfull_name}."
+    show:
+      survey_for: Undersøkelse for
+    survey:
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_at_format_lon}"
+    survey_progress:
+      current_sectionanswers_forsurv: "%{current_sectionanswers_forsurv}/%{current_sectionquestionscount}"
+      current_sectionpercentage_comp: "%{current_sectionpercentage_comp}%{tsharedpercent_complete}"
+  system_history:
+    announcement_send_at_changed: Påminnelse sendt dato endret til %{date}
+    change_history: Endre Historie
+    comment_questions_changed: Kommentar spørsmål endret til '%{value}'
+    completion_date_changed: Ferdighetsdato endret til %{date}
+    create_participant: Opprettet Deltaker %{participant}
+    delete_participant: Slettet deltaker %{participant}
+    demographics_policy_changed: Rapportdemografi endret til '%{value}'
+    description: Nedenfor er endringene gjort i denne bestillingen siden den ble opprettet på %{created_date}
+    pdf_copies_only_changed: PDF-eksemplarer er bare valgt
+    printed_copies_changed: PDF og trykte kopier valgt
+    project_created: Prosjekt opprettet
+    report_date_changed: Rapportdatoen endret til %{date}
+    retake_added: Gjenta igjen %{participant} la til
+    retake_removed: Gjenta igjen %{participant} fjernet
+    order_deleted: Slettet bestillingsnummer %{value}
+  templates:
+    form:
+      form:
+        if_you_have_already_sent_the_m: Hvis du allerede har sendt meldingen til deltakerne, må du sende den på nytt for å få den oppdaterte meldingen.
+        modifying_this_message_will_ch: Endring av denne meldingen vil endre deltakerens velkomstmelding for alle deltakere med engelsk undersøkelsesspråk.
+        please_do_not_modify_any_text_: Vennligst ikke endre noen tekst i (* || *) nedenfor. Dette er nøkkelen som vil bli erstattet med deltakerinformasjonen når meldingen er sendt.
+        reset_english_message: Tilbakestill Norsk Melding
+        return_to_list: Gå tilbake til listen
+        update_english_message: Oppdater Norsk Melding
+    participant_invitation_msg:
+      message: Melding
+      reset_english_message: Tilbakestill Norsk Melding
+      save_templatelanguagename_mess: Lagre Endringer %{templatelanguagename} Melding
+      subject: Emne
+  time:
+    am: o
+    formats:
+      default: "%a, %d %b %Y %I:%M:%S %p %Z"
+      long: "%B %d, %Y %I:%M %p"
+      short: "%d %b %I:%M %p"
+    pm: om
+  users:
+    avatar_upload:
+      error: Opplastingen oppsto en feil. Vennligst kontroller dataene dine og prøv igjen.
+      success: Bildet er lastet opp.
+    demographic:
+      demographics: Demografi
+    demographic_form:
+      company_details: Firma detaljer
+      continue_to_survey: Fortsett å Survey
+      need_help: Trenger Hjelp?
+      personal_information: Personlig informasjon
+    edit:
+      add_address: Legg til adresse
+      add_phone: Legg til Telefonnummer
+      address_type: Adressetype
+      addresses: Adresser
+      age: 'Alder:'
+      back_to_settings: Tilbake til Innstillinger
+      cancel: Avbryt
+      change_password: Bytt Passord
+      change_profile_picture: Bytt Profilbilde
+      city: By
+      company_details: Firma detaljer
+      company_name: Selskapsnavn
+      company_revenue: Bedriftsinntekter
+      confirm_password: 'Bekreft passord:'
+      country_address: Land
+      current_password: Nåværende Passord
+      date_of_birth: Fødselsdato
+      education: Utdanning
+      email: E-post
+      ethnic_group: Etnisk gruppe
+      fax: Faks
+      first_name: Fornavn
+      gender: Kjønn
+      home: Home
+      industry: Industri
+      language: Språk
+      last_name: Etternavn
+      management_level: Administrasjonsnivå
+      mobile: Mobil
+      new_password: Nytt Passord
+      number_of_direct_reports: Antall Medarbeidere
+      organization_level: Organisasjonsnivå
+      password: Passord
+      password_label: 'Password:'
+      personal_information: Personlig Informasjon
+      phone_numbers: Telefonnummer
+      please_enter_address_name: Vennligst skriv inn adressenavn
+      please_enter_email: Vennligst skriv inn e-post
+      please_enter_new_confirmation_: Vennligst skriv inn nytt bekreftelsespassord
+      please_enter_new_password: Vennligst skriv inn nytt passord
+      please_enter_phone_number: Vennligst skriv inn telefonnummer
+      please_enter_valid_confirmatio: Vennligst skriv inn gyldig bekreftelsespassord
+      please_enter_valid_email: Vennligst skriv inn gyldig epost
+      profession: Yrke
+      professional_information: Profesjonell Informasjon
+      profile_picture: Profilbilde
+      reenter_new_password: Skriv nytt passord på nytt
+      remove_address: Fjern denne adressen
+      remove_phone: Fjern denne telefonen
+      remove_profile_picture: Fjern profilbilde
+      residing_country: Oppholdsland
+      retype_password: Skriv inn nytt passord ...
+      save_changes: Lagre Endringer
+      size_of_organization: Organisasjonens Størrelse
+      state_province: Stat / Provins
+      street_address: Gateadresse
+      use_the_form_below_to_change_t: Bruk skjemaet under for å endre passordet til din TLC-konto.
+      user_roles: Brukerroller
+      users_placeholder: Rom for Brukere
+      work: Arbeid
+      working_address: Arbeidsadresse
+      zip_code_address: Postnummer
+      password_must_have_at_least: "Ditt passord må ha:"
+      9_characters: 9 tegn
+      1_lowercase_letter: 1 små bokstaver
+      1_uppercase_letter: 1 stor bokstav
+      1_number: 1 nummer
+      1_special_character: 1 spesialtegn
+      passwords_dont_match: Passord stemmer ikke overens
+      good_so_far: Bra så langt
+      match: Samsvarer
+      good: Godt
+      too_week:  For svak
+    modify:
+      success: Brukeren har blitt oppdatert.
+    take_self_assessment:
+      error: Noe gikk galt!
+    update_demographics:
+      error: Det oppsto en feil ved å samle de demografiske dataene. Vær så snill, prøv på nytt.
+      success: Demografiske data er oppdatert med hell.
+    update_password:
+      success: Passordet er oppdatert med hell.
+  utilities:
+    index:
+      all: Alle
+      billings: Faktureringer
+      'false': 'Nei'
+      filter: Filtere
+      filter_by_in_voiced: 'Filtrer etter faktura:'
+      filter_by_order_status: 'Filtrer etter bestillingsstatus:'
+      filter_by_region: 'Filtrer etter region:'
+      finished: Ferdig
+      'no': 'Nei'
+      ordered: Bestilt
+      orders: Bestillinger
+      orders_placeholder: Skriv inn bestillingsnavn eller bestillingsnummer ...
+      projects: Prosjekter
+      projects_placeholder: Skriv prosjektnavn ...
+      search: Søke
+      survey_takers: Undersøkelsesdeltakeren
+      surveys_placeholder: Skriv inn brukernavn eller e-postadresse ...
+      users: Brukere
+      users_placeholder: Skriv inn brukernavn eller e-postadresse ...
+      'yes': 'JA'
+    new_sa:
+      generate: Generere
+      select_score_for_answers: 'Velg poengsum for svar:'
+      users_email: 'User''s email:'
+    partials:
+      billing_table:
+        invoiced: Fakturert
+      search_orders:
+        found_order: Funnet Ordre
+        no_order_is_found: Ingen ordre er funnet!
+      search_orders_details:
+        ordercoach_report_qty: "%{ordercoach_report_qty}"
+        ordercoach_report_qty_tordersd: "%{ordercoach_report_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_graph_qty: "%{orderparticipant_graph_qty}"
+        orderparticipant_graph_qty_tor: "%{orderparticipant_graph_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_report_qty: "%{orderparticipant_report_qty}"
+        orderparticipant_report_qty_to: "%{orderparticipant_report_qty} %{tordersdetailscopies_per_parti}"
+        pdf: PDF
+      search_projects:
+        no_projects_are_found: Ingen prosjekter blir funnet!
+      search_surveys:
+        actions: Handlinger
+        completed_on: Fullført på
+        completion_date: Fullføringsdato
+        delete: Slett
+        evaluating: Vurderer
+        evaluations: vurderinger
+        found_survey_taker: Funnet Survey Taker
+        language: Språk
+        last_logged_in: Sist logget inn
+        more_actions: Flere Handlinger
+        move: Bevege seg
+        no_survey_is_found: Ingen undersøkelse er funnet!
+        not_started: Ikke Begynt
+        of: av
+        project_name: prosjektnavn
+        questions: Spørsmål
+        reset: Tilbakestille
+        role: Rolle
+        self_surveys: Selvundersøkelser
+        survey_taker_details: Survey Taker Detaljer
+      search_users:
+        back: Tilbake
+        email: 'E-post:'
+        found_user: Funnet bruker
+        impersonate: Ligne
+        name: 'Navn:'
+        no_user_is_found: Ingen bruker ble funnet!
+      survey:
+        reset: Tilbakestille
+    show_order:
+      billing_contact: Faktureringskontakt
+      binder_contact: Binder Kontakt
+      coaching_report: 'Coaching-rapport:'
+      comment_questions: 'Kommentar Spørsmåls:'
+      company: Selskap
+      demographics: 'Demografi:'
+      included_participants: 'Inkludert Deltakere:'
+      invoice_order: Fakturaordre
+      invoiced: 'Fakturert:'
+      list_of_participants: Liste over Deltakerne
+      mark_order_as_not_invoiced: Merk ordre som ikke fakturert
+      order_details: Ordre Detaljer
+      order_number: 'Ordrenummer:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} kopier"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} Kopier per deltaker"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} Kopier per deltaker"
+      participant_graph: 'Deltakergraf:'
+      participant_report: 'Deltakerrapport:'
+      pdf: PDF
+      planned_completion_date: 'Planlagt Sluttdato:'
+      processing_date: 'Behandlingsdato:'
+      product_type: 'Produkttype:'
+      profile_interpretation_manual: 'Profil Tolkning Manual:'
+      report_contact: Rapporter Kontakt
+      report_name: 'Rapportnavn:'
+      report_type: 'Rapport Type:'
+    surveys:
+      created_at: Opprettet på
+      evaluator: Evaluator
+      id: "#ID"
+      new_self_assessment: Ny Selvbedømmelse
+      regular: Regelmessig
+      self_assessment: Selvvurdering
+      status: Status
+  views:
+    pagination:
+      first: "&laquo; Først"
+      last: Siste &raquo;
+      next: Neste &rsaquo;
+      previous: "&lsaquo; Tidligere"
+      truncate: "&hellip;"
+  graph_preview:
+    circle_within_circle: "Sirkel inne i en sirkel:"
+    inner_circle_profiles: "Den indre sirkelen profilerer en prosentil sammendrag score for alle dimensjoner i den delen av ytre sirkelen."
+    percentile_scores: "Prosentpoeng:"
+    high: Høy
+    scores_from: "Poeng fra 66 til 100 prosent er sterke poeng."
+    medium: "Medium:"
+    score_between: "Poengene mellom det 66. og 33. prosentilen viser en blanding av styrke og forbedringsområder."
+    low: "Low:"
+    score_below: "Poeng under 33 prosent er lav score."
+    identity: "Identitet"
+    others_assessment: "Andres vurdering"
+    self_assessment: "Self Assessment"
+    print_graph: "Skriv ut graf"
+    culture_survey: "Culture Survey&trade;"
+    displayed_as_percentile: "Alle poeng blir vist som prosentilverdier som sammenligner scoreene dine med vår normbase."
+    high_scores_are_beyond: "Høy score er utover den 67. prosentilen."
+    low_scores_are_below: "Lav score er under den 33. prosentilen."
+    copy_right: "© The Leadership Circle® | All Rights Reserved"
+    desired_culture: "Ønsket kultur"
+    actual_culture: "Faktisk kultur"
+    manager_edition: "Manager Edition"
+    protecting: 'Beskytte'
+    evaluators: 'Evaluatorer'
+    self: 'Selv'
+    being: 'Å være'
+    arrogance: 'Arroganse'
+    critical: 'Kritisk'
+    distance: 'Afstand'
+    complying: 'Overeenstemming'
+    passive: 'Passieve'
+    belonging: 'Behoren'
+    pleasing: 'Aangenaam'
+    conservative: 'Conservatief'
+    relating: 'Betrekking'
+    caring_connection: 'Zorgzame Verbinding'
+    fosters_team_play: 'Fosters Teamspel'
+    collaborator: 'Medewerker'
+    mentoring_developing: 'Begeleiding Ontwikkelen'
+    interpersonal_intelligence: 'Interpersoon- lijke-IQ'
+    self_awareness: 'Zelfbewustzijn'
+    selfless_leader: 'Onbaatzuchtige Leider'
+    balance: 'Balans'
+    composure: 'Kalmte'
+    personal_learner: 'Persoonlijke Leerder'
+    authenticity: 'Authenticiteit'
+    integrity: 'Integriteit'
+    courageous_authenticity: 'Moedige Echtheid'
+    systems_awareness: 'Systeembewustzijn'
+    community_concern: 'Communautaire Bezorgdheid'
+    sustainable_productivity: 'Duurzame Productiviteit'
+    systems_thinker: 'System Denker'
+    achieving: 'Bereiken'
+    strategic_focus: 'Strategische Focus'
+    purposeful_visionary: 'Doelgerichte Visionaire'
+    achieves_results: 'Bereikt Resultaten'
+    decisiveness: 'Beslistheid'
+    controlling: 'Besturen'
+    perfect: 'Perfecte'
+    driven: 'Gedreven'
+    ambition: 'Ambitie'
+    autocratic: 'Autocratisch'
+    general_abilities: 'Algemene Vaardigheden'
+    leadership_potential_utilization: 'Leiderschap Potentiële Benutting'
+    reactive_creative_scale: 'Reactieve-Creatieve Schaal'
+    leadership_effectiveness: 'Leiderschap Effectiviteit'
+    relationship_task_balance: 'Relatie-Taakbalans'
+    creative: 'creatief'
+    relationship: 'relatie'
+    task: 'taak'
+    reactive: 'Reactief'
+    graph_low: "Laag"
+    graph_medium: "Medium"
+    graph_high: "Hoog"
+    graph_identity: "Identiteit"

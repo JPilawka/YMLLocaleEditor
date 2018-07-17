@@ -1,0 +1,21 @@
+<h3>Choose localization file</h3>
+<form action="/locales/show" method="get">
+<select name="locale_file">
+<%=
+x=0
+#@all_files = Array.new
+@files.each do |file|%>
+  <option value="<%=file%>"><%=file%> </option>
+<%
+x+=1
+end%>
+  #collection_select(:locale, :locale_id, @files, :to_s, :to_s)
+  #submit_tag("Edit")
+
+#form_for :locale, :url => {:action => "edit"} do |m|
+#  collection_select(:locale, :locale_id, @files, :to_s, :to_s)
+#  submit_tag("Edit")
+#end%>
+</select>
+<input type="submit" value ="EDIT">
+</form>

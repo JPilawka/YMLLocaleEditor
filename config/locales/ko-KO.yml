@@ -1,0 +1,2589 @@
+---
+ko-KO:
+  activerecord:
+    attributes:
+      project:
+        billing_address: 청구 지 주소
+        binder_address: 바인더 주소
+        certified_consultant: 공인 컨설턴트
+        coach_report_pdf: 코치 보고서 PDF
+        coach_report_qty: 코치 보고서 수량
+        comment_questions: 댓글 질문
+        completion_date: 완료 날짜
+        consultant: 컨설턴트
+        created_at: 작성 시간
+        deliverable_option: 제공 가능한 옵션
+        demographics_policy: 인구 통계 정책
+        evaluators_policy: 평가자 정책
+        group_report_pdf: 그룹 보고서 PDF
+        minimum_evaluations_per_participant: 참가자 당 최소 평가
+        name: 이름
+        organization: 고객
+        participant_graph_pdf: 참가자 그래프 PDF
+        participant_graph_qty: 참가자 그래프 수량
+        participant_report_pdf: 참가자 보고서 PDF
+        participant_report_qty: 참가자 보고서 수량
+        pdf_interpretation_manual: PDF 통역 매뉴얼
+        printed_interpretation_manual: 인쇄 된 해석 서
+        product: 생성물
+        promo_code: 프로모션 코드
+        report_date: 보고서 날짜
+        shipping_address: 배송 주소
+        status: 지위
+        survey_focus: 조사 포커스
+        survey_focus_description: 설문 조사 초점 설명
+        updated_at: 에서 업데이트 됨
+        user: 고객 대표
+      project_address:
+        address_line1: 첫 번째 주소 행
+        address_line2: 두 번째 주소 라인
+        address_line3: 3 번째 주소 행
+        city: 시티
+        country_code: 국가 코드
+        created_at: 작성 시간
+        email: 이메일
+        name: 이름
+        phone_no: 전화 번호
+        postal_code: 우편 번호
+        state_code: 주 코드
+        updated_at: 에서 업데이트 됨
+    errors:
+      messages:
+        passwords:
+          cannot_contain: 이름이나 이메일의 전부 또는 일부를 포함 할 수 없습니다.
+          does_not_match_security_requirements: 보안 요구 사항과 일치하지 않습니다. 비밀번호에는 A-Z, a-z, 0-9 문자 그룹 중 하나가 포함되어야합니다.
+          must_be_at_least: 최소 8 자 이상이어야합니다.
+        record_invalid: '유효성 검사 실패 : %{errors}'
+        restrict_dependent_destroy:
+          has_many: 종속 %{record}가 있으므로 레코드를 삭제할 수 없습니다.
+          has_one: 종속 %{record}가 있으므로 레코드를 삭제할 수 없습니다.
+        should_be_greater_or_equal: 완료 날짜보다 크거나 같아야합니다.
+  addresses:
+    region:
+      regionnametitleize_regionabbre: "%{regionnametitleize} (%{regionabbreviation})"
+  application:
+    change_password_required: 처음 로그인하기 전에 암호를 변경해야합니다.
+    user_not_authorized:
+      forbidden: 금지 된
+  companies:
+    edit:
+      edit_company: 클라이언트 수정
+      manage_users: 사용자 관리
+    index:
+      companiestotal_count: "(%{companiestotal_count})"
+      company_name: 고객 이름
+      create_company: 클라이언트 생성
+      industry: 산업
+      manage_company: 클라이언트 관리
+      my_clients: 내 고객
+      number_of_projects: 프로젝트 수
+      sort_by_company_name: 클라이언트 이름순으로 정렬
+      sort_by_created_date: 만든 날짜순으로 정렬
+      sort_by_industry: 산업별로 정렬
+      sort_by_number_of_projects: 프로젝트 수로 정렬
+      start_creating_companies_now: 지금 고객 생성하기
+      you_have_no_companies_to_manage: 관리 할 클라이언트가 없습니다.
+    new:
+      consulting_company: 컨설팅 회사
+      create_company: 클라이언트 생성
+      new_company: 새 클라이언트 이름
+    partials:
+      delete_company:
+        cname_corganization_typename: "%{cname} (%{corganization_typename})"
+        existing_projects_top_10: '기존 프로젝트 (상위 10 위) :'
+        please_notice_that_it_will_als: 기존의 하위 조직도 삭제됩니다.
+        thomeindexare_you_sure_want_to: 이 회사는 %{thomeindexare_you_sure_want_to}
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_comp: "%{thomeindexyes_delete_this} 회사"
+    show:
+      create_group_report: 그룹 보고서 작성
+      create_new_project: 새 프로젝트 만들기
+      created_by: "%{creator}에 의해 생성됨"
+      delete_company: 클라이언트 삭제
+      tsharedmore_actions: "%{tsharedmore_actions}"
+      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant} %{tsharedcertified_consultants}"
+  concerns:
+    role_management:
+      create_user_role:
+        success: 성공
+      update_user_role:
+        success: 성공
+  consultants:
+    saved_successfully: 컨설턴트가 성공적으로 추가되었습니다!
+    title: 컨설턴트
+  date:
+    abbr_day_names:
+    - 태양
+    - 월
+    - 화
+    - 물
+    - 목
+    - 금
+    - 토
+    abbr_month_names:
+    - 
+    - 1 월
+    - 2 월
+    - 3 월
+    - 4 월
+    - 할 수있다
+    - 6 월
+    - 7 월
+    - 8 월
+    - 9 월
+    - 10 월
+    - 11 월
+    - 12 월
+    day_names:
+    - 일요일
+    - 월요일
+    - 화요일
+    - 수요일
+    - 목요일
+    - 금요일
+    - 토요일
+    formats:
+      default: "%m-%d-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - 일월
+    - 이월
+    - 행진
+    - 4 월
+    - 할 수있다
+    - 유월
+    - 칠월
+    - 팔월
+    - 구월
+    - 십월
+    - 십일월
+    - 12 월
+    order:
+    - :month
+    - :day
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 약 1 시간
+        other: 약 %{count} 시간
+      about_x_months:
+        one: 약 1 개월
+        other: 약 %{count} 개월
+      about_x_years:
+        one: 약 1 년
+        other: 약 %{count} 년
+      almost_x_years:
+        one: 거의 1 년
+        other: 거의 %{count} 년
+      half_a_minute: 30 분
+      less_than_x_minutes:
+        one: 1 분 미만
+        other: "%{count}보다 작음"
+      less_than_x_seconds:
+        one: 1 초 미만
+        other: "%{count} 초 미만"
+      over_x_years:
+        one: 1 년 이상
+        other: "%{count} 년 이상"
+      x_days:
+        one: 1 일
+        other: "%{count} 일"
+      x_minutes:
+        one: 1 분
+        other: "%{count} 분"
+      x_months:
+        one: 1 개월
+        other: "%{count} 개월"
+      x_seconds:
+        one: 1 초
+        other: "%{count} 초"
+    prompts:
+      day: 일
+      hour: 시간
+      minute: 분
+      month: 달
+      second: 초
+      year: 년
+  devise:
+    confirmations:
+      confirmed: 귀하의 이메일 주소가 성공적으로 확인되었습니다.
+      new:
+        resend_confirmation_instructio: 다시 확인 확인 안내
+      send_instructions: 몇 분 내에 이메일 주소를 확인하는 방법에 대한 지침이 담긴 이메일을 받게됩니다.
+      send_paranoid_instructions: 귀하의 이메일 주소가 우리의 데이터베이스에 있다면, 몇 분 안에 귀하의 이메일 주소를 확인하는 방법에 대한 지침이 포함 된 이메일을 받게됩니다.
+    failure:
+      user:
+        already_authenticated: 이미 로그인되어 있습니다.
+        inactive: 계정이 아직 활성화되지 않았습니다.
+        invalid: 잘못된 %{authentication_keys} 또는 암호입니다.
+        last_attempt: 계정이 잠기기 전에 한 번 더 시도 할 수 있습니다.
+        locked: 계정이 잠겼습니다.
+        not_found_in_database: 잘못된 %{authentication_keys} 또는 암호입니다.
+        timeout: 세션이 만료되었습니다. 계속하려면 다시 로그인하십시오.
+        unauthenticated: 계속하기 전에 로그인 또는 가입해야합니다.
+        unconfirmed: 계속하기 전에 이메일 주소를 확인해야합니다.
+    invalid_captcha: 보안 문자 입력이 올바르지 않습니다!
+    mailer:
+      confirmation_instructions:
+        confirm_my_account: 내 계정 확인
+        user_subject: 확인 지침
+        welcome_email: "%{email}에 오신 것을 환영합니다!"
+        you_can_confirm_your_account_e: 아래 링크를 통해 계정 이메일을 확인할 수 있습니다.
+      reset_password_instructions:
+        change_my_password: 비밀번호 생성
+        hello_resourceemail: 안녕하세요 %{resourceemail}!
+        if_you_didnt_request_this_plea: 요청하지 않은 경우이 이메일을 무시하십시오.
+        someone_has_requested_a_link_t: 누군가 암호를 변경하라는 링크를 요청했습니다. 아래 링크를 통해이 작업을 수행 할 수 있습니다.
+        user_subject: 비밀번호 재설정 지침
+        your_password_wont_change_unti: 위 링크에 액세스하여 새 링크를 만들 때까지 비밀번호가 변경되지 않습니다.
+      unlock_instructions:
+        click_the_link_below_to_unlock: 계정 잠금을 해제하려면 아래 링크를 클릭하십시오.
+        hello_resourceemail: 안녕하세요 %{resourceemail}!
+        unlock_my_account: 내 계정 잠금 해제
+        user_subject: 잠금 해제 지침
+        your_account_has_been_locked_d: 과도한 로그인 실패 횟수로 인해 귀하의 계정이 잠겼습니다.
+    omniauth_callbacks:
+      failure: '"%{kind}"때문에 %{reason}에서 사용자를 인증 할 수 없습니다.'
+      success: "%{kind} 계정에서 성공적으로 인증되었습니다."
+    password_expired:
+      change_required: 암호가 만료되었습니다. 비밀번호를 갱신하십시오!
+      updated: 새 암호가 저장되었습니다.
+    passwords:
+      edit:
+        and: 과
+        change_my_password: 비밀번호 생성
+        change_your_password: 비밀번호 만들기
+        confirm_no_success: 암호 확인이 암호와 일치하지 않습니다!
+        confirm_success: 암호 확인이 암호와 일치합니다!
+        dont_have_an_account: 계정이 없습니까?
+        good: 좋은
+        lower_and_uppercase_letters: 대소 문자
+        medium: 매질
+        numbers: 번호
+        password_should_be_at_least: 비밀번호는 최소 8 자 이상이어야합니다!
+        password_should_include: 비밀번호는 다음을 포함해야합니다.
+        return_to_the_leadership_circl: '리더십 서클로 돌아 가기 : 자기 평가'
+        sign_up: 가입
+        strong: 강한
+        symbols: 기호들
+        very_strong: 매우 강한
+        weak: 약한
+      new:
+        dont_have_an_account: 계정이 없습니까?
+        forgot_your_password: 비밀번호를 잊어 버렸습니까?
+        log_in: 로그인
+        return_to_the_leadership_circl: '리더십 서클로 돌아 가기 : 자기 평가'
+        send_me_reset_password_instruc: 나에게 비밀번호 재설정 안내 보내기
+        sign_up: 가입
+      send_instructions: 안내 보내기
+      user:
+        no_token: 보안을 위해 암호 재설정 이메일에서 직접 오지 않고 이전 페이지에 액세스 할 수 없습니다. 비밀번호 재설정 이메일에서 온 경우 이메일에 제공된 전체 URL을 사용했는지 확인하십시오.
+        send_instructions: 잠시 후에 비밀번호를 재설정하는 방법에 대한 지침이 담긴 이메일을 받게됩니다.
+        send_paranoid_instructions: 귀하의 이메일 주소가 우리의 데이터베이스에 있다면, 몇 분 안에 귀하의 이메일 주소로 비밀번호 복구 링크를 받게됩니다.
+        updated: 비밀번호가 변경되었습니다. 이제 로그인했습니다.
+        updated_not_active: 비밀번호가 변경되었습니다.
+    registrations:
+      destroyed: 안녕! 귀하의 계정이 성공적으로 취소되었습니다. 조만간 다시 보길 바랍니다.
+      edit:
+        current_password: 현재 비밀번호
+        currently_waiting_confirmation: '현재 대기중인 확인 : %{resourceunconfirmed_email}'
+        edit_resource_nameto_shumanize: "%{resource_nameto_shumanize} 수정"
+        password: 암호
+        password_confirmation: 비밀번호 확인
+        update_password: 비밀번호 업데이트
+        we_need_your_current_password_: 변경 사항을 확인하려면 현재 비밀번호가 필요합니다.
+        you_must_change_your_password_: 처음 로그인하기 전에 암호를 변경해야합니다.
+      new:
+        log_in: 로그인
+        sign_up: 가입하기
+      signed_up: 환영! 성공적으로 가입하셨습니다.
+      signed_up_but_inactive: 성공적으로 가입하셨습니다. 그러나 귀하의 계정이 아직 활성화되지 않아 로그인 할 수 없습니다.
+      signed_up_but_locked: 성공적으로 가입하셨습니다. 그러나 계정이 잠겨 있기 때문에 로그인 할 수 없습니다.
+      signed_up_but_unconfirmed: 확인 링크가있는 메시지가 귀하의 이메일 주소로 발송되었습니다. 계정을 활성화하려면 링크를 클릭하십시오.
+      update_needs_confirmation: 계정을 성공적으로 업데이트했지만 새 이메일 주소를 확인해야합니다. 이메일을 확인하고 확인 링크를 클릭하여 새 이메일 주소를 확인하십시오.
+      updated: 귀하의 계정이 성공적으로 업데이트되었습니다.
+    sessions:
+      new:
+        dont_have_an_account: 계정이 없습니까?
+        forgot_your_password: 비밀번호를 잊어 버렸습니까?
+        login: 로그인
+        login_to_your_account: 귀하의 계정에 로그인하십시오.
+        privacy_policy: 개인 정보 정책
+        return_to_the_leadership_circl: '리더십 서클로 돌아 가기 : 자기 평가'
+        sign_up: 가입
+      user:
+        already_signed_out: 성공적으로 로그 아웃되었습니다.
+        signed_in: 로그인에 성공했습니다.
+        signed_out: 성공적으로 로그 아웃되었습니다.
+    shared:
+      links:
+        didnt_receive_confirmation_ins: 확인 지침을받지 못 했습니까?
+        didnt_receive_unlock_instructi: 잠금 해제 지침을받지 못하셨습니까?
+        forgot_your_password: 비밀번호를 잊어 버렸습니까?
+        log_in: 로그인
+        sign_in_with_providerto_stitle: "%{providerto_stitleize}로 로그인"
+        sign_up: 가입
+    unlocks:
+      new:
+        resend_unlock_instructions: 잠금 해제 지침 재발송
+      send_instructions: 잠시 후에 계정을 잠금 해제하는 방법에 대한 지침이 담긴 이메일을 받게됩니다.
+      send_paranoid_instructions: 계정이있는 경우 몇 분 후에 잠금을 해제하는 방법에 대한 안내 이메일이 전송됩니다.
+      unlocked: 귀하의 계정은 성공적으로 잠금 해제되었습니다. 계속하려면 로그인하십시오.
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: 받아 들여야한다.
+      already_confirmed: 이미 확인되었습니다. 로그인 해보십시오.
+      blank: 비워 둘 수 없다.
+      confirmation: "%{attribute}와 일치하지 않습니다."
+      confirmation_period_expired: "%{period} 내에서 확인이 필요합니다. 새 것을 요청하십시오."
+      empty: 비워 둘 수 없다.
+      equal_to: "%{count}와 같아야합니다."
+      equal_to_current_password: 현재 비밀번호와 달라야합니다!
+      even: 짝수 여야합니다.
+      exclusion: 예약 됨
+      expired: 만료되었습니다. 새 것을 요청하십시오.
+      greater_than: "%{count}보다 커야합니다."
+      greater_than_or_equal_to: "%{count}보다 크거나 같아야합니다."
+      inclusion: 목록에 포함되어 있지 않습니다.
+      invalid: 유효하지 않다
+      less_than: "%{count}보다 작아야합니다."
+      less_than_or_equal_to: "%{count}보다 작거나 같아야합니다."
+      model_invalid: '유효성 검사 실패 : %{errors}'
+      not_a_number: 숫자가 아님
+      not_an_integer: 정수 여야합니다.
+      not_found: 찾을 수 없음
+      not_locked: 잠겨 있지 않았다.
+      not_saved:
+        one: 1 오류로 인해이 %{resource}가 업데이트되지 않았습니다.
+        other: "%{count} 오류로 인해이 %{resource}가 저장되지 않았습니다."
+      odd: 이상해야합니다.
+      other_than: "%{count}가 아니면 안됩니다."
+      password_format: 크고 작은 글자와 숫자가 있어야합니다.
+      password_not_saved: 1 오류로 인해 암호가 업데이트되지 않았습니다.
+      present: 반드시 비워 두어야한다.
+      required: 존재해야한다
+      taken: 이미 촬영되었습니다.
+      taken_in_past: 과거에 이미 잡혔다!
+      too_long:
+        one: 너무 깁니다 (최대 1 자).
+        other: 너무 깁니다 (최대 문자는 %{count}입니다).
+      too_short:
+        one: 너무 짧습니다 (최소 1 자).
+        other: 너무 짧습니다 (최소는 %{count} 문자 임).
+      wrong_length:
+        one: 길이가 잘못되었습니다 (1 문자 여야 함).
+        other: 길이가 잘못되었습니다 (%{count} 문자 여야 함).
+    template:
+      body: 다음 필드에 문제가있었습니다.
+      header:
+        one: 1 오류로 인해이 %{model} 저장이 금지되었습니다.
+        other: "%{count} 오류로 인해이 %{model}가 저장되지 않았습니다."
+  evaluators:
+    edit:
+      edit_evaluator: 평가자 편집
+    new:
+      add_evaluator: 평가자 추가
+    partials:
+      evaluator:
+        add_participant: 참가자 추가
+        edit_evaluator: 평가자 편집
+        email_evaluatoremail: '이메일 : %{evaluatoremail}'
+        evaluatorevaluation_surveys_fo: "%{done} 평가 %{total}"
+        evaluatorself_surveys_forproje: "%{done} 자기 설문 조사의 %{total}"
+        language_evaluatorlanguage_nam: '설문 조사 언어 : %{evaluatorlanguage_name}'
+      evaluator_form:
+        cancel_changes: 변경 취소
+        delete_evaluator: 평가자 삭제
+      import_evaluators:
+        email_address: 이메일 주소
+        first_name: 이름
+        is_there_something_wrong_a_hre: 뭔가 잘못 됐니? <a href="#import--evaluators" class="open-popup-link"> 새 파일 업로드 </a>
+        its_right_complete_import: 맞습니다! 완전 수입
+        language: 언어
+        last_name: 성
+        participant: 참가자
+        relationship: 관계
+        strongevaluatorscount_evaluato: "<strong> %{evaluatorscount} 평가자 </ strong>가 발견되었습니다. 경기가 옳았다는 것을 확인하십시오 :"
+        survey_language: 설문 조사 언어
+        were_almost_there: 거의 다 왔어...
+      import_evaluators_modal:
+        cancel: 취소
+        import_evaluators_from_csv_fil: CSV 파일에서 평가자 가져 오기
+        not_sure_about_the_format_of_t: 파일 형식이 확실하지 않습니까? <a href='%{download_sample_csv_project_ev}' class='link'> CSV 샘플 다운로드 </a>.
+        upload_evaluators: 평가자 업로드
+        upload_your_csv_file: 'CSV 파일 업로드 :'
+      index:
+        actions: 행위
+        add_evaluator: 평가자 추가
+        download_evaluator_status_deta: 평가자 상태 세부 정보를 CSV로 다운로드
+        evaluation_status: 평가 상태
+        evaluator_details: 평가자 세부 정보
+        import_evaluators: 평가자 가져 오기
+        participant_status: 참가자 상태
+      participant:
+        completed_on_levaluatorevaluat: "%{levaluatorevaluation_survey_fo}에서 완성되었습니다."
+        edit_participant: 참가자 편집
+        evaluation_status: 평가 상태
+        evaluatorevaluation_survey_for: "%{done} 질문 중 %{all}"
+        evaluatorself_survey_forprojec: 자서 설문 조사의 %{evaluatorself_survey_forprojec} 질문 %{evaluatorself_survey_forprojec}
+        language_evaluatorevaluation_s: '설문 조사 언어 : %{evaluatorevaluation_survey_for}'
+        participantfull_name: "%{participantfull_name}"
+        relationship: '관계:'
+        selfsurvey_completed_on_levalu: "%{levaluatorself_survey_forproje}에 대한 자체 설문 조사가 완료되었습니다."
+        send_invite: 알림 보내기
+      participant_form:
+        cancel_changes: 변경 취소
+        delete_participant: 참가자 삭제
+    participants:
+      edit:
+        edit_participant: 참가자 편집
+      new:
+        add_participant: 참가자 추가
+    sort_options:
+      evaluation_status: 평가 상태별로 정렬
+      evaluator_name: 평가자 이름으로 정렬
+      number_of_evaluations: 평가 수순 정렬
+  gflash:
+    titles:
+      error: 오류
+      notice: 주의
+      progress: 진행
+      success: 성공
+      warning: 경고
+    users:
+      impersonate:
+        notice: 당신은 다른 누군가를 사칭하고 있습니다.
+        title: 사용자 가장
+      stop_impersonating:
+        notice: 당신은 더 이상 가장하지 않습니다.
+        title: 사용자 가장
+  graph_preview:
+    being: "존재"
+    achieves_results: 결과 달성
+    achieving: 달성
+    actual_culture: 실제 문화
+    ambition: 큰 뜻
+    arrogance: 거만
+    authenticity: 확실성
+    autocratic: 독재 정치
+    balance: 밸런스
+    belonging: 귀속
+    caring_connection: 돌보는 연결
+    circle_within_circle: '서클의 서클 :'
+    collaborator: 협력자
+    community_concern: 지역 사회 관심사
+    complying: 준수하기
+    composure: 침착
+    conservative: 전통적인
+    controlling: 제어
+    copy_right: "© 리더십 서클 ® | 판권 소유"
+    courageous_authenticity: 용감한 진위성
+    creative: 창조적 인
+    critical: 결정적인
+    culture_survey: 문화 조사 및 무역;
+    decisiveness: 결정적
+    desired_culture: 원하는 문화
+    displayed_as_percentile: 모든 점수는 점수를 표준 기준과 비교하는 백분위 점수로 표시됩니다.
+    distance: 거리
+    driven: 추진 된
+    evaluators: 평가자
+    fosters_team_play: 팀 플레이 육성
+    general_abilities: 일반 능력
+    graph_high: 높은
+    graph_identity: 정체
+    graph_low: 낮은
+    graph_medium: 매질
+    high: 높은
+    high_scores_are_beyond: 높은 점수는 67 번째 백분위 수를 초과합니다.
+    identity: 정체
+    inner_circle_profiles: 내부 원은 외부 원의 해당 섹션에있는 모든 치수의 백분위 요약 요약을 프로파일 링합니다.
+    integrity: 청렴
+    interpersonal_intelligence: 대인 관계
+    leadership_effectiveness: 리더십 효과
+    leadership_potential_utilization: 리더십 가능성 활용
+    low: '낮은:'
+    low_scores_are_below: 낮은 점수는 33 번째 백분위 수보다 적습니다.
+    manager_edition: 관리자 버전
+    medium: '매질:'
+    mentoring_developing: 멘토링 개발
+    others_assessment: 다른 사람의 평가
+    passive: 수동태
+    percentile_scores: '백분위 점수 :'
+    perfect: 완전한
+    personal_learner: 개인 학습자
+    pleasing: 유쾌한
+    print_graph: 인쇄 그래프
+    protecting: 보호
+    purposeful_visionary: 목적있는 선구자
+    reactive: 반응하는
+    reactive_creative_scale: 반응 적 크리에이티브 척도
+    relating: 관계
+    relationship: 관계
+    relationship_task_balance: 관계 - 작업 균형
+    score_below: 33 번째 백분위 수 아래의 점수는 낮은 점수입니다.
+    score_between: 66 번째 백분위 수와 33 번째 백분위 수 사이의 점수는 개선점과 개선점이 혼합 된 것입니다.
+    scores_from: 66 번째 백분위 수에서 100 번째 백분위 수의 점수가 강한 점수입니다.
+    self: 본인
+    self_assessment: 자기 평가
+    self_awareness: 자기 인식
+    selfless_leader: 사심없는 지도자
+    strategic_focus: 전략적 초점
+    sustainable_productivity: 지속 가능한 생산성
+    systems_awareness: 시스템 인식
+    systems_thinker: 시스템 사상가
+    task: 태스크
+  helpers:
+    label:
+      project:
+        1st_option: 옵션 1
+        2nd_option: 옵션 2
+        i_will_invite: 내 참가자를 위해 평가자를 초대 할 것입니다.
+        my_participant_will_invite: 참가자는 평가자를 초대 할 수 있습니다.
+    select:
+      prompt: 선택 해주세요
+    submit:
+      create: "%{model} 만들기"
+      submit: "%{model} 저장"
+      update: "%{model} 업데이트"
+  high: 높은
+  history:
+    show:
+      before: 전에
+      by: " 으로"
+      changes_made_at: 변경 사항
+      field: 들
+      now: 지금
+  home:
+    index:
+      agents: 자치령 대표
+      are_you_sure_want_to_delete: 삭제 하시겠습니까
+      are_you_sure_want_to_delete_project: 프로젝트를 삭제하면 실행 취소 할 수 없습니다. 이 프로젝트를 삭제 하시겠습니까?
+      are_you_sure_want_to_delete_project_with_expired_date_explanation: 죄송합니다.이 프로젝트의 완료 날짜가 끝났기 때문에 삭제할 수 없습니다.
+      are_you_sure_want_to_delete_project_with_expired_date_title: 경고
+      coaches_or_consultants: 컨설턴트
+      companies_or_clients: 고객
+      consultant_companies: 컨설턴트 회사
+      consultant_company: 컨설턴트 회사
+      distributors: 대리점
+      licensees: 라이센스 사용자
+      no_dont_delete: 아니요, 삭제하지 마세요.
+      participants: 참가자
+      please_enter_a_new_name_for_the_organization: "%{organization_type}의 새 이름을 입력하십시오."
+      projects: 프로젝트
+      rename_organization: "%{organization_type}의 이름 바꾸기"
+      unable_to_delete_company_warning: 삭제할 수 없습니다. 아직이 회사에 부착 된 프로젝트가 있습니다. 먼저 프로젝트를 삭제하십시오.
+      unable_to_delete_got_it: 알았다
+      unable_to_delete_project_warning: 삭제할 수 없습니다. 이 회사에 여전히 참여한 참가자가 있습니다. 먼저 참가자를 삭제하십시오.
+      yes_delete_this: 예, 삭제하십시오.
+    partials:
+      blank_slate:
+        create_new_project: 새 프로젝트 만들기
+        start_adding_projects_now: 지금 프로젝트를 추가하십시오.
+        you_have_no_projects_to_manage: 관리 할 프로젝트가 없습니다.
+      breadcrumbs:
+        coaches_consultants: 코치 / 컨설턴트
+        search_by: 검색 기준
+      child_node_content:
+        organizationorganization_typen: "%{organizationorganization_typen} (관리하려면 클릭하십시오)"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou} %{tsharedcertified_consultants}"
+      content:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} 컨설턴트?"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} 컨설턴트"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount} %{tsharedpeople}"
+      modals:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} %{parentorganization_typename}?"
+        thomeindexyes_delete_this_pare: "%{thomeindexyes_delete_this} %{parentorganization_typename}"
+        tsharedcancel: "%{tsharedcancel}"
+        tsharedsave_changes: "%{tsharedsave_changes}"
+      organization_users:
+        practitioners_userstotal_count: 컨설턴트 (%{userstotal_count})
+      search_organization:
+        click_to_manage: "(클릭하여 관리)"
+        manage_consultants: "(컨설턴트 관리)"
+        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization} %{tsharedwere_found}"
+        thomeindexare_you_sure_want_to:  "%{thomeindexare_you_sure_want_to} 컨설턴트?"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} 컨설턴트"
+      sidebar:
+        add: 더하다
+  i18n:
+    transliterate:
+      rule:
+        ü: 유
+  javascript:
+    1st_option: 첫 번째 옵션
+    2nd_option: 두 번째 옵션
+    add_another_company: 다른 회사 추가
+    admin_role_name: 시스템 관리자
+    ajax_popup_error: 콘텐츠를로드 할 수 없습니다.
+    apt_suite_bldg: 아파트, 스위트, 빌딩 ...
+    binder_with_tabs: 참가자에게 줄 수있는 탭과 인쇄 된 페이지가있는 3- 링 바인더
+    browse_file: 파일 찾아보기
+    cancel_schedule_announcement: 확실합니까? 일정이 취소되고 15 분 이내에 이메일이 발송됩니다.
+    choose_age_ranges: 연령대 선택
+    choose_countries: 국가 선택
+    choose_direct_report_ranges: 직접 보고서 범위 선택
+    choose_education_levels: 교육 수준 선택
+    choose_ethnic_groups: 민족 그룹 선택
+    choose_industries: 산업 선택
+    choose_management_levels: 관리 수준 선택
+    choose_professions: 직업 선택
+    click_the_link_below_and_we_will_contact: 아래의 링크를 클릭하면 과정을 안내 할 코치와 함께 Full LCP 360 Profile을 이용할 수 있습니다. <br/> * 체크 아웃시 MLDebrief2017을 사용하면이 가격의 40 % 할인을 일회 소개 요금으로 이용할 수 있습니다.
+    coach_report: 코치 보고서
+    company_revenue: 회사 수익
+    completion_date_asc: 완료 날짜 (오름차순)
+    completion_date_desc: 완료 날짜 (내림차순)
+    contact_info: 연락처 정보
+    correct_email_required: 이메일에 올바른 형식을 입력하십시오.
+    created_at: '만든 위치 :'
+    custom_demographics: 맞춤 인구 통계
+    default_demographics: 기본 인구 통계
+    deliverable_options: 제공 가능한 옵션
+    delivery_options: 배달 옵션
+    did_you_enjoy_your_survey_taker: 설문 조사를 즐겼습니까? <b> 리더십 크릴 스 프로필 </ b> 전체 360 평가를 받아 핵심 이해 관계자 (보스, 동료, 직속보고 및 기타)가 리더십을 경험하는 방법을 알아보십시오. Leadership Cirlce Profile 360에서 얻은 깊은 통찰력은 리더십의 예술과 실천에서 훨씬 더 효과적이고 숙달 될 수있게 해줍니다.
+    email_required: 이메일이 필요합니다.
+    error: 문제가 발생했습니다.
+    filter_by_role: 역할 별 필터링
+    first_name_required: 이름이 필요합니다.
+    full_path: '전체 경로 :'
+    gcsr_role_name: 글로벌 CSR
+    granted_at: '허락 :'
+    graph_high: 높은
+    graph_identity: 정체
+    graph_low: 낮은
+    graph_medium: 매질
+    high: 높은
+    invite_another_user: 다른 사용자 초대
+    language_required: 언어를 선택하십시오.
+    last_name_required: 성이 필요합니다.
+    leaders_managers_eval: 이 섹션에서 귀하는 다음과 같은 지도자 / 관리자를 평가할 것입니다.
+    low: 낮은
+    members_eval: 이 섹션에서 당신은
+    message_required: 메시지가 필요합니다.
+    minimum_evaluations_per_participant: 자체 설문 조사를 사용하려면 최소 평가자 수 (%{min_count})를 초대해야합니다.
+    never_sent: 전송하지 않음
+    no_record_found: 일치하는 레코드가 없습니다.
+    organization_and_report_type: 조직 및 보고서 유형
+    organization_small: 조직
+    participant_graph: 참가자 그래프
+    participant_report: 참가자 보고서
+    password_hint: 암호는 최소한 하나의 숫자 (0-9)와 대문자 (A-Z)가있는 최소 8 자이어야합니다. 이전 8 개의 암호 중 하나를 사용할 수 없습니다.
+    person: 사람
+    please_wait: 잠시만 기다려주십시오 ...
+    preparing: 준비. 기다려주십시오.
+    processing: 처리 중
+    project_access_control: 프로젝트 액세스 제어
+    project_access_control_description: 사용자의 프로젝트 액세스 검토
+    project_details: 프로젝트 세부 정보
+    project_name_placeholder: 즉 CEO, Director, Manager, Leadership Team 등
+    project_time_zone: 프로젝트 시간대
+    relationship_required: 관계를 선택하십시오.
+    report_options: 보고서 옵션
+    role: 역할
+    search_results: 검색 결과
+    select_age: 연령 선택
+    select_client: 클라이언트 선택
+    select_consulting_company: 컨설팅 회사 선택
+    select_country: 국가 선택
+    select_ethnic_group: 인종 그룹 선택
+    select_existing_administrator: 기존 관리자 선택
+    select_industry: 산업 선택
+    select_practitioner: 컨설턴트 선택
+    select_project: 대상 프로젝트를 이름으로 검색하려면 여기에 입력하십시오.
+    select_region: 주 또는 지역 선택
+    select_your_companys_industry: 귀사의 산업 선택
+    select_your_education_level: 교육 수준 선택
+    select_your_gender: 성별 선택
+    select_your_management_level: 귀하의 관리 수준 선택
+    select_your_profession: 직업 선택
+    select_your_residing_country: 거주 국가 선택
+    select_your_number_of_direct_reports: 직접 보고서 수
+    sent_on: 에 보낸
+    size_of_organization: 조직 규모
+    street_address_example: 거리 주소 (222 example avenue) ...
+    subject_required: 제목은 필수 항목입니다.
+    surveys_focus: '설문 조사의 초점을 정의하십시오 (예 : 마케팅, 영업, HR 등).'
+    team_small: 팀
+    type: '유형:'
+    type_the_referral_email: 추천 이메일을 입력하십시오.
+    type_user_email: 사용자 이메일 입력 ...
+    type_your_company_name: 회사 이름을 입력하십시오 ...
+    user_email: 사용자 이메일
+    user_name: 사용자 이름
+    user_role_name: 사용자
+    zip_post_code: 우편 번호 / 우편 번호 ...
+  kaminari:
+    next_page:
+      next: 다음 것
+    prev_page:
+      prev: 예전
+  low: 낮은
+  mailer:
+    consulting_company_welcome:
+      consultant_name: 친애하는 %{consultat_name} 님,
+      line_1: 프로젝트 센터에 오신 것을 환영합니다. 프로젝트 센터에서 고객을 위해 TLC 제품을 구입하고 프로젝트를 관리하며 보고서를 미리보고 다운로드 할 수 있습니다.
+      line_2: '이 링크를 사용하여 프로젝트 센터에 액세스하십시오 : %{url}'
+      line_3: 귀하의 링크가 활성화되어 있지 않으면; 그것을 인터넷 브라우저에 복사 / 붙여 넣기하십시오.
+      line_4: 이메일 주소와 비밀번호를 입력하라는 메시지가 나타납니다. 암호가 없으면 로그인 페이지에서 암호 분실 기능을 사용하십시오. 이 이메일을받을 이메일 주소를 입력하십시오.
+      line_5: 로그인 할 수없는 경우이 이메일에 회신 해주십시오.
+      line_6: 따뜻한 감사,
+      line_7: 지도력 서클
+      welcome: 프로젝트 센터에 오신 것을 환영합니다!
+    reminder:
+      body_1: 설문 조사를 아직 완료하지 않은 것 같습니다. 그래도 참여하고 싶다면 아래를 클릭하십시오!
+      body_2: '설문 조사 링크 :'
+      body_3: 설문 조사는 %{planned_completion_date}가 완료해야합니다.
+      header: 친애하는 %{practitioner_full_name} 님,
+      regards: 안부 인사, 리더십 서클 팀
+      subject: "%{product_name} 알림"
+    welcome:
+      body_1: Leadership Circle 온라인 평가 시스템에 오신 것을 환영합니다. 시스템을 사용하기 시작할 수 있도록 로그인과 자신의 암호로 설정하십시오.
+      body_2: "%{web_address}로 가서 %{user_id}의 임시 암호로 ID %{user_password}의 새 사용자 계정 로그를 사용하십시오."
+      body_3: 새 비밀번호를 만들고 일부 인구 통계 학적 질문에 답한 후에는 직접 내 설문 조사로 이동하여 기다릴 수있는 설문 조사를 완료 할 수 있습니다.
+      body_4: 로그인하는 데 문제가 있으면 %{support_email_address}로 문의하십시오.
+      header: 친애하는 %{participant_full_name} 님,
+      regards: 따뜻한 안부,
+      subject: 리더십 서클 온라인 평가 시스템에 오신 것을 환영합니다!
+      team: 설문 조사 팀 팀
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "% u % n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "% n % u"
+        units:
+          billion: 십억
+          million: 백만
+          quadrillion: 십억
+          thousand: 천
+          trillion: 일조
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "% n % u"
+        units:
+          byte:
+            one: 바이트
+            other: 바이트
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: 결핵
+    percentage:
+      format:
+        delimiter: ''
+        format: "%엔%"
+    precision:
+      format:
+        delimiter: ''
+  order_steps:
+    deliverable_options:
+      next: 다음 것
+      previous: 너무 이른
+    delivery_options:
+      cancel_order: 주문을 취소하다
+      create_report: 보고서 작성
+      previous: 너무 이른
+    group_report_summary:
+      cancel_order: 주문을 취소하다
+      pdf_report: PDF 보고서
+      selected_count_tordersgr_summa: "(%{selected_count}%{tordersgr_summaryparticipants_})"
+      tordersgr_summarybilling_conta: "%{tordersgr_summarybilling_conta} :"
+      tordersgr_summaryorganization: "%{tordersgr_summaryorganization} :"
+      tordersgr_summaryreport_contac: "%{tordersgr_summaryreport_contac} :"
+      tordersgr_summaryreport_due_da: "%{tordersgr_summaryreport_due_da} :"
+      tordersgr_summaryreport_metric: "%{tordersgr_summaryreport_metric} :"
+      tordersgr_summaryreview_report: "%{tordersgr_summaryreview_report}"
+      tordersgr_summaryselected_part: "%{tordersgr_summaryselected_part} :"
+      tordersindexreport_name: "%{tordersindexreport_name} :"
+      tshareddemographicpluralize: "%{tshareddemographicpluralize} :"
+      tsharedreportpluralize: "%{tsharedreportpluralize} :"
+    organization_and_report_type:
+      cancel_order: 주문을 취소하다
+      next: 다음 것
+    partials:
+      address_modal:
+        select_from_my_account_address: 내 계정 주소에서 선택하십시오.
+        there_are_no_addresses_related: 사용자와 관련된 주소가 없습니다.
+      contact_info:
+        billing_address: 청구 지 주소
+        new_address: 새 주소
+        report_address: 주소 신고
+        same_as_the_billing_address: 청구서 수신 주소와 동일
+        select_an_address_from_my_acco: 내 계정에서 주소 선택
+        this_is_the_address_where_the_: 이 주소는 참가자 보고서, 참가자 그래프 및 코치 보고서의 인쇄본이 전달되는 주소입니다.
+        this_is_the_person_or_company_: 이것은 주문 송장을 발행 할 사람 또는 회사입니다.
+      deliverable_options:
+        coach_report: 코치 보고서
+        digital_graph: 디지털 그래프
+        group_report: 그룹 보고서
+        how_many_copies_per_participan: 참가자 당 몇 부?
+        i_want_pdf_and_printed_copies_: PDF 및 인쇄본 사본을 원합니다.
+        i_want_the_pdf_copies_only: 나는 PDF 사본 만 원한다.
+        participant_graph: 참가자 그래프
+        participant_report: 참가자 보고서
+        pdf_file_that_practitioner_ema: 컨설턴트 이메일을 참가자에게 보내는 Pdf 파일
+        please_choose_below_which_ones: 다음 중 인쇄 할 항목을 선택하십시오.
+        profile_interpretation_manual: 프로파일 해석 매뉴얼
+        reports: '보고서 :'
+        you_will_get_a_digital_version: 다음 항목의 디지털 버전이 제공됩니다.
+        you_will_get_only_the_digital_: 프로필 해석 지침서의 디지털 버전과 다음 보고서 만 받게됩니다.
+        you_will_get_the_digital_versi: 프로파일 해석 매뉴얼과 모든 보고서의 디지털 버전을 받게됩니다.
+        your_project_will_include: 프로젝트에 포함될 내용은 다음과 같습니다.
+    participants:
+      cancel_order: 주문을 취소하다
+      choose_the_participants_you_wo: 이 보고서에 포함시키려는 참가자를 선택하십시오. 너는 할 수있다.
+      next: 다음 것
+      of: " 의"
+      only_add_participants_who_have: 설문 조사를 완료 한 참가자 만 추가하십시오.
+      organizationname: "%{organizationname}"
+      participants_selected: " 참가자가 선택했다."
+      previous: 너무 이른
+      select_all_available_participa: 이 회사에서 사용 가능한 모든 참가자 선택
+      select_participants: 참가자 선택
+    project:
+      add_all_participants: 모든 참가자 추가
+      of: 의
+      participants_selected: 참가자가 선택했다.
+    report_options:
+      cancel_order: 주문을 취소하다
+      choose_metrics: 측정 항목 선택
+      how_calculation_is_made: 계산 방법
+      next: 다음 것
+      previous: 너무 이른
+      report_demographics: 인구 통계보고
+      report_language: 보고서 언어
+  orders:
+    details:
+      coach_report: '코치 보고서 :'
+      comment_questions: '댓글 질문 :'
+      copies_per_participant: 참가자 당 사본
+      copy_per_participant: 참가자 당 복사
+      demographics: '인구 통계 :'
+      included_participants: '포함 된 참가자 :'
+      participant_graph: '참가자 그래프 :'
+      participant_report: '참가자 보고서 :'
+      participants:
+        one: 참가자 1 명
+        other: "%{count} 참가자"
+      processing_date: '처리 날짜 :'
+      product_type: '제품 유형 :'
+      profile_interpretation_manual: '프로파일 해석 매뉴얼 :'
+      report_type: '보고서 유형 :'
+      utilties_order_details: 주문 세부 사항
+    gr_summary:
+      billing_contact: 결제 연락처
+      coach_report: 코치 보고서
+      organization: 조직
+      participant_graph: 참가자 그래프
+      participant_report: 참가자 보고서
+      participants_selected: 참여자 선택
+      place_order: 주문하기
+      report_contact: 보고서 접촉
+      report_due_date: 만기일보고
+      report_metrics: 보고서 측정 항목
+      review_report_summary: 귀하의 보고서 요약을보십시오.
+      selected_participants: 선택된 참가자
+    index:
+      actions: 행위
+      active_orders: 활성 주문
+      all_orders: 모든 주문
+      delete_order: 주문 삭제
+      finished_orders: 주문 완료
+      my_orders: 내 보고서
+      number_of_participants: 참가자 수
+      order: 주문
+      order_date: 주문 날짜
+      owner: 소유자
+      print_reports: 보고서 인쇄
+      product_type: 제품 유형
+      report_name: 보고서 이름
+      sort_by_company: 회사 별 정렬
+      sort_by_number_of_participants: 참가자 수순 정렬
+      sort_by_ordered_date: 주문 날짜순 정렬
+      sort_by_product: 제품별로 정렬
+      sort_by_report_name: 보고서 이름순 정렬
+      utilties_order: 주문 번호
+    order:
+      see_order: 주문 참조
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    partials:
+      pick_order_modal:
+        cancel: 취소
+        choose_order: 주문 선택
+        choose_order_for_project: 프로젝트 주문 선택
+        date_order_number: 날짜 / 주문 번호
+        locreated_atto_date_format_lon: "%{locreated_atto_date_format_lon} / %{oorder_number}"
+    prepare_download:
+      cancel: 취소
+      download_reports_zip: 보고서 다운로드 (ZIP)
+      please_wait: 잠시만 기다려주십시오 ...
+      preparing_reports_for_download: 다운로드 준비 보고서
+    printed_participant:
+      digital_reports_to_be_sent_pdf: 보낼 디지털 보고서 (PDF)
+      download_copies_ordersingle_re: 사본 다운로드 (%{ordersingle_report_copies_coun})
+      download_manual: 매뉴얼 다운로드
+      evaluators_printed_participant: '평가자 : %{printed_participantparticipant} of %{printed_participantparticipant} 완료'
+      manual_to_be_printed: 인쇄 할 설명서
+      mark_all_as_not_printed: 인쇄되지 않은 것으로 모두 표시
+      mark_all_as_not_sent: 모두 보내지 않음으로 표시
+      mark_all_as_printed: PRINTED로 모두 표시
+      mark_all_as_sent: 모두를 보낸 편지로 표시
+      mark_all_as_shipped: 모두 SHIPPED로 표시
+      printed_participantparticipant: "(%{printed_participantparticipant})"
+      reports_to_be_printed: 인쇄 할 보고서
+      self_survey_printed_participan: '자체 설문 조사 : %{printed_participantstatus}'
+      send_digital_reports: 디지털 보고서 보내기
+      status_printed_participantmanu: '상태 : %{printed_participantmanual_repo}'
+      status_printed_participantprin: '상태 : %{printed_participantprint_repor}'
+      status_printed_participantsend: '상태 : %{printed_participantsend_report}'
+    show:
+      billing_contact: 결제 연락처
+      binder_contact: 바인더 연락처
+      coaching_report: '코칭 보고서 :'
+      comment_questions: '댓글 질문 :'
+      company: 회사
+      demographics: '인구 통계 :'
+      download_profile_interpretatio: 프로필 해석서 다운로드 (PDF)
+      download_reports_zip: 보고서 다운로드 (ZIP)
+      find_the_order_details_below_y: 아래 주문 세부 정보를 찾으십시오. 모든 PDF 보고서와 함께 zip 파일을 다운로드 할 수도 있습니다.
+      included_participants: '포함 된 참가자 :'
+      list_of_participants: 참가자 목록
+      order_details: 주문 세부 정보
+      order_number: '주문 번호:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} 사본"
+      orderparticipant_graph_qty_cop: 참가자 당 %{orderparticipant_graph_qty} 사본
+      orderparticipant_report_qty_co: 참가자 당 %{orderparticipant_report_qty} 사본
+      participant_graph: '참가자 그래프 :'
+      participant_report: '참가자 보고서 :'
+      pdf: PDF
+      planned_completion_date: '계획 완료 날짜 :'
+      print_order_details_pdf: 인쇄 주문 정보 (PDF)
+      processing_date: '처리 날짜 :'
+      product_type: '제품 유형 :'
+      profile_interpretation_manual: '프로파일 해석 매뉴얼 :'
+      questions_about_your_order: 주문에 관한 질문?
+      report_contact: 보고서 접촉
+      report_name: '보고서 이름 :'
+      report_type: '보고서 유형 :'
+      show_project: 프로젝트 표시
+      thank_you_for_your_order: 주문 해줘서 고마워.
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    show_print_report:
+      1_copy: 참가자 당 1 부
+      Demography: 'Demografics :'
+      action: 동작
+      application:
+        order_not_valid: 주문이 유효하지 않습니다.
+        reports_sent: 보낸 보고서
+        statuses_updated: 업데이트 된 상태
+      coach_report: 코치 보고서
+      coach_rpt: 코치 Rpt.
+      coaching_report: '코칭 보고서 :'
+      comment_questions: '댓글 질문 :'
+      company: 회사
+      complete: 완전한
+      copies_per_participant:
+        one: 참가자 당 1 부
+        other: 참가자 당 %{count} 사본
+      deliverable_instructions: 산출 가능한 지침
+      demographics: '인구 통계 :'
+      digital_reports: '디지털 보고서 :'
+      digital_rpt: Digital Rpt.
+      download_all_copies_ordercopie: 모든 복사본 다운로드 (%{ordercopies_count})
+      download_all_manuals_orderused: 모든 매뉴얼 다운로드 (%{orderused_languagescount})
+      english_manual: '영어 매뉴얼 :'
+      evaluators: 평가자
+      find_below_all_the_deliverable: 이 주문에 대한 모든 산출물과 그 각각에 대한 운송 정보를 찾으십시오.
+      graph: 그래프
+      included_participants: '포함 된 참가자 :'
+      manual: 조작
+      mark_all_digital_reports_as_no: 모든 디지털 보고서를 보내지 않은 것으로 표시하십시오.
+      mark_all_digital_reports_as_se: 모든 디지털 보고서를 보낸 것으로 표시
+      mark_all_printed_copies_as_not: 인쇄 된 모든 사본을 인쇄하지 않음으로 표시하십시오.
+      mark_all_printed_copies_as_pri: 모든 인쇄본을 PRINTED로 표시하십시오.
+      mark_all_printed_copies_as_shi: 모든 인쇄본을 SHIPPED로 표시
+      mark_order_as_finished: 주문 완료로 표시
+      no_participants: 참가자 없음
+      order_details: 주문 세부 정보
+      order_number: '주문 번호:'
+      order_participantparticipantco: "%{order_participantparticipantco}의 %{order_participantparticipantev}"
+      ordercoach_report:
+        one: 한 부
+        other: "%{count} 사본"
+      orderparticipant_report:
+        one: 참가자 당 1 부
+        other: 참가자 당 %{count} 사본
+      participant: 참가자
+      participant_graph: 참가자 그래프
+      participant_report: 참가자 보고서
+      participants_orderself_surveys: 참가자 (%{orderself_surveyscount})
+      pdf: PDF
+      pdfs: PDF
+      planned_completion_date: '계획 완료 날짜 :'
+      print_and_ship_copies_of_the_f: '다음 보고서의 인쇄 및 배송 :'
+      printed: 인쇄 된
+      printed_copies: '인쇄본 :'
+      processing_date: '처리 날짜 :'
+      product_type: '제품 유형 :'
+      profile: 윤곽
+      profile_interpretation_manual: '프로파일 해석 매뉴얼 :'
+      questions_about_your_order: 주문에 관한 질문?
+      report_name: '보고서 이름 :'
+      report_type: '보고서 유형 :'
+      self_survey: 자기 설문 조사
+      send_digital_reports_pdfs: 디지털 보고서 보내기 (PDF)
+      send_the_pdf_version_of_the_fo: 다음 보고서의 PDF 버전을 보냅니다.
+      sent: 전송 됨
+      ship_the_3ring_binder_with_tab: 탭과 인쇄 된 페이지로 3 링 바인더를 발송하십시오
+      shipping_info: '배송 정보 :'
+      status: '지위:'
+      submit: 제출
+    show_send_digital_reports:
+      cancel: 취소
+      consultantcoach_orderprojectco: '컨설턴트 : %{orderprojectconsultant_orderpr}'
+      send_digital_reports: 디지털 보고서 보내기
+      send_digital_reports_to_practi: 컨설턴트에게 디지털 보고서 보내기
+  organization_users:
+    new:
+      tsharedadd_consultant_tsharedt: "%{tsharedadd} 컨설턴트 %{tsharedto} '%{organizationname}'"
+  organizations:
+    actions:
+      tsharedadd_typename: "%{tsharedadd} %{typename}"
+    collab:
+      add_and_delete_shared_users: 언제든지 공유 사용자를 추가 및 삭제할 수 있습니다.
+      allow_users_edit_view: 사용자가 수정하고 볼 수 있도록 허용
+      certified_consultants: 컨설턴트
+      collaborators_for: 공동 작업자
+      delete_collaborator: 공동 작업자 삭제
+      invite_more_people: 더 많은 사람들 초대
+      invite_user_by_typing_email: 아래에 이메일을 입력하여 새 사용자를 초대하십시오.
+      sharing_access_certified_consultant: 공유 액세스 권한은 다른 컨설턴트에게 소유자와 동일한 기능을 부여합니다.
+      sharing_top_level_company: 최상위 수준 (회사)에서 공유하면 그 아래의 모든 항목 (제품 그룹 및 참가자)에 대한 액세스 권한이 부여됩니다.
+      this_licensor_is_not_shared: 이 조직은 현재 공유되지 않았습니다.
+    collaborator:
+      success: 성공!
+    collaborators:
+      role_urolename: '역할 : %{urolename}'
+      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount} %{torganizationscollabcertified_}"
+    delete_collaborator:
+      success: 성공!
+    dnd:
+      drag:
+        add_user: 사용자 추가
+        confirmation: 확인
+        confirmation_text_goes_here: 확인 텍스트는 여기에 ...
+        finish: 끝
+        next: 다음 것
+        organizations_type: 조직 유형
+        please_confirm_user_permission: 이 조직에 대한 사용자 권한을 확인하십시오. 아무 것도 변경할 필요가 없습니다. 상위 조직에 할당 된 사용자는 자동으로 추가됩니다.
+        previous: 너무 이른
+        privilages: 권한
+        role: 역할
+        user: 사용자
+        you_are_about_to_move_one_orga: 한 조직을 다른 조직으로 이동하려고합니다. 이동할 조직 유형이 올바른지 확인하십시오. 여기서도 변경할 수 있습니다. 다음은 허용 된 유형의 조직입니다.
+      user:
+        remove: 풀다
+    form:
+      tsharedname: "%{tsharedname} :"
+    help:
+      tree_help:
+        quick_help: 빠른 도움말
+        to_edit_add_users_or_add_a_new: 편집하거나, 사용자를 추가하거나, 새 트리를 추가하려면 트리에서 해당 트리를 클릭하고 트리 패널의 오른쪽 위 모서리에있는 목록에서 원하는 작업을 선택하십시오
+        to_find_an_organization_simply: 조직을 찾으려면 아래 입력란에 입력을 시작하십시오.
+        to_move_the_organization_to_an: 조직을 다른 조직으로 이동하려면 끌어서 놓기 만하면됩니다.
+    modals:
+      delete_organization:
+        thomeindexare_you_sure_want_to: 이 조직 %{thomeindexare_you_sure_want_to}
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_orga: "%{thomeindexyes_delete_this} 조직"
+    move:
+      success: 성공!
+    new:
+      accounting_id: 회계 ID
+      accounting_id_for_an_existing_administrator: 기존 관리자의 계정 ID
+      active_consultant_label_info: 컨설턴트가 활성 상태로 표시되지 않으면 계정이 일시 중지되고 시스템에 대한 액세스 권한이 허용되지 않습니다.
+      administrator_email: 관리자 이메일
+      administrator_first_name: 관리자 이름
+      administrator_last_name: 관리자 성
+      choose_countries: 국가 선택
+      coach_consultant_email: 컨설턴트 이메일
+      coach_consultant_first_name: 컨설턴트 이름
+      coach_consultant_last_name: 컨설턴트 성
+      coach_consultant_name: 컨설턴트 전체 이름
+      company_client_name: 고객 이름
+      consultant_label_info: 여러 고객 및 조직과 협력하는 컨설턴트
+      contract_start_date: 계약 시작일
+      countries_covered: 대상 국가
+      must_be_certified: 컨설턴트 이메일이어야합니다.
+      or_create_an_admin_user: 새로운 사용자를 만들거나
+      select_an_industry: 산업 선택
+      the_project_center: 프로젝트 센터
+      this_active_consultant: 액티브 컨설턴트입니다.
+      this_independent_consultant: 독립 컨설턴트입니다.
+      top_node: 상위 노드
+      torganizationsnewmust_be_certi: "(%{torganizationsnewmust_be_certi})"
+      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} '%{parentname}'"
+      type_the_name_of_coach_consultant: 컨설턴트 이름 입력
+      type_the_name_of_company_client: 클라이언트의 이름을 입력하십시오.
+      type_the_name_of_the: 이름을 입력하십시오.
+      you_are_adding_a: 당신은
+    roles:
+      collaborator:
+        delete: 지우다
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{organizationname}"
+    search:
+      local: 노동 조합 지부
+      search_by: 필터링 기준
+      search_by_company_participant_evaluator: 회사 / 참가자 / 평가자 별 검색
+      searching: 검색 중 ...
+    share:
+      success: 성공!
+    show:
+      event: 행사
+      history: 역사
+      impersonate: 가장
+      no_child_data: 하위 데이터 없음
+      organization_information: 조직 정보
+      tshareddate_created: "%{tshareddate_created} :"
+    undo_share:
+      success: 성공!
+    アクション:
+      tsharedadd_typename: 공유 추가 %{tsharedadd} %{typename}
+  participants:
+    cannot_destroy:
+      cannot_delete_the_selected_par: 레코드가 삭제할 수없는 다른 데이터와 연결되어 있기 때문에 선택한 Particiapant를 삭제할 수 없습니다. 아래 목록을 확인하십시오.
+      orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
+      orders: '명령:'
+    evaluators:
+      add_evaluator: 평가자 추가
+      start_adding_evaluators_now: 지금 평가자를 추가하십시오.
+      this_participant_has_no_evalua: 이 참가자에게는 평가자가 없습니다.
+    form:
+      form:
+        action_text: "%{action_text}"
+        cancel_changes: 변경 취소
+        delete_participant: 참가자 삭제
+    import_csv:
+      close: 닫기
+      importing_participants: 참가자 가져 오기
+      please_wait: 잠시만 기다려주십시오 ...
+    import_participants:
+      email_address: 이메일 주소
+      empty_row: 빈 행
+      existing_first_name: '기존 이름 :'
+      existing_last_name: '기존 성 :'
+      first_name: 이름
+      is_there_something_wrong_uploa: 뭔가 잘못 됐니? 새 파일 업로드
+      its_right_complete_import: 맞습니다! 완전 수입
+      last_name: 성
+      strongparticipantscount_partic: "<strong> %{participantscount} 참가자 </ strong>가 발견되었습니다. 경기가 옳았다는 것을 확인하십시오 :"
+      user_with_this_email_already_e: 이 이메일을 사용하는 사용자가 이미 있습니다.
+    import_participants_modal:
+      cancel: 취소
+      import_participants_from_csv_f: CSV 파일에서 참가자 가져 오기
+      upload_participants: 참가자 업로드
+      upload_your_csv_file: 'CSV 파일 업로드 :'
+    index:
+      completion_date_is_over: 완료 날짜가 끝났습니다.
+      download_participants_csv_status: CSV로 참가자 상태 세부 정보 다운로드
+      evaluator_status: 평가자 상태
+      got_it: 알았다!
+      participant_details: 참가자 세부 정보
+      projectself_surveyswherestatus: "%{projectself_surveyswherestatus} 참가자는 자체 조사를 완료하지 않았으며 %{projectparticipantswith_not_en}는 충분한 평가를받지 못했습니다. Run Report Date (%{projectreport_datestrftimeb_d_})까지 참가자를 다른 프로젝트로 이동할 수 있습니다."
+      self_survey_status: 자체 설문 조사 현황
+    logs_modal:
+      created_logsnew: '생성 : %{logsnew}'
+      failed_logsfailed: '실패 : %{logsfailed}'
+      got_it: 알았다!
+      import_is_done: 가져 오기가 완료되었습니다.
+      import_logs: '로그 가져 오기 :'
+      not_changed_logsuntouched: '변경되지 않음 : %{logsuntouched}'
+      participant_groups_logsgroups: '참가자 그룹 : %{logsgroups}'
+      total_participants_logstotal: '총 참가자 수 : %{logstotal}'
+      updated_logsupdated: '업데이트 : %{logsupdated}'
+    manage_group:
+      continue_managing_your_group: 그룹 관리 계속하기
+      edit_evaluators_invitation: 평가자 초대 편집
+      edit_participants_invitation: 참가자 초대 편집
+      participants_can_be_added_to_y: 참가자를 지금 또는 나중에 새 그룹에 추가 할 수 있습니다.
+      send_all_new_emails: 모든 새 이메일 보내기
+    participant_header:
+      add_participants: 참가자 추가
+      choose_products: 제품 선택
+      confirm_order: 주문 확인
+      edit_invitation_email: 초대장 이메일 수정
+      review_order_details: 주문 세부 정보 검토
+      select_options: 옵션 선택
+      send_emails: 이메일 보내기
+      setup_group: 그룹 설정
+      update_addresses: 주소 업데이트
+    send_email_to_evaluator:
+      last_reminder_sent_on_surveyem: "%{surveyemail_sent}에서 마지막으로 보낸 전자 메일"
+    send_email_to_participant:
+      last_reminder_sent_on_surveyem: "%{surveyemail_sent}에서 마지막으로 보낸 전자 메일"
+    show_evaluator:
+      evaluation_status: 평가 상태
+      language: 설문 조사 언어
+      last_reminder_never_sent: 전자 메일이 전송되지 않았습니다.
+      last_reminder_sent_on: 마지막으로 보낸 전자 메일
+      relationship: '관계:'
+      send_reminder: 초대장 보내기
+      surveycompleted_questions_coun: "%{surveycompleted_questions_coun} %{tsharedof} %{surveyquestions_count} %{tsharedquestions}"
+      surveyevaluatortryfirst_name_s: "%{surveyevaluatortryfirst_name} %{surveyevaluatortrylast_name}"
+      tparticipantsshow_evaluatorlan: "%{tparticipantsshow_evaluatorlan} : %{surveyevaluatorlanguagename}"
+      tparticipantsshow_evaluatorlas: "%{tparticipantsshow_evaluatorlas} %{surveyemail_sent}"
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_atto_date_for}"
+    show_participant:
+      completed_on_lparticipantself_: "%{lparticipantself_surveycomplet}에서 완성되었습니다."
+      edit_participant: 참가자 편집
+      email_participantuseremail: '이메일 : %{participantuseremail}'
+      language_participantuserlangua: '설문 조사 언어 : %{participantuserlanguagename}'
+      na: 해당 없음
+      participantcompleted_evaluatio: "%{participantcompleted_evaluatio} 평가자의 %{participantevaluationscount}"
+      participantself_surveycomplete: "%{participantself_surveycomplete} 질문 중 %{participantself_surveyquestion}"
+      participantuserfirst_name_part: "%{participantuserfirst_name} %{participantuserlast_name}"
+      resend_reports_to_gcsr: GCSR에 보고서 재전송
+      send_invite: 초대장 보내기
+    sort_options:
+      evaluator_status: 평가자 상태별로 정렬
+      number_of_evaluators: 평가자 수에 따라 정렬
+      participant_name: 참가자 이름순으로 정렬
+      survey_status: 자체 설문 조사 상태 별 정렬
+  people:
+    account_notification_title: 계정 업데이트
+    account_updated: 계정이 업데이트되었습니다!
+    active_management:
+      error: 오류
+      success: 성공
+    cannot_delete: 삭제할 수 없습니다. 이 사용자에게 연결된 프로젝트가 아직 있습니다.
+    destroy:
+      success: 성공!
+    index:
+      disabled: 장애인
+      filtering_by_client: '클라이언트 별 필터링 :'
+      invite_new_users: 새 사용자 초대
+      invited: 초대 됨
+      join_date: 가입 날짜
+      self_assessment: 자기 평가
+      shared_organizations: 공유 조직
+      sort_by: 정렬 기준
+      sort_by_join_date: 가입 날짜별로 정렬
+      sort_by_org_number: 조직 수에 따라 정렬
+      sort_by_user_name: 사용자 이름별로 정렬
+      survey_takers: 설문 조사자
+      user_details: 사용자 정보
+      users: 사용자
+    manual_unlock:
+      error: 문제가 발생했습니다.
+      success: 성공!
+    new:
+      choose_the_user_main_role_you_: 사용자의 주요 역할을 선택하십시오. 나중에 권한을 편집 할 수 있습니다.
+      invite_another_user: 다른 사용자 초대
+      invite_new_users: 새 사용자 초대
+    partials:
+      active_surveys:
+        company: 회사
+        completed: '완료 됨 :'
+        completion_date: 완료 날짜
+        evaluated: '평가 :'
+        evaluation_surveyscount_people: "%{evaluation_surveyscount} 명"
+        no_completed_evaluating_survey: 설문 조사를 완료하지 않았습니다.
+        no_completed_self_surveys: 완성 된자가 설문 조사 없음
+        no_evaluating_surveys_to_compl: 평가 설문 조사가 완료되지 않았습니다.
+        no_self_surveys_to_complete: 완료 할 자체 조사가 없습니다.
+        not_valid: 유효하지
+        participant_and_product_type: 참가자 및 제품 유형
+        product_type: 제품 유형
+        project: 계획
+        self_survey: 자기 설문 조사
+        self_surveyscount_self_survey: "%{self_surveyscount}자가 설문 조사"
+        to_complete: '완료하려면 :'
+        to_evaluate: '평가할 :'
+      settings:
+        a_practitioner_that_does_not_w: 많은 고객과 조직에서 일하는 컨설턴트.
+        account_status: 계정 상태
+        delete_account_person_pathuser: 계정 삭제
+        'false': false
+        gcsr_or_system_administrator_h: GCSR 또는 시스템 관리자는 모든 조직에 액세스 할 수 있습니다.
+        is_this_an_independent_practit: 독립 컨설턴트입니까?
+        'no': 아니
+        practitioner_information: 컨설턴트 정보
+        the_referring_practitioner_wil: 추천 컨설턴트는 무료 프로파일을 받게됩니다.
+        this_user_has_been_active_sinc: 이 사용자는
+        user_role: 사용자 역할
+        users_can_only_manage_the_orga: 사용자는 자신과 공유 된 조직 만 관리 할 수 ​​있습니다.
+        was_this_practitioner_referred: 이 컨설턴트가 시스템의 다른 컨설턴트로부터 추천을 받았습니까?
+        'yes': 예
+      shared_organization:
+        edit_user_role: 사용자 역할 편집
+        shared_organizationorganizatio: "(%{shared_organizationorganizatio})"
+      shared_organizations:
+        are_being_shared_with: 님과 공유하고 있습니다.
+        new_shared_organization: 새로운 공유 조직
+        role: 역할
+        shared_organizations: 공유 조직
+        type: 유형
+        userfull_name: "%{userfull_name} :"
+        userorganization_userscount_or: "%{userorganization_userscount} 조직"
+      surveys:
+        active_surveys_useractive_surv: 능동적 인 설문 조사 (%{useractive_surveyscount})
+        survey_history_userhistorical_: 설문 조사 기록 (%{userhistorical_surveyscount})
+      user_information:
+        address: 주소
+        date_of_birth: '생년월일 :'
+        edit: 편집하다
+        education: '교육:'
+        email: '이메일:'
+        full_name: '성명 :'
+        gender: '성별:'
+        language: '언어:'
+        number_of_direct_reports: '직접 보고서 수 :'
+        organization_level: '조직 수준 :'
+        personal_information: 개인 정보
+        phone_number: 전화 번호
+        profession: '직업:'
+        professional_information: 전문 정보
+        residing_country: '거주 국가 :'
+        you_havent_added_any_addresses: 주소를 추가하지 않았습니다.
+        you_havent_added_any_phone_num: 전화 번호를 추가하지 않았습니다.
+      user_information_address:
+        user_information_addressname: "%{user_information_addressname} :"
+        user_information_addressregion: "%{user_information_addresscity}, %{user_information_addressregion}"
+      user_information_phone:
+        user_information_phonename: "%{user_information_phonename} :"
+    person:
+      consultant: 컨설턴트
+      csr: CSR
+      gcsr: GCSR
+      manage_user: 사용자 관리
+      system_administrator: 시스템 관리자
+    roles:
+      added_successfully: 사용자가 조직에 올바르게 할당되었습니다.
+      edit_user_role:
+        cancel: 취소
+        companyname: "''%{companyname} ''"
+        remove_access_to_this_organiza: 이 조직에 대한 액세스 권한 삭제
+        role_on: 역할
+        save: 구하다
+        select: 고르다
+        userfirst_names: "%{userfirst_name} 님의"
+      new_user_role:
+        choose_an_organization_to_shar: 공유 할 조직 선택
+        share_organization: 조직 구성 공유
+        user_role: '사용자 역할 :'
+      title: 사용자 역할
+    send_unlock_instructions:
+      error: 문제가 발생했습니다.
+      success: 성공!
+    show:
+      account_status: '계정 상태:'
+      are_you_sure: 확실합니까?
+      delete_account: 계정 삭제
+      disable_account: 계정 사용 중지
+      enable_account: 계정 사용
+      send_unlock_instructions: 잠금 해제 지침 보내기
+      settings: 설정
+      shared_organizations: 공유 조직
+      surveys: 설문 조사
+      unlock_account: 계정 잠금 해제
+      user_information: 사용자 정보
+    users:
+      sort_by: '정렬 기준 :'
+      sort_by_join_date: 가입 날짜순으로 정렬
+      sort_by_org_number: 조직 수별 정렬
+      sort_by_user_name: '"사용자 수별 정렬"'
+  phones:
+    index:
+      add_phone: 전화 추가
+      name: 이름
+      number: 번호
+    phone:
+      delete: 지우다
+  project_steps:
+    contact_info:
+      create_project: 프로젝트 만들기
+      previous: 너무 이른
+    deliverable_option:
+      next: 다음 것
+      previous: 너무 이른
+    project_detail:
+      124_questions: 124 개 질문
+      62_actual_and_62_ideal_culture: 62 실제 및 62 이상적인 문화적 질문
+      84_questions: 84 개 질문
+      8_summary_and_29_outer_dimensi: 6 요약 및 21 외부 치수
+      8_summary_and_31_outer_dimensi: 8 요약 및 31 외부 치수
+      audience_is_csuite_presidents_: 관객은 "C-suite", 회장, 부회장, 이사, EMBA, 잠재력이 뛰어난 지도자
+      audience_is_midlevel_managers_: 관객은 중간 관리자, 감독자, MBA, 팀 리더, '신흥 지도자'
+      choose_a_name_that_will_help_y: 참가자를 식별하는 데 도움이되는 이름을 선택하십시오.
+      choose_an_existing_client: 기존 고객 선택
+      client: 고객
+      consulting_company: 컨설팅 회사
+      create_a_new_client: 새 클라이언트를 만든다.
+      focus_is_organization_or_team: 초점은 조직 또는 팀입니다.
+      leadership_circle_profile: 리더십 서클 프로필
+      leadership_circle_profile_mana: 리더십 서클 프로필 매니저 에디션
+      leadership_culture_survey: 리더십 문화 설문 조사
+      or: 또는
+      practitioner: 컨설턴트
+      select_product: 제품 선택
+  projects:
+    collab:
+      add_and_delete_shared_users: 언제든지 공유 사용자를 추가 및 삭제할 수 있습니다.
+      allow_users_edit_view: 사용자가 주문을 인쇄하거나 보도록 허용
+      delete_collaborator: 공동 작업자 삭제
+      invite_more_people: 더 많은 사람들 초대
+      invite_user_by_typing_email: 아래에 이메일을 입력하여 새 사용자를 초대하십시오.
+      printers: 프린터
+      sharing_access_certified_consultant: 공유 액세스 권한으로 다른 사용자가 주문에 액세스 할 수 있습니다.
+      this_licensor_is_not_shared: 이 프로젝트는 현재 공유되지 않았습니다.
+    convert_sa_to_lcp:
+      please_set_consulting_company_and_consultant_first: 클라이언트, 컨설팅 회사 및 컨설턴트를 먼저 설정하십시오 (클라이언트 및 컨설팅 설정에서).
+      success: 전환이 성공적이었습니다.
+    delete_collaborator:
+      success: 사용자가 프로젝트에서 제거되었습니다.
+    new:
+      itemparameterize: "#%{itemparameterize}"
+      next: 다음 것
+      previous: 너무 이른
+    partials:
+      edit_form:
+        cancel_changes: 변경 취소
+        deliverables_and_printing_opti: 산출물 및 인쇄 옵션
+        project_options: 프로젝트 옵션
+        save_all_changes: 모든 변경 사항 저장
+      evaluator_invitation:
+        if_you_have_already_sent_a_mes: INVITATION 메시지를 참가자에게 이미 보내면 프로젝트 대시 보드에서 모든 참가자와 평가자에게 업데이트 된 메시지를 보낸 후에 거기에서 볼 수 있습니다.
+        invitations: 초청장
+        modifying_this_message_will_ch: 이를 수정하면 선택된 언어의 평가자 초대 또는 이메일 알림이 변경됩니다.
+        please_do_not_modify_any_text_: 괄호 (|) 내의 텍스트는 수정하지 마십시오. 메시지를 보낼 때 참가자의 정보로 바뀌는 키워드입니다.
+        reminders: 알림
+        warnings: 경고
+      evaluators_blank_slate:
+        add_evaluator: 평가자 추가
+        import_evaluators: 평가자 가져 오기
+        start_adding_evaluators_now: 지금 평가자를 추가하십시오.
+        there_are_no_evaluators_in_thi: 이 프로젝트에는 평가자가 없습니다.
+      header:
+        comments: 프린터에 대한 설명
+        client: '고객:'
+        completion_date: 완료 날짜
+        consulting_settings: 클라이언트 및 컨설팅 설정
+        consutling_company: '컨설팅 회사 :'
+        convert_sa_to_lcp: 전체 LCP로 변환
+        create_group_report: 그룹 보고서 작성
+        delete_project: 프로젝트 삭제
+        deleteproject: 프로젝트 삭제
+        generate_draft_reports: 임시 보고서 생성
+        practitioner: '컨설턴트:'
+        printing_access: 인쇄 액세스
+        project_id: '프로젝트 ID :'
+        project_time_zone: 프로젝트 시간대
+        rename_project: 프로젝트 이름 바꾸기
+        run_new_report: 새 보고서 실행
+        run_report_date: 보고서 날짜 실행
+        send_all_reminders: 모든 알림 보내기
+        send_new_emails_projectsurveys: 새 이메일 보내기 (%{projectsurveyswhereemail_sent_})
+        shared_with: 와 공유 함
+        show_orders: 주문 표시
+        starting_date: '시작 날짜:'
+        status: '지위:'
+        users_project_access: 공유 설정
+        view_orders: 주문보기
+      import_participants_modal:
+        cancel: 취소
+        import_participants_from_csv_f: CSV 파일에서 참가자 가져 오기
+        not_sure_about_the_format_of_t: 파일 형식이 확실하지 않습니까? <a href='#'> CSV 샘플 다운로드 </a>
+        upload_participants: 참가자 업로드
+        upload_your_csv_file: 'CSV 파일 업로드 :'
+      modals:
+        delete_project:
+          thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}"
+          thomeindexunable_to_delete_pro: "%{thomeindexunable_to_delete_pro}"
+          thomeindexyes_delete_this_proj: "%{thomeindexyes_delete_this} 프로젝트"
+        no_data_for_preview_warning:
+          at_least_one_survey_must_be_co: 미리보기 보고서가 작동하려면 하나 이상의 설문 ​​조사가 완료되어야합니다.
+          not_enough_data_to_generate_pr: 미리보기를 생성 할 데이터가 충분하지 않습니다.
+        rename:
+          cancel: 취소
+          please_enter_a_new_name_for_th: '프로젝트의 새 이름을 입력하십시오 :'
+          rename_project: 프로젝트 이름 바꾸기
+          save_changes: 변경 사항을 저장하다
+        show_orders:
+          orderorder_number_click: "%{orderorder_number} (클릭),"
+          projects_orders: 프로젝트 주문
+          the_orders_created_by_a_projec: 프로젝트가 생성 한 주문입니다.
+      new_project:
+        address_form:
+          select_an_address_from_my_acco: 내 계정에서 주소 선택
+        address_modal:
+          select_from_my_account_address: 내 계정 주소에서 선택하십시오.
+          there_are_no_addresses_related: 사용자와 관련된 주소가 없습니다.
+        contact_info:
+          billing_address: 청구 지 주소
+          binder_address: 바인더 주소
+          contact_information: 연락처 정보
+          new_address: 새 주소
+          same_as_shipping_address: 보고서 주소와 동일
+          same_as_the_billing_address: 청구서 수신 주소와 동일
+          shipping_address: 주소 신고
+          this_contact_is_the_only_perso: 이 연락처는 The Leadership Circle의 결제 정보를 볼 수있는 유일한 사람입니다.
+          this_is_the_address_where_the_: 이것은 코치 보고서가 갈 주소입니다.
+          this_is_the_address_where_the_3_ring: 이것은 3- 링 바인더가 전달 될 주소입니다.
+        deliverable_options:
+          binder_with_tabs: 프로파일 해석 매뉴얼이있는 바인더
+          coach_report: 코치 보고서
+          digital_graph: 디지털 그래프
+          group_report: 그룹 보고서
+          how_many_copies_per_participan: 참가자 당 몇 부?
+          i_want_pdf_and_printed_copies_: PDF 및 인쇄본 사본을 원합니다.
+          i_want_the_pdf_copies_only: 나는 PDF 사본 만 원한다.
+          participant_graph: 참가자 그래프
+          participant_report: 참가자 보고서
+          participant_reports_in_csv: 다운로드 가능한 원시 데이터
+          pdf_file_that_practitioner_ema: 컨설턴트가 참가자에게 전자 메일로 보내는 PDF 파일
+          please_choose_below_which_ones: 다음 중 인쇄 할 항목을 선택하십시오.
+          profile_interpretation_manual: 프로파일 해석 매뉴얼
+          reports: '보고서 :'
+          reports_format: '보고서 형식 :'
+          you_will_get_a_digital_version: 다음 항목의 디지털 버전이 제공됩니다.
+          you_will_get_only_the_digital_: 프로파일 해석 안내서 및 다음 보고서의 디지털 (전자 사본) 버전 만 제공됩니다.
+          you_will_get_the_digital_versi: 프로파일 해석 매뉴얼과 모든 보고서의 디지털 버전을 받게됩니다.
+          your_project_will_include: 프로젝트에 포함될 내용은 다음과 같습니다.
+        demographics:
+          custom:
+            age_ranges: 연령대
+            all: 모든
+            country: 국가
+            demographic_options: 인구 통계 옵션
+            direct_report_ranges: 직접 보고서 범위
+            education_levels: 교육 수준
+            ethnic_groups: 인종 그룹
+            female: 여자
+            gender: 성별
+            if_you_choose_to_run_a_custom_: 너무 작은 인구 통계 표본 크기에 대해 사용자 지정 보고서를 실행하도록 선택하면 결과가 비뚤어진 데이터가 포함 된 보고서가 될 수 있습니다. 대부분의 인구 통계 학적 데이터는 참고 자료에서 볼 수있다. 선택 사항을 기본 인구 통계로 다시 되돌릴 수있는 옵션이 있습니다. 질문이 있으면 고객 서비스 담당자에게 문의하십시오.
+            industries: 산업 분야
+            male: 남성
+            management_levels: 관리 수준
+            professions: 전문직
+          summary:
+            age_ranges: '연령대 :'
+            countries: '국가 :'
+            demographic_definition: 인구 통계 학적 정의
+            demographic_details: '인구 통계 세부 정보 :'
+            demographic_size: '인구 통계 학적 크기 :'
+            direct_report_ranges: '직접 보고서 범위 :'
+            education_levels: '교육 수준 :'
+            ethnic_groups: '인종 그룹 :'
+            gender: '성별:'
+            industry: '산업:'
+            languages: '언어 :'
+            lcp_participants: LCP 참가자
+            lcs_participants: LCS 참가자
+            management_levels: '관리 수준 :'
+            me_participants: ME 참가자
+            participants: 참가자
+            professions: '직업 :'
+            sa_participants: SA 참가자
+            this_is_the_number_of_people_y: 이것은 프로젝트 회원을 비교할 사람들의 수입니다.
+        project_details:
+          all_surveys_should_be_complete: 모든 설문 조사는이 날짜까지 완료되어야합니다.
+          cancel: 취소
+          date_reports_are_available: 날짜 보고서를 사용할 수 있습니다.
+          next: 다음 것
+          project_options: 프로젝트 옵션
+          specify_a_timeline_for_the_pro: 프로젝트의 타임 라인 지정
+        project_options:
+          1st_option: 첫 번째 옵션
+          2nd_option: 두 번째 옵션
+          cancel_schedule_announcement: 일정 발표 취소
+          comment_questions_to_be_includ: 설문 조사에 포함될 댓글 질문
+          evaluators_are_bosses_peers_di: 평가자는 보스, 동료, 직접 보고서 및 참가자에 대한 의견을 제공하도록 초대 된 다른 사람들입니다.
+          how_evaluators_are_invited_to_: 참여자 평가 방법
+          i_will_invite: 나는 평가자를 초대 할 것이다.
+          if_the_participant_is_responsi: 참가자가 평가자를 초대 할 책임이있는 경우 자체 평가를 시작하기 전에이 최소 평가자를 초대해야합니다.
+          in_this_section_you_will_be_ev: 이 섹션에서는
+          indicate_if_the_survey_will_be: 설문 조사가 전체 조직 또는 팀 구성원 그룹에 중점을 둘 것인지 명시하십시오.
+          leaders_managers: 지도자 / 관리자
+          members_of_team: 그만큼
+          minimum_evaluations_per_partic: 참가자 당 최소 평가는?
+          my_participant_will_invite: 내 참가자가 평가자를 초대합니다.
+          organization: 조직
+          participants_will_see_the_focu: 참가자는 오른쪽 상자와 같이 조사 지침에서 초점 정의를 볼 수 있습니다
+          promo_code: 프로모션 코드
+          q1_in_your_opinion_what_is_thi: 'Q1 : 귀하의 의견으로는이 사람의 가장 큰 리더십 자산, 기술 또는 재능은 무엇이며이를 활용함에있어 어떤 제안이 있습니까?'
+          q1_what_should_heshe_stop_doin: 'Q1 : 그 / 그녀는 무엇을하지 말아야합니까?'
+          q2_in_your_opinion_what_is_thi: '질문 2 : 귀하의 견해로는이 사람의 가장 큰 리더십 과제 또는 개발 영역은 무엇이며이를 처리하기위한 제안은 무엇입니까?'
+          q2_what_can_heshe_improve: 'Q2 : 무엇을 개선 할 수 있습니까?'
+          q3_what_have_you_observed_abou: 질문 3 :이 평가에서 이전에 언급되지 않았을 수도있는 추가 의견을 제공하려는이 사람에 대해 귀하는 무엇을 관찰 했습니까?
+          q3_what_should_heshe_start_doi: 'Q3 : 무엇을 시작해야합니까?'
+          regardless_of_who_invites_eval: 평가자를 초대하는 사람과 관계없이 컨설턴트는 항상 프로젝트 대시 보드에서 평가자 목록을 볼 수 있습니다
+          report_demographics: 인구 통계보고
+          schedule_sending_of_invitation: 초대 이메일 발송 일정
+          send_now: 지금 보내
+          survey_focus: 조사 포커스
+          survey_focus_description: 설문 조사 초점 설명
+          survey_instructions: '설문 지침 :'
+          team: 팀
+          the_invitations_can_be_schedul: 초대장은 지정된 날짜와 시간에 나가기 위해 예약 할 수 있습니다
+          this_is_the_minimum_number_of_: 이것은 참가자가 보고서에 포함해야하는 완전한 평가의 최소 횟수입니다. 최소 자격은 5 평가입니다.
+      participant_invitation:
+        if_you_have_already_sent_a_mes: 참가자들에게 이미 초대 메시지를 보내면 프로젝트 대시 보드에서 모든 참가자와 평가자에게 업데이트 된 메시지를 보낸 후 거기에 초대 메시지를 보낼 수 있습니다.
+        invitations: 초청장
+        modifying_this_message_will_ch: 이 메시지를 수정하면 선택한 언어로 참가자의 초대 또는 알림 이메일이 변경됩니다.
+        please_do_not_modify_the_text_: 괄호 (|) 내의 텍스트는 수정하지 마십시오. 메시지를 보낼 때 참가자의 정보로 바뀌는 키워드입니다.
+        reminders: 알림
+        warnings: 경고
+      participants_blank_slate:
+        add_participant: 참가자 추가
+        import_participants: 참가자 가져 오기
+        start_adding_participants_now: 참가자 추가를 시작하십시오.
+        there_are_no_participants_in_t: 이 프로젝트에 평가할 참가자가 없습니다.
+      reminders:
+        if_you_have_already_sent_a_mes: 이미 참가자에게 메시지를 보낸 경우 업데이트 된 메시지가 프로젝트 내에서 전송 될 수 있습니다.
+        langname_reminder: "%{langname} 알림"
+        modifying_this_message_will_ch: 이 메시지를 수정하면 영어 설문으로 알림 메시지가 변경됩니다.
+        please_do_not_modify_the_text_: 대괄호 (* | | *) 안에있는 텍스트는 수정하지 마십시오. 메시지를 보낼 때 참가자의 정보로 바뀌는 키워드입니다.
+        warnings: 경고
+      report_preview:
+        boss: 보스
+        bosss_boss: 보스의 보스
+        direct_report: 직접 보고서
+        evaluators: 평가자
+        other: 다른
+        participant: '참가자:'
+        peer: 같은 패
+        select_categories: '카테고리 선택 :'
+        self: 본인
+        skill: 기술
+      resend_emails:
+        last_reminde: 마지막으로 보낸 전자 메일
+        last_reminder_sent_on: 마지막으로 보낸 전자 메일
+        never_sent: 전송하지 않음
+        participantuseremail: "(%{participantuseremail})"
+        select_all_participants_evalua: 모든 참가자의 평가자 선택
+        surveyevaluatoremail: "(%{surveyevaluatoremail})"
+      statuses:
+        completed_evaluating: 평가 완료 됨
+        completed_selfsurveys: 완성 된 자체 설문 조사
+        in_progress: 진행 중
+        not_started: 시작되지 않았습니다.
+        statcompleted_count_of_stattot: "%{statcompleted_count}의 %{stattotal_count}가 완료되었습니다."
+        statusestotal_relations_comple: "%{statusestotal_relations_comple}의 %{statusestotal_relations} 평가 완료"
+        total_of_evaluators: 총 평가자
+        total_of_participants: 총 참가자 수
+      tooltip:
+        of: 의
+        pluralizecompleted_count_relat: "%{pluralizecompleted_count_relat} 완료"
+    project:
+      manage_project: 프로젝트 관리
+      resend_emails: 이메일 재전송
+    project_header:
+      create_group_report: 그룹 보고서 작성
+      create_new_project: 새 프로젝트 만들기
+    project_table:
+      actions: 행위
+      all_projects: 모든 프로젝트
+      completion_date: 완료 날짜
+      last_reminder: 마지막 전자 메일
+      product: 생성물
+      project: 계획
+      status: 지위
+    report_preview:
+      '0': 0 %
+      categories: '카테고리 :'
+      evaluators: 평가자
+      participant: '참가자:'
+      self: 본인
+      skill: 기술
+    resend_emails:
+      cancel: 취소
+      select_all_evaluators: 모든 평가자 선택
+      select_all_participants: 모든 참석자 선택
+      select_the_unfinished_particip: 이메일을 보내려는 미완성 참가자 및 평가자를 선택하십시오. 선택한 설문 사용자에게 메시지를 보낼 이메일 유형을 선택하십시오.
+      send_emails_to_participants_ev: 참가자 및 평가자에게 이메일 보내기
+      send_invitation_email: 초대 이메일 보내기
+      send_reminder_email: 미리 알림 이메일 보내기
+    roles:
+      collaborator:
+        delete: 지우다
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{projectname}"
+        tsharedshared_with_project_use: "%{tsharedshared_with} %{project_userscount} %{tprojectscollabprinters}"
+    send_all_reminders:
+      close: 닫기
+      please_wait: 잠시만 기다려주십시오 ...
+      sending_all_reminders: 모든 알리미 보내기
+    share:
+      success: 성공
+    show:
+      evaluator_email: 평가자 이메일
+      evaluators: 평가자
+      options: 옵션
+      participant_email: 참가자 전자 메일
+      participants: 참가자
+    show_consulting_settings:
+      client: 고객
+      consulting_company: 컨설팅 회사
+      consulting_settings: 클라이언트 및 컨설팅 설정
+      practitioner: 컨설턴트
+    undo_share:
+      success: 성공
+  sa_survey_mailer:
+    request_invitation_email:
+      have_a_nice_day: 좋은 하루 되세요!
+      hello: 안녕하세요,
+      participant_email: '참가자 이메일 :'
+      participant_name: '참가자 이름 :'
+      selfsurvey_completed_at: '자체 조사 완료 :'
+      selfsurvey_id: '자체 설문 조사 #ID :'
+      we_recorded_a_new_request_for_: 사용자로부터의 초대 요청이 새로 녹음되었습니다.
+    survey_completed_email:
+      age_range: 연령대
+      basic_data: 기본 데이터
+      company_name: '회사 이름:'
+      company_revenue: 회사 수익
+      country: 국가
+      demographics: 인구 통계
+      education_level: 교육 수준
+      ethnic_group: 인종 그룹
+      gender: 성별
+      have_a_nice_day: 좋은 하루 되세요!
+      hello: 안녕하세요,
+      industry: 산업
+      management_level: 관리 수준
+      organization_size: 조직 크기
+      participant_email: '참가자 이메일 :'
+      participant_name: '참가자 이름 :'
+      participant_phone_number: '참가자 전화 번호 :'
+      please_check_the_attachment_re: 첨부 파일을 확인하십시오 - 보고서는 PDF 형식입니다.
+      profession: 직업
+      reports: 보고서
+      selfsurvey_completed_at: '자체 조사 완료 :'
+      selfsurvey_created_at: '자체 설문 조사 :'
+      selfsurvey_id: '자체 설문 조사 #ID :'
+      tlc_consultant_who_referred: '언급 한 TLC 컨설턴트 :'
+      we_noticed_that_the_new_selfsu: 새로운 자체 조사가 완료되었음을 알았습니다. 아래는 세부 사항입니다.
+    survey_completed_participant_email:
+      already_in_touch: 이미 리더십 서클 인증 코치와 연락하고 계십니까? 자세한 내용은 직접 문의하십시오.
+      dear_userfull_name: 친애하는 %{userfull_name} 님,
+      if_youd_like_to_understand_how: 어떻게 리더로서 "상영 중"인지 이해하려면 리더십 서클 프로파일을 작성하여 가장 많이 이끌어 내고 상호 작용하는 사람들의 피드백을 제공하는 것이 좋습니다.
+      like_to_implement: 전체 팀 또는 조직과 함께 리더십 서클 프로필을 구현하려면 <a href='mailto:carl.benscoter@fcg-global.com'> carl.benscoter@fcg-global으로 Carl Benscoter에게 문의하십시오. co.kr </a>
+      other_questions: 다른 질문이 있으십니까? <a href='mailto:alittleTLC@theleadershipcircle.com'> alittleTLC@theleadershipcircle.com </a>으로 저희에게 연락하십시오.
+      please_do_not_hesitate_to_reac: 궁금한 점이 있으시면 언제든지 문의하십시오. 어떤 방식 으로든 도와 드리겠습니다.
+      purchase_option_1: <a href="http://shop.leadershipcircle.com/MLprofile"> 리더십 서클 프로필 + 마스터 링 리더십 브리핑 </a> - $ 2000 USD *
+      purchase_option_2: <a href="http://shop.leadershipcircle.com/MLcoaching"> 지도력 서클 프로필 + 마스터 링 리더십 요약 + 1 시간 코치 </a> - $ 3000 USD *
+      purchase_option_3: <a href="http://shop.leadershipcircle.com/MLcoaching-plan"> 리더십 서클 프로필 + 마스터 링 리더십 브리핑 +1 시간 코칭 + 리더십 개발 플랜 </a> - $ 4000 USD *
+      purchase_options: 다음은 세 가지 좋은 옵션입니다.
+      purchase_promo_code: "* 체크 아웃시 <font color = 'red'> MLDebrief2017 </ font>을 사용하여 일회성 입회 요금으로 40 % 할인"
+      request_a_full_lcp: 완전한 LCP 요청
+      thank_you_again: 다시 감사합니다,
+      thank_you_for_taking_the_leade: '리더십 서클 프로필 : 자체 평가를 해줘서 고맙습니다. Mastering Leadership을 읽는 것을 즐겼으며, 리더십 여행을 계속하면서 유용한 보고서와 피드백을 얻길 바랍니다.'
+      to_help_you_better_understand_: 자체 평가 보고서를 더 잘 이해할 수 있도록 그래프 및 보고서의 각 측면을 설명하는 해석 안내서가 포함되어 있습니다.
+  sa_surveys:
+    demographics:
+      apt_suite_bldg: 아파트, 스위트, 빌딩 ...
+      before_you_begin: 시작하기 전에
+      company_details: 회사 정보
+      company_revenue: 회사 수익
+      continue_to_survey: 설문 조사 계속하기
+      need_help: 도움이 필요하다?
+      personal_information: 개인 정보
+      select_age: 연령 선택
+      select_ethnic_group: 인종 그룹 선택
+      select_your_companys_industry: 귀사의 산업 선택
+      select_your_education_level: 교육 수준 선택
+      select_your_gender: 성별 선택
+      select_your_management_level: 귀하의 관리 수준 선택
+      select_your_profession: 직업 선택
+      select_your_residing_country: 거주 국가 선택
+      size_of_organization: 조직 규모
+      street_address: 거리 주소 (222 example avenue) ...
+      tlc_would_like_to_gather_some_: TLC는 내부 조사 목적으로 만 일부 정보를 수집하고자합니다. TLC는 귀하의 정보를 공유하지 않습니다. 질문에 대답 해 주시면 감사하겠습니다. 그러나 항상 "답변하지 않음"또는 "기타"를 선택할 수 있습니다.
+      type_your_company_name: 회사 이름을 입력하십시오 ...
+      we_need_a_little_more_informat: 너에 대한 좀 더 자세한 정보가 필요해.
+      zip_post_code: 우편 번호 / 우편 번호 ...
+    expanding_development:
+      discover_more_about_the_leader: 리더십 서클에 대해 더 알아보십시오.
+      need_help: 도움이 필요하다?
+      request_invitation: 가득 차있는 LCP 360을 가지고 가십시오
+      requesting_invitation: 초대장 요청 중 ...
+      would_you_like_to_continue_exp: 계속 지도력 개발을 확대하고 싶습니까?
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    registration:
+      complete_the_registration_belo: 설문 조사에 응하려면 아래 등록을 완료하십시오. 자기 평가를 완료 할 수없는 경우. 한 가지 설정을 완료해야합니다. 결과는 자체 평가가 완료된 후 등록 된 이메일로 전송됩니다.
+      consultant_error: 이 이메일에 TLC 컨설턴트가 없습니다. 다른 이메일 주소를 입력하거나 위의 옵션에 '아니요'를 선택하십시오.
+      did_a_tlc_consultant_refer_you: TLC 컨설턴트가 <b> 마스터 링 리더십 </ b>이라는 책을 추천 했습니까?
+      'false': false
+      i_agree_to_tlc: 나는 TLC에 동의한다.
+      ja: true
+      need_help: 도움이 필요하다?
+      nein: false
+      'no': 아니
+      privacy_and_policy_terms: 개인 정보 보호 및 정책 조항
+      take_the_survey: 설문 조사 받기
+      thank_you_for_your_interest: 관심을 가져 주셔서 감사합니다.
+      type_consultant_email: 그 / 그녀의 이름이나 이메일을 입력하십시오 ...
+      type_email: 귀하의 이메일을 입력하십시오 ...
+      type_first_name: 이름 입력 ...
+      type_last_name: 성을 입력하십시오 ...
+      type_phone_number: 전화 번호를 입력하십시오 ...
+      'yes': 예
+    thank_you_participant:
+      did_you_enjoy_your_survey_shar: 설문 조사를 즐겼습니까? 친구와 공유하십시오.
+      discover_more_about_the_leader: 리더십 서클에 대해 더 알아보십시오.
+      facebook: 페이스 북
+      for_taking_the_leadership_circ: 리더십 서클 프로필 - 자기 평가를 받았다. 결과가 포함 된 보고서는 몇 분 안에 이메일에 도착합니다.
+      linkedin: 링크드 인
+      need_help: 도움이 필요하다?
+      request_invitation: 가득 차있는 LCP 360을 가지고 가십시오
+      requesting_invitation: 초대장 요청 중 ...
+      thank_you_practitionerfull_nam: 고맙습니다, %{practitionerfull_name}
+      twitter: 지저귀다
+      would_you_like_to_take_the_bfu: 전체 리더십 서클 프로필 <b> LCP 360 </ b> 평가를 받아 핵심 이해 관계자 (보스, 동료, 직속보고 및 기타 사람들)가 리더십을 경험하는 방법을 알아보십시오. 전체 리더십 서클 프로필 360에서 얻은 깊은 통찰력은 예술과 리더십의 실전에서 더욱 효과적이고 숙달 될 수있게 해줍니다. <br/> <br/> * 체크 아웃시 MLDebrief2017을 사용하면이 가격의 40 % 할인을받을 수 있습니다. 일회성 입문률.
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    welcome:
+      bget_your_copy_hereb: "<b> 사본을 받으십시오. </ b>"
+      coming_back: 다시 올거야?
+      login: 로그인
+      need_help: 도움이 필요하다?
+      sorry_but_your_answers_are_inc: 죄송 합니다만 답변이 잘못되었습니다. 다시 시도하십시오.
+      submit_answers: 답변 제출
+      this_area_is_a_special_section: '이 영역은 독자를위한 특별 섹션입니다. <b> 마스터 링 리더십 </ b>이라는 책을 읽으 셨길 바랍니다. 리더십 서클 : 자기 평가를 시작하려면 아래 질문에 답하십시오. 대답은이 책에서 찾을 수 있습니다. 그것을 가지고 있지 않습니까?'
+      welcome_to: 에 오신 것을 환영합니다
+  search:
+    index:
+      actions: 행위
+      client_name: 고객 이름
+      clients: 고객
+      consultant_companies: 컨설턴트 회사
+      created_at: '작성 시간 :'
+      email: 이메일
+      evaluations: 평가
+      industry: 산업
+      name: 이름
+      number_of_participants: 참가자 수
+      number_of_projects: 프로젝트 수
+      order: 주문
+      order_date: 주문 날짜
+      orders: 명령
+      practitioners: 컨설턴트
+      product_type: 제품 유형
+      projects: 프로젝트
+      report_name: 보고서 이름
+      results_limited_to_20_please_u: 결과가 20 개로 제한되어 있습니다. 더 정확한 검색을 사용하십시오.
+      search_results_total_count: 검색 결과
+      selfsurveys: 자체 설문 조사
+      status: 지위
+    orders_search:
+      number_of_participants: 참가자 수
+      order: 주문
+      order_date: 주문 날짜
+      orders: 명령
+      product_type: 제품 유형
+      report_name: 보고서 이름
+      search_results_total_count: 검색 결과 (%{total_count})
+      status: 지위
+    partials:
+      index:
+        actions: 행위
+        client_name: 고객 이름
+        clients: 고객
+        completion_date: 완료 날짜
+        created_at: '작성 시간 :'
+        email: 이메일
+        evaluations: 평가
+        industry: 산업
+        last_reminder: 마지막 전자 메일
+        name: 이름
+        number_of_participants: 참가자 수
+        number_of_projects: 프로젝트 수
+        order: 주문
+        order_date: 주문 날짜
+        orders: 명령
+        practitioners: 컨설턴트
+        product: 생성물
+        product_type: 제품 유형
+        project: 계획
+        projects: 프로젝트
+        report_name: 보고서 이름
+        search_results: 검색 결과
+        selfsurveys: 자체 설문 조사
+        status: 지위
+      order:
+        not_found_record_invalid: 찾지 못했습니다! 기록이 유효하지 않습니다.
+      organization:
+        create_group_report: 그룹 보고서 작성
+        manage_client: 클라이언트 관리
+      practitioner:
+        preview_user: 사용자 미리보기
+    projects_search:
+      projects: 프로젝트
+      search_results_total_count: 검색 결과 (%{total_count})
+    surveys_search:
+      actions: 행위
+      completed_on: 완료 됨
+      completion_date: 완료 날짜
+      delete: 지우다
+      evaluating: 평가 중
+      evaluations: 평가
+      language: 언어
+      last_logged_in: 마지막으로 로그인 한 시간
+      more_actions: 추가 작업
+      move: 움직임
+      not_started: 시작되지 않았습니다.
+      of: 의
+      project_name: 프로젝트 이름
+      questions: 질문들
+      reset: 다시 놓기
+      role: 역할
+      search_results_total_count: 검색 결과 (%{total_count})
+      self_surveys: 자체 설문 조사
+      survey_taker_details: 설문 조사자 세부 정보
+    users_search:
+      actions: 행위
+      created_at: '작성 시간 :'
+      email: 이메일
+      evaluations: 평가
+      name: 이름
+      practitioners: 컨설턴트
+      search_results_total_count: 검색 결과 (%{total_count})
+      selfsurveys: 자체 설문 조사
+  shared:
+    1_printed_copy_per_participant: 참가자 당 인쇄 된 사본 1 부
+    actions: 행위
+    add: 더하다
+    add_participant: 참가자 추가
+    cancel: 취소
+    certified_consultants: 컨설턴트
+    companies: 고객
+    complete_by: 작성자
+    completed_at: 에서 완료 됨
+    confirm: 확실합니까?
+    create_group_report: 그룹 보고서 작성
+    created_at: '작성 시간 :'
+    date_created: 생성 일자
+    delete: 지우다
+    demographic: 인구 통계학
+    details: 세부
+    edit: 편집하다
+    edit_evaluator: 평가자 편집
+    email: 이메일
+    import_participants: 참가자 가져 오기
+    kind: 종류
+    licensor: 라이센서
+    manage_evaluators: 평가자 관리
+    menu:
+      dashboard: 계기반
+      disabled: 장애인
+      invited: 초대 됨
+      orders: 명령
+      print_reports: 보고서 인쇄
+      project_center: 프로젝트 센터
+      survey_takers: 설문 조사자
+      utilities: 유용
+    more_actions: 추가 작업
+    name: 이름
+    new:
+      footer:
+        current_useremail: "(%{current_useremail})"
+        go_back_to_the_csr_project_cen: CSR 프로젝트 센터로 돌아 가기
+        you_true_useremail_are_imperso: 귀하 (%{true_useremail})가 컨설턴트를 가장하고 있습니다.
+        your_password_will_expire: 암호는 %{days_to_expire} 일 후에 만료됩니다.
+        renew_your_password: 비밀번호를 변경하십시오.
+      header:
+        go_to_project_center: 프로젝트 센터로 이동
+        link_to_class_logo__link_do: "/"
+        selfassessment: 자기 평가
+        the_leadership_circle: '지도력 서클 :'
+        the_leadership_circle_profilet: 리더십 서클 프로필
+        the_leadership_circle_selfasse: '지도력 서클 : 자기 평가'
+      modal_search:
+        all: 모든
+        orders: 명령
+        projects: 프로젝트
+        survey_takers: 설문 조사자
+        users: 사용자
+      modal_wait:
+        importing_participants: 참가자 가져 오기
+        please_wait: 잠시만 기다려주십시오 ...
+      nav:
+        active_projects: 활성 프로젝트
+        my_clients: 내 고객
+        my_orders: 내 보고서
+        my_surveys: 나의 설문 조사
+        people: 사람들
+        print_reports: 보고서 인쇄
+        project_center: 프로젝트 센터
+        utilities: 유용
+      navigation_mobile:
+        logout: 로그 아웃
+        my_account: 내 계정
+      session_timeout_modal:
+        attention: 주의!
+        logout: 로그 아웃
+        more_time: 더 많은 시간
+        you_have_been_inactive_and_you: 귀하는 비활성 상태이고 <b class = "remaining-time"> 5:00 </ b> 분 내에 자동으로 로그 아웃됩니다. 시간이 더 필요하십니까?
+      session_timeout_remodal_modal:
+        attention: 주의!
+        logout: 로그 아웃
+        more_time: 더 많은 시간
+        you_have_been_inactive_and_you: 귀하는 비활성 상태이고 <b class = "remaining-time"> 5:00 </ b> 분 내에 자동으로 로그 아웃됩니다. 시간이 더 필요하십니까?
+      user_navigation:
+        logout: 로그 아웃
+        my_account: 내 계정
+        stop_impersonating_current_use: "%{current_userfull_name}로 가장하는 중지"
+        take_selfassessment: 자기 평가 받기
+    next_page: 다음 페이지
+    not_set: 설정되지 않음
+    notify:
+      delete_warning: 이미 설문 조사를 완료 한 평가자를 삭제할 수 없습니다.
+      moved_with_success: 참가자가 성공적으로 이동되었습니다.
+      success: 데이터가 저장되었습니다.
+      update_warning: 이미 설문 조사를 완료 한 평가자는 변경할 수 없습니다.
+    number: 번호
+    of: 의
+    old:
+      forbidden:
+        forbidden: 금지 된
+    participants: 참가자
+    pdf_report: PDF 보고서
+    people: 사람들
+    percent_complete: 완료율
+    please_remove_children: 종속 데이터가 여전히 존재하기 때문에 삭제할 수 없습니다 (조직, 프로젝트). 먼저 종속 데이터를 삭제해야합니다.
+    preview: 시사
+    preview_report: 보고서 미리보기
+    previous: 너무 이른
+    printing_access: 인쇄 액세스
+    projects: 프로젝트
+    questions: 질문들
+    rename: 이름 바꾸기
+    report: 보고서
+    report_for: 신고 대상
+    reset_password: 암호를 재설정
+    reset_password_confirm: 암호를 재설정 하시겠습니까?
+    retake: 다시 잡다
+    role: 역할
+    save: 구하다
+    save_changes: 변경 사항을 저장하다
+    send_invitations: 초대장 보내기
+    shared_settings: 공유 설정
+    shared_with: 와 공유 함
+    status: 지위
+    system: 체계
+    to: 에
+    total: 합계
+    users: 사용자
+    were_found: 찾았습니다
+    when: 언제
+    who: 누구
+  support:
+    array:
+      last_word_connector: ", 및"
+      two_words_connector: " 과"
+      words_connector: ","
+  surveys:
+    another_show:
+      surveyproductname: "%{surveyproductname}"
+      tsurveysshowsurvey_for_surveye: "%{tsurveysshowsurvey_for} %{surveyevaluatorfull_name}"
+    answers:
+      are_you_sure_undone: 확실합니까? 제발, 당신의 모든 대답을 확인하십시오. 이 단계는 실행 취소 할 수 없습니다.
+      back_to_surveys: 설문 조사로 돌아 가기
+      finish_survey: 설문 조사 완료
+      next_section: 다음 섹션
+      previous_section: 이전 섹션
+      questions_completed: 완료된 질문
+    before_you_begin:
+      back_to_main_page: 메인 페이지로 돌아 가기
+      before_you_begin: 시작하기 전에
+      continue_to_survey: 설문 조사 계속하기
+      need_help: 도움이 필요하다?
+      tlc_would_like_to_gather_some_: TLC는 내부 조사 프로세스에 대해서만 정보를 수집하고자합니다. TLC는 귀하의 정보를 공유하지 않습니다. 질문에 답변 해 주시면 감사하겠습니다. 참여하지 않기로 선택하는 경우, "대답하지 않음"을 선택하고 "조사 계속"버튼을 클릭하십시오.
+      we_need_a_little_more_informat: 너에 대한 좀 더 자세한 정보가 필요해.
+    demographic:
+      before_you_begin: 시작하기 전에
+      raw_data_only_hint: 이 필드는 PDF 보고서에는 필요하지만 데이터 전용 결과에는 필요하지 않습니다.
+      tlc_would_like_to_gather_some_: TLC는 내부 조사 목적으로 만 일부 정보를 수집하고자합니다. TLC는 귀하의 정보를 공유하지 않습니다. 질문에 대답 해 주시면 감사하겠습니다. 그러나 항상 "답변하지 않음"을 선택할 수 있습니다.
+      we_need_a_little_more_informat: 너에 대한 좀 더 자세한 정보가 필요해.
+    done: 설문 조사를 보려면 클릭하십시오.
+    index:
+      active_surveys: 능동적 인 설문 조사
+      complete_active_surveys: 아래의 모든 활성 설문 조사를 완료하십시오.
+      content: 함유량
+      my_active_surveys: 내 적극적인 설문 조사
+      need_help: 도움이 필요하다?
+      self_survey: 자체 설문 조사
+      survey_history: 설문 조사 기록
+      take_survey: 설문 조사 참여
+    invite_evaluators:
+      add_evaluator: 평가자 추가
+      back_to_survey_list: 설문 조사 목록으로 돌아 가기
+      evaluators_provide_feedback_on: 평가자는 설문 조사를 완료하여 리더십 기술 및 역량에 대한 피드백을 제공합니다.
+      invite_evaluators: 평가자 초대
+      need_help: 도움이 필요하다?
+      take_the_survey: 설문 조사 참여
+      you_have_enough_evaluators_to_: 설문 조사를하기에 충분한 평가자가 있습니다. 하지만 적어도 <span class = 'minimum-evaluators'> <10> <b> </ span> 명의 평가자를 보유 할 것을 권장합니다.
+      you_must_add_at_least_span_cla: 설문 조사를 진행하려면 적어도 <span class = 'minimum-evaluators'> %{current_userinvitee_surveys} 더 많은 평가자 </ span>를 추가해야합니다.
+    not_enough_invited_evaluators: 참가자는 평가자를 초대 할 수 있습니다. 설문 조사에 참여할 평가자가 충분하지 않습니다.
+    not_valid: 죄송합니다.이 설문 조사는 더 이상 제공되지 않습니다.
+    partials:
+      modals:
+        need_help:
+          description: 아래 목록에서 도움이 필요한 설문지를 선택하십시오. 저희 컨설턴트가 가능한 한 빨리 연락 드리겠습니다.
+          main_support: 주요 지원
+      continue_survey:
+        '100': 100 %
+        culture_survey_for: 문화 조사
+        current_userfirst_name_current: "%{current_userfirst_name} %{current_userlast_name}"
+        review_your_answers: 답변 검토
+        self_survey_for: 에 대한 자기 설문 조사
+        thanks_current_userfirst_name: 감사합니다 %{current_userfirst_name},
+        you_are_currently_taking_secti: 현재 %{paramssection_page} 섹션 %{surveysectionscount}를 사용 중입니다.
+        you_have_answered_all_the_ques: 섹션 %{paramssection_page}에 대한 모든 질문에 답변하셨습니다.
+      evaluator_form:
+        cancel: 취소
+        update_evaluator: 평가자 업데이트
+      evaluators:
+        edit_evaluator: 평가자 편집
+        evaluator_details: 평가자 세부 정보
+        language: 언어
+        relationship: 관계
+      modal:
+        add_evaluator: 평가자 추가
+        always: 항상
+        cancel: 취소
+        edit_evaluator: 평가자 편집
+        na: N / A
+        never: 못
+        often: 자주
+        once_added_an_email_will_be_im: 일단 추가되면 평가자에게 전자 메일이 즉시 전송되어 참여하도록 초대됩니다.
+        previous_question: 이전 질문
+        review_your_answers: 답변 검토
+        seldom: 드물게
+        self_survey_for_bthe_most_effe: "<b> 가장 효과적인 리더 </ b>에 대한 자기 설문 조사"
+        sometimes: 때때로
+      my_active_surveys:
+        complete_by: 작성자
+        current_userinvitee_completed_: "%{current_userinvitee_completed_} 평가의 %{current_userinvitee_surveyssel} 완료"
+        evaluations_self:
+          one: 완료하려면 <b> 평가 </ b>가 있어야합니다.
+          other: 완료하려면 <z> %{count} 평가 </ b>가 필요합니다.
+        evaluator_setup: 평가자 설정
+        my_active_surveys: 내 적극적인 설문 조사
+        please_complete_all_of_your_ac: 아래의 모든 활성 설문 조사를 완료하십시오.
+        self_evaluations_left:
+          one: 완료하려면 <b> 자체 평가 </ b>가 1 번 있습니다.
+          other: 완료하려면 <z> %{count} 자체 평가 </ b>가 필요합니다.
+        self_survey: 자기 설문 조사
+        take_the_survey: 설문 조사 받기
+        you_must_invite_at_least_self_: 설문 조사를 받으려면 적어도 %{self_surveyprojectminimum_eval} 평가자를 초대해야합니다.
+      new_or_pending:
+        continue_the_survey: 설문 조사 계속하기
+        current_sectionquestionscount_: "%{current_sectionquestionscount} 질문"
+        go_back_to_survey_list: 설문 조사 목록으로 돌아 가기
+        need_help: 도움이 필요하다?
+        of: 의
+        previous_section: 이전 섹션
+        restart_previous_survey: 이전 설문 조사 다시 시작
+        start_the_survey: 설문 조사 시작
+        you_have_answered: 너는 대답했다.
+      no_evaluators:
+        add_evaluator: 평가자 추가
+        why_do_i_have_to_invite_evalua: " "
+        you_currently_do_not_have_any_: 현재 평가자가 없습니다.
+        you_need_to_have_at_least_span: 설문 조사를 받으려면 <span class = 'minimum-evaluators'> %{minimum_evals} 평가자 </ span> 이상이 필요합니다. <br> 아래 버튼을 클릭하여 목록에 평가자를 추가하십시오.
+      question:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': 삼
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        agree: 동의하다
+        always: 항상
+        culture_survey_for: 문화 조사
+        disagree: 동의하지 않는다
+        na: N / A
+        never: 못
+        of: 의
+        often: 자주
+        perc_progress: "%{perc_progress}%"
+        previous_question: 이전 질문
+        providing_feedback_for: 에 대한 피드백 제공
+        question: 문제
+        seldom: 드물게
+        self_survey_for: 에 대한 자기 설문 조사
+        slightly_agree: 약간 동의 함
+        slightly_disagree: 약간 동의하지 않음
+        sometimes: 때때로
+        strongly_agree: 강력하게 동의 함
+        strongly_disagree: 강하게 동의
+        very_strongly_agree: 매우 강력하게 동의 함
+        very_strongly_disagree: 매우 강력하게 동의하지 않는다.
+        you_are_currently_taking_secti: 현재 %{sections_page} 섹션 %{surveysectionscount}를 사용 중입니다.
+        "×": "×"
+      review:
+        finish_your_survey: 설문 조사를 마친다.
+        need_help: 도움이 필요하다?
+        next_section: 다음 섹션
+        previous_section: 이전 섹션
+        review_continue: 검토 및 계속하기
+        review_your_answers_to_the_lea: "%{product_name}에 대한 답변을 검토하십시오. 답변을 클릭하여 변경하십시오."
+        section_sectionscurrent_page_o: "%{sectionscurrent_page}의 섹션 %{sectionstotal_pages}"
+        your_survey_is_almost_complete: 설문 조사가 거의 완료되었습니다. 귀하의 답변을 검토하십시오.
+        your_survey_is_not_yet_complet: 설문 조사가 아직 완료되지 않았습니다. 완료하려면 %{sectionstotal_pages_sectionscu} 섹션이 더 있어야합니다.
+      review_form:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': 삼
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: 항상
+        cancel: 취소
+        na: N / A
+        never: 못
+        often: 자주
+        seldom: 드물게
+        sometimes: 때때로
+        update: 최신 정보
+      sections:
+        survey_taker_evaluator_section_1_description:
+          leadership_profile: 리더십 프로파일
+          providing_feedback_section_sec: 피드백 섹션 제공 %{sectionscurrent_page} of %{sectionstotal_pages}
+          you_will_be_able_to_review_and: 이 섹션 끝 부분에서 답변을 검토하고 수정할 수 있습니다.
+        survey_taker_section_1_description:
+          culture_survey: 문화 조사
+          leadership_profile: 리더십 프로파일
+          section_sectionscurrent_page_o: "%{sectionscurrent_page}의 섹션 %{sectionstotal_pages}"
+          you_will_be_able_to_review_and: 이 섹션 끝 부분에서 답변을 검토하고 수정할 수 있습니다.
+        survey_taker_section_2_description:
+          at_the_end_of_this_section_you: " "
+          most_effective_leader: 가장 효과적인 리더
+          section_sectionscurrent_page_o: "%{sectionscurrent_page}의 섹션 %{sectionstotal_pages}"
+      survey_history:
+        completed_on: 완료 됨
+        evaluations_completed:
+          one: "<b> 한 번의 평가 </ b>를 완료했습니다."
+          other: "<b> %{count} 평가 </ b>가 완료되었습니다."
+        evaluator_setup: 평가자 설정
+        my_survey_history: 내 설문 조사 기록
+        self_evaluations_completed:
+          one: "<b> 한 번의 자체 평가 </ b>를 완료했습니다."
+          other: "<b> %{count} 자체 평가 </ b>가 완료되었습니다."
+        self_survey: 자기 설문 조사
+        this_is_the_list_of_all_the_su: 이것은 귀하가 참여한 모든 설문 조사의 목록입니다.
+      thanks:
+        all_your_answers_have_been_sub: 모든 답변이 제출되어 저장되었습니다. 시간 내 주셔서 감사합니다.
+        go_back_to_survey_list: 설문 조사 목록으로 돌아 가기
+        log_out: 로그 아웃
+        thanks_current_userfirst_name_: 이 설문 조사에 응 해주셔서 감사합니다.
+    process_error: 설문 조사 프로세스 또는 연결에 오류가 발생했습니다.
+    questions:
+      put_your_answer_here: 여기에 답을 달아주세요.
+    questions_completed: 질문 완료 됨
+    sa_request: 고마워, 우린 연락 할거야.
+    sections:
+      current_leadership_culture: 이 섹션에서는 <b> %{participant} </ b>를 평가하게됩니다. 귀하의 임무는 지도자들에 의해 가장 일반적으로 행해지고, 권장되거나 허용되는 리더십 행동을 묘사하는 것입니다. 조직이나 팀 내에서 리더십의 전반적인 경험에 영향을 미치는 많은 요소가있을 수 있습니다. 예를 들어, 두 명의 관리자가 대조적 인 리더십 스타일을 가지고 있으며이 두 조직 모두이 조직 또는 팀의 리더십 문화에 영향을 미치고 있습니다. 자신의 경험에 가장 큰 영향을 미치는 행동을 기술하십시오.
+      desired_leadership_culture: 이 섹션에서는 <b> %{participant} </ b>의 지도력 문화가 어떻게 되길 바라거나 원하는지에 따라 질문에 답하십시오. 지도력 문화가 이상적이었던 것처럼 각 질문에 답하십시오 - 현재와 미래의 환경에서 성공할 수있는 문화.
+      ideal_to_ideal: ''
+      leadership_profile: 이 섹션은 <b> %{participant} </ b>의 리더십 프로파일을 구축하기 위해 작성되었습니다. 첫인상을 사용하여 질문을 신속하게 처리하십시오. 질문에 대한 답을 모르거나 질문이 적용되지 않으면 N / A 옵션을 사용하십시오.
+      manager_profile: 이 섹션은 <b> %{participant} </ b>에 대한 관리자 프로필을 작성하도록 설계되었습니다. 첫인상을 사용하여 질문을 신속하게 처리하십시오. 질문에 대한 답을 모르거나 질문이 적용되지 않으면 N / A 옵션을 사용하십시오.
+      most_effective_leader: |-
+        이 섹션에서는 더 이상 <b> %{participant} </ b>를 평가하지 않습니다.
+        대신, 당신이 (직접 또는 간접적으로) 함께 일한 가장 효과적인 지도자가 누구인지 확인하십시오. <b>이 질문에 그 사람과 함께 대답하십시오. </ b>
+        이 섹션의 끝에서 여러분은 답을 검토하고 수정할 수 있습니다.
+      write_in_feedback: 이 섹션에서는 <b> %{participant} </ b>에 추가 의견을 보내주십시오. 참가자들은 항상 자신의 결과를 이해하는 데 도움이되는 쓰기 주석을 찾습니다. 귀하의 피드백에는이 설문 조사에서 다루지 않은 영역이나 <b> %{participant} </ b>의 평가 방법을 설명하는 예제 또는 <b> %{participant} </ b>가 알아야 할 중요한 요소가 포함될 수 있습니다.
+    self:
+      end_section: 이 섹션의 끝에서 답을 검토하고 수정할 수 있습니다.
+      identify_effective_leader: 대신, whis가 (직접적으로 또는 간접적으로) 함께 일한 가장 효과적인 지도자임을 확인하십시오.
+      most_effective_leader: 가장 효과적인 리더
+      no_longer_be_evaluating: 이 섹션에서 더 이상 평가하지 않을 것입니다.
+      surveyproductname: "%{surveyproductname}"
+      that_person_in_mind: 그 질문을 마음에두고 대답하십시오.
+      tsurveysselfno_longer_be_evalu: "%{tsurveysselfno_longer_be_evalu} %{surveyevaluatorfull_name}."
+    show:
+      survey_for: 설문 조사
+    survey:
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_at_format_lon}"
+    survey_progress:
+      current_sectionanswers_forsurv: "%{current_sectionanswers_forsurv} / %{current_sectionquestionscount}"
+      current_sectionpercentage_comp: "%{current_sectionpercentage_comp}%{tsharedpercent_complete}"
+  system_history:
+    announcement_send_at_changed: 미리 알림 전송 날짜가 %{date} (으)로 변경되었습니다.
+    change_history: 변경 기록
+    comment_questions_changed: 댓글 질문이 '%{value}'(으)로 변경되었습니다.
+    completion_date_changed: 완료 날짜가 %{date}로 변경되었습니다.
+    create_participant: 생성 된 참가자 %{participant}
+    delete_participant: 삭제 된 참가자 %{participant}
+    demographics_policy_changed: 보고서 인구 통계가 '%{value}'로 변경되었습니다.
+    description: 다음은 %{created_date}에서 생성 된이 주문에 대한 변경 사항입니다.
+    order_deleted: 삭제 된 주문 번호 %{value}
+    pdf_copies_only_changed: PDF 사본 만 선택됨
+    printed_copies_changed: PDF 및 인쇄 사본 선택
+    project_created: 프로젝트가 생성되었습니다.
+    report_date_changed: 보고 날짜가 %{date}로 변경되었습니다.
+    retake_added: "%{participant}에 대한 재 시도가 추가되었습니다."
+    retake_removed: "%{participant}에 대한 재 시도가 제거되었습니다."
+  templates:
+    form:
+      form:
+        if_you_have_already_sent_the_m: 이미 참가자에게 메시지를 보낸 경우 업데이트 된 메시지를 받기 위해 메시지를 프로젝트에 다시 보내야합니다.
+        modifying_this_message_will_ch: 이 메시지를 수정하면 영어 설문 언어를 사용하는 모든 참가자의 참가자 환영 이메일이 변경됩니다.
+        please_do_not_modify_any_text_: 아래의 (* || *) 안에있는 텍스트는 수정하지 마십시오. 메시지를 보낼 때 참가자 정보로 대체 될 키입니다.
+        reset_english_message: 영어 메시지 재설정
+        return_to_list: 목록으로 돌아 가기
+        update_english_message: 영어 메시지 업데이트
+    participant_invitation_msg:
+      message: 메시지
+      reset_english_message: 영어 메시지 재설정
+      save_templatelanguagename_mess: "%{templatelanguagename} 메시지 저장"
+      subject: 제목
+  time:
+    am: 오전
+    formats:
+      default: "% a, % d % b % Y % % I : % M : % S % p % Z"
+      long: "% B % d, % Y % I : % M % p"
+      short: "% d % b % I : % M % p"
+    pm: 오후
+  users:
+    avatar_upload:
+      error: 업로드에 오류가 발생했습니다. 데이터를 다시 확인하고 다시 시도하십시오.
+      success: 이미지가 성공적으로 업로드되었습니다.
+    demographic:
+      demographics: 인구 통계
+    demographic_form:
+      company_details: 회사 정보
+      continue_to_survey: 설문 조사 계속하기
+      need_help: 도움이 필요하다?
+      personal_information: 개인 정보
+    edit:
+      accounting_id: 회계 ID
+      add_address: 주소 추가
+      add_phone: 전화 번호 추가
+      address_type: 주소 유형
+      addresses: 구애
+      age: '나이:'
+      back_to_settings: 설정으로 돌아 가기
+      cancel: 취소
+      change_password: 비밀번호 변경
+      change_profile_picture: 프로필 사진 변경
+      city: 시티
+      company_details: 회사 정보
+      company_name: 회사 이름
+      company_revenue: 회사 수익
+      confirm_password: '비밀번호 확인:'
+      country_address: 국가
+      current_password: 현재 비밀번호
+      date_of_birth: 생년월일
+      education: 교육
+      email: 이메일
+      ethnic_group: 인종 그룹
+      fax: 팩스
+      first_name: 이름
+      gender: 성별
+      home: 집
+      industry: 산업
+      language: 언어
+      last_name: 성
+      management_level: 관리 수준
+      mobile: 변하기 쉬운
+      new_password: 새 비밀번호
+      number_of_direct_reports: 직접 보고서 수
+      organization_level: 조직 수준
+      password: 암호
+      password_label: '암호:'
+      personal_information: 개인 정보
+      phone_numbers: 전화 번호
+      please_enter_address_name: 주소 이름을 입력하십시오.
+      please_enter_email: 이메일을 입력하십시오.
+      please_enter_new_confirmation_: 새 확인 비밀번호를 입력하십시오.
+      please_enter_new_password: 새 암호를 입력하십시오.
+      please_enter_phone_number: 전화 번호를 입력하십시오.
+      please_enter_valid_confirmatio: 유효한 확인 비밀번호를 입력하십시오.
+      please_enter_valid_email: 올바른 이메일을 입력하십시오.
+      profession: 직업
+      professional_information: 전문 정보
+      profile_picture: 프로필 사진
+      reenter_new_password: 새 암호 다시 입력
+      remove_address: 이 주소 삭제
+      remove_phone: 이 휴대 전화를 삭제하십시오.
+      remove_profile_picture: 프로필 사진 제거
+      residing_country: 거주 국가
+      retype_password: 새 암호를 다시 입력하십시오 ...
+      save_changes: 변경 사항을 저장하다
+      size_of_organization: 조직 규모
+      state_province: 시 /도
+      street_address: 주소
+      use_the_form_below_to_change_t: 아래 양식을 사용하여 TLC 계정의 암호를 변경하십시오.
+      user_roles: 사용자 역할
+      users_placeholder: 사용자를위한 공간
+      work: 작업
+      working_address: 근무지
+      zip_code_address: 우편 번호 / 우편 번호
+      password_must_have_at_least: "귀하의 비밀번호는 다음과 같아야합니다 :"
+      9_characters: 9 자
+      1_lowercase_letter: 소문자 1 자
+      1_uppercase_letter: 대문자 1 개
+      1_number: 1 번호
+      1_special_character: 1 특수 문자
+      passwords_dont_match: 암호가 일치하지 않습니다
+      good_so_far: 아직 까진 좋음
+      match: 일치한다
+      good: 좋은
+      too_week: 너무 약함
+    modify:
+      success: 사용자가 성공적으로 업데이트되었습니다.
+    take_self_assessment:
+      error: 문제가 발생했습니다.
+    update_demographics:
+      error: 인구 통계 학적 데이터를 수집하는 중 오류가 발생했습니다. 다시 시도하십시오.
+      success: 인구 통계 학적 데이터가 성공적으로 업데이트되었습니다.
+    update_password:
+      success: 암호가 성공적으로 업데이트되었습니다.
+  utilities:
+    index:
+      all: 모든
+      billings: 빌링스
+      'false': 아니
+      filter: 필터
+      filter_by_in_voiced: '인보이스별로 필터링 :'
+      filter_by_order_status: '주문 상태 별 필터링 :'
+      filter_by_region: '지역별 필터링 :'
+      finished: 끝마친
+      'no': 아니
+      ordered: 주문 됨
+      orders: 명령
+      orders_placeholder: 주문 이름 또는 주문 번호를 입력하십시오.
+      projects: 프로젝트
+      projects_placeholder: 프로젝트 이름 입력 ...
+      search: 수색
+      survey_takers: 설문 조사자
+      surveys_placeholder: 사용자 이름 또는 전자 메일 주소 입력 ...
+      users: 사용자
+      users_placeholder: 사용자 이름 또는 이메일 주소 입력 ...
+      'yes': 예
+    new_sa:
+      generate: 일으키다
+      select_score_for_answers: '답변 점수 선택 :'
+      users_email: '사용자의 이메일 :'
+    partials:
+      billing_table:
+        invoiced: 인보이스 발행
+      search_orders:
+        found_order: 발견 된 주문
+        no_order_is_found: 순서가 없습니다!
+      search_orders_details:
+        ordercoach_report_qty: "%{ordercoach_report_qty}"
+        ordercoach_report_qty_tordersd: "%{ordercoach_report_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_graph_qty: "%{orderparticipant_graph_qty}"
+        orderparticipant_graph_qty_tor: "%{orderparticipant_graph_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_report_qty: "%{orderparticipant_report_qty}"
+        orderparticipant_report_qty_to: "%{orderparticipant_report_qty} %{tordersdetailscopies_per_parti}"
+        pdf: PDF
+      search_projects:
+        no_projects_are_found: 프로젝트를 찾을 수 없습니다!
+      search_surveys:
+        actions: 행위
+        completed_on: 완료 됨
+        completion_date: 완료 날짜
+        delete: 지우다
+        evaluating: 평가 중
+        evaluations: 평가
+        found_survey_taker: 설문 조사원을 찾았습니다.
+        language: 언어
+        last_logged_in: 마지막으로 로그인 한 시간
+        more_actions: 추가 작업
+        move: 움직임
+        no_survey_is_found: 설문 조사를 찾을 수 없습니다!
+        not_started: 시작되지 않았습니다.
+        of: 의
+        project_name: 프로젝트 이름
+        questions: 질문들
+        reset: 다시 놓기
+        role: 역할
+        self_surveys: 자체 설문 조사
+        survey_taker_details: 설문 조사자 세부 정보
+      search_users:
+        back: 뒤로
+        email: '이메일:'
+        found_user: 발견 된 사용자
+        impersonate: 가장
+        name: '이름:'
+        no_user_is_found: 사용자가 발견되지 않았습니다!
+      survey:
+        reset: 다시 놓기
+    show_order:
+      billing_contact: 결제 연락처
+      binder_contact: 바인더 연락처
+      coaching_report: '코칭 보고서 :'
+      comment_questions: '댓글 질문 :'
+      company: 회사
+      demographics: '인구 통계 :'
+      included_participants: '포함 된 참가자 :'
+      invoice_order: 송장 주문
+      invoiced: '인보이스 발행 :'
+      list_of_participants: 참가자 목록
+      mark_order_as_not_invoiced: 주문서에 송장이없는 것으로 표시하십시오.
+      order_details: 주문 세부 정보
+      order_number: '주문 번호:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} 사본"
+      orderparticipant_graph_qty_cop: 참가자 당 %{orderparticipant_graph_qty} 사본
+      orderparticipant_report_qty_co: 참가자 당 %{orderparticipant_report_qty} 사본
+      participant_graph: '참가자 그래프 :'
+      participant_report: '참가자 보고서 :'
+      pdf: PDF
+      planned_completion_date: '계획 완료 날짜 :'
+      processing_date: '처리 날짜 :'
+      product_type: '제품 유형 :'
+      profile_interpretation_manual: '프로파일 해석 매뉴얼 :'
+      report_contact: 보고서 접촉
+      report_name: '보고서 이름 :'
+      report_type: '보고서 유형 :'
+    surveys:
+      created_at: '작성 시간 :'
+      evaluator: 평가자
+      id: "#신분증"
+      new_self_assessment: 새로운 자기 평가
+      regular: 정규병
+      self_assessment: 자기 평가
+      status: 지위
+  views:
+    pagination:
+      first: "& laquo; 먼저"
+      last: 마지막 & raquo;
+      next: 다음 (& rsaquo;
+      previous: "& lsaquo; 예전"
+      truncate: "& hellip;"
+

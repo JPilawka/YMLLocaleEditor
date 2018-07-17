@@ -1,0 +1,2597 @@
+---
+ru-RU:
+  activerecord:
+    attributes:
+      project:
+        billing_address: Платежный адрес
+        binder_address: Адрес связующего
+        certified_consultant: Сертифицированный консультант
+        coach_report_pdf: Тренерский отчет PDF
+        coach_report_qty: Количество сообщений тренера
+        comment_questions: Комментарий
+        completion_date: Дата завершения
+        consultant: консультант
+        created_at: Создан в
+        deliverable_option: Вариант исполнения
+        demographics_policy: Политика демографии
+        evaluators_policy: Политика оценщиков
+        group_report_pdf: Групповой отчет PDF
+        minimum_evaluations_per_participant: Минимальные оценки для каждого участника
+        name: имя
+        organization: клиент
+        participant_graph_pdf: График участника PDF
+        participant_graph_qty: Кол-во участников
+        participant_report_pdf: Отчет участника PDF
+        participant_report_qty: Отчет участника
+        pdf_interpretation_manual: Руководство по интерпретации PDF
+        printed_interpretation_manual: Руководство по печатной интерпретации
+        product: Продукт
+        promo_code: Промо код
+        report_date: Дата отчета
+        shipping_address: Адрес доставки
+        status: Положение дел
+        survey_focus: Фокус обзора
+        survey_focus_description: Обзор Фокус Описание
+        updated_at: Обновлено на
+        user: Представитель клиента
+      project_address:
+        address_line1: 1-я адресная линия
+        address_line2: 2-я адресная строка
+        address_line3: 3-я адресная строка
+        city: город
+        country_code: Код страны
+        created_at: Создан в
+        email: Эл. адрес
+        name: имя
+        phone_no: Номер телефона
+        postal_code: Почтовый индекс
+        state_code: Государственный Кодекс
+        updated_at: Обновлено на
+    errors:
+      messages:
+        passwords:
+          cannot_contain: Не может содержать все или часть вашего имени или электронной почты.
+          does_not_match_security_requirements: 'Не соответствует требованиям безопасности. Пароль должен содержать 1 из 3 следующих групп символов: A-Z, a-z, 0-9.'
+          must_be_at_least: Должно быть не менее 8 символов.
+        record_invalid: 'Не удалось выполнить проверку: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Невозможно удалить запись, поскольку существует зависимость %{record}
+          has_one: Невозможно удалить запись, поскольку существует зависимый %{record}
+        should_be_greater_or_equal: Должна быть больше или равна дате завершения
+  addresses:
+    region:
+      regionnametitleize_regionabbre: "%{regionnametitleize} (%{regionabbreviation})"
+  application:
+    change_password_required: Вы должны изменить свой пароль перед входом в систему в первый раз
+    user_not_authorized:
+      forbidden: запрещено
+  companies:
+    edit:
+      edit_company: Изменить клиент
+      manage_users: Управление пользователями
+    index:
+      companiestotal_count: "(%{companiestotal_count})"
+      company_name: имя клиента
+      create_company: Создать клиент
+      industry: Промышленность
+      manage_company: Управление клиентом
+      my_clients: Мои клиенты
+      number_of_projects: Количество проектов
+      sort_by_company_name: Сортировать по имени клиента
+      sort_by_created_date: Сортировать по Дата создания
+      sort_by_industry: Сортировка по отраслям
+      sort_by_number_of_projects: Сортировать по количеству проектов
+      start_creating_companies_now: Начать создание клиентов сейчас
+      you_have_no_companies_to_manage: У вас нет клиентов для управления
+    new:
+      consulting_company: Консалтинговая компания
+      create_company: Создать клиент
+      new_company: Новое имя клиента
+    partials:
+      delete_company:
+        cname_corganization_typename: "%{cname} (%{corganization_typename})"
+        existing_projects_top_10: 'Существующие проекты (топ-10):'
+        please_notice_that_it_will_als: 'Обратите внимание, что он также удалит следующие существующие дочерние организации:'
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} эта компания"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_comp: Компания %{thomeindexyes_delete_this}
+    show:
+      create_group_report: Создать отчет группы
+      create_new_project: Создать новый проект
+      created_by: Создано %{creator}
+      delete_company: Удалить клиент
+      tsharedmore_actions: "%{tsharedmore_actions}"
+      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant} %{tsharedcertified_consultants}"
+  concerns:
+    role_management:
+      create_user_role:
+        success: успех
+      update_user_role:
+        success: успех
+  consultants:
+    saved_successfully: Консультант успешно добавлен!
+    title: консультант
+  date:
+    abbr_day_names:
+    - солнце
+    - понедельник
+    - вторник
+    - Мы б
+    - четверг
+    - пятница
+    - Сидел
+    abbr_month_names:
+    - 
+    - январь
+    - февраль
+    - март
+    - апрель
+    - май
+    - июнь
+    - июль
+    - август
+    - сентябрь
+    - октябрь
+    - ноябрь
+    - декабрь
+    day_names:
+    - Воскресенье
+    - понедельник
+    - вторник
+    - среда
+    - Четверг
+    - пятница
+    - суббота
+    formats:
+      default: "%m-%d-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - январь
+    - февраль
+    - Март
+    - апрель
+    - май
+    - июнь
+    - июль
+    - августейший
+    - сентябрь
+    - октября
+    - ноябрь
+    - Декабрь
+    order:
+    - :month
+    - :day
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: Около 1 часа
+        other: Около %{count} часов
+      about_x_months:
+        one: Около 1 месяца
+        other: Около %{count} месяцев
+      about_x_years:
+        one: Около 1 года
+        other: О %{count} годах
+      almost_x_years:
+        one: Почти 1 год
+        other: Почти %{count} лет
+      half_a_minute: Полминуты
+      less_than_x_minutes:
+        one: меньше минуты
+        other: Менее %{count} минут
+      less_than_x_seconds:
+        one: Менее 1 секунды
+        other: Менее %{count} секунд
+      over_x_years:
+        one: Более 1 года
+        other: Старше %{count} лет
+      x_days:
+        one: 1 день
+        other: "%{count} дней"
+      x_minutes:
+        one: 1 минута
+        other: "%{count} минут"
+      x_months:
+        one: 1 месяц
+        other: "%{count} месяцев"
+      x_seconds:
+        one: 1 секунда
+        other: "%{count} секунд"
+    prompts:
+      day: День
+      hour: Час
+      minute: минут
+      month: Месяц
+      second: секунд
+      year: Год
+  devise:
+    confirmations:
+      confirmed: Ваш адрес электронной почты успешно подтвержден.
+      new:
+        resend_confirmation_instructio: Отправить подтверждение
+      send_instructions: Вы получите электронное письмо с инструкциями о том, как подтвердить свой адрес электронной почты в течение нескольких минут.
+      send_paranoid_instructions: Если ваш адрес электронной почты существует в нашей базе данных, вы получите электронное письмо с инструкциями о том, как подтвердить свой адрес электронной почты в течение нескольких минут.
+    failure:
+      user:
+        already_authenticated: Вы уже вошли в систему.
+        inactive: Ваша учетная запись еще не активирована.
+        invalid: Недопустимый %{authentication_keys} или пароль.
+        last_attempt: У вас есть еще одна попытка, прежде чем ваша учетная запись будет заблокирована.
+        locked: Ваш аккаунт заблокирован.
+        not_found_in_database: Недопустимый %{authentication_keys} или пароль.
+        timeout: Срок действия вашей сессии истек. Повторите попытку, чтобы продолжить.
+        unauthenticated: Прежде чем продолжить, вам нужно войти в систему или зарегистрироваться.
+        unconfirmed: Прежде чем продолжить, вы должны подтвердить свой адрес электронной почты.
+    invalid_captcha: Неверный ввод captcha!
+    mailer:
+      confirmation_instructions:
+        confirm_my_account: Подтверждение моей учетной записи
+        user_subject: Инструкции по подтверждению
+        welcome_email: Добро пожаловать в %{email}!
+        you_can_confirm_your_account_e: 'Вы можете подтвердить свой адрес электронной почты по ссылке ниже:'
+      reset_password_instructions:
+        change_my_password: Придумайте пароль
+        hello_resourceemail: Привет, %{resourceemail}!
+        if_you_didnt_request_this_plea: Если вы не запрашивали это, пожалуйста, проигнорируйте это письмо.
+        someone_has_requested_a_link_t: Кто-то попросил ссылку изменить пароль. Вы можете сделать это через ссылку ниже.
+        user_subject: Сбросить инструкции пароля
+        your_password_wont_change_unti: Ваш пароль не изменится, пока вы не перейдете к ссылке выше и не создадите новую.
+      unlock_instructions:
+        click_the_link_below_to_unlock: 'Нажмите на ссылку ниже, чтобы разблокировать свою учетную запись:'
+        hello_resourceemail: Привет, %{resourceemail}!
+        unlock_my_account: Разблокировать мою учетную запись
+        user_subject: Инструкции по разблокированию
+        your_account_has_been_locked_d: Ваша учетная запись заблокирована из-за чрезмерного количества неудачных попыток.
+    omniauth_callbacks:
+      failure: Не удалось аутентифицировать вас из %{kind}, потому что «%{reason}».
+      success: Успешно завершена учетная запись %{kind}.
+    password_expired:
+      change_required: Ваш пароль истек. Пожалуйста, обновите свой пароль!
+      updated: Ваш новый пароль был сохранен.
+    passwords:
+      edit:
+        and: а также
+        change_my_password: Придумайте пароль
+        change_your_password: Создайте свой пароль
+        confirm_no_success: Подтверждение пароля не соответствует паролю!
+        confirm_success: Подтверждение пароля совпадает с паролем!
+        dont_have_an_account: У вас нет учетной записи?
+        good: Хорошо
+        lower_and_uppercase_letters: Буквы нижнего и верхнего регистра
+        medium: средний
+        numbers: чисел
+        password_should_be_at_least: Пароль должен быть не менее 8 символов!
+        password_should_include: Пароль должен включать
+        return_to_the_leadership_circl: 'Возвращение к кругу лидеров: самооценка'
+        sign_up: зарегистрироваться
+        strong: сильный
+        symbols: символы
+        very_strong: Очень сильный
+        weak: слабый
+      new:
+        dont_have_an_account: У вас нет учетной записи?
+        forgot_your_password: Забыли пароль?
+        log_in: Авторизоваться
+        return_to_the_leadership_circl: 'Возвращение к кругу лидеров: самооценка'
+        send_me_reset_password_instruc: Отправить мне сбросить пароль
+        sign_up: зарегистрироваться
+      send_instructions: Отправить инструкции
+      user:
+        no_token: В целях безопасности вы не можете получить доступ к предыдущей странице, не прибегая непосредственно к электронной почте с паролем. Если вы пришли из пароля для сброса пароля, убедитесь, что вы использовали полный URL-адрес, указанный в письме.
+        send_instructions: Вы получите электронное письмо с инструкциями о том, как сбросить пароль за несколько минут.
+        send_paranoid_instructions: Если ваш адрес электронной почты существует в нашей базе данных, вы получите ссылку на восстановление пароля на свой адрес электронной почты через несколько минут.
+        updated: Ваш пароль был успешно изменен. Теперь вы вошли в систему.
+        updated_not_active: Ваш пароль был успешно изменен.
+    registrations:
+      destroyed: До свидания! Ваша учетная запись успешно отменена. Мы надеемся увидеть Вас снова скоро.
+      edit:
+        current_password: текущий пароль
+        currently_waiting_confirmation: 'Ожидает подтверждения: %{resourceunconfirmed_email}'
+        edit_resource_nameto_shumanize: Изменить %{resource_nameto_shumanize}
+        password: пароль
+        password_confirmation: Подтверждение пароля
+        update_password: Обновить пароль
+        we_need_your_current_password_: Нам нужен ваш текущий пароль для подтверждения ваших изменений
+        you_must_change_your_password_: Прежде чем войти в систему, вы должны сменить пароль.
+      new:
+        log_in: Авторизоваться
+        sign_up: Зарегистрироваться
+      signed_up: Добро пожаловать! Вы успешно зарегистрировались.
+      signed_up_but_inactive: Вы успешно зарегистрировались. Однако мы не смогли подписать вас, потому что ваша учетная запись еще не активирована.
+      signed_up_but_locked: Вы успешно зарегистрировались. Однако мы не смогли подписать вас, потому что ваша учетная запись заблокирована.
+      signed_up_but_unconfirmed: На ваш адрес электронной почты отправлено сообщение с ссылкой для подтверждения. Перейдите по ссылке, чтобы активировать свою учетную запись.
+      update_needs_confirmation: Вы успешно обновили свою учетную запись, но нам нужно подтвердить ваш новый адрес электронной почты. Проверьте свой адрес электронной почты и подтвердите свой новый адрес электронной почты.
+      updated: Ваша учетная запись успешно обновлена.
+    sessions:
+      new:
+        dont_have_an_account: У вас нет учетной записи?
+        forgot_your_password: Забыли пароль?
+        login: Авторизоваться
+        login_to_your_account: Войдите в свой аккаунт
+        privacy_policy: политика конфиденциальности
+        return_to_the_leadership_circl: 'Возвращение к кругу лидеров: самооценка'
+        sign_up: зарегистрироваться
+      user:
+        already_signed_out: Вышло успешно.
+        signed_in: Записано успешно.
+        signed_out: Вышло успешно.
+    shared:
+      links:
+        didnt_receive_confirmation_ins: Не получили подтверждения?
+        didnt_receive_unlock_instructi: Не получили инструкции по разблокировке?
+        forgot_your_password: Забыли пароль?
+        log_in: Авторизоваться
+        sign_in_with_providerto_stitle: Войдите в систему с помощью %{providerto_stitleize}
+        sign_up: зарегистрироваться
+    unlocks:
+      new:
+        resend_unlock_instructions: Повторно отправить инструкции по разблокировке
+      send_instructions: Вы получите электронное письмо с инструкциями о том, как разблокировать свою учетную запись через несколько минут.
+      send_paranoid_instructions: Если ваша учетная запись существует, вы получите электронное письмо с инструкциями о том, как разблокировать его через несколько минут.
+      unlocked: Ваша учетная запись была разблокирована успешно. Войдите в систему, чтобы продолжить.
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: Должны быть приняты
+      already_confirmed: Было подтверждено, попробуйте войти
+      blank: Не может быть пустым
+      confirmation: Не соответствует %{attribute}
+      confirmation_period_expired: Необходимо подтвердить в %{period}, пожалуйста, запросите новый
+      empty: Не может быть пустым
+      equal_to: Должно быть равно %{count}
+      equal_to_current_password: Должен отличаться от текущего пароля!
+      even: Должен быть ровным
+      exclusion: Зарезервировано
+      expired: Истек, пожалуйста, запросите новый
+      greater_than: Должно быть больше %{count}
+      greater_than_or_equal_to: Должно быть больше или равно %{count}
+      inclusion: Не входит в список
+      invalid: является недействительным
+      less_than: Должно быть меньше %{count}
+      less_than_or_equal_to: Должно быть меньше или равно %{count}
+      model_invalid: 'Не удалось выполнить проверку: %{errors}'
+      not_a_number: Не число
+      not_an_integer: Должен быть целым числом
+      not_found: не найдено
+      not_locked: Не было заблокировано
+      not_saved:
+        one: '1 предотвратила обновление этого %{resource}:'
+        other: 'Ошибки %{count} запретили сохранение этого %{resource}:'
+      odd: Должно быть нечетным
+      other_than: Должен быть иным, чем %{count}
+      password_format: Должен содержать большие, маленькие буквы и цифры
+      password_not_saved: 1 ошибка предотвратила обновление пароля.
+      present: Должно быть пустым
+      required: Должен существовать
+      taken: уже был взят
+      taken_in_past: Был уже принят в прошлом!
+      too_long:
+        one: Слишком длинный (максимум 1 символ)
+        other: Слишком длинный (максимальный символ %{count})
+      too_short:
+        one: Слишком мала (минимум 1 символ)
+        other: Слишком короткий (минимальный символ %{count})
+      wrong_length:
+        one: Неправильная длина (должна быть 1 символ)
+        other: Неверная длина (должна быть %{count} символов)
+    template:
+      body: 'Были проблемы со следующими полями:'
+      header:
+        one: 1 ошибка запретила это сохранение %{model}
+        other: Ошибки %{count} запретили сохранение этого %{model}
+  evaluators:
+    edit:
+      edit_evaluator: Изменить оценщик
+    new:
+      add_evaluator: Добавить оценщика
+    partials:
+      evaluator:
+        add_participant: Добавить участника
+        edit_evaluator: Изменить оценщик
+        email_evaluatoremail: 'Электронная почта: %{evaluatoremail}'
+        evaluatorevaluation_surveys_fo: "%{done} оценок %{total}"
+        evaluatorself_surveys_forproje: "%{done} самообследований %{total}"
+        language_evaluatorlanguage_nam: 'Язык опроса: %{evaluatorlanguage_name}'
+      evaluator_form:
+        cancel_changes: Отменить изменения
+        delete_evaluator: Удалить оценщика
+      import_evaluators:
+        email_address: Адрес электронной почты
+        first_name: Имя
+        is_there_something_wrong_a_hre: Здесь что-то не так? <a href="#import--evaluators" class="open-popup-link"> Загрузите новый файл </a>
+        its_right_complete_import: Это верно! Полный импорт
+        language: язык
+        last_name: Фамилия
+        participant: участник
+        relationship: отношения
+        strongevaluatorscount_evaluato: "<Strong> оценщики %{evaluatorscount} </ strong>. Проверьте правильность матча:"
+        survey_language: Язык опроса
+        were_almost_there: Мы почти там...
+      import_evaluators_modal:
+        cancel: Отмена
+        import_evaluators_from_csv_fil: Импорт оценщиков из файла CSV
+        not_sure_about_the_format_of_t: Не знаете о формате файла? <a href='%{download_sample_csv_project_ev}' class='link'> Загрузите образец CSV </a>.
+        upload_evaluators: Оценщики выплат
+        upload_your_csv_file: 'Загрузите файл CSV:'
+      index:
+        actions: действия
+        add_evaluator: Добавить оценщика
+        download_evaluator_status_deta: Загрузить информацию о статусе оценщика как CSV
+        evaluation_status: Статус оценки
+        evaluator_details: Информация об оценщике
+        import_evaluators: Импортные оценщики
+        participant_status: Статус участника
+      participant:
+        completed_on_levaluatorevaluat: Завершено на %{levaluatorevaluation_survey_fo}
+        edit_participant: Изменить участника
+        evaluation_status: Статус оценки
+        evaluatorevaluation_survey_for: "%{done} вопросов %{all}"
+        evaluatorself_survey_forprojec: "%{evaluatorself_survey_forprojec} из %{evaluatorself_survey_forprojec} вопросов самообследования"
+        language_evaluatorevaluation_s: 'Язык опроса: %{evaluatorevaluation_survey_for}'
+        participantfull_name: "%{participantfull_name}"
+        relationship: 'Отношения:'
+        selfsurvey_completed_on_levalu: Самообследование завершено на %{levaluatorself_survey_forproje}
+        send_invite: Отправить напоминание
+      participant_form:
+        cancel_changes: Отменить изменения
+        delete_participant: Удалить участника
+    participants:
+      edit:
+        edit_participant: Изменить участника
+      new:
+        add_participant: Добавить участника
+    sort_options:
+      evaluation_status: Сортировка по статусу оценки
+      evaluator_name: Сортировать по имени оценщика
+      number_of_evaluations: Сортировать по количеству оценок
+  gflash:
+    titles:
+      error: ошибка
+      notice: уведомление
+      progress: Прогресс
+      success: успех
+      warning: Предупреждение
+    users:
+      impersonate:
+        notice: Вы выдаете себя за другого.
+        title: Олицетворять пользователя
+      stop_impersonating:
+        notice: Вы больше не являетесь олицетворением.
+        title: Олицетворять пользователя
+  graph_preview:
+    being: "Бытие"
+    achieves_results: Достигает результатов
+    achieving: Достижение
+    actual_culture: Актуальная культура
+    ambition: Амбиция
+    arrogance: Bысокомерие
+    authenticity: Aутентичность
+    autocratic: самодержавный
+    balance: Баланс
+    belonging: принадлежащий
+    caring_connection: Заботливое соединение
+    circle_within_circle: 'Круг внутри круга:'
+    collaborator: Коллаборатор
+    community_concern: Заботливое Cоединение
+    complying: Cоблюдение
+    composure: Xладнокровие
+    conservative: Kонсерватор
+    controlling: Kонтрольный
+    copy_right: "© The Leadership Circle® | Все права защищены"
+    courageous_authenticity: Смелая аутентичность
+    creative: творческий
+    critical: критический
+    culture_survey: Культура Обследование и торговля;
+    decisiveness: Решительность
+    desired_culture: Желаемая культура
+    displayed_as_percentile: Все баллы отображаются в процентилях, сравнивая ваши оценки с нашей нормой.
+    distance: Расстояние
+    driven: Yправляемый
+    evaluators: Оценщики
+    fosters_team_play: Стимулирует командные игры
+    general_abilities: Общие способности
+    graph_high: Высокая
+    graph_identity: тождественность
+    graph_low: Низкий
+    graph_medium: Cредний
+    high: Высокая
+    high_scores_are_beyond: Высокие баллы выходят за пределы 67-го процентиля.
+    identity: Tождественность
+    inner_circle_profiles: Внутренний круг представляет собой итоговый балл для оценки всех измерений в этом разделе внешнего круга.
+    integrity: Целостность
+    interpersonal_intelligence: Межличностный интеллект
+    leadership_effectiveness: Эффективность руководства
+    leadership_potential_utilization: Потенциальное использование лидерства
+    low: 'Низкий:'
+    low_scores_are_below: Низкие оценки ниже 33-го процентиля.
+    manager_edition: Менеджер выпуска
+    medium: 'Средний:'
+    mentoring_developing: Разработка менторинга
+    others_assessment: Оценка других
+    passive: Нассивный
+    percentile_scores: 'Показатели Percentile:'
+    perfect: Отлично
+    personal_learner: Личный ученик
+    pleasing:  Yгождение
+    print_graph: График печати
+    protecting: Защитный
+    purposeful_visionary: Целеустремленный
+    reactive: Pеактивный
+    reactive_creative_scale: Реактивный - творческий шкала
+    relating: Oтносящийся
+    relationship: Oтношения
+    relationship_task_balance: Баланс отношений между задачами
+    score_below: Оценки ниже 33-го процентиля - низкие баллы.
+    score_between: Оценки между 66-м и 33-м процентилями показывают сочетание сил и областей улучшения.
+    scores_from: Показатели с 66-го по 100-й процентили являются сильными.
+    self: само
+    self_assessment: Самооценка
+    self_awareness: Самосознание
+    selfless_leader: Cамоотвержен лидер
+    strategic_focus: Стратегическое направление
+    sustainable_productivity: Устойчивая производительность
+    systems_awareness: Системная осведомленность
+    systems_thinker: Системы Мыслитель
+    task: задача
+  helpers:
+    label:
+      project:
+        1st_option: Опция 1
+        2nd_option: Вариант 2
+        i_will_invite: Я приглашу оценщиков для своего участника
+        my_participant_will_invite: Мой участник может пригласить оценщиков
+    select:
+      prompt: Пожалуйста выберите
+    submit:
+      create: Создать %{model}
+      submit: Сохранить %{model}
+      update: Обновить %{model}
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "%{entry_name.capitalize} не найдено"
+          one: "Отображение <b>1</b> %{entry_name}"
+          other: "Отображение <b>все %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Отображение %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> из <b>%{total}</b> всего"
+  high: Высокая
+  history:
+    show:
+      before: До
+      by: " от"
+      changes_made_at: Изменения, внесенные в
+      field: поле
+      now: Теперь
+  home:
+    index:
+      agents: Агенты
+      are_you_sure_want_to_delete: Вы уверены, что хотите удалить
+      are_you_sure_want_to_delete_project: Удаление проекта не может быть отменено. Вы действительно хотите удалить этот проект?
+      are_you_sure_want_to_delete_project_with_expired_date_explanation: Извините, вы не можете удалить, так как дата завершения этого проекта завершена.
+      are_you_sure_want_to_delete_project_with_expired_date_title: Предупреждение
+      coaches_or_consultants: Консультанты
+      companies_or_clients: клиенты
+      consultant_companies: Консультационные компании
+      consultant_company: Консультационная компания
+      distributors: Дистрибьюторы
+      licensees: лицензиаты
+      no_dont_delete: Нет, не удаляйте
+      participants: участники
+      please_enter_a_new_name_for_the_organization: Введите новое имя для %{organization_type}
+      projects: проектов
+      rename_organization: Переименовать %{organization_type}
+      unable_to_delete_company_warning: Не удается удалить; Есть еще проекты, прилагаемые к этой компании. Сначала удалите проекты
+      unable_to_delete_got_it: Понял
+      unable_to_delete_project_warning: Не удается удалить; Все еще есть участники, прикрепленные к этой компании. Сначала удалите участников
+      yes_delete_this: Да, удалите это
+    partials:
+      blank_slate:
+        create_new_project: Создать новый проект
+        start_adding_projects_now: Начните добавлять проекты сейчас.
+        you_have_no_projects_to_manage: У вас нет проектов для управления.
+      breadcrumbs:
+        coaches_consultants: Тренеры / Консультанты
+        search_by: Искать по
+      child_node_content:
+        organizationorganization_typen: "%{organizationorganization_typen} (нажмите, чтобы управлять)"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou} %{tsharedcertified_consultants}"
+      content:
+        thomeindexare_you_sure_want_to: Консультант %{thomeindexare_you_sure_want_to}?
+        thomeindexyes_delete_this_cons: Консультант %{thomeindexyes_delete_this}
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount} %{tsharedpeople}"
+      modals:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} %{parentorganization_typename}?"
+        thomeindexyes_delete_this_pare: "%{thomeindexyes_delete_this} %{parentorganization_typename}"
+        tsharedcancel: "%{tsharedcancel}"
+        tsharedsave_changes: "%{tsharedsave_changes}"
+      organization_users:
+        practitioners_userstotal_count: Консультанты (%{userstotal_count})
+      search_organization:
+        click_to_manage: "(Нажмите, чтобы управлять)"
+        manage_consultants: "(Управлять консультантами)"
+        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization} %{tsharedwere_found}"
+        thomeindexare_you_sure_want_to: " «Консультант %{thomeindexare_you_sure_want_to}?»"
+        thomeindexyes_delete_this_cons: Консультант %{thomeindexyes_delete_this}
+      sidebar:
+        add: Добавить
+  i18n:
+    transliterate:
+      rule:
+        ü: U
+  javascript:
+    1st_option: 1-й вариант
+    2nd_option: Второй вариант
+    add_another_company: Добавить другую компанию
+    admin_role_name: Системный администратор
+    ajax_popup_error: Содержимое не может быть загружено.
+    apt_suite_bldg: Квартира корпус дом...
+    binder_with_tabs: 3-кольцевое связующее с вкладками и печатными страницами, которые будут переданы участнику
+    browse_file: Просмотр файла
+    cancel_schedule_announcement: Ты уверен? Расписание будет отменено, и электронные письма будут отправлены в течение следующих 15 минут.
+    choose_age_ranges: Выберите Возрастные диапазоны
+    choose_countries: Выберите страны
+    choose_direct_report_ranges: Выберите прямые диапазоны отчетов
+    choose_education_levels: Выберите уровни образования
+    choose_ethnic_groups: Выберите Этнические группы
+    choose_industries: Выберите отрасль
+    choose_management_levels: Выберите уровни управления
+    choose_professions: Выберите профессию
+    click_the_link_below_and_we_will_contact: Нажмите ссылку ниже, чтобы получить полный профиль LCP 360 с тренером, который проведет вас через этот процесс. <br/> * Используйте MLDebrief2017 при оформлении заказа на 40% от этих цен в качестве одноразовой вступительной ставки.
+    coach_report: Тренерский отчет
+    company_revenue: доход компании
+    completion_date_asc: Дата завершения (по возрастанию)
+    completion_date_desc: Дата завершения (по убыванию)
+    contact_info: Контактная информация
+    correct_email_required: Укажите правильный формат для электронной почты.
+    created_at: 'создан в:'
+    custom_demographics: Пользовательская демография
+    default_demographics: Демографические данные по умолчанию
+    deliverable_options: Варианты исполнения
+    delivery_options: Варианты доставки
+    did_you_enjoy_your_survey_taker: Вам понравилось ваше исследование? Ознакомьтесь с полной оценкой профиля <b> Leadership Cirlce Profile </ b> и узнайте, как ваши ключевые заинтересованные стороны (боссы, сверстники, прямые отчеты и другие) испытывают ваше лидерство. Глубокое проникновение, которое происходит из профиля Leadership Cirlce Full 360, позволит вам стать намного более эффективным и мастерским в искусстве и практике лидерства.
+    email_required: Требуется электронная почта
+    error: Что-то пошло не так!
+    filter_by_role: Фильтровать по ролям
+    first_name_required: Имя требуется
+    full_path: 'Полный путь:'
+    gcsr_role_name: Глобальный CSR
+    granted_at: Предоставлено
+    graph_high: Высокая
+    graph_identity: тождественность
+    graph_low: Низкий
+    graph_medium: средний
+    high: Высокая
+    invite_another_user: Пригласить другого пользователя
+    language_required: Выберите язык
+    last_name_required: Требуется фамилия
+    leaders_managers_eval: В этом разделе вы будете оценивать лидеров / менеджеров
+    low: Низкий
+    members_eval: В этом разделе вы будете оценивать членов
+    message_required: Сообщение обязательное
+    minimum_evaluations_per_participant: Минимальное количество оценщиков (%{min_count}) должно быть предложено для включения самообследования.
+    never_sent: Никогда не отправлял
+    no_record_found: 'Не найдено совпадений:'
+    organization_and_report_type: Организация и тип отчета
+    organization_small: организация
+    participant_graph: График участников
+    participant_report: Отчет участника
+    password_hint: Пароль должен содержать минимум 8 символов с по крайней мере одним номером (0-9) и одной заглавной буквой (A-Z). Вы не можете использовать один из своих предыдущих 8 паролей.
+    person: человек
+    please_wait: Пожалуйста, подождите ...
+    preparing: Подготовка. Пожалуйста, подождите.
+    processing: обработка
+    project_access_control: Контроль доступа к проекту
+    project_access_control_description: Обзор доступа к проекту пользователя
+    project_details: Детали проекта
+    project_name_placeholder: То есть генеральный директор, директор, руководитель группы лидеров и т. Д. ...
+    project_time_zone: Часовой пояс проекта
+    relationship_required: Пожалуйста, выберите Отношения
+    report_options: Параметры отчета
+    role: Роль
+    search_results: результаты поиска
+    select_age: Выберите возраст
+    select_client: Выбрать клиента
+    select_consulting_company: Выберите консалтинговую компанию
+    select_country: Выберите страну
+    select_ethnic_group: Выберите Этническая группа
+    select_existing_administrator: Выберите существующего администратора
+    select_industry: Выберите отрасль
+    select_practitioner: Выберите Консультант
+    select_project: Введите здесь, чтобы найти проект назначения по названию
+    select_region: Выберите государство или регион
+    select_your_companys_industry: Выберите отрасль вашей компании
+    select_your_education_level: Выберите свой уровень образования
+    select_your_gender: Выбери свой пол
+    select_your_management_level: Выберите уровень управления
+    select_your_profession: Выберите свою профессию
+    select_your_residing_country: Выберите страну проживания
+    select_your_number_of_direct_reports: Количество прямых отчетов
+    sent_on: Отправлено
+    size_of_organization: Размер организации
+    street_address_example: Уличный адрес (222 проспекта) ...
+    subject_required: Тема обязательна
+    surveys_focus: Определите фокус вашего опроса (например, маркетинг, продажи, HR и т. Д.).
+    team_small: команда
+    type: 'Тип:'
+    type_the_referral_email: Введите адресное письмо
+    type_user_email: Введите адрес электронной почты пользователей ...
+    type_your_company_name: Введите название своей компании ...
+    user_email: Электронная почта пользователя
+    user_name: Имя пользователя
+    user_role_name: пользователь
+    zip_post_code: Почтовый индекс ...
+  kaminari:
+    next_page:
+      next: следующий
+    prev_page:
+      prev: Предыдущая
+  low: Низкий
+  mailer:
+    consulting_company_welcome:
+      consultant_name: Дорогой %{consultat_name},
+      line_1: Добро пожаловать в Центр проектов. В Центре проектов вы можете приобретать продукты TLC для своих клиентов, управлять проектами, просматривать и загружать отчеты.
+      line_2: 'Используйте эту ссылку для доступа к Центру проектов: %{url}'
+      line_3: Если ваша ссылка не активна; Скопируйте / вставьте его в свой интернет-браузер.
+      line_4: Вам будет предложено ввести свой адрес электронной почты и пароль. Если у вас нет пароля, воспользуйтесь функцией «Забыли пароль» на странице входа. Введите адрес электронной почты, на который было отправлено это письмо.
+      line_5: Если вы не можете войти в систему, ответьте на это письмо.
+      line_6: Теплые пожелания,
+      line_7: Лидерский круг
+      welcome: Добро пожаловать в Центр проектов!
+    reminder:
+      body_1: Похоже, вы еще не завершили опрос. Если вы все еще хотите участвовать, нажмите ниже!
+      body_2: 'Перейдите по этой ссылке к опросу:'
+      body_3: Обратите внимание, что ваше исследование должно быть заполнено %{planned_completion_date}.
+      header: Дорогой %{practitioner_full_name},
+      regards: С уважением, команда «Лидерский круг»
+      subject: Напоминание %{product_name}
+    welcome:
+      body_1: Добро пожаловать в систему онлайн-оценки Leadership Circle. Давайте попробуем создать логин и собственный пароль, чтобы вы могли начать использовать систему.
+      body_2: Перейдите в %{web_address} и используйте новый журнал учетных записей пользователей в ID %{user_id} с временным паролем %{user_password}.
+      body_3: После того как вы создадите свой новый пароль и ответите на несколько демографических вопросов, вы можете перейти непосредственно к моим опросам и провести все опросы, которые могут вас ждать.
+      body_4: Если у вас возникли проблемы с регистрацией, свяжитесь с нами по адресу %{support_email_address}.
+      header: Дорогой %{participant_full_name},
+      regards: Теплые пожелания,
+      subject: Добро пожаловать в систему онлайн-оценки Leadership Circle!
+      team: Команда опроса
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%ООН"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "% N% u"
+        units:
+          billion: миллиард
+          million: миллиона
+          quadrillion: квадрильон
+          thousand: Тысяча
+          trillion: триллион
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "% N% u"
+        units:
+          byte:
+            one: Байт
+            other: Б
+          gb: гигабайт
+          kb: KB
+          mb: мегабайт
+          tb: ТБ
+    percentage:
+      format:
+        delimiter: ''
+        format: "% N%"
+    precision:
+      format:
+        delimiter: ''
+  order_steps:
+    deliverable_options:
+      next: следующий
+      previous: предыдущий
+    delivery_options:
+      cancel_order: Отменить заказ
+      create_report: Создать отчет
+      previous: предыдущий
+    group_report_summary:
+      cancel_order: Отменить заказ
+      pdf_report: Отчет PDF
+      selected_count_tordersgr_summa: "(%{selected_count} %{tordersgr_summaryparticipants_})"
+      tordersgr_summarybilling_conta: "%{tordersgr_summarybilling_conta}:"
+      tordersgr_summaryorganization: "%{tordersgr_summaryorganization}:"
+      tordersgr_summaryreport_contac: "%{tordersgr_summaryreport_contac}:"
+      tordersgr_summaryreport_due_da: "%{tordersgr_summaryreport_due_da}:"
+      tordersgr_summaryreport_metric: "%{tordersgr_summaryreport_metric}:"
+      tordersgr_summaryreview_report: "%{tordersgr_summaryreview_report}"
+      tordersgr_summaryselected_part: "%{tordersgr_summaryselected_part}:"
+      tordersindexreport_name: "%{tordersindexreport_name}:"
+      tshareddemographicpluralize: "%{tshareddemographicpluralize}:"
+      tsharedreportpluralize: "%{tsharedreportpluralize}:"
+    organization_and_report_type:
+      cancel_order: Отменить заказ
+      next: следующий
+    partials:
+      address_modal:
+        select_from_my_account_address: Выберите адрес моей учетной записи
+        there_are_no_addresses_related: Нет адресов, связанных с пользователем.
+      contact_info:
+        billing_address: Платежный адрес
+        new_address: Новый адрес
+        report_address: Адрес отчета
+        same_as_the_billing_address: То же, что и адрес фактурирования
+        select_an_address_from_my_acco: Выберите адрес из моей учетной записи
+        this_is_the_address_where_the_: Это адрес, на который будут доставлены печатные экземпляры отчета участника, отчета участника и тренера.
+        this_is_the_person_or_company_: Это лицо или компания, с которой будет оформлен счет-фактура заказа.
+      deliverable_options:
+        coach_report: Тренерский отчет
+        digital_graph: Цифровой график
+        group_report: Отчет группы
+        how_many_copies_per_participan: Сколько экземпляров на одного участника?
+        i_want_pdf_and_printed_copies_: Я хочу PDF и печатные копии отчетов.
+        i_want_the_pdf_copies_only: Я хочу только копии в формате PDF.
+        participant_graph: График участников
+        participant_report: Отчет участника
+        pdf_file_that_practitioner_ema: Pdf-файл, который направляет консультанту письмо
+        please_choose_below_which_ones: 'Выберите ниже, какие из них вы хотели бы напечатать:'
+        profile_interpretation_manual: Руководство по интерпретации профиля
+        reports: 'Доклады:'
+        you_will_get_a_digital_version: 'Вы получите цифровую версию следующих элементов:'
+        you_will_get_only_the_digital_: 'Вы получите только цифровую версию Руководства по интерпретации профиля и следующие отчеты:'
+        you_will_get_the_digital_versi: Вы получите цифровую версию Руководства по интерпретации профиля и всех отчетов.
+        your_project_will_include: 'Ваш проект будет включать:'
+    participants:
+      cancel_order: Отменить заказ
+      choose_the_participants_you_wo: Выберите участников, которые вы хотели бы включить в этот отчет. Ты можешь
+      next: следующий
+      of: " из"
+      only_add_participants_who_have: Только добавьте участников, которые завершили опросы.
+      organizationname: "%{organizationname}"
+      participants_selected: " Выбранные участники"
+      previous: предыдущий
+      select_all_available_participa: Выберите всех участников из этой компании.
+      select_participants: Выберите участников
+    project:
+      add_all_participants: Добавить участников
+      of: из
+      participants_selected: Выбранные участники
+    report_options:
+      cancel_order: Отменить заказ
+      choose_metrics: Выберите показатели
+      how_calculation_is_made: Как производится расчет
+      next: следующий
+      previous: предыдущий
+      report_demographics: Демография
+      report_language: Язык отчета
+  orders:
+    details:
+      coach_report: 'Тренерский отчет:'
+      comment_questions: 'Комментарий:'
+      copies_per_participant: Копии на одного участника
+      copy_per_participant: Копия на участника
+      demographics: 'Демография:'
+      included_participants: 'Включенные участники:'
+      participant_graph: 'График участия:'
+      participant_report: 'Отчет участника:'
+      participants:
+        one: 1 участник
+        other: Участники %{count}
+      processing_date: 'Дата обработки:'
+      product_type: 'Тип продукта:'
+      profile_interpretation_manual: 'Руководство по интерпретации профиля:'
+      report_type: 'Тип отчета:'
+      utilties_order_details: ИНФОРМАЦИЯ ДЛЯ ЗАКАЗА
+    gr_summary:
+      billing_contact: Контакт для расчетов
+      coach_report: Тренерский отчет
+      organization: организация
+      participant_graph: График участников
+      participant_report: Отчет участника
+      participants_selected: Выбранные участники
+      place_order: Разместить заказ
+      report_contact: Связаться с нами
+      report_due_date: Дата представления отчета
+      report_metrics: Отчетные показатели
+      review_report_summary: ПОЖАЛУЙСТА, ОБЗОР РЕЗЮМЕ ВАШЕГО ОТЧЕТА
+      selected_participants: Избранные участники
+    index:
+      actions: действия
+      active_orders: Активные заказы
+      all_orders: Все заказы
+      delete_order: Удалить заказ
+      finished_orders: Готовые заказы
+      my_orders: Мои отчеты
+      number_of_participants: Число участников
+      order: порядок
+      order_date: Дата заказа
+      owner: владелец
+      print_reports: Распечатать отчеты
+      product_type: Тип продукта
+      report_name: Название отчета
+      sort_by_company: Сортировать по Компании
+      sort_by_number_of_participants: Сортировать по количеству участников
+      sort_by_ordered_date: Сортировка по дате заказа
+      sort_by_product: Сортировать по продукции
+      sort_by_report_name: Сортировать по имени отчета
+      utilties_order: 'Порядок #'
+    order:
+      see_order: См. Заказ
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    partials:
+      pick_order_modal:
+        cancel: Отмена
+        choose_order: Выберите заказ
+        choose_order_for_project: Выберите «Заказ для проекта»
+        date_order_number: Дата / номер заказа
+        locreated_atto_date_format_lon: "%{locreated_atto_date_format_lon} / %{oorder_number}"
+    prepare_download:
+      cancel: Отмена
+      download_reports_zip: Загрузить отчеты (ZIP)
+      please_wait: Пожалуйста, подождите ...
+      preparing_reports_for_download: Подготовка отчетов для загрузки
+    printed_participant:
+      digital_reports_to_be_sent_pdf: Цифровые отчеты, отправляемые (PDF)
+      download_copies_ordersingle_re: Скачать копии (%{ordersingle_report_copies_coun})
+      download_manual: Руководство по загрузке
+      evaluators_printed_participant: 'Оценщики: %{printed_participantparticipant} of %{printed_participantparticipant} Complete'
+      manual_to_be_printed: Руководство для печати
+      mark_all_as_not_printed: Отметить все как не напечатанные
+      mark_all_as_not_sent: Отметить все как не отправлено
+      mark_all_as_printed: Отметить все как ПЕЧАТАТЬ
+      mark_all_as_sent: Отметить все как посланные
+      mark_all_as_shipped: Отметить все как SHIPPED
+      printed_participantparticipant: "(%{printed_participantparticipant})"
+      reports_to_be_printed: Отчеты для печати
+      self_survey_printed_participan: 'Self Survey: %{printed_participantstatus}'
+      send_digital_reports: Отправить цифровые отчеты
+      status_printed_participantmanu: 'Статус: %{printed_participantmanual_repo}'
+      status_printed_participantprin: 'Статус: %{printed_participantprint_repor}'
+      status_printed_participantsend: 'Статус: %{printed_participantsend_report}'
+    show:
+      billing_contact: Контакт для расчетов
+      binder_contact: Связующий контакт
+      coaching_report: 'Тренерский отчет:'
+      comment_questions: 'Комментарий:'
+      company: Компания
+      demographics: 'Демография:'
+      download_profile_interpretatio: Загрузить руководство по интерпретации профиля (PDF)
+      download_reports_zip: Загрузить отчеты (ZIP)
+      find_the_order_details_below_y: Найдите детали заказа ниже. Вы также можете загрузить zip-файл со всеми вашими отчетами в формате PDF.
+      included_participants: 'Включенные участники:'
+      list_of_participants: Список участников
+      order_details: Информация для заказа
+      order_number: 'Номер заказа:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} копии"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} копий на участника"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} копий на участника"
+      participant_graph: 'График участия:'
+      participant_report: 'Отчет участника:'
+      pdf: PDF
+      planned_completion_date: 'Планируемая дата завершения:'
+      print_order_details_pdf: Информация о заказе печати (PDF)
+      processing_date: 'Дата обработки:'
+      product_type: 'Тип продукта:'
+      profile_interpretation_manual: 'Руководство по интерпретации профиля:'
+      questions_about_your_order: Вопросы о вашем заказе?
+      report_contact: Связаться с нами
+      report_name: 'Название отчета:'
+      report_type: 'Тип отчета:'
+      show_project: Показать проект
+      thank_you_for_your_order: Спасибо за ваш заказ.
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    show_print_report:
+      1_copy: 1 копия на участника
+      Demography: 'Demografics:'
+      action: действие
+      application:
+        order_not_valid: Заказ недействителен
+        reports_sent: Отправленные отчеты
+        statuses_updated: Обновлены статусы
+      coach_report: Тренерский отчет
+      coach_rpt: Тренер Rpt.
+      coaching_report: 'Тренерский отчет:'
+      comment_questions: 'Комментарий:'
+      company: Компания
+      complete: полный
+      copies_per_participant:
+        one: По одному экземпляру на одного участника
+        other: "%{count} копий на участника"
+      deliverable_instructions: Инструкции по выполнению
+      demographics: 'Демография:'
+      digital_reports: 'Цифровые отчеты:'
+      digital_rpt: Digital Rpt.
+      download_all_copies_ordercopie: Загрузить все копии (%{ordercopies_count})
+      download_all_manuals_orderused: Загрузить все руководства (%{orderused_languagescount})
+      english_manual: 'Руководство на английском языке:'
+      evaluators: Оценщики
+      find_below_all_the_deliverable: Найдите ниже всех результатов для этого заказа, а также информацию о доставке для каждого из них.
+      graph: график
+      included_participants: 'Включенные участники:'
+      manual: Руководство
+      mark_all_digital_reports_as_no: Отметить все цифровые отчеты как не отправленные
+      mark_all_digital_reports_as_se: Отметить все цифровые отчеты как отправленные
+      mark_all_printed_copies_as_not: Отметить все печатные копии как не напечатанные
+      mark_all_printed_copies_as_pri: Отметить все печатные копии как ПЕЧАТНЫЕ
+      mark_all_printed_copies_as_shi: Отметить все печатные копии как SHIPPED
+      mark_order_as_finished: Отметить заказ как готовый
+      no_participants: Нет участников
+      order_details: Информация для заказа
+      order_number: 'Номер заказа:'
+      order_participantparticipantco: "%{order_participantparticipantco} от %{order_participantparticipantev}"
+      ordercoach_report:
+        one: Один экземпляр
+        other: "%{count} копии"
+      orderparticipant_report:
+        one: Один экземпляр на участника
+        other: "%{count} копий на участника"
+      participant: участник
+      participant_graph: График участников
+      participant_report: Отчет участника
+      participants_orderself_surveys: Участники (%{orderself_surveyscount})
+      pdf: PDF
+      pdfs: PDF-файлы
+      planned_completion_date: 'Планируемая дата завершения:'
+      print_and_ship_copies_of_the_f: 'Печатать и отправлять копии следующих отчетов:'
+      printed: напечатанный
+      printed_copies: 'Печатные копии:'
+      processing_date: 'Дата обработки:'
+      product_type: 'Тип продукта:'
+      profile: Профиль
+      profile_interpretation_manual: 'Руководство по интерпретации профиля:'
+      questions_about_your_order: Вопросы о вашем заказе?
+      report_name: 'Название отчета:'
+      report_type: 'Тип отчета:'
+      self_survey: Самообследование
+      send_digital_reports_pdfs: Отправить цифровые отчеты (PDF)
+      send_the_pdf_version_of_the_fo: 'Отправьте PDF-версию следующих отчетов:'
+      sent: Отправлено
+      ship_the_3ring_binder_with_tab: Отправляйте 3-кольцевое связующее с вкладками и печатными страницами
+      shipping_info: 'ИНФОРМАЦИЯ О ДОСТАВКЕ:'
+      status: 'Положение дел:'
+      submit: Отправить
+    show_send_digital_reports:
+      cancel: Отмена
+      consultantcoach_orderprojectco: 'Консультант: %{orderprojectconsultant_orderpr}'
+      send_digital_reports: Отправить цифровые отчеты
+      send_digital_reports_to_practi: Отправка цифровых отчетов консультанту
+  organization_users:
+    new:
+      tsharedadd_consultant_tsharedt: "%{tsharedadd} Консультант %{tsharedto} '%{organizationname}'"
+  organizations:
+    actions:
+      tsharedadd_typename: "%{tsharedadd} %{typename}"
+    collab:
+      add_and_delete_shared_users: Вы можете добавлять и удалять общих пользователей в любое время
+      allow_users_edit_view: Разрешить пользователям редактировать и просматривать
+      certified_consultants: Консультанты
+      collaborators_for: Соавторы для
+      delete_collaborator: Удалить соавтор
+      invite_more_people: Пригласите больше людей
+      invite_user_by_typing_email: Пригласите нового пользователя, набрав свой адрес электронной почты ниже
+      sharing_access_certified_consultant: Предоставление доступа дает другому консультанту ту же функциональность, что и у вас, как владелец
+      sharing_top_level_company: Обмен на высшем уровне (компания) предоставит доступ ко всему под ним (группы товаров и участников)
+      this_licensor_is_not_shared: В настоящее время эта организация не используется
+    collaborator:
+      success: Успех!
+    collaborators:
+      role_urolename: 'Роль: %{urolename}'
+      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount} %{torganizationscollabcertified_}"
+    delete_collaborator:
+      success: Успех!
+    dnd:
+      drag:
+        add_user: Добавить пользователя
+        confirmation: подтверждение
+        confirmation_text_goes_here: Текст подтверждения здесь ...
+        finish: Конец
+        next: следующий
+        organizations_type: Тип организации
+        please_confirm_user_permission: Подтвердите права пользователя для этой организации. Вам ничего не нужно менять. Пользователи, назначенные родительским организациям, будут добавляться автоматически.
+        previous: предыдущий
+        privilages: Privilages
+        role: Роль
+        user: пользователь
+        you_are_about_to_move_one_orga: Вы собираетесь переместить одну организацию в другую. Проверьте правильность типа организации, которую вы хотите переместить. Вы также можете изменить его здесь. Ниже приведены разрешенные типы организаций.
+      user:
+        remove: Удалить
+    form:
+      tsharedname: "%{tsharedname}:"
+    help:
+      tree_help:
+        quick_help: Быстрая справка
+        to_edit_add_users_or_add_a_new: Для редактирования, добавления пользователей или добавления нового, просто щелкните его в дереве и выберите нужное действие из списка в правом верхнем углу панели дерева
+        to_find_an_organization_simply: Чтобы найти организацию, просто начните вводить текст в поле поиска ниже, когда это делается, нажмите enter
+        to_move_the_organization_to_an: Переместить организацию в другую организацию просто перетащить
+    modals:
+      delete_organization:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} эта организация"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_orga: Организация %{thomeindexyes_delete_this}
+    move:
+      success: Успех!
+    new:
+      accounting_id: Идентификатор учета
+      accounting_id_for_an_existing_administrator: Идентификатор учетной записи для существующего администратора
+      active_consultant_label_info: Если консультант не отмечен как активный, их учетная запись будет приостановлена, и ему не будет позволено иметь доступ к системе
+      administrator_email: Электронная почта администратора
+      administrator_first_name: Имя администратора
+      administrator_last_name: Имя администратора
+      choose_countries: Выберите страны
+      coach_consultant_email: Консультант по электронной почте
+      coach_consultant_first_name: Имя консультанта
+      coach_consultant_last_name: Фамилия консультанта
+      coach_consultant_name: Полное имя консультанта
+      company_client_name: имя клиента
+      consultant_label_info: Консультант, который работает с несколькими клиентами и организациями
+      contract_start_date: Дата начала контракта
+      countries_covered: Страны, охваченные
+      must_be_certified: Это должен быть адрес электронной почты консультанта
+      or_create_an_admin_user: Или создать нового пользователя
+      select_an_industry: Выберите отрасль
+      the_project_center: Центр проекта
+      this_active_consultant: Это активный консультант
+      this_independent_consultant: Это независимый консультант
+      top_node: Верхний узел
+      torganizationsnewmust_be_certi: "(%{torganizationsnewmust_be_certi})"
+      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} '%{parentname}'"
+      type_the_name_of_coach_consultant: Введите имя Консультанта
+      type_the_name_of_company_client: Введите имя Клиента
+      type_the_name_of_the: Введите имя
+      you_are_adding_a: Вы добавляете
+    roles:
+      collaborator:
+        delete: Удалить
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{organizationname}"
+    search:
+      local: Местный
+      search_by: Сортировать по
+      search_by_company_participant_evaluator: Поиск по Компании / Участнику / Оценщику
+      searching: Поиск ...
+    share:
+      success: Успех!
+    show:
+      event: Мероприятие
+      history: история
+      impersonate: олицетворять
+      no_child_data: Нет данных для детей!
+      organization_information: Информация об организации
+      tshareddate_created: "%{tshareddate_created}:"
+    undo_share:
+      success: Успех!
+    アクション:
+      tsharedadd_typename: Поделиться добавил %{tsharedadd} %{typename}
+  participants:
+    cannot_destroy:
+      cannot_delete_the_selected_par: 'Не удается удалить выбранный Particiapant, поскольку запись связана с другими данными, которые невозможно удалить. Пожалуйста, проверьте список ниже:'
+      orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
+      orders: 'Заказы:'
+    evaluators:
+      add_evaluator: Добавить оценщика
+      start_adding_evaluators_now: Начните добавлять оценщиков сейчас.
+      this_participant_has_no_evalua: У этого участника нет оценщиков.
+    form:
+      form:
+        action_text: "%{action_text}"
+        cancel_changes: Отменить изменения
+        delete_participant: Удалить участника
+    import_csv:
+      close: Закрыть
+      importing_participants: Импорт участников
+      please_wait: Пожалуйста, подождите ...
+    import_participants:
+      email_address: Адрес электронной почты
+      empty_row: Пустая строка
+      existing_first_name: 'Существующее имя:'
+      existing_last_name: 'Существующая фамилия:'
+      first_name: Имя
+      is_there_something_wrong_uploa: Здесь что-то не так? Загрузите новый файл
+      its_right_complete_import: Это верно! Полный импорт
+      last_name: Фамилия
+      strongparticipantscount_partic: "<Strong> участников %{participantscount} </ strong>. Проверьте правильность матча:"
+      user_with_this_email_already_e: Пользователь с этим письмом уже существует
+    import_participants_modal:
+      cancel: Отмена
+      import_participants_from_csv_f: Импортировать участников из файла CSV
+      upload_participants: Участники загрузки
+      upload_your_csv_file: 'Загрузите файл CSV:'
+    index:
+      completion_date_is_over: Дата завершения завершена.
+      download_participants_csv_status: Загрузить информацию о статусе участника в формате CSV
+      evaluator_status: Статус оценщика
+      got_it: Понял!
+      participant_details: Информация о Участнике
+      projectself_surveyswherestatus: Участники %{projectself_surveyswherestatus} не завершили свою съемку, и %{projectparticipantswith_not_en} не имеют достаточных оценок. Вы можете перенести участников в другие проекты до даты отчета о запуске (%{projectreport_datestrftimeb_d_}).
+      self_survey_status: Статус самообследования
+    logs_modal:
+      created_logsnew: 'Создано: %{logsnew}'
+      failed_logsfailed: 'Ошибка: %{logsfailed}'
+      got_it: Понял!
+      import_is_done: Импорт выполнен.
+      import_logs: 'Журналы импорта:'
+      not_changed_logsuntouched: 'Не изменено: %{logsuntouched}'
+      participant_groups_logsgroups: 'Группы участников: %{logsgroups}'
+      total_participants_logstotal: 'Всего участников: %{logstotal}'
+      updated_logsupdated: 'Обновлено: %{logsupdated}'
+    manage_group:
+      continue_managing_your_group: Продолжайте управлять своей группой
+      edit_evaluators_invitation: Редактировать приглашения оценщиков
+      edit_participants_invitation: Редактировать приглашение участников
+      participants_can_be_added_to_y: Участники могут быть добавлены в вашу новую группу сейчас или более позднюю дату
+      send_all_new_emails: Отправить все новые письма
+    participant_header:
+      add_participants: ДОБАВИТЬ УЧАСТНИКОВ
+      choose_products: Выберите продукты
+      confirm_order: ПОДТВЕРДИТЕ ЗАКАЗ
+      edit_invitation_email: Редактировать пригласительный Email
+      review_order_details: Просмотр сведений о заказе
+      select_options: Выберите параметры
+      send_emails: Отправить письма
+      setup_group: ГРУППА НАСТРОЙКИ
+      update_addresses: Обновить адреса
+    send_email_to_evaluator:
+      last_reminder_sent_on_surveyem: Последний e-mail отправлен на %{surveyemail_sent}
+    send_email_to_participant:
+      last_reminder_sent_on_surveyem: Последний e-mail отправлен на %{surveyemail_sent}
+    show_evaluator:
+      evaluation_status: Статус оценки
+      language: Язык опроса
+      last_reminder_never_sent: Нет отправленных сообщений электронной почты
+      last_reminder_sent_on: Последнее отправленное электронное письмо
+      relationship: 'Отношения:'
+      send_reminder: Отправить приглашение
+      surveycompleted_questions_coun: "%{surveycompleted_questions_coun} %{tsharedof} %{surveyquestions_count} %{tsharedquestions}"
+      surveyevaluatortryfirst_name_s: "%{surveyevaluatortryfirst_name} %{surveyevaluatortrylast_name}"
+      tparticipantsshow_evaluatorlan: "%{tparticipantsshow_evaluatorlan}: %{surveyevaluatorlanguagename}"
+      tparticipantsshow_evaluatorlas: "%{tparticipantsshow_evaluatorlas} %{surveyemail_sent}"
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_atto_date_for}"
+    show_participant:
+      completed_on_lparticipantself_: Завершено на %{lparticipantself_surveycomplet}
+      edit_participant: Изменить участника
+      email_participantuseremail: 'Электронная почта: %{participantuseremail}'
+      language_participantuserlangua: 'Язык опроса: %{participantuserlanguagename}'
+      na: н /
+      participantcompleted_evaluatio: "%{participantcompleted_evaluatio} оценщиков %{participantevaluationscount}"
+      participantself_surveycomplete: "%{participantself_surveycomplete} вопросов %{participantself_surveyquestion}"
+      participantuserfirst_name_part: "%{participantuserfirst_name} %{participantuserlast_name}"
+      resend_reports_to_gcsr: Повторная отправка отчетов в GCSR
+      send_invite: Отправить приглашение
+    sort_options:
+      evaluator_status: Сортировать по статусу оценщика
+      number_of_evaluators: Сортировать по количеству оценщиков
+      participant_name: Сортировать по имени участника
+      survey_status: Сортировка по статусу самообследования
+  people:
+    account_notification_title: Обновление учетной записи
+    account_updated: Аккаунт обновлен!
+    active_management:
+      error: ошибка
+      success: успех
+    cannot_delete: Не удается удалить; Все еще есть проекты, прилагаемые к этому пользователю.
+    destroy:
+      success: Успех!
+    index:
+      disabled: Отключено
+      filtering_by_client: 'Фильтрация по клиенту:'
+      invite_new_users: Пригласить новых пользователей
+      invited: приглашенный
+      join_date: Дате вступления
+      self_assessment: Самооценка
+      shared_organizations: Совместные организации
+      sort_by: Сортировать по
+      sort_by_join_date: Сортировать по дате регистрации
+      sort_by_org_number: Сортировать по количеству организаций
+      sort_by_user_name: Сортировать по имени пользователя
+      survey_takers: Опросники
+      user_details: Информация о пользователе
+      users: пользователей
+    manual_unlock:
+      error: Что-то пошло не так!
+      success: Успех!
+    new:
+      choose_the_user_main_role_you_: Выберите основную роль пользователя. Вы можете редактировать привилегии позже.
+      invite_another_user: Пригласить другого пользователя
+      invite_new_users: Пригласить новых пользователей
+    partials:
+      active_surveys:
+        company: Компания
+        completed: 'завершено:'
+        completion_date: Дата завершения
+        evaluated: 'оценивали:'
+        evaluation_surveyscount_people: Пользователи %{evaluation_surveyscount}
+        no_completed_evaluating_survey: Нет завершенных оценочных опросов.
+        no_completed_self_surveys: Нет завершенных самостоятельных опросов
+        no_evaluating_surveys_to_compl: Нет проверок оценки.
+        no_self_surveys_to_complete: Нет самостоятельных опросов.
+        not_valid: Недействительно
+        participant_and_product_type: Участник и тип продукта
+        product_type: Тип продукта
+        project: проект
+        self_survey: Самообследование
+        self_surveyscount_self_survey: Самостоятельная съемка %{self_surveyscount}
+        to_complete: 'завершить:'
+        to_evaluate: 'оценить:'
+      settings:
+        a_practitioner_that_does_not_w: Консультант, который работает со многими клиентами и организациями.
+        account_status: Статус аккаунта
+        delete_account_person_pathuser: Удалить аккаунт
+        'false': false
+        gcsr_or_system_administrator_h: GCSR или системный администратор имеют доступ ко всем организациям.
+        is_this_an_independent_practit: Является ли это независимым консультантом?
+        'no': нет
+        practitioner_information: Информация для консультантов
+        the_referring_practitioner_wil: Консультант-консультант получит бесплатный профиль.
+        this_user_has_been_active_sinc: Этот пользователь был активным с
+        user_role: Роль пользователя
+        users_can_only_manage_the_orga: Пользователи могут управлять только организациями, которые были совместно с ними.
+        was_this_practitioner_referred: Был ли этот консультант направлен другим консультантом в систему?
+        'yes': да
+      shared_organization:
+        edit_user_role: Изменить роль пользователя
+        shared_organizationorganizatio: "(%{shared_organizationorganizatio})"
+      shared_organizations:
+        are_being_shared_with: Разделяются
+        new_shared_organization: Новая совместная организация
+        role: Роль
+        shared_organizations: Совместные организации
+        type: Тип
+        userfull_name: "%{userfull_name}:"
+        userorganization_userscount_or: "%{userorganization_userscount} организации"
+      surveys:
+        active_surveys_useractive_surv: Активные опросы (%{useractive_surveyscount})
+        survey_history_userhistorical_: История опроса (%{userhistorical_surveyscount})
+      user_information:
+        address: Адрес
+        date_of_birth: 'Дата рождения:'
+        edit: редактировать
+        education: 'Образование:'
+        email: 'Эл. адрес:'
+        full_name: 'Полное имя:'
+        gender: 'Пол:'
+        language: 'Язык:'
+        number_of_direct_reports: 'Количество прямых отчетов:'
+        organization_level: 'Уровень организации:'
+        personal_information: Личная информация
+        phone_number: Номер телефона
+        profession: 'Профессия:'
+        professional_information: Профессиональная информация
+        residing_country: 'Страна проживания:'
+        you_havent_added_any_addresses: Вы не добавили никаких адресов.
+        you_havent_added_any_phone_num: Вы не добавили номера телефонов.
+      user_information_address:
+        user_information_addressname: "%{user_information_addressname}:"
+        user_information_addressregion: "%{user_information_addresscity}, %{user_information_addressregion}"
+      user_information_phone:
+        user_information_phonename: "%{user_information_phonename}:"
+    person:
+      consultant: консультант
+      csr: КСО
+      gcsr: GCSR
+      manage_user: Управление пользователями
+      system_administrator: Системный администратор
+    roles:
+      added_successfully: Пользователь был должным образом назначен организации!
+      edit_user_role:
+        cancel: Отмена
+        companyname: "'' %{companyname} ''"
+        remove_access_to_this_organiza: Удалить доступ к этой организации
+        role_on: Роль в
+        save: Сохранить
+        select: Выбрать
+        userfirst_names: "%{userfirst_name} '' s"
+      new_user_role:
+        choose_an_organization_to_shar: Выберите организацию для обмена
+        share_organization: Организация акций
+        user_role: 'Роль пользователя:'
+      title: Роли пользователей
+    send_unlock_instructions:
+      error: Что-то пошло не так!
+      success: Успех!
+    show:
+      account_status: 'Статус аккаунта:'
+      are_you_sure: Ты уверен?
+      delete_account: Удалить аккаунт
+      disable_account: Отключить учетную запись
+      enable_account: Включить учетную запись
+      send_unlock_instructions: Отправить инструкции по разблокировке
+      settings: настройки
+      shared_organizations: Совместные организации
+      surveys: Обзоры
+      unlock_account: Открыть учетную запись
+      user_information: информация о пользователе
+    users:
+      sort_by: Сортировать по
+      sort_by_join_date: Сортировать по дате добавления
+      sort_by_org_number: Сортировать по количеству организаций
+      sort_by_user_name: "«Сортировать по количеству пользователей»"
+  phones:
+    index:
+      add_phone: Добавить телефон
+      name: имя
+      number: Число
+    phone:
+      delete: Удалить
+  project_steps:
+    contact_info:
+      create_project: Создать проект
+      previous: предыдущий
+    deliverable_option:
+      next: следующий
+      previous: предыдущий
+    project_detail:
+      124_questions: 124 вопроса
+      62_actual_and_62_ideal_culture: 62 Актуальные и 62 Идеальные вопросы культуры
+      84_questions: 84 вопроса
+      8_summary_and_29_outer_dimensi: 6 и 21 внешний размер
+      8_summary_and_31_outer_dimensi: 8 и 31 внешний размер
+      audience_is_csuite_presidents_: Аудитория - «C-suite», президенты, вице-президенты, директора, EMBA, высокопотенциальные лидеры
+      audience_is_midlevel_managers_: Аудитория - менеджеры среднего звена, супервайзеры, MBA, руководители групп, «новые лидеры»,
+      choose_a_name_that_will_help_y: Выберите имя, которое поможет вам определить участников
+      choose_an_existing_client: Выбрать существующего клиента
+      client: клиент
+      consulting_company: Консалтинговая компания
+      create_a_new_client: Создать нового клиента
+      focus_is_organization_or_team: Фокус - это организация или команда
+      leadership_circle_profile: Профиль руководства
+      leadership_circle_profile_mana: Лидерство Circle Profile Manager Edition
+      leadership_culture_survey: Обзор культуры лидерства
+      or: или
+      practitioner: консультант
+      select_product: Выберите продукт
+  projects:
+    collab:
+      add_and_delete_shared_users: Вы можете добавлять и удалять общих пользователей в любое время
+      allow_users_edit_view: Разрешить пользователям печатать или просматривать заказы
+      delete_collaborator: Удалить соавтор
+      invite_more_people: Пригласите больше людей
+      invite_user_by_typing_email: Пригласите нового пользователя, набрав его / ее адрес ниже
+      printers: Принтеры
+      sharing_access_certified_consultant: Общий доступ дает другому пользователю доступ к заказам
+      this_licensor_is_not_shared: Этот проект в настоящее время не используется
+    convert_sa_to_lcp:
+      please_set_consulting_company_and_consultant_first: Сначала укажите Клиент, Консалтинговую компанию и Консультант (в настройках «Клиент» и «Консалтинг»).
+      success: Преобразование прошло успешно.
+    delete_collaborator:
+      success: Пользователь удален из проекта.
+    new:
+      itemparameterize: "#%{itemparameterize}"
+      next: следующий
+      previous: предыдущий
+    partials:
+      edit_form:
+        cancel_changes: Отменить изменения
+        deliverables_and_printing_opti: Параметры результатов и печати
+        project_options: Варианты проекта
+        save_all_changes: Сохранить изменения
+      evaluator_invitation:
+        if_you_have_already_sent_a_mes: Когда вы уже отправили сообщения INVITATION участникам, вы можете отправить их после отправки обновленных сообщений всем участникам и оценщикам из панели инструментов проекта.
+        invitations: ПРИГЛАШЕНИЯ
+        modifying_this_message_will_ch: При изменении этого параметра будут изменяться электронные письма с оценкой или приглашения на выбранный язык.
+        please_do_not_modify_any_text_: Не изменяйте текст в скобках (| |). Это ключевые слова, которые будут заменены информацией участника при отправке сообщения.
+        reminders: НАПОМИНАНИЯ
+        warnings: Предупреждения
+      evaluators_blank_slate:
+        add_evaluator: Добавить оценщика
+        import_evaluators: Импортные оценщики
+        start_adding_evaluators_now: Начните добавлять оценщиков сейчас.
+        there_are_no_evaluators_in_thi: В этом проекте нет оценщиков.
+      header:
+        comments: Комментарии для принтера
+        client: 'Клиент:'
+        completion_date: Дата завершения
+        consulting_settings: Настройки клиента и консалтинга
+        consutling_company: 'Консалтинговая компания:'
+        convert_sa_to_lcp: Конвертировать в Full LCP
+        create_group_report: Создать отчет группы
+        delete_project: Удалить проект
+        deleteproject: Удалить проект
+        generate_draft_reports: Создание проектов отчетов
+        practitioner: 'Консультант:'
+        printing_access: Доступ к печати
+        project_id: 'Идентификатор проекта:'
+        project_time_zone: Часовой пояс проекта
+        rename_project: Переименовать проект
+        run_new_report: Запустить новый отчет
+        run_report_date: Запустить отчет о дате
+        send_all_reminders: Отправить все напоминания
+        send_new_emails_projectsurveys: Отправить новые сообщения (%{projectsurveyswhereemail_sent_})
+        shared_with: Совместно с
+        show_orders: Показать заказы
+        starting_date: 'Дата начала:'
+        status: 'Положение дел:'
+        users_project_access: Общие настройки
+        view_orders: Просмотреть заказы
+      import_participants_modal:
+        cancel: Отмена
+        import_participants_from_csv_f: Импортировать участников из файла CSV
+        not_sure_about_the_format_of_t: Не знаете о формате файла? <a href='#'> Загрузите образец CSV. </a>
+        upload_participants: Участники загрузки
+        upload_your_csv_file: 'Загрузите файл CSV:'
+      modals:
+        delete_project:
+          thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}"
+          thomeindexunable_to_delete_pro: "%{thomeindexunable_to_delete_pro}"
+          thomeindexyes_delete_this_proj: Проект %{thomeindexyes_delete_this}
+        no_data_for_preview_warning:
+          at_least_one_survey_must_be_co: По крайней мере, одно исследование должно быть завершено до того, как будет подготовлен отчет предварительного просмотра.
+          not_enough_data_to_generate_pr: Недостаточно данных для создания предварительного просмотра
+        rename:
+          cancel: Отмена
+          please_enter_a_new_name_for_th: 'Введите новое название проекта:'
+          rename_project: Переименовать проект
+          save_changes: Сохранить изменения
+        show_orders:
+          orderorder_number_click: "%{orderorder_number} (нажмите),"
+          projects_orders: Заказы проекта
+          the_orders_created_by_a_projec: Заказы, созданные проектом.
+      new_project:
+        address_form:
+          select_an_address_from_my_acco: Выберите адрес из моей учетной записи
+        address_modal:
+          select_from_my_account_address: Выберите адрес моей учетной записи
+          there_are_no_addresses_related: Нет адресов, связанных с пользователем.
+        contact_info:
+          billing_address: Платежный адрес
+          binder_address: Адрес связующего
+          contact_information: Контактная информация
+          new_address: Новый адрес
+          same_as_shipping_address: То же, что и адрес отчета
+          same_as_the_billing_address: То же, что и адрес фактурирования
+          shipping_address: Адрес отчета
+          this_contact_is_the_only_perso: Этот контакт является ТОЛЬКО человеком, который увидит любую платежную информацию из «Лидерского круга»
+          this_is_the_address_where_the_: Это адрес, на который будет отправляться отчет тренера.
+          this_is_the_address_where_the_3_ring: Это адрес, на который будет доставлено 3-кольцевое связующее.
+        deliverable_options:
+          binder_with_tabs: Binder с инструкцией по интерпретации профиля
+          coach_report: Тренерский отчет
+          digital_graph: Цифровой график
+          group_report: Отчет группы
+          how_many_copies_per_participan: Сколько экземпляров на одного участника?
+          i_want_pdf_and_printed_copies_: Я хочу PDF и печатные копии отчетов.
+          i_want_the_pdf_copies_only: Я хочу только копии в формате PDF.
+          participant_graph: График участников
+          participant_report: Отчет участника
+          participant_reports_in_csv: Загружаемые исходные данные
+          pdf_file_that_practitioner_ema: PDF-файл, который отправляет электронное письмо консультанту
+          please_choose_below_which_ones: 'Выберите ниже, какие из них вы хотели бы напечатать:'
+          profile_interpretation_manual: Руководство по интерпретации профиля
+          reports: 'Доклады:'
+          reports_format: 'Формат отчетов:'
+          you_will_get_a_digital_version: 'Вы получите цифровую версию следующих элементов:'
+          you_will_get_only_the_digital_: 'Вы получите только цифровую (электронную копию) версию Руководства по интерпретации профиля и следующие отчеты:'
+          you_will_get_the_digital_versi: Вы получите цифровую версию Руководства по интерпретации профиля и всех отчетов.
+          your_project_will_include: 'Ваш проект будет включать:'
+        demographics:
+          custom:
+            age_ranges: Возрастные диапазоны
+            all: Все
+            country: Страна
+            demographic_options: Демографические параметры
+            direct_report_ranges: Прямые диапазоны отчетов
+            education_levels: Уровни образования
+            ethnic_groups: Этнические группы
+            female: женский
+            gender: Пол
+            if_you_choose_to_run_a_custom_: Если вы решите запустить собственный отчет с небольшим демографическим размером выборки, результатом может быть отчет с перекошенными данными. Большинство демографических данных доступны в разделе Ресурсы. У вас будет возможность изменить свой выбор на демографию по умолчанию. Обратитесь к представителю службы поддержки клиентов с вопросами.
+            industries: промышленности
+            male: мужчина
+            management_levels: Уровни управления
+            professions: профессии
+          summary:
+            age_ranges: 'Возрастные диапазоны:'
+            countries: 'Страны:'
+            demographic_definition: Демографическое определение
+            demographic_details: 'Демографические данные:'
+            demographic_size: 'Демографический размер:'
+            direct_report_ranges: 'Прямые диапазоны отчетов:'
+            education_levels: 'Уровень образования:'
+            ethnic_groups: 'Этнические группы:'
+            gender: 'Пол:'
+            industry: 'Промышленность:'
+            languages: 'Языки:'
+            lcp_participants: Участники LCP
+            lcs_participants: Участники LCS
+            management_levels: 'Уровни управления:'
+            me_participants: Участники МЭ
+            participants: участники
+            professions: 'Профессии:'
+            sa_participants: Участники SA
+            this_is_the_number_of_people_y: Это количество людей, с которыми вы будете сравнивать своих участников проекта.
+        project_details:
+          all_surveys_should_be_complete: Все обследования должны быть завершены к этой дате.
+          cancel: Отмена
+          date_reports_are_available: Доступны отчеты о датах.
+          next: следующий
+          project_options: Варианты проекта
+          specify_a_timeline_for_the_pro: Укажите временную шкалу проекта
+        project_options:
+          1st_option: 1-й вариант
+          2nd_option: Второй вариант
+          cancel_schedule_announcement: Отменить расписание Объявление
+          comment_questions_to_be_includ: Комментировать вопросы, которые должны быть включены в опрос
+          evaluators_are_bosses_peers_di: Оценщики - это боссы, сверстники, прямые отчеты и другие, которым предлагается предоставить информацию об участнике.
+          how_evaluators_are_invited_to_: Как приглашаются эксперты по оценке
+          i_will_invite: Я приглашу оценщиков
+          if_the_participant_is_responsi: Если участник несет ответственность за приглашение своих оценщиков, он должен будет пригласить этих минимальных оценщиков перед началом самопроверки.
+          in_this_section_you_will_be_ev: В этом разделе вы будете оценивать
+          indicate_if_the_survey_will_be: Укажите, будет ли исследование сосредоточено на Организации в целом или группе членов команды.
+          leaders_managers: Лидеры / Менеджеры
+          members_of_team: ''
+          minimum_evaluations_per_partic: Минимальные оценки для каждого участника?
+          my_participant_will_invite: Мой участник пригласит оценщиков
+          organization: организация
+          participants_will_see_the_focu: Участники будут видеть определение фокуса в инструкциях обследования, как показано в поле справа
+          promo_code: Промо код
+          q1_in_your_opinion_what_is_thi: 'Q1: На ваш взгляд, что это за лидерство, умение или талант этого человека, и какие у вас есть предложения по его использованию?'
+          q1_what_should_heshe_stop_doin: 'Q1: Что он должен прекратить?'
+          q2_in_your_opinion_what_is_thi: 'Вопрос 2: На ваш взгляд, что представляет собой величайшая проблема руководства или область развития, и какие предложения вы имеете для этого?'
+          q2_what_can_heshe_improve: 'Q2: Что он может улучшить?'
+          q3_what_have_you_observed_abou: 'Вопрос 3: Что вы наблюдали за этим человеком, о котором вы хотели бы предоставить дополнительную обратную связь ему / ей, которая, возможно, ранее не рассматривалась в этой оценке?'
+          q3_what_should_heshe_start_doi: 'Q3: Что он должен начать?'
+          regardless_of_who_invites_eval: Независимо от того, кто приглашает оценщиков, консультант всегда сможет увидеть список оценщиков на панели инструментов проекта
+          report_demographics: Демография
+          schedule_sending_of_invitation: Расписание отправки пригласительных писем
+          send_now: Отправить сейчас
+          survey_focus: Фокус обзора
+          survey_focus_description: Обзор Фокус Описание
+          survey_instructions: 'Инструкции по проведению опроса:'
+          team: команда
+          the_invitations_can_be_schedul: Приглашения можно планировать выходить в указанные даты и время
+          this_is_the_minimum_number_of_: Это минимальное количество полных оценок, которые участник должен быть включен в отчет. Минимальная оценка - 5 оценок.
+      participant_invitation:
+        if_you_have_already_sent_a_mes: Когда вы уже отправили приглашения участникам, вы можете отправить их после отправки обновленных сообщений всем участникам и оценщикам из панели инструментов проекта.
+        invitations: ПРИГЛАШЕНИЯ
+        modifying_this_message_will_ch: Изменение этого сообщения изменит адрес участника INVITATION или REMINDER на выбранный язык.
+        please_do_not_modify_the_text_: Не изменяйте текст в скобках (| |). Это ключевые слова, которые будут заменены информацией участника при отправке сообщения.
+        reminders: НАПОМИНАНИЯ
+        warnings: Предупреждения
+      participants_blank_slate:
+        add_participant: Добавить участника
+        import_participants: Участники импорта
+        start_adding_participants_now: Начните добавлять участников сейчас.
+        there_are_no_participants_in_t: Участников проекта не оценивать.
+      reminders:
+        if_you_have_already_sent_a_mes: Если вы уже отправили сообщение участникам, обновленные сообщения могут быть отправлены из проекта.
+        langname_reminder: Напоминание %{langname}
+        modifying_this_message_will_ch: Изменение этого сообщения изменит сообщение напоминания с опросом на английском языке.
+        please_do_not_modify_the_text_: Не изменяйте текст в скобках (* | | *). Это ключевые слова, которые будут заменены информацией участника при отправке сообщения.
+        warnings: Предупреждения
+      report_preview:
+        boss: босс
+        bosss_boss: Босс Босс
+        direct_report: Прямой доклад
+        evaluators: Оценщики
+        other: Другие
+        participant: 'Участник:'
+        peer: вглядываться
+        select_categories: 'Выберите категории:'
+        self: само
+        skill: Умение
+      resend_emails:
+        last_reminde: Последний e-mail отправлен
+        last_reminder_sent_on: Последнее отправленное электронное письмо
+        never_sent: Никогда не отправлял
+        participantuseremail: "(%{participantuseremail})"
+        select_all_participants_evalua: Выбрать всех участников
+        surveyevaluatoremail: "(%{surveyevaluatoremail})"
+      statuses:
+        completed_evaluating: Завершено Оценка
+        completed_selfsurveys: Завершенные самообследования
+        in_progress: В ходе выполнения
+        not_started: Не начался
+        statcompleted_count_of_stattot: "%{statcompleted_count} из %{stattotal_count} %{statrelation_namepluralize} завершено"
+        statusestotal_relations_comple: "%{statusestotal_relations_comple} из %{statusestotal_relations} Оценки завершены"
+        total_of_evaluators: Всего оценщиков
+        total_of_participants: Всего участников
+      tooltip:
+        of: из
+        pluralizecompleted_count_relat: "%{pluralizecompleted_count_relat} завершено"
+    project:
+      manage_project: Управление проектом
+      resend_emails: Повторная отправка писем
+    project_header:
+      create_group_report: Создать отчет группы
+      create_new_project: Создать новый проект
+    project_table:
+      actions: действия
+      all_projects: Все проекты
+      completion_date: Дата завершения
+      last_reminder: Последний e-mail
+      product: Продукт
+      project: проект
+      status: Положение дел
+    report_preview:
+      '0': 0%
+      categories: 'Категории:'
+      evaluators: Оценщики
+      participant: 'Участник:'
+      self: само
+      skill: Умение
+    resend_emails:
+      cancel: Отмена
+      select_all_evaluators: Выбрать всех оценщиков
+      select_all_participants: Выбрать всех участников
+      select_the_unfinished_particip: Выберите незавершенных участников и оценщиков, на которые вы хотели бы отправить электронные письма. Выберите тип сообщения электронной почты для отправки сообщения выбранным пользователям опроса.
+      send_emails_to_participants_ev: Отправлять электронные письма участникам и оценщикам
+      send_invitation_email: Отправить письмо-приглашение
+      send_reminder_email: Отправить напоминание
+    roles:
+      collaborator:
+        delete: Удалить
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{projectname}"
+        tsharedshared_with_project_use: "%{tsharedshared_with} %{project_userscount} %{tprojectscollabprinters}"
+    send_all_reminders:
+      close: Закрыть
+      please_wait: Пожалуйста, подождите ...
+      sending_all_reminders: Отправка всех напоминаний
+    share:
+      success: успех
+    show:
+      evaluator_email: Электронная почта оценщика
+      evaluators: Оценщики
+      options: Опции
+      participant_email: Электронная почта участника
+      participants: участники
+    show_consulting_settings:
+      client: клиент
+      consulting_company: Консалтинговая компания
+      consulting_settings: Настройки клиента и консалтинга
+      practitioner: консультант
+    undo_share:
+      success: успех
+  sa_survey_mailer:
+    request_invitation_email:
+      have_a_nice_day: Хорошего дня!
+      hello: Здравствуйте,
+      participant_email: 'Электронная почта участника:'
+      participant_name: 'Имя участника:'
+      selfsurvey_completed_at: 'Самообследование завершено по адресу:'
+      selfsurvey_id: 'Самообследование #ID:'
+      we_recorded_a_new_request_for_: 'Мы записали новый запрос на приглашение от пользователя:'
+    survey_completed_email:
+      age_range: Возрастной диапазон
+      basic_data: Основные данные
+      company_name: 'Название компании:'
+      company_revenue: доход компании
+      country: Страна
+      demographics: Демография
+      education_level: Уровень образования
+      ethnic_group: Этническая группа
+      gender: Пол
+      have_a_nice_day: Хорошего дня!
+      hello: Здравствуйте,
+      industry: Промышленность
+      management_level: Уровень управления
+      organization_size: Размер организации
+      participant_email: 'Электронная почта участника:'
+      participant_name: 'Имя участника:'
+      participant_phone_number: 'Номер участника:'
+      please_check_the_attachment_re: Проверьте вложение - отчеты в формате PDF.
+      profession: профессия
+      reports: Отчеты
+      selfsurvey_completed_at: 'Самообследование завершено по адресу:'
+      selfsurvey_created_at: 'Самообследование создано по адресу:'
+      selfsurvey_id: 'Самообследование #ID:'
+      tlc_consultant_who_referred: 'Консультант TLC, который указал:'
+      we_noticed_that_the_new_selfsu: 'Мы заметили, что новый опрос был завершен. Ниже приведены детали:'
+    survey_completed_participant_email:
+      already_in_touch: Уже в контакте с сертифицированным тренером Circle Circle? Пожалуйста, обратитесь к ним напрямую за дополнительной информацией.
+      dear_userfull_name: Дорогой %{userfull_name},
+      if_youd_like_to_understand_how: Если вы хотите понять, как вы «показываете» в качестве лидера, мы предлагаем взять полный профиль Circle Leadership Circle, который обеспечивает обратную связь от тех, кого вы возглавляете и взаимодействуете с большинством.
+      like_to_implement: 'Если вы хотите реализовать профиль круга лидеров с полной командой или организацией, обратитесь к Карлу Бенскотеру по адресу: <a href=''mailto:carl.benscoter@fcg-global.com''> carl.benscoter@fcg-global. ком </a>'
+      other_questions: 'Другие вопросы? Обращайтесь к нам по адресу: <a href=''mailto:alittleTLC@theleadershipcircle.com''> alittleTLC@theleadershipcircle.com </a>'
+      please_do_not_hesitate_to_reac: Пожалуйста, не стесняйтесь обращаться к нам с любыми вопросами. Я рад помочь в любом случае.
+      purchase_option_1: <a href="http://shop.leadershipcircle.com/MLprofile"> Профиль круга лидеров + Освоение лидера лидерства </a> - $ 2000 USD *
+      purchase_option_2: <a href="http://shop.leadershipcircle.com/MLcoaching"> Профиль круга лидеров + Освоение лидерства Подведение итогов + 1-часовой тренинг </a> - $ 3000 USD *
+      purchase_option_3: <a href="http://shop.leadershipcircle.com/MLcoaching-plan"> Профиль круга лидеров + Освоение лидерства Подведение итогов + 1-часовой тренинг + План развития лидерства </a> - $ 4000 USD *
+      purchase_options: 'Вот три замечательных варианта:'
+      purchase_promo_code: "* Используйте <font color = 'red'> MLDebrief2017 </ font> при оформлении заказа на 40% от этих цен как единовременный вводный курс"
+      request_a_full_lcp: Запросить полную LCP
+      thank_you_again: Еще раз спасибо,
+      thank_you_for_taking_the_leade: 'Благодарим вас за то, что вы приняли профиль «Лидерский круг»: самооценка. Мы надеемся, что вам понравилось читать «Освоение лидерства», и вы найдете отчет и отзывы полезными, когда вы продолжаете свое лидерство.'
+      to_help_you_better_understand_: Чтобы помочь вам лучше понять отчет о самооценке, я включил Руководство по интерпретации, в котором объясняются каждый аспект вашего графика и отчета.
+  sa_surveys:
+    demographics:
+      apt_suite_bldg: Квартира корпус дом...
+      before_you_begin: Прежде чем вы начнете
+      company_details: Сведения о компании
+      company_revenue: доход компании
+      continue_to_survey: Продолжить обзор
+      need_help: Нужна помощь?
+      personal_information: Личная информация
+      select_age: Выберите возраст
+      select_ethnic_group: Выберите Этническая группа
+      select_your_companys_industry: Выберите отрасль вашей компании
+      select_your_education_level: Выберите свой уровень образования
+      select_your_gender: Выбери свой пол
+      select_your_management_level: Выберите уровень управления
+      select_your_profession: Выберите свою профессию
+      select_your_residing_country: Выберите страну проживания
+      size_of_organization: Размер организации
+      street_address: Уличный адрес (222 проспекта) ...
+      tlc_would_like_to_gather_some_: TLC хотела бы собрать некоторую информацию только для внутренних исследовательских целей. TLC не передает вашу информацию. Мы были бы признательны, если бы вы ответили на вопросы; Однако вы всегда можете выбрать «Предпочитаете не отвечать» или «Другое».
+      type_your_company_name: Введите название своей компании ...
+      we_need_a_little_more_informat: Нам нужно немного больше информации о вас ...
+      zip_post_code: Почтовый индекс ...
+    expanding_development:
+      discover_more_about_the_leader: Узнайте больше о круге лидеров
+      need_help: Нужна помощь?
+      request_invitation: ПРИНИМАЙТЕ ПОЛНУЮ LCP 360
+      requesting_invitation: Запрос приглашения ...
+      would_you_like_to_continue_exp: Хотели бы вы продолжать расширять свое лидерство?
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    registration:
+      complete_the_registration_belo: Заполните регистрацию ниже, чтобы провести опрос. Если вы не можете пройти самооценку. Вы должны выполнить одну настройку. Результаты будут отправлены в зарегистрированное электронное письмо после завершения самооценки.
+      consultant_error: Мы не нашли консультанта TLC с этим электронным письмом. Пожалуйста, введите другой адрес электронной почты или выберите «Нет» для вышеуказанного варианта.
+      did_a_tlc_consultant_refer_you: Помог ли консультант TLC вас в нашей книге <b> Освоение лидерства </ b>?
+      'false': false
+      i_agree_to_tlc: Я согласен с TLC
+      ja: true
+      need_help: Нужна помощь?
+      nein: false
+      'no': нет
+      privacy_and_policy_terms: Конфиденциальности и условий политики
+      take_the_survey: Проводить исследование
+      thank_you_for_your_interest: Спасибо за Ваш интерес.
+      type_consultant_email: Введите свое имя или адрес электронной почты ...
+      type_email: Введите свой адрес электронной почты ...
+      type_first_name: Введите свое имя ...
+      type_last_name: Введите свое имя ...
+      type_phone_number: Введите свой номер телефона ...
+      'yes': да
+    thank_you_participant:
+      did_you_enjoy_your_survey_shar: Вам понравилось ваше исследование? Поделитесь этим с вашими друзьями.
+      discover_more_about_the_leader: Узнайте больше о круге лидеров
+      facebook: facebook
+      for_taking_the_leadership_circ: Для взятия профиля круга лидеров - самооценка. Отчеты с вашими результатами поступят в ваш адрес электронной почты через несколько минут.
+      linkedin: Linkedin
+      need_help: Нужна помощь?
+      request_invitation: ПРИНИМАЙТЕ ПОЛНУЮ LCP 360
+      requesting_invitation: Запрос приглашения ...
+      thank_you_practitionerfull_nam: Спасибо, %{practitionerfull_name}
+      twitter: щебет
+      would_you_like_to_take_the_bfu: Ознакомьтесь с полным обзором круга руководства <b> LCP 360 </ b> и узнайте, как ваши ключевые заинтересованные стороны (боссы, сверстники, прямые отчеты и другие) испытывают ваше лидерство. Глубокое понимание, которое исходит из полного профиля Circle Leadership Circle 360, позволит вам стать более эффективным и искусным в искусстве и практике лидерства. <br/> <br/> * Используйте MLDebrief2017 при оформлении заказа на 40% от этих цен как Единовременная вступительная ставка.
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    welcome:
+      bget_your_copy_hereb: "<B> Получите копию здесь </ b>"
+      coming_back: Возвращается?
+      login: Авторизоваться
+      need_help: Нужна помощь?
+      sorry_but_your_answers_are_inc: Извините, но ваш ответ неверен. Пожалуйста, попробуйте еще раз.
+      submit_answers: Отправить ответ
+      this_area_is_a_special_section: 'Эта область является специальным разделом для наших читателей. Мы надеемся, что вам понравилась наша книга <b> Освоение лидерства </ b>. Пожалуйста, ответьте на вопрос ниже, чтобы начать круг лидеров: самооценка. Ответ можно найти в книге. Не иметь его?'
+      welcome_to: Добро пожаловать в
+  search:
+    index:
+      actions: действия
+      client_name: имя клиента
+      clients: клиенты
+      consultant_companies: Консультационные компании
+      created_at: Создан в
+      email: Эл. адрес
+      evaluations: Оценки
+      industry: Промышленность
+      name: имя
+      number_of_participants: Число участников
+      number_of_projects: Количество проектов
+      order: порядок
+      order_date: Дата заказа
+      orders: заказы
+      practitioners: Консультанты
+      product_type: Тип продукта
+      projects: проектов
+      report_name: Название отчета
+      results_limited_to_20_please_u: Результаты ограничены до 20, пожалуйста, используйте более точный поиск
+      search_results_total_count: результаты поиска
+      selfsurveys: Саморезы Обзоры
+      status: Положение дел
+    orders_search:
+      number_of_participants: Число участников
+      order: порядок
+      order_date: Дата заказа
+      orders: заказы
+      product_type: Тип продукта
+      report_name: Название отчета
+      search_results_total_count: Результаты поиска (%{total_count})
+      status: Положение дел
+    partials:
+      index:
+        actions: действия
+        client_name: имя клиента
+        clients: клиенты
+        completion_date: Дата завершения
+        created_at: Создан в
+        email: Эл. адрес
+        evaluations: Оценки
+        industry: Промышленность
+        last_reminder: Последний e-mail
+        name: имя
+        number_of_participants: Число участников
+        number_of_projects: Количество проектов
+        order: порядок
+        order_date: Дата заказа
+        orders: заказы
+        practitioners: Консультанты
+        product: Продукт
+        product_type: Тип продукта
+        project: проект
+        projects: проектов
+        report_name: Название отчета
+        search_results: Результаты поиска
+        selfsurveys: Саморезы Обзоры
+        status: Положение дел
+      order:
+        not_found_record_invalid: Не найдено! Запись недействительна.
+      organization:
+        create_group_report: Создать отчет группы
+        manage_client: Управление клиентом
+      practitioner:
+        preview_user: Предварительный просмотр пользователя
+    projects_search:
+      projects: проектов
+      search_results_total_count: Результаты поиска (%{total_count})
+    surveys_search:
+      actions: действия
+      completed_on: Завершено
+      completion_date: Дата завершения
+      delete: Удалить
+      evaluating: Оценка
+      evaluations: Оценки
+      language: язык
+      last_logged_in: Последний вход
+      more_actions: Больше действий
+      move: Переехать
+      not_started: Не начался
+      of: из
+      project_name: название проекта
+      questions: вопросов
+      reset: Сброс
+      role: Роль
+      search_results_total_count: Результаты поиска (%{total_count})
+      self_surveys: Самообслуживание
+      survey_taker_details: Подробности опроса
+    users_search:
+      actions: действия
+      created_at: Создан в
+      email: Эл. адрес
+      evaluations: Оценки
+      name: имя
+      practitioners: Консультанты
+      search_results_total_count: Результаты поиска (%{total_count})
+      selfsurveys: Саморезы Обзоры
+  shared:
+    1_printed_copy_per_participant: 1 Отпечатанный экземпляр для участника
+    actions: действия
+    add: Добавить
+    add_participant: Добавить участника
+    cancel: Отмена
+    certified_consultants: Консультанты
+    companies: клиенты
+    complete_by: Завершить
+    completed_at: Выполнено на
+    confirm: Ты уверен?
+    create_group_report: Создать отчет группы
+    created_at: Создан в
+    date_created: Дата создания
+    delete: Удалить
+    demographic: демографический
+    details: Детали
+    edit: редактировать
+    edit_evaluator: Изменить оценщик
+    email: Эл. адрес
+    import_participants: Участники импорта
+    kind: вид
+    licensor: лицензиар
+    manage_evaluators: Управление оценщиками
+    menu:
+      dashboard: Панель приборов
+      disabled: Отключено
+      invited: приглашенный
+      orders: заказы
+      print_reports: Распечатать отчеты
+      project_center: Проектный центр
+      survey_takers: Опросники
+      utilities: коммунальные услуги
+    more_actions: Больше действий
+    name: имя
+    new:
+      footer:
+        current_useremail: "(%{current_useremail})"
+        go_back_to_the_csr_project_cen: Вернитесь в Центр проектов КСО
+        you_true_useremail_are_imperso: Вы (%{true_useremail}) выдаете себя за консультанта
+        your_password_will_expire: Срок действия вашего пароля истекает через %{days_to_expire} дней. 
+        renew_your_password: Пожалуйста, измените свой пароль.
+      header:
+        go_to_project_center: Перейти в Центр проектов
+        link_to_class_logo__link_do: "/"
+        selfassessment: Самооценка
+        the_leadership_circle: 'Круг лидеров:'
+        the_leadership_circle_profilet: Профиль круга лидеров
+        the_leadership_circle_selfasse: 'Круг лидеров: самооценка'
+      modal_search:
+        all: Все
+        orders: заказы
+        projects: проектов
+        survey_takers: Опросники
+        users: пользователей
+      modal_wait:
+        importing_participants: Импорт участников
+        please_wait: Пожалуйста, подождите ...
+      nav:
+        active_projects: Активные проекты
+        my_clients: Мои клиенты
+        my_orders: Мои отчеты
+        my_surveys: Мои опросы
+        people: люди
+        print_reports: Распечатать отчеты
+        project_center: Проектный центр
+        utilities: коммунальные услуги
+      navigation_mobile:
+        logout: Выйти
+        my_account: Мой аккаунт
+      session_timeout_modal:
+        attention: Внимание!
+        logout: Выйти
+        more_time: Больше времени
+        you_have_been_inactive_and_you: Вы были неактивны, и вы автоматически выйдете в <b class = "оставшееся время>> 5:00 </ b> минут. Хочешь больше времени?
+      session_timeout_remodal_modal:
+        attention: Внимание!
+        logout: Выйти
+        more_time: Больше времени
+        you_have_been_inactive_and_you: Вы были неактивны, и вы автоматически выйдете в <b class = "оставшееся время>> 5:00 </ b> минут. Хочешь больше времени?
+      user_navigation:
+        logout: Выйти
+        my_account: Мой аккаунт
+        stop_impersonating_current_use: Прекратите выдавать себя за %{current_userfull_name}
+        take_selfassessment: Принять самооценку
+    next_page: Следующая Страница
+    not_set: Не задано
+    notify:
+      delete_warning: Не удалось удалить оценщиков, которые уже завершили опрос.
+      moved_with_success: Участник успешно прошел.
+      success: Сохраненные данные.
+      update_warning: Невозможно изменить оценщиков, которые уже завершили опрос.
+    number: Число
+    of: из
+    old:
+      forbidden:
+        forbidden: запрещено
+    participants: участники
+    pdf_report: Отчет PDF
+    people: люди
+    percent_complete: "% Complete"
+    please_remove_children: Не удается удалить, так как зависимые данные все еще существуют (организации, проекты). Сначала вы должны удалить зависимые данные.
+    preview: предварительный просмотр
+    preview_report: Предварительный отчет
+    previous: предыдущий
+    printing_access: Доступ к печати
+    projects: проектов
+    questions: вопросов
+    rename: переименовывать
+    report: отчет
+    report_for: Отчет для
+    reset_password: Сброс пароля
+    reset_password_confirm: Вы уверены, что хотите сбросить пароль?
+    retake: пересдавать
+    role: Роль
+    save: Сохранить
+    save_changes: Сохранить изменения
+    send_invitations: Отправить приглашения
+    shared_settings: Общие настройки
+    shared_with: Совместно с
+    status: Положение дел
+    system: система
+    to: в
+    total: Всего
+    users: пользователей
+    were_found: были найдены
+    when: когда
+    who: Кто
+  support:
+    array:
+      last_word_connector: ", а также"
+      two_words_connector: " а также"
+      words_connector: ","
+  surveys:
+    another_show:
+      surveyproductname: "%{surveyproductname}"
+      tsurveysshowsurvey_for_surveye: "%{tsurveysshowsurvey_for} %{surveyevaluatorfull_name}"
+    answers:
+      are_you_sure_undone: Ты уверен? Пожалуйста, проверьте все ваши ответы. Этот шаг нельзя отменить
+      back_to_surveys: Вернуться к опросам
+      finish_survey: Финишный опрос
+      next_section: Следующий раздел
+      previous_section: Предыдущий раздел
+      questions_completed: Завершенные вопросы
+    before_you_begin:
+      back_to_main_page: Вернуться на главную страницу
+      before_you_begin: Прежде чем вы начнете
+      continue_to_survey: Продолжить обзор
+      need_help: Нужна помощь?
+      tlc_would_like_to_gather_some_: TLC хотела бы собрать некоторую информацию только для внутреннего исследовательского процесса. TLC не передает вашу информацию. Будем признательны, если вы ответите на вопросы. Если вы решите не участвовать, выберите «Предпочитаю не отвечать» и нажмите кнопку «Продолжить, чтобы опросить».
+      we_need_a_little_more_informat: Нам нужно немного больше информации о вас ...
+    demographic:
+      before_you_begin: Прежде чем вы начнете
+      raw_data_only_hint: Эти поля необходимы для отчетов в формате PDF, но не для данных только результатов
+      tlc_would_like_to_gather_some_: TLC хотела бы собрать некоторую информацию только для внутренних исследовательских целей. TLC не передает вашу информацию. Мы были бы признательны, если бы вы ответили на вопросы; Однако вы всегда можете выбрать «Предпочитаете не отвечать».
+      we_need_a_little_more_informat: Нам нужно немного больше информации о вас ...
+    done: Нажмите, чтобы выполнить опрос.
+    index:
+      active_surveys: Активные опросы
+      complete_active_surveys: Пожалуйста, заполните все ваши активные опросы ниже
+      content: содержание
+      my_active_surveys: Мои активные опросы
+      need_help: Нужна помощь?
+      self_survey: Опрос
+      survey_history: История опроса
+      take_survey: Take Survey
+    invite_evaluators:
+      add_evaluator: Добавить оценщика
+      back_to_survey_list: Вернуться к списку опросов
+      evaluators_provide_feedback_on: Оценщики дают отзывы о ваших лидерских навыках и компетенциях, завершая опрос.
+      invite_evaluators: Пригласите оценщиков
+      need_help: Нужна помощь?
+      take_the_survey: Проводить исследование
+      you_have_enough_evaluators_to_: У вас достаточно экспертов для проведения опроса. Хотя мы рекомендуем, чтобы вы оценили как минимум <span class = 'minimum-evaluationators'> <b> 10 оценщиков <b> </ span>.
+      you_must_add_at_least_span_cla: Вы должны добавить не менее <span class = 'minimum-evaluationators'> %{current_userinvitee_surveys} больше оценщиков </ span>, чтобы провести опрос.
+    not_enough_invited_evaluators: Участник может пригласить оценщиков. Недостаточно экспертов для проведения опроса.
+    not_valid: Извините, но этот опрос больше не доступен.
+    partials:
+      modals:
+        need_help:
+          description: Пожалуйста, выберите опрос из списка ниже, для которого вам нужна помощь. Наш консультант свяжется с вами как можно скорее.
+          main_support: Основная поддержка
+      continue_survey:
+        '100': 100%
+        culture_survey_for: Обследование культуры для
+        current_userfirst_name_current: "%{current_userfirst_name} %{current_userlast_name}"
+        review_your_answers: Просмотрите свои ответы
+        self_survey_for: Самообследование для
+        thanks_current_userfirst_name: Спасибо %{current_userfirst_name},
+        you_are_currently_taking_secti: Вы в настоящее время занимаете секцию %{paramssection_page} %{surveysectionscount}
+        you_have_answered_all_the_ques: Вы ответили на все вопросы для раздела %{paramssection_page}.
+      evaluator_form:
+        cancel: Отмена
+        update_evaluator: Обновление оценщика
+      evaluators:
+        edit_evaluator: Изменить оценщик
+        evaluator_details: Информация об оценщике
+        language: язык
+        relationship: отношения
+      modal:
+        add_evaluator: Добавить оценщика
+        always: Всегда
+        cancel: Отмена
+        edit_evaluator: Изменить оценщик
+        na: N / A
+        never: Никогда
+        often: Часто
+        once_added_an_email_will_be_im: После того, как добавленное электронное письмо будет немедленно отправлено в оценщик, приглашая их принять участие
+        previous_question: Предыдущий вопрос
+        review_your_answers: Просмотрите свои ответы
+        seldom: Редко
+        self_survey_for_bthe_most_effe: Self Survey для <b> Самый эффективный лидер, которого я знаю </ b>
+        sometimes: Иногда
+      my_active_surveys:
+        complete_by: Завершить
+        current_userinvitee_completed_: "%{current_userinvitee_completed_} оценок %{current_userinvitee_surveyssel} завершено"
+        evaluations_self:
+          one: 'У вас есть <b> одна оценка </ b> для завершения:'
+          other: 'У вас есть оценки <b> %{count} </ b> для завершения:'
+        evaluator_setup: Настройка оценщика
+        my_active_surveys: Мои активные опросы
+        please_complete_all_of_your_ac: Пожалуйста, заполните все ваши активные опросы ниже.
+        self_evaluations_left:
+          one: 'У вас есть <b> одна самооценка </ b> для завершения:'
+          other: 'У вас есть <b> %{count} самооценки </ b>:'
+        self_survey: Самообследование
+        take_the_survey: Проводить исследование
+        you_must_invite_at_least_self_: Вы должны пригласить хотя бы оценщиков %{self_surveyprojectminimum_eval} для проведения опроса.
+      new_or_pending:
+        continue_the_survey: Продолжить опрос
+        current_sectionquestionscount_: Вопросы %{current_sectionquestionscount}
+        go_back_to_survey_list: Вернуться к списку опросов
+        need_help: Нужна помощь?
+        of: из
+        previous_section: Предыдущий раздел
+        restart_previous_survey: Перезапустить предыдущий опрос
+        start_the_survey: Начало опроса
+        you_have_answered: Вы ответили
+      no_evaluators:
+        add_evaluator: Добавить оценщика
+        why_do_i_have_to_invite_evalua: " "
+        you_currently_do_not_have_any_: В настоящее время у вас нет оценщиков.
+        you_need_to_have_at_least_span: Для проведения опроса необходимо иметь как минимум <span class = 'minimum-evaluationators'> оценщиков %{minimum_evals} </ span>. <br> Нажмите кнопку ниже, чтобы добавить оценщика в свой список.
+      question:
+        '1': '1'
+        '15': '1,5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3,5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        agree: Согласен
+        always: Всегда
+        culture_survey_for: Обследование культуры для
+        disagree: не соглашаться
+        na: N / A
+        never: Никогда
+        of: из
+        often: Часто
+        perc_progress: "%{perc_progress}%"
+        previous_question: Предыдущий вопрос
+        providing_feedback_for: Предоставление отзывов для
+        question: Вопрос
+        seldom: Редко
+        self_survey_for: Самообследование для
+        slightly_agree: Немного согласен
+        slightly_disagree: Немного не согласен
+        sometimes: Иногда
+        strongly_agree: Полностью согласен
+        strongly_disagree: Полностью не согласен
+        very_strongly_agree: Очень сильно согласен
+        very_strongly_disagree: Очень сильно не согласен
+        you_are_currently_taking_secti: Вы в настоящее время занимаете секцию %{sections_page} %{surveysectionscount}
+        "×": "×"
+      review:
+        finish_your_survey: Закончите свой опрос
+        need_help: Нужна помощь?
+        next_section: Следующий раздел
+        previous_section: Предыдущий раздел
+        review_continue: Обзор и продолжение
+        review_your_answers_to_the_lea: Просмотрите свои ответы на %{product_name}. Измените любой ответ, щелкнув по нему.
+        section_sectionscurrent_page_o: Раздел %{sectionscurrent_page} из %{sectionstotal_pages}
+        your_survey_is_almost_complete: Ваш опрос почти завершен. Просмотрите свои ответы.
+        your_survey_is_not_yet_complet: Ваш опрос еще не завершен. У вас есть %{sectionstotal_pages_sectionscu} больше разделов.
+      review_form:
+        '1': '1'
+        '15': '1,5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3,5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: Всегда
+        cancel: Отмена
+        na: N / A
+        never: Никогда
+        often: Часто
+        seldom: Редко
+        sometimes: Иногда
+        update: Обновить
+      sections:
+        survey_taker_evaluator_section_1_description:
+          leadership_profile: Лидерский профиль
+          providing_feedback_section_sec: Предоставление раздела обратной связи %{sectionscurrent_page} of %{sectionstotal_pages}
+          you_will_be_able_to_review_and: Вы сможете просмотреть и изменить свои ответы в конце этого раздела.
+        survey_taker_section_1_description:
+          culture_survey: Обследование культуры
+          leadership_profile: Лидерский профиль
+          section_sectionscurrent_page_o: Раздел %{sectionscurrent_page} из %{sectionstotal_pages}
+          you_will_be_able_to_review_and: Вы сможете просмотреть и изменить свои ответы в конце этого раздела.
+        survey_taker_section_2_description:
+          at_the_end_of_this_section_you: " "
+          most_effective_leader: Самый эффективный руководитель
+          section_sectionscurrent_page_o: Раздел %{sectionscurrent_page} из %{sectionstotal_pages}
+      survey_history:
+        completed_on: Завершено
+        evaluations_completed:
+          one: 'Вы выполнили <b> одну оценку </ b>:'
+          other: 'Вы выполнили оценки <b> %{count} </ b>:'
+        evaluator_setup: Настройка оценщика
+        my_survey_history: Моя история опроса
+        self_evaluations_completed:
+          one: 'Вы выполнили <b> одну самооценку </ b>:'
+          other: 'Вы выполнили самооценку <b> %{count} </ b>:'
+        self_survey: Самообследование
+        this_is_the_list_of_all_the_su: Это список всех опросов, в которых вы участвовали.
+      thanks:
+        all_your_answers_have_been_sub: Все ваши ответы были отправлены и сохранены. Спасибо за ваше время.
+        go_back_to_survey_list: Вернуться к списку опросов
+        log_out: Выйти
+        thanks_current_userfirst_name_: Спасибо, %{current_userfirst_name}, за проведение этого опроса.
+    process_error: Произошла ошибка с процессом обследования или соединением.
+    questions:
+      put_your_answer_here: Поместите свой ответ здесь
+    questions_completed: Завершенные вопросы
+    sa_request: Спасибо, мы будем на связи.
+    sections:
+      current_leadership_culture: В этом разделе вы будете оценивать <b> %{participant} </ b>. Ваша задача - описать поведение руководства, которое чаще всего практикуется, поощряется или разрешается лидерами. На ваш общий опыт руководства в вашей организации или команде может быть много факторов. Например, у двух разных менеджеров есть противоположные стили лидерства, и оба влияют на культуру руководства этой организации или команды. Опишите поведение, которое оказывает наибольшее влияние на ваш опыт.
+      desired_leadership_culture: В этом разделе, пожалуйста, ответьте на вопросы, исходя из того, как вы желаете или желаете личную культуру <b> %{participant} </ b>. Отвечайте на каждый вопрос так, как будто культура руководства была идеальной - той, которая позволила бы ей развиваться в нынешней и будущей среде.
+      ideal_to_ideal: ''
+      leadership_profile: Этот раздел предназначен для создания профиля лидера для <b> %{participant} </ b>. Работайте быстро, используя свои первые впечатления. Используйте опцию N / A, если вы не знаете ответа на вопрос или вопрос не применяется.
+      manager_profile: Этот раздел предназначен для создания профиля менеджера для <b> %{participant} </ b>. Работайте быстро, используя свои первые впечатления. Используйте опцию N / A, если вы не знаете ответа на вопрос или вопрос не применяется.
+      most_effective_leader: |-
+        В этом разделе вы больше не будете оценивать <b> %{participant} </ b>.
+        Вместо этого определите, кто является наиболее эффективным лидером, с которым вы когда-либо работали (прямо или косвенно). <B> Отвечайте на эти вопросы с этим человеком. </ B>
+        В конце этого раздела вы сможете просмотреть и изменить свои ответы.
+      write_in_feedback: В этом разделе просьба предоставить дополнительную письменную обратную связь <b> %{participant} </ b>. Участники всегда находят комментарии к записи, особенно полезными для понимания их результатов. Ваша обратная связь может включать в себя те области, которые этот обзор не охватывал, или примеры, которые иллюстрируют, почему вы оценили <b> %{participant} </ b> так, как вы это делали, или что-то еще важное для <b> %{participant} </ b>.
+    self:
+      end_section: В конце этого раздела вы сможете просмотреть и изменить свои ответы
+      identify_effective_leader: Вместо этого определите, кто является наиболее эффективным лидером, с которым вы когда-либо работали (прямо или косвенно)
+      most_effective_leader: Самый эффективный руководитель
+      no_longer_be_evaluating: В этом разделе вы больше не будете оценивать
+      surveyproductname: "%{surveyproductname}"
+      that_person_in_mind: Ответьте на эти вопросы с этим человеком
+      tsurveysselfno_longer_be_evalu: "%{tsurveysselfno_longer_be_evalu} %{surveyevaluatorfull_name}."
+    show:
+      survey_for: Опрос
+    survey:
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_at_format_lon}"
+    survey_progress:
+      current_sectionanswers_forsurv: "%{current_sectionanswers_forsurv} / %{current_sectionquestionscount}"
+      current_sectionpercentage_comp: "%{current_sectionpercentage_comp}%{tsharedpercent_complete}"
+  system_history:
+    announcement_send_at_changed: Дата отправки напоминания изменена на %{date}
+    change_history: История изменений
+    comment_questions_changed: Комментарии изменились на «%{value}»
+    completion_date_changed: Дата завершения изменена на %{date}
+    create_participant: Созданный участник %{participant}
+    delete_participant: Удаленный участник %{participant}
+    demographics_policy_changed: Демография отчетов изменилась на «%{value}»
+    description: Ниже приведены изменения, внесенные в этот порядок, поскольку он был создан на %{created_date}
+    order_deleted: Удаленный заказ Нет %{value}
+    pdf_copies_only_changed: Только копии PDF
+    printed_copies_changed: Выбранные PDF и распечатанные копии
+    project_created: Созданный проект
+    report_date_changed: Дата отчета изменена на %{date}
+    retake_added: Повторите попытку для добавления %{participant}
+    retake_removed: Восстановить для %{participant} удален
+  templates:
+    form:
+      form:
+        if_you_have_already_sent_the_m: Если вы уже отправили сообщение участникам, вам придется отправить его в проект для получения обновленного сообщения.
+        modifying_this_message_will_ch: Изменение этого сообщения изменяет приветственное письмо участника для всех участников с английским языком изучения.
+        please_do_not_modify_any_text_: Пожалуйста, не изменяйте текст внутри (* || *) ниже. Это ключ, который будет заменен информацией участника при отправке сообщения.
+        reset_english_message: Сбросить сообщение на английском языке
+        return_to_list: Вернуться к списку
+        update_english_message: Обновить сообщение на английском языке
+    participant_invitation_msg:
+      message: Сообщение
+      reset_english_message: Сбросить сообщение на английском языке
+      save_templatelanguagename_mess: Сохранить сообщение %{templatelanguagename}
+      subject: Предмет
+  time:
+    am: я
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: вечера
+  users:
+    avatar_upload:
+      error: При загрузке произошла ошибка. Повторите проверку данных и повторите попытку.
+      success: Изображение загружено успешно.
+    demographic:
+      demographics: Демография
+    demographic_form:
+      company_details: Сведения о компании
+      continue_to_survey: Продолжить обзор
+      need_help: Нужна помощь?
+      personal_information: Личная информация
+    edit:
+      accounting_id: Идентификатор учета
+      add_address: Добавить адрес
+      add_phone: Добавьте номер телефона
+      address_type: тип адреса
+      addresses: Адреса
+      age: 'Возраст:'
+      back_to_settings: Вернуться к настройкам
+      cancel: Отмена
+      change_password: Изменить пароль
+      change_profile_picture: Изменить изображение профиля
+      city: город
+      company_details: Сведения о компании
+      company_name: название компании
+      company_revenue: доход компании
+      confirm_password: 'Подтвердите Пароль:'
+      country_address: Страна
+      current_password: текущий пароль
+      date_of_birth: Дата рождения
+      education: образование
+      email: Эл. адрес
+      ethnic_group: Этническая группа
+      fax: факс
+      first_name: Имя
+      gender: Пол
+      home: Главная
+      industry: Промышленность
+      language: язык
+      last_name: Фамилия
+      management_level: Уровень управления
+      mobile: мобильный
+      new_password: новый пароль
+      number_of_direct_reports: Количество прямых отчетов
+      organization_level: Уровень организации
+      password: пароль
+      password_label: 'Пароль:'
+      personal_information: Личная информация
+      phone_numbers: Телефонные номера
+      please_enter_address_name: Введите название адреса
+      please_enter_email: Введите адрес электронной почты
+      please_enter_new_confirmation_: Введите новый пароль подтверждения
+      please_enter_new_password: Введите новый пароль
+      please_enter_phone_number: Введите номер телефона
+      please_enter_valid_confirmatio: Введите действительный пароль подтверждения
+      please_enter_valid_email: Введите действительный адрес электронной почты
+      profession: профессия
+      professional_information: Профессиональная информация
+      profile_picture: Изображение профиля
+      reenter_new_password: Повторно введите новый пароль
+      remove_address: Удалить этот адрес
+      remove_phone: Удалить этот телефон
+      remove_profile_picture: Удалить изображение профиля
+      residing_country: Страна проживания
+      retype_password: Повторите новый пароль ...
+      save_changes: Сохранить изменения
+      size_of_organization: Размер организации
+      state_province: Штат / провинция
+      street_address: Адрес улицы
+      use_the_form_below_to_change_t: Используйте форму ниже, чтобы сменить пароль на свою учетную запись TLC.
+      user_roles: Роли пользователей
+      users_placeholder: Пространство для пользователей
+      work: Работа
+      working_address: Рабочий адрес
+      zip_code_address: Почтовый индекс
+      password_must_have_at_least: "Ваш пароль должен иметь:"
+      9_characters: 9 символов
+      1_lowercase_letter: 1 строчная буква
+      1_uppercase_letter: 1 заглавная буква
+      1_number: 1 номер
+      1_special_character: 1 специальный символ
+      passwords_dont_match: "Пароли не совпадают"
+      good_so_far: До сих пор хорошо
+      match: Совпадение
+      good: Хорошо
+      too_week: Слишком слабый
+    modify:
+      success: Пользователь успешно обновлен.
+    take_self_assessment:
+      error: Что-то пошло не так!
+    update_demographics:
+      error: Ошибка сбора демографических данных. Пожалуйста, попробуйте еще раз.
+      success: Демографические данные были успешно обновлены.
+    update_password:
+      success: Пароль успешно обновлен.
+  utilities:
+    index:
+      all: Все
+      billings: Биллингс
+      'false': нет
+      filter: Фильтр
+      filter_by_in_voiced: 'Фильтр по счетам:'
+      filter_by_order_status: 'Фильтровать по статусу заказа:'
+      filter_by_region: 'Фильтровать по регионам:'
+      finished: Законченный
+      'no': нет
+      ordered: Приказал
+      orders: заказы
+      orders_placeholder: Введите имя заказа или номер заказа ...
+      projects: проектов
+      projects_placeholder: Введите название проекта ...
+      search: Поиск
+      survey_takers: Опросники
+      surveys_placeholder: Введите имя пользователя или адрес электронной почты ...
+      users: пользователей
+      users_placeholder: Введите имя пользователя или адрес электронной почты ...
+      'yes': да
+    new_sa:
+      generate: генерировать
+      select_score_for_answers: 'Выберите оценку для ответов:'
+      users_email: 'Электронная почта пользователя:'
+    partials:
+      billing_table:
+        invoiced: Фактурная
+      search_orders:
+        found_order: Найденный заказ
+        no_order_is_found: Заказ не найден!
+      search_orders_details:
+        ordercoach_report_qty: "%{ordercoach_report_qty}"
+        ordercoach_report_qty_tordersd: "%{ordercoach_report_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_graph_qty: "%{orderparticipant_graph_qty}"
+        orderparticipant_graph_qty_tor: "%{orderparticipant_graph_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_report_qty: "%{orderparticipant_report_qty}"
+        orderparticipant_report_qty_to: "%{orderparticipant_report_qty} %{tordersdetailscopies_per_parti}"
+        pdf: PDF
+      search_projects:
+        no_projects_are_found: Проекты не найдены!
+      search_surveys:
+        actions: действия
+        completed_on: Завершено
+        completion_date: Дата завершения
+        delete: Удалить
+        evaluating: Оценка
+        evaluations: Оценки
+        found_survey_taker: Найденный опросник
+        language: язык
+        last_logged_in: Последний вход
+        more_actions: Больше действий
+        move: Переехать
+        no_survey_is_found: Обследование не найдено!
+        not_started: Не начался
+        of: из
+        project_name: название проекта
+        questions: вопросов
+        reset: Сброс
+        role: Роль
+        self_surveys: Самообслуживание
+        survey_taker_details: Подробности опроса
+      search_users:
+        back: назад
+        email: 'Эл. адрес:'
+        found_user: Найдено пользователей
+        impersonate: олицетворять
+        name: 'Имя:'
+        no_user_is_found: Пользователь не найден!
+      survey:
+        reset: Сброс
+    show_order:
+      billing_contact: Контакт для расчетов
+      binder_contact: Связующий контакт
+      coaching_report: 'Тренерский отчет:'
+      comment_questions: 'Комментарий:'
+      company: Компания
+      demographics: 'Демография:'
+      included_participants: 'Включенные участники:'
+      invoice_order: Заказ счета
+      invoiced: 'Фактурная:'
+      list_of_participants: Список участников
+      mark_order_as_not_invoiced: Отметить заказ как не выставленный счет
+      order_details: Информация для заказа
+      order_number: 'Номер заказа:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} копии"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} копий на участника"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} копий на участника"
+      participant_graph: 'График участия:'
+      participant_report: 'Отчет участника:'
+      pdf: PDF
+      planned_completion_date: 'Планируемая дата завершения:'
+      processing_date: 'Дата обработки:'
+      product_type: 'Тип продукта:'
+      profile_interpretation_manual: 'Руководство по интерпретации профиля:'
+      report_contact: Связаться с нами
+      report_name: 'Название отчета:'
+      report_type: 'Тип отчета:'
+    surveys:
+      created_at: Создан в
+      evaluator: оценщик
+      id: "#Я БЫ"
+      new_self_assessment: Новая самооценка
+      regular: регулярное
+      self_assessment: Самооценка
+      status: Положение дел
+  views:
+    pagination:
+      first: "& LAQUO; Первый"
+      last: Last & raquo;
+      next: Next & rsaquo;
+      previous: "& Lsaquo; Предыдущая"
+      truncate: "& Hellip;"
+

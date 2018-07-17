@@ -1,0 +1,45 @@
+<H1> Edit selected file: <%=@file%></h1>
+  <%=@gg%>
+
+  <form action="/locales/find" method="get">
+    <input type="hidden" value="<%=@file%>" name='locale_file'>
+    <input style="width: 400px" type="text" name="search_phrase" placeholder="Put needed key or value phrase or partial in <%=@file%>">
+    <input type="submit" value="SEARCH">
+  </form>
+
+You're lookin for : <%=@search_phrase%>
+<hr/>
+<%= form_for (@file), url: { action: 'create', controller: 'locales' }, :authenticity_token => true do |s| %>
+<!--<form action="/locales/create" id="update" method="post">-->
+  <input type="submit" value="SAVE" class="save_btn" style="font-weight: bold; font-size: 120%">
+  <!--wyszukiwanie po klucz u i po wartości-->
+  <%=
+  @previous_parent = ""
+  number_of_px = 0;
+  @file_lines.each do |line|%>
+    <%if(line['locale_value'].class!=Hash)
+      if(line['locale_parent']!=@previous_parent)
+        %>
+      </ul>
+        <div class="parent_node">parent node: <%=line['locale_parent_key']%> </div>
+        <ul style="display: block; clean: both">
+      <%end
+      @previous_parent = line['locale_parent']
+      %>
+      <li class="value" style="">
+        <input type="hidden" value="<%=line['locale_id']%>" name="lines[]locale_id">
+        <input type="hidden" value="<%=line['locale_key']%>" name="lines[]locale_key">
+        <div class="key" style="font-weight: bold"><%=line['locale_id']%>: <%=line['locale_key']%></div>
+        <textarea cols="40" rows="3" style="font-size: 100%;" name="lines[]locale_value"><%endline=""
+          if(line['locale_value'].class==String)
+            endline=line['locale_value'].gsub(/\A\p{Space}*|\p{Space}*\z/, '')
+          else
+            endline=line['locale_value']
+          end
+          %><%=endline%>
+        </textarea>
+      </li>
+    <%end #end of "if" checking Hash%>
+  <%end%>
+</form>
+<%end%>

@@ -1,0 +1,10 @@
+<h2>You're editing file: <%=@file %></h2>
+<%=form_for :post do |field| %>
+  <%# foreach key:value%>
+  <p>
+    <%=  field.label :key %>
+    <%=  field.text_area :value %>
+  <p>
+  <%end%>
+  <%=field.submit%>
+<%end%>

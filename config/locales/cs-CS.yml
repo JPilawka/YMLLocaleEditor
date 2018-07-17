@@ -1,0 +1,2578 @@
+---
+cs-CS:
+  activerecord:
+    attributes:
+      project:
+        billing_address: fakturační adresa
+        binder_address: Binder Address
+        certified_consultant: Certifikovaný konzultant
+        coach_report_pdf: Coach Report PDF
+        coach_report_qty: Coach Zpráva Množství
+        comment_questions: Komentář Otázky
+        completion_date: Datum dokončení
+        consultant: Konzultant
+        created_at: Vytvořeno na
+        deliverable_option: Možnost dodání
+        demographics_policy: Politiky demografických údajů
+        evaluators_policy: Politika hodnotitelů
+        group_report_pdf: Skupinová zpráva PDF
+        minimum_evaluations_per_participant: Minimální hodnocení na účastníka
+        name: název
+        organization: Klient
+        participant_graph_pdf: Účastník Graph PDF
+        participant_graph_qty: Počet účastníků grafu
+        participant_report_pdf: Účastník Zpráva PDF
+        participant_report_qty: Zpráva o počtu účastníků
+        pdf_interpretation_manual: Příručka interpretace PDF
+        printed_interpretation_manual: Příručka výkladu tisku
+        product: Produkt
+        promo_code: Promo kód
+        report_date: Nahlásit datum
+        shipping_address: doručovací adresa
+        status: Postavení
+        survey_focus: Zaměření průzkumu
+        survey_focus_description: Popis kurzu výzkumu
+        updated_at: Aktualizováno na
+        user: Klientský zástupce
+      project_address:
+        address_line1: 1. řádek adresy
+        address_line2: 2. řádek adresy
+        address_line3: 3. řádek adresy
+        city: Město
+        country_code: Kód země
+        created_at: Vytvořeno na
+        email: E-mailem
+        name: název
+        phone_no: Telefonní číslo
+        postal_code: poštovní směrovací číslo
+        state_code: Kód státu
+        updated_at: Aktualizováno na
+    errors:
+      messages:
+        passwords:
+          cannot_contain: Nemůže obsahovat celé nebo části vašeho jména nebo e-mailu.
+          does_not_match_security_requirements: 'Neodpovídá bezpečnostním požadavkům. Heslo musí obsahovat 1 ze 3 následujících skupin znaků: A-Z, a-z, 0-9.'
+          must_be_at_least: Musí mít délku alespoň 8 znaků.
+        record_invalid: 'Ověření selhalo: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Nelze odstranit záznam, protože existuje závislý %{record}
+          has_one: Nelze odstranit záznam, protože existuje závislý %{record}
+        should_be_greater_or_equal: Musí být větší nebo stejný datum dokončení
+  addresses:
+    region:
+      regionnametitleize_regionabbre: "%{regionnametitleize} (%{regionabbreviation})"
+  application:
+    change_password_required: Před prvním přihlášením musíte změnit heslo
+    user_not_authorized:
+      forbidden: Přístup odepřen
+  companies:
+    edit:
+      edit_company: Upravit klienta
+      manage_users: Správa uživatelů
+    index:
+      companiestotal_count: "(%{companiestotal_count})"
+      company_name: jméno klienta
+      create_company: Vytvořit klienta
+      industry: Průmysl
+      manage_company: Správa klienta
+      my_clients: Moji klienti
+      number_of_projects: Počet projektů
+      sort_by_company_name: Třídit podle názvu klienta
+      sort_by_created_date: Třídit podle Datum vytvoření
+      sort_by_industry: Seřadit podle odvětví
+      sort_by_number_of_projects: Seřadit podle počtu projektů
+      start_creating_companies_now: Začněte vytvářet klienty
+      you_have_no_companies_to_manage: Nemáte žádné klienty, které byste měli spravovat
+    new:
+      consulting_company: Konzultační společnost
+      create_company: Vytvořit klienta
+      new_company: Nové jméno klienta
+    partials:
+      delete_company:
+        cname_corganization_typename: "%{cname} (%{corganization_typename})"
+        existing_projects_top_10: 'Stávající projekty (top 10):'
+        please_notice_that_it_will_als: 'Vezměte prosím na vědomí, že také odstraní následující existující podřízené organizace:'
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} této společnosti"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_comp: "%{thomeindexyes_delete_this} společnosti"
+    show:
+      create_group_report: Vytvořit sestavu skupiny
+      create_new_project: Vytvořte nový projekt
+      created_by: Vytvořil %{creator}
+      delete_company: Smazat klienta
+      tsharedmore_actions: "%{tsharedmore_actions}"
+      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant} %{tsharedcertified_consultants}"
+  concerns:
+    role_management:
+      create_user_role:
+        success: Úspěch
+      update_user_role:
+        success: Úspěch
+  consultants:
+    saved_successfully: Konzultant byl úspěšně přidán!
+    title: Konzultant
+  date:
+    abbr_day_names:
+    - Ne
+    - Po
+    - Út
+    - St
+    - Čt
+    - Pá
+    - So
+    abbr_month_names:
+    - 
+    - led
+    - únor
+    - bře
+    - dub
+    - kvě
+    - črv
+    - črn
+    - srpen
+    - září
+    - říj
+    - lis
+    - pro
+    day_names:
+    - neděle
+    - pondělí
+    - úterý
+    - středa
+    - čtvrtek
+    - pátek
+    - sobota
+    formats:
+      default: "%m-%d-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - leden
+    - únor
+    - březen
+    - duben
+    - Smět
+    - červen
+    - červenec
+    - srpen
+    - září
+    - říjen
+    - listopad
+    - prosinec
+    order:
+    - :month
+    - :day
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: Asi 1 hodinu
+        other: O hodinách %{count}
+      about_x_months:
+        one: Asi 1 měsíc
+        other: O měsících %{count}
+      about_x_years:
+        one: Asi 1 rok
+        other: O letech %{count}
+      almost_x_years:
+        one: Téměř 1 rok
+        other: Téměř %{count} let
+      half_a_minute: Půl minuty
+      less_than_x_minutes:
+        one: méně než minutu
+        other: Méně než %{count} minut
+      less_than_x_seconds:
+        one: Méně než 1 sekundu
+        other: Méně než %{count} sekund
+      over_x_years:
+        one: Více než 1 rok
+        other: Po %{count} let
+      x_days:
+        one: 1 den
+        other: "%{count} dní"
+      x_minutes:
+        one: 1 minuta
+        other: "%{count} minut"
+      x_months:
+        one: 1 měsíc
+        other: "%{count} měsíců"
+      x_seconds:
+        one: 1 sekunda
+        other: "%{count} sekund"
+    prompts:
+      day: den
+      hour: hodina
+      minute: minuta
+      month: měsíc
+      second: sekunda
+      year: rok
+  devise:
+    confirmations:
+      confirmed: Vaše e-mailová adresa byla úspěšně potvrzena.
+      new:
+        resend_confirmation_instructio: Zaslat znovu pokyny k potvrzení
+      send_instructions: Po několika minutách obdržíte e-mail s pokyny k potvrzení vaší e-mailové adresy.
+      send_paranoid_instructions: Pokud vaše e-mailová adresa existuje v naší databázi, obdržíte e-mail s pokyny k potvrzení vaší e-mailové adresy během několika minut.
+    failure:
+      user:
+        already_authenticated: Jste již přihlášeni.
+        inactive: Váš účet ještě není aktivován.
+        invalid: Neplatné %{authentication_keys} nebo heslo.
+        last_attempt: Máte ještě jeden pokus, než bude váš účet uzamčen.
+        locked: Váš účet je uzamčen.
+        not_found_in_database: Neplatné %{authentication_keys} nebo heslo.
+        timeout: Vaše relace vypršela. Chcete-li pokračovat, přihlaste se znovu.
+        unauthenticated: Před pokračováním se musíte přihlásit nebo zaregistrovat.
+        unconfirmed: Před pokračováním musíte potvrdit svou e-mailovou adresu.
+    invalid_captcha: Nesprávný text!
+    mailer:
+      confirmation_instructions:
+        confirm_my_account: Potvrdit účet
+        user_subject: Pokyny pro potvrzení
+        welcome_email: Vítejte %{email}!
+        you_can_confirm_your_account_e: 'E-mail o účtu můžete potvrdit níže uvedeným odkazem:'
+      reset_password_instructions:
+        change_my_password: Vytvořit heslo
+        hello_resourceemail: Dobrý den %{resourceemail}!
+        if_you_didnt_request_this_plea: Pokud jste o to nepožádali, ignorujte tento e-mail.
+        someone_has_requested_a_link_t: Někdo požádal o odkaz na změnu hesla. To můžete provést pomocí níže uvedeného odkazu.
+        user_subject: Resetujte pokyny pro heslo
+        your_password_wont_change_unti: Vaše heslo se nezmění, dokud nezískáte odkaz výše a vytvoříte nový.
+      unlock_instructions:
+        click_the_link_below_to_unlock: 'Kliknutím na odkaz níže odemknete svůj účet:'
+        hello_resourceemail: Dobrý den %{resourceemail}!
+        unlock_my_account: Odemkněte svůj účet
+        user_subject: Pokyny k odemčení účtu
+        your_account_has_been_locked_d: Váš účet byl uzamčen kvůli nadměrnému počtu neúspěšných pokusů o přihlášení.
+    omniauth_callbacks:
+      failure: Nelze ověřit ze %{kind} z důvodu "%{reason}".
+      success: Úspěšně ověřeno z účtu %{kind}.
+    password_expired:
+      change_required: Platnost hesla vypršela. Obnovte prosím heslo!
+      updated: Vaše nové heslo bylo uloženo.
+    passwords:
+      edit:
+        and: a
+        change_my_password: Vytvořit heslo
+        change_your_password: Vytvořte heslo
+        confirm_no_success: Hesla se neshodují!
+        confirm_success: Hesla se shodují!
+        dont_have_an_account: Nemáte účet?
+        good: Dobrý
+        lower_and_uppercase_letters: malá a velká písmena
+        medium: střední
+        numbers: čísla
+        password_should_be_at_least: Heslo by mělo obsahovat alespoň 8 znaků!
+        password_should_include: Heslo by mělo obsahovat
+        return_to_the_leadership_circl: 'Návrat do Leadership Circle: sebehodnocení'
+        sign_up: Přihlásit se
+        strong: Silné
+        symbols: Symboly
+        very_strong: Velmi silné
+        weak: Slabé
+      new:
+        dont_have_an_account: Nemáte účet?
+        forgot_your_password: Zapomněli jste heslo?
+        log_in: Přihlásit se
+        return_to_the_leadership_circl: 'Návrat do kruhu vedení: sebehodnocení'
+        send_me_reset_password_instruc: Pošlete mi pokyny k resetování hesla
+        sign_up: Přihlásit se
+      send_instructions: Odeslat pokyny
+      user:
+        no_token: Z bezpečnostních důvodů nemáte přístup bez použití linku přímo z e-mailu s resetováním hesla. Pokud jste vstoupili pomocí linku z e-mailu pro obnovením hesla, ujistěte se, že jste použili úplnou adresu URL uvedenou v e-mailu.
+        send_instructions: Obdržíte e-mail s pokyny, jak obnovit heslo během několika minut.
+        send_paranoid_instructions: Pokud vaše e-mailová adresa existuje v naší databázi, obdržíte odkaz na obnovení hesla na vaší e-mailové adrese během několika minut.
+        updated: Vaše heslo bylo úspěšně změněno. Jste přihlášeni.
+        updated_not_active: Vaše heslo bylo úspěšně změněno.
+    registrations:
+      destroyed: Sbohem! Váš účet byl úspěšně zrušen. Doufáme, že vás brzy uvidíme.
+      edit:
+        current_password: Aktuální heslo
+        currently_waiting_confirmation: 'V současné době čekáme na potvrzení od: %{resourceunconfirmed_email}'
+        edit_resource_nameto_shumanize: Upravit %{resource_nameto_shumanize}
+        password: Heslo
+        password_confirmation: Potvrzení hesla
+        update_password: Aktualizovat heslo
+        we_need_your_current_password_: Pro potvrzení změn potřebujeme vaše aktuální heslo
+        you_must_change_your_password_: Před prvním přihlášením musíte změnit heslo.
+      new:
+        log_in: Přihlásit se
+        sign_up: Přihlásit se
+      signed_up: Vítejte! Úspěšně jste se zaregistrovali.
+      signed_up_but_inactive: Úspěšně jste se zaregistrovali. Nemohli jsme vás však přihlásit, protože váš účet ještě není aktivován.
+      signed_up_but_locked: Úspěšně jste se zaregistrovali. Nemohli jsme vás však přihlásit, protože váš účet je uzamčen.
+      signed_up_but_unconfirmed: Na vaši e-mailovou adresu byla odeslána zpráva s potvrzovacím odkazem. Klepnutím na odkaz aktivujte svůj účet.
+      update_needs_confirmation: Účet jste úspěšně aktualizovali, ale musíme ověřit novou e-mailovou adresu. Zkontrolujte prosím svou e-mailovou adresu a potvrďte novou e-mailovou adresu.
+      updated: Váš účet byl úspěšně aktualizován.
+    sessions:
+      new:
+        dont_have_an_account: Nemáte účet?
+        forgot_your_password: Zapomněli jste heslo?
+        login: Přihlásit se
+        login_to_your_account: Přihlaste se do svého účtu
+        privacy_policy: Zásady ochrany osobních údajů
+        return_to_the_leadership_circl: 'Návrat do Leadership Circle: sebehodnocení'
+        sign_up: Přihlásit se
+      user:
+        already_signed_out: Bylo úspěšně odhlášeno.
+        signed_in: Úspěšně jste se přihlásili.
+        signed_out: Bylo úspěšně odhlášeno.
+    shared:
+      links:
+        didnt_receive_confirmation_ins: Nedostali jste pokyny k potvrzení?
+        didnt_receive_unlock_instructi: Nezískali jste pokyny k odemknutí?
+        forgot_your_password: Zapomněli jste heslo?
+        log_in: Přihlásit se
+        sign_in_with_providerto_stitle: Přihlaste se pomocí %{providerto_stitleize}
+        sign_up: Přihlásit se
+    unlocks:
+      new:
+        resend_unlock_instructions: Zaslat znovu pokyny k odemčení
+      send_instructions: Obdržíte e-mail s pokyny pro odemčení účtu během několika minut.
+      send_paranoid_instructions: Pokud váš účet existuje, obdržíte e-mail s pokyny, jak jej odemknout během několika minut.
+      unlocked: Váš účet byl úspěšně odemčen. Chcete-li pokračovat, přihlaste se.
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: Musí být přijata
+      already_confirmed: Bylo již potvrzeno, zkuste se prosím přihlásit
+      blank: Nemůže být prázdné
+      confirmation: Neodpovídá %{attribute}
+      confirmation_period_expired: Musí být potvrzeno v rámci %{period}, požádejte o nový
+      empty: Nemůže být prázdný
+      equal_to: Musí být rovno %{count}
+      equal_to_current_password: Musí být odlišné od aktuálního hesla!
+      even: Musí být sudé
+      exclusion: Je vyhrazeno
+      expired: Platnost vypršela, požádejte o nový
+      greater_than: Musí být větší než %{count}
+      greater_than_or_equal_to: Musí být větší nebo roven %{count}
+      inclusion: Není v seznamu uveden
+      invalid: je neplatný
+      less_than: Musí být menší než %{count}
+      less_than_or_equal_to: Musí být menší nebo rovno %{count}
+      model_invalid: 'Ověření selhalo: %{errors}'
+      not_a_number: Není číslo
+      not_an_integer: Musí být celé číslo
+      not_found: nenalezeno
+      not_locked: Nebyla zamčena
+      not_saved:
+        one: '1 chyba zabránila aktualizaci %{resource}:'
+        other: 'Chyby %{count} zabránily uložení tohoto souboru %{resource}:'
+      odd: Musí být liché
+      other_than: Musí být jiné než %{count}
+      password_format: Musí obsahovat velká, malá písmena a číslice
+      password_not_saved: Chyba zabránila aktualizaci hesla.
+      present: Musí být prázdné
+      required: Musí existovat
+      taken: Již byla přijata
+      taken_in_past: Již byla pořízena v minulosti!
+      too_long:
+        one: Je příliš dlouhá (maximálně 1 znak)
+        other: Je příliš dlouhý (maximální je znak %{count})
+      too_short:
+        one: Je příliš krátká (minimálně 1 znak)
+        other: Je příliš krátká (minimum je znaky %{count})
+      wrong_length:
+        one: Je nesprávná délka (má být 1 znak)
+        other: Je nesprávná délka (měly by být znaky %{count})
+    template:
+      body: 'Došlo k problémům s následujícími oblastmi:'
+      header:
+        one: Chyba zabránila uložení tohoto %{model}
+        other: zde bylo %{count} chyby zabránily uložení tohoto %{model}
+  evaluators:
+    edit:
+      edit_evaluator: Upravit hodnocení
+    new:
+      add_evaluator: Přidat hodnotitele
+    partials:
+      evaluator:
+        add_participant: Přidat účastníka
+        edit_evaluator: Upravit hodnocení
+        email_evaluatoremail: 'Email: %{evaluatoremail}'
+        evaluatorevaluation_surveys_fo: "%{done} hodnocení %{total}"
+        evaluatorself_surveys_forproje: "%{done} sebe-hodnocení %{total}"
+        language_evaluatorlanguage_nam: 'Jazyk průzkumu: %{evaluatorlanguage_name}'
+      evaluator_form:
+        cancel_changes: Zrušit změny
+        delete_evaluator: Smazat hodnotitele
+      import_evaluators:
+        email_address: Emailová adresa
+        first_name: Jméno
+        is_there_something_wrong_a_hre: Je něco špatně? <a href="#import--evaluators" class="open-popup-link"> Nahrát nový soubor </a>
+        its_right_complete_import: Je to správné! Dokončit import
+        language: Jazyk
+        last_name: Příjmení
+        participant: Účastník
+        relationship: Vztah
+        strongevaluatorscount_evaluato: 'Byli nalezeni <strong> hodnotitelé %{evaluatorscount} </ strong>. Potvrďte prosím správnou shodu:'
+        survey_language: Jazyk průzkumu
+        were_almost_there: Už tam skoro jsme...
+      import_evaluators_modal:
+        cancel: zrušení
+        import_evaluators_from_csv_fil: Importujte hodnotitele z souboru CSV
+        not_sure_about_the_format_of_t: Nejste si jisti o formátu souboru? <a href='%{download_sample_csv_project_ev}' class='link'> Stáhněte si ukázku CSV </a>.
+        upload_evaluators: Odeslat hodnotitele
+        upload_your_csv_file: 'Nahrajte soubor CSV:'
+      index:
+        actions: Akce
+        add_evaluator: Přidat hodnotitele
+        download_evaluator_status_deta: Stažení podrobností stavu vyhodnotitelů jako CSV
+        evaluation_status: Stav hodnocení
+        evaluator_details: Podrobnosti hodnotitele
+        import_evaluators: Importovat hodnotitele
+        participant_status: Stav účastníka
+      participant:
+        completed_on_levaluatorevaluat: Dokončeno na %{levaluatorevaluation_survey_fo}
+        edit_participant: Upravit účastníka
+        evaluation_status: Stav hodnocení
+        evaluatorevaluation_survey_for: "%{done} otázek %{all}"
+        evaluatorself_survey_forprojec: "%{evaluatorself_survey_forprojec} %{evaluatorself_survey_forprojec} otázek sebe-hodnocení"
+        language_evaluatorevaluation_s: 'Jazyk průzkumu: %{evaluatorevaluation_survey_for}'
+        participantfull_name: "%{participantfull_name}"
+        relationship: 'Vztah:'
+        selfsurvey_completed_on_levalu: Samostatný průzkum dokončen na %{levaluatorself_survey_forproje}
+        send_invite: Odeslat pozvání
+      participant_form:
+        cancel_changes: Zrušit změny
+        delete_participant: Smazat účastníka
+    participants:
+      edit:
+        edit_participant: Upravit účastníka
+      new:
+        add_participant: Přidat účastníka
+    sort_options:
+      evaluation_status: Třídit podle stavu hodnocení
+      evaluator_name: Seřadit podle jména hodnotitele
+      number_of_evaluations: Seřadit podle počtu hodnocení
+  gflash:
+    titles:
+      error: Chyba
+      notice: Oznámení
+      progress: Pokrok
+      success: Úspěch
+      warning: Varování
+    users:
+      impersonate:
+        notice: Zvolte pohled někoho jiného.
+        title: zvolte uživatele
+      stop_impersonating:
+        notice: Vraťte se k vlastnímu pohledu.
+        title: zvolte uživatele
+  graph_preview:
+    being: "Bytí"
+    achieves_results: Dosáhuje výsledků
+    achieving: Dosahování cílů
+    actual_culture: Současná kultura
+    ambition: Ambiciózní
+    arrogance: Arogance
+    authenticity: Autenticita
+    autocratic: Autokratický
+    balance: Rovnováha
+    belonging: Přináležitost
+    caring_connection: Péče a propojení
+    circle_within_circle: 'Kruh v kruhu:'
+    collaborator: Spolupracující
+    community_concern: Zájem o komunitu
+    complying: Přizpůsobení
+    composure: Zachovává klid
+    conservative: Konzervativní
+    controlling: Kontrola
+    copy_right: "© Leadership Circle® Všechna práva vyhrazena"
+    courageous_authenticity: Odvážná otevřenost
+    creative: Tvořivý
+    critical: Kritický
+    culture_survey: Průzkum organizační kultury;
+    decisiveness: Rozhodnost
+    desired_culture: Požadovaná kultura
+    displayed_as_percentile: Všechny skóre jsou zobrazeny jako procentní skóre, které porovnává vaše skóre s normou.
+    distance: Odstup
+    driven: Posedlý
+    evaluators: Hodnotitelé
+    fosters_team_play: Podporuje spolupráci v týmu
+    general_abilities: Obecné schopnosti
+    graph_high: Vysoký
+    graph_identity: Identita
+    graph_low: Nízký
+    graph_medium: Střední
+    high: Vysoký
+    high_scores_are_beyond: Vysoké skóre přesahuje 67. percentil.
+    identity: Identita
+    inner_circle_profiles: Vnitřní kružnice ukazuje souhrnné procentní skóre všech oblasti v dané části vnějšího kruhu.
+    integrity: Integrita
+    interpersonal_intelligence: Interpersonální inteligence
+    leadership_effectiveness: Účinnost vedení
+    leadership_potential_utilization: Využití potenciálu vedení
+    low: 'Nízký:'
+    low_scores_are_below: Nízké skóre je pod 33. percentilem.
+    manager_edition: Manažerské vydání
+    medium: 'Střední:'
+    mentoring_developing: Mentoruje a rozvíjí
+    others_assessment: Jiné hodnocení
+    passive: Pasivní
+    percentile_scores: 'Percentilové skóre:'
+    perfect: Perfekcionistický
+    personal_learner: Osobně se rozvíjí
+    pleasing: Zavděčování
+    print_graph: Tisk grafu
+    protecting: Defensivní
+    purposeful_visionary: Má vizi a smysl
+    reactive: Reaktivní
+    reactive_creative_scale: Poměr reaktivní - kreativní 
+    relating: Vztahy
+    relationship: vztah
+    relationship_task_balance: Rovnována vztah - úkol
+    score_below: Skóre pod 33. percentilem je nízké skóre.
+    score_between: Skóre mezi 66. a 33. percentilem ukazuje silné stránky i oblasti ke zlepšení.
+    scores_from: Skóre od 66. do 100. percentilu je silné skóre.
+    self: Já
+    self_assessment: Sebehodnocení
+    self_awareness: Sebeuvědomění
+    selfless_leader: Nesebestředný lídr
+    strategic_focus: Strategické zaměření
+    sustainable_productivity: Udržitelná produktivita
+    systems_awareness: Systémové povědomí
+    systems_thinker: Myslí systémově
+    task: úkol
+  helpers:
+    label:
+      project:
+        1st_option: Možnost 1
+        2nd_option: Možnost 2
+        i_will_invite: Budu zvát hodnotile pro mého účastníka sám
+        my_participant_will_invite: Účastník pozve svoje hodnotitele
+    select:
+      prompt: Prosím vyberte
+    submit:
+      create: Vytvořte %{model}
+      submit: Uložit %{model}
+      update: Aktualizujte %{model}
+  high: Vysoký
+  history:
+    show:
+      before: Před
+      by: " podle"
+      changes_made_at: Změny provedené na
+      field: Pole
+      now: Nyní
+  home:
+    index:
+      agents: Agenti
+      are_you_sure_want_to_delete: Jste si jistí, že chcete projekt smazat
+      are_you_sure_want_to_delete_project: Smazání projektu nelze vrátit zpět. Opravdu chcete tento projekt smazat?
+      are_you_sure_want_to_delete_project_with_expired_date_explanation: Omlouváme se, nelze odstranit, protože datum dokončení tohoto projektu již proběhlo.
+      are_you_sure_want_to_delete_project_with_expired_date_title: Varování
+      coaches_or_consultants: Konzultanti
+      companies_or_clients: Klienti
+      consultant_companies: Konzultační společnosti
+      consultant_company: Konzultační společnost
+      distributors: Distributoři
+      licensees: Držitelé licence
+      no_dont_delete: Ne, neodstraňujte
+      participants: Účastníci
+      please_enter_a_new_name_for_the_organization: Zadejte prosím nový název pro %{organization_type}
+      projects: Projekty
+      rename_organization: Přejmenujte %{organization_type}
+      unable_to_delete_company_warning: Nelze odstranit; Stále existují projekty spojené s touto společností. Prosím nejdříve vymažte projekty
+      unable_to_delete_got_it: OK
+      unable_to_delete_project_warning: Nelze odstranit; K této společnosti jsou stále připojeni účastníci. Nejdříve prosím smazat účastníky
+      yes_delete_this: Ano, odstraňte toto
+    partials:
+      blank_slate:
+        create_new_project: Vytvořte nový projekt
+        start_adding_projects_now: Začněte přidávat projekty nyní.
+        you_have_no_projects_to_manage: Nemáte žádné projekty.
+      breadcrumbs:
+        coaches_consultants: Trenéři / konzultanti
+        search_by: Hledat podle
+      child_node_content:
+        organizationorganization_typen: "%{organizationorganization_typen} (nastavení)"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou} %{tsharedcertified_consultants}"
+      content:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} konzultant?"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} konzultant"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount} %{tsharedpeople}"
+      modals:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} %{parentorganization_typename}?"
+        thomeindexyes_delete_this_pare: "%{thomeindexyes_delete_this} %{parentorganization_typename}"
+        tsharedcancel: "%{tsharedcancel}"
+        tsharedsave_changes: "%{tsharedsave_changes}"
+      organization_users:
+        practitioners_userstotal_count: Konzultanti (%{userstotal_count})
+      search_organization:
+        click_to_manage: "(nastavení)"
+        manage_consultants: "(Řídit konzultanty)"
+        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization} %{tsharedwere_found}"
+        thomeindexare_you_sure_want_to:  "Poradce %{thomeindexare_you_sure_want_to}?"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} konzultant"
+      sidebar:
+        add: Přidat
+  i18n:
+    transliterate:
+      rule:
+        ü: U
+  javascript:
+    1st_option: 1. možnost
+    2nd_option: 2. možnost
+    add_another_company: Přidat další společnost
+    admin_role_name: Správce systému
+    ajax_popup_error: Obsah nelze načíst.
+    apt_suite_bldg: číslo, budova ...
+    binder_with_tabs: kroužkové pořadače s kartami a tištěnými stránkami, které mají být předány účastníkovi
+    browse_file: Prohlížet soubor
+    cancel_schedule_announcement: Jste si jistí? Plán bude zrušen a e-maily budou odeslány během dalších 15 minut.
+    choose_age_ranges: Zvolte věkové rozmezí
+    choose_countries: Vyberte země
+    choose_direct_report_ranges: Zvolte možnosti přímých vztahů
+    choose_education_levels: Zvolte úroveň vzdělání
+    choose_ethnic_groups: Vyberte etnické skupiny
+    choose_industries: Zvolte oblast
+    choose_management_levels: Vyberte úroveň správy
+    choose_professions: Vyberte profese
+    click_the_link_below_and_we_will_contact: Klikněte na odkaz níže a my vás propojíme s konzultantem, který vás procesem provede.
+    coach_report: Zpráva kouče
+    company_revenue: výnosy společnosti
+    completion_date_asc: Datum dokončení (vzestupně)
+    completion_date_desc: Datum dokončení (sestupně)
+    contact_info: Kontaktní informace
+    correct_email_required: Zadejte prosím správný formát e-mailu
+    created_at: 'Vytvořeno u:'
+    custom_demographics: Vlastní demografické údaje
+    default_demographics: Výchozí demografické údaje
+    deliverable_options: Možnosti dodání
+    delivery_options: Možnosti doručení
+    did_you_enjoy_your_survey_taker: Líbilo se vám vašeho průzkumu? Vezměte si úplné posouzení <b> Leadership Cirlce Profile </ b> a zjistěte, jak vaše klíčové zainteresované strany (šéfové, kolegové, přímé zprávy a další) zažijí vaše vedení. Hluboký vhled, který pochází z profilu Leadership Cirlce Full 360 vám umožní mnohem efektivnější a nejmodernější umění a praxi vedení.
+    email_required: Je vyžadován e-mail
+    error: Něco se pokazilo!
+    filter_by_role: Filtr podle role
+    first_name_required: Vyžaduje se Křestní jméno
+    full_path: 'Plná cesta:'
+    gcsr_role_name: Globální CSR
+    granted_at: Udělil v
+    graph_high: Vysoký
+    graph_identity: Identita
+    graph_low: Nízký
+    graph_medium: Střední
+    high: Vysoký
+    invite_another_user: Pozvat jiného uživatele
+    language_required: Zvolte prosím jazyk
+    last_name_required: Je vyžadováno příjmení
+    leaders_managers_eval: V této sekci budete hodnotit vedoucí pracovníky / manažery společnosti
+    low: Nízký
+    members_eval: V této sekci budete hodnotit členy skupiny
+    message_required: Zpráva je vyžadována
+    minimum_evaluations_per_participant: Minimální počet hodnotitelů (%{min_count}) musí být pozván, aby umožnil vlastní průzkum.
+    never_sent: Nikdy nebylo posláno
+    no_record_found: Nebyly nalezeny žádné záznamy
+    organization_and_report_type: Organizace a typ zprávy
+    organization_small: organizace
+    participant_graph: Graf účastníků
+    participant_report: Zpráva účastníka
+    password_hint: Heslo musí mít minimálně 8 znaků s alespoň jedním číslem (0-9) a jedním velkým písmenem (A-Z). Nemůžete použít ani jedno z předchozích 8 hesel.
+    person: osoba
+    please_wait: Prosím, čekejte ...
+    preparing: Připravuje se. Prosím, čekejte.
+    processing: zpracovává se
+    project_access_control: Kontrola přístupu k projektu
+    project_access_control_description: Zkontrolujte přístup k projektu
+    project_details: Podrobnosti projektu
+    project_name_placeholder: 'Tj .: generální ředitel, ředitel, vedoucí, vedoucí tým atd.'
+    project_time_zone: Časové pásmo projektu
+    relationship_required: Vyberte prosím vztah
+    report_options: Možnosti reportu
+    role: Role
+    search_results: Výsledky vyhledávání
+    select_age: Vyberte věk
+    select_client: Vyberte možnost Klient
+    select_consulting_company: Vyberte Konzultační společnost
+    select_country: Vyberte zemi
+    select_ethnic_group: Vyberte etnickou skupinu
+    select_existing_administrator: Vyberte stávajícího správce
+    select_industry: Vyberte oblast
+    select_practitioner: Vyberte konzultanta
+    select_project: Vyhledání cílového projektu podle názvu
+    select_region: Vyberte stát nebo oblast
+    select_your_companys_industry: Vyberte oblast působení společnosti
+    select_your_education_level: Vyberte úroveň vzdělání
+    select_your_gender: Vyber své pohlaví
+    select_your_management_level: Vyberte úroveň řízení na které pracujete
+    select_your_profession: Vyberte svou profesi
+    select_your_residing_country: Vyberte svou domovskou zemi
+    select_your_number_of_direct_reports: Počet přímých zpráv
+    sent_on: Odesláno
+    size_of_organization: Velikost organizace
+    street_address_example: Adresa ulice (222 example avenue) ...
+    subject_required: '"Doplňte "Předmět:"'
+    surveys_focus: Definujte zaměření svého průzkumu (tj. Marketing, prodej, HR atd.)
+    team_small: tým
+    type: 'Typ:'
+    type_the_referral_email: Zadejte doporučující e-mail
+    type_user_email: Zadejte e-mail uživatele ...
+    type_your_company_name: Zadejte název společnosti ...
+    user_email: Uživatelský e-mail
+    user_name: Uživatelské jméno
+    user_role_name: Uživatel
+    zip_post_code: PSČ
+  kaminari:
+    next_page:
+      next: další
+    prev_page:
+      prev: Předch
+  low: Nízký
+  mailer:
+    reminder:
+      body_1: Vypadá to, že jste ještě nezkoušeli. Pokud se chcete i nadále zúčastnit, klikněte níže.
+      body_2: 'Následujte tento odkaz na průzkum:'
+      body_3: Vezměte prosím na vědomí, že váše hodnocení musí být zadáno do %{planned_completion_date}.
+      header: Dear %{practitioner_full_name},
+      regards: Teplo, Team Leadership Circle
+      subject: "%{product_name} Připomenutí"
+    welcome:
+      body_1: Vítejte v online systému The Leadership Circle. Zvolte si přihlašovací jméno a heslo, abyste mohli systém začít používat.
+      body_2: Přejděte na %{web_address} a pomocí nového uživatelského účtu zadejte ID %{user_id} s dočasným heslem %{user_password}.
+      body_3: Po vytvoření nového hesla a odpovědi na několik demografických otázek můžete jít přímo do svých průzkumů a dokončit všechny průzkumy, které vás mohou čekat.
+      body_4: Pokud máte nějaké problémy s přihlášením, kontaktujte nás na adrese %{support_email_address}.
+      header: Dear %{participant_full_name},
+      regards: S pozdravy
+      subject: Vítejte v online systému hodnocení Leadership Circle!
+      team: Tým Survey Taker
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "% U% n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "% N% u"
+        units:
+          billion: Miliarda
+          million: Milión
+          quadrillion: Kvadrilion
+          thousand: Tisíc
+          trillion: Bilion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "% N% u"
+        units:
+          byte:
+            one: Byte
+            other: Byty
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "% N%"
+    precision:
+      format:
+        delimiter: ''
+  order_steps:
+    deliverable_options:
+      next: další
+      previous: Předchozí
+    delivery_options:
+      cancel_order: Zrušit objednávku
+      create_report: Vytvořit přehled
+      previous: Předchozí
+    group_report_summary:
+      cancel_order: Zrušit objednávku
+      pdf_report: PDF Report
+      selected_count_tordersgr_summa: "(%{selected_count} %{tordersgr_summaryparticipants_})"
+      tordersgr_summarybilling_conta: "%{tordersgr_summarybilling_conta}:"
+      tordersgr_summaryorganization: "%{tordersgr_summaryorganization}:"
+      tordersgr_summaryreport_contac: "%{tordersgr_summaryreport_contac}:"
+      tordersgr_summaryreport_due_da: "%{tordersgr_summaryreport_due_da}:"
+      tordersgr_summaryreport_metric: "%{tordersgr_summaryreport_metric}:"
+      tordersgr_summaryreview_report: "%{tordersgr_summaryreview_report}"
+      tordersgr_summaryselected_part: "%{tordersgr_summaryselected_part}:"
+      tordersindexreport_name: "%{tordersindexreport_name}:"
+      tshareddemographicpluralize: "%{tshareddemographicpluralize}:"
+      tsharedreportpluralize: "%{tsharedreportpluralize}:"
+    organization_and_report_type:
+      cancel_order: Zrušit objednávku
+      next: další
+    partials:
+      address_modal:
+        select_from_my_account_address: Vyberte adresu
+        there_are_no_addresses_related: Neexistují žádné adresy tohoto uživatele
+      contact_info:
+        billing_address: Fakturační adresa
+        new_address: Nová adresa
+        report_address: Adresa pro reporty
+        same_as_the_billing_address: Stejná jako Fakturační adresa
+        select_an_address_from_my_acco: Vyberte adresu
+        this_is_the_address_where_the_: Jedná se o adresu, na které budou doručeny tištěné kopie zprávy účastníka, účastnického grafu a výkazu trenéra.
+        this_is_the_person_or_company_: Jedná se o osobu nebo společnost, na kterou bude vystavena faktura objednávky.
+      deliverable_options:
+        coach_report: Zpráva pro kouče
+        digital_graph: Graf
+        group_report: Skupinový report
+        how_many_copies_per_participan: Kolik kopií na účastníka?
+        i_want_pdf_and_printed_copies_: Chci PDF a tištěné kopie reportu.
+        i_want_the_pdf_copies_only: Chci pouze PDF.
+        participant_graph: Graf pro účastníka
+        participant_report: Report pro účastníka
+        pdf_file_that_practitioner_ema: Pdf soubor, který konzultant posílá e-mailem účastníkovi
+        please_choose_below_which_ones: 'Zvolte níže, které z nich chcete vytisknout:'
+        profile_interpretation_manual: Příručka profilu
+        reports: 'Zprávy:'
+        you_will_get_a_digital_version: 'Získáte digitální verzi následujících položek:'
+        you_will_get_only_the_digital_: 'Získáte pouze digitální verzi příručky Interpretace profilu a následující zprávy:'
+        you_will_get_the_digital_versi: Získáte digitální verzi příručky profilu a všechny zprávy.
+        your_project_will_include: 'Váš projekt bude zahrnovat:'
+    participants:
+      cancel_order: Zrušit objednávku
+      choose_the_participants_you_wo: Vyberte účastníky, které chcete zahrnout do tohoto přehledu. Můžeš
+      next: další
+      of: " z"
+      only_add_participants_who_have: Přidat pouze účastníky, kteří dokončili hodnocení.
+      organizationname: "%{organizationname}"
+      participants_selected: " Vybraní účastníci"
+      previous: Předchozí
+      select_all_available_participa: Vyberte všechny dostupné účastníky z této společnosti
+      select_participants: Vyberte účastníky
+    project:
+      add_all_participants: Přidat všechny účastníky
+      of: z
+      participants_selected: Vybraní účastníci
+    report_options:
+      cancel_order: Zrušit objednávku
+      choose_metrics: Vyberte metriky
+      how_calculation_is_made: Jak se provádí výpočet
+      next: další
+      previous: Předchozí
+      report_demographics: Nahlásit demografické údaje
+      report_language: Jazyk sestavy
+  orders:
+    details:
+      coach_report: 'Zpráva trenéra:'
+      comment_questions: 'Komentář Otázky:'
+      copies_per_participant: Kopie na jednoho účastníka
+      copy_per_participant: Kopie na jednoho účastníka
+      demographics: 'Demografie:'
+      included_participants: 'Zahrnutí účastníci:'
+      participant_graph: 'Graf účastníků:'
+      participant_report: 'Zpráva účastníka:'
+      participants:
+        one: 1 účastník
+        other: "%{count} účastníků"
+      processing_date: 'Datum zpracování:'
+      product_type: 'Typ produktu:'
+      profile_interpretation_manual: 'Příručka interpretace profilů:'
+      report_type: 'Typ sestavy:'
+      utilties_order_details: PODROBNOSTI OBJEDNÁVKY
+    gr_summary:
+      billing_contact: Fakturační kontakt
+      coach_report: Zpráva trenéra
+      organization: Organizace
+      participant_graph: Graf pro účastníka
+      participant_report: Zpráva pro účastníka
+      participants_selected: Vybraní účastníci
+      place_order: Objednat
+      report_contact: kontakty
+      report_due_date: datum vytvoření reportu
+      report_metrics: Metriky reportu
+      review_report_summary: Shrnutí reportu
+      selected_participants: Vybraní účastníci
+    index:
+      actions: Akce
+      active_orders: Aktivní objednávky
+      all_orders: Všechny objednávky
+      delete_order: Smazat objednávku
+      finished_orders: Hotové objednávky
+      my_orders: Moje zprávy
+      number_of_participants: Počet zúčastněných
+      order: Objednat
+      order_date: Datum objednávky
+      owner: Majitel
+      print_reports: Tisk sestav
+      product_type: Typ produktu
+      report_name: Název sestavy
+      sort_by_company: Řadit podle společnosti
+      sort_by_number_of_participants: Řadit podle počtu účastníků
+      sort_by_ordered_date: Řadit podle data objednávky
+      sort_by_product: Řadit podle produktu
+      sort_by_report_name: Řadit podle názvu sestavy
+      utilties_order: 'Objednat #'
+    order:
+      see_order: Viz objednávka
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    partials:
+      pick_order_modal:
+        cancel: zrušení
+        choose_order: Zvolte objednávku
+        choose_order_for_project: Zvolte objednávku pro projekt
+        date_order_number: Datum / číslo objednávky
+        locreated_atto_date_format_lon: "%{locreated_atto_date_format_lon} / %{oorder_number}"
+    prepare_download:
+      cancel: zrušení
+      download_reports_zip: Stažení zpráv (ZIP)
+      please_wait: Prosím, čekejte ...
+      preparing_reports_for_download: Příprava zpráv ke stažení
+    printed_participant:
+      digital_reports_to_be_sent_pdf: Reporty, které mají být odeslány (PDF)
+      download_copies_ordersingle_re: Stáhnout kopie (%{ordersingle_report_copies_coun})
+      download_manual: Stáhnout manuál
+      evaluators_printed_participant: 'Hodnotitelé: %{printed_participantparticipant} %{printed_participantparticipant} Dokončeno'
+      manual_to_be_printed: Manuál, který chcete vytisknout
+      mark_all_as_not_printed: Označit vše jako netištěné
+      mark_all_as_not_sent: Označit vše jako Neposlané
+      mark_all_as_printed: Označte vše jako vytištěné
+      mark_all_as_sent: Označte všechny jako poslané emailem
+      mark_all_as_shipped: Označte vše jako zaslané poštou
+      printed_participantparticipant: "(%{printed_participantparticipant})"
+      reports_to_be_printed: Reporty, které mají být vytištěny
+      self_survey_printed_participan: 'Samostatný průzkum: %{printed_participantstatus}'
+      send_digital_reports: Odeslat elektronické reporty
+      status_printed_participantmanu: 'Stav: %{printed_participantmanual_repo}'
+      status_printed_participantprin: 'Stav: %{printed_participantprint_repor}'
+      status_printed_participantsend: 'Stav: %{printed_participantsend_report}'
+    show:
+      billing_contact: Fakturační kontakt
+      binder_contact: Binder Contact
+      coaching_report: 'Koučovací zpráva:'
+      comment_questions: 'Komentář Otázky:'
+      company: Společnost
+      demographics: 'Demografie:'
+      download_profile_interpretatio: Stáhnout příručku reportu (PDF)
+      download_reports_zip: Stažení zpráv (ZIP)
+      find_the_order_details_below_y: Podrobnosti o objednávce. Soubor zip můžete stáhnout také ve všech přehledech PDF.
+      included_participants: 'Zahrnutí účastníci:'
+      list_of_participants: Seznam účastníků
+      order_details: Podrobnosti objednávky
+      order_number: 'Číslo objednávky:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} kopie"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} kopie na účastníka"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} kopie na účastníka"
+      participant_graph: 'Graf účastníků:'
+      participant_report: 'Zpráva účastníka:'
+      pdf: PDF
+      planned_completion_date: 'Plánované datum dokončení:'
+      print_order_details_pdf: Podrobnosti o objednávce tisku (PDF)
+      processing_date: 'Datum zpracování:'
+      product_type: 'Typ produktu:'
+      profile_interpretation_manual: 'Příručka profilu:'
+      questions_about_your_order: Dotazy k objednávce?
+      report_contact: Kontaktovat zprávu
+      report_name: 'Název sestavy:'
+      report_type: 'Typ sestavy:'
+      show_project: Zobrazit projekt
+      thank_you_for_your_order: Děkuji za Vaši objednávku.
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    show_print_report:
+      1_copy: 1 kopie na účastníka
+      Demography: 'Demografické údaje:'
+      action: Akce
+      application:
+        order_not_valid: Objednávka není platná
+        reports_sent: Zprávy odeslané
+        statuses_updated: Stavy byly aktualizovány
+      coach_report: profil pro kouče
+      coach_rpt: kouč profil
+      coaching_report: 'Koučovací zpráva:'
+      comment_questions: 'Komentář Otázky:'
+      company: Společnost
+      complete: Kompletní
+      copies_per_participant:
+        one: Jednu kopii na účastníka
+        other: "%{count} kopie na účastníka"
+      deliverable_instructions: Výstupní pokyny
+      demographics: 'Demografie:'
+      digital_reports: 'Digitální přehledy:'
+      digital_rpt: elektronický profil .
+      download_all_copies_ordercopie: Stažení všech kopií (%{ordercopies_count})
+      download_all_manuals_orderused: Stáhněte si všechny příručky (%{orderused_languagescount})
+      english_manual: 'Anglický manuál:'
+      evaluators: Hodnotitelé
+      find_below_all_the_deliverable: Níže naleznete všechny části této objednávky, a informace o přepravě pro každou z nich.
+      graph: Graf
+      included_participants: 'Zahrnutí účastníci:'
+      manual: Manuál
+      mark_all_digital_reports_as_no: Označte všechny elektronické profily za nezaslané
+      mark_all_digital_reports_as_se: Označte všechny elektronické profily jako SENT
+      mark_all_printed_copies_as_not: Označit všechny tištěné kopie jako nevytištěné
+      mark_all_printed_copies_as_pri: Označte všechny tištěné kopie jako vytištěné
+      mark_all_printed_copies_as_shi: Označte všechny tištěné kopie jako zaslané poštou
+      mark_order_as_finished: Označit objednávku jako dokončenou
+      no_participants: Žádní účastníci
+      order_details: Podrobnosti objednávky
+      order_number: 'Číslo objednávky:'
+      order_participantparticipantco: "%{order_participantparticipantco} %{order_participantparticipantev}"
+      ordercoach_report:
+        one: Jednu kopii
+        other: "%{count} kopie"
+      orderparticipant_report:
+        one: Jednu kopii na jednoho účastníka
+        other: "%{count} kopie na účastníka"
+      participant: Účastník
+      participant_graph: Graf pro účastníka
+      participant_report: report pro účastníka
+      participants_orderself_surveys: Účastníci (%{orderself_surveyscount})
+      pdf: PDF
+      pdfs: PDF soubory
+      planned_completion_date: 'Plánované datum dokončení:'
+      print_and_ship_copies_of_the_f: 'Tisk a odeslat kopie následujících zpráv:'
+      printed: Vytištěno
+      printed_copies: 'Tištěné kopie:'
+      processing_date: 'Datum zpracování:'
+      product_type: 'Typ produktu:'
+      profile: Profil
+      profile_interpretation_manual: 'Příručka interpretace profilů:'
+      questions_about_your_order: Dotazy k objednávce?
+      report_name: 'Název sestavy:'
+      report_type: 'Typ sestavy:'
+      self_survey: sebe-hodnocení
+      send_digital_reports_pdfs: Odeslat elektronické reporty (PDF)
+      send_the_pdf_version_of_the_fo: 'Odeslat verzi PDF následujících zpráv:'
+      sent: Odesláno
+      ship_the_3ring_binder_with_tab: Zasílejte kroužkové vazače s kartami a vytištěnými stránkami
+      shipping_info: 'DOPRAVNÍ INFORMACE:'
+      status: 'Postavení:'
+      submit: Předložit
+    show_send_digital_reports:
+      cancel: zrušení
+      consultantcoach_orderprojectco: 'Konzultant: %{orderprojectconsultant_orderpr}'
+      send_digital_reports: Odeslat elektronické reporty
+      send_digital_reports_to_practi: Odeslat elektronické reporty konzultantovi
+  organization_users:
+    new:
+      tsharedadd_consultant_tsharedt: "%{tsharedadd} konzultant %{tsharedto} '%{organizationname}'"
+  organizations:
+    actions:
+      tsharedadd_typename: "%{tsharedadd} %{typename}"
+    collab:
+      add_and_delete_shared_users: Přidané a smazané uživatele můžete kdykoli přidat
+      allow_users_edit_view: Povolit uživatelům úpravy a prohlížení
+      certified_consultants: Konzultanti
+      collaborators_for: Spolupracovníci pro
+      delete_collaborator: Smazat spolupracovníka
+      invite_more_people: Pozvěte více lidí
+      invite_user_by_typing_email: Pozvěte nového uživatele zadáním e-mailu níže
+      sharing_access_certified_consultant: Sdílení přístupu poskytuje jinému konzultantovi stejnou funkčnost jako vlastníkovi
+      sharing_top_level_company: Sdílení na nejvyšší úrovni (společnost) umožní přístup ke všemu pod ní (skupiny produktů a účastníci)
+      this_licensor_is_not_shared: Tato organizace momentálně není sdílena
+    collaborator:
+      success: Úspěch!
+    collaborators:
+      role_urolename: 'Role: %{urolename}'
+      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount} %{torganizationscollabcertified_}"
+    delete_collaborator:
+      success: Úspěch!
+    dnd:
+      drag:
+        add_user: Přidat uživatele
+        confirmation: potvrzení
+        confirmation_text_goes_here: Zde je potvrzovací text ...
+        finish: Dokončit
+        next: další
+        organizations_type: Typ organizace
+        please_confirm_user_permission: Potvrďte oprávnění uživatele pro tuto organizaci. Nemusíte nic měnit. Uživatelé přiřazení k nadřazeným organizacím budou automaticky přidáni.
+        previous: Předchozí
+        privilages: Privilages
+        role: Role
+        user: Uživatel
+        you_are_about_to_move_one_orga: Chystáte se přesunout jednu organizaci do druhé. Zkontrolujte, zda je typ organizace, kterou chcete přesunout, správný. Můžete jej také změnit. Níže jsou povoleny typy organizací.
+      user:
+        remove: Odstranit
+    form:
+      tsharedname: "%{tsharedname}:"
+    help:
+      tree_help:
+        quick_help: Rychlá nápověda
+        to_edit_add_users_or_add_a_new: Abyste mohli upravit, přidat uživatele nebo přidat novouorganizaci, stačí kliknout ve stromu a vybrat požadovanou akci ze seznamu v pravém horním rohu 
+        to_find_an_organization_simply: Pro hledání organizace jednoduše začněte psát do vyhledávacího pole níže a stiskněte ENTER
+        to_move_the_organization_to_an: Přesunout organizaci do jiné organizace můžete přetažením
+    modals:
+      delete_organization:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} této organizace"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_orga: "%{thomeindexyes_delete_this} organizace"
+    move:
+      success: Úspěch!
+    new:
+      accounting_id: Účetní ID
+      accounting_id_for_an_existing_administrator: Identifikační číslo účtu pro existujícího správce
+      active_consultant_label_info: Není-li konzultant označen jako aktivní, jejich účet bude pozastaven a nebude mít přístup k systému
+      administrator_email: E-mail administrátora
+      administrator_first_name: Jméno správce
+      administrator_last_name: Příjmení správce
+      choose_countries: Vyberte země
+      coach_consultant_email: E-mail konzultanta
+      coach_consultant_first_name: Jméno konzultanta
+      coach_consultant_last_name: Konzultant Příjmení
+      coach_consultant_name: Celé jméno konzultanta
+      company_client_name: jméno klienta
+      consultant_label_info: Konzultant, který spolupracuje s více klienty a organizacemi
+      contract_start_date: Datum zahájení smlouvy
+      countries_covered: Pokryté země
+      must_be_certified: Konzultant musí být certifikován
+      or_create_an_admin_user: Nebo vytvořit nového uživatele
+      select_an_industry: Vyberte odvětví
+      the_project_center: Centrum projektů
+      this_active_consultant: Toto je aktivního konzultanta
+      this_independent_consultant: Jedná se o nezávislého poradce
+      top_node: Nejvyšší node
+      torganizationsnewmust_be_certi: "(%{torganizationsnewmust_be_certi})"
+      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} '%{parentname}'"
+      type_the_name_of_coach_consultant: Zadejte jméno konzultanta
+      type_the_name_of_company_client: Zadejte název klienta
+      type_the_name_of_the: Zadejte název
+      you_are_adding_a: Přidáváte a
+    roles:
+      collaborator:
+        delete: Vymazat
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{organizationname}"
+    search:
+      local: Místní
+      search_by: Filtrovat podle
+      search_by_company_participant_evaluator: Vyhledávání podle společnosti / účastníka / hodnotitele
+      searching: Hledání ...
+    share:
+      success: Úspěch!
+    show:
+      event: událost
+      history: Dějiny
+      impersonate: převezměte identitu
+      no_child_data: Žádné propojené údaje nebyly nalezeny!
+      organization_information: Informace o organizaci
+      tshareddate_created: "%{tshareddate_created}:"
+    undo_share:
+      success: Úspěch!
+    アクション:
+      tsharedadd_typename: Zveřejněno přidáno %{tsharedadd} %{typename}
+  participants:
+    cannot_destroy:
+      cannot_delete_the_selected_par: 'Vybraný Particiapant nelze odstranit, protože záznam je spojen s dalšími daty, které nelze odstranit. Zkontrolujte níže uvedený seznam:'
+      orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
+      orders: 'Objednávky:'
+    evaluators:
+      add_evaluator: Přidat hodnotitele
+      start_adding_evaluators_now: Začněte přidávat hodnotitele.
+      this_participant_has_no_evalua: Tento účastník nemá žádné hodnotitele.
+    form:
+      form:
+        action_text: "%{action_text}"
+        cancel_changes: Zrušit změny
+        delete_participant: Smazat účastníka
+    import_csv:
+      close: Zavřít
+      importing_participants: Importující účastníky
+      please_wait: Prosím, čekejte ...
+    import_participants:
+      email_address: Emailová adresa
+      empty_row: Prázdný řádek
+      existing_first_name: 'Stávající jméno:'
+      existing_last_name: 'Stávající příjmení:'
+      first_name: Jméno
+      is_there_something_wrong_uploa: Je něco špatně? Nahrajte nový soubor
+      its_right_complete_import: Je to správné! Dokončit import
+      last_name: Příjmení
+      strongparticipantscount_partic: "<Strong> Účastníci %{participantscount} </ strong>. Potvrďte prosím správnou shodu:"
+      user_with_this_email_already_e: Uživatel s tímto e-mailem již existuje
+    import_participants_modal:
+      cancel: zrušení
+      import_participants_from_csv_f: Import účastníků ze souboru CSV
+      upload_participants: Nahrát účastníky
+      upload_your_csv_file: 'Nahrajte soubor CSV:'
+    index:
+      completion_date_is_over: Lhůta pro hodnocení vypršela.
+      download_participants_csv_status: Stažení podrobností o stavu účastníka jako CSV
+      evaluator_status: Stav hodnotitele
+      got_it: Mám to!
+      participant_details: Podrobnosti účastníka
+      projectself_surveyswherestatus: "%{projectself_surveyswherestatus} účastníci nedokončili svůj vlastní průzkum a %{projectparticipantswith_not_en} nemá dostatečné hodnocení. Účastníci můžete přesunout na jiné projekty až do data sestavy (%{projectreport_datestrftimeb_d_})."
+      self_survey_status: Stav vlastního průzkumu
+    logs_modal:
+      created_logsnew: 'Vytvořeno: %{logsnew}'
+      failed_logsfailed: 'Selhalo: %{logsfailed}'
+      got_it: Mám to!
+      import_is_done: Import je hotový.
+      import_logs: 'Importovat protokoly:'
+      not_changed_logsuntouched: 'Nezměněno: %{logsuntouched}'
+      participant_groups_logsgroups: 'Skupiny účastníků: %{logsgroups}'
+      total_participants_logstotal: 'Celkem účastníků: %{logstotal}'
+      updated_logsupdated: 'Aktualizováno: %{logsupdated}'
+    manage_group:
+      continue_managing_your_group: Pokračujte ve správě skupiny
+      edit_evaluators_invitation: Upravit pozvání hodnotitelů
+      edit_participants_invitation: Upravit pozvánku účastníků
+      participants_can_be_added_to_y: Účastníci mohou být přidáni do vaší nové skupiny nyní nebo později
+      send_all_new_emails: Odeslat všechny nové e-maily
+    participant_header:
+      add_participants: PŘIDAT ÚČASTNÍKY
+      choose_products: Vyberte produkty
+      confirm_order: POTVRĎTE OBJEDNÁVKU
+      edit_invitation_email: Upravit e-mail s pozvánkou
+      review_order_details: Zkontrolujte podrobnosti objednávky
+      select_options: Zvolte možnosti
+      send_emails: Odeslat e-maily
+      setup_group: vytvořte skupinu
+      update_addresses: Aktualizovat adresy
+    send_email_to_evaluator:
+      last_reminder_sent_on_surveyem: Poslední připomenutí bylo odesláno na %{surveyemail_sent}
+    send_email_to_participant:
+      last_reminder_sent_on_surveyem: Poslední připomenutí bylo odesláno na %{surveyemail_sent}
+    show_evaluator:
+      evaluation_status: Stav hodnocení
+      language: Jazyk průzkumu
+      last_reminder_never_sent: Připomenutí nebylo zatím odesláno
+      last_reminder_sent_on: Poslední připomenutí bylo odesláno dne
+      relationship: 'Vztah:'
+      send_reminder: Odeslat pozvání
+      surveycompleted_questions_coun: "%{surveycompleted_questions_coun} %{tsharedof} %{surveyquestions_count} %{tsharedquestions}"
+      surveyevaluatortryfirst_name_s: "%{surveyevaluatortryfirst_name} %{surveyevaluatortrylast_name}"
+      tparticipantsshow_evaluatorlan: "%{tparticipantsshow_evaluatorlan}: %{surveyevaluatorlanguagename}"
+      tparticipantsshow_evaluatorlas: "%{tparticipantsshow_evaluatorlas} %{surveyemail_sent}"
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_atto_date_for}"
+    show_participant:
+      completed_on_lparticipantself_: Dokončeno na %{lparticipantself_surveycomplet}
+      edit_participant: Upravit účastníka
+      email_participantuseremail: 'Email: %{participantuseremail}'
+      language_participantuserlangua: 'Jazyk průzkumu: %{participantuserlanguagename}'
+      na: N / a
+      participantcompleted_evaluatio: "%{participantcompleted_evaluatio} hodnotitelů %{participantevaluationscount}"
+      participantself_surveycomplete: "%{participantself_surveycomplete} otázek %{participantself_surveyquestion}"
+      participantuserfirst_name_part: "%{participantuserfirst_name} %{participantuserlast_name}"
+      resend_reports_to_gcsr: Znovu odeslat přehledy do GCSR
+      send_invite: Odeslat pozvání
+    sort_options:
+      evaluator_status: Seřadit podle stavu hodnotitele
+      number_of_evaluators: Seřadit podle počtu hodnotitelů
+      participant_name: Seřadit podle jména účastníka
+      survey_status: Seřadit podle stavu sebe-hodnocení
+  people:
+    account_notification_title: Aktualizace účtu
+    account_updated: Účet byl aktualizován!
+    active_management:
+      error: Chyba
+      success: Úspěch
+    cannot_delete: Nelze odstranit; K tomuto uživateli jsou stále připojeny projekty.
+    destroy:
+      success: Úspěch!
+    index:
+      disabled: Odepřeno
+      filtering_by_client: 'Filtrování podle klienta:'
+      invite_new_users: Pozvat nové uživatele
+      invited: Pozván
+      join_date: Datum vstupu
+      self_assessment: Sebe-hodnocení
+      shared_organizations: Sdílené organizace
+      sort_by: Seřazeno podle
+      sort_by_join_date: Seřadit podle data přihlášení
+      sort_by_org_number: Seřadit podle počtu organizací
+      sort_by_user_name: Seřadit podle jména uživatele
+      survey_takers: Hodnocení
+      user_details: Podrobnosti o uživateli
+      users: Uživatelé
+    manual_unlock:
+      error: Něco se pokazilo!
+      success: Úspěch!
+    new:
+      choose_the_user_main_role_you_: Vyberte hlavní roli uživatele. Později můžete upravit oprávnění.
+      invite_another_user: Pozvat jiného uživatele
+      invite_new_users: Pozvat nového uživatele
+    partials:
+      active_surveys:
+        company: Společnost
+        completed: 'Dokončeno:'
+        completion_date: Datum dokončení
+        evaluated: 'Hodnoceno:'
+        evaluation_surveyscount_people: "%{evaluation_surveyscount} lidí"
+        no_completed_evaluating_survey: Hodnocení nebylo dokončeno.
+        no_completed_self_surveys: Sebe-hodnocení nedokončeno.
+        no_evaluating_surveys_to_compl: Žádné nedokončené hodnocení.
+        no_self_surveys_to_complete: Žádné nedokončené sebe-hodnocení.
+        not_valid: Neplatné
+        participant_and_product_type: Účastník a typ produktu
+        product_type: Typ produktu
+        project: Projekt
+        self_survey: sebe-hodnocení
+        self_surveyscount_self_survey: "%{self_surveyscount} Self Survey"
+        to_complete: 'Dokončit:'
+        to_evaluate: 'Hodnotit:'
+      settings:
+        a_practitioner_that_does_not_w: Konzultant, který pracuje s mnoha klienty a organizacemi.
+        account_status: Stav účtu
+        delete_account_person_pathuser: Smazat účet
+        'false': false
+        gcsr_or_system_administrator_h: GCSR nebo systémový administrátor mají přístup ke všem organizacím.
+        is_this_an_independent_practit: Nezávislý konzultant?
+        'no': Ne
+        practitioner_information: Informace o konzultantovi
+        the_referring_practitioner_wil: Referující konzultant obdrží bezplatný profil.
+        this_user_has_been_active_sinc: Tento uživatel je aktivní od
+        user_role: Role uživatele
+        users_can_only_manage_the_orga: Uživatelé mohou spravovat pouze organizace, které s nimi byly sdíleny.
+        was_this_practitioner_referred: Byl tento konzultant odkázán jiným konzultantem v systému?
+        'yes': Ano
+      shared_organization:
+        edit_user_role: Upravit roli uživatele
+        shared_organizationorganizatio: "(%{shared_organizationorganizatio})"
+      shared_organizations:
+        are_being_shared_with: Jsou sdíleny
+        new_shared_organization: Nová sdílená organizace
+        role: Role
+        shared_organizations: Sdílené organizace
+        type: Typ
+        userfull_name: "%{userfull_name}:"
+        userorganization_userscount_or: "%{userorganization_userscount} organizace"
+      surveys:
+        active_surveys_useractive_surv: Aktivní průzkumy (%{useractive_surveyscount})
+        survey_history_userhistorical_: Historie průzkumu (%{userhistorical_surveyscount})
+      user_information:
+        address: Adresa
+        date_of_birth: 'Datum narození:'
+        edit: Upravit
+        education: 'Vzdělání:'
+        email: 'E-mailem:'
+        full_name: 'Celé jméno:'
+        gender: 'Pohlaví:'
+        language: 'Jazyk:'
+        number_of_direct_reports: 'Počet přímých podřízených:'
+        organization_level: 'Úroveň v organizace:'
+        personal_information: Osobní informace
+        phone_number: Telefonní číslo
+        profession: 'Profese:'
+        professional_information: Profesní informace
+        residing_country: 'Země pobytu:'
+        you_havent_added_any_addresses: Nepřidali jste žádné adresy.
+        you_havent_added_any_phone_num: Nepřidali jste žádná telefonní čísla.
+      user_information_address:
+        user_information_addressname: "%{user_information_addressname}:"
+        user_information_addressregion: "%{user_information_addresscity}, %{user_information_addressregion}"
+      user_information_phone:
+        user_information_phonename: "%{user_information_phonename}:"
+    person:
+      consultant: Konzultant
+      csr: CSR
+      gcsr: GCSR
+      manage_user: Nastavení profilu uživatele
+      system_administrator: Správce systému
+    roles:
+      added_successfully: Uživatel byl správně přiřazen k organizaci!
+      edit_user_role:
+        cancel: zrušení
+        companyname: "'' %{companyname} ''"
+        remove_access_to_this_organiza: Odebrat přístup do této organizace
+        role_on: Role na
+        save: Uložit
+        select: Vybrat
+        userfirst_names: "%{userfirst_name} '"
+      new_user_role:
+        choose_an_organization_to_shar: Vyberte organizaci, se kterou chcete sdílet
+        share_organization: Sdílejte organizaci
+        user_role: 'Role uživatele:'
+      title: Uživatelské role
+    send_unlock_instructions:
+      error: Něco se pokazilo!
+      success: Úspěch!
+    show:
+      account_status: 'Stav účtu:'
+      are_you_sure: Jste si jisti?
+      delete_account: Smazat účet
+      disable_account: Deaktivovat účet
+      enable_account: Povolit účet
+      send_unlock_instructions: Odeslat pokyny k odemknutí
+      settings: Nastavení
+      shared_organizations: Sdílené organizace
+      surveys: Průzkumy
+      unlock_account: Odemknout účet
+      user_information: uživatelské informace
+    users:
+      sort_by: Seřazeno podle
+      sort_by_join_date: Seřadit podle data spojení
+      sort_by_org_number: Seřadit podle počtu organizací
+      sort_by_user_name: Seřadit podle počtu uživatelů
+  phones:
+    index:
+      add_phone: Přidat telefon
+      name: název
+      number: Číslo
+    phone:
+      delete: Vymazat
+  project_steps:
+    contact_info:
+      create_project: Vytvořit projekt
+      previous: Předchozí
+    deliverable_option:
+      next: další
+      previous: Předchozí
+    project_detail:
+      124_questions: 124 otázek
+      62_actual_and_62_ideal_culture: 'otázky: 62 současné kultury a 62 požadované kultury' 
+      84_questions: 84 otázek
+      8_summary_and_29_outer_dimensi: 6 shrnutí a 21 vnějších rozměrů
+      8_summary_and_31_outer_dimensi: 8 shrnutí a 31 vnějších rozměrů
+      audience_is_csuite_presidents_: Cílová skupina jsou top manažeři, prezidenti, viceprezidenti, ředitelé, EMBA, vedoucí představitelé s vysokým potenciálem
+      audience_is_midlevel_managers_: Cílová skupina jsou manažeři středního stupně, supervizoři, MBA, vedoucí týmů,
+      choose_a_name_that_will_help_y: Vyberte jméno, které vám pomůže identifikovat účastníky
+      choose_an_existing_client: Vyberte existujícího klienta
+      client: Klient
+      consulting_company: Konzultační společnost
+      create_a_new_client: Vytvořte nového klienta
+      focus_is_organization_or_team: Zaměření je organizace nebo tým
+      leadership_circle_profile: The Leadership Circle 
+      leadership_circle_profile_mana: 'The Leadership Circle "Manager Edition"'
+      leadership_culture_survey: Průzkum kultury vedení v organizaci
+      or: nebo
+      practitioner: Konzultant
+      select_product: Zvolte Produkt
+  projects:
+    collab:
+      add_and_delete_shared_users: Přidané a smazané uživatele můžete přidávat kdykoli
+      allow_users_edit_view: Povolit uživatelům tisk nebo zobrazení objednávek
+      delete_collaborator: Smazat spolupracovníka
+      invite_more_people: Pozvěte více lidí
+      invite_user_by_typing_email: Pozvěte nového uživatele zadáním jeho e-mailu níže
+      printers: Tiskárny
+      sharing_access_certified_consultant: Sdílení přístupu umožňuje jinému uživateli přístup k objednávkám
+      this_licensor_is_not_shared: Tento projekt momentálně není sdílen
+    convert_sa_to_lcp:
+      please_set_consulting_company_and_consultant_first: Nastavte nejdříve klienta, poradenskou společnost a konzultanta (v nastavení klientů a konzultací).
+      success: Převod byl úspěšný.
+    delete_collaborator:
+      success: Uživatel byl z projektu odebrán.
+    new:
+      itemparameterize: "#%{itemparameterize}"
+      next: další
+      previous: Předchozí
+    partials:
+      edit_form:
+        cancel_changes: Zrušit změny
+        deliverables_and_printing_opti: Možnosti výstupů a tisku
+        project_options: Možnosti projektu
+        save_all_changes: Uložte všechny změny
+      evaluator_invitation:
+        if_you_have_already_sent_a_mes: Po odeslání zpráv INVITATION účastníkům můžete po odeslání aktualizovaných zpráv všem účastníkům a hodnotitelům z panelu projektu.
+        invitations: POZVÁNKY
+        modifying_this_message_will_ch: Upravením tohoto nastavení se změní emailové pozvánky nebo emailové připomínky ve vybraném jazyce.
+        please_do_not_modify_any_text_: Text v závorce (...) neměňte. Jedná se o klíčová slova, která budou při odeslání zprávy nahrazena informacemi účastníka.
+        reminders: PŘIPOMÍNKY
+        warnings: Upozornění
+      evaluators_blank_slate:
+        add_evaluator: Přidat hodnotitele
+        import_evaluators: importujte hodnotitele
+        start_adding_evaluators_now: Začněte přidávat hodnotitele.
+        there_are_no_evaluators_in_thi: V tomto projektu nejsou žádní hodnotitelé.
+      header:
+        comments: Poznámky k tiskárně
+        client: 'Klient:'
+        completion_date: Datum dokončení
+        consulting_settings: Nastavení klientů a konzultací
+        consutling_company: 'Konzultanční společnost:'
+        convert_sa_to_lcp: Převést na úplný Leadership Circle profil
+        create_group_report: Vytvořit sestavu skupiny
+        delete_project: Smazat projekt
+        deleteproject: Smazat projekt
+        generate_draft_reports: Generování návrhů sestav
+        practitioner: 'Konzultant:'
+        printing_access: Přístup k tisku
+        project_id: 'ID projektu:'
+        project_time_zone: Časové pásmo projektu
+        rename_project: Přejmenovat projekt
+        run_new_report: Generovat novou zprávu
+        run_report_date: Datum generace reportů
+        send_all_reminders: Odeslat všechny připomenutí
+        send_new_emails_projectsurveys: Odeslat nové emaily (%{projectsurveyswhereemail_sent_})
+        shared_with: Sdíleno s
+        show_orders: Zobrazit objednávky
+        starting_date: 'Počáteční datum:'
+        status: 'Status:'
+        users_project_access: Sdílené nastavení
+        view_orders: Zobrazit objednávky
+      import_participants_modal:
+        cancel: zrušení
+        import_participants_from_csv_f: Import účastníků ze souboru CSV
+        not_sure_about_the_format_of_t: Nejste si jisti o formátu souboru? <a href='#'> Stáhněte ukázku CSV. </a>
+        upload_participants: importujte účastníky
+        upload_your_csv_file: 'Nahrajte soubor CSV:'
+      modals:
+        delete_project:
+          thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}"
+          thomeindexunable_to_delete_pro: "%{thomeindexunable_to_delete_pro}"
+          thomeindexyes_delete_this_proj: "%{thomeindexyes_delete_this} projekt"
+        no_data_for_preview_warning:
+          at_least_one_survey_must_be_co: Aby byl náhled aktivní, musí být dokončeno alespoň jedno hodnocení.
+          not_enough_data_to_generate_pr: Není k dispozici dostatek dat pro generování náhledu
+        rename:
+          cancel: zrušení
+          please_enter_a_new_name_for_th: 'Zadejte prosím nový název projektu:'
+          rename_project: Přejmenovat projekt
+          save_changes: Uložit změny
+        show_orders:
+          orderorder_number_click: "%{orderorder_number} (kliknutí),"
+          projects_orders: Objednávky projektu
+          the_orders_created_by_a_projec: Objednávky spojené s projektem.
+      new_project:
+        address_form:
+          select_an_address_from_my_acco: Vyberte adresu
+        address_modal:
+          select_from_my_account_address: Vyberte účet
+          there_are_no_addresses_related: Žádné adresy pro tohoto uživatele nejsou k dispozici
+        contact_info:
+          billing_address: Fakturační adresa
+          binder_address: Zasílací adresa
+          contact_information: Kontaktní informace
+          new_address: Nová adresa
+          same_as_shipping_address: Stejná jako zasílací adresa
+          same_as_the_billing_address: Stejná jako fakturační adresa
+          shipping_address: Zasílací adresa
+          this_contact_is_the_only_perso: Pouze tato osoba uvidí všechny fakturační údaje z Leadership Circle
+          this_is_the_address_where_the_: Jedná se o adresu, na kterou půjde report pro kouče
+          this_is_the_address_where_the_3_ring: Jedná se o adresu, na kterou budou doručeny tištěné materiály.
+        deliverable_options:
+          binder_with_tabs: Vazač s příručkou pro interpretaci profilu
+          coach_report: report pro kouče
+          digital_graph: elektronický graf
+          group_report: Skupinový report
+          how_many_copies_per_participan: Kolik kopií na účastníka?
+          i_want_pdf_and_printed_copies_: Chci PDF a tištěné kopie reportů.
+          i_want_the_pdf_copies_only: Chci pouze PDF.
+          participant_graph: Graf pro účastníka
+          participant_report: Report pro účastníka
+          participant_reports_in_csv: Účastnická data ke stažení
+          pdf_file_that_practitioner_ema: PDF soubor, který konzultant pošle emailem účastníkovi
+          please_choose_below_which_ones: 'Zvolte níže, které z nich chcete vytisknout:'
+          profile_interpretation_manual: Příručka interpretace profilu
+          reports: 'Zprávy:'
+          reports_format: 'Formát zpráv:'
+          you_will_get_a_digital_version: 'Získáte elektronickou verzi následujících položek:'
+          you_will_get_only_the_digital_: 'Získáte pouze elektronickou verzi příručky a následující zprávy:'
+          you_will_get_the_digital_versi: Získáte elektronickou verzi příručky a všechny zprávy.
+          your_project_will_include: 'Váš projekt bude zahrnovat:'
+        demographics:
+          custom:
+            age_ranges: Věkové rozmezí
+            all: Všechno
+            country: Země
+            demographic_options: Demografické možnosti
+            direct_report_ranges: počet přímých podřízených
+            education_levels: Úrovně vzdělání
+            ethnic_groups: Etnické skupiny
+            female: žena
+            gender: Pohlaví
+            if_you_choose_to_run_a_custom_: Pokud se rozhodnete generovat profil s příliš malým počtem hodnocení, může být výsledkem report se zkreslenými výsledky. Většina údajů je k dispozici v části Zdroje. Budete mít možnost změnit výběr zpět na výchozí údaje. Obraťte se na svého zástupce služeb zákazníků s otázkami.
+            industries: oblast 
+            male: muž
+            management_levels: Úrovně řízení
+            professions: Profese
+          summary:
+            age_ranges: 'Věkové rozmezí:'
+            countries: 'Země:'
+            demographic_definition: Demografická definice
+            demographic_details: 'Demografické údaje:'
+            demographic_size: 'Demografická velikost:'
+            direct_report_ranges: 'Rozsahy přímé zprávy:'
+            education_levels: 'Úrovně vzdělání:'
+            ethnic_groups: 'Etnické skupiny:'
+            gender: 'Pohlaví:'
+            industry: 'Průmysl:'
+            languages: 'Jazyky:'
+            lcp_participants: Účastníci Leadership Circle
+            lcs_participants: Účastníci Cultural Survey
+            management_levels: 'Úrovně řízení:'
+            me_participants: Účastníci ME
+            participants: Účastníků
+            professions: 'Profese:'
+            sa_participants: SA účastníků
+            this_is_the_number_of_people_y: Jedná se o počet lidí, kterým porovnáte své členy projektu.
+        project_details:
+          all_surveys_should_be_complete: Všechna hodnocení by měla být dokončena k tomuto datu.
+          cancel: zrušení
+          date_reports_are_available: Reporty jsou k dispozici.
+          next: další
+          project_options: Možnosti projektu
+          specify_a_timeline_for_the_pro: Určete časovou osu pro projekt
+        project_options:
+          1st_option: 1. možnost
+          2nd_option: 2. možnost
+          cancel_schedule_announcement: Zrušit Oznámení plánu
+          comment_questions_to_be_includ: Komentujte otázky, které mají být součástí průzkumu
+          evaluators_are_bosses_peers_di: Hodnotitelé jsou šéfové, kolegové, přímí podřízení a další, kteří jsou vyzváni k poskytnutí informací o účastníkovi.
+          how_evaluators_are_invited_to_: Jak jsou hodnotitelé pozváni k účasti
+          i_will_invite: Pozvu hodnotitele sám
+          if_the_participant_is_responsi: Je-li účastník zodpovědný za pozvání jeho hodnotitelů, musí před zahájením vlastního průzkumu pozvat hodnotitele alespoň v minimálním počtu.
+          in_this_section_you_will_be_ev: V této části budete hodnotit
+          indicate_if_the_survey_will_be: Uveďte, zda bude průzkum zaměřen na organizaci jako celek nebo na její část.
+          leaders_managers: Vedoucí / Manažeři
+          members_of_team: členové týmu
+          minimum_evaluations_per_partic: Minimální počet hodnotitelů na účastníka?
+          my_participant_will_invite: Účastník pozve hodnotitele
+          organization: Organizace
+          participants_will_see_the_focu: Účastníci uvidí zaměření v pokynech k průzkumu, jak je uvedeno v poli vpravo
+          promo_code: Promo kód
+          q1_in_your_opinion_what_is_thi: 'Otázka č. 1: Jaký je podle Vás váš největší potenciál, dovednost nebo talent v této osobě a jaké návrhy máte k tomu, abyste využili toto?'
+          q1_what_should_heshe_stop_doin: 'Q1: Co by mel/mela prestat delat?'
+          q2_in_your_opinion_what_is_thi: 'Otázka č. 2: Jaký je podle vás největší výzva nebo oblast pro rozvoj tohoto člověka a jaké návrhy máte pro jeho řešení?'
+          q2_what_can_heshe_improve: 'Q2: Co muže zlepšit?'
+          q3_what_have_you_observed_abou: 'Otázka č. 3: Co jste o této osobě pozorovali, o níž byste chtěli poskytnout další zpětnou vazbu, která nebyla v tomto hodnocení dříve řešena?'
+          q3_what_should_heshe_start_doi: 'Q3: Co by mel/mela zacít delat?'
+          regardless_of_who_invites_eval: Bez ohledu na to, kdo pozve hodnotitele, bude konzultant vždy schopen vidět seznam hodnotitelů v projektovém panelu
+          report_demographics: Reportovat demografické údaje
+          schedule_sending_of_invitation: Odložené odesílání pozvánkových e-mailů podle harmonogramu
+          send_now: Odeslat nyní
+          survey_focus: Zaměření průzkumu
+          survey_focus_description: Popis zaměření průzkumu
+          survey_instructions: 'Pokyny pro průzkum:'
+          team: tým
+          the_invitations_can_be_schedul: Pozvánky mohou být naplánovány tak, aby vypršely v určitý den a čas
+          this_is_the_minimum_number_of_: Jedná se o minimální počet úplných hodnocení, které musí účastník zahrnout do zprávy. Minimální  počet je 5 hodnocení.
+          comment_placeholder: Instrukce pro tiskárnu a dodání, zadejte zde svou zprávu a stiskněte Odeslat
+      participant_invitation:
+        if_you_have_already_sent_a_mes: Když jste již účastníkům poslali zprávy o pozvánkách, můžete po zaslání aktualizovaných zpráv všem účastníkům a hodnotitelům z panelu projektu.
+        invitations: POZVÁNKY
+        modifying_this_message_will_ch: Upravením této zprávy se změní emailová pozvánka nebo připomínka pro účastníka s vybraným jazykem.
+        please_do_not_modify_the_text_: Text v závorce (...) neměňte. Jedná se o klíčová slova, která budou při odeslání zprávy nahrazena informacemi o účastníkovi.
+        reminders: PŘIPOMÍNKY
+        warnings: Upozornění
+      participants_blank_slate:
+        add_participant: Přidat účastníka
+        import_participants: Účastníci importu
+        start_adding_participants_now: Začněte přidávat účastníky.
+        there_are_no_participants_in_t: V tomto projektu nejsou žádní účastníci, kteří by měli být hodnoceni.
+      reminders:
+        if_you_have_already_sent_a_mes: Pokud jste účastníkům již poslali zprávu, mohou být zaslány aktualizované zprávy z projektu.
+        langname_reminder: "%{langname} Připomenutí"
+        modifying_this_message_will_ch: Změna této zprávy změní zprávu s připomínkou s průzkumem anglického jazyka.
+        please_do_not_modify_the_text_: Text v závorce (...) neměňte. Jedná se o klíčová slova, která budou při odeslání zprávy nahrazena informacemi o účastníkovi.
+        warnings: Upozornění
+      report_preview:
+        boss: Nadřízený
+        bosss_boss: Nadřízený nadřízeného
+        direct_report: Přímí podřízení
+        evaluators: Hodnotitelé
+        other: Ostatní
+        participant: 'Účastník:'
+        peer: Kolegové
+        select_categories: 'Vyberte kategorie:'
+        self: Já
+        skill: Dovednost
+      resend_emails:
+        last_reminde: Poslední připomenutí
+        last_reminder_sent_on: Poslední připomenutí bylo odesláno
+        never_sent: Nikdy nebylo posláno
+        participantuseremail: "(%{participantuseremail})"
+        select_all_participants_evalua: Vyberte všechny hodnotitele účastníka
+        surveyevaluatoremail: "(%{surveyevaluatoremail})"
+      statuses:
+        completed_evaluating: Dokončeno hodnocení
+        completed_selfsurveys: Dokončeno sebe-hodnocení
+        in_progress: Probíhající
+        not_started: Nezačal
+        statcompleted_count_of_stattot: "%{statcompleted_count} %{stattotal_count} %{statrelation_namepluralize} dokončen"
+        statusestotal_relations_comple: "%{statusestotal_relations_comple} %{statusestotal_relations} Dokončeno hodnocení"
+        total_of_evaluators: Celkem hodnotitelů
+        total_of_participants: Celkem účastníků
+        evaluations_completed: "%{completed} ze %{total} hodnocení dokončeno"
+        self_completed: "%{completed} ze %{total} <b>Já</b> dokončeno"
+        boss_completed: "%{completed} ze %{total} <b>Nadřízený</b> dokončeno"
+        peer_completed: "%{completed} ze %{total} <b>Kolegové</b> dokončeno"
+        direct_report_completed: "%{completed} ze %{total} <b>Přímí podřízení</b> dokončeno"
+        other_completed: "%{completed} ze %{total} <b>Other</b> dokončeno"
+        boss_boss_completed: "%{completed} ze %{total} <b>Nadřízený nadřízeného</b> dokončeno"
+      tooltip:
+        of: z
+        pluralizecompleted_count_relat: "%{pluralizecompleted_count_relat} dokončeno"
+    project:
+      manage_project: Nastavení projektu
+      resend_emails: Znovu odeslat e-maily
+    project_header:
+      create_group_report: Vygenerovat skupinový profil
+      create_new_project: Vytvořte nový projekt
+    project_table:
+      actions: Akce
+      all_projects: Všechny projekty
+      completion_date: Datum dokončení
+      last_reminder: Poslední připomenutí
+      product: Produkt
+      project: Projekt
+      status: Postavení
+    report_preview:
+      '0': 0%
+      categories: 'Kategorie:'
+      evaluators: Hodnotitelé
+      participant: 'Účastník:'
+      self: Já
+      skill: Dovednost
+    resend_emails:
+      cancel: zrušení
+      select_all_evaluators: Vyberte všechny hodnotitele
+      select_all_participants: Vyberte všechny účastníky
+      select_the_unfinished_particip: Vyberte účastníky a hodnotitele, kterým chcete poslat e-maily. Vyberte typ e-mailu, který chcete poslat zprávu vybraným uživatelům průzkumu.
+      send_emails_to_participants_ev: Pošlete emaily účastníkům a hodnotitelům
+      send_invitation_email: Poslat e-mail s pozvánkou
+      send_reminder_email: Odeslat e-mail s připomenutím
+    roles:
+      collaborator:
+        delete: Vymazat
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{projectname}"
+        tsharedshared_with_project_use: "%{tsharedshared_with} %{project_userscount} %{tprojectscollabprinters}"
+    send_all_reminders:
+      close: Zavřít
+      please_wait: Prosím, čekejte ...
+      sending_all_reminders: Odeslání všech připomenutí
+    share:
+      success: Úspěch
+    show:
+      evaluator_email: Email hodnotitele
+      evaluators: Hodnotitelé
+      options: Možnosti
+      participant_email: Účastní e-mail
+      participants: Účastníci
+    show_consulting_settings:
+      client: Klient
+      consulting_company: Konzultační společnost
+      consulting_settings: Nastavení klientů a konzultací
+      practitioner: Konzultant
+    undo_share:
+      success: Úspěch
+  sa_survey_mailer:
+    request_invitation_email:
+      have_a_nice_day: Hezký den!
+      hello: Ahoj,
+      participant_email: 'E-mail účastníka:'
+      participant_name: 'Jméno účastníka:'
+      selfsurvey_completed_at: 'Vlastní průzkum dokončen na adrese:'
+      selfsurvey_id: 'Vlastní průzkum ID:'
+      we_recorded_a_new_request_for_: 'Zaznamenali jsme novou žádost o pozvání od uživatele:'
+    survey_completed_email:
+      age_range: Věkové rozmezí
+      basic_data: Základní údaje
+      company_name: 'Jméno společnosti:'
+      company_revenue: výnosy společnosti
+      country: Země
+      demographics: Demografie
+      education_level: Stupeň vzdělání
+      ethnic_group: Etnická skupina
+      gender: Pohlaví
+      have_a_nice_day: S pozdravem
+      hello: Dobrý den,
+      industry: Průmysl
+      management_level: Úroveň řízení
+      organization_size: Velikost organizace
+      participant_email: 'E-mail účastníka:'
+      participant_name: 'Jméno účastníka:'
+      participant_phone_number: 'Účastnické telefonní číslo:'
+      please_check_the_attachment_re: Zkontrolujte prosím přílohu - zprávy jsou ve formátu PDF.
+      profession: Profese
+      reports: Zprávy
+      selfsurvey_completed_at: 'Vlastní průzkum dokončen na adrese:'
+      selfsurvey_created_at: 'Vlastní průzkum vytvořený na adrese:'
+      selfsurvey_id: 'Vlastní průzkum ID:'
+      tlc_consultant_who_referred: 'TLC poradce, který referoval:'
+      we_noticed_that_the_new_selfsu: 'Všimli jsme si, že nový vlastní průzkum byl dokončen. Níže jsou uvedeny podrobnosti:'
+    survey_completed_participant_email:
+      dear_userfull_name: Dear %{userfull_name},
+      if_youd_like_to_understand_how: Pokud byste chtěli vědět, jak ostatní vidí vaše vedení, rád bych vám řekl o úplném profilu Leadership Circle, který poskytuje zpětnou vazbu od těch, s nimiž vedete a pracujete - přímých podřízených, kolegů i nadřízených.
+      please_do_not_hesitate_to_reac: Neváhejte se s žádnými dotazy obrátit. Jsem rád, že vám pomůžeme.
+      request_a_full_lcp: Požádejte o úplný LCP
+      thank_you_again: Děkuji ještě jednou,
+      thank_you_for_taking_the_leade: 'Děkujeme, že jste se zúčastnili průzkumu Leadership Circle: Self-Assessment. Doufáme, že se vám líbila kniha Mastering Leadership a že pro vás budou zpráva a zpětná vazba užitečné na vaší cestě leadershipu.'
+      to_help_you_better_understand_: Abychom vám pomohli lépe porozumět vašemu profilu, máte k dispocizi příručku, ktera vysvětluje všechny aspekty vašeho grafu a profilu.
+  sa_surveys:
+    demographics:
+      apt_suite_bldg: číslo, budova ...
+      before_you_begin: Než začnete
+      company_details: Detaily společnosti
+      company_revenue: výnosy společnosti
+      continue_to_survey: Pokračujte v průzkumu
+      need_help: Potřebujete pomoc?
+      personal_information: Osobní informace
+      select_age: Vyberte věk
+      select_ethnic_group: Vyberte etnickou skupinu
+      select_your_companys_industry: Vyberte průmyslovou oblast společnosti
+      select_your_education_level: Vyberte úroveň vzdělání
+      select_your_gender: Vyber své pohlaví
+      select_your_management_level: Vyberte úroveň řízení
+      select_your_profession: Vyberte svou profesi
+      select_your_residing_country: Vyberte svou domovskou zemi
+      size_of_organization: Velikost organizace
+      street_address: Adresa ulice (222 example avenue) ...
+      tlc_would_like_to_gather_some_: TLC bude zachovávat informace pouze pro interní účely výzkumu. TLC nikdy nesdílí vaše informace. Byli bychom rádi, kdybyste odpověděli na otázky; Nicméně můžete vždy zvolit možnost "Preferovat odpověď" nebo "Ostatní".
+      type_your_company_name: Zadejte název společnosti ...
+      we_need_a_little_more_informat: Potřebujeme o vás trochu víc informací ...
+      zip_post_code: PSČ / PSČ ...
+    expanding_development:
+      discover_more_about_the_leader: Zjistěte více o Leadership Circle
+      need_help: Potřebujete pomoc?
+      request_invitation: Žádost o pozvánku
+      requesting_invitation: Žádost o pozvánku ...
+      would_you_like_to_continue_exp: Chtěli byste pokračovat v rozvoji svého leadershipu?
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    registration:
+      complete_the_registration_belo: Proveďte sebe-hodnocení pomocí níže uvedené registrace. Pokud nejste schopni dokončit sebehodnocení. Musíte provést jedno nastavení. Výsledky budou odeslány do registrovaného e-mailu po dokončení samohodnocení.
+      consultant_error: V tomto e-mailu jsme nenašli konzultanta TLC. Zadejte prosím jinou e-mailovou adresu nebo zvolte možnost "Ne".
+      did_a_tlc_consultant_refer_you: Informoval TLC konzultant o naší knize <b> Mastering Leadership </ b>?
+      'false': false
+      i_agree_to_tlc: Souhlasím s TLC
+      ja: true
+      need_help: Potřebujete pomoc?
+      nein: false
+      'no': Ne
+      privacy_and_policy_terms: Soukromí a podmínky služby
+      take_the_survey: Odpovězte na dotazník
+      thank_you_for_your_interest: Děkujeme Vám za Váš zájem.
+      type_consultant_email: Zadejte své jméno nebo e-mail ...
+      type_email: Zadejte svůj e-mail ...
+      type_first_name: Zadejte své jméno ...
+      type_last_name: Zadejte své příjmení ...
+      type_phone_number: Zadejte své telefonní číslo ...
+      'yes': Ano
+    thank_you_participant:
+      did_you_enjoy_your_survey_shar: Líbí se vám tento profil? Sdílejte to s přáteli.
+      discover_more_about_the_leader: Zjistěte více o Leadership Circle
+      facebook: Facebook
+      for_taking_the_leadership_circ: Pro získání profilu Leadership Circle - Self Assessment. Přehledy s výsledky se dostanou do vašeho e-mailu během několika minut.
+      linkedin: Linkedin
+      need_help: Potřebujete pomoc?
+      request_invitation: Žádost o pozvánku
+      requesting_invitation: Žádost o pozvánku ...
+      thank_you_practitionerfull_nam: Děkuji, %{practitionerfull_name}
+      twitter: Twitter
+      would_you_like_to_take_the_bfu: Chtěli byste se účastnit průzkumu <b> Full 360 Profile </ b> a zjistit, jak vás vidí vaší zaměstnanci, kolegové a nadřízení? Klikněte na odkaz níže a my vás odkážeme na kouče, který vás provede celým procesem.
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    welcome:
+      bget_your_copy_hereb: "<B> Získejte svou kopii zde </ b>"
+      coming_back: Vrátit se?
+      login: Přihlásit se
+      need_help: Potřebujete pomoc?
+      sorry_but_your_answers_are_inc: Je nám líto, ale vaše odpověď je nesprávná. Prosím zkuste to znovu.
+      submit_answers: Odeslat odpověď
+      this_area_is_a_special_section: 'Tato oblast je pro naše čtenáře speciální sekcí. Doufáme, že jste si užili knihu <b> Mastering Leadership </ b>. Odpovězte prosím na níže uvedenou otázku, abyste zahájili The Leadership Circle: sebehodnocení. Odpověď je v knize.'
+      welcome_to: Vítejte v
+  search:
+    index:
+      actions: Akce
+      client_name: jméno klienta
+      clients: Klienti
+      consultant_companies: Konzultační společnosti
+      created_at: Vytvořeno u
+      email: E-mailem
+      evaluations: Hodnocení
+      industry: Průmysl
+      name: název
+      number_of_participants: Počet zúčastněných
+      number_of_projects: Počet projektů
+      order: Objednat
+      order_date: Datum objednávky
+      orders: Objednávky
+      practitioners: Konzultanti
+      product_type: Typ produktu
+      projects: Projekty
+      report_name: Název sestavy
+      results_limited_to_20_please_u: Zobrazeno pouze 20 výsledků, prosím použijte přesnější vyhledávání
+      search_results_total_count: Výsledky vyhledávání
+      selfsurveys: Sebe-hodnocení
+      status: Postavení
+    orders_search:
+      number_of_participants: Počet zúčastněných
+      order: Objednat
+      order_date: Datum objednávky
+      orders: Objednávky
+      product_type: Typ produktu
+      report_name: Název sestavy
+      search_results_total_count: Výsledky hledání (%{total_count})
+      status: Postavení
+    partials:
+      index:
+        actions: Akce
+        client_name: jméno klienta
+        clients: Klienti
+        completion_date: Datum dokončení
+        created_at: Vytvořeno u
+        email: E-mailem
+        evaluations: Hodnocení
+        industry: Průmysl
+        last_reminder: Poslední připomenutí
+        name: název
+        number_of_participants: Počet zúčastněných
+        number_of_projects: Počet projektů
+        order: Objednat
+        order_date: Datum objednávky
+        orders: Objednávky
+        practitioners: Konzultanti
+        product: Produkt
+        product_type: Typ produktu
+        project: Projekt
+        projects: Projekty
+        report_name: Název sestavy
+        search_results: Výsledky vyhledávání
+        selfsurveys: Sebe-hodnocení
+        status: Postavení
+      order:
+        not_found_record_invalid: Nenalezeno! Záznam neplatný.
+      organization:
+        create_group_report: Vytvořit sestavu skupiny
+        manage_client: Správa klienta
+      practitioner:
+        preview_user: Náhled uživatele
+    projects_search:
+      projects: Projekty
+      search_results_total_count: Výsledky hledání (%{total_count})
+    surveys_search:
+      actions: Akce
+      completed_on: Dokončeno
+      completion_date: Datum dokončení
+      delete: Vymazat
+      evaluating: Hodnocení
+      evaluations: Hodnocení
+      language: Jazyk
+      last_logged_in: Poslední přihlášení
+      more_actions: Další akce
+      move: Hýbat se
+      not_started: Nezačal
+      of: z
+      project_name: název projektu
+      questions: Otázky
+      reset: Resetovat
+      role: Role
+      search_results_total_count: Výsledky hledání (%{total_count})
+      self_surveys: Sebe-hodnocení
+      survey_taker_details: Průzkumné detaily
+    users_search:
+      actions: Akce
+      created_at: Vytvořeno u
+      email: E-mailem
+      evaluations: Hodnocení
+      name: název
+      practitioners: Konzultanti
+      search_results_total_count: Výsledky hledání (%{total_count})
+      selfsurveys: Self-Surveys
+  shared:
+    1_printed_copy_per_participant: 1 tištěná kopie na účastníka
+    actions: Akce
+    add: Přidat
+    add_participant: Přidat účastníka
+    cancel: zrušení
+    certified_consultants: Konzultanti
+    companies: Klienti
+    complete_by: Dokončete
+    completed_at: Dokončeno na
+    confirm: Jsi si jistá?
+    create_group_report: Vytvořit sestavu skupiny
+    created_at: Vytvořeno u
+    date_created: Datum vytvoření
+    delete: Vymazat
+    demographic: Demografický
+    details: Podrobnosti
+    edit: Upravit
+    edit_evaluator: Upravit hodnocení
+    email: E-mailem
+    import_participants: Účastníci importu
+    kind: Druh
+    licensor: Poskytovatel licence
+    manage_evaluators: Spravujte hodnotitele
+    menu:
+      dashboard: Dashboard
+      disabled: Deaktivováno
+      invited: Pozván
+      orders: Objednávky
+      print_reports: Tisk sestav
+      project_center: Projektové centrum
+      survey_takers: Hodnotitelé
+      utilities: Utility
+    more_actions: Další akce
+    name: název
+    new:
+      footer:
+        current_useremail: "(%{current_useremail})"
+        go_back_to_the_csr_project_cen: Vraťte se do Centra projektů CSR
+        you_true_useremail_are_imperso: Vy (%{true_useremail}) se vydáváte za konzultanta
+        your_password_will_expire: Vaše heslo vyprší v %{days_to_expire} dní. 
+        renew_your_password: Prosím, změňte heslo.
+      header:
+        go_to_project_center: Přejděte do Centra projektů
+        link_to_class_logo__link_do: "/"
+        selfassessment: Sebehodnocení
+        the_leadership_circle: 'Kruh vedení:'
+        the_leadership_circle_profilet: Profil kruhového vedení
+        the_leadership_circle_selfasse: 'Kruh vedení: sebehodnocení'
+      modal_search:
+        all: Všechno
+        orders: Objednávky
+        projects: Projekty
+        survey_takers: Hodnotitelé
+        users: Uživatelé
+      modal_wait:
+        importing_participants: Importující účastníci
+        please_wait: Prosím, čekejte ...
+      nav:
+        active_projects: Aktivní projekty
+        my_clients: Moji klienti
+        my_orders: Moje zprávy
+        my_surveys: Moje průzkumy
+        people: Lidé
+        print_reports: Tisk sestav
+        project_center: Projektové centrum
+        utilities: Utility
+      navigation_mobile:
+        logout: Odhlásit se
+        my_account: Můj účet
+      session_timeout_modal:
+        attention: Pozor!
+        logout: Odhlásit se
+        more_time: Více času
+        you_have_been_inactive_and_you: Byl jste neaktivní a budete automaticky odhlášeni v <b class = "remaining-time"> 5:00 </ b> minutách. Chtěli byste více času?
+      session_timeout_remodal_modal:
+        attention: Pozor!
+        logout: Odhlásit se
+        more_time: Více času
+        you_have_been_inactive_and_you: Byl jste neaktivní a budete automaticky odhlášeni v <b class = "remaining-time"> 5:00 </ b> minutách. Chtěli byste více času?
+      user_navigation:
+        logout: Odhlásit se
+        my_account: Můj účet
+        stop_impersonating_current_use: Ukončete pohled %{current_userfull_name}
+        take_selfassessment: Proveďte sebehodnocení
+    next_page: Další strana
+    not_set: Nenastaveno
+    notify:
+      delete_warning: Nelze vymazat hodnotitele, kteří dokončili průzkum.
+      moved_with_success: Účastník byl úspěšně přesunut.
+      success: Uložená data.
+      update_warning: Nelze měnit hodnotitele, kteří dokončili průzkum.
+    number: Číslo
+    of: z
+    old:
+      forbidden:
+        forbidden: Přístup odepřen
+    participants: Účastníci
+    pdf_report: PDF Report
+    people: lidé
+    percent_complete: "% Kompletní"
+    please_remove_children: Nelze odstranit, protože stále existují závislé údaje (organizace, projekty). Nejprve musíte odstranit závislé údaje.
+    preview: Náhled
+    preview_report: Náhled zprávy
+    previous: Předchozí
+    printing_access: Přístup k tisku
+    projects: Projekty
+    questions: Otázky
+    rename: Přejmenovat
+    report: Zpráva
+    report_for: Report For
+    reset_password: Obnovit heslo
+    reset_password_confirm: Opravdu chcete obnovit heslo?
+    retake: Znovudobytí
+    role: Role
+    save: Uložit
+    save_changes: Uložit změny
+    send_invitations: Odeslání pozvánek
+    shared_settings: Sdílené nastavení
+    shared_with: Sdíleno s
+    status: Postavení
+    system: Systém
+    to: na
+    total: Celkový
+    users: Uživatelé
+    were_found: byly nalezeny
+    when: Když
+    who: Kdo
+  support:
+    array:
+      last_word_connector: ", a"
+      two_words_connector: " a"
+      words_connector: ","
+  surveys:
+    another_show:
+      surveyproductname: "%{surveyproductname}"
+      tsurveysshowsurvey_for_surveye: "%{tsurveysshowsurvey_for} %{surveyevaluatorfull_name}"
+    answers:
+      are_you_sure_undone: Jsi si jistá? Zkontrolujte prosím všechny vaše odpovědi. Tento krok nelze vrátit zpět
+      back_to_surveys: Zpět na Průzkumy
+      finish_survey: Dokončení průzkumu
+      next_section: Další část
+      previous_section: Předchozí část
+      questions_completed: Otázky dokončeny
+    before_you_begin:
+      back_to_main_page: Zpět na hlavní stránku
+      before_you_begin: Než začnete
+      continue_to_survey: Pokračujte v průzkumu
+      need_help: Potřebujete pomoc?
+      tlc_would_like_to_gather_some_: TLC by chtěla shromáždit pouze informace pro interní výzkumný proces. TLC nesdílí vaše informace. Byli bychom rádi, kdybyste odpověděli na otázky. Pokud se rozhodnete nezúčastnit se, zvolte možnost "Nechte odpovědět" a klikněte na tlačítko Pokračovat v průzkumu.
+      we_need_a_little_more_informat: Potřebujeme o vás trochu víc informací ...
+    demographic:
+      before_you_begin: Než začnete
+      raw_data_only_hint: Tato pole jsou vyžadována pro zprávy ve formátu pdf, ale ne pouze pro výsledky dat
+      tlc_would_like_to_gather_some_: TLC by chtěla shromažďovat informace pouze pro interní účely výzkumu. TLC nesdílí vaše informace. Byli bychom rádi, kdybyste odpověděli na otázky; Nicméně můžete vždy zvolit možnost "preferuji neodpovídat".
+      we_need_a_little_more_informat: Potřebujeme o vás trochu víc informací ...
+    done: Klepnutím sem můžete provést průzkum.
+    index:
+      active_surveys: Aktivní průzkumy
+      complete_active_surveys: Prosíme, vyplňte všechny níže uvedené aktivní průzkumy
+      content: Obsah
+      my_active_surveys: Mé aktivní průzkumy
+      need_help: Potřebujete pomoc?
+      self_survey: Samostatný průzkum
+      survey_history: Historie průzkumu
+      take_survey: Proveďte průzkum
+    invite_evaluators:
+      add_evaluator: Přidat hodnotitele
+      back_to_survey_list: Zpět na přehled
+      evaluators_provide_feedback_on: Hodnotitelé poskytují zpětnou vazbu o vašich schopnostech a dovednostech vést.
+      invite_evaluators: Pozvat hodnotitele
+      need_help: Potřebujete pomoc?
+      take_the_survey: Proveďte průzkum
+      you_have_enough_evaluators_to_: Máte dostatek hodnotitelů k tomu, abyste provedli průzkum. Přesto doporučujeme, abyste měli minimálně 10 hodnotitelů <b> </ span>. <Span class = 'minimum-evaluators'> <b>
+      you_must_add_at_least_span_cla: Musíte přidat minimálně <span class = 'minimum-evaluators'> %{current_userinvitee_surveys} další hodnotitelé </ span>, abyste mohli provést průzkum.
+    not_enough_invited_evaluators: Účastník může vyzvat hodnotitele. Nedostatek hodnotitelů, aby se šetřil.
+    not_valid: Je nám líto, ale tento průzkum již není k dispozici.
+    partials:
+      modals:
+        need_help:
+          description: Zvolte průzkum ze seznamu níže, pro který potřebujete pomoc. Náš konzultant vás bude kontaktovat co nejdříve.
+          main_support: Hlavní podporat
+      continue_survey:
+        '100': 100%
+        culture_survey_for: Kulturní průzkum pro
+        current_userfirst_name_current: "%{current_userfirst_name} %{current_userlast_name}"
+        review_your_answers: Zkontrolujte své odpovědi
+        self_survey_for: Vlastní průzkum pro
+        thanks_current_userfirst_name: Díky %{current_userfirst_name},
+        you_are_currently_taking_secti: V současné době používáte sekci %{paramssection_page} %{surveysectionscount}
+        you_have_answered_all_the_ques: Odpověděli jste na všechny otázky ze sekce %{paramssection_page}.
+      evaluator_form:
+        cancel: zrušení
+        update_evaluator: Aktualizovat hodnocení
+      evaluators:
+        edit_evaluator: Upravit hodnocení
+        evaluator_details: Podrobnosti hodnotitele
+        language: Jazyk
+        relationship: Vztah
+      modal:
+        add_evaluator: Přidat hodnotitele
+        always: Vždy
+        cancel: zrušení
+        edit_evaluator: Upravit hodnocení
+        na: N / A
+        never: Nikdy
+        often: Často
+        once_added_an_email_will_be_im: Po přidání e-mailu, bude okamžitě hodnotiteli zaslána pozvánka, která je vyzve k účasti.
+        previous_question: Předchozí otázka
+        review_your_answers: Zkontrolujte své odpovědi
+        seldom: Zřídka
+        self_survey_for_bthe_most_effe: Sebe-hodnocení <b> nejúčinnějšího vedoucího, kterého znám </ b>
+        sometimes: Někdy
+      my_active_surveys:
+        complete_by: Dokončete
+        current_userinvitee_completed_: "%{current_userinvitee_completed_} hodnocení %{current_userinvitee_surveyssel} dokončeno"
+        evaluations_self:
+          one: 'Pro dokončení máte <b> jedno hodnocení </ b>:'
+          other: 'Máte <b> hodnocení %{count} </ b> pro dokončení:'
+        evaluator_setup: Nastavení hodnotitele
+        my_active_surveys: Mé aktivní průzkumy
+        please_complete_all_of_your_ac: Prosíme, vyplňte všechny níže uvedené aktivní průzkumy.
+        self_evaluations_left:
+          one: 'Máte k dispozici <b> jedno autoevaluace </ b>:'
+          other: 'Máte <b> autoexpozice %{count} </ b> pro dokončení:'
+        self_survey: Samostatný průzkum
+        take_the_survey: Proveďte průzkum
+        you_must_invite_at_least_self_: Musíte pozvat alespoň %{self_surveyprojectminimum_eval} hodnotitelů, abyste mohli provést průzkum.
+      new_or_pending:
+        continue_the_survey: Pokračujte v průzkumu
+        current_sectionquestionscount_: "%{current_sectionquestionscount} otázky"
+        go_back_to_survey_list: Vraťte se na přehled
+        need_help: Potřebujete pomoc?
+        of: z
+        previous_section: Předchozí část
+        restart_previous_survey: Restart předchozího průzkumu
+        start_the_survey: Spusťte průzkum
+        you_have_answered: Odpověděli jste
+      no_evaluators:
+        add_evaluator: Přidat hodnotitele
+        why_do_i_have_to_invite_evalua: " "
+        you_currently_do_not_have_any_: V současné době nemáte žádné hodnotitele.
+        you_need_to_have_at_least_span: Musíte mít minimálně <span class = 'minimum-evaluators'> %{minimum_evals} hodnotitelů </ span>, abyste provedli průzkum. <br> Kliknutím na tlačítko níže přidáte hodnotitele do svého seznamu.
+      question:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        agree: Souhlasím
+        always: Vždy
+        culture_survey_for: Kulturní průzkum pro
+        disagree: Nesouhlasím
+        na: N / A
+        never: Nikdy
+        of: z
+        often: Často
+        perc_progress: "%{perc_progress}%"
+        previous_question: Předchozí otázka
+        providing_feedback_for: Poskytování zpětné vazby pro
+        question: Otázka
+        seldom: Zřídka
+        self_survey_for: sebe-hodnocení pro
+        slightly_agree: Spíše souhlasím
+        slightly_disagree: Spíše nesouhlasím
+        sometimes: Někdy
+        strongly_agree: souhlasím
+        strongly_disagree: nesouhlasím
+        very_strongly_agree: Silně souhlasím
+        very_strongly_disagree: Silně nesouhlasím
+        you_are_currently_taking_secti: V současné době používáte sekci %{sections_page} %{surveysectionscount}
+        "×": "×"
+      review:
+        finish_your_survey: Dokončete svoje odpovědi
+        need_help: Potřebujete pomoc?
+        next_section: Další část
+        previous_section: Předchozí část
+        review_continue: Zkontrolujte a pokračujte
+        review_your_answers_to_the_lea: Zkontrolujte své odpovědi v %{product_name}. Pokud chcete svoji odpověď změnit,  klikněte na ni.
+        section_sectionscurrent_page_o: Část %{sectionscurrent_page}/%{sectionstotal_pages}
+        your_survey_is_almost_complete: Váš průzkum je téměř kompletní. Zkontrolujte prosím vaše odpovědi.
+        your_survey_is_not_yet_complet: Váš průzkum ještě není dokončen. Máte %{sectionstotal_pages_sectionscu} sekce k dokončení.
+      review_form:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: Vždy
+        cancel: zrušit
+        na: Nehodí se
+        never: Nikdy
+        often: Často
+        seldom: Zřídka
+        sometimes: Někdy
+        update: Aktualizace
+      sections:
+        survey_taker_evaluator_section_1_description:
+          leadership_profile: Profil vedení
+          providing_feedback_section_sec: Poskytování zpětné vazby %{sectionscurrent_page}/%{sectionstotal_pages}
+          you_will_be_able_to_review_and: Na konci této části budete moci posoudit a upravit své odpovědi.
+        survey_taker_section_1_description:
+          culture_survey: Kulturní průzkum
+          leadership_profile: Profil vedení
+          section_sectionscurrent_page_o: Část %{sectionscurrent_page}/%{sectionstotal_pages}
+          you_will_be_able_to_review_and: Na konci této části budete moci posoudit a upravit své odpovědi.
+        survey_taker_section_2_description:
+          at_the_end_of_this_section_you: Na konci této části budete moci posoudit a upravit své odpovědi.
+          most_effective_leader: Písemné poznámky
+          section_sectionscurrent_page_o: Část %{sectionscurrent_page}/%{sectionstotal_pages}
+      survey_history:
+        completed_on: Dokončeno
+        evaluations_completed:
+          one: 'Dokončili jste <b> jedno hodnocení </ b>:'
+          other: 'Dokončili jste hodnocení <b> %{count} </ b>:'
+        evaluator_setup: Nastavení hodnotilete
+        my_survey_history: Moje historie průzkumu
+        self_evaluations_completed:
+          one: 'Dokončili jste <b> jedno sebehodnocení </ b>:'
+          other: 'Dokončili jste <b> autoexpozice %{count} </ b>:'
+        self_survey: Samostatný průzkum
+        this_is_the_list_of_all_the_su: Toto je seznam všech průzkumů, kterých jste se zúčastnili.
+      thanks:
+        all_your_answers_have_been_sub: Všechny vaše odpovědi byly odeslány a uloženy. Děkujeme Vám za Váš čas.
+        go_back_to_survey_list: Vraťte se na přehled
+        log_out: Odhlásit se
+        thanks_current_userfirst_name_: Díky, %{current_userfirst_name}, za provedení tohoto průzkumu.
+    process_error: Došlo k chybě při procesu nebo připojení.
+    questions:
+      put_your_answer_here: Zde zadejte svoji odpověď
+    questions_completed: Otázky byly dokončeny
+    sa_request: Děkujeme, budeme v kontaktu.
+    sections:
+      current_leadership_culture: V této části budete hodnotit <b> %{participant} </ b>. Vaším úkolem je popsat jeho/její chování jako lídra, které jsou nejčastěji uplatňovány, povzbuzovány nebo povoleny vůdci. Může existovat mnoho faktorů, které ovlivňují vaše celkové zkušenosti s vedením ve vaší organizaci nebo týmu. Například dva různí manažeři mají kontrastní styly vedení a oba mají vliv na vedoucí kulturu této organizace nebo týmu. Popište chování, které má nejvíce vliv na vaše zkušenosti.
+      desired_leadership_culture: V této sekci odpovězte na otázky podle toho, jak si přejete, nebo chcete, aby vedoucí kultura <b> %{participant} </ b> byla. Odpovězte na každou otázku, jako by vůdčí kultura byla ideální - která by jí umožnila prosperovat v současném a budoucím prostředí.
+      ideal_to_ideal: ''
+      leadership_profile: Tato část je navržena tak, aby vytvořila obraz o způsobu vedení pro <b> %{participant} </ b>. Odpovídejte pomocí prvního dojmu. Použijte možnost N / A pouze pokud neznáte odpověď nebo se otázka na daný případ nevztahuje.
+      manager_profile: 'Tato část je určena k vytvoření profilu správce <b> %{participant} </ b>. Rychle pracujte na otázkách pomocí prvního dojmu. Použijte možnost "Nehodí se" pouze , pokud neznáte odpověď na otázku nebo se otázka na lídra nevztahuje.'
+      most_effective_leader: |-
+        V této části již nebudete hodnotit <b> %{participant} </ b>.
+        Místo toho si vzpomeňte na nejlepšího lídra, se kterým jste kdy pracovali (přímo nebo nepřímo). <B> Mějte na mysli tuto osobu a odpovězte na následující otázky. </ B>
+        Na konci této části budete moci posoudit a upravit své odpovědi.
+      write_in_feedback: V této části poskytněte další písemnou zpětnou vazbu pro účastníka <b> %{participant} </ b>. Účastníci vždy oceňují písemné komentáře jako zvláště užitečné pro pochopení jejich profilů. Vaše zpětná vazba může zahrnovat i oblasti, které tento průzkum nepokrýval nebo příklady, které ilustrují, proč jste hodnotili tak, jak jste hodnotili, nebo něco jiného, co je pro hodnoceného důležité.
+    self:
+      end_section: Na konci této části budete moci posoudit a upravit své odpovědi
+      identify_effective_leader: Namísto toho zjistěte, jaký je nejúčinnější vůdce, se kterým jste kdy pracovali (přímo nebo nepřímo)
+      most_effective_leader: Nejúčinnější vůdce
+      no_longer_be_evaluating: V této části již nebudete hodnotit
+      surveyproductname: "%{surveyproductname}"
+      that_person_in_mind: Odpovězte na tyto otázky s touto osobou v mysli
+      tsurveysselfno_longer_be_evalu: "%{tsurveysselfno_longer_be_evalu} %{surveyevaluatorfull_name}."
+    show:
+      survey_for: Průzkum pro
+    survey:
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_at_format_lon}"
+    survey_progress:
+      current_sectionanswers_forsurv: "%{current_sectionanswers_forsurv}/%{current_sectionquestionscount}"
+      current_sectionpercentage_comp: "%{current_sectionpercentage_comp}/%{tsharedpercent_complete}"
+  system_history:
+    announcement_send_at_changed: Datum odeslání připomenutí změněno na %{date}
+    change_history: Historie změn
+    comment_questions_changed: Komentovat otázky změněny na '%{value}'
+    completion_date_changed: Datum dokončení bylo změněno na %{date}
+    create_participant: Vytvořil účastníka %{participant}
+    delete_participant: Odstraněný účastník %{participant}
+    demographics_policy_changed: Demografické údaje sestavy byly změněny na '%{value}'
+    description: Níže jsou změny provedené v tomto pořadí od doby, kdy byla vytvořena na %{created_date}
+    order_deleted: Odstraněná objednávka %{value}
+    pdf_copies_only_changed: Kóty PDF jsou pouze vybrané
+    printed_copies_changed: Vybrány jsou PDF a vytištěné kopie
+    project_created: Projekt byl vytvořen
+    report_date_changed: Datum sestavy se změnilo na %{date}
+    retake_added: Retake pro přidání %{participant}
+    retake_removed: Retake pro odstranění %{participant}
+  templates:
+    form:
+      form:
+        if_you_have_already_sent_the_m: Pokud jste již zprávu odeslali účastníkům, musíte je znovu obeslat, aby získali aktualizovanou zprávu.
+        modifying_this_message_will_ch: Změna této zprávy změní uvítací e-mail účastníka pro všechny účastníky s daným jazykem.
+        please_do_not_modify_any_text_: Prosím, neměňte žádný text v rámci (* || *) níže. Jsou to klíč, který bude při odeslání zprávy nahrazen informacemi účastníka.
+        reset_english_message: Resetujte anglickou zprávu
+        return_to_list: Vraťte se do seznamu
+        update_english_message: Aktualizovat anglickou zprávu
+    participant_invitation_msg:
+      message: Zpráva
+      reset_english_message: Resetujte anglickou zprávu
+      save_templatelanguagename_mess: Uložení zprávy %{templatelanguagename}
+      subject: Předmět
+  time:
+    am: dopoledne
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: odpoledne
+  users:
+    avatar_upload:
+      error: Nahrávání zaznamenalo chybu. Zkontrolujte data znovu a zkuste to znovu.
+      success: Obrázek byl úspěšně nahrán.
+    demographic:
+      demographics: Demografie
+    demographic_form:
+      company_details: Detaily společnosti
+      continue_to_survey: Pokračujte v průzkumu
+      need_help: Potřebujete pomoc?
+      personal_information: Osobní informace
+    edit:
+      accounting_id: Účetní ID
+      add_address: Přidat adresu
+      add_phone: Přidat telefonní číslo
+      address_type: Typ adresy
+      addresses: Adresy
+      age: 'Stáří:'
+      back_to_settings: Zpět na Nastavení
+      cancel: zrušení
+      change_password: Změnit heslo
+      change_profile_picture: Změnit profilový obrázek
+      city: Město
+      company_details: Detaily společnosti
+      company_name: Jméno společnosti
+      company_revenue: výnosy společnosti
+      confirm_password: 'Potvrďte heslo:'
+      country_address: Země
+      current_password: Aktuální heslo
+      date_of_birth: Datum narození
+      education: Vzdělání
+      email: E-mailem
+      ethnic_group: Etnická skupina
+      fax: Fax
+      first_name: Jméno
+      gender: Pohlaví
+      home: domů
+      industry: Průmysl
+      language: Jazyk
+      last_name: Příjmení
+      management_level: Úroveň řízení
+      mobile: mobil
+      new_password: nové heslo
+      number_of_direct_reports: Počet přímých zpráv
+      organization_level: Úroveň organizace
+      password: Heslo
+      password_label: 'Heslo:'
+      personal_information: Osobní informace
+      phone_numbers: Telefonní čísla
+      please_enter_address_name: Zadejte prosím název adresy
+      please_enter_email: Zadejte e-mail
+      please_enter_new_confirmation_: Zadejte nové heslo pro potvrzení
+      please_enter_new_password: Zadejte nové heslo
+      please_enter_phone_number: Zadejte prosím telefonní číslo
+      please_enter_valid_confirmatio: Zadejte prosím platné heslo pro potvrzení
+      please_enter_valid_email: Zadejte platný e-mail
+      profession: Profese
+      professional_information: Profesní informace
+      profile_picture: Profilový obrázek
+      reenter_new_password: Zadejte znovu nové heslo
+      remove_address: Odstranit tuto adresu
+      remove_phone: Odstraňte tento telefon
+      remove_profile_picture: Odstranit obrázek profilu
+      residing_country: Země pobytu
+      retype_password: Zadejte nové heslo ...
+      save_changes: Uložit změny
+      size_of_organization: Velikost organizace
+      state_province: Stát / provincie
+      street_address: Adresa ulice
+      use_the_form_below_to_change_t: Pomocí níže uvedeného formuláře změňte heslo svého účtu u TLC.
+      user_roles: Uživatelské role
+      users_placeholder: Prostor pro uživatele
+      work: Práce
+      working_address: Pracovní adresu
+      zip_code_address: PSČ
+      password_must_have_at_least: "Vaše heslo musí mít:"
+      9_characters: "9 znaků"
+      1_lowercase_letter: "1 malá písmena"
+      1_uppercase_letter: "1 velká písmena"
+      1_number: "1 číslo"
+      1_special_character: "1 zvláštní znak"
+      passwords_dont_match: Hesla neodpovídají
+      good_so_far: Zatím dobré
+      match: Zápas
+      good: Dobrý
+      too_week: Příliš slabý
+    modify:
+      success: Uživatel byl úspěšně aktualizován.
+    take_self_assessment:
+      error: Něco se pokazilo!
+    update_demographics:
+      error: Při shromažďování demografických údajů došlo k chybě. Prosím zkuste to znovu.
+      success: Demografické údaje byly úspěšně aktualizovány.
+    update_password:
+      success: Heslo bylo úspěšně aktualizováno.
+  utilities:
+    index:
+      all: Všechno
+      billings: Billings
+      'false': Ne
+      filter: Filtr
+      filter_by_in_voiced: 'Filtrovat podle faktury:'
+      filter_by_order_status: 'Filtr podle stavu objednávky:'
+      filter_by_region: 'Filtrovat podle oblasti:'
+      finished: Dokončeno
+      'no': Ne
+      ordered: Objednáno
+      orders: Objednávky
+      orders_placeholder: Zadejte název objednávky nebo číslo objednávky ...
+      projects: Projekty
+      projects_placeholder: Zadejte název projektu ...
+      search: Vyhledávání
+      survey_takers: Hodnotitelé
+      surveys_placeholder: Zadejte uživatelské jméno nebo e-mailovou adresu ...
+      users: Uživatelé
+      users_placeholder: Zadejte uživatelské jméno nebo e-mailovou adresu ...
+      'yes': Ano
+    new_sa:
+      generate: generovat
+      select_score_for_answers: 'Vyberte skóre pro odpovědi:'
+      users_email: 'E-mail uživatele:'
+    partials:
+      billing_table:
+        invoiced: Fakturováno
+      search_orders:
+        found_order: Nalezené objednávky
+        no_order_is_found: Nebyly nalezeny žádné objednávky!
+      search_orders_details:
+        ordercoach_report_qty: "%{ordercoach_report_qty}"
+        ordercoach_report_qty_tordersd: "%{ordercoach_report_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_graph_qty: "%{orderparticipant_graph_qty}"
+        orderparticipant_graph_qty_tor: "%{orderparticipant_graph_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_report_qty: "%{orderparticipant_report_qty}"
+        orderparticipant_report_qty_to: "%{orderparticipant_report_qty} %{tordersdetailscopies_per_parti}"
+        pdf: PDF
+      search_projects:
+        no_projects_are_found: Žádné projekty nejsou nalezeny!
+      search_surveys:
+        actions: Akce
+        completed_on: Dokončeno
+        completion_date: Datum dokončení
+        delete: Vymazat
+        evaluating: Hodnocení
+        evaluations: Hodnocení
+        found_survey_taker: Zjistili jsme průzkum
+        language: Jazyk
+        last_logged_in: Poslední přihlášení
+        more_actions: Další akce
+        move: Hýbat se
+        no_survey_is_found: Žádný průzkum nebyl nalezen!
+        not_started: Nezačal
+        of: z
+        project_name: název projektu
+        questions: Otázky
+        reset: Resetovat
+        role: Role
+        self_surveys: Sebe-hodnocení
+        survey_taker_details: detaily o účastníkovi
+      search_users:
+        back: Zadní
+        email: 'E-mailem:'
+        found_user: Nalezený uživatel
+        impersonate: Odcudzil se
+        name: 'Název:'
+        no_user_is_found: Žádný uživatel nebyl nalezen!
+      survey:
+        reset: Resetovat
+    show_order:
+      billing_contact: Fakturační kontakt
+      binder_contact: Binder Contact
+      coaching_report: 'Koučovací zpráva:'
+      comment_questions: 'Komentář Otázky:'
+      company: Společnost
+      demographics: 'Demografie:'
+      included_participants: 'Zahrnutí účastníci:'
+      invoice_order: Objednávka faktur
+      invoiced: 'Fakturováno:'
+      list_of_participants: Seznam účastníků
+      mark_order_as_not_invoiced: Označit objednávku jako neúčtovanou
+      order_details: Podrobnosti objednávky
+      order_number: 'Číslo objednávky:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} kopie"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} kopie na účastníka"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} kopie na účastníka"
+      participant_graph: 'Graf účastníků:'
+      participant_report: 'Zpráva účastníka:'
+      pdf: PDF
+      planned_completion_date: 'Plánované datum dokončení:'
+      processing_date: 'Datum zpracování:'
+      product_type: 'Typ produktu:'
+      profile_interpretation_manual: 'Příručka interpretace profilů:'
+      report_contact: Kontaktovat zprávu
+      report_name: 'Název sestavy:'
+      report_type: 'Typ sestavy:'
+    surveys:
+      created_at: Vytvořeno u
+      evaluator: Hodnotitel
+      id: "#ID"
+      new_self_assessment: Nové sebehodnocení
+      regular: Pravidelný
+      self_assessment: Sebehodnocení
+      status: Postavení
+  views:
+    pagination:
+      first: "& Laquo; První"
+      last: Poslední & raquo;
+      next: Další & rsaquo;
+      previous: "& Lsaquo; Předch"
+      truncate: "& Hellip;"

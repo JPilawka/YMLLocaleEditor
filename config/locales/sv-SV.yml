@@ -1,0 +1,2577 @@
+---
+sv-SV:
+  activerecord:
+    attributes:
+      project:
+        billing_address: Fakturaadress
+        binder_address: Bindemedelsadress
+        certified_consultant: Certifierad konsult
+        coach_report_pdf: Coach Report PDF
+        coach_report_qty: Coach Report Antal
+        comment_questions: Kommentar Frågor
+        completion_date: Slutdatum
+        consultant: Konsult
+        created_at: Skapat på
+        deliverable_option: Leverantörsalternativ
+        demographics_policy: Demografisk politik
+        evaluators_policy: Utvärderingsprincipen
+        group_report_pdf: Grupperapport PDF
+        minimum_evaluations_per_participant: Minimala utvärderingar per deltagare
+        name: namn
+        organization: Klient
+        participant_graph_pdf: Deltagare Graph PDF
+        participant_graph_qty: Deltagare Grafik Antal
+        participant_report_pdf: Deltagare Rapport PDF
+        participant_report_qty: Antal deltagare
+        pdf_interpretation_manual: PDF Tolkning Manual
+        printed_interpretation_manual: Tryckt Tolkningshandbok
+        product: Produkt
+        promo_code: Rabattkod
+        report_date: Rapportdatum
+        shipping_address: leveransadress
+        status: Status
+        survey_focus: Survey Focus
+        survey_focus_description: Översikt Fokus Beskrivning
+        updated_at: Uppdaterad på
+        user: Klientrepresentant
+      project_address:
+        address_line1: '1: e adresslinje'
+        address_line2: Andra adresslinjen
+        address_line3: '3: e adresslinjen'
+        city: Stad
+        country_code: Landskod
+        created_at: Skapat på
+        email: E-post
+        name: namn
+        phone_no: Telefonnummer
+        postal_code: postnummer
+        state_code: Statskod
+        updated_at: Uppdaterad på
+    errors:
+      messages:
+        passwords:
+          cannot_contain: Kan inte innehålla hela eller delar av ditt namn eller e-postadress.
+          does_not_match_security_requirements: 'Matchar inte säkerhetskraven. Lösenordet måste innehålla 1 av de 3 följande teckengrupperna: A-Z, a-z, 0-9.'
+          must_be_at_least: måste vara minst 8 tecken långt.
+        record_invalid: 'Validering misslyckades: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Kan inte radera post eftersom beroende %{record} existerar
+          has_one: Kan inte radera post eftersom en beroende %{record} existerar
+        should_be_greater_or_equal: Måste vara större eller lika med slutdatum
+  addresses:
+    region:
+      regionnametitleize_regionabbre: "%{regionnametitleize} (%{regionabbreviation})"
+  application:
+    change_password_required: Du måste ändra ditt lösenord innan du loggar in för första gången
+    user_not_authorized:
+      forbidden: Förbjuden
+  companies:
+    edit:
+      edit_company: Redigera klienten
+      manage_users: Hantera användare
+    index:
+      companiestotal_count: "(%{companiestotal_count})"
+      company_name: Kundnamn
+      create_company: Skapa klient
+      industry: Industri
+      manage_company: Hantera klienten
+      my_clients: Mina kunder
+      number_of_projects: Antal projekt
+      sort_by_company_name: Sortera efter kundens namn
+      sort_by_created_date: Sortera efter Skapad datum
+      sort_by_industry: Sortera efter bransch
+      sort_by_number_of_projects: Sortera efter antal projekt
+      start_creating_companies_now: Börja skapa kunder nu
+      you_have_no_companies_to_manage: Du har inga klienter att hantera
+    new:
+      consulting_company: Consulting Company
+      create_company: Skapa klient
+      new_company: Nytt kundnamn
+    partials:
+      delete_company:
+        cname_corganization_typename: "%{cname} (%{corganization_typename})"
+        existing_projects_top_10: 'Befintliga projekt (topp 10):'
+        please_notice_that_it_will_als: 'Observera att det även raderar följande befintliga barnorganisationer:'
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} detta företag"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_comp: "%{thomeindexyes_delete_this} företag"
+    show:
+      create_group_report: Skapa grupprapport
+      create_new_project: Skapa nytt projekt
+      created_by: Skapat av %{creator}
+      delete_company: Ta bort klienten
+      tsharedmore_actions: "%{tsharedmore_actions}"
+      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant} %{tsharedcertified_consultants}"
+  concerns:
+    role_management:
+      create_user_role:
+        success: Framgång
+      update_user_role:
+        success: Framgång
+  consultants:
+    saved_successfully: Konsult har blivit tillsatt framgångsrikt!
+    title: Konsult
+  date:
+    abbr_day_names:
+    - Sol
+    - Mon
+    - tue
+    - ons
+    - Thu
+    - Fri
+    - lör
+    abbr_month_names:
+    -
+    - jan
+    - februari
+    - mar
+    - april
+    - Maj
+    - juni
+    - juli
+    - augusti
+    - september
+    - oktober
+    - november
+    - december
+    day_names:
+    - söndag
+    - måndag
+    - tisdag
+    - onsdag
+    - torsdag
+    - fredag
+    - lördag
+    formats:
+      default: "% M-% d-% Y"
+      long: "% B% d,% Y"
+      short: "% B% d"
+    month_names:
+    -
+    - januari
+    - februari
+    - Mars
+    - april
+    - Maj
+    - juni
+    - juli
+    - augusti
+    - september
+    - oktober
+    - november
+    - december
+    order:
+    - :month
+    - :day
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: Ca 1 timme
+        other: Ca %{count} timmar
+      about_x_months:
+        one: Ca 1 månad
+        other: Ca %{count} månader
+      about_x_years:
+        one: Ca 1 år
+        other: Omkring %{count} år
+      almost_x_years:
+        one: Nästan 1 år
+        other: Nästan %{count} år
+      half_a_minute: En halv minut
+      less_than_x_minutes:
+        one: mindre än en minut
+        other: Mindre än %{count} minuter
+      less_than_x_seconds:
+        one: Mindre än 1 sekund
+        other: Mindre än %{count} sekunder
+      over_x_years:
+        one: Över 1 år
+        other: Över %{count} år
+      x_days:
+        one: 1 dag
+        other: "%{count} dagar"
+      x_minutes:
+        one: 1 minut
+        other: "%{count} minuter"
+      x_months:
+        one: 1 månad
+        other: "%{count} månader"
+      x_seconds:
+        one: 1 sekund
+        other: "%{count} sekunder"
+    prompts:
+      day: Dag
+      hour: Timme
+      minute: Minut
+      month: Månad
+      second: sekunder
+      year: År
+  devise:
+    confirmations:
+      confirmed: Din e-postadress har bekräftats.
+      new:
+        resend_confirmation_instructio: Skicka om bekräftelsesinstruktionerna igen
+      send_instructions: Du kommer att få ett mail med instruktioner om hur du bekräftar din e-postadress inom några minuter.
+      send_paranoid_instructions: Om din e-postadress finns i vår databas får du ett mail med instruktioner om hur du bekräftar din e-postadress inom några minuter.
+    failure:
+      user:
+        already_authenticated: Du är redan inloggad.
+        inactive: Ditt konto är ännu inte aktiverat.
+        invalid: Ogiltigt %{authentication_keys} eller lösenord.
+        last_attempt: Du har ytterligare ett försök innan ditt konto kommer att vara låst.
+        locked: Ditt konto är låst.
+        not_found_in_database: Ogiltigt %{authentication_keys} eller lösenord.
+        timeout: Din session löpte ut. Vänligen logga in igen för att fortsätta.
+        unauthenticated: Du måste logga in eller registrera dig innan du fortsätter.
+        unconfirmed: Du måste bekräfta din e-postadress innan du fortsätter.
+    invalid_captcha: Fångstingången är inte giltig!
+    mailer:
+      confirmation_instructions:
+        confirm_my_account: Bekräfta mitt konto
+        user_subject: Bekräftelsesinstruktioner
+        welcome_email: Välkommen %{email}!
+        you_can_confirm_your_account_e: 'Du kan bekräfta din e-postadress via länken nedan:'
+      reset_password_instructions:
+        change_my_password: Skapa lösenord
+        hello_resourceemail: Hej %{resourceemail}!
+        if_you_didnt_request_this_plea: Om du inte begärt detta, ignorerar du det här e-postmeddelandet.
+        someone_has_requested_a_link_t: Någon har begärt en länk för att ändra ditt lösenord. Du kan göra det via länken nedan.
+        user_subject: Återställ lösenordsinstruktioner
+        your_password_wont_change_unti: Ditt lösenord ändras inte förrän du öppnar länken ovan och skapar en ny.
+      unlock_instructions:
+        click_the_link_below_to_unlock: 'Klicka på länken nedan för att låsa upp ditt konto:'
+        hello_resourceemail: Hej %{resourceemail}!
+        unlock_my_account: Lås upp mitt konto
+        user_subject: Lås upp instruktionerna
+        your_account_has_been_locked_d: Ditt konto har blivit låsat på grund av ett alltför stort antal misslyckade inloggningsförsök.
+    omniauth_callbacks:
+      failure: Kunde inte autentisera dig från %{kind} eftersom "%{reason}".
+      success: Succesfullt autentiserad från %{kind}-konto.
+    password_expired:
+      change_required: Ditt lösenord har löpt ut. Vänligen förnya ditt lösenord!
+      updated: Ditt nya lösenord har sparats.
+    passwords:
+      edit:
+        and: och
+        change_my_password: Skapa lösenord
+        change_your_password: Skapa ditt lösenord
+        confirm_no_success: Lösenordsbekräftelsen matchar inte lösenordet!
+        confirm_success: Lösenordsbekräftelse matchar lösenord!
+        dont_have_an_account: Har du inget konto?
+        good: Bra
+        lower_and_uppercase_letters: Lägre och stora bokstäver
+        medium: Medel
+        numbers: tal
+        password_should_be_at_least: Lösenordet ska åtminstone vara 8 tecken!
+        password_should_include: Lösenordet bör innehålla
+        return_to_the_leadership_circl: 'Återgå till Ledarskaps Circle: Självbedömning'
+        sign_up: Bli Medlem
+        strong: Stark
+        symbols: symboler
+        very_strong: Väldigt stark
+        weak: Svag
+      new:
+        dont_have_an_account: Har du inget konto?
+        forgot_your_password: Glömt ditt lösenord?
+        log_in: Logga in
+        return_to_the_leadership_circl: 'Återgå till Ledarskaps Circle: Självbedömning'
+        send_me_reset_password_instruc: Skicka mig att återställa lösenordsinstruktioner
+        sign_up: Bli Medlem
+      send_instructions: Skicka instruktioner
+      user:
+        no_token: Av säkerhetsskäl kan du inte komma åt föregående sida utan att komma direkt från ett e-postmeddelande för lösenordsåterställning. Om du kommer från ett lösenordsåterställt e-postmeddelande, se till att du använde den fullständiga webbadressen som finns i e-postmeddelandet.
+        send_instructions: Du får ett mail med instruktioner om hur du återställer ditt lösenord om några minuter.
+        send_paranoid_instructions: Om din e-postadress finns i vår databas, får du en länk för återställning av lösenord till din e-postadress om några minuter.
+        updated: Ditt lösenord har ändrats framgångsrikt. Du är nu inloggad.
+        updated_not_active: Ditt lösenord har ändrats framgångsrikt.
+    registrations:
+      destroyed: Adjö! Ditt konto har blivit avstängt. Vi hoppas att vi ses snart igen.
+      edit:
+        current_password: Nuvarande lösenord
+        currently_waiting_confirmation: 'För närvarande väntar bekräftelse på: %{resourceunconfirmed_email}'
+        edit_resource_nameto_shumanize: Redigera %{resource_nameto_shumanize}
+        password: Lösenord
+        password_confirmation: Lösenordsbekräftelse
+        update_password: Uppdatera lösenord
+        we_need_your_current_password_: Vi behöver ditt nuvarande lösenord för att bekräfta dina ändringar
+        you_must_change_your_password_: Du måste ändra ditt lösenord innan du loggar in för första gången.
+      new:
+        log_in: Logga in
+        sign_up: Bli Medlem
+      signed_up: Välkommen! Du har anmält dig framgångsrikt.
+      signed_up_but_inactive: Du har anmält dig framgångsrikt. Vi kunde dock inte logga in eftersom ditt konto ännu inte är aktiverat.
+      signed_up_but_locked: Du har anmält dig framgångsrikt. Vi kunde dock inte logga in eftersom ditt konto är låst.
+      signed_up_but_unconfirmed: Ett meddelande med en bekräftelse länk har skickats till din e-postadress. Vänligen följ länken för att aktivera ditt konto.
+      update_needs_confirmation: Du har uppdaterat ditt konto med framgång, men vi måste verifiera din nya e-postadress. Vänligen kolla din email och följ bekräfta länken för att bekräfta din nya e-postadress.
+      updated: Ditt konto har uppdaterats framgångsrikt.
+    sessions:
+      new:
+        dont_have_an_account: Har du inget konto?
+        forgot_your_password: Glömt ditt lösenord?
+        login: Logga in
+        login_to_your_account: Logga in på ditt konto
+        privacy_policy: Integritetspolicy
+        return_to_the_leadership_circl: 'Återgå till Ledarskaps Circle: Självbedömning'
+        sign_up: Bli Medlem
+      user:
+        already_signed_out: Undertecknad framgångsrikt.
+        signed_in: Inloggad med framgång.
+        signed_out: Undertecknad framgångsrikt.
+    shared:
+      links:
+        didnt_receive_confirmation_ins: Fick inte bekräftelsesinstruktioner?
+        didnt_receive_unlock_instructi: Fick inte upplåsningsinstruktioner?
+        forgot_your_password: Glömt ditt lösenord?
+        log_in: Logga in
+        sign_in_with_providerto_stitle: Logga in med %{providerto_stitleize}
+        sign_up: Bli Medlem
+    unlocks:
+      new:
+        resend_unlock_instructions: Skicka upplåsningsinstruktionerna igen
+      send_instructions: Du kommer att få ett mail med instruktioner om hur du låser upp ditt konto inom några minuter.
+      send_paranoid_instructions: Om ditt konto finns, får du ett mail med instruktioner om hur du låser upp det på några minuter.
+      unlocked: Ditt konto har upplösts framgångsrikt. Logga in för att fortsätta.
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: Måste accepteras
+      already_confirmed: Var redan bekräftad, var god försök att logga in
+      blank: Kan inte vara tomt
+      confirmation: Matchar inte %{attribute}
+      confirmation_period_expired: Måste bekräftas inom %{period}, vänligen be om en ny
+      empty: Kan inte vara tomt
+      equal_to: Måste vara lika med %{count}
+      equal_to_current_password: Måste vara annorlunda än det nuvarande lösenordet!
+      even: Måste vara jämn
+      exclusion: Är reserverad
+      expired: Har gått ut, vänligen be om en ny
+      greater_than: Måste vara större än %{count}
+      greater_than_or_equal_to: Måste vara större än eller lika med %{count}
+      inclusion: Ingår inte i listan
+      invalid: är ogiltig
+      less_than: Måste vara mindre än %{count}
+      less_than_or_equal_to: Måste vara mindre än eller lika med %{count}
+      model_invalid: 'Validering misslyckades: %{errors}'
+      not_a_number: Är inte ett nummer
+      not_an_integer: Måste vara ett heltal
+      not_found: hittades inte
+      not_locked: Var inte låst
+      not_saved:
+        one: 'Ett fel förhindrade att %{resource} uppdaterades:'
+        other: "%{count} fel förbjuds att %{resource} sparas:"
+      odd: Måste vara udda
+      other_than: Måste vara annat än %{count}
+      password_format: Måste innehålla stora, små bokstäver och siffror
+      password_not_saved: Ett fel förhindras lösenord från att uppdateras.
+      present: Måste vara tomt
+      required: Måste existera
+      taken: har redan blivit tagen
+      taken_in_past: Var redan tagit i det förflutna!
+      too_long:
+        one: Är för lång (max är 1 tecken)
+        other: Är för lång (max är %{count} tecken)
+      too_short:
+        one: Är för kort (minimum är 1 tecken)
+        other: Är för kort (minimum är %{count} tecken)
+      wrong_length:
+        one: Är fel längd (ska vara 1 tecken)
+        other: Är fel längd (ska vara %{count} tecken)
+    template:
+      body: 'Det fanns problem med följande områden:'
+      header:
+        one: Ett fel förbjuds att denna %{model} sparas
+        other: "%{count} fel förbjuds att %{model} sparas"
+  evaluators:
+    edit:
+      edit_evaluator: Redigera utvärderaren
+    new:
+      add_evaluator: Lägg till utvärderare
+    partials:
+      evaluator:
+        add_participant: Lägg till deltagare
+        edit_evaluator: Redigera utvärderaren
+        email_evaluatoremail: 'E-post: %{evaluatoremail}'
+        evaluatorevaluation_surveys_fo: "%{done} av %{total}-utvärderingar"
+        evaluatorself_surveys_forproje: "%{done} av %{total} självundersökningar"
+        language_evaluatorlanguage_nam: 'Survey Language: %{evaluatorlanguage_name}'
+      evaluator_form:
+        cancel_changes: Avbryt ändringar
+        delete_evaluator: Radera utvärderaren
+      import_evaluators:
+        email_address: E-postadress
+        first_name: Förnamn
+        is_there_something_wrong_a_hre: Är det något fel? <a href="#import--evaluators" class="open-popup-link"> Ladda upp en ny fil </a>
+        its_right_complete_import: Det är rätt! Komplett import
+        language: Språk
+        last_name: Efternamn
+        participant: Deltagare
+        relationship: Relation
+        strongevaluatorscount_evaluato: "<Strong> %{evaluatorscount} utvärderare </ strong> hittades. Vänligen bekräfta att matchen är rätt:"
+        survey_language: Survey Language
+        were_almost_there: Vi är nästan där...
+      import_evaluators_modal:
+        cancel: Annullera
+        import_evaluators_from_csv_fil: Importera utvärderare från CSV-filen
+        not_sure_about_the_format_of_t: Är du osäker på formatet på filen? <a href='%{download_sample_csv_project_ev}' class='link'> Hämta CSV-urvalet </a>.
+        upload_evaluators: Överför utvärderare
+        upload_your_csv_file: 'Ladda upp din CSV-fil:'
+      index:
+        actions: Handlingar
+        add_evaluator: Lägg till utvärderare
+        download_evaluator_status_deta: Hämta utvärderingsstatusinformation som CSV
+        evaluation_status: Utvärderingsstatus
+        evaluator_details: Utvärderingsuppgifter
+        import_evaluators: Import utvärderare
+        participant_status: Deltagarstatus
+      participant:
+        completed_on_levaluatorevaluat: Avslutat på %{levaluatorevaluation_survey_fo}
+        edit_participant: Redigera deltagare
+        evaluation_status: Utvärderingsstatus
+        evaluatorevaluation_survey_for: "%{done} av %{all} frågor"
+        evaluatorself_survey_forprojec: "%{evaluatorself_survey_forprojec} av %{evaluatorself_survey_forprojec} frågor om självundersökning"
+        language_evaluatorevaluation_s: 'Survey Language: %{evaluatorevaluation_survey_for}'
+        participantfull_name: "%{participantfull_name}"
+        relationship: 'Relation:'
+        selfsurvey_completed_on_levalu: Självundersökning utförd på %{levaluatorself_survey_forproje}
+        send_invite: Skicka inbjudan
+      participant_form:
+        cancel_changes: Avbryt ändringar
+        delete_participant: Radera deltagare
+    participants:
+      edit:
+        edit_participant: Redigera deltagare
+      new:
+        add_participant: Lägg till deltagare
+    sort_options:
+      evaluation_status: Sortera efter utvärderingsstatus
+      evaluator_name: Sortera efter utvärderarens namn
+      number_of_evaluations: Sortera efter antal utvärderingar
+  gflash:
+    titles:
+      error: Fel
+      notice: Lägga märke till
+      progress: Framsteg
+      success: Framgång
+      warning: Varning
+    users:
+      impersonate:
+        notice: Du utmanar någon annan.
+        title: Impersonate User
+      stop_impersonating:
+        notice: Du lider inte längre.
+        title: Impersonate User
+  graph_preview:
+    being: "Varande"
+    achieves_results: Uppnår resultat
+    achieving: uppnå
+    actual_culture: Faktisk kultur
+    ambition: Ambition
+    arrogance: Arrogans
+    authenticity: Äkthet
+    autocratic: Enväldig
+    balance: Balans
+    belonging: Som tillhör
+    caring_connection: Vårdanslutning
+    circle_within_circle: 'Cirkel Inom En Cirkel:'
+    collaborator: Medarbetare
+    community_concern: Gemenskapens oro
+    complying: Att följa
+    composure: Lugn
+    conservative: Konservativ
+    controlling: Kontrollerande
+    copy_right: "© Ledarskaps Circle® | Alla rättigheter förbehållna"
+    courageous_authenticity: Modig äkthet
+    creative: kreativ
+    critical: Kritisk
+    culture_survey: Kulturundersökning & handel;
+    decisiveness: beslutsamhet
+    desired_culture: Önskad kultur
+    displayed_as_percentile: Alla poäng visas som percentilvärderingar som jämför dina poäng till vår normbas.
+    distance: Distans
+    driven: driven
+    evaluators: utvärderare
+    fosters_team_play: Främjar lagspel
+    general_abilities: Allmänna förmågor
+    graph_high: Hög
+    graph_identity: Identitet
+    graph_low: Låg
+    graph_medium: Medel
+    high: Hög
+    high_scores_are_beyond: 'Höga poäng är bortom den 67: e percentilen.'
+    identity: Identitet
+    inner_circle_profiles: Den inre cirkeln profilerar en percentil sammanfattningsresultat för alla dimensioner i den delen av yttercirkeln.
+    integrity: Integritet
+    interpersonal_intelligence: Interpersonell intelligens
+    leadership_effectiveness: Ledarskapseffektivitet
+    leadership_potential_utilization: Ledarskaps potentialutnyttjande
+    low: 'Låg:'
+    low_scores_are_below: 'Lågpoäng är under den 33: e percentilen.'
+    manager_edition: Manager Edition
+    medium: 'Medel:'
+    mentoring_developing: Mentorutveckling
+    others_assessment: Andras bedömning
+    passive: Passiv
+    percentile_scores: 'Procentuell poäng:'
+    perfect: Perfekt
+    personal_learner: Personlig lärare
+    pleasing: Behaglig
+    print_graph: Skriv ut graf
+    protecting: skydda
+    purposeful_visionary: Syftefull Visionär
+    reactive: reaktiv
+    reactive_creative_scale: Reaktiv-kreativ skala
+    relating: avseende
+    relationship: relation
+    relationship_task_balance: Förhållande-uppgiftsbalans
+    score_below: 'Resultat under 33: e percentilen är låga poäng.'
+    score_between: 'Resultat mellan 66: e och 33: e percentilen visar en blandning av styrka och förbättringsområden.'
+    scores_from: 'Poäng från 66: e till 100: e percentilen är starka poäng.'
+    self: Själv
+    self_assessment: Självbedömning
+    self_awareness: JAGMEDVETANDE
+    selfless_leader: Självlösa ledare
+    strategic_focus: Strategiskt fokus
+    sustainable_productivity: Hållbar produktivitet
+    systems_awareness: Systemmedvetenhet
+    systems_thinker: Systemtänkare
+    task: uppgift
+  helpers:
+    label:
+      project:
+        1st_option: Alternativ 1
+        2nd_option: Alternativ 2
+        i_will_invite: Jag kommer att bjuda in utvärderarna för min deltagare
+        my_participant_will_invite: Min deltagare kan bjuda in utvärderarna
+    select:
+      prompt: Vänligen välj
+    submit:
+      create: Skapa %{model}
+      submit: Spara %{model}
+      update: Uppdatera %{model}
+  high: Hög
+  history:
+    show:
+      before: Innan
+      by: " av"
+      changes_made_at: Ändringar gjorda vid
+      field: Fält
+      now: Nu
+  home:
+    index:
+      agents: agenter
+      are_you_sure_want_to_delete: Är du säker att du vill radera
+      are_you_sure_want_to_delete_project: Att radera ett projekt kan inte ångras. Är du säker på att du vill radera detta projekt?
+      are_you_sure_want_to_delete_project_with_expired_date_explanation: Tyvärr, du kan inte ta bort eftersom slutdatumet för detta projekt är slut.
+      are_you_sure_want_to_delete_project_with_expired_date_title: Varning
+      coaches_or_consultants: konsulter
+      companies_or_clients: kunder
+      consultant_companies: Konsultföretag
+      consultant_company: Konsultföretag
+      distributors: distributörer
+      licensees: licenstagare
+      no_dont_delete: Nej, ta inte bort
+      participants: Deltagare
+      please_enter_a_new_name_for_the_organization: Ange ett nytt namn för %{organization_type}
+      projects: projekt
+      rename_organization: Byt namn på %{organization_type}
+      unable_to_delete_company_warning: Kan inte radera; Det finns fortfarande projekt kopplade till detta företag. Vänligen radera projekt först
+      unable_to_delete_got_it: Jag fattar
+      unable_to_delete_project_warning: Kan inte radera; Det finns fortfarande deltagare som är knutna till detta företag. Ta bort deltagarna först
+      yes_delete_this: Ja, radera det här
+    partials:
+      blank_slate:
+        create_new_project: Skapa nytt projekt
+        start_adding_projects_now: Börja med att lägga till projekt nu.
+        you_have_no_projects_to_manage: Du har inga projekt att hantera.
+      breadcrumbs:
+        coaches_consultants: Coaches / konsulter
+        search_by: Sök via
+      child_node_content:
+        organizationorganization_typen: "%{organizationorganization_typen} (klicka för att hantera)"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou} %{tsharedcertified_consultants}"
+      content:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} konsult?"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} konsult"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount} %{tsharedpeople}"
+      modals:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} %{parentorganization_typename}"
+        thomeindexyes_delete_this_pare: "%{thomeindexyes_delete_this} %{parentorganization_typename}"
+        tsharedcancel: "%{tsharedcancel}"
+        tsharedsave_changes: "%{tsharedsave_changes}"
+      organization_users:
+        practitioners_userstotal_count: Konsulter (%{userstotal_count})
+      search_organization:
+        click_to_manage: "(Klicka för att hantera)"
+        manage_consultants: "(Hantera konsulter)"
+        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization} %{tsharedwere_found}"
+        thomeindexare_you_sure_want_to:  "%{thomeindexare_you_sure_want_to} konsult?"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} konsult"
+      sidebar:
+        add: Lägg till
+  i18n:
+    transliterate:
+      rule:
+        ü: u
+  javascript:
+    1st_option: '1: a alternativet'
+    2nd_option: '2: a alternativet'
+    add_another_company: Lägg till ett annat företag
+    admin_role_name: Systemadministratör
+    ajax_popup_error: Innehållet kunde inte laddas.
+    apt_suite_bldg: Apt svit Bldg...
+    binder_with_tabs: 3-rings bindemedel med flikar och tryckta sidor som ska ges till deltagaren
+    browse_file: Bläddra i fil
+    cancel_schedule_announcement: Är du säker? Schemaläggningen avbryts och e-postmeddelandena skickas inom de närmaste 15 minuterna.
+    choose_age_ranges: Välj åldersintervaller
+    choose_countries: Välj länder
+    choose_direct_report_ranges: Välj Medarbetare
+    choose_education_levels: Välj utbildningsnivåer
+    choose_ethnic_groups: Välj etniska grupper
+    choose_industries: Välj industrier
+    choose_management_levels: Välj Management Nivåer
+    choose_professions: Välj yrken
+    click_the_link_below_and_we_will_contact: Klicka på länken nedan och vi kommer få dig i kontakt med en coach som guidar dig genom processen.
+    coach_report: Coach Report
+    company_revenue: företagets intäkter
+    completion_date_asc: Slutdatum (ASC)
+    completion_date_desc: Slutdatum (desc)
+    contact_info: Kontaktinformation
+    correct_email_required: Ange rätt format för e-post
+    created_at: 'Skapad på:'
+    custom_demographics: Anpassad demografi
+    default_demographics: Standard Demografi
+    deliverable_options: Leveransalternativ
+    delivery_options: Leveransalternativ
+    did_you_enjoy_your_survey_taker: Njöt du din undersökning? Ta den fullständiga 360-bedömningen <b> Ledarskap Cirlce Profile </ b> och lär dig hur dina nyckelaktörer (chefer, kollegor, direktrapporter och andra) upplever ditt ledarskap. Den djupa insikten som kommer från ledarskapet Cirlce Profile full 360 gör det möjligt för dig att bli mycket mer effektiv och mästerlig inom konsten och praktiken av ledarskap.
+    email_required: E-post krävs
+    error: Något gick fel!
+    filter_by_role: Filtrera efter roll
+    first_name_required: Förnamn krävs
+    full_path: 'Fullständig sökväg:'
+    gcsr_role_name: Global CSR
+    granted_at: Beviljas på
+    graph_high: Hög
+    graph_identity: Identitet
+    graph_low: Låg
+    graph_medium: Medel
+    high: Hög
+    invite_another_user: Bjud in en annan användare
+    language_required: Välj ett språk
+    last_name_required: Efternamn krävs
+    leaders_managers_eval: I det här avsnittet kommer du att utvärdera ledare / chefer för
+    low: Låg
+    members_eval: I det här avsnittet kommer du att utvärdera medlemmar av
+    message_required: Meddelande krävs
+    minimum_evaluations_per_participant: Minimalt antal utvärderare (%{min_count}) måste inbjudas för att möjliggöra självundersökningen.
+    never_sent: Aldrig skickat
+    no_record_found: 'Inga poster funna matchande:'
+    organization_and_report_type: Organisation och rapporttyp
+    organization_small: organisation
+    participant_graph: Deltagare Grafik
+    participant_report: Deltagarrapport
+    password_hint: Lösenordet måste ha minst 8 tecken med minst ett nummer (0-9) och en stor bokstav (A-Z). Du kan inte använda något av dina tidigare 8 lösenord.
+    person: person
+    please_wait: Vänta ...
+    preparing: Förbereder. Vänta.
+    processing: bearbetning
+    project_access_control: Projektåtkomstkontroll
+    project_access_control_description: Granska användarens projektåtkomst
+    project_details: Projektdetaljer
+    project_name_placeholder: 'Dvs .: VD, Direktör, Chef, Ledarskap, etc.'
+    project_time_zone: Projektets tidszon
+    relationship_required: Vänligen välj ett förhållande
+    report_options: Rapportalternativ
+    role: Roll
+    search_results: sökresultat
+    select_age: Välj Ålder
+    select_client: Välj Client
+    select_consulting_company: Välj Consulting Company
+    select_country: Välj land
+    select_ethnic_group: Välj etnisk grupp
+    select_existing_administrator: Välj befintlig administratör
+    select_industry: Välj Industri
+    select_practitioner: Välj Konsult
+    select_project: Skriv här för att söka destinationsprojekt med namn
+    select_region: Välj stat eller region
+    select_your_companys_industry: Välj företagets Industri
+    select_your_education_level: Välj din utbildningsnivå
+    select_your_gender: Välj ditt kön
+    select_your_management_level: Välj din Management Level
+    select_your_profession: Välj ditt yrke
+    select_your_residing_country: Välj ditt bosatt land
+    select_your_number_of_direct_reports: Välj antal medarbetare
+    sent_on: Skickad på
+    size_of_organization: Organisationens storlek
+    street_address_example: Gatuadress (222 exempel avenue) ...
+    subject_required: Ämne krävs
+    surveys_focus: 'Definiera din undersökning s fokus (dvs .: Marknadsföring, försäljning, HR, etc ...)'
+    team_small: team
+    type: 'Typ:'
+    type_the_referral_email: Skriv hänvisnings-e-postmeddelandet
+    type_user_email: Skriv användar e-post ...
+    type_your_company_name: Skriv ditt företagsnamn ...
+    user_email: Användar Email
+    user_name: Användarnamn
+    user_role_name: Användare
+    zip_post_code: Postnummer / Postnummer ...
+  kaminari:
+    next_page:
+      next: Nästa
+    prev_page:
+      prev: Föregående
+  low: Låg
+  mailer:
+    reminder:
+      body_1: Det verkar som om du inte har slutfört din enkät än. Om du fortfarande vill delta, klicka nedan!
+      body_2: 'Följ den här länken till undersökningen:'
+      body_3: Observera att din undersökning måste fyllas i av %{planned_completion_date}.
+      header: Kära %{practitioner_full_name},
+      regards: Vänliga hälsningar, Ledarskaps Circle Team
+      subject: "%{product_name} Påminnelse"
+    welcome:
+      body_1: Välkommen till ledarskapet Circle Online Assessment System. Låt oss få dig att skapa en inloggning och ditt eget lösenord så att du kan börja använda systemet.
+      body_2: Gå till %{web_address} och använd ditt nya användarkonto logga in ID %{user_id} med det tillfälliga lösenordet för %{user_password}.
+      body_3: När du har skapat ditt nya lösenord och svarat på några demografiska frågor kan du gå direkt till mina undersökningar och slutföra eventuella undersökningar som kan vänta på dig.
+      body_4: Om du har några problem med att logga in, var god kontakta oss på %{support_email_address}.
+      header: Kära %{participant_full_name},
+      regards: Varma hälsningar,
+      subject: Välkommen till ledarskapet Circle Online Assessment System!
+      team: Survey Taker Team
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%fn"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "% N% u"
+        units:
+          billion: Miljard
+          million: Miljon
+          quadrillion: Kvadriljon
+          thousand: Tusen
+          trillion: Biljon
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "% N% u"
+        units:
+          byte:
+            one: byte
+            other: bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "% N%"
+    precision:
+      format:
+        delimiter: ''
+  order_steps:
+    deliverable_options:
+      next: Nästa
+      previous: Tidigare
+    delivery_options:
+      cancel_order: Avbryt beställning
+      create_report: Skapa rapport
+      previous: Tidigare
+    group_report_summary:
+      cancel_order: Avbryt beställning
+      pdf_report: PDF-rapport
+      selected_count_tordersgr_summa: "(%{selected_count} %{tordersgr_summaryparticipants_})"
+      tordersgr_summarybilling_conta: "%{tordersgr_summarybilling_conta}:"
+      tordersgr_summaryorganization: "%{tordersgr_summaryorganization}:"
+      tordersgr_summaryreport_contac: "%{tordersgr_summaryreport_contac}:"
+      tordersgr_summaryreport_due_da: "%{tordersgr_summaryreport_due_da}:"
+      tordersgr_summaryreport_metric: "%{tordersgr_summaryreport_metric}:"
+      tordersgr_summaryreview_report: "%{tordersgr_summaryreview_report}"
+      tordersgr_summaryselected_part: "%{tordersgr_summaryselected_part}:"
+      tordersindexreport_name: "%{tordersindexreport_name}:"
+      tshareddemographicpluralize: "%{tshareddemographicpluralize}:"
+      tsharedreportpluralize: "%{tsharedreportpluralize}:"
+    organization_and_report_type:
+      cancel_order: Avbryt beställning
+      next: Nästa
+    partials:
+      address_modal:
+        select_from_my_account_address: Välj från Mina kontoadresser
+        there_are_no_addresses_related: Det finns inga adresser relaterade till användaren
+      contact_info:
+        billing_address: Fakturaadress
+        new_address: Ny adress
+        report_address: Rapportadress
+        same_as_the_billing_address: Samma som faktureringsadressen
+        select_an_address_from_my_acco: Välj en adress från Mitt konto
+        this_is_the_address_where_the_: Detta är adressen där de tryckta kopiorna av deltagarrapport, deltagargrafik och coachrapport kommer att levereras.
+        this_is_the_person_or_company_: Det här är den person eller företag som orderfakturan kommer att göras till.
+      deliverable_options:
+        coach_report: Coach Report
+        digital_graph: Digital graf
+        group_report: Koncernredovisning
+        how_many_copies_per_participan: Hur många exemplar per deltagare?
+        i_want_pdf_and_printed_copies_: Jag vill ha PDF och tryckta kopior av rapporterna.
+        i_want_the_pdf_copies_only: Jag vill bara ha PDF-kopiorna.
+        participant_graph: Deltagare Grafik
+        participant_report: Deltagarrapport
+        pdf_file_that_practitioner_ema: Pdf-fil som konsulten skickar till deltagare
+        please_choose_below_which_ones: 'Vänligen välj nedan vilka som du vill ha skrivit ut:'
+        profile_interpretation_manual: Profil Tolkningshandbok
+        reports: 'rapporter:'
+        you_will_get_a_digital_version: 'Du får en digital version av följande saker:'
+        you_will_get_only_the_digital_: 'Du får bara den digitala versionen av profiltolkningshandboken och följande rapporter:'
+        you_will_get_the_digital_versi: Du kommer att få den digitala versionen av profiltolkningshandboken och alla rapporter.
+        your_project_will_include: 'Ditt projekt kommer att innehålla:'
+    participants:
+      cancel_order: Avbryt beställning
+      choose_the_participants_you_wo: Välj de deltagare som du vill inkludera i den här rapporten. Du kan
+      next: Nästa
+      of: " av"
+      only_add_participants_who_have: Lägg bara till deltagare som har genomfört enkäter.
+      organizationname: "%{organizationname}"
+      participants_selected: " Deltagare utvalda"
+      previous: Tidigare
+      select_all_available_participa: Välj alla tillgängliga deltagare från detta företag
+      select_participants: Välj Deltagare
+    project:
+      add_all_participants: Lägg till alla deltagare
+      of: av
+      participants_selected: Deltagare utvalda
+    report_options:
+      cancel_order: Avbryt beställning
+      choose_metrics: Välj mätvärden
+      how_calculation_is_made: Hur beräkningen görs
+      next: Nästa
+      previous: Tidigare
+      report_demographics: Rapportera demografi
+      report_language: Rapportera språk
+  orders:
+    details:
+      coach_report: 'Coach Report:'
+      comment_questions: 'Kommentar Frågor:'
+      copies_per_participant: Kopior per deltagare
+      copy_per_participant: Kopiera per deltagare
+      demographics: 'Demografi:'
+      included_participants: 'Inkluderade deltagare:'
+      participant_graph: 'Deltagare Grafik:'
+      participant_report: 'Deltagarrapport:'
+      participants:
+        one: 1 deltagare
+        other: "%{count} deltagare"
+      processing_date: 'Bearbetningsdatum:'
+      product_type: 'Produkttyp:'
+      profile_interpretation_manual: 'Profil Tolkningshandbok:'
+      report_type: 'Rapporttyp:'
+      utilties_order_details: ORDERDETALJER
+    gr_summary:
+      billing_contact: Faktureringskontakt
+      coach_report: Coach Report
+      organization: Organisation
+      participant_graph: Deltagare Grafik
+      participant_report: Deltagarrapport
+      participants_selected: Deltagare valda
+      place_order: Beställa
+      report_contact: Rapportera kontakt
+      report_due_date: Rapportera förfallodatum
+      report_metrics: Rapportera mätvärden
+      review_report_summary: VÄNLIGT ÖVERSIKT DIN RAPPORT SAMMANFATTNING
+      selected_participants: Utvalda deltagare
+    index:
+      actions: Handlingar
+      active_orders: Aktiva beställningar
+      all_orders: Alla beställningar
+      delete_order: Radera ordningen
+      finished_orders: Slutförda beställningar
+      my_orders: Mina rapporter
+      number_of_participants: Antal deltagare
+      order: Beställa
+      order_date: Orderdatum
+      owner: Ägare
+      print_reports: Skriv ut rapporter
+      product_type: Produkttyp
+      report_name: Rapportnamn
+      sort_by_company: Sortera efter företag
+      sort_by_number_of_participants: Sortera efter antal deltagare
+      sort_by_ordered_date: Sortera efter beställd dag
+      sort_by_product: Sortera efter produkt
+      sort_by_report_name: Sortera efter rapportnamn
+      utilties_order: 'Beställa #'
+    order:
+      see_order: Se Order
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    partials:
+      pick_order_modal:
+        cancel: Annullera
+        choose_order: Välj Order
+        choose_order_for_project: Välj Beställ för projekt
+        date_order_number: Datum / Beställningsnummer
+        locreated_atto_date_format_lon: "%{locreated_atto_date_format_lon} / %{oorder_number}"
+    prepare_download:
+      cancel: Annullera
+      download_reports_zip: Hämta rapporter (ZIP)
+      please_wait: Vänta ...
+      preparing_reports_for_download: Förbereder rapporter för nedladdning
+    printed_participant:
+      digital_reports_to_be_sent_pdf: Digitala rapporter som ska skickas (PDF-filer)
+      download_copies_ordersingle_re: Hämta kopier (%{ordersingle_report_copies_coun})
+      download_manual: Hämta handboken
+      evaluators_printed_participant: 'Utvärderare: %{printed_participantparticipant} av %{printed_participantparticipant} Complete'
+      manual_to_be_printed: Manuell för att skrivas ut
+      mark_all_as_not_printed: Markera allt som inte skrivs ut
+      mark_all_as_not_sent: Markera allt som inte skickats
+      mark_all_as_printed: Markera alla som PRINTED
+      mark_all_as_sent: Markera allt som SENT
+      mark_all_as_shipped: Markera allt som SHIPPED
+      printed_participantparticipant: "(%{printed_participantparticipant})"
+      reports_to_be_printed: Rapporter som ska skrivas ut
+      self_survey_printed_participan: 'Självundersökning: %{printed_participantstatus}'
+      send_digital_reports: Skicka digitala rapporter
+      status_printed_participantmanu: 'Status: %{printed_participantmanual_repo}'
+      status_printed_participantprin: 'Status: %{printed_participantprint_repor}'
+      status_printed_participantsend: 'Status: %{printed_participantsend_report}'
+    show:
+      billing_contact: Faktureringskontakt
+      binder_contact: Binder Kontakt
+      coaching_report: 'Coaching rapport:'
+      comment_questions: 'Kommentar Frågor:'
+      company: Företag
+      demographics: 'Demografi:'
+      download_profile_interpretatio: Ladda ner profiltolkningshandboken (PDF)
+      download_reports_zip: Hämta rapporter (ZIP)
+      find_the_order_details_below_y: Hitta orderuppgifterna nedan. Du kan också ladda ner en zip-fil med alla dina PDF-rapporter.
+      included_participants: 'Inkluderade deltagare:'
+      list_of_participants: Lista över deltagare
+      order_details: Orderdetaljer
+      order_number: 'Ordernummer:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} kopior"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} kopior per deltagare"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} kopior per deltagare"
+      participant_graph: 'Deltagare diagram:'
+      participant_report: 'Deltagarrapport:'
+      pdf: PDF
+      planned_completion_date: 'Planerad slutdatum:'
+      print_order_details_pdf: Skriv ut beställningsdetaljer (PDF)
+      processing_date: 'Bearbetningsdatum:'
+      product_type: 'Produkttyp:'
+      profile_interpretation_manual: 'Profil Tolkningshandbok:'
+      questions_about_your_order: Frågor om din beställning?
+      report_contact: Rapportera kontakt
+      report_name: 'Rapportnamn:'
+      report_type: 'Rapporttyp:'
+      show_project: Visa projekt
+      thank_you_for_your_order: Tack för din beställning.
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    show_print_report:
+      1_copy: 1 kopia per deltagare
+      Demography: 'Demografics:'
+      action: Handling
+      application:
+        order_not_valid: Beställningen är inte giltig
+        reports_sent: Rapporter skickade
+        statuses_updated: Status uppdaterad
+      coach_report: Coach Report
+      coach_rpt: Coach Rpt.
+      coaching_report: 'Coaching rapport:'
+      comment_questions: 'Kommentar Frågor:'
+      company: Företag
+      complete: Komplett
+      copies_per_participant:
+        one: En kopia per deltagare
+        other: "%{count} kopior per deltagare"
+      deliverable_instructions: Leveransanvisningar
+      demographics: 'Demografi:'
+      digital_reports: 'Digitala rapporter:'
+      digital_rpt: Digital Rpt.
+      download_all_copies_ordercopie: Hämta alla kopior (%{ordercopies_count})
+      download_all_manuals_orderused: Hämta alla handböcker (%{orderused_languagescount})
+      english_manual: 'Engelska Manual:'
+      evaluators: utvärderare
+      find_below_all_the_deliverable: Hitta nedan alla leveranser för denna beställning samt leveransinformation för var och en av dem.
+      graph: Graf
+      included_participants: 'Inkluderade deltagare:'
+      manual: Manuell
+      mark_all_digital_reports_as_no: Markera alla digitala rapporter som inte skickade
+      mark_all_digital_reports_as_se: Markera alla digitala rapporter som SENT
+      mark_all_printed_copies_as_not: Markera alla utskrivna kopior som inte skrivits ut
+      mark_all_printed_copies_as_pri: Markera alla skrivna kopior som PRINTED
+      mark_all_printed_copies_as_shi: Markera alla tryckta kopior som SHIPPED
+      mark_order_as_finished: Markera beställningen som färdig
+      no_participants: Inga deltagare
+      order_details: Orderdetaljer
+      order_number: 'Ordernummer:'
+      order_participantparticipantco: "%{order_participantparticipantco} av %{order_participantparticipantev}"
+      ordercoach_report:
+        one: En kopia
+        other: "%{count} kopior"
+      orderparticipant_report:
+        one: En kopia per deltagare
+        other: "%{count} kopior per deltagare"
+      participant: Deltagare
+      participant_graph: Deltagare Grafik
+      participant_report: Deltagarrapport
+      participants_orderself_surveys: Deltagare (%{orderself_surveyscount})
+      pdf: PDF
+      pdfs: PDF-filer
+      planned_completion_date: 'Planerad slutdatum:'
+      print_and_ship_copies_of_the_f: 'Skriv ut och skicka kopior av följande rapporter:'
+      printed: Tryckt
+      printed_copies: 'Tryckta kopior:'
+      processing_date: 'Bearbetningsdatum:'
+      product_type: 'Produkttyp:'
+      profile: Profil
+      profile_interpretation_manual: 'Profil Tolkningshandbok:'
+      questions_about_your_order: Frågor om din beställning?
+      report_name: 'Rapportnamn:'
+      report_type: 'Rapporttyp:'
+      self_survey: Självundersökning
+      send_digital_reports_pdfs: Skicka digitala rapporter (PDF-filer)
+      send_the_pdf_version_of_the_fo: 'Skicka PDF-versionen av följande rapporter:'
+      sent: sände
+      ship_the_3ring_binder_with_tab: Skicka 3-ringsbindaren med flikar och utskrivna sidor
+      shipping_info: 'FRAKTINFORMATION:'
+      status: 'Status:'
+      submit: Lämna
+    show_send_digital_reports:
+      cancel: Annullera
+      consultantcoach_orderprojectco: 'Konsult: %{orderprojectconsultant_orderpr}'
+      send_digital_reports: Skicka digitala rapporter
+      send_digital_reports_to_practi: Skicka digitala rapporter till konsult
+  organization_users:
+    new:
+      tsharedadd_consultant_tsharedt: "%{tsharedadd} Konsult %{tsharedto} '%{organizationname}'"
+  organizations:
+    actions:
+      tsharedadd_typename: "%{tsharedadd} %{typename}"
+    collab:
+      add_and_delete_shared_users: Du kan när som helst lägga till och ta bort delade användare
+      allow_users_edit_view: Tillåt användare att redigera och visa
+      certified_consultants: konsulter
+      collaborators_for: Samarbetare för
+      delete_collaborator: Ta bort samarbetare
+      invite_more_people: Bjud in fler personer
+      invite_user_by_typing_email: Bjud in en ny användare genom att skriva in deras email nedan
+      sharing_access_certified_consultant: Dela tillgång ger en annan konsult samma funktionalitet som du har som ägare
+      sharing_top_level_company: Att dela på högsta nivå (företag) ger tillgång till allt under det (produktgrupper och deltagare)
+      this_licensor_is_not_shared: Den här organisationen delas inte för närvarande
+    collaborator:
+      success: Framgång!
+    collaborators:
+      role_urolename: 'Roll: %{urolename}'
+      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount} %{torganizationscollabcertified_}"
+    delete_collaborator:
+      success: Framgång!
+    dnd:
+      drag:
+        add_user: Lägg till användare
+        confirmation: Bekräftelse
+        confirmation_text_goes_here: Bekräftelsesteksten går här ...
+        finish: Avsluta
+        next: Nästa
+        organizations_type: Organisationens typ
+        please_confirm_user_permission: Vänligen bekräfta användarbehörigheter för den här organisationen. Du behöver inte ändra någonting. Användare som tilldelas förälderorganisationerna läggs till automatiskt.
+        previous: Tidigare
+        privilages: privilages
+        role: Roll
+        user: Användare
+        you_are_about_to_move_one_orga: Du ska flytta en organisation till en annan. Kontrollera om typen av organisation du vill flytta är korrekt. Du kan också ändra det här. Nedan finns tillåtna typer av organisationer.
+      user:
+        remove: Avlägsna
+    form:
+      tsharedname: "%{tsharedname}:"
+    help:
+      tree_help:
+        quick_help: Snabb hjälp
+        to_edit_add_users_or_add_a_new: Att redigera, lägga till användare eller lägga till en ny, klicka bara på den i trädet och välj önskad åtgärd från listan längst upp till höger på träpanelen
+        to_find_an_organization_simply: För att hitta en organisation, börja helt enkelt skriva i sökrutan nedan, när det är klart, tryck på Enter
+        to_move_the_organization_to_an: Att flytta organisationen till en annan organisation dra och släpp helt enkelt
+    modals:
+      delete_organization:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} den här organisationen"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_orga: "%{thomeindexyes_delete_this} organisation"
+    move:
+      success: Framgång!
+    new:
+      accounting_id: Redovisnings-ID
+      accounting_id_for_an_existing_administrator: Redovisnings-ID för en befintlig administratör
+      active_consultant_label_info: Om konsulten inte är markerad som aktiv kommer deras konto att avbrytas och han får inte få tillgång till systemet
+      administrator_email: Administratörs Email
+      administrator_first_name: Administratörs förnamn
+      administrator_last_name: Administratörs efternamn
+      choose_countries: Välj länder
+      coach_consultant_email: Konsult Email
+      coach_consultant_first_name: Konsultens förnamn
+      coach_consultant_last_name: Konsultens efternamn
+      coach_consultant_name: Konsultens fullständiga namn
+      company_client_name: Kundnamn
+      consultant_label_info: En konsult som arbetar med flera kunder och organisationer
+      contract_start_date: Avtalets startdatum
+      countries_covered: Länder täckta
+      must_be_certified: Detta måste vara konsult Email
+      or_create_an_admin_user: Eller skapa en ny användare
+      select_an_industry: Välj en bransch
+      the_project_center: Projektcentret
+      this_active_consultant: Det här är en aktiv konsult
+      this_independent_consultant: Detta är en oberoende konsult
+      top_node: Top Node
+      torganizationsnewmust_be_certi: "(%{torganizationsnewmust_be_certi})"
+      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} '%{parentname}'"
+      type_the_name_of_coach_consultant: Ange namnet på konsulten
+      type_the_name_of_company_client: Ange kundens namn
+      type_the_name_of_the: Skriv namnet på
+      you_are_adding_a: Du lägger till en
+    roles:
+      collaborator:
+        delete: Radera
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{organizationname}"
+    search:
+      local: Lokal
+      search_by: Filtrera efter
+      search_by_company_participant_evaluator: Sök på företag / deltagare / utvärderare
+      searching: Söker ...
+    share:
+      success: Framgång!
+    show:
+      event: Händelse
+      history: Historia
+      impersonate: Imitera
+      no_child_data: Inga barndata hittades!
+      organization_information: Organisationsinformation
+      tshareddate_created: "%{tshareddate_created}:"
+    undo_share:
+      success: Framgång!
+    アクション:
+      tsharedadd_typename: Dela lagt till %{tsharedadd} %{typename}
+  participants:
+    cannot_destroy:
+      cannot_delete_the_selected_par: 'Det går inte att radera den valda Particiapanten eftersom posten är associerad med annan data som inte kan raderas. Vänligen kontrollera listan nedan:'
+      orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
+      orders: 'Order:'
+    evaluators:
+      add_evaluator: Lägg till utvärderare
+      start_adding_evaluators_now: Börja med att lägga till utvärderare nu.
+      this_participant_has_no_evalua: Den här deltagaren har inga utvärderare.
+    form:
+      form:
+        action_text: "%{action_text}"
+        cancel_changes: Avbryt ändringar
+        delete_participant: Radera deltagare
+    import_csv:
+      close: Stänga
+      importing_participants: Importerar deltagare
+      please_wait: Vänta ...
+    import_participants:
+      email_address: E-postadress
+      empty_row: Tom rad
+      existing_first_name: 'Befintliga förnamn:'
+      existing_last_name: 'Befintliga efternamn:'
+      first_name: Förnamn
+      is_there_something_wrong_uploa: Är det något fel? Ladda upp en ny fil
+      its_right_complete_import: Det är rätt! Komplett import
+      last_name: Efternamn
+      strongparticipantscount_partic: "<Strong> %{participantscount} deltagare </ strong> hittades. Vänligen bekräfta att matchen är rätt:"
+      user_with_this_email_already_e: Användare med det här emailet finns redan
+    import_participants_modal:
+      cancel: Annullera
+      import_participants_from_csv_f: Importera deltagare från CSV-fil
+      upload_participants: Ladda upp deltagare
+      upload_your_csv_file: 'Ladda upp din CSV-fil:'
+    index:
+      completion_date_is_over: Slutdatumet är slut.
+      download_participants_csv_status: Hämta deltagarstatusinformation som CSV
+      evaluator_status: Utvärderingsstatus
+      got_it: Jag fattar!
+      participant_details: Deltagaruppgifter
+      projectself_surveyswherestatus: "%{projectself_surveyswherestatus} deltagare har inte avslutat sin självundersökning och %{projectparticipantswith_not_en} har inte tillräckligt med utvärderingar. Du kan flytta deltagarna till andra projekt tills Kör rapportdatum (%{projectreport_datestrftimeb_d_})."
+      self_survey_status: Självundersökningsstatus
+    logs_modal:
+      created_logsnew: 'Skapad: %{logsnew}'
+      failed_logsfailed: 'Misslyckades: %{logsfailed}'
+      got_it: Jag fattar!
+      import_is_done: Importen är klar.
+      import_logs: 'Importera loggar:'
+      not_changed_logsuntouched: 'Ändrad inte: %{logsuntouched}'
+      participant_groups_logsgroups: 'Deltagargrupper: %{logsgroups}'
+      total_participants_logstotal: 'Summa deltagare: %{logstotal}'
+      updated_logsupdated: 'Uppdaterad: %{logsupdated}'
+    manage_group:
+      continue_managing_your_group: Fortsätt hantera din grupp
+      edit_evaluators_invitation: Redigera utvärderingsinbjudan
+      edit_participants_invitation: Redigera deltagarinbjudan
+      participants_can_be_added_to_y: Deltagare kan läggas till din nya grupp nu eller senare
+      send_all_new_emails: Skicka alla nya e-postmeddelanden
+    participant_header:
+      add_participants: Lägg till deltagare
+      choose_products: Välj produkter
+      confirm_order: BEKRÄFTA ORDER
+      edit_invitation_email: Redigera inbjudan Email
+      review_order_details: Granska beställningsinformation
+      select_options: Välj inställningar
+      send_emails: Skicka e-mail
+      setup_group: SETUP GROUP
+      update_addresses: Uppdatera Adresser
+    send_email_to_evaluator:
+      last_reminder_sent_on_surveyem: Senast påminnelse skickad på %{surveyemail_sent}
+    send_email_to_participant:
+      last_reminder_sent_on_surveyem: Senast påminnelse skickad på %{surveyemail_sent}
+    show_evaluator:
+      evaluation_status: Utvärderingsstatus
+      language: Survey Language
+      last_reminder_never_sent: Senast påminnelse skickades aldrig
+      last_reminder_sent_on: Senast påminnelse skickad på
+      relationship: 'Relation:'
+      send_reminder: Skicka inbjudan
+      surveycompleted_questions_coun: "%{surveycompleted_questions_coun} %{tsharedof} %{surveyquestions_count} %{tsharedquestions}"
+      surveyevaluatortryfirst_name_s: "%{surveyevaluatortryfirst_name} %{surveyevaluatortrylast_name}"
+      tparticipantsshow_evaluatorlan: "%{tparticipantsshow_evaluatorlan}: %{surveyevaluatorlanguagename}"
+      tparticipantsshow_evaluatorlas: "%{tparticipantsshow_evaluatorlas} %{surveyemail_sent}"
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_atto_date_for}"
+    show_participant:
+      completed_on_lparticipantself_: Avslutat på %{lparticipantself_surveycomplet}
+      edit_participant: Redigera deltagare
+      email_participantuseremail: 'E-post: %{participantuseremail}'
+      language_participantuserlangua: 'Survey Language: %{participantuserlanguagename}'
+      na: n / a
+      participantcompleted_evaluatio: "%{participantcompleted_evaluatio} av %{participantevaluationscount}-utvärderare"
+      participantself_surveycomplete: "%{participantself_surveycomplete} av %{participantself_surveyquestion} frågor"
+      participantuserfirst_name_part: "%{participantuserfirst_name} %{participantuserlast_name}"
+      resend_reports_to_gcsr: Skicka rapport till GCSR igen
+      send_invite: Skicka inbjudan
+    sort_options:
+      evaluator_status: Sortera efter utvärderingsstatus
+      number_of_evaluators: Sortera efter antal utvärderare
+      participant_name: Sortera efter deltagarens namn
+      survey_status: Sortera efter självundersökningsstatus
+  people:
+    account_notification_title: Kontouppdatering
+    account_updated: Kontot har uppdaterats!
+    active_management:
+      error: Fel
+      success: Framgång
+    cannot_delete: Kan inte radera; Det finns fortfarande projekt bifogade till den här användaren.
+    destroy:
+      success: Framgång!
+    index:
+      disabled: Inaktiverad
+      filtering_by_client: 'Filtrering av kund:'
+      invite_new_users: Bjud in nya användare
+      invited: inbjuden
+      join_date: Gå med idag
+      self_assessment: Självbedömning
+      shared_organizations: Delade organisationer
+      sort_by: Sortera efter
+      sort_by_join_date: Sortera efter anmälningsdatum
+      sort_by_org_number: Sortera efter antal organisationer
+      sort_by_user_name: Sortera efter användarens namn
+      survey_takers: Survey Takers
+      user_details: Användaruppgifter
+      users: användare
+    manual_unlock:
+      error: Något gick fel!
+      success: Framgång!
+    new:
+      choose_the_user_main_role_you_: Välj användarens huvudroll. Du kan redigera privilegier senare.
+      invite_another_user: Bjud in en annan användare
+      invite_new_users: Bjud in ny användare
+    partials:
+      active_surveys:
+        company: Företag
+        completed: 'avslutad:'
+        completion_date: Slutdatum
+        evaluated: 'utvärderades:'
+        evaluation_surveyscount_people: "%{evaluation_surveyscount} människor"
+        no_completed_evaluating_survey: Inga slutförda utvärderingsundersökningar.
+        no_completed_self_surveys: Inga färdiga självundersökningar
+        no_evaluating_surveys_to_compl: Inga utvärderingsundersökningar för att slutföra.
+        no_self_surveys_to_complete: Inga självstudier att slutföra.
+        not_valid: Inte giltig
+        participant_and_product_type: Deltagare och Produkttyp
+        product_type: Produkttyp
+        project: Projekt
+        self_survey: Självundersökning
+        self_surveyscount_self_survey: "%{self_surveyscount} självundersökning"
+        to_complete: 'att slutföra:'
+        to_evaluate: 'att utvärdera:'
+      settings:
+        a_practitioner_that_does_not_w: En konsult som arbetar många kunder och organisationer.
+        account_status: Konto Status
+        delete_account_person_pathuser: Radera konto
+        'false': false
+        gcsr_or_system_administrator_h: GCSR eller systemadministratör har tillgång till alla organisationer.
+        is_this_an_independent_practit: Är detta en oberoende konsult?
+        'no': Nej
+        practitioner_information: Konsultinformation
+        the_referring_practitioner_wil: Den hänvisande konsulten får en gratis profil.
+        this_user_has_been_active_sinc: Den här användaren har varit aktiv sedan
+        user_role: Användarroll
+        users_can_only_manage_the_orga: Användare kan bara hantera de organisationer som har delats med dem.
+        was_this_practitioner_referred: Var denna konsult hänvisad av en annan konsult i systemet?
+        'yes': Ja
+      shared_organization:
+        edit_user_role: Redigera användarroll
+        shared_organizationorganizatio: "(%{shared_organizationorganizatio})"
+      shared_organizations:
+        are_being_shared_with: Delas med
+        new_shared_organization: Ny delad organisation
+        role: Roll
+        shared_organizations: Delade organisationer
+        type: Typ
+        userfull_name: "%{userfull_name}:"
+        userorganization_userscount_or: "%{userorganization_userscount} organisationer"
+      surveys:
+        active_surveys_useractive_surv: Aktiva undersökningar (%{useractive_surveyscount})
+        survey_history_userhistorical_: Undersökningshistorik (%{userhistorical_surveyscount})
+      user_information:
+        address: Adress
+        date_of_birth: 'Födelsedatum:'
+        edit: Redigera
+        education: 'Utbildning:'
+        email: 'E-post:'
+        full_name: 'Fullständiga namn:'
+        gender: 'Kön:'
+        language: 'Språk:'
+        number_of_direct_reports: 'Antal medarbetare:'
+        organization_level: 'Organisationsnivå:'
+        personal_information: Personlig information
+        phone_number: Telefonnummer
+        profession: 'Yrke:'
+        professional_information: Professionell information
+        residing_country: 'Bosatt land:'
+        you_havent_added_any_addresses: Du har inte lagt till några adresser.
+        you_havent_added_any_phone_num: Du har inte lagt till några telefonnummer.
+      user_information_address:
+        user_information_addressname: "%{user_information_addressname}:"
+        user_information_addressregion: "%{user_information_addresscity}, %{user_information_addressregion}"
+      user_information_phone:
+        user_information_phonename: "%{user_information_phonename}:"
+    person:
+      consultant: Konsult
+      csr: CSR
+      gcsr: GCSR
+      manage_user: Hantera användaren
+      system_administrator: Systemadministratör
+    roles:
+      added_successfully: Användaren har tilldelats organisationen rätt!
+      edit_user_role:
+        cancel: Annullera
+        companyname: "'' %{companyname} ''"
+        remove_access_to_this_organiza: Ta bort åtkomst till den här organisationen
+        role_on: Roll på
+        save: Spara
+        select: Välj
+        userfirst_names: "%{userfirst_name} 's"
+      new_user_role:
+        choose_an_organization_to_shar: Välj en organisation att dela med
+        share_organization: Dela organisation
+        user_role: 'Användarroll:'
+      title: Användarroller
+    send_unlock_instructions:
+      error: Något gick fel!
+      success: Framgång!
+    show:
+      account_status: 'Konto Status:'
+      are_you_sure: Är du säker?
+      delete_account: Radera konto
+      disable_account: Inaktivera konto
+      enable_account: Aktivera konto
+      send_unlock_instructions: Skicka upplåsningsinstruktioner
+      settings: inställningar
+      shared_organizations: Delade organisationer
+      surveys: Enkäter
+      unlock_account: Lås upp konto
+      user_information: användar information
+    users:
+      sort_by: Sortera efter
+      sort_by_join_date: Sortera efter anmälningsdatum
+      sort_by_org_number: Sortera efter antal organisationer
+      sort_by_user_name: '"Sortera efter antal användare"'
+  phones:
+    index:
+      add_phone: Lägg till telefon
+      name: namn
+      number: siffra
+    phone:
+      delete: Radera
+  project_steps:
+    contact_info:
+      create_project: Skapa projekt
+      previous: Tidigare
+    deliverable_option:
+      next: Nästa
+      previous: Tidigare
+    project_detail:
+      124_questions: 124 frågor
+      62_actual_and_62_ideal_culture: 62 Aktuella och 62 Idealiska kulturfrågor
+      84_questions: 84 frågor
+      8_summary_and_29_outer_dimensi: 6 sammanfattning och 21 yttre dimensioner
+      8_summary_and_31_outer_dimensi: 8 sammanfattning och 31 yttre dimensioner
+      audience_is_csuite_presidents_: Publiken är "C-suite", presidenter, vice presidenter, styrelseledamöter, EMBA, höga potentiella ledare
+      audience_is_midlevel_managers_: Publiken är mellanledare, tillsynsmän, MBA, teamledare, "framväxande ledare"
+      choose_a_name_that_will_help_y: Välj ett namn som hjälper dig att identifiera deltagarna
+      choose_an_existing_client: Välj en befintlig klient
+      client: Klient
+      consulting_company: Consulting Company
+      create_a_new_client: Skapa en ny klient
+      focus_is_organization_or_team: Fokus är organisation eller team
+      leadership_circle_profile: Ledarskaps Circle Profile
+      leadership_circle_profile_mana: Ledarskaps Circle Profile Manager Edition
+      leadership_culture_survey: Ledarskapsundersökning
+      or: eller
+      practitioner: Konsult
+      select_product: Välj produkt
+  projects:
+    collab:
+      add_and_delete_shared_users: Du kan när som helst lägga till och ta bort delade användare
+      allow_users_edit_view: Tillåt användare att skriva ut eller visa beställningar
+      delete_collaborator: Ta bort samarbetare
+      invite_more_people: Bjud in fler personer
+      invite_user_by_typing_email: Bjud in en ny användare genom att skriva in hans / hennes email nedan
+      printers: skrivare
+      sharing_access_certified_consultant: Att dela åtkomst ger en annan användare tillgång till orderna
+      this_licensor_is_not_shared: Detta projekt delas inte för närvarande
+    convert_sa_to_lcp:
+      please_set_consulting_company_and_consultant_first: Vänligen ställ in kunden, konsultföretaget och konsulten först (i klient- och konsultinställningar).
+      success: Konverteringen lyckades.
+    delete_collaborator:
+      success: Användaren har tagits bort från projektet.
+    new:
+      itemparameterize: "#%{itemparameterize}"
+      next: Nästa
+      previous: Tidigare
+    partials:
+      edit_form:
+        cancel_changes: Avbryt ändringar
+        deliverables_and_printing_opti: Leveranser och utskriftsalternativ
+        project_options: Projektalternativ
+        save_all_changes: Spara alla ändringar
+      evaluator_invitation:
+        if_you_have_already_sent_a_mes: När du redan har skickat INVITATION-meddelanden till deltagare kan du sedan skicka uppdaterade meddelanden till alla deltagare och utvärderare från projektpanelen.
+        invitations: INBJUDNINGAR
+        modifying_this_message_will_ch: Om du ändrar detta ändras utvärderingsinvitationerna eller REMINDERS-e-postmeddelandena på det valda språket.
+        please_do_not_modify_any_text_: Ändra inte texten inom parentesen (| |). Dessa är nyckelord som kommer att ersättas med deltagarens information när meddelandet skickas.
+        reminders: PÅMINNELSER
+        warnings: varningar
+      evaluators_blank_slate:
+        add_evaluator: Lägg till utvärderare
+        import_evaluators: Import utvärderare
+        start_adding_evaluators_now: Börja med att lägga till utvärderare nu.
+        there_are_no_evaluators_in_thi: Det finns inga utvärderare i detta projekt.
+      header:
+        comments: Kommentarer till skrivaren
+        client: 'Klient:'
+        completion_date: Slutdatum
+        consulting_settings: Klient- och konsultinställningar
+        consutling_company: 'Consutling Company:'
+        convert_sa_to_lcp: Konvertera till Full LCP
+        create_group_report: Skapa grupprapport
+        delete_project: Ta bort projekt
+        deleteproject: Ta bort projekt
+        generate_draft_reports: Generera förslag till rapporter
+        practitioner: 'Konsult:'
+        printing_access: Utskriftsåtkomst
+        project_id: 'Projekt ID:'
+        project_time_zone: Projekt tidzon
+        rename_project: Byt namn på projekt
+        run_new_report: Kör ny rapport
+        run_report_date: Kör rapportdatum
+        send_all_reminders: Skicka alla påminnelser
+        send_new_emails_projectsurveys: Skicka nya e-postmeddelanden (%{projectsurveyswhereemail_sent_})
+        shared_with: Delad med
+        show_orders: Visa beställningar
+        starting_date: 'Startdatum:'
+        status: 'Status:'
+        users_project_access: Delade inställningar
+        view_orders: Visa order
+      import_participants_modal:
+        cancel: Annullera
+        import_participants_from_csv_f: Importera deltagare från CSV-fil
+        not_sure_about_the_format_of_t: Är du osäker på formatet på filen? <a href='#'> Hämta CSV-provet </a>
+        upload_participants: Ladda upp deltagare
+        upload_your_csv_file: 'Ladda upp din CSV-fil:'
+      modals:
+        delete_project:
+          thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}"
+          thomeindexunable_to_delete_pro: "%{thomeindexunable_to_delete_pro}"
+          thomeindexyes_delete_this_proj: "%{thomeindexyes_delete_this}-projektet"
+        no_data_for_preview_warning:
+          at_least_one_survey_must_be_co: Minst en undersökning måste vara klar innan förhandsrapporteringen fungerar.
+          not_enough_data_to_generate_pr: Det finns inte tillräckligt med data för att generera förhandsvisning
+        rename:
+          cancel: Annullera
+          please_enter_a_new_name_for_th: 'Ange ett nytt namn för projektet:'
+          rename_project: Byt namn på projekt
+          save_changes: Spara ändringar
+        show_orders:
+          orderorder_number_click: "%{orderorder_number} (klicka),"
+          projects_orders: Projektets order
+          the_orders_created_by_a_projec: De beställningar som skapats av ett projekt.
+      new_project:
+        address_form:
+          select_an_address_from_my_acco: Välj en adress från Mitt konto
+        address_modal:
+          select_from_my_account_address: Välj från Mina kontoadresser
+          there_are_no_addresses_related: Det finns inga adresser relaterade till användaren
+        contact_info:
+          billing_address: Fakturaadress
+          binder_address: Bindemedelsadress
+          contact_information: Kontakt information
+          new_address: Ny adress
+          same_as_shipping_address: Samma som rapportadress
+          same_as_the_billing_address: Samma som faktureringsadressen
+          shipping_address: Rapportadress
+          this_contact_is_the_only_perso: Den här kontakten är den enda personen som kommer att se eventuell faktureringsinformation från Ledarskaps Circle
+          this_is_the_address_where_the_: Detta är adressen där tränaren ska gå till.
+          this_is_the_address_where_the_3_ring: Det här är adressen där 3-ringsbindaren kommer att levereras till.
+        deliverable_options:
+          binder_with_tabs: Bindemedel med profiltolkningshandbok
+          coach_report: Coach Report
+          digital_graph: Digital graf
+          group_report: Koncernredovisning
+          how_many_copies_per_participan: Hur många exemplar per deltagare?
+          i_want_pdf_and_printed_copies_: Jag vill ha PDF och tryckta kopior av rapporterna.
+          i_want_the_pdf_copies_only: Jag vill bara ha PDF-kopiorna.
+          participant_graph: Deltagare Grafik
+          participant_report: Deltagarrapport
+          participant_reports_in_csv: Nedladdningsbara rådata
+          pdf_file_that_practitioner_ema: PDF-fil som konsulten skickar till deltagare
+          please_choose_below_which_ones: 'Vänligen välj nedan vilka som du vill ha skrivit ut:'
+          profile_interpretation_manual: Profil Tolkningshandbok
+          reports: 'rapporter:'
+          reports_format: 'Rapporteringsformat:'
+          you_will_get_a_digital_version: 'Du får en digital version av följande saker:'
+          you_will_get_only_the_digital_: 'Du får bara den digitala (e-kopior) versionen av profiltolkningshandboken och följande rapporter:'
+          you_will_get_the_digital_versi: Du kommer att få den digitala versionen av profiltolkningshandboken och alla rapporter.
+          your_project_will_include: 'Ditt projekt kommer att innehålla:'
+        demographics:
+          custom:
+            age_ranges: Åldersgrupper
+            all: Allt
+            country: Land
+            demographic_options: Demografiska alternativ
+            direct_report_ranges: Medarbetare
+            education_levels: Utbildningsnivåer
+            ethnic_groups: Etniska grupper
+            female: Kvinna
+            gender: Kön
+            if_you_choose_to_run_a_custom_: Om du väljer att köra en anpassad rapport mot en demografisk provstorlek som är för liten kan resultatet vara en rapport med skeddat data. De flesta demografiska data finns under Resurser. Du kommer att ha möjlighet att ändra ditt val tillbaka till standard demografi. Kontakta din kundtjänstrepresentant med frågor.
+            industries: Industries
+            male: Manlig
+            management_levels: Management Nivåer
+            professions: yrken
+          summary:
+            age_ranges: 'Åldersintervaller:'
+            countries: 'Länder:'
+            demographic_definition: Demografisk definition
+            demographic_details: 'Demografiska detaljer:'
+            demographic_size: 'Demografisk storlek:'
+            direct_report_ranges: 'Medarbetare:'
+            education_levels: 'Utbildningsnivåer:'
+            ethnic_groups: 'Etniska grupper:'
+            gender: 'Kön:'
+            industry: 'Industri:'
+            languages: 'Språk:'
+            lcp_participants: LCP deltagare
+            lcs_participants: LCS deltagare
+            management_levels: 'Management Nivåer:'
+            me_participants: ME-deltagare
+            participants: deltagare
+            professions: 'yrken:'
+            sa_participants: SA deltagare
+            this_is_the_number_of_people_y: Det här är antalet personer som du kommer att jämföra med dina projektmedlemmar till.
+        project_details:
+          all_surveys_should_be_complete: Alla undersökningar ska vara färdiga före detta datum.
+          cancel: Annullera
+          date_reports_are_available: Datumrapporter är tillgängliga.
+          next: Nästa
+          project_options: Projektalternativ
+          specify_a_timeline_for_the_pro: Ange en tidslinje för projektet
+        project_options:
+          1st_option: '1: a alternativet'
+          2nd_option: '2: a alternativet'
+          cancel_schedule_announcement: Avbryt Schemaläggning Meddelande
+          comment_questions_to_be_includ: Kommentera frågor som ska ingå i undersökningen
+          evaluators_are_bosses_peers_di: Utvärderare är chefer, kollegor, direkta rapporter och andra som är inbjudna att ge insats om deltagaren.
+          how_evaluators_are_invited_to_: Hur utvärderare är inbjudna att delta
+          i_will_invite: Jag kommer att bjuda in utvärderarna
+          if_the_participant_is_responsi: Om deltagaren är ansvarig för att bjuda in sina utvärderare måste han / hon bjuda in dessa minsta utvärderare innan självundersökningen påbörjas.
+          in_this_section_you_will_be_ev: I det här avsnittet kommer du att utvärdera
+          indicate_if_the_survey_will_be: Ange om undersökningen kommer att vara inriktad på organisationen som helhet eller en grupp gruppmedlemmar.
+          leaders_managers: Ledare / chefer
+          members_of_team: De
+          minimum_evaluations_per_partic: Minimala utvärderingar per deltagare?
+          my_participant_will_invite: Min deltagare kommer att bjuda in utvärderare
+          organization: Organisation
+          participants_will_see_the_focu: Deltagarna kommer att se fokusdefinitionen i enkäten som visas i rutan till höger
+          promo_code: Rabattkod
+          q1_in_your_opinion_what_is_thi: 'Q1: Vad är din persons största ledarskapsförmåga, skicklighet eller talang, enligt din åsikt, och vilka förslag har du för att utnyttja detta?'
+          q1_what_should_heshe_stop_doin: 'Q1: Vad ska han / hon sluta göra?'
+          q2_in_your_opinion_what_is_thi: 'Q2: Vad är din persons största ledarskapsutmaning eller utvecklingsområde, och vilka förslag har du för att hantera detta?'
+          q2_what_can_heshe_improve: 'Q2: Vad kan han / hon förbättra?'
+          q3_what_have_you_observed_abou: 'Q3: Vad har du observerat om den personen som du vill ge ytterligare feedback till den som inte tidigare har tagits upp i denna bedömning?'
+          q3_what_should_heshe_start_doi: 'Q3: Vad ska han / hon börja göra?'
+          regardless_of_who_invites_eval: Oavsett vem som bjuder utvärderare, kommer konsulten alltid att kunna se listan över utvärderare i projektdashboardet
+          report_demographics: Rapportera demografi
+          schedule_sending_of_invitation: Planera sändning av inbjudningsemail
+          send_now: Skicka nu
+          survey_focus: Survey Focus
+          survey_focus_description: Översikt Fokus Beskrivning
+          survey_instructions: 'Survey Instruktioner:'
+          team: Team
+          the_invitations_can_be_schedul: Inbjudningarna kan schemaläggas att gå ut vid ett angivet datum och klick
+          this_is_the_minimum_number_of_: Detta är det minsta antalet fullständiga utvärderingar som en deltagare måste inkludera i rapporten. Minsta stödberättigande är 5 utvärderingar.
+      participant_invitation:
+        if_you_have_already_sent_a_mes: När du redan har skickat inbjudningsmeddelanden till deltagare kan du sedan skicka uppdaterade meddelanden till alla deltagare och utvärderare från projektpanelen.
+        invitations: INBJUDNINGAR
+        modifying_this_message_will_ch: Om du ändrar det här meddelandet ändras deltagarens INBJUDNING eller REMINDER-e-post med det valda språket.
+        please_do_not_modify_the_text_: Ändra inte texten inom parentesen (| |). Dessa är nyckelord som kommer att ersättas med deltagarens information när meddelandet skickas.
+        reminders: PÅMINNELSER
+        warnings: varningar
+      participants_blank_slate:
+        add_participant: Lägg till deltagare
+        import_participants: Importera deltagare
+        start_adding_participants_now: Börja med att lägga till deltagare nu.
+        there_are_no_participants_in_t: Det finns inga deltagare i detta projekt som ska utvärderas.
+      reminders:
+        if_you_have_already_sent_a_mes: Om du redan har skickat ett meddelande till deltagare kan uppdaterade meddelanden skickas inifrån projektet.
+        langname_reminder: "%{langname} Påminnelse"
+        modifying_this_message_will_ch: Om du ändrar det här meddelandet ändras påminnelsen med en engelskspråkig undersökning.
+        please_do_not_modify_the_text_: Ändra inte texten inom parenteserna (* | | *). Dessa är nyckelord som kommer att ersättas med deltagarens information när meddelandet skickas.
+        warnings: varningar
+      report_preview:
+        boss: Chef
+        bosss_boss: Chefens chef
+        direct_report: Medarbetare
+        evaluators: utvärderare
+        other: Andra
+        participant: 'Deltagare:'
+        peer: Jämlikar
+        select_categories: 'Välj kategorier:'
+        self: Själv
+        skill: Skicklighet
+      resend_emails:
+        last_reminde: Sista påminnelse
+        last_reminder_sent_on: Senast påminnelse skickad på
+        never_sent: Aldrig skickat
+        participantuseremail: "(%{participantuseremail})"
+        select_all_participants_evalua: Välj alla deltagares utvärderare
+        surveyevaluatoremail: "(%{surveyevaluatoremail})"
+      statuses:
+        completed_evaluating: Avslutad utvärdering
+        completed_selfsurveys: Avslutade självundersökningar
+        in_progress: Pågående
+        not_started: Ej påbörjad
+        statcompleted_count_of_stattot: "%{statcompleted_count} av %{stattotal_count} %{statrelation_namepluralize} fullbordad"
+        statusestotal_relations_comple: "%{statusestotal_relations_comple} av %{statusestotal_relations} Utvärderingar Slutförda"
+        total_of_evaluators: Totalt utvärderare
+        total_of_participants: Totalt deltagare
+        evaluations_completed: "%{completed} av %{total} utvärderingar avslutad"
+        self_completed: "%{completed} av %{total} <b>Själv</b> avslutad"
+        boss_completed: "%{completed} av %{total} <b>Chef</b> avslutad"
+        peer_completed: "%{completed} av %{total} <b>Jämlikar</b> avslutad"
+        direct_report_completed: "%{completed} av %{total} <b>Medarbetare</b> avslutad"
+        other_completed: "%{completed} av %{total} <b>Andra</b> avslutad"
+        boss_boss_completed: "%{completed} av %{total} <b>Chefens chef</b> avslutad"
+      tooltip:
+        of: av
+        pluralizecompleted_count_relat: "%{pluralizecompleted_count_relat} slutförd"
+    project:
+      manage_project: Hantera projekt
+      resend_emails: Skicka e-post igen
+    project_header:
+      create_group_report: Skapa grupprapport
+      create_new_project: Skapa nytt projekt
+    project_table:
+      actions: Handlingar
+      all_projects: Alla projekt
+      completion_date: Slutdatum
+      last_reminder: Sista påminnelse
+      product: Produkt
+      project: Projekt
+      status: Status
+    report_preview:
+      '0': 0%
+      categories: 'kategorier:'
+      evaluators: utvärderare
+      participant: 'Deltagare:'
+      self: Själv
+      skill: Skicklighet
+    resend_emails:
+      cancel: Annullera
+      select_all_evaluators: Välj alla utvärderare
+      select_all_participants: Välj alla deltagare
+      select_the_unfinished_particip: Välj de oavslutade deltagarna och utvärderarna som du vill skicka e-post till. Välj typ av e-post för att skicka meddelandet till dina valda undersökningsanvändare.
+      send_emails_to_participants_ev: Skicka e-post till deltagare och utvärderare
+      send_invitation_email: Skicka inbjudan Email
+      send_reminder_email: Skicka påminnelsemail
+    roles:
+      collaborator:
+        delete: Radera
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{projectname}"
+        tsharedshared_with_project_use: "%{tsharedshared_with} %{project_userscount} %{tprojectscollabprinters}"
+    send_all_reminders:
+      close: Stänga
+      please_wait: Vänta ...
+      sending_all_reminders: Skickar alla påminnelser
+    share:
+      success: Framgång
+    show:
+      evaluator_email: Evaluator Email
+      evaluators: utvärderare
+      options: alternativ
+      participant_email: Deltagare Email
+      participants: Deltagare
+    show_consulting_settings:
+      client: Klient
+      consulting_company: Consulting Company
+      consulting_settings: Klient- och konsultinställningar
+      practitioner: Konsult
+    undo_share:
+      success: Framgång
+  sa_survey_mailer:
+    request_invitation_email:
+      have_a_nice_day: Ha en bra dag!
+      hello: Hallå,
+      participant_email: 'Deltagare Email:'
+      participant_name: 'Deltagarens namn:'
+      selfsurvey_completed_at: 'Självundersökning slutförd på:'
+      selfsurvey_id: 'Självundersökning #ID:'
+      we_recorded_a_new_request_for_: 'Vi registrerade en ny begäran om inbjudan från en användare:'
+    survey_completed_email:
+      age_range: Åldersgrupp
+      basic_data: Grundläggande information
+      company_name: 'Företagsnamn:'
+      company_revenue: företagets intäkter
+      country: Land
+      demographics: Demografi
+      education_level: utbildningsnivå
+      ethnic_group: Etnisk grupp
+      gender: Kön
+      have_a_nice_day: Ha en bra dag!
+      hello: Hallå,
+      industry: Industri
+      management_level: Ledningsnivå
+      organization_size: Organisationsstorlek
+      participant_email: 'Deltagare Email:'
+      participant_name: 'Deltagarens namn:'
+      participant_phone_number: 'Deltagare Telefonnummer:'
+      please_check_the_attachment_re: Vänligen kontrollera bilagan - rapporterna är i PDF-format.
+      profession: Yrke
+      reports: rapporter
+      selfsurvey_completed_at: 'Självundersökning slutförd på:'
+      selfsurvey_created_at: 'Självundersökning skapad på:'
+      selfsurvey_id: 'Självundersökning #ID:'
+      tlc_consultant_who_referred: 'TLC konsult som hänvisade till:'
+      we_noticed_that_the_new_selfsu: 'Vi märkte att den nya självundersökningen har slutförts. Nedan finns detaljerna:'
+    survey_completed_participant_email:
+      dear_userfull_name: Kära %{userfull_name},
+      if_youd_like_to_understand_how: Om du vill förstå hur du "visar upp" när det gäller ledarskap, skulle jag gärna berätta om hela ledarskapscykeln, som ger feedback från dem du leder och arbetar med - direktrapporter, kollegor Och chefer.
+      please_do_not_hesitate_to_reac: Tveka inte att ta reda på några frågor. Jag hjälper gärna på något sätt.
+      request_a_full_lcp: Begär en fullständig LCP
+      thank_you_again: Tack igen,
+      thank_you_for_taking_the_leade: 'Tack för att du tagit ledarskapets cirkelprofil: Självbedömning. Vi hoppas att du har haft läsning av Mastering Leadership, och att du hittar rapporten och feedbacken som är användbar när du fortsätter din ledarresan.'
+      to_help_you_better_understand_: För att hjälpa dig att förstå din självbedömningsrapport har jag inkluderat en tolkningsguide som förklarar varje aspekt av din graf och rapport.
+  sa_surveys:
+    demographics:
+      apt_suite_bldg: Apt svit Bldg...
+      before_you_begin: Innan du börjar
+      company_details: Företagsuppgifter
+      company_revenue: företagets intäkter
+      continue_to_survey: Fortsätt till undersökning
+      need_help: Behövs hjälp?
+      personal_information: Personlig information
+      select_age: Välj Ålder
+      select_ethnic_group: Välj etnisk grupp
+      select_your_companys_industry: Välj företagets Industri
+      select_your_education_level: Välj din utbildningsnivå
+      select_your_gender: Välj ditt kön
+      select_your_management_level: Välj din Management Level
+      select_your_profession: Välj ditt yrke
+      select_your_residing_country: Välj ditt bosatt land
+      size_of_organization: Organisationens storlek
+      street_address: Gatuadress (222 exempel avenue) ...
+      tlc_would_like_to_gather_some_: TLC vill bara samla in information endast för intern forskning. TLC delar inte din information. Vi skulle vara tacksamma om du skulle svara på frågorna; Du kan dock alltid välja "Förhindra att inte svara" eller "Annat".
+      type_your_company_name: Skriv ditt företagsnamn ...
+      we_need_a_little_more_informat: Vi behöver lite mer information om dig ...
+      zip_post_code: Postnummer / Postnummer ...
+    expanding_development:
+      discover_more_about_the_leader: Upptäck mer om ledarskapscirkeln
+      need_help: Behövs hjälp?
+      request_invitation: Begär inbjudan
+      requesting_invitation: Begär inbjudan ...
+      would_you_like_to_continue_exp: Vill du fortsätta att utöka din ledarskapsutveckling?
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    registration:
+      complete_the_registration_belo: Fyll i registreringen nedan för att ta din undersökning. Om du inte kan slutföra din självbedömning. Du måste slutföra den en inställning. Resultaten skickas till det registrerade e-postmeddelandet efter avslutad självbedömning.
+      consultant_error: Vi har inte hittat någon TLC-konsult med det här meddelandet. Var vänlig skriv in en annan e-postadress eller välj "Nej" till alternativet ovan.
+      did_a_tlc_consultant_refer_you: Har en TLC-konsult hänvisat till vår bok <b> Mastering Leadership </ b>?
+      'false': false
+      i_agree_to_tlc: 'Jag håller med TLC: s'
+      ja: true
+      need_help: Behövs hjälp?
+      nein: false
+      'no': Nej
+      privacy_and_policy_terms: Integritets- och policyvillkor
+      take_the_survey: Ta undersökningen
+      thank_you_for_your_interest: Tack för ditt intresse.
+      type_consultant_email: Var vänlig skriv hans / hennes namn eller e-mail ...
+      type_email: Skriv din e-postadress ...
+      type_first_name: Skriv ditt förnamn ...
+      type_last_name: Skriv ditt efternamn ...
+      type_phone_number: Skriv ditt telefonnummer ...
+      'yes': Ja
+    thank_you_participant:
+      did_you_enjoy_your_survey_shar: Njöt du din undersökning? Dela det med dina vänner.
+      discover_more_about_the_leader: Upptäck mer om ledarskapscirkeln
+      facebook: Facebook
+      for_taking_the_leadership_circ: För att ta ledarskapets cirkelprofil - självbedömning. Rapporterna med dina resultat kommer att komma in i ditt mail om några minuter.
+      linkedin: edin
+      need_help: Behövs hjälp?
+      request_invitation: Begär inbjudan
+      requesting_invitation: Begär inbjudan ...
+      thank_you_practitionerfull_nam: Tack, %{practitionerfull_name}
+      twitter: Twitter
+      would_you_like_to_take_the_bfu: Vill du ta <b> Full 360-profil </ b> och ta reda på var du står med dina anställda, kollegor och chefer? Klicka på länken nedan och vi kommer få dig i kontakt med en coach som guidar dig genom processen.
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    welcome:
+      bget_your_copy_hereb: "<B> Hämta din kopia här </ b>"
+      coming_back: Kommer tillbaka?
+      login: Logga in
+      need_help: Behövs hjälp?
+      sorry_but_your_answers_are_inc: Tyvärr, men ditt svar är felaktigt. Var god försök igen.
+      submit_answers: Skicka svar
+      this_area_is_a_special_section: 'Detta område är en speciell sektion för våra läsare. Vi hoppas att du har haft vår bok <b> Mastering Leadership </ b>. Vänligen svara på frågan nedan för att starta Ledarskaps Circle: Självbedömning. Svaret finns i boken. Har du inte det?'
+      welcome_to: Välkommen till
+  search:
+    index:
+      actions: Handlingar
+      client_name: Kundnamn
+      clients: kunder
+      consultant_companies: Konsultföretag
+      created_at: Skapat på
+      email: E-post
+      evaluations: utvärderingar
+      industry: Industri
+      name: namn
+      number_of_participants: Antal deltagare
+      number_of_projects: Antal projekt
+      order: Beställa
+      order_date: Orderdatum
+      orders: Order
+      practitioners: konsulter
+      product_type: Produkttyp
+      projects: projekt
+      report_name: Rapportnamn
+      results_limited_to_20_please_u: Resultat begränsat till 20, använd mer exakt sökning
+      search_results_total_count: sökresultat
+      selfsurveys: Själv Undersökningar
+      status: Status
+    orders_search:
+      number_of_participants: Antal deltagare
+      order: Beställa
+      order_date: Orderdatum
+      orders: Order
+      product_type: Produkttyp
+      report_name: Rapportnamn
+      search_results_total_count: Sökresultat (%{total_count})
+      status: Status
+    partials:
+      index:
+        actions: Handlingar
+        client_name: Kundnamn
+        clients: kunder
+        completion_date: Slutdatum
+        created_at: Skapat på
+        email: E-post
+        evaluations: utvärderingar
+        industry: Industri
+        last_reminder: Sista påminnelse
+        name: namn
+        number_of_participants: Antal deltagare
+        number_of_projects: Antal projekt
+        order: Beställa
+        order_date: Orderdatum
+        orders: Order
+        practitioners: konsulter
+        product: Produkt
+        product_type: Produkttyp
+        project: Projekt
+        projects: projekt
+        report_name: Rapportnamn
+        search_results: Sökresultat
+        selfsurveys: Själv Undersökningar
+        status: Status
+      order:
+        not_found_record_invalid: Hittades inte! Spela in ogiltigt.
+      organization:
+        create_group_report: Skapa grupprapport
+        manage_client: Hantera klienten
+      practitioner:
+        preview_user: Förhandsgranska användare
+    projects_search:
+      projects: projekt
+      search_results_total_count: Sökresultat (%{total_count})
+    surveys_search:
+      actions: Handlingar
+      completed_on: Avslutad på
+      completion_date: Slutdatum
+      delete: Radera
+      evaluating: utvärdera
+      evaluations: utvärderingar
+      language: Språk
+      last_logged_in: Senast inloggad
+      more_actions: Fler åtgärder
+      move: Flytta
+      not_started: Ej påbörjad
+      of: av
+      project_name: Projektnamn
+      questions: frågor
+      reset: Återställa
+      role: Roll
+      search_results_total_count: Sökresultat (%{total_count})
+      self_surveys: Självundersökningar
+      survey_taker_details: Survey Taker Detaljer
+    users_search:
+      actions: Handlingar
+      created_at: Skapat på
+      email: E-post
+      evaluations: utvärderingar
+      name: namn
+      practitioners: konsulter
+      search_results_total_count: Sökresultat (%{total_count})
+      selfsurveys: Själv Undersökningar
+  shared:
+    1_printed_copy_per_participant: 1 Tryckt kopia per deltagare
+    actions: Handlingar
+    add: Lägg till
+    add_participant: Lägg till deltagare
+    cancel: Annullera
+    certified_consultants: konsulter
+    companies: kunder
+    complete_by: Komplett med
+    completed_at: Avslutad kl
+    confirm: Är du säker?
+    create_group_report: Skapa grupprapport
+    created_at: Skapat på
+    date_created: Skapat datum
+    delete: Radera
+    demographic: Demografisk
+    details: detaljer
+    edit: Redigera
+    edit_evaluator: Redigera utvärderaren
+    email: E-post
+    import_participants: Importera deltagare
+    kind: Snäll
+    licensor: licens~~POS=TRUNC
+    manage_evaluators: Hantera utvärderare
+    menu:
+      dashboard: instrumentbräda
+      disabled: Inaktiverad
+      invited: inbjuden
+      orders: Order
+      print_reports: Skriv ut rapporter
+      project_center: Projektcenter
+      survey_takers: Survey Takers
+      utilities: verktyg
+    more_actions: Fler åtgärder
+    name: namn
+    new:
+      footer:
+        current_useremail: "(%{current_useremail})"
+        go_back_to_the_csr_project_cen: Gå tillbaka till CSR Project Center
+        you_true_useremail_are_imperso: Du (%{true_useremail}) utmärker konsulten
+        your_password_will_expire: Ditt lösenord löper ut i %{days_to_expire} dagar. 
+        renew_your_password: Vänligen ändra ditt lösenord.
+      header:
+        go_to_project_center: Gå till Project Center
+        link_to_class_logo__link_do: "/"
+        selfassessment: Självbedömning
+        the_leadership_circle: 'Ledarskaps Circle:'
+        the_leadership_circle_profilet: Ledarskaps Circle Profile
+        the_leadership_circle_selfasse: 'Ledarskaps Circle: Självbedömning'
+      modal_search:
+        all: Allt
+        orders: Order
+        projects: projekt
+        survey_takers: Survey Takers
+        users: användare
+      modal_wait:
+        importing_participants: Importerar deltagare
+        please_wait: Vänta ...
+      nav:
+        active_projects: Aktiva projekt
+        my_clients: Mina kunder
+        my_orders: Mina rapporter
+        my_surveys: Mina undersökningar
+        people: Personer
+        print_reports: Skriv ut rapporter
+        project_center: Projektcenter
+        utilities: verktyg
+      navigation_mobile:
+        logout: Logga ut
+        my_account: Mitt konto
+      session_timeout_modal:
+        attention: Uppmärksamhet!
+        logout: Logga ut
+        more_time: Mer tid
+        you_have_been_inactive_and_you: Du har varit inaktiv och du kommer automatiskt att loggas ut i <b class = "remaining-time"> 5:00 </ b> minuter. Vill du ha mer tid?
+      session_timeout_remodal_modal:
+        attention: Uppmärksamhet!
+        logout: Logga ut
+        more_time: Mer tid
+        you_have_been_inactive_and_you: Du har varit inaktiv och du kommer automatiskt att loggas ut i <b class = "remaining-time"> 5:00 </ b> minuter. Vill du ha mer tid?
+      user_navigation:
+        logout: Logga ut
+        my_account: Mitt konto
+        stop_impersonating_current_use: Sluta imitera %{current_userfull_name}
+        take_selfassessment: Ta självbedömning
+    next_page: Nästa sida
+    not_set: Inte inställd
+    notify:
+      delete_warning: Det går inte att radera utvärderare som redan har genomfört undersökningen.
+      moved_with_success: Deltagaren flyttades framgångsrikt.
+      success: Data sparad.
+      update_warning: Det går inte att ändra utvärderare som redan har genomfört undersökningen.
+    number: siffra
+    of: av
+    old:
+      forbidden:
+        forbidden: Förbjuden
+    participants: Deltagare
+    pdf_report: PDF-rapport
+    people: personer
+    percent_complete: "% Komplett"
+    please_remove_children: Kan inte radera eftersom det fortfarande finns tillgängliga data (organisationer, projekt). Du måste först radera beroende data.
+    preview: Förhandsvisning
+    preview_report: Förhandsgranskningsrapport
+    previous: Tidigare
+    printing_access: Utskriftsåtkomst
+    projects: projekt
+    questions: frågor
+    rename: Döpa om
+    report: Rapportera
+    report_for: Rapportera för
+    reset_password: Återställ lösenord
+    reset_password_confirm: Är du säker på att du vill återställa lösenordet?
+    retake: Ta om
+    role: Roll
+    save: Spara
+    save_changes: Spara ändringar
+    send_invitations: Skicka inbjudningar
+    shared_settings: Delade inställningar
+    shared_with: Delad med
+    status: Status
+    system: Systemet
+    to: till
+    total: Total
+    users: användare
+    were_found: hittades
+    when: När
+    who: Vem
+  support:
+    array:
+      last_word_connector: ", Och"
+      two_words_connector: " och"
+      words_connector: ","
+  surveys:
+    another_show:
+      surveyproductname: "%{surveyproductname}"
+      tsurveysshowsurvey_for_surveye: "%{tsurveysshowsurvey_for} %{surveyevaluatorfull_name}"
+    answers:
+      are_you_sure_undone: Är du säker? Vänligen kolla alla dina svar. Det här steget kan inte ångras
+      back_to_surveys: Tillbaka till enkäter
+      finish_survey: Avsluta undersökningen
+      next_section: Nästa avsnitt
+      previous_section: Föregående avsnitt
+      questions_completed: Frågor slutförda
+    before_you_begin:
+      back_to_main_page: Tillbaka till huvudsidan
+      before_you_begin: Innan du börjar
+      continue_to_survey: Fortsätt till undersökning
+      need_help: Behövs hjälp?
+      tlc_would_like_to_gather_some_: TLC vill bara samla in information för intern forskningsprocess. TLC delar inte din information. Vi skulle vara tacksamma om du skulle svara på frågorna. Om du väljer att inte delta, välj "Prefer to not answer" och klicka på "Fortsätt till undersökning" -knappen.
+      we_need_a_little_more_informat: Vi behöver lite mer information om dig ...
+    demographic:
+      before_you_begin: Innan du börjar
+      raw_data_only_hint: Dessa fält krävs för pdf-rapporter, men inte för data endast resultat
+      tlc_would_like_to_gather_some_: TLC vill bara samla in information endast för intern forskning. TLC delar inte din information. Vi skulle vara tacksamma om du skulle svara på frågorna; Du kan dock alltid välja "Förhindra att inte svara".
+      we_need_a_little_more_informat: Vi behöver lite mer information om dig ...
+    done: Klicka för att ta undersökning.
+    index:
+      active_surveys: Aktiva undersökningar
+      complete_active_surveys: Vänligen fyll i alla dina aktiva undersökningar nedan
+      content: Innehåll
+      my_active_surveys: Mina aktiva undersökningar
+      need_help: Behövs hjälp?
+      self_survey: Självundersökning
+      survey_history: Undersökningshistoria
+      take_survey: Ta undersökning
+    invite_evaluators:
+      add_evaluator: Lägg till utvärderare
+      back_to_survey_list: Tillbaka till undersökningslistan
+      evaluators_provide_feedback_on: Utvärderare ger feedback om dina ledaregenskaper och kompetenser genom att fylla i enkäten.
+      invite_evaluators: Bjud in utvärderare
+      need_help: Behövs hjälp?
+      take_the_survey: Ta undersökningen
+      you_have_enough_evaluators_to_: Du har tillräckligt med utvärderare för att ta undersökningen. Vi rekommenderar dock att du minst har <span class = 'minimum-utvärderare'> <b> 10 utvärderare <b> </ span>.
+      you_must_add_at_least_span_cla: Du måste lägga till minst <span class = 'minsta utvärderare'> %{current_userinvitee_surveys} fler utvärderare </ span> för att ta undersökningen.
+    not_enough_invited_evaluators: Deltagaren kan bjuda in utvärderarna. Inte tillräckligt med utvärderare för att ta undersökningen.
+    not_valid: Tyvärr, men denna undersökning är inte tillgänglig längre.
+    partials:
+      modals:
+        need_help:
+          description: Välj en undersökning från listan nedan för vilken du behöver hjälp. Vår konsult kontaktar dig så snart som möjligt.
+          main_support: Huvudstöd
+      continue_survey:
+        '100': 100%
+        culture_survey_for: Kulturundersökning för
+        current_userfirst_name_current: "%{current_userfirst_name} %{current_userlast_name}"
+        review_your_answers: Granska dina svar
+        self_survey_for: Självundersökning för
+        thanks_current_userfirst_name: Tack %{current_userfirst_name},
+        you_are_currently_taking_secti: Du tar för närvarande delen %{paramssection_page} av %{surveysectionscount}
+        you_have_answered_all_the_ques: Du har svarat på alla frågor för avsnitt %{paramssection_page}.
+      evaluator_form:
+        cancel: Annullera
+        update_evaluator: Uppdatera utvärderaren
+      evaluators:
+        edit_evaluator: Redigera utvärderaren
+        evaluator_details: Utvärderingsuppgifter
+        language: Språk
+        relationship: Relation
+      modal:
+        add_evaluator: Lägg till utvärderare
+        always: Alltid
+        cancel: Annullera
+        edit_evaluator: Redigera utvärderaren
+        na: N / A
+        never: Aldrig
+        often: Ofta
+        once_added_an_email_will_be_im: När ett tillfälle läggs till skickas ett mail direkt till utvärderaren och bjuder in dem att delta
+        previous_question: Föregående fråga
+        review_your_answers: Granska dina svar
+        seldom: Sällan
+        self_survey_for_bthe_most_effe: Självundersökning för <b> Den mest effektiva ledaren jag känner </ b>
+        sometimes: Ibland
+      my_active_surveys:
+        complete_by: Komplett med
+        current_userinvitee_completed_: "%{current_userinvitee_completed_} av %{current_userinvitee_surveyssel} utvärderingar avslutade"
+        evaluations_self:
+          one: 'Du har <b> en utvärdering </ b> för att slutföra:'
+          other: 'Du har <b> %{count} utvärderingar </ b> för att slutföra:'
+        evaluator_setup: Evaluator Setup
+        my_active_surveys: Mina aktiva undersökningar
+        please_complete_all_of_your_ac: Vänligen fyll i alla dina aktiva undersökningar nedan.
+        self_evaluations_left:
+          one: 'Du har <b> en självutvärdering </ b> för att slutföra:'
+          other: 'Du har <b> %{count} självutvärderingar </ b> för att slutföra:'
+        self_survey: Självundersökning
+        take_the_survey: Ta undersökningen
+        you_must_invite_at_least_self_: Du måste bjuda in minst %{self_surveyprojectminimum_eval} utvärderare för att kunna ta undersökningen.
+      new_or_pending:
+        continue_the_survey: Fortsätt undersökningen
+        current_sectionquestionscount_: "%{current_sectionquestionscount} frågor"
+        go_back_to_survey_list: Gå tillbaka till undersökningslistan
+        need_help: Behövs hjälp?
+        of: av
+        previous_section: Föregående avsnitt
+        restart_previous_survey: Starta om tidigare undersökning
+        start_the_survey: Börja undersökningen
+        you_have_answered: Du har svarat
+      no_evaluators:
+        add_evaluator: Lägg till utvärderare
+        why_do_i_have_to_invite_evalua: " "
+        you_currently_do_not_have_any_: Du har för närvarande inga utvärderare.
+        you_need_to_have_at_least_span: Du måste ha minst <span class = 'minsta utvärderare'> %{minimum_evals} utvärderare </ span> för att undersöka. <br> Klicka på knappen nedan för att lägga till en utvärderare i din lista.
+      question:
+        '1': '1'
+        '15': '1,5'
+        '2': '2'
+        '25': '2,5'
+        '3': '3'
+        '35': '3,5'
+        '4': '4'
+        '45': '4,5'
+        '5': '5'
+        agree: Hålla med
+        always: Alltid
+        culture_survey_for: Kulturundersökning för
+        disagree: Instämmer inte alls
+        na: N / A
+        never: Aldrig
+        of: av
+        often: Ofta
+        perc_progress: "%{perc_progress}%"
+        previous_question: Föregående fråga
+        providing_feedback_for: Ger feedback för
+        question: Fråga
+        seldom: Sällan
+        self_survey_for: Självundersökning för
+        slightly_agree: Lite enigt
+        slightly_disagree: Något oenig
+        sometimes: Ibland
+        strongly_agree: Håller starkt med
+        strongly_disagree: Helt oenig
+        very_strongly_agree: Mycket starkt överens
+        very_strongly_disagree: Mycket starkt oense
+        you_are_currently_taking_secti: Du tar för närvarande delen %{sections_page} av %{surveysectionscount}
+        "×": "×"
+      review:
+        finish_your_survey: Avsluta din undersökning
+        need_help: Behövs hjälp?
+        next_section: Nästa avsnitt
+        previous_section: Föregående avsnitt
+        review_continue: Granska och fortsätt
+        review_your_answers_to_the_lea: Granska dina svar på %{product_name}. Ändra något svar genom att klicka på det.
+        section_sectionscurrent_page_o: Avsnitt %{sectionscurrent_page} av %{sectionstotal_pages}
+        your_survey_is_almost_complete: Din undersökning är nästan avslutad. Granska dina svar.
+        your_survey_is_not_yet_complet: Din undersökning är ännu inte färdig. Du har %{sectionstotal_pages_sectionscu} fler avsnitt att slutföra.
+      review_form:
+        '1': '1'
+        '15': '1,5'
+        '2': '2'
+        '25': '2,5'
+        '3': '3'
+        '35': '3,5'
+        '4': '4'
+        '45': '4,5'
+        '5': '5'
+        always: Alltid
+        cancel: Annullera
+        na: N / A
+        never: Aldrig
+        often: Ofta
+        seldom: Sällan
+        sometimes: Ibland
+        update: Uppdatering
+      sections:
+        survey_taker_evaluator_section_1_description:
+          leadership_profile: Ledarskapsprofil
+          providing_feedback_section_sec: Ger feedback sektion %{sectionscurrent_page} av %{sectionstotal_pages}
+          you_will_be_able_to_review_and: Du kommer att kunna granska och ändra dina svar i slutet av det här avsnittet.
+        survey_taker_section_1_description:
+          culture_survey: Kulturundersökning
+          leadership_profile: Ledarskapsprofil
+          section_sectionscurrent_page_o: Avsnitt %{sectionscurrent_page} av %{sectionstotal_pages}
+          you_will_be_able_to_review_and: Du kommer att kunna granska och ändra dina svar i slutet av det här avsnittet.
+        survey_taker_section_2_description:
+          at_the_end_of_this_section_you: I slutet av det här avsnittet kommer du att kunna granska och ändra dina svar.
+          most_effective_leader: Skriftliga kommentarer
+          section_sectionscurrent_page_o: Avsnitt %{sectionscurrent_page} av %{sectionstotal_pages}
+      survey_history:
+        completed_on: Avslutad på
+        evaluations_completed:
+          one: 'Du har slutfört <b> en utvärdering </ b>:'
+          other: 'Du har slutfört <b> %{count}-utvärderingar </ b>:'
+        evaluator_setup: Evaluator Setup
+        my_survey_history: Min undersökningshistorik
+        self_evaluations_completed:
+          one: 'Du har slutfört <b> en självutvärdering </ b>:'
+          other: 'Du har slutfört <b> %{count} självvärderingar </ b>:'
+        self_survey: Självundersökning
+        this_is_the_list_of_all_the_su: Detta är listan över alla undersökningar du har deltagit.
+      thanks:
+        all_your_answers_have_been_sub: Alla dina svar har skickats in och sparats. Tack för din tid.
+        go_back_to_survey_list: Gå tillbaka till undersökningslistan
+        log_out: Logga ut
+        thanks_current_userfirst_name_: Tack, %{current_userfirst_name}, för att ta denna undersökning.
+    process_error: Det har funnits ett fel i undersökningsprocessen eller anslutningen.
+    questions:
+      put_your_answer_here: Sätt ditt svar här
+    questions_completed: Frågor slutförda
+    sa_request: Tack, vi kommer att vara i kontakt.
+    sections:
+      current_leadership_culture: I det här avsnittet kommer du att utvärdera <b> %{participant} </ b>. Din uppgift är att beskriva ledarskapsbeteenden som oftast praktiseras, uppmuntras eller tillåts av ledare. Det kan finnas många faktorer som påverkar din övergripande erfarenhet av ledarskap inom din organisation eller lag. Till exempel har två olika chefer kontrasterande ledarstilar, och båda har ett inflytande på ledarskapskulturen i denna organisation eller lag. Beskriv det beteende som har störst inverkan på din upplevelse.
+      desired_leadership_culture: I det här avsnittet, vänligen svara på frågorna baserat på hur du önskar eller önskar att ledningskulturen i <b> %{participant} </ b> är. Svar på varje fråga som om ledarkulturen var idealisk - en som skulle göra det möjligt att trivas i nuvarande och framtida miljöer.
+      ideal_to_ideal: ''
+      leadership_profile: Det här avsnittet är utformat för att bygga en ledarskapsprofil för <b> %{participant} </ b>. Arbeta snabbt genom frågorna med ditt första intryck. Använd alternativet N / A om du inte vet svaret på frågan eller frågan inte gäller.
+      manager_profile: Det här avsnittet är utformat för att bygga en profil för <b> %{participant} </ b>. Arbeta snabbt genom frågorna med ditt första intryck. Använd alternativet N / A om du inte vet svaret på frågan eller frågan inte gäller.
+      most_effective_leader: |-
+        I det här avsnittet utvärderas inte längre <b> %{participant} </ b>.
+        Istället identifiera vem som är den mest effektiva ledaren du någonsin har arbetat med (direkt eller indirekt). <B> Besvara dessa frågor med den här personen i åtanke. </ B>
+        I slutet av det här avsnittet kommer du att kunna granska och ändra dina svar.
+      write_in_feedback: I det här avsnittet, lämna ytterligare skriftlig feedback till <b> %{participant} </ b>. Deltagarna hittar alltid skrivningsinstruktionerna särskilt användbara för att förstå sina resultat. Din feedback kan innefatta områden som denna undersökning inte täckte, eller exempel som illustrerar varför du utvärderade <b> %{participant} </ b> så du gjorde, eller något annat som är viktigt för <b> %{participant} </ b>.
+    self:
+      end_section: I slutet av det här avsnittet kommer du att kunna granska och ändra dina svar
+      identify_effective_leader: Istället identifiera vem som är den mest effektiva ledaren du någonsin har arbetat med (direkt eller indirekt)
+      most_effective_leader: Mest effektiva ledare
+      no_longer_be_evaluating: I det här avsnittet kommer du inte längre att utvärdera
+      surveyproductname: "%{surveyproductname}"
+      that_person_in_mind: Besvara dessa frågor med den personen som tänker på
+      tsurveysselfno_longer_be_evalu: "%{tsurveysselfno_longer_be_evalu} %{surveyevaluatorfull_name}."
+    show:
+      survey_for: Undersökning för
+    survey:
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_at_format_lon}"
+    survey_progress:
+      current_sectionanswers_forsurv: "%{current_sectionanswers_forsurv} / %{current_sectionquestionscount}"
+      current_sectionpercentage_comp: "%{current_sectionpercentage_comp}%{tsharedpercent_complete}"
+  system_history:
+    announcement_send_at_changed: Påminnelse skickat datum ändrat till %{date}
+    change_history: Ändra historia
+    comment_questions_changed: Kommentera frågor som ändrats till '%{value}'
+    completion_date_changed: Slutdatumet ändrades till %{date}
+    create_participant: Skapat deltagare %{participant}
+    delete_participant: Delad deltagare %{participant}
+    demographics_policy_changed: Rapportera demografi ändras till "%{value}"
+    description: Nedan följer de ändringar som gjorts i denna order eftersom den skapades på %{created_date}
+    order_deleted: Raderad beställning nr %{value}
+    pdf_copies_only_changed: Endast PDF-kopior valdes
+    printed_copies_changed: PDF och utvalda kopior vald
+    project_created: Projekt skapat
+    report_date_changed: Rapportdatum ändras till %{date}
+    retake_added: Återta för %{participant} tillsatt
+    retake_removed: Återta för %{participant} borttagen
+  templates:
+    form:
+      form:
+        if_you_have_already_sent_the_m: Om du redan har skickat meddelandet till deltagarna måste du skicka det igen till projekt för att få det uppdaterade meddelandet.
+        modifying_this_message_will_ch: Om du ändrar det här meddelandet ändras deltagarens välkomstmeddelande till alla deltagare med engelska undersökningsspråket.
+        please_do_not_modify_any_text_: Ändra inte någon text inom (* || *) nedan. Dessa är nycklar som kommer att ersättas med deltagarinformationen när meddelandet skickas.
+        reset_english_message: Återställ engelska meddelandet
+        return_to_list: Återgå till listan
+        update_english_message: Uppdatera engelska meddelandet
+    participant_invitation_msg:
+      message: Meddelande
+      reset_english_message: Återställ engelska meddelandet
+      save_templatelanguagename_mess: Spara %{templatelanguagename} Meddelande
+      subject: Ämne
+  time:
+    am: är
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: e.m
+  users:
+    avatar_upload:
+      error: Uppladdningen stötte på ett fel. Kontrollera dina data igen och försök igen.
+      success: Bilden har laddats upp.
+    demographic:
+      demographics: Demografi
+    demographic_form:
+      company_details: Företagsuppgifter
+      continue_to_survey: Fortsätt till undersökning
+      need_help: Behövs hjälp?
+      personal_information: Personlig information
+    edit:
+      accounting_id: Redovisnings-ID
+      add_address: Lägg till adress
+      add_phone: Lägg till telefonnummer
+      address_type: Adresstyp
+      addresses: adresser
+      age: 'Ålder:'
+      back_to_settings: Tillbaka till Inställningar
+      cancel: Annullera
+      change_password: Ändra lösenord
+      change_profile_picture: Byt profilbild
+      city: Stad
+      company_details: Företagsuppgifter
+      company_name: Företagsnamn
+      company_revenue: företagets intäkter
+      confirm_password: 'Bekräfta lösenord:'
+      country_address: Land
+      current_password: Nuvarande lösenord
+      date_of_birth: Födelsedatum
+      education: Utbildning
+      email: E-post
+      ethnic_group: Etnisk grupp
+      fax: Fax
+      first_name: Förnamn
+      gender: Kön
+      home: Hem
+      industry: Industri
+      language: Språk
+      last_name: Efternamn
+      management_level: Ledningsnivå
+      mobile: Mobil
+      new_password: nytt lösenord
+      number_of_direct_reports: Antal Medarbetare
+      organization_level: Organisationsnivå
+      password: Lösenord
+      password_label: 'Lösenord:'
+      personal_information: Personlig information
+      phone_numbers: Telefonnummer
+      please_enter_address_name: Ange adressnamn
+      please_enter_email: Vänligen ange e-post
+      please_enter_new_confirmation_: Vänligen ange ett nytt lösenord för bekräftelse
+      please_enter_new_password: Vänligen ange nytt lösenord
+      please_enter_phone_number: Vänligen ange telefonnummer
+      please_enter_valid_confirmatio: Vänligen ange ett giltigt bekräftelseslösenord
+      please_enter_valid_email: Vänligen ange ett giltigt e-postmeddelande
+      profession: Yrke
+      professional_information: Professionell information
+      profile_picture: Profilbild
+      reenter_new_password: Skriv in nytt lösenord
+      remove_address: Ta bort den här adressen
+      remove_phone: Ta bort den här telefonen
+      remove_profile_picture: Ta bort profilbilden
+      residing_country: Bosatt land
+      retype_password: Skriv in ditt nya lösenord ...
+      save_changes: Spara ändringar
+      size_of_organization: Organisationens storlek
+      state_province: Stat / provins
+      street_address: Gatuadress
+      use_the_form_below_to_change_t: Använd formuläret nedan för att ändra lösenordet till ditt TLC-konto.
+      user_roles: Användarroller
+      users_placeholder: Utrymme för användare
+      work: Arbete
+      working_address: Arbetsadress
+      zip_code_address: Postnummer / Postnummer
+      password_must_have_at_least: "Ditt lösenord måste ha:"
+      9_characters: 9 tecken
+      1_lowercase_letter: 1 små bokstäver
+      1_uppercase_letter: 1 Stor bokstav
+      1_number: 1 nummer
+      1_special_character: 1 specialtecken
+      passwords_dont_match: Lösenorden matchar inte
+      good_so_far: Bra så långt
+      match: Matchar
+      good: Bra
+      too_week: För svag
+    modify:
+      success: Användaren har uppdaterats framgångsrikt.
+    take_self_assessment:
+      error: Något gick fel!
+    update_demographics:
+      error: Det uppstod ett fel vid samling av demografiska data. Var god försök igen.
+      success: Demografiska data har uppdaterats framgångsrikt.
+    update_password:
+      success: Lösenordet har uppdaterats framgångsrikt.
+  utilities:
+    index:
+      all: Allt
+      billings: Billings
+      'false': Nej
+      filter: Filtrera
+      filter_by_in_voiced: 'Filtrera efter fakturering:'
+      filter_by_order_status: 'Filtrera efter beställningsstatus:'
+      filter_by_region: 'Filtrera efter region:'
+      finished: Färdiga
+      'no': Nej
+      ordered: Beordrade
+      orders: Order
+      orders_placeholder: Ange ordernamn eller ordernummer ...
+      projects: projekt
+      projects_placeholder: Skriv projektnamn ...
+      search: Sök
+      survey_takers: Survey Takers
+      surveys_placeholder: Ange användarnamn eller e-postadress ...
+      users: användare
+      users_placeholder: Skriv användarnamn eller e-postadress ...
+      'yes': Ja
+    new_sa:
+      generate: Generera
+      select_score_for_answers: 'Välj poäng för svar:'
+      users_email: 'Användarens e-postadress:'
+    partials:
+      billing_table:
+        invoiced: faktureras
+      search_orders:
+        found_order: Hittade beställning
+        no_order_is_found: Ingen beställning hittades!
+      search_orders_details:
+        ordercoach_report_qty: "%{ordercoach_report_qty}"
+        ordercoach_report_qty_tordersd: "%{ordercoach_report_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_graph_qty: "%{orderparticipant_graph_qty}"
+        orderparticipant_graph_qty_tor: "%{orderparticipant_graph_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_report_qty: "%{orderparticipant_report_qty}"
+        orderparticipant_report_qty_to: "%{orderparticipant_report_qty} %{tordersdetailscopies_per_parti}"
+        pdf: PDF
+      search_projects:
+        no_projects_are_found: Inga projekt hittades!
+      search_surveys:
+        actions: Handlingar
+        completed_on: Avslutad på
+        completion_date: Slutdatum
+        delete: Radera
+        evaluating: utvärdera
+        evaluations: utvärderingar
+        found_survey_taker: Hittade Survey Taker
+        language: Språk
+        last_logged_in: Senast inloggad
+        more_actions: Fler åtgärder
+        move: Flytta
+        no_survey_is_found: Ingen undersökning hittades!
+        not_started: Ej påbörjad
+        of: av
+        project_name: Projektnamn
+        questions: frågor
+        reset: Återställa
+        role: Roll
+        self_surveys: Självundersökningar
+        survey_taker_details: Survey Taker Detaljer
+      search_users:
+        back: Tillbaka
+        email: 'E-post:'
+        found_user: Hittade användare
+        impersonate: Imitera
+        name: 'Namn:'
+        no_user_is_found: Ingen användare hittades!
+      survey:
+        reset: Återställa
+    show_order:
+      billing_contact: Faktureringskontakt
+      binder_contact: Binder Kontakt
+      coaching_report: 'Coaching rapport:'
+      comment_questions: 'Kommentar Frågor:'
+      company: Företag
+      demographics: 'Demografi:'
+      included_participants: 'Inkluderade deltagare:'
+      invoice_order: Faktura Order
+      invoiced: 'faktureras:'
+      list_of_participants: Lista över deltagare
+      mark_order_as_not_invoiced: Markera Order som inte Fakturerad
+      order_details: Orderdetaljer
+      order_number: 'Ordernummer:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} kopior"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} kopior per deltagare"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} kopior per deltagare"
+      participant_graph: 'Deltagare diagram:'
+      participant_report: 'Deltagarrapport:'
+      pdf: PDF
+      planned_completion_date: 'Planerad slutdatum:'
+      processing_date: 'Bearbetningsdatum:'
+      product_type: 'Produkttyp:'
+      profile_interpretation_manual: 'Profil Tolkningshandbok:'
+      report_contact: Rapportera kontakt
+      report_name: 'Rapportnamn:'
+      report_type: 'Rapporttyp:'
+    surveys:
+      created_at: Skapat på
+      evaluator: Utvärderare
+      id: "#ID"
+      new_self_assessment: Ny självbedömning
+      regular: Regelbunden
+      self_assessment: Självbedömning
+      status: Status
+  views:
+    pagination:
+      first: "& Laquo; Först"
+      last: Senaste & raquo;
+      next: Nästa & rsaquo;
+      previous: "& Lsaquo; Föregående"
+      truncate: "& Hellip;"

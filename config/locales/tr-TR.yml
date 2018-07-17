@@ -1,0 +1,2590 @@
+---
+tr-TR:
+  activerecord:
+    attributes:
+      project:
+        billing_address: Fatura Adresi
+        binder_address: Binder Adresi
+        certified_consultant: Onaylanmış Danışman
+        coach_report_pdf: Teknik Direktör Raporu PDF
+        coach_report_qty: Antrenör Raporu Miktar
+        comment_questions: Yorum Soruları
+        completion_date: Tamamlama tarihi
+        consultant: Danışman
+        created_at: Oluşturuldu
+        deliverable_option: Teslim Edilebilir Seçenek
+        demographics_policy: Demografi Politikası
+        evaluators_policy: Değerlendiriciler Politikası
+        group_report_pdf: Grup Raporu PDF
+        minimum_evaluations_per_participant: Katılımcı başına minimum değerlendirmeler
+        name: isim
+        need_help_email: Yardım e-postasına ihtiyacınız var
+        organization: müşteri
+        participant_graph_pdf: Katılımcı Grafiği PDF
+        participant_graph_qty: Katılımcı Grafiği Miktarı
+        participant_report_pdf: Katılımcı Raporu PDF
+        participant_report_qty: Katılımcı Raporu Miktar
+        pdf_interpretation_manual: PDF Tercüme Kılavuzu
+        printed_interpretation_manual: Basılı Tercüme Kılavuzu
+        product: Ürün
+        promo_code: Promosyon kodu
+        report_date: Rapor Tarihi
+        shipping_address: teslimat adresi
+        status: durum
+        survey_focus: Anket Odaklılığı
+        survey_focus_description: Anket Odaklı Açıklama
+        updated_at: 'Güncelleme Tarihi:'
+        user: Müşteri Temsilcisi
+      project_address:
+        address_line1: 1. Adres Hattı
+        address_line2: 2. Adres Hattı
+        address_line3: 3. Adres Hattı
+        city: Şehir
+        country_code: Ülke kodu
+        created_at: Oluşturuldu
+        email: E-posta
+        name: isim
+        phone_no: Telefon numarası
+        postal_code: posta kodu
+        state_code: Devlet Kodu
+        updated_at: 'Güncelleme Tarihi:'
+    errors:
+      messages:
+        passwords:
+          cannot_contain: Adınızın veya e-postanızın tümünü veya bir kısmını içeremez.
+          does_not_match_security_requirements: 'Güvenlik gereksinimleriyle uyuşmuyor. Parola, aşağıdaki 3 karakter grubundan 1''ini içermelidir: A-Z, a-z, 0-9.'
+          must_be_at_least: En az 8 karakter uzunluğunda olmalı.
+        record_invalid: 'Doğrulama başarısız oldu: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Bağımlı %{record} varlığı nedeniyle kayıt silinemiyor
+          has_one: Bağımlı bir %{record} varlığı nedeniyle kayıt silinemiyor
+        should_be_greater_or_equal: Daha büyük veya eşit tamamlanma tarihi olmalıdır.
+  addresses:
+    region:
+      regionnametitleize_regionabbre: "%{regionnametitleize} (%{regionabbreviation})"
+  application:
+    change_password_required: İlk kez oturum açmadan önce şifrenizi değiştirmeniz gerekir
+    user_not_authorized:
+      forbidden: yasak
+  companies:
+    edit:
+      edit_company: Müşteri Düzenle
+      manage_users: Kullanıcıları Yönet
+    index:
+      companiestotal_count: "(%{companiestotal_count})"
+      company_name: Müşteri Adı
+      create_company: Müşteri Oluştur
+      industry: sanayi
+      manage_company: İstemciyi Yönet
+      my_clients: Müşterilerim
+      number_of_projects: Proje Sayısı
+      sort_by_company_name: Müşteri adına göre sırala
+      sort_by_created_date: Oluşturulan Güne Göre Sırala
+      sort_by_industry: Endüstriye göre sırala
+      sort_by_number_of_projects: Proje Sayısı Sıralama
+      start_creating_companies_now: Şimdi müşteriler oluşturmaya başlayın
+      you_have_no_companies_to_manage: Yönetmek için hiçbir müşteriniz yok
+    new:
+      consulting_company: Danışmanlık şirketi
+      create_company: Müşteri Oluştur
+      new_company: Yeni İstemci Adı
+    partials:
+      delete_company:
+        cname_corganization_typename: "%{cname} (%{corganization_typename})"
+        existing_projects_top_10: 'Mevcut projeler (ilk 10):'
+        please_notice_that_it_will_als: 'Ayrıca şu var olan çocuk organizasyonlarını da sileceğini unutmayın:'
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} bu firma"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_comp: "%{thomeindexyes_delete_this} şirketi"
+    show:
+      create_group_report: Grup Raporu Oluştur
+      create_new_project: Yeni Proje Yarat
+      created_by: "%{creator} tarafından oluşturulmuş"
+      delete_company: İstemciyi Sil
+      tsharedmore_actions: "%{tsharedmore_actions}"
+      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant} %{tsharedcertified_consultants}"
+  concerns:
+    role_management:
+      create_user_role:
+        success: başarı
+      update_user_role:
+        success: başarı
+  consultants:
+    saved_successfully: Danışman başarıyla eklendi!
+    title: Danışman
+  date:
+    abbr_day_names:
+    - Güneş
+    - Pazartesi
+    - Sal
+    - evlenmek
+    - Per
+    - Cuma
+    - Oturdu
+    abbr_month_names:
+    -
+    - Ocak
+    - Şubat
+    - Mar
+    - Nisan
+    - Mayıs ayı
+    - Haziran
+    - Temmuz
+    - Ağustos
+    - Eylül
+    - Ekim
+    - Kasım
+    - Aralık
+    day_names:
+    - Pazar
+    - Pazartesi
+    - Salı
+    - Çarşamba
+    - Perşembe
+    - Cuma
+    - Cumartesi
+    formats:
+      default: "%m-%d-%Y"
+      long: "%d %B %Y"
+      short: "%b %d"
+    month_names:
+    -
+    - Ocak
+    - Şubat
+    - Mart
+    - Nisan
+    - Mayıs
+    - Haziran
+    - Temmuz
+    - Ağustos
+    - Eylül
+    - Ekim
+    - Kasım
+    - Aralık
+    order:
+    - :month
+    - :day
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: Yaklaşık 1 saat
+        other: "%{count} saat hakkında"
+      about_x_months:
+        one: Yaklaşık 1 ay
+        other: "%{count} ay hakkında"
+      about_x_years:
+        one: Yaklaşık 1 yıl
+        other: "%{count} yıl hakkında"
+      almost_x_years:
+        one: Neredeyse 1 yıl
+        other: Neredeyse %{count} yıl
+      half_a_minute: Yarım dakika
+      less_than_x_minutes:
+        one: bir dakikadan az
+        other: "%{count} dakikadan az"
+      less_than_x_seconds:
+        one: 1 saniyeden az
+        other: "%{count} saniyeden daha kısa"
+      over_x_years:
+        one: 1 yıldan uzun süre
+        other: "%{count} yıl boyunca"
+      x_days:
+        one: 1 gün
+        other: "%{count} gün"
+      x_minutes:
+        one: 1 dakika
+        other: "%{count} dakika"
+      x_months:
+        one: 1 ay
+        other: "%{count} ay"
+      x_seconds:
+        one: 1 saniye
+        other: "%{count} saniye"
+    prompts:
+      day: Gün
+      hour: Saat
+      minute: Dakika
+      month: Ay
+      second: Saniye
+      year: Yıl
+  devise:
+    confirmations:
+      confirmed: E-posta adresiniz başarıyla doğrulanmıştır.
+      new:
+        resend_confirmation_instructio: Onay talimatlarını tekrar gönder
+      send_instructions: Birkaç dakika içerisinde e-posta adresinizi nasıl teyit edeceğinizle ilgili talimatları içeren bir e-posta alacaksınız.
+      send_paranoid_instructions: E-posta adresiniz veritabanımızda mevcutsa, birkaç dakika içinde e-posta adresinizi onaylama ile ilgili talimatları içeren bir e-posta alacaksınız.
+    failure:
+      user:
+        already_authenticated: Zaten imzalandınız.
+        inactive: Hesabınız henüz etkinleştirilmemiş.
+        invalid: Geçersiz %{authentication_keys} veya şifre.
+        last_attempt: Hesabınız kilitlenmeden önce bir denemek daha var.
+        locked: Hesabınız kilitli.
+        not_found_in_database: Geçersiz %{authentication_keys} veya şifre.
+        timeout: Oturumunuzun süresi doldu. Devam etmek için lütfen tekrar oturum açın.
+        unauthenticated: Devam etmeden önce oturum açmanız veya kayıt olmalısınız.
+        unconfirmed: Devam etmeden önce e-posta adresinizi onaylamanız gerekir.
+    invalid_captcha: Başlık bilgisi geçerli değil!
+    mailer:
+      confirmation_instructions:
+        confirm_my_account: Hesabımı Onaylayın
+        user_subject: Onaylama talimatları
+        welcome_email: "%{email}'a hoşgeldiniz!"
+        you_can_confirm_your_account_e: 'Hesap e-postanızı aşağıdaki bağlantıyı kullanarak teyit edebilirsiniz:'
+      reset_password_instructions:
+        change_my_password: Şifre oluştur
+        hello_resourceemail: Merhaba %{resourceemail}!
+        if_you_didnt_request_this_plea: Bunu istemediyseniz, lütfen bu e-postayı yoksayın.
+        someone_has_requested_a_link_t: Birisi şifrenizi değiştirmek için bir bağlantı istedi. Bunu aşağıdaki bağlantıyı kullanarak yapabilirsiniz.
+        user_subject: Parola talimatlarını sıfırlama
+        your_password_wont_change_unti: Yukarıdaki bağlantıya erişip yeni bir şifre oluşturana kadar şifre değişmeyecektir.
+      unlock_instructions:
+        click_the_link_below_to_unlock: 'Hesabınızın kilidini açmak için aşağıdaki bağlantıyı tıklayın:'
+        hello_resourceemail: Merhaba %{resourceemail}!
+        unlock_my_account: Hesabımı kilidini aç
+        user_subject: Talimatları kilidini aç
+        your_account_has_been_locked_d: Aşırı sayıda oturum açma girişimi başarısız olduğundan hesabınız kilitlendi.
+    omniauth_callbacks:
+      failure: '%{kind}''den "%{reason}" nedeniyle kimlik doğrulaması yapılamadı.'
+      success: "%{kind} hesabından başarıyla doğrulandı."
+    password_expired:
+      change_required: Şifrenizin süresi doldu. Lütfen şifrenizi yenileyin!
+      updated: Yeni şifreniz kaydedildi.
+    passwords:
+      edit:
+        and: ve
+        change_my_password: Şifre oluştur
+        change_your_password: Şifreni oluştur
+        confirm_no_success: Şifre onayı Şifreyle eşleşmiyor!
+        confirm_success: Şifre onayı eşleşiyor!
+        dont_have_an_account: Hesabınız yok mu?
+        good: İyi
+        lower_and_uppercase_letters: Alt ve harfler
+        medium: Orta
+        numbers: sayılar
+        password_should_be_at_least: Şifre en az 8 karakter olmalıdır!
+        password_should_include: Şifre içermelidir
+        return_to_the_leadership_circl: 'Liderlik Çemberine Dönüş: Özdeğerlendirme'
+        sign_up: kaydol
+        strong: Güçlü
+        symbols: semboller
+        very_strong: Çok güçlü
+        weak: Zayıf
+      new:
+        dont_have_an_account: Hesabınız yok mu?
+        forgot_your_password: Şifrenizi mi unuttunuz?
+        log_in: Oturum aç
+        return_to_the_leadership_circl: 'Liderlik Çemberine Dönüş: Özdeğerlendirme'
+        send_me_reset_password_instruc: Bana sıfırlama şifresi talimatlarını gönder
+        sign_up: kaydol
+      send_instructions: Talimatları gönder
+      user:
+        no_token: Güvenlik amaçlı olarak, bir şifre sıfırlama e-postasından doğrudan gelmeden bir önceki sayfaya erişemezsiniz. Parola sıfırlama e-postasından geliyorsanız lütfen e-postada sağlanan tam URL'yi kullandığınızdan emin olun.
+        send_instructions: Birkaç dakika içinde şifrenizi nasıl sıfırlayacağınıza ilişkin talimatları içeren bir e-posta alacaksınız.
+        send_paranoid_instructions: E-posta adresiniz veritabanımızda mevcutsa, birkaç dakika içinde e-posta adresinize bir şifre kurtarma bağlantısı gönderilecektir.
+        updated: Şifreniz başarıyla değiştirildi. Şimdi oturum açmışsın.
+        updated_not_active: Şifreniz başarıyla değiştirildi.
+    registrations:
+      destroyed: Hoşçakal! Hesabınız başarıyla iptal edildi. Yakında tekrar görüşmeyi umuyoruz.
+      edit:
+        current_password: Şimdiki Şifre
+        currently_waiting_confirmation: 'Şu anda için bekleyen onay: %{resourceunconfirmed_email}'
+        edit_resource_nameto_shumanize: "%{resource_nameto_shumanize}'i düzenle"
+        password: Parola
+        password_confirmation: Şifre onayı
+        update_password: Şifreyi Güncelle
+        we_need_your_current_password_: Değişikliklerinizi onaylamak için mevcut şifrenize ihtiyacımız var
+        you_must_change_your_password_: İlk kez oturum açmadan önce şifrenizi değiştirmeniz gerekir.
+      new:
+        log_in: Oturum aç
+        sign_up: Kaydol
+      signed_up: Hoşgeldiniz! Başarıyla kaydolmuşsunuzdur.
+      signed_up_but_inactive: Başarıyla kaydolmuşsunuzdur. Bununla birlikte, hesabınız henüz etkinleştirilmediği için sizi giriş yapamadık.
+      signed_up_but_locked: Başarıyla kaydolmuşsunuzdur. Bununla birlikte, hesabınız kilitlendiği için sizi de imzalayamadık.
+      signed_up_but_unconfirmed: E-posta adresinize bir onay bağlantısı olan bir mesaj gönderildi. Hesabınızı etkinleştirmek için lütfen bağlantıyı takip edin.
+      update_needs_confirmation: Hesabınızı başarıyla güncellediniz, ancak yeni e-posta adresinizi doğrulamamız gerekiyor. Lütfen e-postanızı kontrol edin ve yeni e-posta adresinizi onaylamak için onay linkini takip edin.
+      updated: Hesabınız başarıyla güncellendi.
+    sessions:
+      new:
+        dont_have_an_account: Hesabınız yok mu?
+        forgot_your_password: Şifrenizi mi unuttunuz?
+        login: Oturum aç
+        login_to_your_account: Hesabınıza giriş yapın
+        privacy_policy: Gizlilik Politikası
+        return_to_the_leadership_circl: 'Liderlik Çemberine Dönüş: Özdeğerlendirme'
+        sign_up: kaydol
+      user:
+        already_signed_out: Başarıyla imza attı.
+        signed_in: Başarıyla oturum açtı.
+        signed_out: Başarıyla imza attı.
+    shared:
+      links:
+        didnt_receive_confirmation_ins: Onay talimatını almadınız mı?
+        didnt_receive_unlock_instructi: Kilit açma talimatları almadınız mı?
+        forgot_your_password: Şifrenizi mi unuttunuz?
+        log_in: Oturum aç
+        sign_in_with_providerto_stitle: "%{providerto_stitleize} ile oturum açın"
+        sign_up: kaydol
+    unlocks:
+      new:
+        resend_unlock_instructions: Kilit açma talimatlarını tekrar gönder
+      send_instructions: Hesabınızın kilidini nasıl açacağınıza ilişkin talimatları içeren bir e-posta alacaksınız.
+      send_paranoid_instructions: Hesabınız varsa, birkaç dakika içinde kilidini açmak için gereken talimatları içeren bir e-posta alacaksınız.
+      unlocked: Hesabınız başarıyla kilidi kaldırıldı. Devam etmek için lütfen giriş yapın.
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: Kabul edilmek zorundadır
+      already_confirmed: Zaten doğrulandı, lütfen oturum açmayı deneyin.
+      blank: Boş olamaz
+      confirmation: "%{attribute} ile eşleşmiyor"
+      confirmation_period_expired: "%{period} içinde onaylanması gerekiyor, lütfen yeni bir tane talep edin."
+      empty: Boş olamaz
+      equal_to: "%{count}'e eşit olmalıdır"
+      equal_to_current_password: Geçerli şifreden farklı olmalıdır!
+      even: Eşit olmalı
+      exclusion: Ayrılmıştır
+      expired: Süresi doldu, lütfen yeni bir tane talep edin
+      greater_than: "%{count}'den büyük olmalı"
+      greater_than_or_equal_to: "%{count}'den büyük veya eşit olmalıdır"
+      inclusion: Listeye dahil değil
+      invalid: geçersizdir
+      less_than: "%{count}'den daha az olmalı"
+      less_than_or_equal_to: "%{count}'den küçük veya ona eşit olmalıdır"
+      model_invalid: 'Doğrulama başarısız oldu: %{errors}'
+      not_a_number: Numara değil
+      not_an_integer: Bir tam sayı olmalıdır
+      not_found: bulunamadı
+      not_locked: Kilitli değildi
+      not_saved:
+        one: '1 hata, bu %{resource}''in güncellenmesini engelledi:'
+        other: "%{count} hataları bu %{resource}'in kaydedilmesini yasakladı:"
+      odd: Tuhaf olmalı
+      other_than: "%{count} haricinde olmalı"
+      password_format: Büyük, küçük harfler ve rakamlar içermelidir
+      password_not_saved: 1 hata, şifrenin güncellenmesini engelledi.
+      present: Boş olmalı
+      required: Var olmalı
+      taken: çoktan alındı
+      taken_in_past: Geçmişte zaten alınmıştı!
+      too_long:
+        one: Çok uzun (maksimum 1 karakter)
+        other: Çok uzun (maksimum %{count} karakter)
+      too_short:
+        one: Çok kısa (minimum 1 karakter)
+        other: Çok kısa (minimum %{count} karakter)
+      wrong_length:
+        one: Yanlış uzunluk (1 karakter olmalıdır)
+        other: Yanlış uzunluk (%{count} karakter olmalıdır)
+    template:
+      body: 'Aşağıdaki alanlarda sorunlar vardı:'
+      header:
+        one: 1 hata bu %{model}'in kaydedilmesine izin vermedi
+        other: "%{count} hataları bu %{model}'in kaydedilmesini yasakladı"
+  evaluators:
+    edit:
+      edit_evaluator: Değerlendiriciyi Düzenle
+    new:
+      add_evaluator: Değerlendiriciyi ekle
+    partials:
+      evaluator:
+        add_participant: Katılımcı Ekle
+        edit_evaluator: Değerlendiriciyi Düzenle
+        email_evaluatoremail: 'E-posta: %{evaluatoremail}'
+        evaluatorevaluation_surveys_fo: "%{done} değerlendirmelerinin %{total}'leri"
+        evaluatorself_surveys_forproje: "%{done} öz-anketlerin %{total}'ı"
+        language_evaluatorlanguage_nam: 'Anket Dili: %{evaluatorlanguage_name}'
+      evaluator_form:
+        cancel_changes: Değişiklikleri İptal Et
+        delete_evaluator: Değerlendiriciyi Sil
+      import_evaluators:
+        email_address: E
+        first_name: İsim
+        is_there_something_wrong_a_hre: Bir sorun mu var? <a href="#import--evaluators" class="open-popup-link"> Yeni bir dosya yükle </a>
+        its_right_complete_import: Bu doğru! Tamamı ithal etmek
+        language: Dil
+        last_name: Soyadı
+        participant: Katılımcı
+        relationship: ilişki
+        strongevaluatorscount_evaluato: "<Strong> %{evaluatorscount} değerlendiricileri </ strong> bulundu. Lütfen maçın doğru olduğunu onaylayın:"
+        survey_language: Anket Dili
+        were_almost_there: Neredeyse geldik...
+      import_evaluators_modal:
+        cancel: İptal etmek
+        import_evaluators_from_csv_fil: Değerlendiricileri CSV dosyasından içe aktarın
+        not_sure_about_the_format_of_t: Dosyanın biçiminden emin değil misiniz? <a href='%{download_sample_csv_project_ev}' class='link'> CSV örneğini indirin </a>.
+        upload_evaluators: Yükleyicileri Yükle
+        upload_your_csv_file: 'CSV dosyanızı yükleyin:'
+      index:
+        actions: Eylemler
+        add_evaluator: Değerlendiriciyi ekle
+        download_evaluator_status_deta: Değerlendiricisi Durum Ayrıntılarını CSV olarak indirin
+        evaluation_status: Değerlendirme Durumu
+        evaluator_details: Değerlendirici Ayrıntıları
+        import_evaluators: İthalat Değerlendiricileri
+        participant_status: Katılımcı Statüsü
+      participant:
+        completed_on_levaluatorevaluat: "%{levaluatorevaluation_survey_fo} üzerinde tamamlandı"
+        edit_participant: Katılımcı Düzenle
+        evaluation_status: Değerlendirme Durumu
+        evaluatorevaluation_survey_for: "%{done} soruların %{all}"
+        evaluatorself_survey_forprojec: "%{evaluatorself_survey_forprojec} %{evaluatorself_survey_forprojec} Kendine Anket Soruları"
+        language_evaluatorevaluation_s: 'Anket Dili: %{evaluatorevaluation_survey_for}'
+        participantfull_name: "%{participantfull_name}"
+        relationship: 'İlişki:'
+        selfsurvey_completed_on_levalu: "%{levaluatorself_survey_forproje} üzerinde Kendi Anketi tamamlandı"
+        send_invite: Hatırlatıcıyı gönder
+      participant_form:
+        cancel_changes: Değişiklikleri İptal Et
+        delete_participant: Katılımcı Sil
+    participants:
+      edit:
+        edit_participant: Katılımcı Düzenle
+      new:
+        add_participant: Katılımcı Ekle
+    sort_options:
+      evaluation_status: Değerlendirmeler Durumuna Göre Sırala
+      evaluator_name: Değerlendiricinin Adına Göre Sırala
+      number_of_evaluations: Sıralama sayısına göre sırala
+  gflash:
+    titles:
+      error: Hata
+      notice: ihbar
+      progress: İlerleme
+      success: başarı
+      warning: Uyarı
+    users:
+      impersonate:
+        notice: Başka biri kimliğine bürünüyor.
+        title: Kullanıcının kimliğine bürün
+      stop_impersonating:
+        notice: Artık kimliğine bürünülmüyorsun.
+        title: Kullanıcının kimliğine bürün
+  graph_preview:
+    achieves_results: Elde Edilen Sonuçlar
+    achieving: sağlanması
+    actual_culture: Gerçek Kültür
+    ambition: Hırs
+    arrogance: kibir
+    authenticity: otantiklik
+    autocratic: Otokratik
+    balance: Denge
+    belonging: aidiyet
+    caring_connection: Bakım Bağlantısı
+    circle_within_circle: 'Bir Daire İçindeki Çember:'
+    collaborator: işbirlikçi
+    community_concern: Topluluk endişesi
+    complying: uymak
+    composure: sakinlik
+    conservative: muhafazakâr
+    controlling: Kontrol
+    copy_right: "© Liderlik Circle® | Her hakkı saklıdır"
+    courageous_authenticity: Cesur Özgünlük
+    creative: yaratıcı
+    critical: kritik
+    culture_survey: Kültür Anketi ve ticareti;
+    decisiveness: belirleyicilik
+    desired_culture: İstenilen Kültür
+    displayed_as_percentile: Tüm puanlar skorlarınızı norm tabanımıza göre yüzdelik puan olarak görüntülenir.
+    distance: Mesafe
+    driven: tahrikli
+    evaluators: Değerlendiriciler
+    fosters_team_play: Vücut geliştirme takımı
+    general_abilities: Genel Yetenekler
+    graph_high: Yüksek
+    graph_identity: Kimlik
+    graph_low: Düşük
+    graph_medium: Orta
+    high: Yüksek
+    high_scores_are_beyond: Yüksek puanlar 67. yüzdelik değerin üstündedir.
+    identity: Kimlik
+    inner_circle_profiles: İç daire, dış dairenin bu bölümündeki tüm boyutlar için bir persentil özeti puanı oluşturur.
+    integrity: Bütünlük
+    interpersonal_intelligence: Kişilerarası Zeka
+    leadership_effectiveness: Liderlik Etkinliği
+    leadership_potential_utilization: Liderlik Potansiyel Kullanımı
+    low: 'Düşük:'
+    low_scores_are_below: Düşük puanlar yüzde 33'ün altındadır.
+    manager_edition: Yönetici Sürümü
+    medium: 'Orta:'
+    mentoring_developing: Mentorluk Geliştirme
+    others_assessment: Diğerlerinin Değerlendirmesi
+    passive: Pasif
+    percentile_scores: 'Yüzdelik Skorlar:'
+    perfect: Mükemmel
+    personal_learner: Kişisel Öğrenme
+    pleasing: hoş
+    print_graph: Grafigi Bas
+    protecting: koruyucu
+    purposeful_visionary: Amaçlı Vizyoner
+    reactive: tepkili
+    reactive_creative_scale: Reaktif-Reklam Ölçeği
+    relating: ilgili
+    relationship: ilişki
+    relationship_task_balance: İlişki-Görev Dengesi
+    score_below: Üçüncü persentilin altındaki skorlar düşük puanlardır.
+    score_between: 66 ve 33üncü persentil arasındaki puanlar, güç ve iyileştirme alanları karışımını göstermektedir.
+    scores_from: 66. yüzdeden 100. yüzdeye kadar olan puanlar güçlü puanlardır.
+    self: öz
+    self_assessment: Öz değerlendirme
+    self_awareness: Öz farkındalık
+    selfless_leader: Özsüz Lider
+    strategic_focus: Stratejik Odak
+    sustainable_productivity: Sürdürülebilir Verimlilik
+    systems_awareness: Sistem Bilinci
+    systems_thinker: Sistem Düşünür
+    task: görev
+  helpers:
+    label:
+      project:
+        1st_option: seçenek 1
+        2nd_option: Seçenek 2
+        i_will_invite: Değerlendiricileri katılımcım için davet edeceğim
+        my_participant_will_invite: Katılımcım, değerlendiricileri davet edebilir
+    select:
+      prompt: Lütfen seçin
+    submit:
+      create: "%{model} oluştur"
+      submit: "%{model} kaydet"
+      update: "%{model} dosyasını güncelle"
+  high: Yüksek
+  history:
+    show:
+      before: Önce
+      by: " tarafından"
+      changes_made_at: Tarihinde yapılan değişiklikler
+      field: Alan
+      now: şimdi
+  home:
+    index:
+      agents: Ajanlar
+      are_you_sure_want_to_delete: Silmek istediğine emin misin
+      are_you_sure_want_to_delete_project: Bir projeyi silme işlemi geri alınamaz. Bu projeyi silmek istediğinizden emin misiniz?
+      are_you_sure_want_to_delete_project_with_expired_date_explanation: Maalesef, bu projenin tamamlanma tarihi bittiğinden silinemiyorsunuz.
+      are_you_sure_want_to_delete_project_with_expired_date_title: Uyarı
+      coaches_or_consultants: Danışmanlar
+      companies_or_clients: Müşteriler
+      consultant_companies: Danışman Şirketler
+      consultant_company: Danışman Firma
+      distributors: Distribütörler
+      licensees: Lisanslar
+      no_dont_delete: Hayır, silmeyin
+      participants: Katılımcılar
+      please_enter_a_new_name_for_the_organization: Lütfen %{organization_type} için yeni bir ad girin
+      projects: Projeler
+      rename_organization: "%{organization_type}'yi yeniden adlandır"
+      unable_to_delete_company_warning: Silinemiyor; Bu şirkete hala bağlı projeler var. Lütfen önce projeleri silin
+      unable_to_delete_got_it: Anladım
+      unable_to_delete_project_warning: Silinemiyor; Bu şirkete hala katılımcılar var. Lütfen önce katılımcıları sil
+      yes_delete_this: Evet, bunu sil
+    partials:
+      blank_slate:
+        create_new_project: Yeni Proje Yarat
+        start_adding_projects_now: Şimdi projeler eklemeye başlayın.
+        you_have_no_projects_to_manage: Yönetmek için hiçbir projeniz yok.
+      breadcrumbs:
+        coaches_consultants: Koçlar / Danışmanlar
+        search_by: Tarafından ara
+      child_node_content:
+        organizationorganization_typen: "%{organizationorganization_typen} (yönetmek için tıklayın)"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou} %{tsharedcertified_consultants}"
+      content:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} danışmanı?"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} danışmanı"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount} %{tsharedpeople}"
+      modals:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} %{parentorganization_typename}?"
+        thomeindexyes_delete_this_pare: "%{thomeindexyes_delete_this} %{parentorganization_typename}"
+        tsharedcancel: "%{tsharedcancel}"
+        tsharedsave_changes: "%{tsharedsave_changes}"
+      organization_users:
+        practitioners_userstotal_count: Danışmanlar (%{userstotal_count})
+      search_organization:
+        click_to_manage: "(Yönetmek için tıklayın)"
+        manage_consultants: "(Yönetmek Danışmanlar)"
+        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization} %{tsharedwere_found}"
+        thomeindexare_you_sure_want_to:  "%{thomeindexare_you_sure_want_to} danışmanı mı?"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} danışmanı"
+      sidebar:
+        add: Eklemek
+  i18n:
+    transliterate:
+      rule:
+        ü: u
+  javascript:
+    1st_option: 1. seçenek
+    2nd_option: 2. seçenek
+    add_another_company: Başka bir şirket ekle
+    admin_role_name: Sistem yöneticisi
+    ajax_popup_error: İçerik yüklenemedi.
+    apt_suite_bldg: Apartman, Süit, Bldg ...
+    binder_with_tabs: Katranlı 3 halkalı bağlayıcı ve katılımcıya verilecek basılı sayfalar
+    browse_file: Dosya Gözat
+    cancel_schedule_announcement: Emin misiniz? Program iptal edilecek ve e-postalar önümüzdeki 15 dakika içinde gönderilecek.
+    choose_age_ranges: Yaş Aralıklarını Seçin
+    choose_countries: Ülkeleri Seçiniz
+    choose_direct_report_ranges: Doğrudan Rapor Aralıklarını Seçin
+    choose_education_levels: Eğitim Seviyelerini Seçin
+    choose_ethnic_groups: Etnik Grupları Seçiniz
+    choose_industries: Endüstrileri seçin
+    choose_management_levels: Yönetim Düzeylerini Seçin
+    choose_professions: Meslekleri Seçiniz
+    click_the_link_below_and_we_will_contact: İşlem boyunca size rehberlik edecek bir antrenör ile Full LCP 360 Profilini almak için aşağıdaki bağlantıyı tıklayın. <br/> * Bu fiyatların bir defaya mahsus giriş oranı olarak% 40 oranında ödeme işleminde MLDebrief2017'yi kullanın.
+    coach_report: Antrenör Raporu
+    company_revenue: Şirket Geliri
+    completion_date_asc: Bitirme Tarihi (asc)
+    completion_date_desc: Tamamlanma Tarihi (azalan)
+    contact_info: İletişim bilgileri
+    correct_email_required: Lütfen e-postanın doğru biçimini girin
+    created_at: 'Oluşturulan:'
+    custom_demographics: Özel Demografi
+    default_demographics: Varsayılan Demografi
+    deliverable_options: Teslim Edilebilir Seçenekler
+    delivery_options: Teslim seçenekleri
+    did_you_enjoy_your_survey_taker: Anketinizden hoşlanıyor musunuz? <B> Liderlik Döngüsü Profili </ b> tam 360 değerlendirme yapın ve anahtar paydaşlarınızın (patronlar, akranlar, doğrudan raporlar ve diğerleri) liderliğinizi nasıl deneyimlediğini öğrenin. Liderlik CirLce Profili tam 360'tan gelen derin anlayış, size liderlik sanatında ve uygulamasında çok daha etkili ve ustalık kazandıracak.
+    email_required: Email gereklidir
+    error: Bir şeyler yanlış gitti!
+    filter_by_role: Rolü Göre Filtreleme
+    first_name_required: İlk Adı Gereklidir
+    full_path: 'Tam yol:'
+    gcsr_role_name: Küresel KSS
+    granted_at: 'Verildiğinde:'
+    graph_high: Yüksek
+    graph_identity: Kimlik
+    graph_low: Düşük
+    graph_medium: Orta
+    high: Yüksek
+    invite_another_user: Başka bir kullanıcı davet et
+    language_required: Lütfen bir Dil seçin
+    last_name_required: Soyadı gerekiyor
+    leaders_managers_eval: Bu bölümde, Liderler / Yöneticileri
+    low: Düşük
+    members_eval: Bu bölümde,
+    message_required: Mesaj gerekiyor
+    minimum_evaluations_per_participant: En az sayıda değerlendirici (%{min_count}), kendi kendine anketi etkinleştirmek için davet edilmelidir.
+    never_sent: Gönderilmedi
+    no_record_found: 'Eşleşen kayıt bulunamadı:'
+    organization_and_report_type: Kuruluş ve Rapor Türü
+    organization_small: organizasyon
+    participant_graph: Katılımcı Grafiği
+    participant_report: Katılımcı Raporu
+    password_hint: Şifre en az bir sayı (0-9) ve bir büyük harf (A-Z) ile en az 8 karakter olmalıdır. Önceki 8 parolanızdan birini kullanamazsınız.
+    person: kişi
+    please_wait: Lütfen bekle ...
+    preparing: Hazırlama. Lütfen bekle.
+    processing: İşleme
+    project_access_control: Proje Erişim Kontrolü
+    project_access_control_description: Kullanıcının Proje Erişimini İnceleme
+    project_details: Proje detayları
+    project_name_placeholder: 'Örneğin: Genel Müdür, Yönetici, Yönetici, Liderlik Ekibi, vs.'
+    project_time_zone: Proje Zaman Dilimi
+    relationship_required: Lütfen Bir İlişki seçin
+    report_options: Rapor Seçenekleri
+    role: rol
+    search_results: arama sonuçları
+    select_age: Yaşı Seçin
+    select_client: Müşteri Seç
+    select_consulting_company: Danışmanlık Şirketini Seçin
+    select_country: Ülke Seçiniz
+    select_ethnic_group: Etnik Grup Seçiniz
+    select_existing_administrator: Mevcut Yönetici'yi seçin
+    select_industry: Endüstri seçin
+    select_practitioner: Danışman Seçiniz
+    select_project: Hedef projeyi adına göre aramak için buraya yazın
+    select_region: Eyalet veya Bölge Seçiniz
+    select_your_companys_industry: Şirketinizin Sektörünü Seçin
+    select_your_education_level: Eğitim Seviyenizi Seçin
+    select_your_gender: Cinsiyetinizi seçiniz
+    select_your_management_level: Yönetim Seviyenizi Seçin
+    select_your_profession: Mesleğinizi seçin
+    select_your_residing_country: Ikamet ettiğiniz ülkeyi seçin
+    select_your_number_of_direct_reports: Liczba raportów bezpośrednich
+    sent_on: Üzerine gönderildi
+    size_of_organization: Kuruluş Büyüklüğü
+    street_address_example: Sokak Adresi (222 örnek cadde) ...
+    subject_required: Konu zorunludur
+    surveys_focus: Anketinizin odağını tanımlayın (ör. Pazarlama, Satış, İK, vb ...)
+    team_small: takım
+    type: 'Tür:'
+    type_the_referral_email: Tavsiye e-postasını yazın
+    type_user_email: Kullanıcıların e-postasını yazın ...
+    type_your_company_name: Şirket adınızı yazın ...
+    user_email: Kullanıcı E-postası
+    user_name: Kullanıcı adı
+    user_role_name: kullanıcı
+    zip_post_code: ZIP / Posta Kodu ...
+  kaminari:
+    next_page:
+      next: Sonraki
+    prev_page:
+      prev: Önceki
+  low: Düşük
+  mailer:
+    consulting_company_welcome:
+      consultant_name: Sevgili %{consultat_name},
+      line_1: Proje Merkezine hoşgeldiniz. Proje Merkezinden müşterileriniz için TLC ürünlerini satın alabilir, projelerinizi yönetebilir, raporları önizleyebilir ve indirebilirsiniz.
+      line_2: 'Proje Merkezi''ne erişmek için şu bağlantıyı kullanın: %{url}'
+      line_3: Bağlantınız etkin değilse; Kopyalayıp Internet Tarayıcınıza yapıştırın.
+      line_4: Size e-posta adresinizi ve şifrenizi girmeniz istenecektir. Bir şifreniz yoksa, lütfen giriş sayfasındaki Şifremi Unuttum özelliğini kullanın. Bu e-postanın gönderildiği e-posta adresini girin.
+      line_5: Lütfen giriş yapamıyorsanız, bu e-postayı yanıtlayın.
+      line_6: Sevgilerimle,
+      line_7: Liderlik Çemberi
+      welcome: Proje Merkezine Hoş Geldiniz!
+    reminder:
+      body_1: Anketinizi henüz tamamlamış gibisiniz. Hala katılmak istiyorsanız, aşağıya tıklayın!
+      body_2: 'Ankete şu bağlantıyı takip edin:'
+      body_3: Anketinizin %{planned_completion_date} tarafından tamamlanması gerektiğini lütfen unutmayın.
+      header: Sevgili %{practitioner_full_name},
+      regards: Saygılarımızla, Liderlik Dairesi Ekibi
+      subject: "%{product_name} Hatırlatma"
+    welcome:
+      body_1: Liderlik Çevresi Çevrimiçi Değerlendirme Sistemine hoş geldiniz. Size bir oturum açma ve kendi şifrenizi ayarlamanıza izin vererek sistemi kullanmaya başlayalım.
+      body_2: "%{web_address} adresine gidin ve %{user_id} geçici şifresiyle yeni kullanıcı hesabı günlüğünüzü ID %{user_password} olarak kullanın."
+      body_3: Yeni şifrenizi oluşturduktan ve birkaç demografik soruyu yanıtladıktan sonra, doğrudan anketlerime gidebilir ve sizi bekleyen herhangi bir anketi tamamlayabilirsiniz.
+      body_4: Giriş yaparken herhangi bir probleminiz varsa lütfen %{support_email_address} adresinden bizimle iletişime geçin.
+      header: Sevgili %{participant_full_name},
+      regards: Sevgilerimle,
+      subject: Liderlik Döngüsü Çevrimiçi Değerlendirme Sistemine hoş geldiniz!
+      team: Anket Takibi Ekibi
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "% U%, n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "% N% u"
+        units:
+          billion: Milyar
+          million: Milyon
+          quadrillion: Katrilyon
+          thousand: Bin
+          trillion: Trilyon
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "% N% u"
+        units:
+          byte:
+            one: Bayt
+            other: Bayt
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "% N,%"
+    precision:
+      format:
+        delimiter: ''
+  order_steps:
+    deliverable_options:
+      next: Sonraki
+      previous: Önceki
+    delivery_options:
+      cancel_order: Siparişi iptal et
+      create_report: Rapor Oluştur
+      previous: Önceki
+    group_report_summary:
+      cancel_order: Siparişi iptal et
+      pdf_report: PDF Raporu
+      selected_count_tordersgr_summa: "(%{selected_count} %{tordersgr_summaryparticipants_})"
+      tordersgr_summarybilling_conta: "%{tordersgr_summarybilling_conta}:"
+      tordersgr_summaryorganization: "%{tordersgr_summaryorganization}:"
+      tordersgr_summaryreport_contac: "%{tordersgr_summaryreport_contac}:"
+      tordersgr_summaryreport_due_da: "%{tordersgr_summaryreport_due_da}:"
+      tordersgr_summaryreport_metric: "%{tordersgr_summaryreport_metric}:"
+      tordersgr_summaryreview_report: "%{tordersgr_summaryreview_report}"
+      tordersgr_summaryselected_part: "%{tordersgr_summaryselected_part}:"
+      tordersindexreport_name: "%{tordersindexreport_name}:"
+      tshareddemographicpluralize: "%{tshareddemographicpluralize}:"
+      tsharedreportpluralize: "%{tsharedreportpluralize}:"
+    organization_and_report_type:
+      cancel_order: Siparişi iptal et
+      next: Sonraki
+    partials:
+      address_modal:
+        select_from_my_account_address: Hesap adreslerimden seçin
+        there_are_no_addresses_related: Kullanıcıyla ilgili hiçbir adres bulunamadı
+      contact_info:
+        billing_address: Fatura Adresi
+        new_address: Yeni adres
+        report_address: Rapor Adresi
+        same_as_the_billing_address: Faturalandırma Adresi ile aynı
+        select_an_address_from_my_acco: Hesabımdan bir adres seçin
+        this_is_the_address_where_the_: Burası, Katılımcı Raporu, Katılımcı Grafiği ve Antrenör Raporu'nun basılı kopyalarının teslim edileceği adres.
+        this_is_the_person_or_company_: Bu, sipariş faturasının yapılacağı kişi veya şirkettir.
+      deliverable_options:
+        coach_report: Antrenör Raporu
+        digital_graph: Dijital Grafik
+        group_report: Grup Raporu
+        how_many_copies_per_participan: Katılımcı başına kaç kopya var?
+        i_want_pdf_and_printed_copies_: Raporların PDF ve Basılı kopyalarını istiyorum.
+        i_want_the_pdf_copies_only: Sadece PDF kopyalarını istiyorum.
+        participant_graph: Katılımcı Grafiği
+        participant_report: Katılımcı Raporu
+        pdf_file_that_practitioner_ema: Danışman e-postayla katılımcıya verilen pdf dosyası
+        please_choose_below_which_ones: Lütfen hangilerinin basılı kalmasını istediğinizi seçin.
+        profile_interpretation_manual: Profil Tercüme Kılavuzu
+        reports: 'Raporlar:'
+        you_will_get_a_digital_version: 'Aşağıdaki parçaların dijital bir versiyonunu alacaksınız:'
+        you_will_get_only_the_digital_: 'Profil Yorumlama El Kitabı''nın yalnızca dijital versiyonunu ve aşağıdaki raporları alacaksınız:'
+        you_will_get_the_digital_versi: Profil Tanıtım El Kitabı'nın dijital versiyonunu ve tüm raporları alacaksınız.
+        your_project_will_include: 'Projeniz şunları içerecektir:'
+    participants:
+      cancel_order: Siparişi iptal et
+      choose_the_participants_you_wo: Bu raporda eklemek istediğiniz katılımcıları seçin. Yapabilirsin
+      next: Sonraki
+      of: " arasında"
+      only_add_participants_who_have: Yalnızca anketleri tamamlayan katılımcıları ekleyin.
+      organizationname: "%{organizationname}"
+      participants_selected: " Katılımcılar seçildi"
+      previous: Önceki
+      select_all_available_participa: Bu şirketten tüm katılımcıları seçin
+      select_participants: Katılımcıları Seçiniz
+    project:
+      add_all_participants: Tüm Katılımcıları Ekleyin
+      of: arasında
+      participants_selected: Katılımcılar seçildi
+    report_options:
+      cancel_order: Siparişi iptal et
+      choose_metrics: Metrikleri Seçin
+      how_calculation_is_made: Hesaplama nasıl yapılır?
+      next: Sonraki
+      previous: Önceki
+      report_demographics: Demografiyi Raporla
+      report_language: Rapor Dili
+  orders:
+    details:
+      coach_report: 'Koç Raporu:'
+      comment_questions: 'Yorum Soruları:'
+      copies_per_participant: Katılımcı başına kopya sayısı
+      copy_per_participant: Katılımcı başına kopya
+      demographics: 'Demografi:'
+      included_participants: 'Dahil Edilen Katılımcılar:'
+      participant_graph: 'Katılımcı Grafiği:'
+      participant_report: 'Katılımcı Raporu:'
+      participants:
+        one: 1 katılımcı
+        other: "%{count} katılımcıları"
+      processing_date: 'İşleme Tarihi:'
+      product_type: 'Ürün tipi:'
+      profile_interpretation_manual: 'Profil Tercüme Kılavuzu:'
+      report_type: 'Rapor tipi:'
+      utilties_order_details: SİPARİŞ DETAYLARI
+    gr_summary:
+      billing_contact: Fatura adresi
+      coach_report: Antrenör Raporu
+      organization: organizasyon
+      participant_graph: Katılımcı Grafiği
+      participant_report: Katılımcı Raporu
+      participants_selected: Seçilen Katılımcılar
+      place_order: Sipariş Vermek
+      report_contact: Raporla İletişim
+      report_due_date: Son Teslim Tarihi bildir
+      report_metrics: Rapor Metrikleri
+      review_report_summary: LÜTFEN RAPOR ÖZETİNİZİ DÜZEYİN
+      selected_participants: Seçilmiş Katılımcılar
+    index:
+      actions: Eylemler
+      active_orders: Aktif Siparişler
+      all_orders: Tüm siparişler
+      delete_order: Siparişi Sil
+      finished_orders: Bitmiş Siparişler
+      my_orders: Raporlarım
+      number_of_participants: Katılımcı sayısı
+      order: Sipariş
+      order_date: Sipariş tarihi
+      owner: Sahip
+      print_reports: Raporları Yazdır
+      product_type: ürün tipi
+      report_name: Rapor Adı
+      sort_by_company: Şirkete göre sırala
+      sort_by_number_of_participants: Katılımcılara Göre Sırala
+      sort_by_ordered_date: Sıralama Tarihine göre sırala
+      sort_by_product: Ürüne Göre Sırala
+      sort_by_report_name: Rapor İsme göre sırala
+      utilties_order: 'Sipariş #'
+    order:
+      see_order: Siparişe bak
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    partials:
+      pick_order_modal:
+        cancel: İptal etmek
+        choose_order: Sipariş seçin
+        choose_order_for_project: Proje İçin Sipariş Seçiniz
+        date_order_number: Tarih / Sipariş Numarası
+        locreated_atto_date_format_lon: "%{locreated_atto_date_format_lon} / %{oorder_number}"
+    prepare_download:
+      cancel: İptal etmek
+      download_reports_zip: Raporları İndirin (ZIP)
+      please_wait: Lütfen bekle ...
+      preparing_reports_for_download: İndirilecek raporları hazırlama
+    printed_participant:
+      digital_reports_to_be_sent_pdf: Gönderilecek Dijital Raporlar (PDF'ler)
+      download_copies_ordersingle_re: Kopyalama Dosyalarını İndirme (%{ordersingle_report_copies_coun})
+      download_manual: İndirme Kılavuzu
+      evaluators_printed_participant: 'Değerlendiriciler: %{printed_participantparticipant} %{printed_participantparticipant} Komple'
+      manual_to_be_printed: Basılı El Kitabı
+      mark_all_as_not_printed: Hepsini Baskısız olarak işaretle
+      mark_all_as_not_sent: Hepsini Gönderilmedi olarak işaretle
+      mark_all_as_printed: Hepsini PRINTED olarak işaretle
+      mark_all_as_sent: Hepsini SENT olarak işaretle
+      mark_all_as_shipped: Hepsini SHIPPED olarak işaretle
+      printed_participantparticipant: "(%{printed_participantparticipant})"
+      reports_to_be_printed: Basılacak Raporlar
+      self_survey_printed_participan: 'Kendi Kendine Anket: %{printed_participantstatus}'
+      send_digital_reports: Dijital Raporları Gönder
+      status_printed_participantmanu: 'Durum: %{printed_participantmanual_repo}'
+      status_printed_participantprin: 'Durum: %{printed_participantprint_repor}'
+      status_printed_participantsend: 'Durum: %{printed_participantsend_report}'
+    show:
+      billing_contact: Fatura adresi
+      binder_contact: Bağlayıcı İletişim
+      coaching_report: 'Koçluk Raporu:'
+      comment_questions: 'Yorum Soruları:'
+      company: şirket
+      demographics: 'Demografi:'
+      download_profile_interpretatio: Download Profil Tanıtım Kılavuzu (PDF)
+      download_reports_zip: Raporları İndirin (ZIP)
+      find_the_order_details_below_y: Aşağıdaki sipariş ayrıntılarını bulun. Ayrıca, tüm PDF raporlarınızla bir zip dosyası indirebilirsiniz.
+      included_participants: 'Dahil Edilen Katılımcılar:'
+      list_of_participants: Katılımcıların listesi
+      order_details: sipariş detayları
+      order_number: 'Sipariş numarası:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} kopyaları"
+      orderparticipant_graph_qty_cop: Katılımcı başına %{orderparticipant_graph_qty} kopya sayısı
+      orderparticipant_report_qty_co: Katılımcı başına %{orderparticipant_report_qty} kopya sayısı
+      participant_graph: 'Katılımcı Grafiği:'
+      participant_report: 'Katılımcı Raporu:'
+      pdf: PDF
+      planned_completion_date: 'Planlanan Bitiş Tarihi:'
+      print_order_details_pdf: Baskı Siparişi Ayrıntıları (PDF)
+      processing_date: 'İşleme Tarihi:'
+      product_type: 'Ürün tipi:'
+      profile_interpretation_manual: 'Profil Tercüme Kılavuzu:'
+      questions_about_your_order: Siparişinizle ilgili sorularınız mı var?
+      report_contact: Raporla İletişim
+      report_name: 'Rapor Adı:'
+      report_type: 'Rapor tipi:'
+      show_project: Projeyi Göster
+      thank_you_for_your_order: Siparişiniz için teşekkür ederiz.
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    show_print_report:
+      1_copy: Katılımcı başına 1 kopya
+      Demography: 'DEMOGRAFICS:'
+      action: Aksiyon
+      application:
+        order_not_valid: Sipariş geçerli değil
+        reports_sent: Gönderilen Raporlar
+        statuses_updated: Güncellenmiş Durumlar
+      coach_report: Antrenör Raporu
+      coach_rpt: Koç Rpt.
+      coaching_report: 'Koçluk Raporu:'
+      comment_questions: 'Yorum Soruları:'
+      company: şirket
+      complete: Tamamlayınız
+      copies_per_participant:
+        one: Katılımcı başına bir kopyası
+        other: Katılımcı başına %{count} kopya sayısı
+      deliverable_instructions: Verilebilir Talimatlar
+      demographics: 'Demografi:'
+      digital_reports: 'Dijital Raporlar:'
+      digital_rpt: Dijital Rpt.
+      download_all_copies_ordercopie: Tüm Kopyaları İndirin (%{ordercopies_count})
+      download_all_manuals_orderused: Tüm Kılavuzları İndirin (%{orderused_languagescount})
+      english_manual: 'Türkçe Kılavuzu:'
+      evaluators: Değerlendiriciler
+      find_below_all_the_deliverable: Bu sipariş için tüm tekliflerin yanı sıra bunların her biri için gönderim bilgileri aşağıda bulun.
+      graph: grafik
+      included_participants: 'Dahil Edilen Katılımcılar:'
+      manual: Manuel
+      mark_all_digital_reports_as_no: Tüm Dijital Raporları Gönderilmemiş Olarak İşaretle
+      mark_all_digital_reports_as_se: Tüm Dijital Raporları GÖNDERİLEN olarak işaretle
+      mark_all_printed_copies_as_not: Basılmış Kopyaları Basılı Değil olarak işaretleyin
+      mark_all_printed_copies_as_pri: Basılmış Kopyaları Basılı Olarak Yazdır
+      mark_all_printed_copies_as_shi: Basılmış Kopyaların tümünü SHIPPED olarak işaretleyin.
+      mark_order_as_finished: Bitmiş Olarak İşaretleyin
+      no_participants: Katılımcı Yok
+      order_details: sipariş detayları
+      order_number: 'Sipariş numarası:'
+      order_participantparticipantco: "%{order_participantparticipantco} %{order_participantparticipantev}"
+      ordercoach_report:
+        one: Bir kopyası
+        other: "%{count} kopyaları"
+      orderparticipant_report:
+        one: Katılımcı başına bir kopyası
+        other: Katılımcı başına %{count} kopya sayısı
+      participant: Katılımcı
+      participant_graph: Katılımcı Grafiği
+      participant_report: Katılımcı Raporu
+      participants_orderself_surveys: Katılımcılar (%{orderself_surveyscount})
+      pdf: PDF
+      pdfs: PDF'leri
+      planned_completion_date: 'Planlanan Bitiş Tarihi:'
+      print_and_ship_copies_of_the_f: 'Aşağıdaki raporların Baskısı ve Gemisi kopyaları:'
+      printed: basılı
+      printed_copies: 'Basılı Kopyalar:'
+      processing_date: 'İşleme Tarihi:'
+      product_type: 'Ürün tipi:'
+      profile: Profil
+      profile_interpretation_manual: 'Profil Tercüme Kılavuzu:'
+      questions_about_your_order: Siparişinizle ilgili sorularınız mı var?
+      report_name: 'Rapor Adı:'
+      report_type: 'Rapor tipi:'
+      self_survey: Kendi Kendine Anket
+      send_digital_reports_pdfs: Dijital Raporlar Göndermek (PDF)
+      send_the_pdf_version_of_the_fo: 'Aşağıdaki raporların PDF sürümünü gönderin:'
+      sent: Gönderilen
+      ship_the_3ring_binder_with_tab: 3 halkalı bağlayıcının sekmeler ve basılı sayfalar ile birlikte gönderilmesi
+      shipping_info: 'DENİZCİLİK BİLGİSİ:'
+      status: 'Durum:'
+      submit: Gönder
+    show_send_digital_reports:
+      cancel: İptal etmek
+      consultantcoach_orderprojectco: 'Danışman: %{orderprojectconsultant_orderpr}'
+      send_digital_reports: Dijital Raporları Gönder
+      send_digital_reports_to_practi: Danışmana Dijital Raporlar Göndermek
+  organization_users:
+    new:
+      tsharedadd_consultant_tsharedt: "%{tsharedadd} Danışmanı %{tsharedto} '%{organizationname}'"
+  organizations:
+    actions:
+      tsharedadd_typename: "%{tsharedadd} %{typename}"
+    collab:
+      add_and_delete_shared_users: Paylaşılan kullanıcıları istediğiniz zaman ekleyebilir ve silebilirsiniz
+      allow_users_edit_view: Kullanıcıların düzenlemesine ve görüntülemesine izin ver
+      certified_consultants: Danışmanlar
+      collaborators_for: Için ortak çalışanlar
+      delete_collaborator: Ortak Çalıştırıcı Sil
+      invite_more_people: Daha fazla kişiyi davet et
+      invite_user_by_typing_email: E-postalarını aşağıda yazarak yeni bir kullanıcı davet edin
+      sharing_access_certified_consultant: Erişimi paylaşmak, başka bir danışmana sahibi olarak sahip olduğunuz işlevselliği verir
+      sharing_top_level_company: Üst düzeyde (şirket) paylaşmak, altındaki her şeye (ürün grupları ve katılımcılar) erişim izni verecektir
+      this_licensor_is_not_shared: Bu Kuruluş şu anda paylaşılmıyor
+    collaborator:
+      success: Başarı!
+    collaborators:
+      role_urolename: 'Rol: %{urolename}'
+      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount} %{torganizationscollabcertified_}"
+    delete_collaborator:
+      success: Başarı!
+    dnd:
+      drag:
+        add_user: Kullanıcı Ekle
+        confirmation: Onayla
+        confirmation_text_goes_here: Onay metni buraya gidecek ...
+        finish: Bitiş
+        next: Sonraki
+        organizations_type: Kuruluş Türü
+        please_confirm_user_permission: Lütfen bu kuruluş için kullanıcı izinlerini doğrulayın. Hiçbir şey değiştirmek zorunda değilsiniz. Üst kuruluşlara atanan kullanıcılar otomatik olarak eklenecektir.
+        previous: Önceki
+        privilages: Haklar;
+        role: rol
+        user: kullanıcı
+        you_are_about_to_move_one_orga: Bir organizasyonu diğerine taşımak üzeresiniz. Lütfen taşımak istediğiniz kuruluşun türünün doğru olup olmadığını kontrol edin. Ayrıca burada değiştirebilirsiniz. Aşağıda izin verilen kuruluş türleri vardır.
+      user:
+        remove: Kaldır
+    form:
+      tsharedname: "%{tsharedname}:"
+    help:
+      tree_help:
+        quick_help: Hızlı Yardım
+        to_edit_add_users_or_add_a_new: Düzenlemek, kullanıcı eklemek veya yeni bir tane eklemek için, ağaçtan tıklayın ve ağaç panelinin sağ üst köşesindeki listeden istediğiniz eylemi seçin
+        to_find_an_organization_simply: Bir kuruluşu bulmak için aşağıdaki arama kutusuna yazmaya başlayın, işiniz bittiğinde enter tuşuna basın
+        to_move_the_organization_to_an: Örgütü başka bir kuruluşa taşımak için sürükleyip bırakmanız yeterlidir
+    modals:
+      delete_organization:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} bu organizasyon"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_orga: "%{thomeindexyes_delete_this} organizasyonu"
+    move:
+      success: Başarı!
+    new:
+      accounting_id: Muhasebe Kimliği
+      accounting_id_for_an_existing_administrator: Mevcut bir yöneticinin muhasebe kimliği
+      active_consultant_label_info: Danışman aktif olarak işaretlenmezse, hesap askıya alınacak ve sisteme erişmesine izin verilmeyecektir.
+      administrator_email: Yönetici E-postası
+      administrator_first_name: Yönetici Ad
+      administrator_last_name: Yönetici Soyadı
+      choose_countries: Ülkeleri Seçiniz
+      coach_consultant_email: Danışman E-postası
+      coach_consultant_first_name: Danışman İlk Adı
+      coach_consultant_last_name: Danışman Soyadı
+      coach_consultant_name: Danışman Tam Adı
+      company_client_name: Müşteri Adı
+      consultant_label_info: Birden fazla müşteri ve kuruluşla çalışan bir danışman
+      contract_start_date: Sözleşme Başlangıç ​​Tarihi
+      countries_covered: Kapatılan Ülkeler
+      must_be_certified: Bu, Danışman E-postası olmalıdır
+      or_create_an_admin_user: Veya yeni bir kullanıcı yarat
+      select_an_industry: Bir Endüstri seçin
+      the_project_center: Proje Merkezi
+      this_active_consultant: Bu bir Aktif Danışman
+      this_independent_consultant: Bu bağımsız bir danışman
+      top_node: Üst Düğüm
+      torganizationsnewmust_be_certi: "(%{torganizationsnewmust_be_certi})"
+      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} '%{parentname}'"
+      type_the_name_of_coach_consultant: Danışmanın adını yazın
+      type_the_name_of_company_client: İstemcinin adını yazın
+      type_the_name_of_the: Adını yazın.
+      you_are_adding_a: Ekliyorsunuz
+    roles:
+      collaborator:
+        delete: silmek
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{organizationname}"
+    search:
+      local: Yerel
+      search_by: Tarafından filtre
+      search_by_company_participant_evaluator: Şirkete / Katılımcıya / Değerlendiriciye Göre Arama
+      searching: Arama ...
+    share:
+      success: Başarı!
+    show:
+      event: Olay
+      history: tarih
+      impersonate: taklit etmek
+      no_child_data: Çocuk Veri Bulunamadı!
+      organization_information: Kuruluş Bilgileri
+      tshareddate_created: "%{tshareddate_created}:"
+    undo_share:
+      success: Başarı!
+    アクション:
+      tsharedadd_typename: Paylaşılan eklenti %{tsharedadd} %{typename}
+  participants:
+    cannot_destroy:
+      cannot_delete_the_selected_par: 'Kayıt, silinemeyen diğer verilerle ilişkili olduğu için seçili Partikül paketi silinemez. Lütfen aşağıdaki listeye bakın:'
+      orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
+      orders: 'Emirler:'
+    evaluators:
+      add_evaluator: Değerlendiriciyi ekle
+      start_adding_evaluators_now: Şimdi değerlendiriciler eklemeye başlayın.
+      this_participant_has_no_evalua: Bu katılımcının değerlendiricisi yok.
+    form:
+      form:
+        action_text: "%{action_text}"
+        cancel_changes: Değişiklikleri İptal Et
+        delete_participant: Katılımcı Sil
+    import_csv:
+      close: Kapat
+      importing_participants: Katılımcıları içe aktarma
+      please_wait: Lütfen bekle ...
+    import_participants:
+      email_address: E
+      empty_row: Boş satır
+      existing_first_name: 'Mevcut ilk isim:'
+      existing_last_name: 'Mevcut soyisim:'
+      first_name: İsim
+      is_there_something_wrong_uploa: Bir sorun mu var? Yeni dosya yükle
+      its_right_complete_import: Bu doğru! Tamamı ithal etmek
+      last_name: Soyadı
+      strongparticipantscount_partic: "<Strong> %{participantscount} katılımcı </ strong> bulundu. Lütfen maçın doğru olduğunu onaylayın:"
+      user_with_this_email_already_e: Bu e-postayı bilen kullanıcı zaten var
+    import_participants_modal:
+      cancel: İptal etmek
+      import_participants_from_csv_f: Katılımcıları CSV dosyasından içe aktarın
+      upload_participants: Katılımcıları Yükle
+      upload_your_csv_file: 'CSV dosyanızı yükleyin:'
+    index:
+      completion_date_is_over: Bitiş Tarihi bitti.
+      download_participants_csv_status: Katılımcı Statüsü Ayrıntılarını CSV olarak indirin
+      evaluator_status: Değerlendirici Durumu
+      got_it: Anladım!
+      participant_details: Katılımcı Detayları
+      projectself_surveyswherestatus: "%{projectself_surveyswherestatus} katılımcıları kendi kendine anketlerini tamamlamamış ve %{projectparticipantswith_not_en}'ler yeterli değerlendirmeye sahip değildir. Katılımcıları, Raporu Çalıştır Tarihine kadar (%{projectreport_datestrftimeb_d_}) diğer projelere taşıyabilirsiniz."
+      self_survey_status: Kendi Kendine Anket Durumu
+    logs_modal:
+      created_logsnew: 'Oluşturuldu: %{logsnew}'
+      failed_logsfailed: 'Başarısız: %{logsfailed}'
+      got_it: Anladım!
+      import_is_done: İthalat yapılır.
+      import_logs: 'Alma Kayıtları:'
+      not_changed_logsuntouched: 'Değil Değil: %{logsuntouched}'
+      participant_groups_logsgroups: 'Katılımcı Grupları: %{logsgroups}'
+      total_participants_logstotal: 'Toplam Katılımcılar: %{logstotal}'
+      updated_logsupdated: 'Güncellendi: %{logsupdated}'
+    manage_group:
+      continue_managing_your_group: Grubunuzu yönetmeye devam edin
+      edit_evaluators_invitation: Değerlendiricileri Düzenle Davetiyesi
+      edit_participants_invitation: Katılımcıları Düzenle Davetiyesi
+      participants_can_be_added_to_y: Katılımcılar yeni gruba şimdi veya daha sonraki bir tarihte eklenebilir
+      send_all_new_emails: Tüm Yeni E-postaları Gönder
+    participant_header:
+      add_participants: KATILIMCILAR EKLEYİNİZ
+      choose_products: Ürünleri Seçin
+      confirm_order: SİPARİŞ ONAYLAMAK
+      edit_invitation_email: Davet E-postasını Düzenle
+      review_order_details: Sipariş Ayrıntılarını İnceleme
+      select_options: Seçenekleri Seç
+      send_emails: Mailleri gönder
+      setup_group: GRUP KURMAK
+      update_addresses: Adresleri Güncelle
+    send_email_to_evaluator:
+      last_reminder_sent_on_surveyem: "%{surveyemail_sent}'de son gönderilen e-posta"
+    send_email_to_participant:
+      last_reminder_sent_on_surveyem: "%{surveyemail_sent}'de son gönderilen e-posta"
+    show_evaluator:
+      evaluation_status: Değerlendirme Durumu
+      language: Anket Dili
+      last_reminder_never_sent: Gönderilmiş hiç e-posta yok
+      last_reminder_sent_on: Üzerine gönderilen son e-posta
+      relationship: 'İlişki:'
+      send_reminder: Davetiye gönder
+      surveycompleted_questions_coun: "%{surveycompleted_questions_coun} %{tsharedof} %{surveyquestions_count} %{tsharedquestions}"
+      surveyevaluatortryfirst_name_s: "%{surveyevaluatortryfirst_name} %{surveyevaluatortrylast_name}"
+      tparticipantsshow_evaluatorlan: "%{tparticipantsshow_evaluatorlan}: %{surveyevaluatorlanguagename}"
+      tparticipantsshow_evaluatorlas: "%{tparticipantsshow_evaluatorlas} %{surveyemail_sent}"
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_atto_date_for}"
+    show_participant:
+      completed_on_lparticipantself_: "%{lparticipantself_surveycomplet} üzerinde tamamlandı"
+      edit_participant: Katılımcı Düzenle
+      email_participantuseremail: 'E-posta: %{participantuseremail}'
+      language_participantuserlangua: 'Anket Dili: %{participantuserlanguagename}'
+      na: n / a
+      participantcompleted_evaluatio: "%{participantcompleted_evaluatio} değerlendiricilerinin %{participantevaluationscount}"
+      participantself_surveycomplete: "%{participantself_surveycomplete} soruların %{participantself_surveyquestion}"
+      participantuserfirst_name_part: "%{participantuserfirst_name} %{participantuserlast_name}"
+      resend_reports_to_gcsr: Raporları GCSR'ye tekrar gönder
+      send_invite: Davetiye gönder
+    sort_options:
+      evaluator_status: Değerlendirici Durumuna Göre Sırala
+      number_of_evaluators: Değerlendirmeci sayısına göre sırala
+      participant_name: Katılımcının Adına Göre Sırala
+      survey_status: Kendi Kendine Anket Durumuna Göre Sırala
+  people:
+    account_notification_title: Hesap Güncelleme
+    account_updated: Hesap güncellendi!
+    active_management:
+      error: Hata
+      success: başarı
+    cannot_delete: Silinemiyor; Bu kullanıcıya halen eklenen projeler var.
+    destroy:
+      success: Başarı!
+    index:
+      disabled: engelli
+      filtering_by_client: 'İstemciye göre filtreleme:'
+      invite_new_users: Yeni Kullanıcı Davet Et
+      invited: Davetli
+      join_date: Üyelik Tarihi
+      self_assessment: Öz değerlendirme
+      shared_organizations: Paylaşılan Kuruluşlar
+      sort_by: Göre sırala
+      sort_by_join_date: Üyelik Tarihi
+      sort_by_org_number: Kuruluşların Sayısı Sıralama
+      sort_by_user_name: Kullanıcı Adına Göre Sırala
+      survey_takers: Anket Araştırması Yapanlar
+      user_details: kullanıcı detayları
+      users: Kullanıcılar
+    manual_unlock:
+      error: Bir şeyler yanlış gitti!
+      success: Başarı!
+    new:
+      choose_the_user_main_role_you_: Kullanıcının ana rolünü seçin. Ayrıcalıkları daha sonra düzenleyebilirsiniz.
+      invite_another_user: Başka bir kullanıcı davet et
+      invite_new_users: Yeni Kullanıcı (lar) Davet Et
+    partials:
+      active_surveys:
+        company: şirket
+        completed: 'tamamlandı:'
+        completion_date: Tamamlama tarihi
+        evaluated: 'değerlendirdi:'
+        evaluation_surveyscount_people: "%{evaluation_surveyscount} kişileri"
+        no_completed_evaluating_survey: Anketlerin Değerlendirilmesi tamamlanmadı.
+        no_completed_self_surveys: Tamamlanmış Anketler yok
+        no_evaluating_surveys_to_compl: Tamamlanacak Değerlendirme Anketi yok.
+        no_self_surveys_to_complete: Tamamlanacak Anketler yok.
+        not_valid: Geçerli değil
+        participant_and_product_type: Katılımcı ve Ürün Türü
+        product_type: ürün tipi
+        project: proje
+        self_survey: Kendi Kendine Anket
+        self_surveyscount_self_survey: "%{self_surveyscount} Kişisel Anket"
+        to_complete: 'Tamamlamak:'
+        to_evaluate: 'değerlendirmek:'
+      settings:
+        a_practitioner_that_does_not_w: Birçok müşteri ve kuruluşta çalışan bir danışman.
+        account_status: hesap durumu
+        delete_account_person_pathuser: Hesabı sil
+        'false': false
+        gcsr_or_system_administrator_h: GCSR veya Sistem Yöneticisi tüm organizasyonlara erişebilir.
+        is_this_an_independent_practit: Bu bağımsız bir danışman mı?
+        'no': Yok hayır
+        practitioner_information: Danışman Bilgisi
+        the_referring_practitioner_wil: Yönlendiren danışman serbest profil alacaktır.
+        this_user_has_been_active_sinc: Bu kullanıcı şu tarihten beri aktif durumda.
+        user_role: Kullanıcı Rolü
+        users_can_only_manage_the_orga: Kullanıcılar, yalnızca onlarla paylaşılan organizasyonları yönetebilir.
+        was_this_practitioner_referred: Bu danışman sistemdeki başka bir danışman tarafından yönlendirildi mi?
+        'yes': Evet
+      shared_organization:
+        edit_user_role: Kullanıcı Rolünü Düzenle
+        shared_organizationorganizatio: "(%{shared_organizationorganizatio})"
+      shared_organizations:
+        are_being_shared_with: Ile paylaşılıyor
+        new_shared_organization: Yeni Paylaşılan Organizasyon
+        role: rol
+        shared_organizations: Paylaşılan Kuruluşlar
+        type: tip
+        userfull_name: "%{userfull_name}:"
+        userorganization_userscount_or: "%{userorganization_userscount} kuruluşları"
+      surveys:
+        active_surveys_useractive_surv: Aktif Anketler (%{useractive_surveyscount})
+        survey_history_userhistorical_: Anket Geçmişi (%{userhistorical_surveyscount})
+      user_information:
+        address: Adres
+        date_of_birth: 'Doğum tarihi:'
+        edit: Düzenleme
+        education: 'Eğitim:'
+        email: 'E-posta:'
+        full_name: 'Ad Soyad:'
+        gender: 'Cinsiyet:'
+        language: 'Dil:'
+        number_of_direct_reports: 'Doğrudan Rapor Sayısı:'
+        organization_level: 'Kuruluş Seviyesi:'
+        personal_information: Kişisel bilgi
+        phone_number: Telefon numarası
+        profession: 'Meslek:'
+        professional_information: Mesleki Bilgiler
+        residing_country: 'Ülkeye Katılan Ülke:'
+        you_havent_added_any_addresses: Herhangi bir adres eklemedin.
+        you_havent_added_any_phone_num: Hiçbir telefon numarası eklemedin.
+      user_information_address:
+        user_information_addressname: "%{user_information_addressname}:"
+        user_information_addressregion: "%{user_information_addresscity}, %{user_information_addressregion}"
+      user_information_phone:
+        user_information_phonename: "%{user_information_phonename}:"
+    person:
+      consultant: Danışman
+      csr: CSR
+      gcsr: GCSR
+      manage_user: Kullanıcıyı Yönet
+      system_administrator: Sistem yöneticisi
+    roles:
+      added_successfully: Kullanıcı organizasyona uygun bir şekilde atandı!
+      edit_user_role:
+        cancel: İptal etmek
+        companyname: "' '%{companyname}'"
+        remove_access_to_this_organiza: Bu kuruluşa erişimi kaldır
+        role_on: Üzerinde rol
+        save: Kayıt etmek
+        select: seçmek
+        userfirst_names: "%{userfirst_name} 'adlı"
+      new_user_role:
+        choose_an_organization_to_shar: Paylaşılacak bir kuruluş seçin
+        share_organization: Organizasyon Paylaşın
+        user_role: 'Kullanıcı Rolü:'
+      title: Kullanıcı Rolleri
+    send_unlock_instructions:
+      error: Bir şeyler yanlış gitti!
+      success: Başarı!
+    show:
+      account_status: 'Hesap durumu:'
+      are_you_sure: Emin misiniz?
+      delete_account: Hesabı sil
+      disable_account: Hesabı devre dışı bırak
+      enable_account: Hesabı Etkinleştir
+      send_unlock_instructions: Talimatları Kilidini Açma Gönder
+      settings: Ayarlar
+      shared_organizations: Paylaşılan Kuruluşlar
+      surveys: Anketler
+      unlock_account: Hesabı Aç
+      user_information: Kullanıcı bilgisi
+    users:
+      sort_by: Göre sırala
+      sort_by_join_date: Birliğe katılma tarihine göre sırala
+      sort_by_org_number: Kuruluş sayısına göre sırala
+      sort_by_user_name: '"Kullanıcı sayısına göre sıralama"'
+  phones:
+    index:
+      add_phone: Telefon Ekle
+      name: isim
+      number: Numara
+    phone:
+      delete: silmek
+  project_steps:
+    contact_info:
+      create_project: Proje Oluştur
+      previous: Önceki
+    deliverable_option:
+      next: Sonraki
+      previous: Önceki
+    project_detail:
+      124_questions: 124 soru
+      62_actual_and_62_ideal_culture: 62 Gerçek ve 62 ideal kültür soruları
+      84_questions: 84 soru
+      8_summary_and_29_outer_dimensi: 8 özet ve 29 dış boyut
+      8_summary_and_31_outer_dimensi: 6 özet ve 21 dış boyut
+      audience_is_csuite_presidents_: İzleyici "Süit", Başkanlar, Başkan Yardımcıları, Yöneticiler, EMBA, Yüksek potansiyel liderler
+      audience_is_midlevel_managers_: İzleyici, orta düzey yöneticiler, Denetçiler, MBA, Takım liderleri, 'yükselen liderler'
+      choose_a_name_that_will_help_y: Katılımcıları belirlemenize yardımcı olacak bir isim seçin
+      choose_an_existing_client: Var olan bir müşteriyi seç
+      client: müşteri
+      consulting_company: Danışmanlık şirketi
+      create_a_new_client: Yeni bir müşteri yarat
+      focus_is_organization_or_team: Odak Organizasyon veya Takım
+      leadership_circle_profile: Liderlik Döngüsü Profili
+      leadership_circle_profile_mana: Liderlik Döngüsü Profil Yöneticisi Sürümü
+      leadership_culture_survey: Liderlik Kültürü Anketi
+      or: veya
+      practitioner: Danışman
+      select_product: Ürün Seçiniz
+  projects:
+    collab:
+      add_and_delete_shared_users: Paylaşılan kullanıcıları istediğiniz zaman ekleyebilir ve silebilirsiniz
+      allow_users_edit_view: Kullanıcıların siparişleri yazdırmasına veya görüntülemesine izin ver
+      delete_collaborator: Ortak Çalıştırıcı Sil
+      invite_more_people: Daha fazla kişiyi davet et
+      invite_user_by_typing_email: Yeni bir kullanıcıyı e-postasını aşağıda yazarak davet edin
+      printers: Yazıcılar
+      sharing_access_certified_consultant: Erişimi paylaşmak, başka kullanıcılara siparişlere erişmesini sağlar
+      this_licensor_is_not_shared: Bu Proje şu anda paylaşılmıyor
+    convert_sa_to_lcp:
+      please_set_consulting_company_and_consultant_first: Lütfen önce Müşteri, Danışmanlık Şirketi ve Danışmanı ayarlayın (Müşteri ve Danışmanlık Ayarlarında).
+      success: Dönüştürme başarılı oldu.
+    delete_collaborator:
+      success: Kullanıcı projeden kaldırıldı.
+    new:
+      itemparameterize: "#%{itemparameterize}"
+      next: Sonraki
+      previous: Önceki
+    partials:
+      edit_form:
+        cancel_changes: Değişiklikleri İptal Et
+        deliverables_and_printing_opti: Çıktılar ve Yazdırma Seçenekleri
+        project_options: Proje Seçenekleri
+        save_all_changes: Tüm değişiklikleri kaydet
+      evaluator_invitation:
+        if_you_have_already_sent_a_mes: Zaten katılımcılara DAVLUM mesaj gönderdiyseniz, projenin ön panelindeki tüm katılımcılara ve değerlendiricilere güncellenmiş mesajları gönderdikten sonra oradan gidebilirsiniz.
+        invitations: INVITATIONS
+        modifying_this_message_will_ch: Bu değiştirildiğinde Değerlendiricisi DAVETLEMELERİ veya HATIRLATMALAR e-postaları seçilen dilde değişecektir.
+        please_do_not_modify_any_text_: Lütfen parantez içindeki metni değiştirmeyin (| |). Bunlar, mesaj gönderildiğinde katılımcının bilgileri ile değiştirilecek anahtar kelimelerdir.
+        reminders: HATIRLATICILAR
+        warnings: Uyarılar
+      evaluators_blank_slate:
+        add_evaluator: Değerlendiriciyi ekle
+        import_evaluators: İthalat Değerlendiricileri
+        start_adding_evaluators_now: Şimdi değerlendiriciler eklemeye başlayın.
+        there_are_no_evaluators_in_thi: Bu projede değerlendirici yok.
+      header:
+        comments: Yazıcının yorumları
+        client: 'Müşteri:'
+        completion_date: Tamamlama tarihi
+        consulting_settings: Müşteri ve Danışmanlık Ayarları
+        consutling_company: 'Danışmanlık şirketi:'
+        convert_sa_to_lcp: Tam LCP'ye Dönüştür
+        create_group_report: Grup Raporu Oluştur
+        delete_project: Projeyi Sil
+        deleteproject: Projeyi Sil
+        generate_draft_reports: Taslak Raporları Oluşturma
+        practitioner: 'Danışman:'
+        printing_access: Erişime Baskı
+        project_id: 'Proje Kimliği:'
+        project_time_zone: Proje Zaman Dilimi
+        rename_project: Projeyi Yeniden Adlandır
+        run_new_report: Yeni Rapor Çalıştır
+        run_report_date: Rapor Tarihi Çalıştır
+        send_all_reminders: Tüm Hatırlatıcıları Gönder
+        send_new_emails_projectsurveys: Yeni e-postalar gönder (%{projectsurveyswhereemail_sent_})
+        shared_with: İle paylaştı
+        show_orders: Emirleri Göster
+        starting_date: 'Başlangıç ​​tarihi:'
+        status: 'Durum:'
+        users_project_access: Paylaşılan Ayarlar
+        view_orders: Siparişleri Görüntüle
+      import_participants_modal:
+        cancel: İptal etmek
+        import_participants_from_csv_f: Katılımcıları CSV dosyasından içe aktarın
+        not_sure_about_the_format_of_t: Dosyanın biçiminden emin değil misiniz? <a href='#'> CSV örneğini indirin. </a>
+        upload_participants: Katılımcıları Yükle
+        upload_your_csv_file: 'CSV dosyanızı yükleyin:'
+      modals:
+        delete_project:
+          thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}"
+          thomeindexunable_to_delete_pro: "%{thomeindexunable_to_delete_pro}"
+          thomeindexyes_delete_this_proj: "%{thomeindexyes_delete_this} projesi"
+        no_data_for_preview_warning:
+          at_least_one_survey_must_be_co: Önizleme Raporu çalışmadan önce en az bir anket tamamlanmış olmalıdır.
+          not_enough_data_to_generate_pr: Önizleme oluşturmak için yeterli veri yok
+        rename:
+          cancel: İptal etmek
+          please_enter_a_new_name_for_th: 'Lütfen proje için yeni bir ad girin:'
+          rename_project: Projeyi Yeniden Adlandır
+          save_changes: Değişiklikleri Kaydet
+        show_orders:
+          orderorder_number_click: "%{orderorder_number} (tıklama),"
+          projects_orders: Projenin Siparişleri
+          the_orders_created_by_a_projec: Bir proje tarafından oluşturulan siparişler.
+      new_project:
+        address_form:
+          select_an_address_from_my_acco: Hesabımdan bir adres seçin
+        address_modal:
+          select_from_my_account_address: Hesap adreslerimden seçin
+          there_are_no_addresses_related: Kullanıcıyla ilgili hiçbir adres bulunamadı
+        contact_info:
+          billing_address: Fatura Adresi
+          binder_address: Binder Adresi
+          contact_information: İletişim bilgileri
+          new_address: Yeni adres
+          same_as_shipping_address: Rapor Adresi ile Aynı
+          same_as_the_billing_address: Faturalandırma Adresi ile aynı
+          shipping_address: Rapor Adresi
+          this_contact_is_the_only_perso: Bu kişi, Liderlik Çemberi'nden herhangi bir fatura bilgilerini görecek olan SADECI kişidir
+          this_is_the_address_where_the_: Bu, koç raporunun gideceği adres.
+          this_is_the_address_where_the_3_ring: Bu, 3 halkalı bağlayıcının teslim edileceği adres.
+        deliverable_options:
+          binder_with_tabs: Profil Yorumlama Kılavuzlu Ciltçi
+          coach_report: Antrenör Raporu
+          digital_graph: Dijital Grafik
+          group_report: Grup Raporu
+          how_many_copies_per_participan: Katılımcı başına kaç kopya var?
+          i_want_pdf_and_printed_copies_: Raporların PDF ve Basılı kopyalarını istiyorum.
+          i_want_the_pdf_copies_only: Sadece PDF kopyalarını istiyorum.
+          participant_graph: Katılımcı Grafiği
+          participant_report: Katılımcı Raporu
+          participant_reports_in_csv: İndirilebilir ham veriler
+          pdf_file_that_practitioner_ema: Danışman e-postalarını katılımcıya PDF dosyası
+          please_choose_below_which_ones: Lütfen hangilerinin basılı kalmasını istediğinizi seçin.
+          profile_interpretation_manual: Profil Tercüme Kılavuzu
+          reports: 'Raporlar:'
+          reports_format: 'Rapor biçimi:'
+          you_will_get_a_digital_version: 'Aşağıdaki parçaların dijital bir versiyonunu alacaksınız:'
+          you_will_get_only_the_digital_: 'Profil İzleme El Kitabı''nın sadece dijital (e-kopyaları) sürümünü ve aşağıdaki raporları alacaksınız:'
+          you_will_get_the_digital_versi: Profil Tanıtım El Kitabı'nın dijital versiyonunu ve tüm raporları alacaksınız.
+          your_project_will_include: 'Projeniz şunları içerecektir:'
+        demographics:
+          custom:
+            age_ranges: Yaş Aralıkları
+            all: Herşey
+            country: ülke
+            demographic_options: Demografik Seçenekler
+            direct_report_ranges: Doğrudan Rapor Aralığı
+            education_levels: Eğitim Seviyeleri
+            ethnic_groups: Etnik gruplar
+            female: Kadın
+            gender: Cinsiyet
+            if_you_choose_to_run_a_custom_: Çok küçük bir demografik örneklem büyüklüğüne karşı özel bir rapor çalıştırmayı seçerseniz, sonuç çarpık veriler içeren bir rapor olabilir. Çoğu demografik veri Kaynaklar altında bulunur. Seçiminizi varsayılan demografiye geri döndürebilirsiniz. Sorularla müşteri hizmetleri temsilcinizle iletişime geçin.
+            industries: Sektörler
+            male: Erkek
+            management_levels: Yönetim Düzeyleri
+            professions: meslekler
+          summary:
+            age_ranges: 'Yaş Aralığı:'
+            countries: 'Ülkeler:'
+            demographic_definition: Demografik Tanım
+            demographic_details: 'Demografik Detaylar:'
+            demographic_size: 'Demografik Boyut:'
+            direct_report_ranges: 'Doğrudan Rapor Aralığı:'
+            education_levels: 'Eğitim Seviyeleri:'
+            ethnic_groups: 'Etnik gruplar:'
+            gender: 'Cinsiyet:'
+            industry: 'Endüstri:'
+            languages: 'Diller:'
+            lcp_participants: LCP katılımcıları
+            lcs_participants: LCS katılımcıları
+            management_levels: 'Yönetim Seviyeleri:'
+            me_participants: ME katılımcıları
+            participants: katılımcılar
+            professions: 'meslekler:'
+            sa_participants: SA katılımcıları
+            this_is_the_number_of_people_y: Bu, proje üyelerinizi karşılaştıracağınız kişi sayısıdır.
+        project_details:
+          all_surveys_should_be_complete: Tüm anketler bu tarihe kadar tamamlanmalıdır.
+          cancel: İptal etmek
+          date_reports_are_available: Tarih raporları mevcuttur.
+          next: Sonraki
+          project_options: Proje Seçenekleri
+          specify_a_timeline_for_the_pro: Proje için bir zaman çizelgesi belirtin
+        project_options:
+          1st_option: 1. Seçenek
+          2nd_option: 2. Seçenek
+          cancel_schedule_announcement: Zamanlanmış Duyuruyu İptal Et
+          comment_questions_to_be_includ: Ankete dahil edilecek soruları yorumlayın
+          evaluators_are_bosses_peers_di: Değerlendiriciler patronlar, akranlar, doğrudan raporlar ve katılımcı hakkında girdi sağlamak üzere davet edilen diğer kişilerdir.
+          how_evaluators_are_invited_to_: Değerlendiricilere Nasıl Davet Edilir Davet Edilir
+          i_will_invite: Değerlendiricileri davet edeceğim
+          if_the_participant_is_responsi: Katılımcı, değerlendiricilerini davet etmekle sorumluysa, o ankete başlamadan önce bu minimum değerlendiricileri davet etmek zorunda kalacaktır.
+          in_this_section_you_will_be_ev: Bu bölümde siz değerlendireceksiniz
+          indicate_if_the_survey_will_be: Anketin Örgüt'e veya bir grup ekip üyesine odaklanıp odaklanmayacağını belirtin.
+          leaders_managers: Liderler / Yöneticileri
+          members_of_team: ''
+          minimum_evaluations_per_partic: Katılımcı başına minimum değerlendirmeler?
+          my_participant_will_invite: Katılımcım, değerlendiricileri davet edecek
+          need_help_email: Yardım e-postasına ihtiyacınız var
+          organization: organizasyon
+          participants_will_see_the_focu: Katılımcılar, sağdaki kutuda gösterilen anket talimatlarında odak tanımını göreceklerdir
+          promo_code: Promosyon kodu
+          q1_in_your_opinion_what_is_thi: 'S 1: Sizce, bu kişinin en büyük liderlik varlığı, beceri veya yeteneği nedir ve bunu kullanmak için ne gibi önerileriniz var?'
+          q1_what_should_heshe_stop_doin: 'S1: Ne yapmayı bırakmalı?'
+          q2_in_your_opinion_what_is_thi: 'S2: Sizce, bu kişinin en büyük liderlik mücadelesi veya kalkınma bölgesi nedir ve bunu ele almak için ne gibi önerileriniz var?'
+          q2_what_can_heshe_improve: 'S2: Ne geliştirebilir?'
+          q3_what_have_you_observed_abou: 'S3: Bu kişi hakkında, kendisiyle ilgili olarak, bu değerlendirmede daha önce değinilmemiş olabilecek ilave geribildirim vermek istediğiniz şeyleri gözlemlediniz mi?'
+          q3_what_should_heshe_start_doi: 'S3: Ne yapmaya başlamalı?'
+          regardless_of_who_invites_eval: Değerlendiricileri kimin davet ettiğine bakılmaksızın, danışman her zaman projektör panosunda değerlendiricilerin listesini görebilir
+          report_demographics: Demografiyi Raporla
+          schedule_sending_of_invitation: Davet e-postalarının gönderilmesini planlayın
+          send_now: Şimdi gönder
+          survey_focus: Anket Odaklılığı
+          survey_focus_description: Anket Odaklı Açıklama
+          survey_instructions: 'Araştırma Talimatları:'
+          team: Takım
+          the_invitations_can_be_schedul: Davetler belirli bir tarih ve saatte çıkacak şekilde planlanabilir
+          this_is_the_minimum_number_of_: Bir katılımcının raporda bulunması gereken eksiksiz değerlendirmelerin asgari sayısıdır. Minimum uygunluk 5 değerlendirmedir.
+      participant_invitation:
+        if_you_have_already_sent_a_mes: Zaten katılımcılara davet mesajı gönderdiğinizde, projenin ön panelindeki tüm katılımcılara ve değerlendiricilere güncellenmiş mesajlar gönderdikten sonra oradan gidebilirsiniz.
+        invitations: INVITATIONS
+        modifying_this_message_will_ch: Bu mesajı değiştirirseniz, seçilen dil ile katılımcının DAVET veya HATIRLATICI e-postası değişecektir.
+        please_do_not_modify_the_text_: Lütfen parantez içindeki metni değiştirmeyin (| |). Bunlar, mesaj gönderildiğinde katılımcının bilgileri ile değiştirilecek anahtar kelimelerdir.
+        reminders: HATIRLATICILAR
+        warnings: Uyarılar
+      participants_blank_slate:
+        add_participant: Katılımcı Ekle
+        import_participants: İthalat Katılımcıları
+        start_adding_participants_now: Şimdi katılımcı eklemeye başlayın.
+        there_are_no_participants_in_t: Bu projede değerlendirilecek hiçbir katılımcı yok.
+      reminders:
+        if_you_have_already_sent_a_mes: Zaten katılımcılara bir mesaj gönderdiyseniz, güncellenmiş mesajlar projeden gönderilebilir.
+        langname_reminder: "%{langname} Hatırlatma"
+        modifying_this_message_will_ch: Bu mesajı değiştirdiğinizde hatırlatma mesajı bir İngiliz anketiyle değişecektir.
+        please_do_not_modify_the_text_: Lütfen köşeli parantez içindeki metni değiştirmeyin (* | | *). Bunlar, mesaj gönderildiğinde katılımcının bilgileri ile değiştirilecek anahtar kelimelerdir.
+        warnings: Uyarılar
+      report_preview:
+        boss: Patron
+        bosss_boss: Patronun Patronu
+        direct_report: Doğrudan rapor
+        evaluators: Değerlendiriciler
+        other: Diğer
+        participant: 'Katılımcı:'
+        peer: akran
+        select_categories: 'Kategoriler Seç:'
+        self: öz
+        skill: Beceri
+      resend_emails:
+        last_reminde: Son gönderilen e-posta
+        last_reminder_sent_on: Üzerine gönderilen son e-posta
+        never_sent: Gönderilmedi
+        participantuseremail: "(%{participantuseremail})"
+        select_all_participants_evalua: Tüm katılımcının değerlendiricilerini seçin
+        surveyevaluatoremail: "(%{surveyevaluatoremail})"
+      statuses:
+        completed_evaluating: Tamamlanan Değerlendirme
+        completed_selfsurveys: Tamamlanan Öz İncelemeler
+        in_progress: Devam etmekte *
+        not_started: Başlatılmadı
+        statcompleted_count_of_stattot: "%{statcompleted_count} %{stattotal_count} %{statrelation_namepluralize} tamamlandı"
+        statusestotal_relations_comple: "%{statusestotal_relations_comple} %{statusestotal_relations} Değerlendirmeleri Tamamlandı"
+        total_of_evaluators: Değerlendiricilerin Toplamı
+        total_of_participants: Katılımcıların Toplamı
+      tooltip:
+        of: arasında
+        pluralizecompleted_count_relat: "%{pluralizecompleted_count_relat} tamamlandı"
+    project:
+      manage_project: Projeyi Yönet
+      resend_emails: E-postaları yeniden gönder
+    project_header:
+      create_group_report: Grup Raporu Oluştur
+      create_new_project: Yeni Proje Yarat
+    project_table:
+      actions: Eylemler
+      all_projects: Tüm Projeler
+      completion_date: Tamamlama tarihi
+      last_reminder: Son e-posta
+      product: Ürün
+      project: proje
+      status: durum
+    report_preview:
+      '0': 0%
+      categories: 'Kategoriler:'
+      evaluators: Değerlendiriciler
+      participant: 'Katılımcı:'
+      self: öz
+      skill: Beceri
+    resend_emails:
+      cancel: İptal etmek
+      select_all_evaluators: Tüm Değerlendiricileri Seç
+      select_all_participants: Tüm Katılımcıları Seç
+      select_the_unfinished_particip: E-postalar göndermek istediğiniz tamamlanmamış katılımcıları ve değerlendiricileri seçin. Mesajı seçtiğiniz anket kullanıcılarına göndereceğiniz e-posta türünü seçin.
+      send_emails_to_participants_ev: Katılımcılara ve değerlendiricilere e-posta gönderme
+      send_invitation_email: Davetiye E-postası gönder
+      send_reminder_email: Hatırlatma E-postası gönder
+    roles:
+      collaborator:
+        delete: silmek
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{projectname}"
+        tsharedshared_with_project_use: "%{tsharedshared_with} %{project_userscount} %{tprojectscollabprinters}"
+    send_all_reminders:
+      close: Kapat
+      please_wait: Lütfen bekle ...
+      sending_all_reminders: Tüm hatırlatıcıları gönderme
+    share:
+      success: başarı
+    show:
+      evaluator_email: Değerlendiricisi E-postası
+      evaluators: Değerlendiriciler
+      options: Seçenekler
+      participant_email: Katılımcı E-postası
+      participants: Katılımcılar
+    show_consulting_settings:
+      client: müşteri
+      consulting_company: Danışmanlık şirketi
+      consulting_settings: Müşteri ve Danışmanlık Ayarları
+      practitioner: Danışman
+    undo_share:
+      success: başarı
+  sa_survey_mailer:
+    request_invitation_email:
+      have_a_nice_day: İyi günler!
+      hello: Merhaba,
+      participant_email: 'Katılımcı E-posta:'
+      participant_name: 'Katılımcı Adı:'
+      selfsurvey_completed_at: 'Kendi Kendine Anket tamamlandı:'
+      selfsurvey_id: 'Kendi Kendine Anket #ID:'
+      we_recorded_a_new_request_for_: 'Bir kullanıcının davetiyesine yeni bir istekte bulunduk:'
+    survey_completed_email:
+      age_range: Yaş aralığı
+      basic_data: Temel veri
+      company_name: 'Şirket Adı:'
+      company_revenue: Şirket Geliri
+      country: ülke
+      demographics: Demografik
+      education_level: Eğitim Seviyesi
+      ethnic_group: Etnik grup
+      gender: Cinsiyet
+      have_a_nice_day: İyi günler!
+      hello: Merhaba,
+      industry: sanayi
+      management_level: Yönetim Seviyesi
+      organization_size: Kuruluş Boyutu
+      participant_email: 'Katılımcı E-posta:'
+      participant_name: 'Katılımcı Adı:'
+      participant_phone_number: 'Katılımcı Telefon Numarası:'
+      please_check_the_attachment_re: Lütfen eki kontrol edin - raporlar PDF formatındadır.
+      profession: Meslek
+      reports: Raporlar
+      selfsurvey_completed_at: 'Kendi Kendine Anket tamamlandı:'
+      selfsurvey_created_at: 'Kendi Kendine Anket oluşturuldu:'
+      selfsurvey_id: 'Kendi Kendine Anket #ID:'
+      tlc_consultant_who_referred: 'Tavsiye eden TLC danışmanı:'
+      we_noticed_that_the_new_selfsu: 'Yeni kişisel anketin tamamlandığını fark ettik. Aşağıda detayları bulabilirsiniz:'
+    survey_completed_participant_email:
+      already_in_touch: Zaten bir Liderlik Çemberi Sertifikalı Teknik Direktör ile temas kurdunuz mu? Daha fazla bilgi için lütfen onlara doğrudan ulaşın.
+      dear_userfull_name: Sevgili %{userfull_name},
+      if_youd_like_to_understand_how: Bir lider olarak "nasıl gösterildiğini" anlamak isterseniz, en çok yönlendirdiğiniz ve etkileşimde bulunduğu kişilerden gelen geri bildirim sağlayan eksiksiz bir Liderlik Döngüsü Profili almayı öneririz.
+      like_to_implement: Liderlik Döngüsü Profilini eksiksiz bir ekip veya kuruluşla uygulamak isterseniz, lütfen Carl Benscoter ile <a href='mailto:carl.benscoter@fcg-global.com'> carl.benscoter@fcg-global'e başvurun. com </a>
+      other_questions: 'Diğer sorular? Lütfen şu adresten ulaşın: <a href=''mailto:alittleTLC@theleadershipcircle.com''> alittleTLC@theleadershipcircle.com </a>'
+      please_do_not_hesitate_to_reac: Lütfen sorularınızı yanıtlamaktan çekinmeyin. Herhangi bir şekilde yardımcı olmaktan memnuniyet duyarız.
+      purchase_option_1: <a href="http://shop.leadershipcircle.com/MLprofile"> Liderlik Döngüsü Profili + Liderlik Bilgilendirme Mastering </a> - 2000 ABD Doları *
+      purchase_option_2: <a href="http://shop.leadershipcircle.com/MLcoaching"> Liderlik Döngüsü Profili + Mastering Liderlik Bilgilendirme + 1 Saat Koçluk </a> - 3000 USD *
+      purchase_option_3: <a href="http://shop.leadershipcircle.com/MLcoaching-plan"> Liderlik Döngüsü Profili + Liderlik Liderliği Bilgilendirme + 1 Saat Koçluk + Liderlik Geliştirme Planı </a> - $ 4000 USD *
+      purchase_options: 'İşte üç harika seçenek:'
+      purchase_promo_code: "* Bir defaya mahsus giriş ücreti olarak bu fiyatların% 40'ını ödeme işleminde <font color = 'red'> MLDebrief2017 </ font> kullanın"
+      request_a_full_lcp: Tam Bir LCP İste
+      thank_you_again: Tekrar teşekkürler,
+      thank_you_for_taking_the_leade: 'Liderlik Dairesi Profilini aldığınız için teşekkür ederiz: Özdeğerlendirme. Umarız Mastering Liderlik okumayı sevmişsinizdir ve liderlik yolculuğunuza devam ederken, raporu ve geribildirimi yararlı bulursunuz.'
+      to_help_you_better_understand_: Özdeğerlendirme raporunuzu daha iyi anlamanıza yardımcı olmak için, grafiğinizin ve raporunuzun her bir yönünü açıklayan bir Yorum Kılavuzu ekledim.
+  sa_surveys:
+    demographics:
+      apt_suite_bldg: Apartman, Süit, Bldg ...
+      before_you_begin: Sen başlamadan önce
+      company_details: Şirket Detayları
+      company_revenue: Şirket Geliri
+      continue_to_survey: Ankete Devam Et
+      need_help: Yardıma mı ihtiyacınız var?
+      personal_information: Kişisel bilgi
+      select_age: Yaşı Seçin
+      select_ethnic_group: Etnik Grup Seçiniz
+      select_your_companys_industry: Şirketinizin Sektörünü Seçin
+      select_your_education_level: Eğitim Seviyenizi Seçin
+      select_your_gender: Cinsiyetinizi seçiniz
+      select_your_management_level: Yönetim Seviyenizi Seçin
+      select_your_profession: Mesleğinizi seçin
+      select_your_residing_country: Ikamet ettiğiniz ülkeyi seçin
+      size_of_organization: Kuruluş Büyüklüğü
+      street_address: Sokak Adresi (222 örnek cadde) ...
+      tlc_would_like_to_gather_some_: TT, sadece iç araştırma amaçlı bazı bilgiler toplamak istemektedir. TLC, bilgilerinizi paylaşmaz. Soruları cevaplarsanız minnettar oluruz; Ancak, her zaman "Yanıtlamamayı tercih et" veya "Diğer" seçeneğini belirleyebilirsiniz.
+      type_your_company_name: Şirket adınızı yazın ...
+      we_need_a_little_more_informat: Senin hakkında biraz daha bilgiye ihtiyacımız var ...
+      zip_post_code: ZIP / Posta Kodu ...
+    expanding_development:
+      discover_more_about_the_leader: Liderlik Çemberi hakkında daha fazla şey keşfedin
+      need_help: Yardıma mı ihtiyacınız var?
+      request_invitation: TAM LCP 360'I ALIN
+      requesting_invitation: Davetiye İstiyor ...
+      would_you_like_to_continue_exp: Liderlik gelişiminizi genişletmeye devam etmek ister misiniz?
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    registration:
+      complete_the_registration_belo: Anketinizi almak için aşağıdaki kayıt işlemini tamamlayın. Öz Değerlendirmeyi tamamlayamıyorsanız. Bunu bir ayarla tamamlamalısınız. Sonuçlar Öz Değerlendirme sonunda tamamlandıktan sonra kayıtlı e-postaya gönderilecektir.
+      consultant_error: Bu e-postayla herhangi bir TLC danışmanı bulamadık. Lütfen başka bir e-posta adresi yazın veya yukarıdaki seçeneğe "Hayır" ı seçin.
+      did_a_tlc_consultant_refer_you: Bir TLC danışmanı sizi <b> Liderlik Liderliği </ b> kitabımıza yönlendirdi mi?
+      'false': false
+      i_agree_to_tlc: TLC'leri kabul ediyorum
+      ja: true
+      need_help: Yardıma mı ihtiyacınız var?
+      nein: false
+      'no': Yok hayır
+      privacy_and_policy_terms: Gizlilik ve politika terimleri
+      take_the_survey: Ankete katılmak
+      thank_you_for_your_interest: İlginiz için teşekkürler.
+      type_consultant_email: Lütfen adını veya e-postasını yazınız ...
+      type_email: E-postanızı yazın ...
+      type_first_name: Adınızı yazın ...
+      type_last_name: Soyadınızı yazın ...
+      type_phone_number: Telefon Numaranızı yazın ...
+      'yes': Evet
+    thank_you_participant:
+      did_you_enjoy_your_survey_shar: Anketinizden hoşlanıyor musunuz? Arkadaşlarınla ​​paylaş.
+      discover_more_about_the_leader: Liderlik Çemberi hakkında daha fazla şey keşfedin
+      facebook: Facebook
+      for_taking_the_leadership_circ: Liderlik Döngüsü Profili - Öz Değerlendirme. Sonuçlarınızla birlikte olan raporlar birkaç dakika içinde e-postanıza ulaşacaktır.
+      linkedin: Linkedin
+      need_help: Yardıma mı ihtiyacınız var?
+      request_invitation: TAM LCP 360'I ALIN
+      requesting_invitation: Davetiye İstiyor ...
+      thank_you_practitionerfull_nam: Teşekkürler %{practitionerfull_name}
+      twitter: heyecan
+      would_you_like_to_take_the_bfu: LCP 360 </ b> değerlendirmesi yapın ve kilit paydaşlarınızın (patronların, hakemlerin, doğrudan raporların ve diğerlerinin) liderliğinizi nasıl deneyimlediğini öğrenin. Liderlik Döngüsü Profili 360'tan gelen derin anlayış, sanatta ve liderlik uygulamasında daha etkili ve ustalık kazanmanıza olanak tanır. <br/> <br/> * MLDebrief2017'yi, bu fiyatların% 40'ında Bir defaya mahsus giriş oranı.
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    welcome:
+      bget_your_copy_hereb: "<B> kopyanızı buraya getirin </ b>"
+      coming_back: Dönüyor musun
+      login: Oturum aç
+      need_help: Yardıma mı ihtiyacınız var?
+      sorry_but_your_answers_are_inc: Maalesef, cevabınız yanlış. Lütfen tekrar deneyin.
+      submit_answers: Cevap Gönder
+      this_area_is_a_special_section: 'Bu alan okuyucularımız için özel bir bölüm. Umarız <b> Liderlik Mastering </ b> kitabımızdan hoşnut kaldınız. Lütfen Liderlik Çemberi''ni başlatmak için aşağıdaki soruyu yanıtlayın: Özdeğerlendirme. Cevap kitapta bulunabilir. Elinde yok mu?'
+      welcome_to: Hoşgeldiniz
+  search:
+    index:
+      actions: Eylemler
+      client_name: Müşteri Adı
+      clients: Müşteriler
+      consultant_companies: Danışman Şirketler
+      created_at: Tarihinde oluşturuldu
+      email: E-posta
+      evaluations: Değerlendirmeler
+      industry: sanayi
+      name: isim
+      number_of_participants: Katılımcı sayısı
+      number_of_projects: Proje Sayısı
+      order: Sipariş
+      order_date: Sipariş tarihi
+      orders: Emirler
+      practitioners: Danışmanlar
+      product_type: ürün tipi
+      projects: Projeler
+      report_name: Rapor Adı
+      results_limited_to_20_please_u: Sonuçlar 20 ile sınırlı, lütfen daha kesin bir arama kullanın
+      search_results_total_count: arama sonuçları
+      selfsurveys: Kendinden Anketler
+      status: durum
+    orders_search:
+      number_of_participants: Katılımcı sayısı
+      order: Sipariş
+      order_date: Sipariş tarihi
+      orders: Emirler
+      product_type: ürün tipi
+      report_name: Rapor Adı
+      search_results_total_count: Arama Sonuçları (%{total_count})
+      status: durum
+    partials:
+      index:
+        actions: Eylemler
+        client_name: Müşteri Adı
+        clients: Müşteriler
+        completion_date: Tamamlama tarihi
+        created_at: Tarihinde oluşturuldu
+        email: E-posta
+        evaluations: Değerlendirmeler
+        industry: sanayi
+        last_reminder: Son e-posta
+        name: isim
+        number_of_participants: Katılımcı sayısı
+        number_of_projects: Proje Sayısı
+        order: Sipariş
+        order_date: Sipariş tarihi
+        orders: Emirler
+        practitioners: Danışmanlar
+        product: Ürün
+        product_type: ürün tipi
+        project: proje
+        projects: Projeler
+        report_name: Rapor Adı
+        search_results: Arama sonuçları
+        selfsurveys: Kendinden Anketler
+        status: durum
+      order:
+        not_found_record_invalid: Bulunamadı! Kayıt geçersiz.
+      organization:
+        create_group_report: Grup Raporu Oluştur
+        manage_client: İstemciyi Yönet
+      practitioner:
+        preview_user: Kullanıcıyı Önizle
+    projects_search:
+      projects: Projeler
+      search_results_total_count: Arama Sonuçları (%{total_count})
+    surveys_search:
+      actions: Eylemler
+      completed_on: Tamamlandı
+      completion_date: Tamamlama tarihi
+      delete: silmek
+      evaluating: değerlendirilmesi
+      evaluations: Değerlendirmeler
+      language: Dil
+      last_logged_in: Son Giriş Tarihi
+      more_actions: Daha fazla hareket
+      move: Hareket
+      not_started: Başlatılmadı
+      of: arasında
+      project_name: proje Adı
+      questions: sorular
+      reset: Reset
+      role: rol
+      search_results_total_count: Arama Sonuçları (%{total_count})
+      self_surveys: Kendi Kendini Anketler
+      survey_taker_details: Anketör Ayrıntıları
+    users_search:
+      actions: Eylemler
+      created_at: Tarihinde oluşturuldu
+      email: E-posta
+      evaluations: Değerlendirmeler
+      name: isim
+      practitioners: Danışmanlar
+      search_results_total_count: Arama Sonuçları (%{total_count})
+      selfsurveys: Kendinden Anketler
+  shared:
+    1_printed_copy_per_participant: Katılımcı Başına Basılmış Kopya 1
+    actions: Eylemler
+    add: Eklemek
+    add_participant: Katılımcı Ekle
+    cancel: İptal etmek
+    certified_consultants: Danışmanlar
+    companies: Müşteriler
+    complete_by: Tarafından tamamlandı
+    completed_at: Tamamlandı
+    confirm: Emin misiniz?
+    create_group_report: Grup Raporu Oluştur
+    created_at: Tarihinde oluşturuldu
+    date_created: tarih oluşturuldu
+    delete: silmek
+    demographic: Demografik
+    details: ayrıntılar
+    edit: Düzenleme
+    edit_evaluator: Değerlendiriciyi Düzenle
+    email: E-posta
+    import_participants: İthalat Katılımcıları
+    kind: tür
+    licensor: Lisans
+    manage_evaluators: Değerlendiricileri Yönetin
+    menu:
+      dashboard: gösterge paneli
+      disabled: engelli
+      invited: Davetli
+      orders: Emirler
+      print_reports: Raporları Yazdır
+      project_center: Proje Merkezi
+      survey_takers: Anket Araştırması Yapanlar
+      utilities: Araçlar
+    more_actions: Daha fazla hareket
+    name: isim
+    new:
+      footer:
+        current_useremail: "(%{current_useremail})"
+        go_back_to_the_csr_project_cen: CSR Proje Merkezi'ne geri dönün
+        you_true_useremail_are_imperso: Siz (%{true_useremail}) danışmana taklit ediyorsunuz
+        your_password_will_expire: Şifreniz %{days_to_expire} gün içinde sona erecek.
+        renew_your_password: Lütfen şifrenizi değiştirin.
+      header:
+        go_to_project_center: Proje Merkezine Git
+        link_to_class_logo__link_do: "/"
+        selfassessment: Öz değerlendirme
+        the_leadership_circle: 'Liderlik Çemberi:'
+        the_leadership_circle_profilet: Liderlik Döngüsü Profili
+        the_leadership_circle_selfasse: 'Liderlik Çemberi: Özdeğerlendirme'
+      modal_search:
+        all: Herşey
+        orders: Emirler
+        projects: Projeler
+        survey_takers: Anket Araştırması Yapanlar
+        users: Kullanıcılar
+      modal_wait:
+        importing_participants: Katılımcıları İçe Aktarma
+        please_wait: Lütfen bekle ...
+      nav:
+        active_projects: Aktif Projeler
+        my_clients: Müşterilerim
+        my_orders: Raporlarım
+        my_surveys: Anketlerim
+        people: İnsanlar
+        print_reports: Raporları Yazdır
+        project_center: Proje Merkezi
+        utilities: Araçlar
+      navigation_mobile:
+        logout: Çıkış Yap
+        my_account: Hesabım
+      session_timeout_modal:
+        attention: Dikkat!
+        logout: Çıkış Yap
+        more_time: Daha fazla zaman
+        you_have_been_inactive_and_you: Aktif değilsiniz ve <b class = "remaining-time"> 5:00 </ b> dakika sonra otomatik olarak çıkış yapacaksınız. Daha fazla zaman ister misin?
+      session_timeout_remodal_modal:
+        attention: Dikkat!
+        logout: Çıkış Yap
+        more_time: Daha fazla zaman
+        you_have_been_inactive_and_you: Aktif değilsiniz ve <b class = "remaining-time"> 5:00 </ b> dakika sonra otomatik olarak çıkış yapacaksınız. Daha fazla zaman ister misin?
+      user_navigation:
+        logout: Çıkış Yap
+        my_account: Hesabım
+        stop_impersonating_current_use: "%{current_userfull_name} kimliğine bürünmeyi bırak"
+        take_selfassessment: Öz Değerlendirme Alın
+    next_page: Sonraki Sayfa
+    not_set: Ayarlanmadı
+    notify:
+      delete_warning: Anketi tamamlamış olan değerlendiricileri silemiyor.
+      moved_with_success: Katılımcı başarıyla taşındı.
+      success: Veriler kaydedildi.
+      update_warning: Anketi tamamlamış olan değerlendiricileri değiştirilemiyor.
+    number: Numara
+    of: arasında
+    old:
+      forbidden:
+        forbidden: yasak
+    participants: Katılımcılar
+    pdf_report: PDF Raporu
+    people: insanlar
+    percent_complete: "% Tamamlayınız"
+    please_remove_children: Bağımlı veri hala var olduğu için silinemiyor (kuruluşlar, projeler). Bağımlı veriyi önce silmelisiniz.
+    preview: Önizleme
+    preview_report: Önizleme Raporu
+    previous: Önceki
+    printing_access: Erişime Baskı
+    projects: Projeler
+    questions: sorular
+    rename: Adını değiştirmek
+    report: Rapor
+    report_for: Için Rapor Et
+    reset_password: Şifreyi yenile
+    reset_password_confirm: Şifreyi sıfırlamak istediğinizden emin misiniz?
+    retake: geri almak
+    role: rol
+    save: Kayıt etmek
+    save_changes: Değişiklikleri Kaydet
+    send_invitations: Davetiyeleri Gönder
+    shared_settings: Paylaşılan Ayarlar
+    shared_with: İle paylaştı
+    status: durum
+    system: sistem
+    to: için
+    total: Genel Toplam
+    users: Kullanıcılar
+    were_found: bulundular
+    when: Ne zaman
+    who: Kim
+  support:
+    array:
+      last_word_connector: ", ve"
+      two_words_connector: " ve"
+      words_connector: ","
+  surveys:
+    another_show:
+      surveyproductname: "%{surveyproductname}"
+      tsurveysshowsurvey_for_surveye: "%{tsurveysshowsurvey_for} %{surveyevaluatorfull_name}"
+    answers:
+      are_you_sure_undone: Emin misiniz? Lütfen, tüm cevaplarınızı kontrol edin. Bu adım geri alınamaz
+      back_to_surveys: Anketlere Dön
+      finish_survey: Anketi Bitir
+      next_section: Sonraki bölüm
+      previous_section: Önceki bölüm
+      questions_completed: Tamamlanan Sorular
+    before_you_begin:
+      back_to_main_page: Ana sayfaya geri dön
+      before_you_begin: Sen başlamadan önce
+      continue_to_survey: Ankete Devam Et
+      need_help: Yardıma mı ihtiyacınız var?
+      tlc_would_like_to_gather_some_: TT, yalnızca iç araştırma süreci için bazı bilgiler toplamak istemektedir. TLC, bilgilerinizi paylaşmaz. Soruları cevaplarsanız minnettar oluruz. Katılmamayı seçerseniz, lütfen "Yanıtlamamayı tercih et" seçeneğini seçin ve "Ankete devam et" düğmesini tıklayın.
+      we_need_a_little_more_informat: Senin hakkında biraz daha bilgiye ihtiyacımız var ...
+    demographic:
+      before_you_begin: Sen başlamadan önce
+      raw_data_only_hint: Bu alanlar pdf raporları için gereklidir, yalnızca verilere yönelik sonuçlar için değil
+      tlc_would_like_to_gather_some_: TT, sadece iç araştırma amaçlı bazı bilgiler toplamak istemektedir. TLC, bilgilerinizi paylaşmaz. Soruları cevaplarsanız minnettar oluruz; Ancak, her zaman "Yanıtlamamayı tercih et" seçeneğini belirleyebilirsiniz.
+      we_need_a_little_more_informat: Senin hakkında biraz daha bilgiye ihtiyacımız var ...
+    done: Ankete katılmak için tıklayın.
+    index:
+      active_surveys: Aktif Anketler
+      complete_active_surveys: Lütfen aşağıdaki etkin anketlerinizi tamamlayın
+      content: içerik
+      my_active_surveys: Aktif Anketlerim
+      need_help: Yardıma mı ihtiyacınız var?
+      self_survey: Kendi kendine anket
+      survey_history: Anket Geçmişi
+      take_survey: Anketi doldur
+    invite_evaluators:
+      add_evaluator: Değerlendiriciyi ekle
+      back_to_survey_list: Anket Listesine Geri Dön
+      evaluators_provide_feedback_on: Değerlendiriciler, anketi tamamlayarak liderlik becerileriniz ve yetkinlikleriniz hakkında geri bildirim sağlar.
+      invite_evaluators: Değerlendiricileri Davet Et
+      need_help: Yardıma mı ihtiyacınız var?
+      take_the_survey: Ankete katılmak
+      you_have_enough_evaluators_to_: Ankete katılacak yeterli değerlendiricinin var. Bununla birlikte, en azından <span class = 'minimum değerlendiriciler'> <b> 10 değerlendirici <b> </ span> bulundurmanızı öneririz.
+      you_must_add_at_least_span_cla: Ankete katılmak için en azından <span class = 'minimum değerlendiriciler'> %{current_userinvitee_surveys} daha fazla değerlendirici </ span> eklemelisiniz.
+    not_enough_invited_evaluators: Katılımcı, değerlendiricileri davet edebilir. Ankete katılacak yeterli değerlendirmeci yok.
+    not_valid: Üzgünüz, ancak bu anket artık mevcut değil.
+    partials:
+      continue_survey:
+        '100': 100%
+        culture_survey_for: Için Kültür Anketi
+        current_userfirst_name_current: "%{current_userfirst_name} %{current_userlast_name}"
+        review_your_answers: Yanıtlarınızı İncele
+        self_survey_for: Için Kendi Anketi
+        thanks_current_userfirst_name: Teşekkürler %{current_userfirst_name},
+        you_are_currently_taking_secti: Şu anda %{paramssection_page} bölümünde %{surveysectionscount} alıyorsunuz
+        you_have_answered_all_the_ques: Bölüm %{paramssection_page} ile ilgili tüm soruları yanıtladınız.
+      evaluator_form:
+        cancel: İptal etmek
+        update_evaluator: Değerlendiriciyi Güncelle
+      evaluators:
+        edit_evaluator: Değerlendiriciyi Düzenle
+        evaluator_details: Değerlendirici Ayrıntıları
+        language: Dil
+        relationship: ilişki
+      modal:
+        add_evaluator: Değerlendiriciyi ekle
+        always: Her zaman
+        cancel: İptal etmek
+        edit_evaluator: Değerlendiriciyi Düzenle
+        na: N / A
+        never: Asla
+        often: sık sık
+        once_added_an_email_will_be_im: Bir kez eklendiğinde derhal değerlendirmeye katılımcı davet eden bir e-posta gönderilecektir.
+        previous_question: Önceki Soru
+        review_your_answers: Yanıtlarınızı İncele
+        seldom: Nadiren
+        self_survey_for_bthe_most_effe: "<B> Bilmekte olduğum en etkili Lider </ b> için Kendi Kendine Anket"
+        sometimes: Ara sıra
+      modals:
+        need_help:
+          description: Lütfen yardıma ihtiyacınız olan aşağıdaki listeden bir anket seçin. Danışmanımız en kısa sürede sizinle iletişim kuracaktır.
+          main_support: Ana Destek
+      my_active_surveys:
+        complete_by: Tarafından tamamlandı
+        current_userinvitee_completed_: "%{current_userinvitee_completed_} değerlendirmelerinin %{current_userinvitee_surveyssel} tamamlandı"
+        evaluations_self:
+          one: 'Tamamlanacak <b> bir değerlendirme </ b> var:'
+          other: 'Tamamlanacak <b> %{count} değerlendirmeleriniz </ b> bulunmaktadır:'
+        evaluator_setup: Değerlendirici Kurulumu
+        my_active_surveys: Aktif Anketlerim
+        please_complete_all_of_your_ac: Lütfen aşağıdaki etkin anketlerinizi tamamlayın.
+        self_evaluations_left:
+          one: 'Tamamlanacak <b> bir kendi kendini değerlendirme </ b> var:'
+          other: 'Tamamlanacak <b> %{count} kişisel değerlendirmeleriniz </ b> var:'
+        self_survey: Kendi Kendine Anket
+        take_the_survey: Ankete katılmak
+        you_must_invite_at_least_self_: Anketi alabilmeniz için en az %{self_surveyprojectminimum_eval} değerlendiricisini davet etmeniz gerekir.
+      new_or_pending:
+        continue_the_survey: Ankete Devam Et
+        current_sectionquestionscount_: "%{current_sectionquestionscount} soruları"
+        go_back_to_survey_list: Anket listesine geri dön
+        need_help: Yardıma mı ihtiyacınız var?
+        of: arasında
+        previous_section: Önceki bölüm
+        restart_previous_survey: Önceki anketi yeniden başlatın
+        start_the_survey: Anketi Başlatın
+        you_have_answered: Yanıtladın mı
+      no_evaluators:
+        add_evaluator: Değerlendiriciyi ekle
+        why_do_i_have_to_invite_evalua: " "
+        you_currently_do_not_have_any_: Şu anda herhangi bir değerlendiriciye sahip değilsiniz.
+        you_need_to_have_at_least_span: Ankete katılmak için en az <span class = 'minimum değerlendiriciler'> %{minimum_evals} değerlendiricileri </ span> olması gerekir. <br> Listenize bir değerlendirici eklemek için aşağıdaki düğmeyi tıklayın.
+      question:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        agree: anlaşmak
+        always: Her zaman
+        culture_survey_for: Için Kültür Anketi
+        disagree: Katılmıyorum
+        na: N / A
+        never: Asla
+        of: arasında
+        often: sık sık
+        perc_progress: "%{perc_progress}%"
+        previous_question: Önceki Soru
+        providing_feedback_for: Için geri bildirim sağlamak
+        question: Soru
+        seldom: Nadiren
+        self_survey_for: Için Kendi Anketi
+        slightly_agree: Biraz Katılıyorum
+        slightly_disagree: Biraz Katılmıyorum
+        sometimes: Ara sıra
+        strongly_agree: Kesinlikle katılıyorum
+        strongly_disagree: Kesinlikle katılmamak
+        very_strongly_agree: Çok Katılıyorum
+        very_strongly_disagree: Çok Kesinlikle Katılmıyorum
+        you_are_currently_taking_secti: Şu anda %{sections_page} bölümünde %{surveysectionscount} alıyorsunuz
+        "×": x
+      review:
+        finish_your_survey: Anketinizi Bitirin
+        need_help: Yardıma mı ihtiyacınız var?
+        next_section: Sonraki Bölüm
+        previous_section: Önceki bölüm
+        review_continue: İnceleme ve Devam Etme
+        review_your_answers_to_the_lea: "%{product_name} ile ilgili cevaplarınızı gözden geçirin. Herhangi bir yanıtı üzerine tıklayarak değiştirin."
+        section_sectionscurrent_page_o: "%{sectionscurrent_page} bölümünde %{sectionstotal_pages}"
+        your_survey_is_almost_complete: Anketiniz neredeyse tamamlandı. Lütfen cevaplarınızı gözden geçirin.
+        your_survey_is_not_yet_complet: Anketiniz henüz tamamlanmış değil. Tamamlamak için %{sectionstotal_pages_sectionscu} bölüm daha var.
+      review_form:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: Her zaman
+        cancel: İptal etmek
+        na: N / A
+        never: Asla
+        often: sık sık
+        seldom: Nadiren
+        sometimes: Ara sıra
+        update: Güncelleştirme
+      sections:
+        survey_taker_evaluator_section_1_description:
+          leadership_profile: Liderlik Profili
+          providing_feedback_section_sec: Geribildirim Bölümü sağlama, %{sectionscurrent_page} %{sectionstotal_pages}
+          you_will_be_able_to_review_and: Bu bölümün sonunda cevaplarınızı gözden geçirebilir ve değiştirebilirsiniz.
+        survey_taker_section_1_description:
+          culture_survey: Kültür Anketi
+          leadership_profile: Liderlik Profili
+          section_sectionscurrent_page_o: "%{sectionscurrent_page} bölümünde %{sectionstotal_pages}"
+          you_will_be_able_to_review_and: Bu bölümün sonunda cevaplarınızı gözden geçirebilir ve değiştirebilirsiniz.
+        survey_taker_section_2_description:
+          at_the_end_of_this_section_you: " "
+          most_effective_leader: En Etkili Lider
+          section_sectionscurrent_page_o: "%{sectionscurrent_page} bölümünde %{sectionstotal_pages}"
+      survey_history:
+        completed_on: Tamamlandı
+        evaluations_completed:
+          one: "<B> bir değerlendirmeyi tamamladınız </ b>:"
+          other: "<B> %{count} değerlendirmelerini </ b> tamamladınız:"
+        evaluator_setup: Değerlendirici Kurulumu
+        my_survey_history: Anket Geçmişim
+        self_evaluations_completed:
+          one: "<B> bir kendi kendini değerlendirme </ b> işlemini tamamladınız:"
+          other: "<B> %{count} kişisel değerlendirmelerini </ b> tamamladınız:"
+        self_survey: Kendi Kendine Anket
+        this_is_the_list_of_all_the_su: Bu, katıldığınız tüm anketlerin bir listesi.
+      thanks:
+        all_your_answers_have_been_sub: Tüm cevaplarınız gönderildi ve kaydedildi. Zaman ayırdığın için teşekkürler.
+        go_back_to_survey_list: Anket listesine geri dön
+        log_out: Çıkış Yap
+        thanks_current_userfirst_name_: "%{current_userfirst_name}, bu Anketi aldığınız için teşekkürler."
+    process_error: Anket işlemi veya bağlantıda bir hata oluştu.
+    questions:
+      put_your_answer_here: Cevabını buraya koy
+    questions_completed: Sorular tamamlandı
+    sa_request: Teşekkür ederim, irtibata geçeceğiz.
+    sections:
+      current_leadership_culture: Bu bölümde, <b> %{participant} </ b> değerlendireceksiniz. Göreviniz, liderlerin en çok uyguladığı, teşvik ettiği veya izin verdiği liderlik davranışlarını tanımlamaktır. Kuruluşunuzdaki veya ekibinizdeki liderlik deneyiminizi etkileyen birçok faktör olabilir. Örneğin, iki farklı yöneticinin birbiriyle çelişen liderlik stilleri vardır ve her ikisi de bu organizasyonun veya ekibin liderlik kültürünü etkilemektedir. Deneyiminiz üzerinde en fazla etkiye sahip olan davranışı açıklayın.
+      desired_leadership_culture: Bu bölümde, lütfen <b> %{participant} </ b> liderliği kültürünü nasıl arzuladığınız veya arzu ettiğinize dayalı olarak cevaplayınız. Her soruyu, liderlik kültürünün ideal olduğu gibi - mevcut ve gelecek ortamlarda gelişmesine izin verecek şekilde - yanıtlayın.
+      ideal_to_ideal: ''
+      leadership_profile: Bu bölüm <b> %{participant} </ b> için bir Liderlik Profili oluşturmak üzere tasarlanmıştır. İlk izleniminizi kullanarak soruları hızla kullanın. Sorunun cevabını bilmiyorsanız veya soru geçerli değilse, Hayır seçeneğini kullanın.
+      manager_profile: Bu Bölüm, <b> %{participant} </ b> için bir yönetici profili oluşturmak üzere tasarlanmıştır. İlk izleniminizi kullanarak soruları hızla kullanın. Sorunun cevabını bilmiyorsanız veya soru geçerli değilse, Hayır seçeneğini kullanın.
+      most_effective_leader: |-
+        Bu bölümde artık <b> %{participant} </ b> değerlendiremeyeceksiniz.
+        Bunun yerine, şimdiye kadar çalıştığınız en etkili liderin (doğrudan veya dolaylı olarak) kim olduğunu belirleyin. <B> Bu soruları aklınızda THAT ile cevaplayın. </ B>
+        Bu bölümün sonunda, cevaplarınızı inceleyip değiştirebileceksiniz.
+      write_in_feedback: Bu bölümde lütfen <b> %{participant} </ b> adresine ek yazılı geribildirim verin. Katılımcılar her zaman yazma yorumlarını özellikle sonuçlarını anlamada faydalı buluyorlar. Görüşleriniz, bu anketin kapsamadığı alanları veya <b> %{participant} </ b> biçiminizi neden bu şekilde değerlendirdiğinizi gösteren örnekleri veya <b> %{participant} </ b> için önemli olan başka şeyleri de içerebilir.
+    self:
+      end_section: Bu bölümün sonunda, cevaplarınızı inceleyip değiştirebileceksiniz.
+      identify_effective_leader: Bunun yerine, şimdiye kadar çalıştığınız en etkili lider (doğrudan veya dolaylı olarak)
+      most_effective_leader: En Etkili Lider
+      no_longer_be_evaluating: Bu bölümde artık değerlendirmeyeceksiniz
+      surveyproductname: "%{surveyproductname}"
+      that_person_in_mind: Bu soruları aklından THAT ile cevapla
+      tsurveysselfno_longer_be_evalu: "%{tsurveysselfno_longer_be_evalu} %{surveyevaluatorfull_name}."
+    show:
+      survey_for: Için anket
+    survey:
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_at_format_lon}"
+    survey_progress:
+      current_sectionanswers_forsurv: "%{current_sectionanswers_forsurv} / %{current_sectionquestionscount}"
+      current_sectionpercentage_comp: "%{current_sectionpercentage_comp}%{tsharedpercent_complete}"
+  system_history:
+    announcement_send_at_changed: Hatırlatma gönderilme tarihi, %{date} olarak değiştirildi
+    change_history: Tarihi değiştir
+    comment_questions_changed: Yorum soruları '%{value}' olarak değiştirildi
+    completion_date_changed: Tamamlanma tarihi %{date} olarak değiştirildi
+    create_participant: Katılımcı %{participant} oluşturuldu
+    delete_participant: Katılımcı %{participant} silindi
+    demographics_policy_changed: Rapor demografik bilgileri '%{value}' olarak değiştirildi
+    description: Aşağıda, %{created_date} üzerinde oluşturulduğu için bu siparişte yapılan değişiklikler verilmiştir.
+    order_deleted: Silinmiş Sipariş Hayır %{value}
+    pdf_copies_only_changed: PDF kopyaları yalnızca seçildi
+    printed_copies_changed: PDF ve basılı kopyalar seçildi
+    project_created: Proje oluşturuldu
+    report_date_changed: Rapor tarihi %{date} olarak değiştirildi
+    retake_added: "%{participant} için tekrar katıl"
+    retake_removed: "%{participant} kaldırıldığı için tekrar et"
+  templates:
+    form:
+      form:
+        if_you_have_already_sent_the_m: Mesajı katılımcılara gönderdiyseniz, güncellenmiş mesajı alması için onları projede tekrar göndermeniz gerekecektir.
+        modifying_this_message_will_ch: Bu mesajı değiştirirseniz, İngilizce anket diline sahip tüm katılımcılar için katılımcı hoş geldiniz e-postası değişecektir.
+        please_do_not_modify_any_text_: Lütfen (* || *) altındaki herhangi bir metni değiştirmeyin. Bunlar ileti gönderildiğinde katılımcı bilgileri ile değiştirilecek anahtardır.
+        reset_english_message: İngilizce Mesajı Sıfırla
+        return_to_list: Listeye Dön
+        update_english_message: İngilizce Mesajını Güncelle
+    participant_invitation_msg:
+      message: Mesaj
+      reset_english_message: İngilizce Mesajı Sıfırla
+      save_templatelanguagename_mess: "%{templatelanguagename} Mesajını Kaydet"
+      subject: konu
+  time:
+    am: ben
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: pm
+  users:
+    avatar_upload:
+      error: Yükleme bir hatayla karşılaştı. Lütfen verilerinizi tekrar kontrol edin ve tekrar deneyin.
+      success: Resim başarıyla yüklendi.
+    demographic:
+      demographics: Demografik
+    demographic_form:
+      company_details: Şirket Detayları
+      continue_to_survey: Ankete Devam Et
+      need_help: Yardıma mı ihtiyacınız var?
+      personal_information: Kişisel bilgi
+    edit:
+      accounting_id: Muhasebe Kimliği
+      add_address: Adres Ekle
+      add_phone: Telefon numarası ekle
+      address_type: Adres Tipi
+      addresses: Adresler
+      age: 'Yaş:'
+      back_to_settings: Ayarlara geri dön
+      cancel: İptal etmek
+      change_password: Şifre değiştir
+      change_profile_picture: Profil resmini değiştir
+      city: Şehir
+      company_details: Şirket Detayları
+      company_name: Şirket Adı
+      company_revenue: Şirket Geliri
+      confirm_password: 'Şifreyi Onayla:'
+      country_address: ülke
+      current_password: Şimdiki Şifre
+      date_of_birth: Doğum tarihi
+      education: Eğitim
+      email: E-posta
+      ethnic_group: Etnik grup
+      fax: Faks
+      first_name: İsim
+      gender: Cinsiyet
+      home: Ev
+      industry: sanayi
+      language: Dil
+      last_name: Soyadı
+      management_level: Yönetim Seviyesi
+      mobile: seyyar
+      new_password: Yeni Şifre
+      number_of_direct_reports: Doğrudan Rapor Sayısı
+      organization_level: Organizasyon Düzeyi
+      password: Parola
+      password_label: 'Parola:'
+      personal_information: Kişisel bilgi
+      phone_numbers: Telefon numaraları
+      please_enter_address_name: Lütfen adres adını girin
+      please_enter_email: Lütfen e-posta adresini girin
+      please_enter_new_confirmation_: Lütfen yeni doğrulama şifresi girin
+      please_enter_new_password: Lütfen yeni şifre girin
+      please_enter_phone_number: Lütfen telefon numarasını giriniz
+      please_enter_valid_confirmatio: Lütfen geçerli onay şifresini girin
+      please_enter_valid_email: Lütfen geçerli e-posta adresini girin
+      profession: Meslek
+      professional_information: Mesleki Bilgiler
+      profile_picture: Profil fotoğrafı
+      reenter_new_password: Yeni şifreyi tekrar giriniz
+      remove_address: Bu adresi kaldır
+      remove_phone: Bu telefonu kaldır
+      remove_profile_picture: Profil Resmi Kaldır
+      residing_country: Ülkeyi ikamet etmek
+      retype_password: Yeni şifrenizi yeniden yazın ...
+      save_changes: Değişiklikleri Kaydet
+      size_of_organization: Kuruluş Büyüklüğü
+      state_province: Eyalet / İl
+      street_address: Açık adres
+      use_the_form_below_to_change_t: Şifreyi TLC hesabınıza değiştirmek için aşağıdaki formu kullanın.
+      user_roles: Kullanıcı Rolleri
+      users_placeholder: Kullanıcılar için yer
+      work: İş
+      working_address: Çalışma adresi
+      zip_code_address: Posta Kodu
+      password_must_have_at_least: "Şifrenizde şunlar olmalıdır:"
+      9_characters: 9 karakter
+      1_lowercase_letter: 1 küçük harf
+      1_uppercase_letter: 1 büyük harf
+      1_number: 1 numara
+      1_special_character: 1 özel karakter
+      passwords_dont_match: Şifreler eşleşmiyor
+      good_so_far: Şimdiye kadar iyi
+      match: Eşleşiyor
+      good: İyi
+      too_week: Çok zayıf
+    modify:
+      success: Kullanıcı başarıyla güncellendi.
+    take_self_assessment:
+      error: Bir şeyler yanlış gitti!
+    update_demographics:
+      error: Demografik veriler toplanırken bir hata oluştu. Lütfen tekrar deneyin.
+      success: Demografik veriler başarıyla güncellendi.
+    update_password:
+      success: Şifre başarıyla güncellendi.
+  utilities:
+    index:
+      all: Herşey
+      billings: Billings
+      'false': Yok hayır
+      filter: filtre
+      filter_by_in_voiced: 'Faturalandırılarak Filtrelenen:'
+      filter_by_order_status: 'Sipariş Durumu Filtrele:'
+      filter_by_region: 'Bölgelere Göre Filtreleme:'
+      finished: bitirdi
+      'no': Yok hayır
+      ordered: düzenli
+      orders: Emirler
+      orders_placeholder: Sipariş adı veya sipariş numarası yazın ...
+      projects: Projeler
+      projects_placeholder: Proje adını yazın ...
+      search: Arama
+      survey_takers: Anket Araştırması Yapanlar
+      surveys_placeholder: Kullanıcı adını veya e-posta adresini yazın ...
+      users: Kullanıcılar
+      users_placeholder: Kullanıcı adını veya e-posta adresini yazın ...
+      'yes': Evet
+    new_sa:
+      generate: üretmek
+      select_score_for_answers: 'Yanıtlar için puan seçin:'
+      users_email: 'Kullanıcının e-postası:'
+    partials:
+      billing_table:
+        invoiced: Faturalandı
+      search_orders:
+        found_order: Sipariş Bulundu
+        no_order_is_found: Sipariş Bulunamadı!
+      search_orders_details:
+        ordercoach_report_qty: "%{ordercoach_report_qty}"
+        ordercoach_report_qty_tordersd: "%{ordercoach_report_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_graph_qty: "%{orderparticipant_graph_qty}"
+        orderparticipant_graph_qty_tor: "%{orderparticipant_graph_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_report_qty: "%{orderparticipant_report_qty}"
+        orderparticipant_report_qty_to: "%{orderparticipant_report_qty} %{tordersdetailscopies_per_parti}"
+        pdf: PDF
+      search_projects:
+        no_projects_are_found: Hiçbir Proje Bulunamadı!
+      search_surveys:
+        actions: Eylemler
+        completed_on: Tamamlandı
+        completion_date: Tamamlama tarihi
+        delete: silmek
+        evaluating: değerlendirilmesi
+        evaluations: Değerlendirmeler
+        found_survey_taker: Araştırma Ekranı Bulundu
+        language: Dil
+        last_logged_in: Son Giriş Tarihi
+        more_actions: Daha fazla hareket
+        move: Hareket
+        no_survey_is_found: Hiçbir Anket Bulunamadı!
+        not_started: Başlatılmadı
+        of: arasında
+        project_name: proje Adı
+        questions: sorular
+        reset: Reset
+        role: rol
+        self_surveys: Kendi Kendini Anketler
+        survey_taker_details: Anketör Ayrıntıları
+      search_users:
+        back: Geri
+        email: 'E-posta:'
+        found_user: Bulunan kullanıcı
+        impersonate: taklit etmek
+        name: 'Adı:'
+        no_user_is_found: Hiçbir Kullanıcı Bulunamadı!
+      survey:
+        reset: Reset
+    show_order:
+      billing_contact: Fatura adresi
+      binder_contact: Bağlayıcı İletişim
+      coaching_report: 'Koçluk Raporu:'
+      comment_questions: 'Yorum Soruları:'
+      company: şirket
+      demographics: 'Demografi:'
+      included_participants: 'Dahil Edilen Katılımcılar:'
+      invoice_order: Fatura Siparişi
+      invoiced: 'Faturalandı:'
+      list_of_participants: Katılımcıların listesi
+      mark_order_as_not_invoiced: Siparişi Faturalandırılmamış Olarak İşaretle
+      order_details: sipariş detayları
+      order_number: 'Sipariş numarası:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} kopyaları"
+      orderparticipant_graph_qty_cop: Katılımcı başına %{orderparticipant_graph_qty} kopya sayısı
+      orderparticipant_report_qty_co: Katılımcı başına %{orderparticipant_report_qty} kopya sayısı
+      participant_graph: 'Katılımcı Grafiği:'
+      participant_report: 'Katılımcı Raporu:'
+      pdf: PDF
+      planned_completion_date: 'Planlanan Bitiş Tarihi:'
+      processing_date: 'İşleme Tarihi:'
+      product_type: 'Ürün tipi:'
+      profile_interpretation_manual: 'Profil Tercüme Kılavuzu:'
+      report_contact: Raporla İletişim
+      report_name: 'Rapor Adı:'
+      report_type: 'Rapor tipi:'
+    surveys:
+      created_at: Tarihinde oluşturuldu
+      evaluator: Değerlendirici
+      id: "#İD"
+      new_self_assessment: Yeni Öz Değerlendirme
+      regular: Düzenli
+      self_assessment: Öz değerlendirme
+      status: durum
+  views:
+    pagination:
+      first: Ve laquo; İlk
+      last: Son & raquo;
+      next: Sonraki & rsaquo;
+      previous: Ve lsaquo; Önceki
+      truncate: Ve hellip;
+

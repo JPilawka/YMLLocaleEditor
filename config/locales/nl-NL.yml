@@ -1,0 +1,2578 @@
+---
+nl-NL:
+  activerecord:
+    attributes:
+      project_address:
+        name: Naam
+        email: Email
+        phone_no: Telefoonnummer
+        address_line1: Adres 1
+        address_line2: Adres 2
+        address_line3: Adres 3
+        country_code: Landcode
+        city: Stad
+        state_code: Staat Code
+        postal_code: Postcode
+        created_at: Gemaakt bij
+        updated_at: Bijgewerkt bij
+      project:
+        name: Naam
+        organization: Cliënt
+        product: Product
+        status: Status
+        created_at: Gemaakt bij
+        updated_at: Bijgewerkt bij
+        completion_date: Einddatum
+        report_date: Rapportdatum
+        printed_interpretation_manual: Interpretatie Handleiding Afgedrukt
+        pdf_interpretation_manual: PDF Interpretatie Handleiding
+        comment_questions: Commentaar Vragen
+        evaluators_policy: Evaluatiebeleid
+        participant_report_qty: Aantal Deelnemersverslag
+        participant_report_pdf: Deelnemer Rapport PDF
+        participant_graph_qty: Deelnemer Grafiek Aantal
+        participant_graph_pdf: Deelnemersgrafiek PDF
+        coach_report_qty: Coachrapport Aantal
+        coach_report_pdf: Coachverslag PDF
+        demographics_policy: Demografiebeleid
+        survey_focus: Enquêtes Focus
+        survey_focus_description: Enquêtes Focus Beschrijving
+        group_report_pdf: Groeprapport PDF
+        user: Klantverteenwoordiger
+        billing_address: Facturatie adres
+        shipping_address: Verzendingsadres
+        binder_address: Binder Adres
+        deliverable_option: Leverbare Optie
+        consultant: Consultant
+        minimum_evaluations_per_participant: Minimale evaluaties per deelnemer
+        certified_consultant: Gecertificeerde Consultant
+        promo_code: Promotiecode
+    errors:
+      messages:
+        passwords:
+          cannot_contain: kan niet alle of een deel van uw naam of e-mail bevatten.
+          does_not_match_security_requirements: 'niet overeenkomt met de veiligheidseisen.  Wachtwoord moet 1 van de 3 volgende karakter groepen bevatten A-Z, a-z, 0-9:.'
+          must_be_at_least: Moet tenminste 8 karakters lang zijn.
+        record_invalid: 'Validatie mislukt: %{errors}'
+        restrict_dependent_destroy:
+          has_many: Kan record niet verwijderen omdat afhankelijk %{record} bestaan.
+          has_one: Kan record niet verwijderen omdat afhankelijk %{record} bestaan.
+        should_be_greater_or_equal: Moet groter of gelijk zijn voltooiing datum
+  addresses:
+    region:
+      regionnametitleize_regionabbre: "%{regionnametitleize} (%{regionabbreviation})"
+  application:
+    change_password_required: U moet uw wachtwoord wijzigen voordat u zich aanmeldt voor de eerste keer
+    user_not_authorized:
+      forbidden: Verboden
+  companies:
+    edit:
+      edit_company: Klant Bewerken
+      manage_users: Gebruikers beheren
+    index:
+      companiestotal_count: "(%{companiestotal_count})"
+      company_name: Klantnaam
+      create_company: Maak Bedrijfsaccount
+      industry: Industrie
+      manage_company: Beheren van de Klant
+      my_clients: Mijn Klanten
+      number_of_projects: Aantal Projecten
+      sort_by_company_name: Sorteren op Klantnaam
+      sort_by_created_date: Sorteren op Gemaakt Date
+      sort_by_industry: Sorteren op Industrie
+      sort_by_number_of_projects: Sorteren per Aantal Projects
+      start_creating_companies_now: Beginnen met het maken klanten nu
+      you_have_no_companies_to_manage: Je hebt geen klanten te beheren
+    new:
+      consulting_company: Consulteeren Bedrijf
+      create_company: Maak Klant
+      new_company: Nieuwe klant Naam
+    partials:
+      delete_company:
+        cname_corganization_typename: "%{cname} (%{corganization_typename})"
+        existing_projects_top_10: 'Bestaande projecten (top 10):'
+        please_notice_that_it_will_als: 'Houd er rekening mee dat het ook de volgende bestaande kind organisaties te schrappen:'
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} dit bedrijf"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_comp: "%{thomeindexyes_delete_this} bedrijf"
+    show:
+      create_group_report: Maken Groep Report
+      create_new_project: Maak Nieuw project
+      created_by: Gemaakt Door %{creator}
+      delete_company: Klant Verwijderen
+      tsharedmore_actions: "%{tsharedmore_actions}"
+      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant} %{tsharedcertified_consultants}"
+  concerns:
+    role_management:
+      create_user_role:
+        success: Succes
+      update_user_role:
+        success: Succes
+  consultants:
+    saved_successfully: Consultant is met succes addedd!
+    title: Consultant
+  date:
+    abbr_day_names:
+    - Zo
+    - Ma
+    - Di
+    - Woe
+    - Do
+    - Vrij
+    - Zat
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mei
+    - Apr
+    - Maj
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Okt
+    - Nov
+    - Dec
+    day_names:
+    - Zondag
+    - Manndag
+    - Dinsdag
+    - Woensdag
+    - Donderdag
+    - Vrijdag
+    - Zaterdag
+    formats:
+      default: "%m-%d-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    -
+    - Januari
+    - Februari
+    - Maart
+    - April
+    - Mei
+    - Juni
+    - Juli
+    - Augustus
+    - September
+    - Oktober
+    - November
+    - December
+    order:
+    - :maand
+    - :dag
+    - :jaar
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: ongeveer 1 uur
+        other: about %{count} hours
+      about_x_months:
+        one: ongeveer 1 maand
+        other: over %{count} maanden
+      about_x_years:
+        one: ongeveer 1 jaar
+        other: ongeveer %{count} jaar
+      almost_x_years:
+        one: bijna 1 jaar
+        other: binja %{count} jaar
+      half_a_minute: een halve minuut
+      less_than_x_minutes:
+        one: minder dan een minuut
+        other: minder dan %{count} minuten
+      less_than_x_seconds:
+        one: minder dan 1 seconde
+        other: minder dan %{count} seconden
+      over_x_years:
+        one: meer dan 1 jaar
+        other: over %{count} years
+      x_days:
+        one: 1 day
+        other: "%{count} days"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
+      x_months:
+        one: 1 month
+        other: "%{count} months"
+      x_seconds:
+        one: 1 second
+        other: "%{count} seconds"
+    prompts:
+      day: Day
+      hour: Hour
+      minute: Minute
+      month: Month
+      second: Seconds
+      year: Year
+  devise:
+    confirmations:
+      confirmed: Uw e-mailadres is met succes bevestigd.
+      new:
+        resend_confirmation_instructio: Opnieuw te verzenden bevestiging instructies
+      send_instructions: U ontvangt een e-mail met instructies over hoe u uw e-mailadres binnen een paar minuten te bevestigen.
+      send_paranoid_instructions: Als uw e-mailadres in onze database bestaat, ontvangt u een e-mail met instructies over hoe u uw e-mailadres binnen een paar minuten te bevestigen.
+    failure:
+      user:
+        already_authenticated: Je bent al ingelogd.
+        inactive: Je account is nog niet geactiveerd.
+        invalid: Ongeldig %{authentication_keys} of wachtwoord.
+        last_attempt: Je hebt nog één poging voordat je account wordt vergrendeld.
+        locked: Je account is geblokkeerd.
+        not_found_in_database: Ongeldig %{authentication_keys} of wachtwoord.
+        timeout: Uw sessie verlopen. Meld u aan om verder te gaan.
+        unauthenticated: Je moet inloggen of registreren voordat u verder gaat.
+        unconfirmed: Je moet je e-mail adres te bevestigen alvorens verder te gaan.
+    invalid_captcha: De captcha ingang is niet geldig!
+    mailer:
+      confirmation_instructions:
+        confirm_my_account: Bevestigen Mijn Account
+        user_subject: Bevestiging instructies
+        welcome_email: Welkom %{email}!
+        you_can_confirm_your_account_e: 'U kunt uw account e-mail te bevestigen via onderstaande link:'
+      reset_password_instructions:
+        change_my_password: Verander mijn wachtwoord
+        hello_resourceemail: Hallo %{resourceemail}!
+        if_you_didnt_request_this_plea: Als je dit niet hebt aangevraagd, negeer deze e-mail.
+        someone_has_requested_a_link_t: Iemand heeft een link om uw wachtwoord te veranderen gevraagd. U kunt dit doen via onderstaande link.
+        user_subject: Reset wachtwoord instructies
+        your_password_wont_change_unti: Uw wachtwoord zal niet veranderen totdat u toegang tot de bovenstaande link en maak een nieuwe.
+      unlock_instructions:
+        click_the_link_below_to_unlock: 'Klik op de onderstaande link om je account te ontgrendelen:'
+        hello_resourceemail: Hallo %{resourceemail}!
+        unlock_my_account: Unlock mijn rekening
+        user_subject: Unlock instructies
+        your_account_has_been_locked_d: Je account is geblokkeerd als gevolg van een te groot aantal mislukte teken in pogingen.
+    omniauth_callbacks:
+      failure: Kunt u niet verifiëren van %{kind} omdat "%{reason}".
+      success: Succesvol geverifieerd van %{kind} rekening.
+    password_expired:
+      change_required: Je wachtwoord is verlopen. Vernieuw je wachtwoord!
+      updated: Het nieuwe wachtwoord werd opgeslagen.
+    passwords:
+      edit:
+        change_my_password: Verander mijn wachtwoord
+        change_your_password: Maak je wachtwoord aan
+        dont_have_an_account: Heeft u geen account?
+        return_to_the_leadership_circl: 'Keer terug naar The Leadership Circle: Zelfbeoordeling'
+        sign_up: Aanmelden
+        weak: Zwak
+        good: Goed
+        medium: Medium
+        strong: Sterk
+        very_strong: Heel sterk
+        password_should_be_at_least: Wachtwoord moet minstens 8 tekens zijn!
+        lower_and_uppercase_letters: onderste en hoofdletters
+        numbers: nummers
+        symbols: symbolen
+        password_should_include: Wachtwoord moet inhouden
+        and: en
+        confirm_no_success: Wachtwoorden komen niet overeen!
+        confirm_success: Wachtwoorden komen overeen!
+      new:
+        dont_have_an_account: Heb je nog geen account?
+        forgot_your_password: Je wachtwoord vergeten?
+        log_in: Aanmelden
+        return_to_the_leadership_circl: 'Keer terug naar The Leadership Circle: Zelfbeoordeling'
+        send_me_reset_password_instruc: Stuur me reset wachtwoord instructies
+        sign_up: Aanmelden
+      send_instructions: Stuur instructies
+      user:
+        no_token: U kunt deze pagina niet openen zonder uit een wachtwoord reset e-mail. Als je komt uit een wachtwoord reset e-mail, zorg ervoor dat u de volledige URL gebruikt.
+        send_instructions: U ontvangt een e-mail met instructies over hoe u uw wachtwoord opnieuw in een paar momenten.
+        send_paranoid_instructions: Als uw e-mailadres in onze database aanwezig is, krijgt u een password recovery link aan uw e-mailadres te ontvangen in een paar minuten.
+        updated: Je wachtwoord is met succes veranderd. U bent nu aangemeld.
+        updated_not_active: Je wachtwoord is met succes veranderd.
+    registrations:
+      destroyed: Doei! Uw account is geannuleerd. Wij hopen u binnenkort weer te zien.
+      edit:
+        current_password: Huidig wachtwoord
+        currently_waiting_confirmation: 'Op dit moment wachten bevestiging voor: %{resourceunconfirmed_email}'
+        edit_resource_nameto_shumanize: Bewerk %{resource_nameto_shumanize}
+        password: Wachtwoord
+        password_confirmation: Wachtwoordbevestiging
+        update_password: Wachtwoord bijwerken
+        we_need_your_current_password_: We hebben uw huidige wachtwoord in om de wijzigingen te bevestigen
+        you_must_change_your_password_: U moet uw wachtwoord wijzigen voordat u zich aanmeldt voor de eerste keer.
+      new:
+        log_in: Aanmelden
+        sign_up: Aanmelden
+      signed_up: Welkom! U heeft zich aangemeld.
+      signed_up_but_inactive: U heeft zich aangemeld. Echter, we konden u niet aanmelden omdat uw account nog niet is geactiveerd.
+      signed_up_but_locked: U heeft zich aangemeld. Echter, we konden u niet aanmelden omdat uw account is geblokkeerd.
+      signed_up_but_unconfirmed: Een bericht met een bevestigingslink is verzonden naar uw e-mailadres. Volg de link om je account te activeren.
+      update_needs_confirmation: U op de hoogte van uw account met succes, maar we moeten uw nieuwe e-mailadres te verifiëren. Controleer uw e-mail en volg de bevestiging link naar uw nieuwe e-mailadres te bevestigen.
+      updated: Je account is bijgewerkt.
+    sessions:
+      new:
+        dont_have_an_account: Heeft u geen account?
+        forgot_your_password: Je wachtwoord vergeten?
+        login: Aanmelden
+        login_to_your_account: Log in op jouw account
+        return_to_the_leadership_circl: 'Keer terug naar The Leadership Circle: Zelfbeoordeling'
+        sign_up: Aanmelden
+        privacy_policy: Privacybeleid
+      user:
+        already_signed_out: Ondertekend met succes.
+        signed_in: Ondertekend in succes.
+        signed_out: Ondertekend met succes.
+    shared:
+      links:
+        didnt_receive_confirmation_ins: Heb je de bevestiging niet ontvangen?
+        didnt_receive_unlock_instructi: Niet unlock instructies te ontvangen?
+        forgot_your_password: Je wachtwoord vergeten?
+        log_in: Aanmelden
+        sign_in_with_providerto_stitle: Aanmelden met%{providerto_stitleize}
+        sign_up: Aanmelden
+    unlocks:
+      new:
+        resend_unlock_instructions: Opnieuw te verzenden ontgrendelen instructies
+      send_instructions: U ontvangt een e-mail met instructies over hoe u uw account in een paar ogenblikken te ontgrendelen.
+      send_paranoid_instructions: Als uw account bestaat, ontvangt u een e-mail met instructies voor hoe het te maken in een paar momenten.
+      unlocked: Je account is succesvol ontgrendeld. Meld u aan om door te gaan.
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: moet worden aanvaard
+      already_confirmed: werd al bevestigd, kun je je aanmelden
+      blank: mag niet leeg zijn
+      confirmation: niet overeen %{attribute}
+      confirmation_period_expired: dient te worden bevestigd binnen %{period} kunt u een nieuwe aanvragen
+      empty: kan niet leeg zijn
+      equal_to: moet gelijk zijn %{count}
+      equal_to_current_password: moet anders zijn dan het huidige wachtwoord!
+      even: moeten even
+      exclusion: is gereserveerd
+      expired: verstreken is, vraag dan een nieuw exemplaar
+      greater_than: moet groter zijn dan %{count}
+      greater_than_or_equal_to: groter dan of gelijk aan %{count}
+      inclusion: is niet opgenomen in de lijst
+      invalid: is ongeldig
+      less_than: moet kleiner zijn dan %{count}
+      less_than_or_equal_to: moet lager dan of gelijk aan %{count}
+      model_invalid: 'Validatie mislukt: %{errors}'
+      not_a_number: is geen getal
+      not_an_integer: moet een geheel getal zijn
+      not_found: niet gevonden
+      not_locked: niet vergrendeld
+      not_saved:
+        one: '1 fout heeft voorkomen dat deze %{resource} van wordt bijgewerkt:'
+        other: "%{count} fouten dit verboden %{resource} worden opgeslagen:"
+      odd: moet vreemd zijn
+      other_than: moet anders zijn dan %{count}
+      password_format: moet cijfers en hoofdletters, kleine letters bevatten
+      password_not_saved: 1 fout voorkomen wachtwoord wordt bijgewerkt, controleer password regels en probeer het opnieuw..
+      present: moet leeg zijn
+      required: moet bestaan
+      taken: is al bezet
+      taken_in_past: was al genomen gebruikt het verleden!
+      too_long:
+        one: is te lang (maximum is 1 teken)
+        other: is te lang (maximum is %{count} tekens)
+      too_short:
+        one: is te kort (minimum = 1 karakter)
+        other: is te kort (minimum %{count} tekens)
+      wrong_length:
+        one: is de verkeerde lengte (moet 1 karakter)
+        other: is de verkeerde lengte (moet bedragen %{count} tekens)
+    template:
+      body: 'Er waren problemen met de volgende velden:'
+      header:
+        one: 1 fout verboden dit %{model} worden opgeslagen
+        other: "%{count} fouten verboden dit %{model} worden opgeslagen"
+  evaluators:
+    edit:
+      edit_evaluator: Bewerken Evaluator
+    new:
+      add_evaluator: Voeg Evaluator
+    partials:
+      evaluator:
+        add_participant: Eeelnemer Toevoegen
+        edit_evaluator: Bewerken Evaluator
+        email_evaluatoremail: 'E-mail: %{evaluatoremail}'
+        evaluatorevaluation_surveys_fo: "%{done} van %{total} evaluaties"
+        evaluatorself_surveys_forproje: "%{done} van %{total} zelf-enquêtes"
+        language_evaluatorlanguage_nam: 'Taal: %{evaluatorlanguage_name}'
+      evaluator_form:
+        cancel_changes: Annuleer Wijzigingen
+        delete_evaluator: Verwijder Evaluator
+      import_evaluators:
+        email_address: E-mailadres
+        first_name: Voornaam
+        is_there_something_wrong_a_hre: Heeft u fouten zien? <a href="#import--evaluators" class="open-popup-link">Upload a new file</a>
+        its_right_complete_import: Het is goed! Voltooiing van de import
+        language: Taal
+        last_name: Achternaam
+        participant: Deelnemer
+        relationship: Verwantschap
+        strongevaluatorscount_evaluato: "<strong>%{evaluatorscount} beoordelaars</strong> zijn gevonden. Kunt u bevestigen dat de wedstrijd goed is:"
+        survey_language: Survey Taal
+        were_almost_there: We zijn er bijna...
+      import_evaluators_modal:
+        cancel: Annuleer
+        import_evaluators_from_csv_fil: Import beoordelaars uit CSV-bestand
+        not_sure_about_the_format_of_t: Niet zeker over de indeling van het bestand? <a href='%{download_sample_csv_project_ev}' class='link'>Download de CSV monster</a>.
+        upload_evaluators: Uploaden Beoordelaars
+        upload_your_csv_file: 'Upload uw CSV-bestand:'
+      index:
+        actions: Acties
+        add_evaluator: Voeg Beoordelaar
+        download_evaluator_status_deta: Downloaden Beoordelaars Status Bijzonderheden als CSV
+        evaluation_status: Evaluatie Status
+        evaluator_details: Gegevens Beoordelaars
+        import_evaluators: Importeren Beoordelaars
+        participant_status: Deelnemer Status
+      participant:
+        completed_on_levaluatorevaluat: Voltooid op %{levaluatorevaluation_survey_fo}
+        edit_participant: Deelnemer Bewerken
+        evaluation_status: Evaluatie Status
+        evaluatorevaluation_survey_for: "%{done} van %{all} vragen"
+        evaluatorself_survey_forprojec: "%{evaluatorself_survey_forprojec} van %{evaluatorself_survey_forprojec} vragen van de enquête van het zelf"
+        language_evaluatorevaluation_s: 'Taal: %{evaluatorevaluation_survey_for}'
+        participantfull_name: "%{participantfull_name}"
+        relationship: 'Verwantschap:'
+        selfsurvey_completed_on_levalu: Zelf-Enquête voltooid opn %{levaluatorself_survey_forproje}
+        send_invite: Uitnodiging Sturen
+      participant_form:
+        cancel_changes: Annuleer Wijzigingen
+        delete_participant: Verwijderen Deelnemer
+    participants:
+      edit:
+        edit_participant: Deelnemer Bewerken
+      new:
+        add_participant: Eeelnemer Toevoegen
+    sort_options:
+      evaluation_status: Import Beoordelaars
+      evaluator_name: Sorteren op naam beoordelaar
+      number_of_evaluations: Sorteren op aantal evaluaties
+  gflash:
+    titles:
+      error: Fout
+      notice: Kennisgeving
+      progress: Vooruitgang
+      success: Succes
+      warning: Waarschuwing
+    users:
+      impersonate:
+        notice: U bent zich voordoen als iemand anders.
+        title: Imiteren Gebruiker
+      stop_impersonating:
+        notice: U bent niet langer imiteert.
+        title: Imiteren Gebruiker
+  helpers:
+    label:
+      project:
+        1st_option: Optie 1
+        2nd_option: Optie 2
+        i_will_invite: Ik zal de beoordelaars uit te nodigen voor mijn deelnemer
+        my_participant_will_invite: Mijn deelnemer kan de beoordelaars uitnodigen
+    select:
+      prompt: Maak uw keuze
+    submit:
+      create: Creëren %{model}
+      submit: Sparen %{model}
+      update: Bijwerken %{model}
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "Geen %{entry_name} gevonden"
+          one: "Toon <b>1</b> %{entry_name}"
+          other: "Toon <b>alle %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Toon %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> van <b>%{total}</b> in totaal"
+  high: Hoog
+  history:
+    show:
+      before: Voor
+      by: " door "
+      changes_made_at: 'Wijzigingen die bij '
+      field: Veld
+      now: Nu
+  home:
+    index:
+      agents: Agenten
+      are_you_sure_want_to_delete: Weet je zeker dat je wilt verwijderen
+      are_you_sure_want_to_delete_project: Het verwijderen van een project kan niet ongedaan worden gemaakt. Bent u zeker dat u dit project verwijderen?
+      are_you_sure_want_to_delete_project_with_expired_date_explanation: Sorry, je bent niet in staat om te verwijderen omdat einddatum van het project is afgelopen.
+      are_you_sure_want_to_delete_project_with_expired_date_title: Waarschuwing
+      coaches_or_consultants: Consultants
+      companies_or_clients: Cliënten
+      consultant_companies: Adviseur Bedrijven
+      consultant_company: Adviseur Bedrijf
+      distributors: Distributeurs
+      licensees: Licentiehouders
+      no_dont_delete: Nee, niet verwijderen
+      participants: Deelnemers
+      please_enter_a_new_name_for_the_organization: Geef een nieuwe naam voor de %{organization_type}
+      projects: Projecten
+      rename_organization: Andere naam geven %{organization_type}
+      unable_to_delete_company_warning: Kan niet verwijderen; er zijn nog steeds projecten aan dit bedrijf. Verwijder projecten eerste
+      unable_to_delete_got_it: Begrijpelijk
+      unable_to_delete_project_warning: Kan niet verwijderen; er nog deelnemers aan dit bedrijf. Verwijder deelnemers eerst
+      yes_delete_this: Ja, verwijder deze
+    partials:
+      blank_slate:
+        create_new_project: Maak een nieuw project
+        start_adding_projects_now: Beginnen met het toevoegen van projecten nu.
+        you_have_no_projects_to_manage: je hebt geen projecten te beheren.
+      breadcrumbs:
+        coaches_consultants: Coaches / Consultants
+        search_by: Zoek met
+      child_node_content:
+        organizationorganization_typen: "%{organizationorganization_typen} (klik te beheren)"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou} %{tsharedcertified_consultants}"
+      content:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} consultant?"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} consultant"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount} %{tsharedpeople}"
+      modals:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} %{parentorganization_typename}?"
+        thomeindexyes_delete_this_pare: "%{thomeindexyes_delete_this} %{parentorganization_typename}"
+        tsharedcancel: "%{tsharedcancel}"
+        tsharedsave_changes: "%{tsharedsave_changes}"
+      organization_users:
+        practitioners_userstotal_count: Consultants (%{userstotal_count})
+      search_organization:
+        click_to_manage: "(klik te beheren)"
+        manage_consultants: "(beheren Consultants)"
+        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization} %{tsharedwere_found}"
+        thomeindexare_you_sure_want_to: ' "%{thomeindexare_you_sure_want_to} consultant?"'
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} consultant"
+      sidebar:
+        add: Toevoegen
+  i18n:
+    transliterate:
+      rule:
+        ü: u
+  javascript:
+    1st_option: Optie 1
+    2nd_option: Optie 2
+    person: persoon
+    add_another_company: voeg een ander bedrijf
+    admin_role_name: Systeem Administrator
+    ajax_popup_error: De inhoud kan niet worden geladen.
+    apt_suite_bldg: Apt, Suite, Gebouw...
+    binder_with_tabs: 3-ringband met tabbladen en afgedrukte pagina's moet worden gegeven aan deelnemer
+    browse_file: Blader door de bestanden
+    cancel_schedule_announcement: Weet je het zeker? Schema zal worden geannuleerd en de e-mails binnen de volgende 15 minuten worden verzonden.
+    choose_age_ranges: Kies leeftijdscategorieën
+    choose_countries: Kies Landen
+    choose_direct_report_ranges: Medewerkers
+    choose_education_levels: Kies Onderwijs Levels
+    choose_ethnic_groups: Kies Etnische Groepen
+    choose_industries: Kies Industrie
+    choose_management_levels: Kies Bedrijfsbehee Niveau
+    choose_professions: Kies Beroep
+    click_the_link_below_and_we_will_contact: Klik op de link hieronder en wij zullen u in contact komen met een coach die u zal begeleiden door het proces.
+    coach_report: Trainer Rapport
+    company_revenue: Bedrijf Inkomsten
+    completion_date_asc: Einddatum (oplopend)
+    completion_date_desc: Einddatum (aflopend)
+    contact_info: Contact Info
+    correct_email_required: Vul het juiste formaat voor e-mail
+    created_at: 'gemaakt bij:'
+    custom_demographics: Aangepaste Standaard Demografie
+    default_demographics: Standaard Demografie
+    deliverable_options: Leverbaar Opties
+    delivery_options: Bezorgopties
+    did_you_enjoy_your_survey_taker: Heeft u genieten van uw onderzoek? Neem de <b>Leadership Cirlce Profile</b> volledige 360 assessment en leer hoe je de belangrijkste stakeholders (bazen, collega's, directe medewerkers, en anderen) ervaren uw leiderschap. De diepe inzicht dat afkomstig is van de Leadership Cirlce Profile 360 zal u toelaten om veel effectiever en meesterlijk in de kunst en de praktijk van leiderschap geworden.
+    email_required: E-mail is verplicht
+    error: Sorry, we hadden een fout.
+    filter_by_role: Filteren op Rol
+    first_name_required: Voornaam is required
+    full_path: 'Vol pad:'
+    gcsr_role_name: Global CSR
+    granted_at: Toegegeven bij
+    graph_high: Hoog
+    graph_identity: Identiteit
+    graph_low: Laag
+    graph_medium: Medium
+    high: Hoog
+    invite_another_user: Nodig een andere gebruiker
+    language_required: Kies een taale
+    last_name_required: Achternaam is verplicht
+    leaders_managers_eval: In deze rubriek vindt u evalueert Leiders / Managers van
+    low: Laag
+    members_eval: In dit gedeelte wordt u de evaluatie van de leden van
+    message_required: Bericht is vereist
+    minimum_evaluations_per_participant: Het minimum aantal beoordelaars (%{min_count}) moeten worden uitgenodigd voor de eigen enquête in te schakelen.
+    never_sent: Nooit Verzonden
+    no_record_found: 'No records found matching:'
+    organization_and_report_type: Organisatie en Rapporttype
+    organization_small: Organisatie
+    participant_graph: Deelnemer Grafiek
+    participant_report: Deelnemer Rapport
+    please_wait: Even geduld aub ...
+    preparing: Verwerking.  Even geduld aub...
+    processing: Verwerking
+    project_access_control: Project Toegang Controle
+    project_access_control_description: Herziening van de gebruikers toegang hebben tot projecten
+    project_details: Project Bijzonderheden
+    project_name_placeholder: 'i.e.: Directeur, Manager, Leiderschaps team, etc...'
+    project_time_zone: Project Tijdzone
+    relationship_required: Kies een Verwantschap
+    report_options: Rapport Opties
+    role: Rol
+    search_results: Zoekresultaten
+    select_age: Kies de Leeftijd
+    select_client: Selecteer Client
+    select_consulting_company: Selecteer Consulting Bedrijf
+    select_country: Selecteer Land
+    select_ethnic_group: Selecteer Etnie
+    select_industry: Selecteer Industrie
+    select_practitioner: Selecteer Consultant
+    select_existing_administrator: Selecteer bestaande administrator
+    select_region: Kies een staat of regio
+    select_your_companys_industry: Selecteer de industrie van uw bedrijf
+    select_your_education_level: Kies je opleidingsniveau
+    select_your_gender: Kies je geslacht
+    select_your_management_level: Selecteer uw management niveau
+    select_your_profession: Kies je Beroep
+    select_your_residing_country: Selecteer uw Wonende Land
+    select_your_number_of_direct_reports: Selecteer aantal medewerkers
+    sent_on: Verzonden op
+    size_of_organization: Grootte van de Organisatie
+    street_address_example: Straat en huisnummer (bijvoorbeeld 222 avenue) ...
+    subject_required: Onderwerp is vereist
+    surveys_focus: "Nadruk uw enquête 'definiëren (dat wil zeggen .: Marketing, Sales, HR, etc...)"
+    team_small: team
+    type: 'Type:'
+    type_the_referral_email: Typ de verwijzing e-mail
+    type_user_email: Typ gebruikers e-mail...
+    type_your_company_name: Typ uw bedrijfsnaam...
+    user_email: Gebruiker Email
+    user_name: Gebruikersnaam
+    user_role_name: Gebruiker
+    zip_post_code: Postcode...
+    password_hint: Wachtwoord moet minimaal 8 tekens met ten minste één nummer (0-9) en een hoofdletter (A-Z). Je kunt geen gebruik maken van een van uw vorige 8 wachtwoorden.
+    select_project: Typ hier naar bestemming project zoeken op naam
+  kaminari:
+    next_page:
+      next: Volgende
+    prev_page:
+      prev: Vorige
+  low: Laag
+  mailer:
+    reminder:
+      body_1: Het lijkt erop dat u uw enquête nog niet hebben afgerond. Als u nog wilt deelnemen, klik hieronder!
+      body_2: 'volg deze link naar de enquête::'
+      body_3: Houd er rekening mee dat uw enquête moet worden ingevuld door %{planned_completion_date}.
+      header: Beste %{practitioner_full_name},
+      regards: Hartelijke groeten, The Leadership Circle Team
+      subject: "%{product_name} Reminder"
+    welcome:
+      subject: Welkom bij de Leadership Circle Online Assessment System!
+      header: Beste %{participant_full_name},
+      body_1: Welkom bij The Leadership Circle Online Assessment System. Laten we je opgezet met een login en uw eigen wachtwoord, zodat u kunt beginnen om het systeem te gebruiken.
+      body_2: Klik op %{web_address} en gebruik je nieuwe gebruikersaccount inloggen ID %{user_id}met het tijdelijke wachtwoord van %{user_password}.
+      body_3: Nadat u uw nieuwe wachtwoord aan te maken en te beantwoorden een aantal demografische vragen, kunt u rechtstreeks naar mijn onderzoeken en eventuele onderzoeken die kunnen worden voor u klaar te voltooien.
+      body_4: Als u problemen met inloggen kunt u contact met ons op via %{support_email_address}.
+      regards: Hartelijke groeten,
+      team: The Survey Taker Team
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: vals
+        strip_insignificant_zeros: vals
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: vals
+      strip_insignificant_zeros: vals
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Miljard
+          million: Miljoen
+          quadrillion: Quadriljoen
+          thousand: Duizend
+          trillion: Trillion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: waar
+        strip_insignificant_zeros: waar
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  order_steps:
+    deliverable_options:
+      next: Volgende
+      previous: Voorgaand
+    delivery_options:
+      cancel_order: Annuleer Bestelling
+      create_report: Create Report
+      previous: Voorgaand
+    group_report_summary:
+      cancel_order: Annuleer Bestelling
+      pdf_report: PDF Rapport
+      selected_count_tordersgr_summa: "(%{selected_count} %{tordersgr_summaryparticipants_})"
+      tordersgr_summarybilling_conta: "%{tordersgr_summarybilling_conta}:"
+      tordersgr_summaryorganization: "%{tordersgr_summaryorganization}:"
+      tordersgr_summaryreport_contac: "%{tordersgr_summaryreport_contac}:"
+      tordersgr_summaryreport_due_da: "%{tordersgr_summaryreport_due_da}:"
+      tordersgr_summaryreport_metric: "%{tordersgr_summaryreport_metric}:"
+      tordersgr_summaryreview_report: "%{tordersgr_summaryreview_report}"
+      tordersgr_summaryselected_part: "%{tordersgr_summaryselected_part}:"
+      tordersindexreport_name: "%{tordersindexreport_name}:"
+      tshareddemographicpluralize: "%{tshareddemographicpluralize}:"
+      tsharedreportpluralize: "%{tsharedreportpluralize}:"
+    organization_and_report_type:
+      cancel_order: Annuleer Bestelling
+      next: Volgende
+    partials:
+      address_modal:
+        select_from_my_account_address: U kunt kiezen uit klantgegevens adressen
+        there_are_no_addresses_related: Er zijn geen adressen in verband met de gebruiker
+      contact_info:
+        billing_address: Facturatie Adres
+        new_address: Nieuw adres
+        report_address: Rapport Adres
+        same_as_the_billing_address: Hetzelfde als het factuuradres
+        select_an_address_from_my_acco: Selecteer een adres uit Mijn Account
+        this_is_the_address_where_the_: Dit is het adres waar de gedrukte versie van de Deelnemer Rapport, Deelnemer Grafiek en Coach verslag zal worden geleverd.
+        this_is_the_person_or_company_: Dit is de persoon of het bedrijf dat de opdracht factuur zal worden gemaakt.
+      deliverable_options:
+        coach_report: Trainer Rapport
+        digital_graph: Digitale Grafiek
+        group_report: Groep Rapport
+        how_many_copies_per_participan: Hoeveel exemplaren per deelnemer?
+        i_want_pdf_and_printed_copies_: Ik wil PDF en gedrukte exemplaren van de rapporten.
+        i_want_the_pdf_copies_only: Ik wil alleen de PDF-exemplaren.
+        participant_graph: Deelnemer Grafiek
+        participant_report: Deelnemer Rapport
+        pdf_file_that_practitioner_ema: PDF-bestand dat consultant e-mails naar Deelnemer
+        please_choose_below_which_ones: 'Kies hieronder welke u wilt laten drukken:'
+        profile_interpretation_manual: Profiel Interpretatie Handboek
+        reports: 'Rapporten:'
+        you_will_get_a_digital_version: 'U vindt er een digitale versie van het volgende item te krijgens:'
+        you_will_get_only_the_digital_: 'U ziet alleen de digitale versie van de Profiel Interpretatie Handboek en de volgende rapporten te krijgen:'
+        you_will_get_the_digital_versi: U vindt de digitale versie van de Profiel Interpretation Manual en alle rapporten te krijgen.
+        your_project_will_include: 'Uw project zal:'
+    participants:
+      cancel_order: Annuleer Bestelling
+      choose_the_participants_you_wo: Kies de deelnemers die u wilt in dit rapport op te nemen. Jij kan
+      next: Volgende
+      of: " of "
+      only_add_participants_who_have: Alleen deelnemers die onderzoek hebben afgerond toe te voegen.
+      organizationname: "%{organizationname}"
+      participants_selected: " deelnemers geselecteerd"
+      previous: Voorgaand
+      select_all_available_participa: Selecteer alle beschikbare deelnemers van dit bedrijf
+      select_participants: Selecteer deelnemers
+    project:
+      add_all_participants: Voeg alle Deelnemers
+      of: of
+      participants_selected: deelnemers geselecteerd
+    report_options:
+      cancel_order: Annuleer Bestelling
+      choose_metrics: Kies Metrics
+      how_calculation_is_made: Hoe de berekening wordt gemaakt
+      next: Volgende
+      previous: Voorgaand
+      report_demographics: Rapport Demografie
+      report_language: Rapport Taal
+  orders:
+    details:
+      coach_report: 'Trainer Rapport:'
+      comment_questions: 'Reactie Vragen:'
+      copies_per_participant: kopieën per deelnemert
+      copy_per_participant: exemplaar per deelnemer
+      demographics: 'Demografie:'
+      included_participants: 'Inbegrepen Deelnemers:'
+      participant_graph: 'Deelnemer Grafiek:'
+      participant_report: 'Deelnemer Rapport:'
+      participants:
+        one: 1 deelnemer
+        other: "%{count} deelnemers"
+      processing_date: 'Verwerking Datum:'
+      product_type: 'Producttype:'
+      profile_interpretation_manual: 'Profiel Interpretatie Handboek:'
+      report_type: 'Type Papport:'
+      utilties_order_details: Gegevens Bestelling
+    gr_summary:
+      billing_contact: Contactpersoon Facturering
+      coach_report: Trainer Rapport
+      organization: Organisatie
+      participant_graph: Deelnemer Grafiek
+      participant_report: Deelnemer Rapport
+      participants_selected: Deelnemers Geselecteerde
+      place_order: Plaats Bestelling
+      report_contact: Facturatie Contact
+      report_due_date: Rapport Opleveringsdatum
+      report_metrics: Rapport Metriek
+      review_report_summary: Controleer uw Overzichtsrapport
+      selected_participants: Geselecteerde Deelnemers
+    index:
+      actions: Acties
+      active_orders: Actieve Bestelling
+      all_orders: Alle Bestelling
+      delete_order: Verwijder Bestelling
+      finished_orders: Afgewerkt Orders
+      my_orders: Mijn Bestellingen
+      number_of_participants: Aantal Deelnemers
+      order: Bestellen
+      order_date: Besteldatum
+      owner: Bezitter
+      print_reports: Rapporten Afdrukken
+      product_type: Producttype
+      report_name: Rapport Naam
+      sort_by_company: Sorteren op Firma
+      sort_by_number_of_participants: Sorteren per Aantal Deelnemers
+      sort_by_ordered_date: Sorteren op Bestelde Datum
+      sort_by_product: Sorteren op Produkt
+      sort_by_report_name: Sorteren op Rapportnaam
+      utilties_order: 'Bestelling #'
+    order:
+      see_order: Zie de Orde
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    partials:
+      pick_order_modal:
+        cancel: Annuleer
+        choose_order: Kies de Bestelling
+        choose_order_for_project: Kies de Bestelling voor Project
+        date_order_number: Datum / Bestelling Aantal
+        locreated_atto_date_format_lon: "%{locreated_atto_date_format_lon} / %{oorder_number}"
+    prepare_download:
+      cancel: Annuleer
+      download_reports_zip: Download de Rapporten (ZIP)
+      please_wait: Even geduld aub ...
+      preparing_reports_for_download: Het voorbereiden van rapporten te downloaden
+    printed_participant:
+      digital_reports_to_be_sent_pdf: Digital Rapporten worden verzonden (PDFs)
+      download_copies_ordersingle_re: Download Kopieën (%{ordersingle_report_copies_coun})
+      download_manual: Download Handleiding
+      evaluators_printed_participant: 'Beoordelaars: %{printed_participantparticipant} van %{printed_participantparticipant} Compleet'
+      manual_to_be_printed: Handmatig afgedrukt dienen te worden
+      mark_all_as_not_printed: Markeer allen als niet afgedrukt
+      mark_all_as_not_sent: Markeer allen als niet verzonden
+      mark_all_as_printed: Markeer allen als GEDRUKTE
+      mark_all_as_sent: Markeer alle e-mails VERZONDEN
+      mark_all_as_shipped: Markeer allen als VERSCHEEPTE
+      printed_participantparticipant: "(%{printed_participantparticipant})"
+      reports_to_be_printed: Rapporten afgedrukt dienen te worden
+      self_survey_printed_participan: 'Zelf Enquête: %{printed_participantstatus}'
+      send_digital_reports: Stuur Digitale Rapporten
+      status_printed_participantmanu: 'Status: %{printed_participantmanual_repo}'
+      status_printed_participantprin: 'Status: %{printed_participantprint_repor}'
+      status_printed_participantsend: 'Status: %{printed_participantsend_report}'
+    show:
+      billing_contact: Contactpersoon voor facturering
+      binder_contact: Contactpersoon voor Binder
+      coaching_report: 'Tainer Rapport:'
+      comment_questions: 'Reactie Vragen:'
+      company: Bedrijf
+      demographics: 'Demografie:'
+      download_profile_interpretatio: Download Profiel Interpretation Manual (PDF)
+      download_reports_zip: Download Rapports (ZIP)
+      find_the_order_details_below_y: Vind de order details hieronder. U kunt ook een zip-bestand met al uw PDF-rapporten te downloaden.
+      included_participants: 'Inbegrepen Deelnemers:'
+      list_of_participants: Lijst van Deelnemers
+      order_details: Bestel Bijzonderheden
+      order_number: 'Bestellingsnummer:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} kopieën"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} Kopieën per Deelnemer"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} Kopieën per Deelnemer"
+      participant_graph: 'Deelnemer Grafiek:'
+      participant_report: 'Deelnemer Rapport:'
+      pdf: PDF
+      planned_completion_date: 'Geplande Afrondingsdatum:'
+      print_order_details_pdf: Bestel Bestelgegevens(PDF)
+      processing_date: 'Verwerking Datum:'
+      product_type: 'Product Type:'
+      profile_interpretation_manual: 'Profiel Interpretatie Handleiding:'
+      questions_about_your_order: Vragen over uw Bestelling?
+      report_contact: Rapport Contact
+      report_name: 'Naam Rapporteren:'
+      report_type: 'Soort Rapport:'
+      show_project: Toon Project
+      thank_you_for_your_order: Bedankt voor je bestelling.
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    show_print_report:
+      1_copy: 1 exemplaar per deelnemer
+      copies_per_participant:
+        one: Één exemplaar per deelnemer
+        other: "%{count} Kopieën per Deelnemer"
+      Demography: 'Demografie:'
+      action: Actie
+      application:
+        order_not_valid: Bestelling is niet geldig
+        reports_sent: Rapporten Verzonden
+        statuses_updated: Statussen Bijgewerkt
+      coach_report: Coachrapport
+      coach_rpt: Coach Rpt.
+      coaching_report: 'Coaching Report:'
+      comment_questions: 'Reactie Vragen:'
+      company: Bedrijf
+      complete: Compleet
+      deliverable_instructions: Leverbare instructies
+      demographics: 'Demografie:'
+      digital_reports: 'Digitale Rapporten:'
+      digital_rpt: Digital Rpt.
+      download_all_copies_ordercopie: Download alle exemplaren (%{ordercopies_count})
+      download_all_manuals_orderused: Download alle handleidingen (%{orderused_languagescount})
+      english_manual: 'Nederlands Handboek:'
+      evaluators: Beoordelaars
+      find_below_all_the_deliverable: Hieronder vindt u alle leveringen voor deze bestelling, evenals de verzendinformatie voor elk van deze bestellingen.
+      graph: Grafiek
+      included_participants: 'Inbegrepen Deelnemers:'
+      manual: Handmatig
+      mark_all_digital_reports_as_no: Merk alle digitale rapporten als niet verzonden
+      mark_all_digital_reports_as_se: Markeer alle digitale rapporten als verzonden
+      mark_all_printed_copies_as_not: Merk alle afgedrukte exemplaren als niet afgedrukt
+      mark_all_printed_copies_as_pri: Markeer alle gedrukte exemplaren als PRINT
+      mark_all_printed_copies_as_shi: Markeer alle gedrukte exemplaren als SHIPPED
+      mark_order_as_finished: Markeer bestelling als voltooid
+      no_participants: Geen Deelnemers
+      order_details: Bestel Bijzonderheden
+      order_number: 'Bestellingsnummer:'
+      order_participantparticipantco: "%{order_participantparticipantco} van %{order_participantparticipantev}"
+      ordercoach_report:
+        one: Een Exemplaar
+        other: "%{count} kopieën"
+      orderparticipant_report:
+        one: Één exemplaar per deelnemer
+        other: "%{count} Kopieën per Deelnemer"
+      participant: Deelnemer
+      participant_graph: Deelnemer Grafiek
+      participant_report: Deelnemer Rapport
+      participants_orderself_surveys: Deelnemers (%{orderself_surveyscount})
+      pdf: PDF
+      pdfs: PDFs
+      planned_completion_date: 'Geplande Afrondingsdatum:'
+      print_and_ship_copies_of_the_f: 'Afdrukken en verzenden kopieën van de volgende rapporten:'
+      printed: Gedrukt
+      printed_copies: 'Gedrukte kopieën:'
+      processing_date: 'Verwerking Datum:'
+      product_type: 'Product Type:'
+      profile: Profiel
+      profile_interpretation_manual: 'Profiel Interpretatie Handleiding:'
+      questions_about_your_order: Vragen over uw bestelling?
+      report_name: 'Naam Rapporteren:'
+      report_type: 'Soort Rapport:'
+      self_survey: Zelf Enquête
+      send_digital_reports_pdfs: Stuur Digitale Rapporten (PDFs)
+      send_the_pdf_version_of_the_fo: 'Stuur de PDF-versie van de volgende rapporten:'
+      sent: Verzonden
+      ship_the_3ring_binder_with_tab: Verzend het 3-ring bindmiddel met tabbladen en gedrukte pagina's
+      shipping_info: 'VERZENDINGSINFO:'
+      status: 'Status:'
+      submit: Verzenden
+    show_send_digital_reports:
+      cancel: Annuleer
+      consultantcoach_orderprojectco: 'Consultant: %{orderprojectconsultant_orderpr}'
+      send_digital_reports: Stuur Digitale Rapporten
+      send_digital_reports_to_practi: Stuur Digitale Rapporten naar Consultant
+  organization_users:
+    new:
+      tsharedadd_consultant_tsharedt: "%{tsharedadd} Consultant %{tsharedto} '%{organizationname}'"
+  organizations:
+    actions:
+      tsharedadd_typename: "%{tsharedadd} %{typename}"
+    collab:
+      add_and_delete_shared_users: U kunt gedeelde gebruikers op elk gewenst moment toevoegen en verwijderen
+      allow_users_edit_view: Gebruikers toestaan om te bewerken en te bekijken
+      certified_consultants: consultants
+      collaborators_for: Medewerkers voor
+      delete_collaborator: Verwijder medewerker
+      invite_more_people: Nodig meer mensen uit
+      invite_user_by_typing_email: Nodig een nieuwe gebruiker uit door hun e-mail hieronder te typen
+      sharing_access_certified_consultant: Toegang delen geeft een andere consultant dezelfde functionaliteit als eigenaar
+      sharing_top_level_company: Het delen op een hoog niveau (bedrijf) geeft toegang tot alles onder het (productgroepen en deelnemers)
+      this_licensor_is_not_shared: Deze organisatie is momenteel niet gedeeld
+    collaborator:
+      success: Succes!
+    collaborators:
+      role_urolename: 'Rol: %{urolename}'
+      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount} %{torganizationscollabcertified_}"
+    delete_collaborator:
+      success: Succes!
+    dnd:
+      drag:
+        add_user: Voeg gebruiker toe
+        confirmation: Bevestiging
+        confirmation_text_goes_here: Bevestigings tekst gaat hier ...
+        finish: Af hebben
+        next: Volgende
+        organizations_type: Organisatie Type
+        please_confirm_user_permission: Bevestig gebruikersrechten voor deze organisatie alstublieft. U hoeft niets te veranderen. Gebruikers die aan de ouderorganisaties zijn toegewezen, worden automatisch toegevoegd.
+        previous: Voorgaand
+        privilages: Voorrechten
+        role: Rol
+        user: Gebruiker
+        you_are_about_to_move_one_orga: Je bent op het punt om één organisatie naar een andere te verplaatsen. Controleer of het type organisatie dat u wilt verplaatsen correct is. U kunt het ook hier wijzigen. Hieronder zijn toegestaan soorten organisaties.
+      user:
+        remove: Verwijderen
+    form:
+      tsharedname: "%{tsharedname}:"
+    help:
+      tree_help:
+        quick_help: Snelle Hulp
+        to_edit_add_users_or_add_a_new: Om te bewerken, gebruikers toe te voegen of een nieuwe toe te voegen, klik gewoon op het in de boom en selecteer de gewenste actie uit de lijst in de rechterbovenhoek van het boompaneel
+        to_find_an_organization_simply: Om een organisatie te vinden, start je simpelweg in het zoekvak hieronder, wanneer je klaar bent met Enter
+        to_move_the_organization_to_an: Om de organisatie naar een andere organisatie te verplaatsen, gewoon slepen en neerzetten
+    modals:
+      delete_organization:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} deze organisatie"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_orga: "%{thomeindexyes_delete_this} organisatie"
+    move:
+      success: Succes!
+    new:
+      active_consultant_label_info: Als de consultant niet als actief is gemarkeerd, wordt hun account opgeschort en mag hij geen toegang hebben tot het systeem
+      administrator_email: Administrator Email
+      administrator_first_name: Administrator Voornaam
+      administrator_last_name: Administrator Achternaam
+      choose_countries: Kies Landen
+      coach_consultant_email: Consultant Email
+      coach_consultant_first_name: Consultant Voornaam
+      coach_consultant_last_name: Consultant Achternaam
+      coach_consultant_name: Consultant Voor-en Achternaam
+      company_client_name: Klantnaam
+      consultant_label_info: Een consultant die werkt met meerdere klanten en organisaties
+      contract_start_date: Contract Startdatum
+      countries_covered: Landen Bedekt
+      must_be_certified: Dit moet consultant email zijn
+      select_an_industry: Selecteer een Bedrijfstak
+      the_project_center: The Project Center
+      this_active_consultant: Dit is een Actieve Consultant
+      this_independent_consultant: Dit is een onafhankelijke consultant
+      top_node: Bovenste Knooppunt
+      torganizationsnewmust_be_certi: "(%{torganizationsnewmust_be_certi})"
+      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} '%{parentname}'"
+      type_the_name_of_coach_consultant: Typ de naam van de Consultant
+      type_the_name_of_company_client: Typ de naam van de Klant
+      type_the_name_of_the: Typ de naam van de
+      you_are_adding_a: Je voegt een
+      or_create_an_admin_user: Of maak een nieuwe gebruiker aan
+      accounting_id: Accounting ID
+      accounting_id_for_an_existing_administrator: Accounting ID voor een bestaande beheerder
+    roles:
+      collaborator:
+        delete: Verwijder
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{organizationname}"
+    search:
+      local: Local
+      search_by: Filter by
+      search_by_company_participant_evaluator: Zoeken op Bedrijf / Deelnemer / Evaluator
+      searching: Zoeken ...
+    share:
+      success: Succes!
+    show:
+      event: Evenement
+      history: Geschiedenis
+      impersonate: Verpersoonlijken
+      no_child_data: Geen kindergegevens gevonden!
+      organization_information: Organisatie informatie
+      tshareddate_created: "%{tshareddate_created}:"
+    undo_share:
+      success: Succes!
+    アクション:
+      tsharedadd_typename: Aandeel toegevoegd %{tsharedadd} %{typename}
+  participants:
+    cannot_destroy:
+      cannot_delete_the_selected_par: 'Kan de geselecteerde Particiapant niet verwijderen omdat het record is gekoppeld aan andere gegevens die niet kunnen worden verwijderd. Controleer de onderstaande lijst:'
+      orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
+      orders: 'Bestellingen:'
+    evaluators:
+      add_evaluator: Voeg Evaluator
+      start_adding_evaluators_now: Begin nu evaluatoren toevoegen.
+      this_participant_has_no_evalua: Deze deelnemer heeft geen beoordelaars.
+    form:
+      form:
+        action_text: "%{action_text}"
+        cancel_changes: Annuleer Wijzigingen
+        delete_participant: Verwijderen Deelnemer
+    import_csv:
+      close: Dichtbij
+      importing_participants: Deelnemers importeren
+      please_wait: Even geduld aub ...
+    import_participants:
+      email_address: E-mailadres
+      empty_row: Lege rij
+      existing_first_name: 'Bestaande voornaam:'
+      existing_last_name: 'Bestaande achternaam:'
+      first_name: Voornaam
+      is_there_something_wrong_uploa: Is er iets mis? Upload een nieuw bestand
+      its_right_complete_import: Het is juist! Volledige invoer
+      last_name: Achternaam
+      strongparticipantscount_partic: "<strong>%{participantscount} participants</strong> zijn gevonden. Gelieve te bevestigen dat de wedstrijd gelijk is:"
+      user_with_this_email_already_e: Gebruiker met deze e-mail bestaat al
+    import_participants_modal:
+      cancel: Annuleer
+      import_participants_from_csv_f: Importeer deelnemers uit CSV-bestand
+      upload_participants: Deelnemers uploaden
+      upload_your_csv_file: 'Upload uw CSV-bestand:'
+    index:
+      completion_date_is_over: Voltooiingsdatum is voorbij.
+      download_participants_csv_status: Download Deelnemer Status Bijzonderheden als CSV
+      evaluator_status: Evaluator Status
+      got_it: Begrijpt!
+      participant_details: Deelnemer Bijzonderheden
+      projectself_surveyswherestatus: "%{projectself_surveyswherestatus} deelnemers hebben hun zelfonderzoek niet afgerond %{projectparticipantswith_not_en} Heeft niet genoeg evaluaties. U kunt de deelnemers naar andere projecten verplaatsen tot de Verslagdatum (%{projectreport_datestrftimeb_d_})."
+      self_survey_status: Zelfbeoordeling Status
+    logs_modal:
+      created_logsnew: 'Gemaakt: %{logsnew}'
+      failed_logsfailed: 'Mislukt: %{logsfailed}'
+      got_it: Begrepen!
+      import_is_done: Import is gedaan.
+      import_logs: 'Importeren logboeken:'
+      not_changed_logsuntouched: 'Niet veranderd: %{logsuntouched}'
+      participant_groups_logsgroups: 'Deelnemersgroepen: %{logsgroups}'
+      total_participants_logstotal: 'Totaal aantal deelnemers: %{logstotal}'
+      updated_logsupdated: 'Bijgewerkt: %{logsupdated}'
+    manage_group:
+      continue_managing_your_group: Blijf door met uw groep beheren
+      edit_evaluators_invitation: Bewerken Evaluators Invitation
+      edit_participants_invitation: Deelnemer Bewerkens Invitation
+      participants_can_be_added_to_y: Deelnemers kunnen nu of later een nieuwe groep aan je nieuwe groep toevoegen
+      send_all_new_emails: Stuur alle nieuwe e-mails
+    participant_header:
+      add_participants: VOEG DEELNEMERS TOE
+      choose_products: Kies Producten
+      confirm_order: BEVESTIG BESTELLING
+      edit_invitation_email: Bewerken Uitnodigings Email
+      review_order_details: Beoordeel Bestelgegevens
+      select_options: Selecteer Opties
+      send_emails: Stuur Emails
+      setup_group: Groepsinstelling
+      update_addresses: Update Adressen
+    send_email_to_evaluator:
+      last_reminder_sent_on_surveyem: Laatste Herinnering Verzonden %{surveyemail_sent}
+    send_email_to_participant:
+      last_reminder_sent_on_surveyem: Laatste Herinnering Verzonden %{surveyemail_sent}
+    show_evaluator:
+      evaluation_status: Evaluatie Status
+      language: Taal
+      last_reminder_never_sent: Laatste Herinnering Nooit Verzonden
+      last_reminder_sent_on: Laatste herinnering gestuurd op
+      relationship: 'Verwantschap:'
+      send_reminder: Uitnodiging Sturen
+      surveycompleted_questions_coun: "%{surveycompleted_questions_coun} %{tsharedof} %{surveyquestions_count} %{tsharedquestions}"
+      surveyevaluatortryfirst_name_s: "%{surveyevaluatortryfirst_name} %{surveyevaluatortrylast_name}"
+      tparticipantsshow_evaluatorlan: "%{tparticipantsshow_evaluatorlan}: %{surveyevaluatorlanguagename}"
+      tparticipantsshow_evaluatorlas: "%{tparticipantsshow_evaluatorlas} %{surveyemail_sent}"
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_atto_date_for}"
+    show_participant:
+      completed_on_lparticipantself_: Voltooid op %{lparticipantself_surveycomplet}
+      edit_participant: Deelnemer Bewerken
+      email_participantuseremail: 'Email: %{participantuseremail}'
+      language_participantuserlangua: 'Taal:  %{participantuserlanguagename}'
+      na: n/a
+      participantcompleted_evaluatio: "%{participantcompleted_evaluatio} van %{participantevaluationscount} evaluators"
+      participantself_surveycomplete: "%{participantself_surveycomplete} van %{participantself_surveyquestion} vragen"
+      participantuserfirst_name_part: "%{participantuserfirst_name} %{participantuserlast_name}"
+      resend_reports_to_gcsr: Rapporten Doorzenden GCSR
+      send_invite: Uitnodiging Sturen
+    sort_options:
+      evaluator_status: Sorteren op Evaluatorstatus
+      number_of_evaluators: Sorteren op Aantal Beoordelaars
+      participant_name: Sorteer op Naam van Deelnemer
+      survey_status: Sorteer op Zelfonderzoek Status
+  people:
+    account_notification_title: Account Update
+    account_updated: Account is Bijgewerkt!
+    active_management:
+      error: Fout
+      success: Succes
+    cannot_delete: Kan niet verwijderen; Er zijn nog steeds projecten gekoppeld aan deze gebruiker.
+    destroy:
+      success: Succes!
+    index:
+      disabled: Uitgeschakeld
+      filtering_by_client: 'Filteren door Opdrachtgever:'
+      invite_new_users: Nodig nieuwe gebruikers uit
+      invited: Uitgenodigd
+      join_date: Datum Aangesloten
+      self_assessment: Zelfbeoordeling
+      shared_organizations: Gedeelde Organisaties
+      sort_by: Sorteer Op
+      sort_by_join_date: Sorteren op Lidmaatschap
+      sort_by_org_number: Sorteer op Aantal Organisaties
+      sort_by_user_name: Sorteren op Gebruikersnaam
+      survey_takers: Enquete Takers
+      user_details: Gebruikersdetails
+      users: Gebruikers
+    manual_unlock:
+      error: Er is een fout opgetreden!
+      success: Succes!
+    new:
+      choose_the_user_main_role_you_: Kies de hoofdrol van de gebruiker. U kunt privileges later bewerken.
+      invite_another_user: Nodig een andere gebruiker uit
+      invite_new_users: Nodig nieuwe gebruiker(s) uit
+    partials:
+      active_surveys:
+        company: Bedrijf
+        completed: 'voltooid:'
+        completion_date: Einddatum
+        evaluated: 'Geëvalueerd:'
+        evaluation_surveyscount_people: "%{evaluation_surveyscount} people"
+        no_completed_evaluating_survey: Geen voltooide evaluatie-enquêtes.
+        no_completed_self_surveys: Geen voltooide Zelf Enquêtes
+        no_evaluating_surveys_to_compl: Geen evaluatie-enquêtes om te voltooien.
+        no_self_surveys_to_complete: Geen zelf-enquêtes te voltooien.
+        not_valid: Niet Geldig
+        participant_and_product_type: Deelnemer en Producttype
+        product_type: Product Type
+        project: Project
+        self_survey: Zelf Enquête
+        self_surveyscount_self_survey: "%{self_surveyscount} Zelf Enquête"
+        to_complete: 'vervolledigen:'
+        to_evaluate: 'evalueren:'
+      settings:
+        a_practitioner_that_does_not_w: Een consultant die veel klanten en organisaties werkt.
+        account_status: Account Status
+        delete_account_person_pathuser: Account verwijderen
+        'false':  Nee
+        gcsr_or_system_administrator_h: GCSR or System Administrator have access to all organizations.
+        is_this_an_independent_practit: Is this an independent consultant?
+        'no': 'Nee'
+        practitioner_information: Consultant Information
+        the_referring_practitioner_wil: The referring consultant will receive a free profile.
+        this_user_has_been_active_sinc: This user has been active since
+        user_role: Gebruiker Rol
+        users_can_only_manage_the_orga: Users can only manage the organizations which have been shared with them.
+        was_this_practitioner_referred: Was this consultant referred by another consultant in the system?
+        'yes': 'Ja'
+      shared_organization:
+        edit_user_role: Gebruikersbewerking Bewerken
+        shared_organizationorganizatio: "(%{shared_organizationorganizatio})"
+      shared_organizations:
+        are_being_shared_with: Worden gedeeld met
+        new_shared_organization: Nieuwe Gedeelde Organisatie
+        role: Rol
+        shared_organizations: Gedeelde Organisaties
+        type: Type
+        userfull_name: "%{userfull_name}:"
+        userorganization_userscount_or: "%{userorganization_userscount} organizations"
+      surveys:
+        active_surveys_useractive_surv: Actieve Enquêtes (%{useractive_surveyscount})
+        survey_history_userhistorical_: Onderzoeksgeschiedenis (%{userhistorical_surveyscount})
+      user_information:
+        address: Adres
+        date_of_birth: 'Geboortedatum:'
+        edit: Bewerk
+        education: 'Onderwijs:'
+        email: 'Email:'
+        full_name: 'Voor-en Achternaam:'
+        gender: 'Geslacht:'
+        language: 'Taal:'
+        number_of_direct_reports: 'Aantal Medewerkers:'
+        organization_level: 'Organisatie Niveau:'
+        personal_information: Persoonlijke Informatie
+        phone_number: Telefoonnummer
+        profession: 'Beroep:'
+        professional_information: Professionele Informatie
+        residing_country: 'Woonland:'
+        you_havent_added_any_addresses: U heeft geen adressen toegevoegd.
+        you_havent_added_any_phone_num: U heeft geen telefoonnummers toegevoegd.
+      user_information_address:
+        user_information_addressname: "%{user_information_addressname}:"
+        user_information_addressregion: "%{user_information_addresscity}, %{user_information_addressregion}"
+      user_information_phone:
+        user_information_phonename: "%{user_information_phonename}:"
+    person:
+      consultant: Consultant
+      csr: CSR
+      gcsr: GCSR
+      manage_user: Gebruikers Beheren
+      system_administrator: System Administrator
+    roles:
+      added_successfully: Gebruiker is goed toegewezen aan de organisatie!
+      edit_user_role:
+        cancel: Annuleer
+        companyname: "''%{companyname}''"
+        remove_access_to_this_organiza: Verwijder de toegang tot deze organisatie
+        role_on: Rol op
+        save: Sparen
+        select: Selecteer
+        userfirst_names: "%{userfirst_name}''s"
+      new_user_role:
+        choose_an_organization_to_shar: Kies een organisatie om te delen met
+        share_organization: Aandelenorganisatie
+        user_role: 'Gebruikersrol:'
+      title: Gebruikersrollen
+    send_unlock_instructions:
+      error: SWe hadden een fout!
+      success: Succes!
+    show:
+      account_status: 'Account Status:'
+      are_you_sure: Weet je het zeker?
+      delete_account: Account verwijderen
+      disable_account: Account Uitschakelen
+      enable_account: Account Inschakelen
+      send_unlock_instructions: Verzend Ontgrendelingsinstructies
+      settings: Instellingen
+      shared_organizations: Gedeelde Organisaties
+      surveys: Enquêtes
+      unlock_account: Account Ontgrendelen
+      user_information: Gebruikers Informatie
+    users:
+      sort_by: Sorteer Op
+      sort_by_join_date: Sorteren op datum van inschrijving
+      sort_by_org_number: Sorteer op aantal organisaties
+      sort_by_user_name:  “Sorteren op aantal gebruikers"
+  phones:
+    index:
+      add_phone: Telefoon Toevoegen
+      name: Naam
+      number: Nummer
+    phone:
+      delete: Verwijder
+  project_steps:
+    contact_info:
+      create_project: Maak Project
+      previous: Voorgaand
+    deliverable_option:
+      next: Volgende
+      previous: Voorgaand
+    project_detail:
+      124_questions: 124 Vragen
+      62_actual_and_62_ideal_culture: 62 Actuele en 62 Ideale cultuurvragen
+      84_questions: 84 vragen
+      8_summary_and_29_outer_dimensi: 6 Samenvatting en 21 buitenafmetingen
+      8_summary_and_31_outer_dimensi: 8 samenvatting en 31 buitenafmetingen
+      audience_is_csuite_presidents_: Publiek is "C-suite", voorzitters, vice-voorzitters, directeuren, EMBA, leiders van hoge potentiaal
+      audience_is_midlevel_managers_: Publiek is middenbeheerders, toezichthouders, MBA's, teamleiders, 'opkomende leiders'
+      choose_a_name_that_will_help_y: Kies een naam die u helpt de deelnemers te identificeren
+      choose_an_existing_client: Kies een bestaande client
+      client: Cliënt
+      consulting_company: Raadgevend Bedrijf
+      create_a_new_client: Maak een nieuwe client aan
+      focus_is_organization_or_team: Focus is organisatie of team
+      leadership_circle_profile: Leadership Circle Profiel
+      leadership_circle_profile_mana: Leadership Circle Profiel Manager Edition
+      leadership_culture_survey: Leiderschap Cultuuronderzoek
+      or: of
+      practitioner: Consultant
+      select_product: Selecteer Product
+  projects:
+    convert_sa_to_lcp:
+      success: De conversie was succesvol.
+      please_set_consulting_company_and_consultant_first: Gelieve de klant, het adviesbedrijf en de consultant eerst in te stellen (in klant- en adviesinstellingen).
+    collab:
+      add_and_delete_shared_users: U kunt gedeelde gebruikers op elk gewenst moment toevoegen en verwijderen
+      allow_users_edit_view: Gebruikers toestaan om bestellingen af te drukken of te bekijken
+      delete_collaborator: Verwijder Medewerker
+      invite_more_people: Nodig meer mensen uit
+      invite_user_by_typing_email: Nodig een nieuwe gebruiker uit door zijn / haar email hieronder te typen
+      printers: Printers
+      sharing_access_certified_consultant: Toegang delen geeft een andere gebruiker toegang tot de bestellingen
+      this_licensor_is_not_shared: Dit project is momenteel niet gedeeld
+    delete_collaborator:
+      success: Gebruiker is verwijderd van het project.
+    new:
+      itemparameterize: "#%{itemparameterize}"
+      next: Volgende
+      previous: Voorgaand
+    partials:
+      edit_form:
+        cancel_changes: Annuleer Wijzigingen
+        deliverables_and_printing_opti: Leveringen en afdrukopties
+        project_options: Project Opties
+        save_all_changes: Sla alle wijzigingen op
+      evaluator_invitation:
+        if_you_have_already_sent_a_mes: Wanneer u alstublieft EXITATION-berichten heeft verzonden naar deelnemers, kunt u daarna alle bijgewerkte medewerkers en beoordelaars van het project dashboard verzonden.
+        invitations: UITNODIGINGEN
+        modifying_this_message_will_ch: Als u dit wijzigt, verandert u de e-mails van evaluatoruitnodigingen of HERINNERINGEN in de geselecteerde taal.
+        please_do_not_modify_any_text_: Wijzig de tekst niet binnen de haakjes (| |). Dit zijn sleutelwoorden die worden vervangen door de informatie van de deelnemer wanneer het bericht is verzonden.
+        reminders: HERINNERINGEN
+        warnings: Waarschuwingen
+      evaluators_blank_slate:
+        add_evaluator: Voeg Evaluator
+        import_evaluators: Import Beoordelaars
+        start_adding_evaluators_now: Begin nu evaluatoren toevoegen.
+        there_are_no_evaluators_in_thi: Er zijn geen beoordelaars in dit project.
+      header:
+        comments: Opmerkingen voor de printer
+        client: 'Cliënt:'
+        completion_date: Einddatum
+        consulting_settings: Raadgevende Instellingen
+        consutling_company: 'Raadgevend Bedrijf:'
+        create_group_report: Groeprapport Maken
+        delete_project: Verwijder Project
+        deleteproject: Verwijder Project
+        generate_draft_reports: Maak Voorbeeldrapporten
+        convert_sa_to_lcp: Converteren naar LCP full
+        practitioner: 'Consultant:'
+        printing_access: Afdrukken Toegang
+        project_id: 'Project ID:'
+        project_time_zone: Project Tijdzone
+        rename_project: Hernoem Project
+        run_new_report: Nieuw rapport uitvoeren
+        run_report_date: Rapportdatum Uitvoeren
+        send_all_reminders: Verzend alle Herinneringen
+        send_new_emails_projectsurveys: Stuur Nieuwe E-mails (%{projectsurveyswhereemail_sent_})
+        shared_with: Gedeeld Met
+        show_orders: Toon Bestellingen
+        starting_date: 'Begin datum:'
+        status: 'Status:'
+        users_project_access: Gedeelde Instellingen
+        view_orders: Bestellingen Bekijken
+      import_participants_modal:
+        cancel: Annuleer
+        import_participants_from_csv_f: Importeer deelnemers uit CSV-bestand
+        not_sure_about_the_format_of_t: Niet zeker over het formaat van het bestand? <a href='#'>Download het CSV-voorbeeld.</a>
+        upload_participants: Deelnemers uploaden
+        upload_your_csv_file: 'Upload uw CSV-bestand:'
+      modals:
+        delete_project:
+          thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}"
+          thomeindexunable_to_delete_pro: "%{thomeindexunable_to_delete_pro}"
+          thomeindexyes_delete_this_proj: "%{thomeindexyes_delete_this} project"
+        no_data_for_preview_warning:
+          at_least_one_survey_must_be_co: Tenminste één enquête moet volledig zijn voordat het Preview Report zal werken.
+          not_enough_data_to_generate_pr: Niet genoeg gegevens om Preview te genereren
+        rename:
+          cancel: Annuleer
+          please_enter_a_new_name_for_th: 'Vul alstublieft een nieuwe naam in voor het project:'
+          rename_project: Hernoem Project
+          save_changes: Wijzigingen Opslaan
+        show_orders:
+          orderorder_number_click: "%{orderorder_number} (Klik),"
+          projects_orders: Project Bestellingen
+          the_orders_created_by_a_projec: De orders die door een project zijn gemaakt.
+      new_project:
+        address_form:
+          select_an_address_from_my_acco: Selecteer een adres uit Mijn account
+        address_modal:
+          select_from_my_account_address: Selecteer uit Mijn accountadressen
+          there_are_no_addresses_related: Er zijn geen adressen gerelateerd aan de gebruiker
+        contact_info:
+          billing_address: Facturatie adres
+          binder_address: Binder Adres
+          contact_information: Contactgegevens
+          new_address: Nieuw Adres
+          same_as_shipping_address: Hetzelfde als Rapportadres
+          same_as_the_billing_address: Hetzelfde als het Factuuradres
+          shipping_address: Rapportadres
+          this_contact_is_the_only_perso: Dit contact is de enige persoon die eventuele factureringsinformatie zal zien van The Leadership Circle
+          this_is_the_address_where_the_: Dit is het adres waar het coach rapport zal gaan.
+          this_is_the_address_where_the_3_ring: Dit is het adres waar het 3-ring bindmiddel zal worden geleverd.
+        deliverable_options:
+          binder_with_tabs: Bindmiddel met Profielinterpretatiehandleiding
+          coach_report: Coachrapport
+          digital_graph: Digitale Grafiek
+          group_report: Groepsrapport
+          how_many_copies_per_participan: Hoeveel kopieën per deelnemer?
+          i_want_pdf_and_printed_copies_: Ik wil PDF en Gedrukte kopieën van de rapporten.
+          i_want_the_pdf_copies_only: Ik wil alleen de PDF-exemplaren.
+          participant_graph: Deelnemer Grafiek
+          participant_report: Deelnemer Rapport
+          pdf_file_that_practitioner_ema: PDF bestand dat consultant e-mailt aan deelnemer
+          please_choose_below_which_ones: 'Gelieve hieronder te kiezen welke u wilt afdrukken:'
+          profile_interpretation_manual: Profiel Interpretatie Handleiding
+          reports: 'Rapporten:'
+          reports_format: 'Rapportenformaat:'
+          participant_reports_in_csv: 'Downloadbare rauwe data'
+          you_will_get_a_digital_version: 'U krijgt een digitale versie van de volgende items:'
+          you_will_get_only_the_digital_: 'U krijgt alleen de digitale (digitale-exemplaren) versie van het Profielpolk Vertolkingshandboek en de volgende rapporten: '
+          you_will_get_the_digital_versi: U ontvangt de digitale versie van het Profiel Interpretatie Handboek en alle rapporten.
+          your_project_will_include: 'Uw project omvat:'
+        demographics:
+          custom:
+            age_ranges: Leeftijdsgroepen
+            all: Alle
+            country: Land
+            demographic_options: Demografische Opties
+            direct_report_ranges: Medewerkers
+            education_levels: Opleidingsniveaus
+            ethnic_groups: Etnische Groeps
+            female: Vrouw
+            gender: Geslacht
+            if_you_choose_to_run_a_custom_: Als u ervoor kiest om een aangepast rapport uit te voeren tegen een te kleine demografische steekproef, kan het resultaat een rapport zijn met schuine gegevens. De meeste demografische gegevens zijn beschikbaar onder Resources. U heeft de mogelijkheid om uw selectie terug te keren naar de standaard demografie. Neem contact op met uw klantenservice vertegenwoordiger met vragen.
+            industries: Industrieën
+            male: Mannetje
+            management_levels: Bedrijfsbehee Levels
+            professions: Beroepen
+          summary:
+            age_ranges: 'Leeftijdsgroepen:'
+            countries: 'Landen:'
+            demographic_definition: Demografische Definitie
+            demographic_details: 'Demografische Bijzonderheden:'
+            demographic_size: 'Demographic Size:'
+            direct_report_ranges: 'Medewerkers:'
+            education_levels: 'Opleidingsniveaus:'
+            ethnic_groups: 'Etnische Groeps:'
+            gender: 'Geslacht:'
+            industry: 'Industrie:'
+            languages: 'Taalen:'
+            lcp_participants: LCP Deelnemers
+            lcs_participants: LCS Deelnemers
+            management_levels: 'Beheersniveaus:'
+            me_participants: ME Deelnemers
+            participants: Deelnemers
+            professions: 'Beroepen:'
+            sa_participants: SA Deelnemers
+            this_is_the_number_of_people_y: Dit is het aantal mensen waarmee u uw projectleden zal vergelijken met.
+        project_details:
+          all_surveys_should_be_complete: Alle enquêtes moeten op deze datum worden ingevuld.
+          cancel: Annuleer
+          date_reports_are_available: Datumverslagen zijn beschikbaar.
+          next: Volgende
+          project_options: Project Opties
+          specify_a_timeline_for_the_pro: Geef een tijdlijn voor het project op
+        project_options:
+          1st_option: 'Optie 1'
+          2nd_option: 'Optie 2'
+          cancel_schedule_announcement: 'Annuleer Schema Aankondiging'
+          comment_questions_to_be_includ: Reageer op vragen die in de enquête moeten worden opgenomen
+          evaluators_are_bosses_peers_di: Evaluatoren zijn bureaus, collega's, directe rapporten en anderen die uitgenodigd worden om informatie over de deelnemer te geven.
+          how_evaluators_are_invited_to_: Hoe evaluatoren worden uitgenodigd om deel te nemen
+          i_will_invite: 'Ik zal de beoordelaars uitnodigen'
+          if_the_participant_is_responsi: Als de deelnemer verantwoordelijk is voor het uitnodigen van zijn beoordelaars, moet hij deze minimale beoordelaars uitnodigen alvorens de zelfonderzoek te starten.
+          in_this_section_you_will_be_ev: In dit gedeelte zal u evalueren
+          indicate_if_the_survey_will_be: Geef aan of de enquête gericht is op de organisatie als geheel of een groep teamleden.
+          leaders_managers: Leiders/Managers
+          members_of_team: De
+          minimum_evaluations_per_partic: Minimale evaluaties per deelnemer?
+          my_participant_will_invite: 'Mijn deelnemers zullen evaluatoren uitnodigen '
+          organization: Organisatie
+          participants_will_see_the_focu: Deelnemers zien de focus definitie in de enquête instructies zoals weergegeven in het vak aan de rechterkant
+          q1_in_your_opinion_what_is_thi: "Q1: Naar u mening, wat is deze persoon 'grootste leermiddel, vaardigheid of talent, en welke suggesties heeft u om dit te benutten?"
+          q1_what_should_heshe_stop_doin: 'Q1: Wat moet hij stoppen met het doen? '
+          q2_in_your_opinion_what_is_thi: "Q2: Naar u mening, wat is deze persoon 'grootste leiderschapstoepassing of -gebied voor ontwikkeling, en welke voorstellen heeft u om dit te verwerken?"
+          q2_what_can_heshe_improve: 'Q2: Wat kan hij / zij verbeteren? '
+          q3_what_have_you_observed_abou: 'Q3: Wat heb je geconstateerd over deze persoon over welke je extra feedback wilt geven aan hem die nog niet eerder in deze beoordeling is aangepakt? '
+          q3_what_should_heshe_start_doi: 'Q3: What should he/she start doing?'
+          regardless_of_who_invites_eval: Ongeacht wie er evaluatoren uitnodigt, kan de consultant altijd de lijst van beoordelaars zien in het Project Dashboard
+          report_demographics: Rapport Demografie
+          schedule_sending_of_invitation: Schema verzenden van uitnodigingsemails
+          send_now: Nu Verzenden
+          survey_focus: Enquêtes Focus
+          survey_focus_description: Onderzoeksfocus Beschrijving
+          survey_instructions: 'Enquêtes Instructies:'
+          team: Team
+          the_invitations_can_be_schedul: De uitnodigingen kunnen gepland worden op een bepaalde datum en tijd
+          this_is_the_minimum_number_of_: Dit is het minimum aantal volledige evaluaties die een deelnemer in het rapport moet bevatten. De minimum in aanmerking komende is 5 evaluaties.
+          promo_code: Promotiecode
+      participant_invitation:
+        if_you_have_already_sent_a_mes: Wanneer u alstublieft uitnodigingsberichten hebt verzonden naar deelnemers, kunt u daar na de bijgewerkte berichten naar alle deelnemers en beoordelaars van het projectdashboard verzenden.
+        invitations: UITNODIGINGEN
+        modifying_this_message_will_ch: Als u dit bericht wijzigt, wordt de  UITNODIGINGS-E-mail van de deelnemer gewijzigd Of HERINNER E-mail met de geselecteerde taal.
+        please_do_not_modify_the_text_: Wijzig de tekst niet binnen de haakjes (| |). Dit zijn sleutelwoorden die worden vervangen door de informatie van de deelnemer wanneer het bericht is verzonden.
+        reminders: HERINNERINGEN
+        warnings: Waarschuwingen
+      participants_blank_slate:
+        add_participant: Eeelnemer Toevoegen
+        import_participants: Deelnemers Importeren
+        start_adding_participants_now: Begin nu deelnemers toe te voegen.
+        there_are_no_participants_in_t: Er zijn geen deelnemers aan dit project geëvalueerd.
+      reminders:
+        if_you_have_already_sent_a_mes: Als u al een bericht naar deelnemers hebt verzonden, kunnen bijgewerkte berichten binnen het project worden verzonden.
+        langname_reminder: "%{langname} Herinnering"
+        modifying_this_message_will_ch: Als u dit bericht wijzigt, verandert het herinneringsbericht met een Nederlands taalonderzoek.
+        please_do_not_modify_the_text_: Wijzig de tekst niet binnen de haakjes (* | | *). Dit zijn sleutelwoorden die worden vervangen door de informatie van de deelnemer wanneer het bericht is verzonden.
+        warnings: Waarschuwingen
+      report_preview:
+        boss: Baas
+        bosss_boss: Boss's Boss
+        direct_report: Medewerkers
+        evaluators: Beoordelaars
+        other: Andere
+        participant: 'Deelnemer:'
+        peer: Collega
+        select_categories: 'Selecteer Categorieën:'
+        self: Zelf
+        skill: Behendigheid
+      resend_emails:
+        last_reminde: Laatste Herinnering
+        last_reminder_sent_on: Laatste Herinnering gestuurd op
+        never_sent: Nooit Vezonden
+        participantuseremail: "(%{participantuseremail})"
+        select_all_participants_evalua: Selecteer alle beoordelaars van alle deelnemers
+        surveyevaluatoremail: "(%{surveyevaluatoremail})"
+      statuses:
+        completed_evaluating: Voltooide Evaluatie
+        completed_selfsurveys: Voltooide Zelfonderzoeken
+        in_progress: Bezig
+        not_started: Niet begonnen
+        statcompleted_count_of_stattot: "%{statcompleted_count} van %{stattotal_count} %{statrelation_namepluralize} completed"
+        statusestotal_relations_comple: "%{statusestotal_relations_comple} van %{statusestotal_relations} Evaluations Completed"
+        total_of_evaluators: Totaal Evaluatoren
+        total_of_participants: Totaal aantal Deelnemers
+      tooltip:
+        of: van
+        pluralizecompleted_count_relat: "%{pluralizecompleted_count_relat} voltooid"
+    project:
+      manage_project: Project Beheren
+      resend_emails: Re-send Emails
+    project_header:
+      create_group_report: Groeprapport Maken
+      create_new_project: Maak een Nieuw Project
+    project_table:
+      actions: Acties
+      all_projects: 'Alle Projecten'
+      completion_date: Einddatum
+      last_reminder: Laatste Herinnering
+      product: Product
+      project: Project
+      status: Status
+    report_preview:
+      '0': 0%
+      categories: 'Categorieën:'
+      evaluators: Beoordelaars
+      participant: 'Deelnemer:'
+      self: Zelf
+      skill: Behendigheid
+    resend_emails:
+      cancel: Annuleer
+      select_all_evaluators: Selecteer alle evaluatoren
+      select_all_participants: Selecteer alle Deelnemers
+      select_the_unfinished_particip: Selecteer de onvoltooide deelnemers en beoordelaars waar u e-mails naar wilt verzenden. Kies het type e-mail om het bericht te versturen naar uw geselecteerde survey gebruikers.
+      send_emails_to_participants_ev: Stuur e-mails naar deelnemers en beoordelaars
+      send_invitation_email: Verstuur Uitnodiging Email
+      send_reminder_email: Stuur herinnerings-e-mail
+    roles:
+      collaborator:
+        delete: Verwijder
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{projectname}"
+        tsharedshared_with_project_use: "%{tsharedshared_with} %{project_userscount} %{tprojectscollabprinters}"
+    send_all_reminders:
+      close: Dichtbij
+      please_wait: Even geduld aub ...
+      sending_all_reminders: Alle herinneringen verzenden
+    share:
+      success: Succes
+    show:
+      evaluator_email: Evaluator Email
+      evaluators: Beoordelaars
+      options: Opties
+      participant_email: Deelnemer Email
+      participants: Deelnemers
+    show_consulting_settings:
+      client: Cliënt
+      consulting_company: Raadgevend Bedrijf
+      consulting_settings: Raadgevende Instellingen
+      practitioner: Consultant
+    undo_share:
+      success: Succes
+  sa_survey_mailer:
+    request_invitation_email:
+      have_a_nice_day: Goedendag!
+      hello: Hallo,
+      participant_email: 'Deelnemer E-mail:'
+      participant_name: 'Deelnemer Naam:'
+      selfsurvey_completed_at: 'Zelfonderzoek voltooid op:'
+      selfsurvey_id: 'Zelfonderzoek #ID:'
+      we_recorded_a_new_request_for_: 'We hebben een nieuw verzoek voor een uitnodiging van een gebruiker opgenomen:'
+    survey_completed_email:
+      age_range: Leeftijdscategorie
+      basic_data: Basis data
+      company_name: 'Bedrijfsnaam:'
+      company_revenue: Bedrijfsopbrengst
+      country: Land
+      demographics: Demografie
+      education_level: Opleidingsniveau
+      ethnic_group: Etnische Groep
+      gender: Geslacht
+      have_a_nice_day: Goedendag!
+      hello: Hallo,
+      industry: Industrie
+      management_level: Bedrijfsbehee Niveau
+      organization_size: Organisatie Grootte
+      participant_email: 'Deelnemer Email:'
+      participant_name: 'Deelnemer Naam:'
+      participant_phone_number: 'Deelnemer Telefoonnummer:'
+      please_check_the_attachment_re: Controleer de bijlage - de rapporten zijn in PDF-formaat.
+      profession: Beroep
+      reports: Rapporten
+      selfsurvey_completed_at: 'Zelfonderzoek voltooid op:'
+      selfsurvey_created_at: 'Zelfonderzoek gemaakt op:'
+      selfsurvey_id: 'Zelfbeoordeling #ID:'
+      tlc_consultant_who_referred: 'TLC consultant die verwees:'
+      we_noticed_that_the_new_selfsu: 'We hebben opgemerkt dat het nieuwe zelfonderzoek is afgerond. Hieronder staan de details:'
+    survey_completed_participant_email:
+      dear_userfull_name: Geachte %{userfull_name},
+      if_youd_like_to_understand_how: Als u wilt begrijpen hoe u functioneert als het gaat om leiderschap, vertel ik u graag van het volledige Leadership Circle Profile, dat feedback geeft van degenen die u leidt en met u werkt - Werknemers, collega's en Bazen.
+      please_do_not_hesitate_to_reac:  Gelieve ons te contacteren met eventuele vragen. Ik ben blij om op welke manier dan ook te helpen.
+      request_a_full_lcp: Vraag het volledige LCP aan
+      thank_you_again: Nogmaals Bedankt,
+      thank_you_for_taking_the_leade: 'Bedankt voor het nemen van het Leadership Circle Profile: zelfbeoordeling. We hopen dat u lekker leiderschap hebt geleerd, en dat u het rapport en de feedback nuttig vindt als u door uw leiderschap gaat. '
+      to_help_you_better_understand_: Om u te helpen uw Zelfbeoordelingsrapport beter te begrijpen heb ik een Interpretatiegids opgenomen die elk aspect van uw grafiek en rapport uitlegt.
+  sa_surveys:
+    demographics:
+      before_you_begin: Voordat je begint
+      company_details: Bedrijf Bijzonderheden
+      continue_to_survey: Ga door naar Survey
+      need_help: Hulp Nodig?
+      personal_information: Persoonlijke Informatie
+      tlc_would_like_to_gather_some_: TLC wil graag wat informatie verzamelen voor intern onderzoeksdoeleinden. TLC deelt uw informatie niet. We zouden dankbaar zijn als u de vragen beantwoordt; U kunt echter altijd "Prevent niet antwoorden" selecteren.
+      we_need_a_little_more_informat: We hebben wat meer informatie over u nodig ...
+      select_your_gender: 'Select your Gender'
+      select_age: 'Select Age'
+      select_ethnic_group: 'Select Ethnic Group'
+      select_your_profession: 'Select your Profession'
+      select_your_education_level: 'Select your Education Level'
+      select_your_residing_country: 'Select your Residing Country'
+      street_address: 'Street Address (222 example avenue)...'
+      apt_suite_bldg: 'Apt, Suite, Bldg...'
+      zip_post_code: 'ZIP/Post Code...'
+      type_your_company_name: 'Type hier uw bedrijfsnaam'
+      select_your_companys_industry: "Select your Company's Industry"
+      size_of_organization: "Size of Organization"
+      select_your_management_level: "Select your Management Level"
+      company_revenue: "Company Revenue"
+    expanding_development:
+      discover_more_about_the_leader: Ontdek meer over de Leiderscirkel
+      need_help: Hulp Nodig??
+      request_invitation: Uitnodiging Aanvragen
+      would_you_like_to_continue_exp: Wilt u uw leiderschapsontwikkeling verder uitbreiden?
+      wwwleadershipcirclecom: www.leadershipcircle.com
+      requesting_invitation: 'Uitnodiging Aanvragen ...'
+    registration:
+      type_first_name: 'Typ uw voornaam ...'
+      type_last_name: 'Typ uw achternaam ...'
+      type_email: 'Typ je e-mailadres ...'
+      type_phone_number: 'Typ uw telefoonnummer ...'
+      type_consultant_email: 'Vul alstublieft zijn naam of e-mail in ...'
+      consultant_error: "We hebben geen TLC consultant gevonden met deze email. Vul alstublieft een ander e-mailadres in of kies 'Nee' voor de optie hierboven."
+      complete_the_registration_belo: Voltooi onderstaande registratie om uw enquête te maken. Als u uw zelfevaluatie niet kunt voltooien. U moet het één instelling invullen. De resultaten worden verzonden naar de geregistreerde e-mail na de voltooiing van de Zelf Beoordeling.
+      did_a_tlc_consultant_refer_you: Heeft een TLC consultant u verwijzen naar ons boek <b> Mastering Leadership </b>?
+      'false': Vals
+      i_agree_to_tlc: ik ga akkoord met TLC's
+      ja: Ja
+      need_help: Hulp Nodig??
+      nein: nee
+      'no': 'Nee'
+      privacy_and_policy_terms: Privacy en beleidsvoorwaarden
+      take_the_survey: De enquete invullen
+      thank_you_for_your_interest: Bedankt voor je interesse.
+      'yes': 'Ja'
+    thank_you_participant:
+      did_you_enjoy_your_survey_shar: Deel alstublieft ons onderzoek met uw vrienden.
+      discover_more_about_the_leader: Ontdek meer over de Leadership Circle
+      facebook: Facebook
+      for_taking_the_leadership_circ: Voor het nemen van de Leadership Circle Profile - Zelf Assessment. De rapporten met uw resultaten komen binnen enkele minuten in uw email.
+      linkedin: Linkedin
+      need_help: Hulp Nodig??
+      request_invitation: Uitnodiging Aanvragen
+      thank_you_practitionerfull_nam: Dank je, %{practitionerfull_name}
+      twitter: Twitter
+      would_you_like_to_take_the_bfu: Wilt u de <b> Volledige 360 Profiel </b> nemen en erachter komen waar u staat met uw medewerkers, collega's en bureaus? Klik op de onderstaande link en we krijgen u in contact met een coach die u door het proces begeleidt.
+      wwwleadershipcirclecom: www.leadershipcircle.com
+      requesting_invitation: 'Uitnodiging aanvragen ...'
+    welcome:
+      bget_your_copy_hereb: "<b>Krijg het boek hier</b>"
+      coming_back: Terugkomen?
+      login: Log in
+      need_help: Hulp Nodig??
+      sorry_but_your_answers_are_inc: Sorry, maar uw antwoorden zijn onjuist. Probeer het opnieuw.
+      submit_answers: Antwoord indienen
+      this_area_is_a_special_section: 'Dit gebied is een speciaal onderdeel voor onze lezers. We hopen dat u van ons boek <b> Mastering Leaderhip </b> genoten bent. Beantwoord de onderstaande vraag om de Leadership Circle te starten: Zelfbeoordeling. Het antwoord vindt u in het boek. Heb je het niet? '
+      welcome_to: Welkom bij
+  search:
+    index:
+      actions: Acties
+      client_name: Cliënt Name
+      clients: Cliënts
+      consultant_companies: Adviseur Bedrijven
+      created_at: Gemaakt bij
+      email: Email
+      evaluations: Evaluaties
+      industry: Industrie
+      name: Naam
+      number_of_participants: Aantal Deelnemers
+      number_of_projects: Aantal Projecten
+      order: Bestellen
+      order_date: Besteldatum
+      orders: Bestellingen
+      practitioners: Consultants
+      product_type: Product Type
+      projects: Projecten
+      report_name: Naam Rapporteren
+      results_limited_to_20_please_u: Resultaten beperkt tot 20, gebruik alstublieft nauwkeuriger zoeken
+      search_results_total_count: Zoekresultaten
+      selfsurveys: Zelfbeoordelings
+      status: Status
+    orders_search:
+      number_of_participants: Aantal Deelnemers
+      order: Bestellen
+      order_date: Besteldatum
+      orders: Bestellingen
+      product_type: Product Type
+      report_name: Naam Rapporteren
+      search_results_total_count: Zoekresultaten (%{total_count})
+      status: Status
+    partials:
+      index:
+        actions: Acties
+        client_name: Klantnaam
+        clients: Cliënts
+        completion_date: Einddatum
+        created_at: Gemaakt bij
+        email: Email
+        evaluations: Evaluaties
+        industry: Industrie
+        last_reminder: Laatste Herinnering
+        name: Naam
+        number_of_participants: Aantal Deelnemers
+        number_of_projects: Aantal Projecten
+        order: Bestellen
+        order_date: Besteldatum
+        orders: Bestellingen
+        practitioners: Consultants
+        product: Product
+        product_type: Product Type
+        project: Project
+        projects: Projecten
+        report_name: Naam Rapporteren
+        search_results: Zoekresultaten
+        selfsurveys: Zelfbeoordelings
+        status: Status
+      order:
+        not_found_record_invalid: Niet gevonden! Record ongeldig.
+      organization:
+        create_group_report: Groeprapport Maken
+        manage_client: Klant Beheren
+      practitioner:
+        preview_user: Voorbeeld Gebruiker
+    projects_search:
+      projects: Projecten
+      search_results_total_count: Zoekresultaten (%{total_count})
+    surveys_search:
+      actions: Acties
+      completed_on: Voltooid op
+      completion_date: Einddatum
+      delete: Verwijder
+      evaluating: Evalueren
+      evaluations: Evaluaties
+      language: Taal
+      last_logged_in: Laatst Ingelogd
+      more_actions: Meer Acties
+      move: Verplaats
+      not_started: Niet begonnen
+      of: van
+      project_name: Project Naam
+      questions: vragen
+      reset:  Opnieuw Zetten
+      role: Rol
+      search_results_total_count: Zoekresultaten (%{total_count})
+      self_surveys: Zelf Enquêtes
+      survey_taker_details: Survey Taker Bijzonderheden
+    users_search:
+      actions: Acties
+      created_at: Gemaakt op
+      email: Email
+      evaluations: Evaluaties
+      name: Naam
+      practitioners: Consultants
+      search_results_total_count: Zoekresultaten (%{total_count})
+      selfsurveys: Zelfbeoordelings
+  shared:
+    1_printed_copy_per_participant: 1 Gedrukt exemplaar per Deelnemer
+    actions: Acties
+    add: Toevoegen
+    add_participant: Eeelnemer Toevoegen
+    cancel: Annuleer
+    certified_consultants: Consultants
+    companies: Cliënts
+    complete_by: Compleet door
+    completed_at: Voltooid op
+    confirm: Weet je het zeker?
+    create_group_report: Groeprapport Maken
+    created_at: Gemaakt bij
+    date_created: Datum gecreeërd
+    delete: Verwijder
+    demographic: Demografisch
+    details: Bijzonderheden
+    edit: Bewerk
+    edit_evaluator: Bewerken Evaluator
+    email: Email
+    import_participants: Deelnemers Importeren
+    kind: Soort
+    licensor: Licensor
+    manage_evaluators: Manage Beoordelaars
+    menu:
+      dashboard: Dashboard
+      disabled: Uitgeschakeld
+      invited: Uitgenodigd
+      orders: Bestellingen
+      print_reports: Printrapporten
+      project_center: Project Center
+      survey_takers: Survey Takers
+      utilities: Hulpprogramma
+    more_actions: Meer Acties
+    name: Naam
+    new:
+      footer:
+        current_useremail: "(%{current_useremail})"
+        go_back_to_the_csr_project_cen: Ga terug naar de CSR Project Center
+        you_true_useremail_are_imperso: U (%{true_useremail}) de consultant uitzetten
+        your_password_will_expire: Uw wachtwoord verloopt over %{days_to_expire} dagen.
+        renew_your_password: Wijzig alstublieft uw wachtwoord.
+      header:
+        go_to_project_center: Ga naar Project Center
+        link_to_class_logo__link_do: "/"
+        selfassessment: Zelfbeoordeling
+        the_leadership_circle: 'The Leadership Circle:'
+        the_leadership_circle_profilet: The Leadership Circle Profile
+        the_leadership_circle_selfasse: 'The Leadership Circle: Zelfbeoordeling'
+      modal_search:
+        all: All
+        orders: Bestellingen
+        projects: Projecten
+        survey_takers: Survey Takers
+        users: Gebruikers
+      modal_wait:
+        importing_participants: Importing Participants
+        please_wait: Even geduld aub ...
+      nav:
+        my_clients: Mijn Klanten
+        my_orders: Mijn bestellingen
+        active_projects: Actieve Projecten
+        my_surveys: Mijn Enquêtes
+        people: Mensen
+        print_reports: Printrapporten
+        project_center: Project Center
+        utilities: Hulpprogramma
+      navigation_mobile:
+        logout: Uitloggen
+        my_account: Mijn Rekening
+      session_timeout_modal:
+        attention: Aandacht!
+        logout: Uitloggen
+        more_time: Meer Tijd
+        you_have_been_inactive_and_you: U bent inactief en u wordt automatisch uitgelogd in <b class="remaining-time">5:00</b> minuten. Wilt u meer tijd?
+      session_timeout_remodal_modal:
+        attention: Aandacht!
+        logout: Uitloggen
+        more_time: Meer tijd
+        you_have_been_inactive_and_you: U bent inactief en u wordt automatisch uitgelogd in <b class="remaining-time">5:00</b> minuten. Wilt u meer tijd?
+      user_navigation:
+        logout: Uitloggen
+        my_account: Mijn Rekening
+        stop_impersonating_current_use: Stop Nabootsing%{current_userfull_name}
+        take_selfassessment: Nemen Zelfbeoordeling
+    next_page: Volgende Pagina
+    not_set: Niet ingesteld
+    notify:
+      delete_warning: Kan beoordelaars niet verwijderen die de survey al hebben uitgevoerd.
+      success: Gegevens Opgeslagen.
+      update_warning: Kan beoordelaars niet wijzigen die de survey al hebben afgerond.
+      moved_with_success: Deelnemer werd succesvol verplaatst.
+    number: Nummer
+    of: of
+    old:
+      forbidden:
+        forbidden: Verboden
+    participants: Deelnemers
+    pdf_report: PDF-Rapport
+    people: Mensen
+    percent_complete: "% Complete"
+    please_remove_children: Kan niet verwijderen omdat er nog afhankelijke gegevens bestaan (organisaties, projecten). U moet eerst afhankelijk data verwijderen.
+    preview: Voorbeeld
+    preview_report: Voorbeeldverslag
+    previous: Voorgaand
+    printing_access: Afdrukken Toegang
+    projects: Projecten
+    questions: vragen
+    rename: Hernoemen
+    report: Rapport
+    report_for: Rapporteer voor
+    reset_password: Wachtwoord opnieuw instellen
+    reset_password_confirm: Weet u zeker dat u het wachtwoord wilt resetten?
+    role: Rol
+    save: Sparen
+    save_changes: Wijzigingen Opslaan
+    send_invitations: Uitnodigingen Versturen
+    shared_settings: Gedeelde Instellingen
+    shared_with: Gedeeld met
+    status: Status
+    system: Systeem
+    to: tot
+    total: Totaal
+    users: Gebruikers
+    were_found: zijn gevonden
+    when: Wanneer
+    who: Wie
+    retake: Herhalen
+  support:
+    array:
+      last_word_connector: ", en "
+      two_words_connector: " en "
+      words_connector: ", "
+  surveys:
+    another_show:
+      surveyproductname: "%{surveyproductname}"
+      tsurveysshowsurvey_for_surveye: "%{tsurveysshowsurvey_for} %{surveyevaluatorfull_name}"
+    answers:
+      are_you_sure_undone: Weet je het zeker? Controleer al uw antwoorden. Deze stap kan niet worden ongedaan gemaakt
+      back_to_surveys: Terug naar Surveys
+      finish_survey: Voltooi Enquêtes
+      next_section: Volgende Sectie
+      previous_section: Vorige Sectie
+      questions_completed: Vragen Voltooid
+    before_you_begin:
+      back_to_main_page: Terug naar de hoofdpagina
+      before_you_begin: Voordat je begint
+      continue_to_survey: Ga door naar Survey
+      need_help: Hulp Nodig??
+      tlc_would_like_to_gather_some_: TLC wil graag wat informatie verzamelen voor het interne onderzoeksproces. TLC deelt uw informatie niet. We zouden dankbaar zijn als u de vragen beantwoordt. Mocht u ervoor kiezen om niet te participeren, selecteer dan "Prefer not answer" en klik op de knop "Doorgaan naar overzicht".
+      we_need_a_little_more_informat: We hebben wat meer informatie over u nodig ...
+    demographic:
+      raw_data_only_hint: Deze velden zijn verplicht voor pdf-rapporten, maar niet voor gegevens alleen resultaten
+      before_you_begin: Voordat je begint
+      tlc_would_like_to_gather_some_: TLC wil graag wat informatie verzamelen voor intern onderzoeksdoeleinden. TLC deelt uw informatie niet. We zouden dankbaar zijn als u de vragen beantwoordt; U kunt echter altijd "Prevent niet antwoorden" selecteren.
+      we_need_a_little_more_informat: We hebben wat meer informatie over u nodig ...
+    done: Enquêtes zijn succesvol afgerond.
+    index:
+      active_surveys: Actieve Enquêtes
+      complete_active_surveys: Vul al uw actieve enquêtes hieronder in
+      content: Inhoud
+      my_active_surveys: Mijn actieve enquêtes
+      need_help: Hulp Nodig??
+      self_survey: Zelfonderzoek
+      survey_history: Onderzoeksgeschiedenis
+      take_survey: Neem Enquêtes
+    invite_evaluators:
+      add_evaluator: Voeg Evaluator
+      back_to_survey_list: Terug naar Survey List
+      evaluators_provide_feedback_on: Evaluatoren geven feedback over je leiderschapsvaardigheden en competenties door het onderzoek te voltooien.
+      invite_evaluators: Invite Evaluatoren
+      need_help: Hulp Nodig??
+      take_the_survey: Neem Enquêtes
+      you_have_enough_evaluators_to_: Je hebt genoeg beoordelaars om de enquête in te vullen. Hoewel, raden wij u aan om op zijn minst <span class = 'low-beoordelaars'> <b> 10 beoordelaars <b> </span>.
+      you_must_add_at_least_span_cla: You must add at least <span class='minimum-evaluators'>%{current_userinvitee_surveys} more evaluators</span> om de enquête in te vullen.
+    not_enough_invited_evaluators: Deelnemer kan de beoordelaars uit te nodigen. Niet genoeg beoordelaars om de enquête in te vullen.
+    not_valid: Sorry, maar dit onderzoek is niet meer beschikbaar.
+    partials:
+      modals:
+        need_help:
+          description: Selecteer alstublieft een enquete uit de onderstaande lijst waarvoor u hulp nodig hebt. Onze consultant zal zo spoedig mogelijk contact met u opnemen.
+          main_support: Hoofdondersteuning
+      continue_survey:
+        '100': 100%
+        culture_survey_for: Cultuuronderzoek voor
+        current_userfirst_name_current: "%{current_userfirst_name} %{current_userlast_name}"
+        review_your_answers: Bekijk uw Antwoorden
+        self_survey_for: Zelf Enquête voor
+        thanks_current_userfirst_name: Bedankt %{current_userfirst_name},
+        you_are_currently_taking_secti: U bent momenteel aan het nemen van een sectie %{paramssection_page} van %{surveysectionscount}
+        you_have_answered_all_the_ques: U heeft alle vragen voor sectie beantwoord %{paramssection_page}.
+      evaluator_form:
+        cancel: Annuleer
+        update_evaluator: Bijwerken Evaluator
+      evaluators:
+        edit_evaluator: Bewerken Evaluator
+        evaluator_details: Evaluator Bijzonderheden
+        language: Taal
+        relationship: Verwantschap
+      modal:
+        add_evaluator: Voeg Evaluator
+        always: Altijd
+        cancel: Annuleer
+        edit_evaluator: Bewerken Evaluator
+        na: N/A
+        never: Nooit
+        often: Vaak
+        once_added_an_email_will_be_im: Nadat een e-mail is toegevoegd, wordt de e-mail onmiddellijk verzonden naar de beoordelaar die hen uitnodigt deel te nemen
+        previous_question: Vorige Vraag
+        review_your_answers: Bekijk uw Antwoorden
+        seldom: Zelden
+        self_survey_for_bthe_most_effe: Zelf Enquête voor <b>De meest effectieve leider die ik ken</b>
+        sometimes: Soms
+      my_active_surveys:
+        complete_by: Compleet door
+        current_userinvitee_completed_: "%{current_userinvitee_completed_} van %{current_userinvitee_surveyssel} Evaluaties voltooid"
+        evaluator_setup: Configureer Evaluator
+        my_active_surveys: Mijn actieve Enquêtes
+        please_complete_all_of_your_ac: Vul al uw actieve enquêtes hieronder in.
+        self_survey: Zelf Enquête
+        take_the_survey: Neem Enquête
+        self_evaluations_left:
+          one: "Jij hebt <b>one Zelfevaluatie</b> vervolledigen:"
+          other: "Jij hebt <b>%{count} Zelfevaluaties</b> vervolledigen:"
+        evaluations_self:
+          one: "Jij hebt <b>one evaluation</b> vervolledigen:"
+          other: "Jij hebt <b>%{count} evaluations</b> vervolledigen:"
+        you_must_invite_at_least_self_: U moet tenminste uitnodigen %{self_surveyprojectminimum_eval} Evaluatoren om de enquête te nemen.
+      new_or_pending:
+        continue_the_survey: Ga door met het Onderzoek
+        current_sectionquestionscount_: "%{current_sectionquestionscount} vragen"
+        go_back_to_survey_list: Ga terug naar de enquete lijst
+        need_help: Hulp Nodig??
+        of: van
+        previous_section: Vorige Sectie
+        restart_previous_survey: Start het vorige onderzoek opnieuw op
+        start_the_survey: Start het Enquêtes
+        you_have_answered: Je hebt beantwoord
+      no_evaluators:
+        add_evaluator: Voeg Evaluator
+        why_do_i_have_to_invite_evalua: " "
+        you_currently_do_not_have_any_: U heeft momenteel geen beoordelaars.
+        you_need_to_have_at_least_span: Je moet minstens hebben <span class='minimum-evaluators'>%{minimum_evals} evaluators</span> om de enquête te nemen.<br>klik op onderstaande knop om een evaluator toe te voegen aan uw lijst.
+      question:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: Altijd
+        culture_survey_for: Cultuuronderzoek voor
+        na: N/A
+        never: Nooit
+        of: van
+        often: Vaak
+        perc_progress: "%{perc_progress}%"
+        previous_question: Vorige Vraag
+        providing_feedback_for: Terugkoppeling voor
+        question: Vraag
+        seldom: Zelden
+        self_survey_for: Zelf Enquête voor
+        sometimes: Soms
+        very_strongly_agree: Zeer sterk eens
+        strongly_agree: Sterk mee eens
+        agree: Mee eens
+        slightly_agree: Iets akkoord
+        slightly_disagree: Enigszins Oneens
+        disagree: Oneens
+        strongly_disagree: Sterk Oneens
+        very_strongly_disagree: Zeer Sterk Oneens
+        you_are_currently_taking_secti: U bent momenteel aan het nemen van een sectie %{sections_page} van %{surveysectionscount}
+        "×": "×"
+      review:
+        finish_your_survey: Maak je Enquêtes af
+        need_help: Hulp Nodig??
+        next_section: Volgende Sectie
+        previous_section: Vorige Sectie
+        review_continue: Herzien en doorgaan
+        review_your_answers_to_the_lea: Bekijk uw antwoorden op de %{product_name}. Verander elk antwoord door erop te klikken.
+        section_sectionscurrent_page_o: Sectie %{sectionscurrent_page} van %{sectionstotal_pages}
+        your_survey_is_almost_complete: Uw onderzoek is bijna compleet. Herzie alsjeblieft je antwoorden.
+        your_survey_is_not_yet_complet: Uw onderzoek is nog niet compleet. Jij hebt %{sectionstotal_pages_sectionscu} meer secties om te voltooien.
+      review_form:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: Altijd
+        cancel: Annuleer
+        na: N/A
+        never: Nooit
+        often: Vaak
+        seldom: Zelden
+        sometimes: Soms
+        update: Bijwerken
+      sections:
+        survey_taker_evaluator_section_1_description:
+          leadership_profile: Leadership Profile
+          providing_feedback_section_sec: Het verstrekken van feedback sectie %{sectionscurrent_page} van %{sectionstotal_pages}
+          you_will_be_able_to_review_and: U kunt uw antwoorden na het einde van deze sectie beoordelen en wijzigen.
+        survey_taker_section_1_description:
+          culture_survey: Cultuuronderzoek
+          leadership_profile: Leadership Profile
+          section_sectionscurrent_page_o: Sectie %{sectionscurrent_page} van %{sectionstotal_pages}
+          you_will_be_able_to_review_and: U kunt uw antwoorden na het einde van deze sectie beoordelen en wijzigen.
+        survey_taker_section_2_description:
+          at_the_end_of_this_section_you: Aan het einde van dit gedeelte kunt u uw antwoorden beoordelen en wijzigen.
+          most_effective_leader: Meest effectieve leider
+          section_sectionscurrent_page_o: Sectie %{sectionscurrent_page} van %{sectionstotal_pages}
+      survey_history:
+        completed_on: Voltooid op
+        evaluator_setup: Configureer Evaluator
+        my_survey_history: Mijn Onderzoeksgeschiedenis
+        self_survey: Zelf Enquête
+        this_is_the_list_of_all_the_su: Dit is de lijst van alle enquêtes die u heeft deelgenomen.
+        self_evaluations_completed:
+          one: "Je hebt voltooid <b>een Zelfevaluatie</b>:"
+          other: "Je hebt voltooid <b>%{count} Zelfevaluaties</b>:"
+        evaluations_completed:
+          one: "Je hebt voltooid <b>een Evaluatie</b>:"
+          other: "Je hebt voltooid <b>%{count} Evaluaties</b>:"
+      thanks:
+        all_your_answers_have_been_sub: Al uw antwoorden zijn ingediend en opgeslagen. Bedankt voor je tijd.
+        go_back_to_survey_list: Ga terug naar de enquete lijst
+        log_out: Uitloggen
+        thanks_current_userfirst_name_: Bedankt, %{current_userfirst_name}, voor het nemen van dit Survey.
+    process_error: Er is een fout opgetreden bij het onderzoeksproces of de verbinding.
+    questions:
+      put_your_answer_here: Plaats hier uw antwoord
+    questions_completed: Vragen voltooid
+    sa_request: Bedankt, we zullen contact hebben.
+    sections:
+      current_leadership_culture: In dit gedeelte zal u evalueren <b>%{participant}</b>. Uw taak is om het leiderschapshandelen te beschrijven die meestal worden beoefend, aangemoedigd of toegestaan door leiders. Er kunnen veel factoren zijn die uw algemene ervaring van leiderschap in uw organisatie of team beïnvloeden. Bijvoorbeeld, twee verschillende managers hebben contrasterende leiderschapstijlen, en beide hebben invloed op de leiderschapscultuur van deze organisatie of team. Beschrijf het gedrag dat de meeste invloed op je ervaring heeft.
+      desired_leadership_culture: Beantwoord in deze sectie de vragen op basis van hoe u de leiderschapskultuur van de <b>%{participant} </b> wenst of wenst. Beantwoord elke vraag alsof de leiderschapskultuur ideaal was - een waarmee het in de huidige en toekomstige omgevingen zou kunnen bloeien.
+      ideal_to_ideal: ''
+      leadership_profile: Dit gedeelte is bedoeld om een Leiderschapsprofiel voor <b>%{participant} op te bouwen </b>. Werk snel door de vragen met behulp van je eerste indruk. Gebruik de optie N / A als u het antwoord op de vraag niet weet of de vraag niet van toepassing is.
+      manager_profile: Deze sectie is bedoeld om een manager profiel te bouwen voor <b>%{participant} </b>. Werk snel door de vragen met behulp van je eerste indruk. Gebruik de optie N / A als u het antwoord op de vraag niet weet of de vraag niet van toepassing is.
+      most_effective_leader: |-
+        In deze sectie wordt u niet meer geëvalueerd <b>%{participant}</b>.
+        In plaats daarvan, identificeren wie de meest effectieve leider is die u ooit (Direct van indirecte) hebt gewerkt. <b>Beantwoord deze vragen met dien PERSOON in gedachten.</b>
+        Aan het einde van dit gedeelte kunt u uw antwoorden beoordelen en wijzigen.
+      write_in_feedback: Geef in deze sectie aanvullende schriftelijke feedback aan<b>%{participant}</b>. Deelnemers vinden altijd de inlichtingen opmerkingen die vooral nuttig zijn bij het begrijpen van hun resultaten. Uw feedback kan gebieden omvatten waaraan dit onderzoek niet betrekking heeft, of voorbeelden die illustreren waarom u geëvalueerd bent<b>%{participant}</b> Zoals jij deed, of iets anders dat belangrijk is <b>%{participant}</b> weten.
+    self:
+      end_section: Aan het einde van dit gedeelte kunt u uw antwoorden beoordelen en wijzigen
+      identify_effective_leader: In plaats daarvan, identificeren welke de meest effectieve leider je ooit hebt gewerkt (Direct van indirecte)
+      most_effective_leader: Meest Effectieve Leider
+      no_longer_be_evaluating: In deze sectie wordt u niet meer geëvalueerd
+      surveyproductname: "%{surveyproductname}"
+      that_person_in_mind: Beantwoord deze vragen met die persoon in gedachten
+      tsurveysselfno_longer_be_evalu: "%{tsurveysselfno_longer_be_evalu} %{surveyevaluatorfull_name}."
+    show:
+      survey_for: Onderzoek naar
+    survey:
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_at_format_lon}"
+    survey_progress:
+      current_sectionanswers_forsurv: "%{current_sectionanswers_forsurv}/%{current_sectionquestionscount}"
+      current_sectionpercentage_comp: "%{current_sectionpercentage_comp}%{tsharedpercent_complete}"
+  system_history:
+    announcement_send_at_changed: Herinnering verzonden datum veranderd in %{date}
+    change_history: Verander Geschiedenis
+    comment_questions_changed: Commentaar vragen veranderd in '%{value}'
+    completion_date_changed: De datum van voltooiing is veranderd in %{date}
+    create_participant: Gecreëerde deelnemer %{participant}
+    delete_participant: Verwijderde deelnemer %{participant}
+    demographics_policy_changed: Rapport demografie veranderd in '%{value}'
+    description: Hieronder vindt u de wijzigingen in deze bestelling sinds het is gemaakt op %{created_date}
+    pdf_copies_only_changed: Alleen PDF-exemplaren geselecteerd
+    printed_copies_changed: PDF en afgedrukte kopieën geselecteerd
+    project_created: Project gemaakt
+    report_date_changed: Rapportdatum is gewijzigd in %{date}
+    retake_added: Herhalen voor %{participant} Toegevoegd
+    retake_removed: Herhalen voor %{participant} Verwijderd
+    order_deleted: Bestelnummer verwijderd %{value}
+  templates:
+    form:
+      form:
+        if_you_have_already_sent_the_m: Als u het bericht alstublieft naar de deelnemers hebt verzonden, moet u het bijgewerkt voor het ontvangen van het bijgewerkte bericht.
+        modifying_this_message_will_ch: Als u dit bericht wijzigt, wordt de deelnemers welkom-e-mail voor alle deelnemers met een Engelse enquête taal veranderd.
+        please_do_not_modify_any_text_: Wijzig alstublieft geen tekst binnen (* || *) hieronder. Deze zijn de sleutel die met de deelnemersinformatie wordt vervangen wanneer het bericht wordt verzonden.
+        reset_english_message: Opnieuw Zetten Bericht
+        return_to_list: Ga terug naar lijst
+        update_english_message: Nederlands Updatebericht
+    participant_invitation_msg:
+      message: Bericht
+      reset_english_message: Opnieuw Zetten Berich
+      save_templatelanguagename_mess: Sparen %{templatelanguagename} Bericht
+      subject: Onderwerpen
+  time:
+    am: am
+    formats:
+      default: "%a, %d %b %Y %I:%M:%S %p %Z"
+      long: "%B %d, %Y %I:%M %p"
+      short: "%d %b %I:%M %p"
+    pm: pm
+  users:
+    avatar_upload:
+      error: We hebben een fout gehad, probeer het opnieuw.
+      success: Afbeelding is succesvol geüpload.
+    demographic:
+      demographics: Demografie
+    demographic_form:
+      company_details: Bedrijf Bijzonderheden
+      continue_to_survey: Ga door naar Survey
+      need_help: Hulp Nodig??
+      personal_information: Persoonlijke Informatie
+    edit:
+      add_address: Voeg Adres
+      add_phone: Voeg telefoonnummer toe
+      address_type: Adres type
+      addresses: Adressen
+      age: 'Leeftijd:'
+      back_to_settings: Terug naar Instellingen
+      cancel: Annuleer
+      change_password: Verander Wachtwoord
+      change_profile_picture: Verander profile image
+      city: Stad
+      company_details: Bedrijf Bijzonderheden
+      company_name: Bedrijfsnaam
+      company_revenue: Bedrijfsopbrengst
+      confirm_password: 'Bevestig Wachtwoord:'
+      country_address: Land
+      current_password: Huidig Wachtwoord
+      date_of_birth: Geboortedatum
+      education: Onderwijs
+      email: Email
+      ethnic_group: Etnische Groep
+      fax: Fax
+      first_name: Voornaam
+      gender: Geslacht
+      home: Huis
+      industry: Industrie
+      language: Taal
+      last_name: Achternaam
+      management_level: Bedrijfsbehee Niveau
+      mobile: Mobile
+      new_password: Nieuw Wachtwoord
+      number_of_direct_reports: Aantal Medewerkers
+      organization_level: Organisatie Niveau
+      password:   Wachtwoord
+      password_label: 'Wachtwoord:'
+      personal_information: Persoonlijke Informatie
+      phone_numbers: Telefoonnummers
+      please_enter_address_name: Vul alstublieft de adresnaam in
+      please_enter_email: Vul alstublieft email in
+      please_enter_new_confirmation_: Vul alstublieft een nieuw bevestigingswachtwoord in
+      please_enter_new_password: Vul alstublieft nieuw wachtwoord in
+      please_enter_phone_number: Vul alstublieft telefoonnummer in
+      please_enter_valid_confirmatio: Voer alstublieft een geldig bevestigingswachtwoord in
+      please_enter_valid_email: Voer een geldig emailadres in
+      profession: Beroep
+      professional_information: Professionele Informatie
+      profile_picture: Profiel foto
+      reenter_new_password: Opnieuw in te voeren nieuwe wachtwoord
+      remove_address: Verwijder dit adres
+      remove_phone: Verwijder deze telefoon
+      remove_profile_picture: Verwijder profiel foto
+      residing_country: Woonland
+      retype_password: Herhaal uw nieuwe wachtwoord ...
+      save_changes: Wijzigingen opslaan
+      size_of_organization: Grootte van de organisatie
+      accounting_id: Accounting ID
+      state_province: Staat / Provincie
+      street_address: Adres
+      use_the_form_below_to_change_t: Gebruik het onderstaande formulier om het wachtwoord te wijzigen in uw TLC account.
+      user_roles: Gebruiker Rols
+      users_placeholder: Ruimte voor gebruikers
+      work: Werk
+      working_address: Werkadres
+      zip_code_address: Postcode
+      password_must_have_at_least: "Uw wachtwoord moet hebben:"
+      9_characters: 9 tekens
+      1_lowercase_letter: 1 kleine letter
+      1_uppercase_letter: 1 hoofdletter
+      1_number: 1 nummer
+      1_special_character: 1 speciaal teken
+      passwords_dont_match: Wachtwoorden komen niet overeen
+      good_so_far: Goed tot nu toe
+      match: Overeen
+      good: Goed
+      too_week: Te zwak
+    modify:
+      success: Gebruiker is succesvol bijgewerkt.
+    take_self_assessment:
+      error: Er is iets fout gegaan!
+    update_demographics:
+      error: Er gaat iets mis met de demografische gegevens. Probeer het opnieuw.
+      success: Demografische gegevens zijn succesvol bijgewerkt.
+    update_password:
+      success: Wachtwoord is succesvol bijgewerkt.
+  utilities:
+    index:
+      all: Alle
+      billings: Factureren
+      'false': 'Nee'
+      filter: Filter
+      filter_by_in_voiced: 'Filter door gefactureerd:'
+      filter_by_order_status: 'Filter op Order Status:'
+      filter_by_region: 'Filter per regio:'
+      finished: Geëindigd
+      'no': 'Nee'
+      ordered: Besteld
+      orders: Bestellingen
+      orders_placeholder: Typ bestelnaam of bestelnummer...
+      projects: Projecten
+      projects_placeholder: Typ projectnaam...
+      search: Zoeken
+      survey_takers: Enquêtes Neemen
+      surveys_placeholder: Typ gebruikersnaam of e-mailadres...
+      users: Gebruikers
+      users_placeholder: Typ gebruikersnaam of e-mailadres...
+      'yes': 'Ja'
+    new_sa:
+      generate: Genereer
+      select_score_for_answers: 'Selecteer score voor antwoorden:'
+      users_email: 'E-mail van de gebruiker:'
+    partials:
+      billing_table:
+        invoiced: Gefactureerd
+      search_orders:
+        found_order: Gevonden Bestel
+        no_order_is_found: Geen bestelling is gevonden!
+      search_orders_details:
+        ordercoach_report_qty: "%{ordercoach_report_qty}"
+        ordercoach_report_qty_tordersd: "%{ordercoach_report_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_graph_qty: "%{orderparticipant_graph_qty}"
+        orderparticipant_graph_qty_tor: "%{orderparticipant_graph_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_report_qty: "%{orderparticipant_report_qty}"
+        orderparticipant_report_qty_to: "%{orderparticipant_report_qty} %{tordersdetailscopies_per_parti}"
+        pdf: PDF
+      search_projects:
+        no_projects_are_found: Er zijn geen projecten gevonden!
+      search_surveys:
+        actions: Acties
+        completed_on: Voltooid op
+        completion_date: Einddatum
+        delete: Verwijder
+        evaluating: Evalueren
+        evaluations: Evaluaties
+        found_survey_taker: Gevonden Enquêtes Taker
+        language: Taal
+        last_logged_in: Laatst ingelogd
+        more_actions: Meer Acties
+        move: Verplaats
+        no_survey_is_found: Geen onderzoek is gevonden!
+        not_started: Niet begonnen
+        of: van
+        project_name: Project Naam
+        questions: vragen
+        reset: Reset
+        role: Rol
+        self_surveys: Zelf Enquêtes
+        survey_taker_details: Enquêtes Taker Bijzonderheden
+      search_users:
+        back: Back
+        email: 'Email:'
+        found_user: Gevonden gebruiker
+        impersonate: Verpersoonlijken
+        name: 'Naam:'
+        no_user_is_found: Geen gebruiker is gevonden!
+      survey:
+        reset: Reset
+    show_order:
+      billing_contact: Facturatie Contact
+      binder_contact: Binder Contact
+      coaching_report: 'Coach rapport:'
+      comment_questions: 'Reactie Vragen:'
+      company: Bedrijf
+      demographics: 'Demografie:'
+      included_participants: 'Inbegrepen Deelnemers:'
+      invoice_order: Factuurorder
+      invoiced: 'Gefactureerd:'
+      list_of_participants: Lijst van Deelnemers
+      mark_order_as_not_invoiced: Merk Bestelling als niet gefactureerd
+      order_details: Bestel Bijzonderheden
+      order_number: 'Bestellingsnummer:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty} copies"
+      orderparticipant_graph_qty_cop: "%{orderparticipant_graph_qty} Kopieën per Deelnemer"
+      orderparticipant_report_qty_co: "%{orderparticipant_report_qty} Kopieën per Deelnemer"
+      participant_graph: 'Deelnemer Grafiek:'
+      participant_report: 'Deelnemer Rapport:'
+      pdf: PDF
+      planned_completion_date: 'Geplande Afrondingsdatum:'
+      processing_date: 'Verwerking Datum:'
+      product_type: 'Product Type:'
+      profile_interpretation_manual: 'Profiel Interpretatie Handleiding:'
+      report_contact: Rapport Contact
+      report_name: 'Naam Rapporteren:'
+      report_type: 'Rapport Type:'
+    surveys:
+      created_at: Gemaakt bij
+      evaluator: Evaluator
+      id: "#ID"
+      new_self_assessment: Nieuwe Zelf Beoordeling
+      regular: Regelmatig
+      self_assessment: Zelfbeoordeling
+      status: Status
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: Laatste &raquo;
+      next: Volgende &rsaquo;
+      previous: "&lsaquo; Vorige"
+      truncate: "&hellip;"
+  graph_preview:
+    circle_within_circle: "Cirkel In Een Cirkel:"
+    inner_circle_profiles: "De binnenste cirkel profielt een percentieloverzicht voor alle afmetingen in dat gedeelte van de buitenste cirkel. "
+    percentile_scores: "Persentale Scores:"
+    high: Hoog
+    scores_from: "Scores van het 66e tot het 100ste percentiel zijn sterke scores."
+    medium: "Medium:"
+    score_between: "Scores tussen het 66e en het 33ste percentiel tonen een mix van kracht en verbeteringsgebieden."
+    low: "Laag:"
+    score_below: "Scores onder de 33ste percentiel zijn lage scores."
+    identity: "Identiteit"
+    others_assessment: "Anderen 'Beoordeling"
+    self_assessment: "Zelfbeoordeling"
+    print_graph: "Grafiek Afdrukken"
+    culture_survey: "Culture Survey&trade;"
+    displayed_as_percentile: "Alle scores worden weergegeven als percentiel scores die uw scores vergelijken met onze normbasis. "
+    high_scores_are_beyond: "Hoge scores liggen buiten het 67ste percentiel."
+    low_scores_are_below: "Lage scores liggen onder de 33ste percentiel. De lage scores liggen onder het 33ste percentiel."
+    copy_right: "© The Leadership Circle® | Alle Rechten Voorbehouden"
+    desired_culture: "Gewenste Cultuur"
+    actual_culture: "Werkelijke Cultuur"
+    manager_edition: "Manager Edition"
+    protecting: 'Bescherming'
+    evaluators: 'Evaluators'
+    self: 'Zelf'
+    being: Wezen
+    arrogance: 'Arrogantie'
+    critical: 'Kritisch'
+    distance: 'Afstand'
+    complying: 'Overeenstemming'
+    passive: 'Passieve'
+    belonging: 'Behoren'
+    pleasing: 'Aangenaam'
+    conservative: 'Conservatief'
+    relating: 'Betrekking'
+    caring_connection: 'Zorgzame Verbinding'
+    fosters_team_play: 'Fosters Teamspel'
+    collaborator: 'Medewerker'
+    mentoring_developing: 'Begeleiding Ontwikkelen'
+    interpersonal_intelligence: 'Interpersoonlijke Intelligentie'
+    self_awareness: 'Zelfbewustzijn'
+    selfless_leader: 'Onbaatzuchtige Leider'
+    balance: 'Balans'
+    composure: 'Kalmte'
+    personal_learner: 'Persoonlijke Leerder'
+    authenticity: 'Authenticiteit'
+    integrity: 'Integriteit'
+    courageous_authenticity: 'Moedige Echtheid'
+    systems_awareness: 'Systeembewustzijn'
+    community_concern: 'Communautaire Bezorgdheid'
+    sustainable_productivity: 'Duurzame Productiviteit'
+    systems_thinker: 'System Denker'
+    achieving: 'Bereiken'
+    strategic_focus: 'Strategische Focus'
+    purposeful_visionary: 'Doelgerichte Visionaire'
+    achieves_results: 'Bereikt Resultaten'
+    decisiveness: 'Beslistheid'
+    controlling: 'Controleert'
+    perfect: 'Perfecte'
+    driven: 'Gedreven'
+    ambition: 'Ambitie'
+    autocratic: 'Autocratisch'
+    general_abilities: 'Algemene Vaardigheden'
+    leadership_potential_utilization: 'Leiderschap Potentiële Benutting'
+    reactive_creative_scale: 'Reactieve-Creatieve Schaal'
+    leadership_effectiveness: 'Leiderschap Effectiviteit'
+    relationship_task_balance: 'Relatie-Taakbalans'
+    creative: 'creatief'
+    relationship: 'relatie'
+    task: 'taak'
+    reactive: 'Reactief'
+    graph_low: "Laag"
+    graph_medium: "Medium"
+    graph_high: "Hoog"
+    graph_identity: "Identiteit"

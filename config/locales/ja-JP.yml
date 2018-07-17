@@ -1,0 +1,2709 @@
+---
+ja-JP:
+  activerecord:
+    attributes:
+      project_address:
+        name: 姓
+        email: Eメール
+        phone_no: 電話番号
+        address_line1: 1行目の住所ライン
+        address_line2: 2番目の住所ライン
+        address_line3: 3番目のアドレス行
+        country_code: 国コード
+        city: シティ
+        state_code: 州コード
+        postal_code: 郵便番号
+        created_at: 作成された午
+        updated_at: 更新しました
+      project:
+        name: 姓
+        organization: クライアント
+        product: 製品
+        status: 状態
+        created_at: 作成された午
+        updated_at: 更新しました
+        completion_date: 完了日
+        report_date: 報告日
+        printed_interpretation_manual: 印刷解釈マニュアル
+        pdf_interpretation_manual: PDF解釈マニュアル
+        comment_questions: コメントの質問
+        evaluators_policy: 評価者ポリシー
+        participant_report_qty: 参加者レポート数
+        participant_report_pdf: 参加者レポートPDF
+        participant_graph_qty: 参加者数量
+        participant_graph_pdf: 参加者グラフPDF
+        coach_report_qty: コーチレポート数量
+        coach_report_pdf: コーチレポートPDF
+        demographics_policy: ユーザー属性ポリシー
+        survey_focus: 調査の焦点
+        survey_focus_description: 調査フォーカスの説明
+        group_report_pdf: グループレポートPDF
+        user: クライアント代表
+        billing_address: 請求先住所
+        shipping_address: お届け先の住所
+        binder_address: バインダーアドレス
+        deliverable_option: 提供可能なオプション
+        consultant: コンサルタント
+        minimum_evaluations_per_participant: 参加者あたりの最小評価
+        certified_consultant: 認定コンサルタント
+        promo_code: プロモーションコード
+        need_help_email: ヘルプメールが必要 
+    errors:
+      messages:
+        passwords:
+          cannot_contain: 氏名やメールアドレスの全部または一部を含むことはできません。
+          does_not_match_security_requirements: セキュリティー要件を満たしていません。パスワードには、大文字（A~Z）、小文字（a~z）、数字（0～9）のそれぞれから最低1文字ずつ使用してください。
+          must_be_at_least: パスワードは英数字8文字以上で、少なくとも1つの数字
+        record_invalid: 確認出来ませんでした:%{errors}
+        restrict_dependent_destroy:
+          has_many: 従属レコード%{record}が存在するため削除できません
+          has_one: 従属レコード%{record}が存在するため削除できません
+        should_be_greater_or_equal: アンケート回答入力完了日以降でなければなりません
+  addresses:
+    region:
+      regionnametitleize_regionabbre: "%{regionnametitleize} (%{regionabbreviation})"
+  application:
+    change_password_required: 初めてログインする際は、パスワードを<br>設定する必要があります。# added line break at JP request 
+    user_not_authorized:
+      forbidden: アクセスできません。
+  companies:
+    edit:
+      edit_company: クライアント情報を編集
+      manage_users: ユーザーを管理
+    index:
+      companiestotal_count: "(%{companiestotal_count})"
+      company_name: クライアント名
+      create_company: クライアントを作成
+      industry: 業界
+      manage_company: クライアントを管理
+      my_clients: 私のクライアント
+      number_of_projects: プロジェクト件数
+      sort_by_company_name: クライアント名順に並べ替え
+      sort_by_created_date: 作成日順に並べ替え
+      sort_by_industry: 業界順に並べ替え
+      sort_by_number_of_projects: プロジェクト件数順に並べ替え
+      start_creating_companies_now: クライアント作成を始めてください
+      you_have_no_companies_to_manage: 該当するクライアントが存在しません
+    new:
+      consulting_company: コンサルティング会社
+      create_company: クライアントを作成
+      new_company: 新規クライアント
+    partials:
+      delete_company:
+        cname_corganization_typename: "%{cname} (%{corganization_typename})"
+        existing_projects_top_10: '既存プロジェクト（上位10件）:'
+        please_notice_that_it_will_als: 以下に紐付いている組織をすべて削除します。
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} この会社"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_comp: "%{thomeindexyes_delete_this} 会社"
+    show:
+      create_group_report: グループレポートを作成
+      create_new_project: 新規プロジェクトを作成
+      delete_company: クライアントを削除
+      tsharedmore_actions: "%{tsharedmore_actions}"
+      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant} %{tsharedcertified_consultants}"
+  concerns:
+    role_management:
+      create_user_role:
+        success: 成功
+      update_user_role:
+        success: 成功
+  consultants:
+    saved_successfully: コンサルタントを追加しました。
+    title: コンサルタント
+  date:
+    abbr_day_names:
+    - 日
+    - 月
+    - 火
+    - 水
+    - 木
+    - 金
+    - 土
+    abbr_month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    day_names:
+    - 日曜日
+    - 月曜日
+    - 火曜日
+    - 水曜日
+    - 木曜日
+    - 金曜日
+    - 土曜日
+    formats:
+      default: "%m-%d-%Y"
+      long: "%Y年 %B月 %d日"
+      short: "%b %d"
+    month_names:
+    -
+    - January 
+    - February 
+    - March 
+    - April 
+    - May 
+    - June
+    - July
+    - August 
+    - September
+    - October 
+    - November
+    - December
+    order:
+    - :月
+    - :日
+    - :年
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 約1時間
+        other: 約%{count}時間
+      about_x_months:
+        one: 約1ヵ月
+        other: 約%{count}ヵ月
+      about_x_years:
+        one: 約1年
+        other: 約%{count}年
+      almost_x_years:
+        one: ほぼ1年
+        other: ほぼ%{count}年
+      half_a_minute: 30秒
+      less_than_x_minutes:
+        one: 1分未満
+        other: "%{count}分未満"
+      less_than_x_seconds:
+        one: 1秒未満
+        other: "%{count}秒未満"
+      over_x_years:
+        one: 1年以上
+        other: "%{count}年以上"
+      x_days:
+        one: 1日
+        other: "%{count}日"
+      x_minutes:
+        one: 1分
+        other: "%{count}分"
+      x_months:
+        one: 1ヵ月
+        other: "%{count}ヵ月"
+      x_seconds:
+        one: 1秒
+        other: "%{count}秒"
+    prompts:
+      day: 日
+      hour: 時
+      minute: 分
+      month: 月
+      second: 秒
+      year: 年
+  devise:
+    confirmations:
+      confirmed: メールアドレスを確認しました。
+      new:
+        resend_confirmation_instructio: 確認方法を再送する
+      send_instructions: 数分以内に、メールアドレス確認方法についてのメールが送られます。
+      send_paranoid_instructions: あなたのメールアドレスが弊社データベースに保存されている場合は、数分以内にメールアドレス確認方法についてのメールが送られます。
+    failure:
+      user:
+        already_authenticated: あなたは既にサインインしています。
+        inactive: あなたのアカウントはまだ有効化されていません。
+        invalid: "%{authentication_keys} またはパスワードが無効です。"
+        last_attempt: アカウントがロックされる前に、もう一度だけログインを試みることが出来ます。
+        locked: あなたのアカウントがロックされました。
+        not_found_in_database: "%{authentication_keys}またはパスワードが無効です。"
+        timeout: あなたのセッションは時間切れとなりました。再開するには再度サインインしてください。
+        unauthenticated: 続けるにはログインが必要です。
+        unconfirmed: 続けるには、メールアドレスの確認が必要です。
+    invalid_captcha: キャプチャ認証の入力が有効ではありません。
+    mailer:
+      confirmation_instructions:
+        confirm_my_account: マイ・アカウントを確認する
+        user_subject: 確認方法
+        welcome_email: "%{email}様、ようこそ！"
+        you_can_confirm_your_account_e: 下記のリンクから、アカウントに登録されているメールアドレスを確認できます。
+      reset_password_instructions:
+        change_my_password: パスワードを変更
+        hello_resourceemail: "%{resourceemail}様、こんにちは！"
+        if_you_didnt_request_this_plea: パスワード変更の依頼を行っていない場合は、このメールは破棄してください。
+        someone_has_requested_a_link_t: パスワード変更依頼を受け付けました。変更手続きは下記リンクから行えます。
+        user_subject: パスワードの変更方法
+        your_password_wont_change_unti: 上記リンクから新しいパスワードを作成しない限り、パスワードが変更されることはありません。
+      unlock_instructions:
+        click_the_link_below_to_unlock: 'アカウントのロックを解除するには、下記のリンクをクリックしてください。:'
+        hello_resourceemail: "%{resourceemail}様、こんにちは！"
+        unlock_my_account: アカウントのロックを解除する
+        user_subject: アカウントのロックを解除する方法
+        your_account_has_been_locked_d: 規定回数以上ログインに失敗したため、アカウントがロックされました。
+    omniauth_callbacks:
+      failure: "%{reason}という理由で、 %{kind}からあなたを認証できません。"
+      success: "%{kind}アカウントからの認証に成功しました。"
+    password_expired:
+      change_required: パスワードが失効しています。新しいパスワードを設定してください。
+      updated: 新しいパスワードを保存しました。
+    passwords:
+      edit:
+        change_my_password: パスワードを変更する
+        change_your_password: パスワードを変更してください
+        dont_have_an_account: アカウントをお持ちではありませんか？
+        return_to_the_leadership_circl: アンケートに戻る
+        sign_up: 登録
+        weak: 低い
+        good: 良い
+        medium: 中程度
+        strong: 高い
+        very_strong: 非常に高い
+        password_should_be_at_least: 低い（パスワードは少なくとも8文字以上で設定してください。）
+        lower_and_uppercase_letters: 大文字と小文字
+        numbers: 数字
+        symbols: 記号
+        password_should_include: パスワードに含める必要があります。
+        and: そして
+        confirm_no_success: パスワードが一致していません。
+        confirm_success: パスワードが一致しました。
+      new:
+        dont_have_an_account: アカウントをお持ちではありませんか？
+        forgot_your_password: パスワードをお忘れですか？
+        log_in: ログイン画面へ戻る
+        return_to_the_leadership_circl: アンケートに戻る
+        send_me_reset_password_instruc: 上記のメールアドレス宛てにパスワードの設定/更新方法を送る
+        sign_up: 登録
+      send_instructions: パスワードの設定/更新方法を送信してください
+      user:
+        no_token: セキュリティ上の理由から、前のページに移動するには、パスワードをリセットする方法が記載されたEメール内のリンクから直接アクセスする必要があります。 パスワードをリセットする方法が記載されたEメール内のリンクから直接アクセスする場合は、URLをクリックしてください。
+        send_instructions: 数分以内に、パスワード設定/更新方法についてのメールをお送りいたします。
+        send_paranoid_instructions: 弊社のデータベースにあなたのメールアドレスが登録されている場合は、パスワードの設定/更新方法についてのメールが数分以内に送信されます。
+        updated: パスワードを変更しました。ログインしています。
+        updated_not_active: パスワードを変更しました。
+    registrations:
+      destroyed: アカウントを削除しました。またのご利用をお待ちしております。
+      edit:
+        current_password: 現在のパスワード
+        currently_waiting_confirmation: 現在%{resourceunconfirmed_email}の確認中です。
+        edit_resource_nameto_shumanize: "%{resource_nameto_shumanize}を編集する。"
+        password: パスワード
+        password_confirmation: パスワードを確認する
+        update_password: パスワードを更新する
+        we_need_your_current_password_: 更新の確認のために、現在のパスワードが必要です。
+        you_must_change_your_password_: 初めてログインする際は、パスワードの設定が必要です。
+      new:
+        log_in: ログイン
+        sign_up: 新規登録
+      signed_up: 新規登録に成功しました。
+      signed_up_but_inactive: 新規登録に成功しました。しかし、まだアカウントが有効になっていないため、サインインは出来ていません。
+      signed_up_but_locked: 新規登録に成功しました。しかし、アカウントがロックされているため、サインインは出来ていません。
+      signed_up_but_unconfirmed: 確認用のリンクが記載されたメールがあなたのメールアドレス宛てに送られています。アカウントを有効化するためにリンクにアクセスしてください。
+      update_needs_confirmation: アカウントの更新に成功しましたが、新しいメールアドレスの認証が必要です。メールアドレス確認のために、確認用リンクへアクセスしてください。
+      updated: アカウントを更新しました。
+    sessions:
+      new:
+        dont_have_an_account: アカウントをお持ちではありませんか？
+        forgot_your_password: パスワード設定/更新
+        login: ログイン
+        login_to_your_account: アカウントへログイン
+        return_to_the_leadership_circl: アンケートに戻る
+        sign_up: 新規登録
+        privacy_policy: プライバシーポリシー
+      user:
+        already_signed_out: サインアウトしました。
+        signed_in: サインインしました。
+        signed_out: サインアウトしました。
+    shared:
+      links:
+        didnt_receive_confirmation_ins: 確認方法が記載されたメールを受け取っていませんか？
+        didnt_receive_unlock_instructi: ロックの解除方法が記載されたメールを受け取っていませんか？
+        forgot_your_password: パスワード設定/更新
+        log_in: ログイン
+        sign_in_with_providerto_stitle: "%{providerto_stitleize}でサインインする"
+        sign_up: 新規登録
+    unlocks:
+      new:
+        resend_unlock_instructions: アカウントのロックを解除する方法をメールで再送する　
+      send_instructions: 数分以内に、アカウントのロックを解除する方法についてのメールが送られます。
+      send_paranoid_instructions: アカウントが存在する場合は、数分以内にアカウントのロックを解除する方法についてのメールが送られます。
+      unlocked: アカウントのロックを解除しました。続けるためには、サインインしてください。
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: 受入れてください
+      already_confirmed: は既に確認されているので、再度サインインしてみてください
+      blank: 空白のままにしないでください
+      confirmation: "%{attribute}と一致しません"
+      confirmation_period_expired: "%{period}以内に確認が必要なため、新しいものをリクエストしてください"
+      empty: 空白のままにしないでください
+      equal_to: "%{count}と同一にしてください"
+      equal_to_current_password: 現在のパスワードと異なるものにしてください。
+      even: 偶数にしてください
+      exclusion: は予約されています
+      expired: は失効しているため、新しいものをリクエストしてください
+      greater_than: "%{count}を以上にしてください"
+      greater_than_or_equal_to: "%{count}以上の数を選んでください"
+      inclusion: は一覧には含まれていません
+      invalid: は無効です
+      less_than: "%{count}未満の数を選んでください"
+      less_than_or_equal_to: "%{count}以下の数を選んでください"
+      model_invalid: '確認に失敗しました: %{errors}'
+      not_a_number: は数字ではありません
+      not_an_integer: は整数ではありません
+      not_found: が見つかりません
+      not_locked: はロックされていません
+      not_saved:
+        one: 'エラーが１つあるため、%{resource}が’更新できません。:'
+        other: "%{count}個のエラーがあるため、この%{resource}が保存できません。:"
+      odd: 奇数を選んでください
+      other_than: "%{count}以外の数を選んでください"
+      password_format: 大文字、小文字、数字を含んでいる必要があります
+      password_not_saved: エラーが１つあるため、パスワードの更新ができません
+      present: 空白のまま残しておいてください
+      required: 存在する必要があります
+      taken: はすでに使われています
+      taken_in_past: 過去にすでに使用されています。
+      too_long:
+        one: が長すぎます（最高1文字まで）
+        other: が長すぎます（最高%{count}文字まで）
+      too_short:
+        one: が短すぎます（最低1文字必要）
+        other: が短すぎます（最低%{count}文字必要）
+      wrong_length:
+        one: の長さが間違っています（1文字であるべき）
+        other: の長さが間違っています（%{count}文字であるべき）
+    template:
+      body: 下記のフィールドに問題がありました
+      header:
+        one: エラーが１つあり、%{model}が更新できません
+        other: 'エラーが%{count}つあり、この%{model}が保存できません。:'
+  evaluators:
+    edit:
+      edit_evaluator: FB提供者を編集する
+    new:
+      add_evaluator: FB提供者を追加する
+    partials:
+      evaluator:
+        add_participant: 参加者を追加する
+        edit_evaluator: FB提供者を編集する
+        email_evaluatoremail: 'メールアドレス: %{evaluatoremail}'
+        evaluatorevaluation_surveys_fo: アンケート%{done} 件のうち%{total} 件
+        evaluatorself_surveys_forproje: 'セルフ・アンケート%{done} 件のうち%{total} '
+        language_evaluatorlanguage_nam: '使用言語: %{evaluatorlanguage_name}'
+      evaluator_form:
+        cancel_changes: 変更をキャンセル
+        delete_evaluator: FB提供者を削除する
+      import_evaluators:
+        email_address: メールアドレス
+        first_name: 姓
+        is_there_something_wrong_a_hre: エラーがありますか？ <a href='#import--evaluators' class='open-popup-link'>Upload a new file</a>
+        its_right_complete_import: 正しいことが確認されました。インポートを完了してください
+        language: 言語
+        last_name: 名
+        participant: 参加者
+        relationship: 関係性
+        strongevaluatorscount_evaluato: "<strong>%{evaluatorscount}FB提供者</strong> が見つかりました。検索内容があっているかどうか確認してください。:"
+        survey_language: 言語
+        were_almost_there: まもなく終了します。
+      import_evaluators_modal:
+        cancel: キャンセル
+        import_evaluators_from_csv_fil: CSVファイルからFB提供者をインポートする
+        not_sure_about_the_format_of_t: ファイルのフォーマットが不明ですか？<a href="%{download_sample_csv_project_ev}" class="link">CSVファイルのサンプル</a>をダウンロードしてください。
+        upload_evaluators: FB提供者をアップロードする
+        upload_your_csv_file: 'CSVファイルをアップロードしてください:'
+      index:
+        actions: アクション
+        add_evaluator: FB提供者を追加する
+        download_evaluator_status_deta: FB提供者の回答状況の詳細をCSVファイルとしてダウンロードする　
+        evaluation_status: アンケートの回答状況
+        evaluator_details: FB提供者詳細
+        import_evaluators: FB提供者をインポートする
+        participant_status: 参加者の回答状況
+      participant:
+        completed_on_levaluatorevaluat: "%{levaluatorevaluation_survey_fo}を完了する"
+        edit_participant: "参加者を編集する"
+        evaluation_status: アンケートの回答状況
+        evaluatorevaluation_survey_for: "%{done}質問のうちの%{all}"
+        evaluatorself_survey_forprojec: 'セルフ・アンケートにおける%{evaluatorself_survey_forprojec}質問のうち%{evaluatorself_survey_forprojec} '
+        language_evaluatorevaluation_s: '言語: %{evaluatorevaluation_survey_for}'
+        participantfull_name: "%{participantfull_name}"
+        relationship: '関係:'
+        selfsurvey_completed_on_levalu: "%{levaluatorself_survey_forproje}に完了したセルフ・アンケート"
+        send_invite: ご招待メールを配信
+      participant_form:
+        cancel_changes: 変更をキャンセル
+        delete_participant: 参加者を削除
+    participants:
+      edit:
+        edit_participant: 参加者を編集
+      new:
+        add_participant: 参加者を追加する
+    sort_options:
+      evaluation_status: FB提供者の状況順に並べ替える
+      evaluator_name: FB提供者名順に並べ替える
+      number_of_evaluations: フィードバック数の順に並べ替える
+  gflash:
+    titles:
+      error: エラー
+      notice: お知らせ
+      progress: 進捗状況
+      success: 成功
+      warning: 待機中
+    users:
+      impersonate:
+        notice: 他のユーザー（TLCCP）としてログインしています。　
+        title: 代行ログイン　
+      stop_impersonating:
+        notice: 他のユーザーのアカウントからログアウトしました。
+        title: 代行ログイン　
+  helpers:
+    label:
+      project:
+        1st_option: オプション１
+        2nd_option: オプション２
+        i_will_invite: 私（TLCCP）がFB提供者を招待します
+        my_participant_will_invite: 参加者がFB提供者を招待することができます
+    select:
+      prompt: 選んでください。
+    submit:
+      create: "%{model}を作成する"
+      submit: "%{model}を保存する"
+      update: "%{model}を更新する"
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "%{entry_name}がありません"
+          one: "<b>一つの</b>%{entry_name}しか表示されていません"
+          other: "他<b>%{count}</b>個の%{entry_name}が表示されています"
+      more_pages:
+        display_entries: "<b>%{first}&nbsp;-&nbsp;%{last}</b> 全部<b>%{total}</b>個の%{entry_name}が表示されています"
+  high: 高い
+  history:
+    show:
+      before: 前に
+      by: までに
+      changes_made_at: "～に変更されました"
+      field: フィールド
+      now: 現在
+  home:
+    index:
+      agents: エージェント
+      are_you_sure_want_to_delete: 削除してよろしいですか。
+      are_you_sure_want_to_delete_project: プロジェクトを削除すると、データを復活させることが出来ません。本当にこのプロジェクトを削除してよろしいですか。
+      are_you_sure_want_to_delete_project_with_expired_date_explanation: 申し訳ありませんが、本プロジェクトのアンケート回答入力完了日を過ぎているため削除できません。
+      are_you_sure_want_to_delete_project_with_expired_date_title: 【ご注意ください】
+      coaches_or_consultants: 認定プラクティショナー　
+      companies_or_clients: クライアント
+      consultant_companies: コンサルタント会社
+      consultant_company: コンサルタント会社
+      distributors: ディストリビューター
+      licensees: ライセンシー
+      no_dont_delete: いいえ、削除しないでください
+      participants: 参加者
+      please_enter_a_new_name_for_the_organization: "%{organization_type}の新しい名称を入力してください"
+      projects: プロジェクト
+      rename_organization: "%{organization_type}の名称を変更します"
+      unable_to_delete_company_warning: 削除できません。この会社に紐付けされているプロジェクトが残っています。最初に残っているプロジェクトを削除してください。
+      unable_to_delete_got_it: 了解しました。
+      unable_to_delete_project_warning: 削除できません。この会社に紐付けされている参加者がまだいます。最初に参加者を削除してください。
+      yes_delete_this: はい、削除します。
+    partials:
+      blank_slate:
+        create_new_project: 新規プロジェクトを作成する
+        start_adding_projects_now: プロジェクトの追加を始めてください。
+        you_have_no_projects_to_manage: 管理するプロジェクトがありません。
+      breadcrumbs:
+        coaches_consultants: 認定プラクティショナー　
+        search_by: による検索
+      child_node_content:
+        organizationorganization_typen: "%{organizationorganization_typen} （管理のためにクリックする）"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou} %{tsharedcertified_consultants}"
+      content:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}コンサルタント？"
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} コンサルタント"
+        tsharedactions: "%{tsharedactions}"
+        tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
+        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount} %{tsharedpeople}"
+      modals:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} %{parentorganization_typename}？"
+        thomeindexyes_delete_this_pare: "%{thomeindexyes_delete_this} %{parentorganization_typename}"
+        tsharedcancel: "%{tsharedcancel}"
+        tsharedsave_changes: "%{tsharedsave_changes}"
+      organization_users:
+        practitioners_userstotal_count: 認定プラクティショナー(%{userstotal_count})
+      search_organization:
+        click_to_manage: "（管理のためにクリックする）"
+        manage_consultants: "（認定プラクティショナーを管理する）"
+        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization} %{tsharedwere_found}"
+        thomeindexare_you_sure_want_to: ' "%{thomeindexare_you_sure_want_to}コンサルタント？"'
+        thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this}コンサルタント"
+      sidebar:
+        add: 追加する
+  i18n:
+    transliterate:
+      rule:
+        ü: u
+  javascript:
+    1st_option: オプション１
+    2nd_option: オプション２
+    add_another_company: 他の会社を追加する
+    admin_role_name: システム・アドミニストレータ
+    ajax_popup_error: 内容をロードすることができませんでした。
+    apt_suite_bldg: アパート名　ビル名
+    binder_with_tabs: 印刷したLCP解説マニュアルは、参加者にお渡しします。
+    browse_file: ファイルを参照
+    cancel_schedule_announcement: 本当によろしいですか？ スケジュールはキャンセルされ、電子メールは15分以内に送信されます。
+    choose_age_ranges: 年齢を選択
+    choose_countries: 国名を選択
+    choose_direct_report_ranges: 部下の範囲を選択
+    choose_education_levels: 教育レベルを選択する
+    choose_ethnic_groups: 民族を選ぶ
+    choose_industries: 産業を選択
+    choose_management_levels: 管理レベルを選択
+    choose_professions: 職業を選択
+    click_the_link_below_and_we_will_contact: LCPを実施するプロセルをご案内するコーチと共に、LCP結果レポートを取得するために以下のリンクをクリックしてください。
+    coach_report: コーチ用レポート
+    company_revenue: 会社の収益
+    completion_date_asc: アンケート回答入力完了日（昇順）
+    completion_date_desc: アンケート回答入力完了日（降順）
+    contact_info: 連絡先情報
+    correct_email_required: メールアドレスを正しいフォーマットで入力してください。
+    created_at: '作成日:'
+    custom_demographics: カスタム・デモグラフィック（人口統計）
+    default_demographics: デフォルト・デモグラフィック（人口統計）
+    deliverable_options: オプション
+    delivery_options: 配送オプション
+    did_you_enjoy_your_survey_taker: アンケートはお楽しみいただけましたでしょうか？<b>Leadership Cirlce Profile</b> の360度フィードバックを取り、あなたの主要な関係者（上司、同僚、部下、そして他の人が）があなたのリーダーシップを経験する方法を学びます。360度フィードバックのリーダーシップ・サークル・プロファイルから読み取れる深い洞察力はあなたがリーダーシップの芸術と実際にははるかに効果的かつ巧みになることができます。」
+    email_required: メールアドレスが必要です。
+    error: エラーが発生しました。
+    filter_by_role: 役割名で検索
+    first_name_required: 名前の入力が必要です。
+    full_path: 'お待ちください:'
+    gcsr_role_name: グローバルCSR
+    granted_at: 与えられた
+    graph_high: 高い
+    graph_identity: 身元
+    graph_low: 低い
+    graph_medium: ミディアム
+    high: 高い
+    invite_another_user: 他のユーザーを招待する
+    language_required: 言語を選択してください
+    last_name_required: 苗字の入力が必要です
+    leaders_managers_eval: このセクションでは、～のリーダーまたはマネージャーにフードバックすることになります
+    low: 低い
+    members_eval: このセクションでは、～のメンバーにフードバックすることになります
+    message_required: メッセージが必要です
+    minimum_evaluations_per_participant: 自己フィードバックのアンケートが可能になるように、FB提供者の最少人数 (%{min_count})を招待する必要があります。
+    never_sent: 未配信
+    no_record_found: '一致する項目が見つかりませんでした:'
+    organization_and_report_type: 組織とレポートの種類
+    organization_small: 組織
+    participant_graph: 参加者用グラフ
+    participant_report: 参加者用レポート
+    please_wait: 少しお待ちください。
+    preparing: 準備中です。お待ちください。
+    processing: 処理中
+    project_access_control: プロジェクトのアクセス制御
+    project_access_control_description: プロジェクトへのアクセス状況を確認する
+    project_details: プロジェクトの詳細
+    project_name_placeholder: '最高経営責任者（CEO）、リーダー、マネージャー、リーダーシップチーム　など'
+    project_time_zone: プロジェクトのタイムゾーン
+    relationship_required: 関係を選択してください
+    report_options: レポートオプション
+    role: 役割
+    search_results: 検索結果
+    select_age: 年齢
+    select_client: クライアントを選択
+    select_consulting_company: コンサルティング会社を選択
+    select_country: 選択してください。
+    select_ethnic_group: 選択してください。
+    select_industry: 選択してください。
+    select_practitioner: 認定プラクティショナーを選択
+    select_region: 都道府県または地域を選択
+    select_your_companys_industry: 業界
+    select_your_education_level: 選択してください。
+    select_your_gender: 選択してください。
+    select_your_management_level: 役職 #used in demographics and for both lables 
+    select_your_profession: 選択してください。
+    select_your_residing_country: 居住国
+    select_your_number_of_direct_reports: 選択してください。
+    sent_on: 送信済み
+    size_of_organization: 組織の規模
+    street_address_example: 住所
+    subject_required: タイトルが必要です。
+    surveys_focus: アンケート実施の目的（例：マーケティング、営業、人事、等）
+    team_small: チーム
+    type: 'タイプ:'
+    type_the_referral_email: 紹介のメールを入力してください
+    type_user_email: ユーザーのメールアドレスを入力してください
+    type_your_company_name: 会社名を入力してください。
+    user_email: ユーザーのメール
+    user_name: ユーザー名
+    user_role_name: ユーザー名
+    zip_post_code: 郵便番号
+    password_hint: パスワードは英数字8文字以上で、少なくとも1つの数字（0〜9）と1つの大文字（A〜Z）を含めてください。 直近の過去8つのパスワードのいずれかを使用することはできません。
+    select_project: プロジェクトを名前で検索するには、ここに入力してください。
+  kaminari:
+    next_page:
+      next: 次へ
+    prev_page:
+      prev: 前へ
+  low: 低い
+  mailer:
+    reminder:
+      body_1: まだアンケートの回答を完了していないようです。回答を続ける場合は、以下をクリックしてください。
+      body_2: 'このリンクからアンケートにアクセスしてください:'
+      body_3: アンケートの回答は、%{planned_completion_date}までに完了させてください。
+      header: "%{practitioner_full_name}様、"
+      regards: 敬具、The Leadership Circle Team
+      subject: "%{product_name}のリマインダー"
+    welcome:
+      subject: リーダーシップ・サークルのオンライン・アンケートへようこそ！
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: 10億　
+          million: 100万　
+          quadrillion: 千兆
+          thousand: 千　
+          trillion: 一兆　
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: バイト
+            other: バイト
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  order_steps:
+    deliverable_options:
+      next: 次へ
+      previous: 前へ
+    delivery_options:
+      cancel_order: 注文をキャンセル　
+      create_report: レポートを作成する
+      previous: 前へ
+    group_report_summary:
+      cancel_order: 注文をキャンセル
+      pdf_report: PDFレポート
+      selected_count_tordersgr_summa: "(%{selected_count} %{tordersgr_summaryparticipants_})"
+      tordersgr_summarybilling_conta: "%{tordersgr_summarybilling_conta}:"
+      tordersgr_summaryorganization: "%{tordersgr_summaryorganization}:"
+      tordersgr_summaryreport_contac: "%{tordersgr_summaryreport_contac}:"
+      tordersgr_summaryreport_due_da: "%{tordersgr_summaryreport_due_da}:"
+      tordersgr_summaryreport_metric: "%{tordersgr_summaryreport_metric}:"
+      tordersgr_summaryreview_report: "%{tordersgr_summaryreview_report}"
+      tordersgr_summaryselected_part: "%{tordersgr_summaryselected_part}:"
+      tordersindexreport_name: "%{tordersindexreport_name}:"
+      tshareddemographicpluralize: "%{tshareddemographicpluralize}:"
+      tsharedreportpluralize: "%{tsharedreportpluralize}:"
+    organization_and_report_type:
+      cancel_order: 注文をキャンセル
+      next: 次へ　
+    partials:
+      address_modal:
+        select_from_my_account_address: マイ・アカウントの住所から選択してください。
+        there_are_no_addresses_related: ユーザーに紐付く住所がありません。
+      contact_info:
+        billing_address: 請求先住所　
+        new_address: 新しい住所　
+        report_address: レポートお届け先住所　
+        same_as_the_billing_address: 請求先住所と同じ　
+        select_an_address_from_my_acco: マイ・アカウントから住所を選択してください。　
+        this_is_the_address_where_the_: こちらの住所に、印刷した参加者用レポート、サークル、コーチ用レポートをお届けします。
+        this_is_the_person_or_company_: こちらの個人または企業宛てに、ご注文の請求をいたします。
+      deliverable_options:
+        coach_report: コーチ用レポート　
+        digital_graph: PDF版サークル
+        group_report: グループレポート
+        how_many_copies_per_participan: 参加者１名あたり何部の結果レポートが必要ですか？
+        i_want_pdf_and_printed_copies_: PDFファイルと印刷した結果レポートを希望します。
+        i_want_the_pdf_copies_only: PDFファイルのみ希望します。
+        participant_graph: 参加者用サークル　
+        participant_report: 参加者用レポート
+        pdf_file_that_practitioner_ema: 認定プラクティショナーが参加者宛てにメールで送信するPDFファイル　
+        please_choose_below_which_ones: '印刷を希望するものを下記より選んでください:'
+        profile_interpretation_manual: LCP解説マニュアル　
+        reports: 'レポート:'
+        you_will_get_a_digital_version: '下記資料をPDFファイルでお届けします:'
+        you_will_get_only_the_digital_: 'LCP解説マニュアルと下記の結果レポートのみをPDFファイルにてお届けします:'
+        you_will_get_the_digital_versi: LCP解説マニュアルとすべての結果レポートをPDFファイルにてお届けします。
+        your_project_will_include: 'プロジェクトに含まれるものは:'
+    participants:
+      cancel_order: 注文をキャンセル
+      choose_the_participants_you_wo: このレポートに含めたい参加者を選択してください。
+      next: 次へ
+      of: "～の"
+      only_add_participants_who_have: アンケートを完了した参加者のみ追加してください。
+      organizationname: "%{organizationname}"
+      participants_selected: 参加者が選択されました。
+      previous: 前へ
+      select_all_available_participa: この会社から選択可能な参加者をすべて選択してください。
+      select_participants: 参加者を選択
+    project:
+      add_all_participants: すべての参加者を追加する
+      of: "～の"
+      participants_selected: 参加者を選択
+    report_options:
+      cancel_order: 注文をキャンセル
+      choose_metrics: メトリクスを選択　
+      how_calculation_is_made: 算出方法
+      next: 次へ
+      previous: 前へ
+      report_demographics: デモグラフィック（人口統計データ）を報告
+      report_language: 言語を報告
+  orders:
+    details:
+      coach_report: 'コーチ用レポート:'
+      comment_questions: 'フィードバックコメントの質問:'
+      copies_per_participant: 参加者１名あたりの部数
+      copy_per_participant: 参加者１名あたりの部数
+      demographics: 'デモグラフィック（人口統計データ）:'
+      included_participants: '含まれる参加者:'
+      participant_graph: '参加者用サークル:'
+      participant_report: '参加者用レポート:'
+      participants:
+        one: 参加者1名
+        other: 参加者%{count}名
+      processing_date: '処理日:'
+      product_type: '商品タイプ:'
+      profile_interpretation_manual: 'LCP解説マニュアル:'
+      report_type: 'レポートタイプ:'
+      utilties_order_details: 注文の詳細
+    gr_summary:
+      billing_contact: 請求連絡先　
+      coach_report: コーチ用レポート　
+      organization: 組織
+      participant_graph: 参加者用サークル
+      participant_report: 参加者用レポート
+      participants_selected: 参加者が選択されました。
+      place_order: 発注します
+      report_contact: レポート連絡先
+      report_due_date: レポート期限
+      report_metrics: レポートの計算方法
+      review_report_summary: レポートの概要を確認してください。
+      selected_participants: 選択された参加者
+    index:
+      actions: アクション
+      active_orders: 現在の注文
+      all_orders: すべての注文
+      delete_order: 注文を削除する
+      finished_orders: 過去の注文履歴
+      my_orders: マイ・オーダー（注文）
+      number_of_participants: 参加者数
+      order: 注文
+      order_date: 発注日
+      owner: 所有者
+      print_reports: レポートを印刷する
+      product_type: 商品タイプ
+      report_name: レポート名
+      sort_by_company: 会社順に並べ替える
+      sort_by_number_of_participants: 参加者数順に並べ替える
+      sort_by_ordered_date: 発注日順に並べ替える
+      sort_by_product: 商品順に並べ替える
+      sort_by_report_name: レポート名順に並べ替える
+      utilties_order: 注文番号
+    order:
+      see_order: 注文を見る
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    partials:
+      pick_order_modal:
+        cancel: キャンセル
+        choose_order: 注文を選択
+        choose_order_for_project: プロジェクト用の注文を選択
+        date_order_number: 日付 / 注文番号
+        locreated_atto_date_format_lon: "%{locreated_atto_date_format_lon} / %{oorder_number}"
+    prepare_download:
+      cancel: キャンセル
+      download_reports_zip: レポート（Zipファイル）をダウンロードする
+      please_wait: 少しお待ちください。
+      preparing_reports_for_download: レポートのダウンロード準備中
+    printed_participant:
+      digital_reports_to_be_sent_pdf: 送信するPDF版レポート（PDFファイル）
+      download_copies_ordersingle_re: コピーをダウンロードする(%{ordersingle_report_copies_coun})
+      download_manual: ガイドをダウンロードする
+      evaluators_printed_participant: 'FB提供者: %{printed_participantparticipant}のうち%{printed_participantparticipant} 完了'
+      manual_to_be_printed: 印刷するガイド
+      mark_all_as_not_printed: すべてを「未印刷」としてチェックする
+      mark_all_as_not_sent: すべてを「未送信」としてチェックする
+      mark_all_as_printed: すべてを「印刷済み」としてチェックする
+      mark_all_as_sent: すべてを「送信済み」としてチェックする
+      mark_all_as_shipped: すべてを「送付済み」としてチェックする
+      printed_participantparticipant: "(%{printed_participantparticipant})"
+      reports_to_be_printed: 印刷するレポート
+      self_survey_printed_participan: 'セルフ・アンケート: %{printed_participantstatus}'
+      send_digital_reports: PDF版レポートを送信する
+      status_printed_participantmanu: '状況: %{printed_participantmanual_repo}'
+      status_printed_participantprin: '状況: %{printed_participantprint_repor}'
+      status_printed_participantsend: '状況: %{printed_participantsend_report}'
+    show:
+      billing_contact: 請求連絡先
+      binder_contact: 解説マニュアルお届け先
+      coaching_report: 'コーチ用レポート:'
+      comment_questions: 'フィードバックコメントの質問:'
+      company: 会社
+      demographics: 'デモグラフィック（人口統計データ）:'
+      download_profile_interpretatio: 解説マニュアル（PDFファイル）をダウンロードする
+      download_reports_zip: レポート（Zipファイル）をダウンロードする
+      find_the_order_details_below_y: 注文の詳細は下記でご覧ください。また、PDFファイルのすべてのレポートをZIPファイルにてダウンロード可能です。
+      included_participants: '含まれる参加者:'
+      list_of_participants: 参加者一覧
+      order_details: 注文詳細
+      order_number: '注文番号:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty}部"
+      orderparticipant_graph_qty_cop: 参加者1名あたり%{orderparticipant_graph_qty}部
+      orderparticipant_report_qty_co: 参加者1名あたり%{orderparticipant_report_qty}部
+      participant_graph: '参加者用サークル:'
+      participant_report: '参加者用レポート:'
+      pdf: PDF
+      planned_completion_date: 'アンケート回答入力完了予定日:'
+      print_order_details_pdf: 注文詳細（PDFファイル）を印刷する
+      processing_date: '処理日:'
+      product_type: '商品タイプ:'
+      profile_interpretation_manual: 'プロファイル解説マニュアル:'
+      questions_about_your_order: 注文についてご質問がありますか？
+      report_contact: レポート連絡先
+      report_name: 'レポート名:'
+      report_type: 'レポートタイプ:'
+      show_project: プロジェクトを表示する
+      thank_you_for_your_order: ご注文ありがとうございます。
+      tordersindexdelete_order: "%{tordersindexdelete_order}"
+    show_print_report:
+      1_copy: 1部
+      3_copies_per_participant: 参加者１名あたり３部
+      Demography: '人口統計:'
+      action: アクション
+      application:
+        order_not_valid: 注文は有効ではありません
+        reports_sent: レポート送信済み
+        statuses_updated: 状況更新済み
+      coach_report: コーチ用レポート
+      coach_rpt: コーチ用レポート
+      coaching_report: 'コーチングレポート:'
+      comment_questions: '質問コメント:'
+      company: 会社
+      complete: 完了
+      deliverable_instructions: 納品手順
+      demographics: 'デモグラフィック（人口統計データ）:'
+      digital_reports: 'PDF版レポート:'
+      digital_rpt: PDF版レポート
+      download_all_copies_ordercopie: すべての部数をダウンロードする　 (%{ordercopies_count})
+      download_all_manuals_orderused: すべてのマニュアルをダウンロードする (%{orderused_languagescount})
+      english_manual: '英語版マニュアル:'
+      evaluators: FB提供者
+      find_below_all_the_deliverable: 下記は、この注文に関するすべての納品物および各商品の発送情報です。
+      graph: グラフ　
+      included_participants: '含まれる参加者:'
+      manual: マニュアル
+      mark_all_digital_reports_as_no: すべてのPDF版レポートを「未送信」としてチェックする
+      mark_all_digital_reports_as_se: すべてのPDF版レポートを「送信済み」としてチェックする　
+      mark_all_printed_copies_as_not: すべてのPDF版レポートを「未印刷」としてチェックする
+      mark_all_printed_copies_as_pri: すべてのPDF版レポートを「印刷済み」としてチェックする
+      mark_all_printed_copies_as_shi: すべてのPDF版レポートを「送付済み」としてチェックする
+      mark_order_as_finished: 注文を「完了」としてチェックする
+      no_participants: 参加者なし
+      order_details: 注文詳細
+      order_number: '注文番号:'
+      order_participantparticipantco: "%{order_participantparticipantev}のうちの%{order_participantparticipantco}"
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty}部"
+      orderparticipant_graph_qty_cop: 参加者１人あたり%{orderparticipant_graph_qty}部
+      orderparticipant_report_qty_co: 参加者１人あたり%{orderparticipant_report_qty}部
+      participant: 参加者
+      participant_graph: 参加者用サークル
+      participant_report: 参加者用レポート
+      participants_orderself_surveys: 参加者(%{orderself_surveyscount})
+      pdf: PDF
+      pdfs: PDF
+      planned_completion_date: 'アンケート回答入力完了予定日:'
+      print_and_ship_copies_of_the_f: '下記のレポートを印刷して郵送する:'
+      printed: 印刷済み
+      printed_copies: '印刷部数:'
+      processing_date: '処理日:'
+      product_type: '商品タイプ:'
+      profile: プロファイル
+      profile_interpretation_manual: 'プロファイル解説マニュアル:'
+      questions_about_your_order: 注文についてご質問はありますか？
+      report_name: 'レポート名:'
+      report_type: 'レポートタイプ:'
+      self_survey: セルフ・アンケート
+      send_digital_reports_pdfs: PDF版レポート送信
+      send_the_pdf_version_of_the_fo: '下記レポートのPDFファイルを送信する:'
+      sent: 送信
+      ship_the_3ring_binder_with_tab: LCP解説マニュアルを郵送する
+      shipping_info: '発送状況:'
+      status: '状況:'
+      submit: 提出する
+    show_send_digital_reports:
+      cancel: キャンセル
+      consultantcoach_orderprojectco: 'コンサルタント・コーチ: %{orderprojectconsultant_orderpr}'
+      send_digital_reports: PDF版レポートを送信する
+      send_digital_reports_to_practi: 認定プラクティショナーへPDF版レポートを送信する
+  organization_users:
+    new:
+      tsharedadd_consultant_tsharedt: "%{tsharedadd} コンサルタント　%{tsharedto} '%{organizationname}'"
+  organizations:
+    actions:
+      tsharedadd_typename: TRME %{tsharedadd} %{typename}
+    collab:
+      add_and_delete_shared_users: シェアされたユーザーをいつでも追加または削除できます　
+      allow_users_edit_view: ユーザーに編集および閲覧を許可する　
+      certified_consultants: 認定プラクティショナー
+      collaborators_for: への協力者
+      delete_collaborator: 協力者を削除する
+      invite_more_people: より多くの人を招待する
+      invite_user_by_typing_email: 以下に招待したい人物のメールアドレスを入力して、新しいユーザーを招待する。
+      sharing_access_certified_consultant: アクセスをシェアすると、別の認定プラクティショナーがあなたと同様の権限を持つことができます。
+      sharing_top_level_company: シェアを最高レベル（会社）に設定すると、紐付いている全グループ（商品タイプ、参加者）にもアクセスが許可されることになります　
+      this_licensor_is_not_shared: この組織は現在シェアされていません。
+    collaborator:
+      success: 設定しました。
+    collaborators:
+      role_urolename: '役割: %{urolename}'
+      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount} %{torganizationscollabcertified_}"
+    delete_collaborator:
+      success: 削除しました。
+    dnd:
+      drag:
+        add_user: ユーザーを追加する
+        confirmation: 確認
+        confirmation_text_goes_here: 確認文書はこちらへ...
+        finish: 完了
+        next: 次へ
+        organizations_type: 組織タイプ
+        please_confirm_user_permission: この組織におけるユーザーの許可状況を確認してください。あなたが何か変更をする必要はありません。主要な組織に属するユーザーであれば自動的に追加されます。
+        previous: 前へ
+        privilages: 特典
+        role: 役割
+        user: ユーザー
+        you_are_about_to_move_one_orga: あなたは別の組織に移動しようとしています。移動先の組織タイプが正しいかどうか確認してください。また変更はここで可能です。なお、認められている組織タイプは下記のとおりです。
+      user:
+        remove: 移動する
+    form:
+      tsharedname: "%{tsharedname}:"
+    help:
+      tree_help:
+        quick_help: 簡単ご利用ガイド
+        to_edit_add_users_or_add_a_new: ユーザーを編集・追加したり、新規ユーザーを追加したりする場合は、ツリー内をクリックし、ツリーパネルの右上部から希望するアクションを選択してください。　
+        to_find_an_organization_simply: 組織を検索する場合は、以下の検索ボックス内に組織名を入力して、Enterキーを押してください。
+        to_move_the_organization_to_an: 組織を別組織へ移動するときは、ドラッグ・ドロップ操作を行ってください。
+    modals:
+      delete_organization:
+        thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}この組織"
+        thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
+        thomeindexyes_delete_this_orga: "%{thomeindexyes_delete_this}組織"
+    move:
+      success: 移動しました。
+    new:
+      active_consultant_label_info: コンサルタントが活動を停止している場合、アカウントは一時停止されてシステムへのアクセスが出来なくなります。
+      administrator_email: 管理者のメール
+      administrator_first_name: 管理者の名前
+      administrator_last_name: 管理者の苗字
+      choose_countries: 国名を選ぶ
+      coach_consultant_email: コンサルタントのメールアドレス
+      coach_consultant_first_name: コンサルタントの名前
+      coach_consultant_last_name: コンサルタントの苗字
+      coach_consultant_name: コンサルタントの氏名
+      company_client_name: クライアント名
+      consultant_label_info: １つの組織に属さず、複数の組織やクライアントと働いているコンサルタント　
+      contract_start_date: 契約開始日
+      countries_covered: 対象国
+      must_be_certified: これは、認定プラクティショナーのメールアドレスにしてください
+      select_an_industry: 業界を選択
+      the_project_center: プロジェクトセンター
+      this_active_consultant: これはアクティブ状態にあるコンサルタントです
+      this_independent_consultant: これは独立して活動しているコンサルタントです　
+      top_node: トップノード
+      torganizationsnewmust_be_certi: "(%{torganizationsnewmust_be_certi})"
+      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} '%{parentname}'"
+      type_the_name_of_coach_consultant: コーチまたはコンサルタント名を入力する
+      type_the_name_of_company_client: クライアント名を入力する
+      type_the_name_of_the: "～の名前を入力する"
+      you_are_adding_a: あなたは～を追加しようとしています
+    roles:
+      collaborator:
+        delete: 削除する
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{organizationname}"
+    search:
+      local: ローカル
+      search_by: によってフィルターをかける
+      search_by_company_participant_evaluator: 会社、参加者、FB提供者による検索
+      searching: 検索中。
+    share:
+      success: 成功しました。
+    show:
+      event: イベント
+      history: 履歴
+      impersonate: 他のユーザーとしてログイン
+      no_child_data: 従属データは見つかりませんでした。
+      organization_information: 組織情報
+      tshareddate_created: "%{tshareddate_created}:"
+    undo_share:
+      success: 成功しました。
+    アクション:
+      tsharedadd_typename: "%{tsharedadd} %{typename}"
+  participants:
+    cannot_destroy:
+      cannot_delete_the_selected_par: '他の関連データが削除できないため、選んだ参加者は削除できません。下記一覧を確認してください。:'
+      orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
+      orders: '注文:'
+    evaluators:
+      add_evaluator: FB提供者を追加
+      start_adding_evaluators_now: FB提供者を追加し始めてください。
+      this_participant_has_no_evalua: この参加者にはFB提供者が登録されていません。　
+    form:
+      form:
+        action_text: "%{action_text}"
+        cancel_changes: 変更をキャンセル
+        delete_participant: 参加者を削除
+    import_csv:
+      close: 閉じる
+      importing_participants: 参加者をインポート中
+      please_wait: 少しお待ちください。
+    import_participants:
+      email_address: メールアドレス
+      empty_row: 空白の列
+      existing_first_name: '既存の名前:'
+      existing_last_name: '既存の苗字:'
+      first_name: 姓
+      is_there_something_wrong_uploa: エラーがありましたか？新しいファイルをアップロードしてください。
+      its_right_complete_import: それで正しいです。インポートを完了してください
+      last_name: 名
+      strongparticipantscount_partic: "<strong>%{participantscount} participants</strong> が見つかりました。検索結果が正しいかどうか確認してください。:"
+      user_with_this_email_already_e: 既に、このメールアドレスで登録しているユーザーがいます。
+    import_participants_modal:
+      cancel: キャンセル
+      import_participants_from_csv_f: CSVファイルから参加者をインポートする
+      upload_participants: 参加者をアップロードする
+      upload_your_csv_file: 'CSVファイルをアップロードしてください。:'
+    index:
+      completion_date_is_over: アンケートの回答入力完了日を過ぎています。
+      download_participants_csv_status: 参加者の状況をCSVファイルとしてダウンロードする
+      evaluator_status: FB提供者の状況
+      got_it: 了解しました。
+      participant_details: 参加者の詳細　
+      projectself_surveyswherestatus: "%{projectself_surveyswherestatus} 参加者がセルフ・アンケートを完了していないため、 %{projectparticipantswith_not_en} に必要なアセスメント件数を満たしていません。レポート作成日(%{projectreport_datestrftimeb_d_})まで参加者を他のプロジェクトに移動することができます。"
+      self_survey_status: セルフ・アンケート状況
+    logs_modal:
+      created_logsnew: '作成済み: %{logsnew}'
+      failed_logsfailed: '失敗: %{logsfailed}'
+      got_it: 了解しました。
+      import_is_done: アンケート回答を続けて下さい。
+      import_logs: 'インポートログ:'
+      not_changed_logsuntouched: '未変更: %{logsuntouched}'
+      participant_groups_logsgroups: '参加者グループ: %{logsgroups}'
+      total_participants_logstotal: '参加者総数: %{logstotal}'
+      updated_logsupdated: '更新済み: %{logsupdated}'
+    manage_group:
+      continue_managing_your_group: グループの管理を続ける
+      edit_evaluators_invitation: FB提供者宛ての招待メールを編集する　
+      edit_participants_invitation: 参加者宛ての招待メールを編集する　
+      participants_can_be_added_to_y: 新しいグループへの参加者の追加は、今すぐでも後日でも手配可能です。
+      send_all_new_emails: 未配信のメールをすべて送信する
+    participant_header:
+      add_participants: 参加者を追加
+      choose_products: 商品を選択
+      confirm_order: 注文を確認
+      edit_invitation_email: 招待メールを編集
+      review_order_details: 注文内容詳細を確認
+      select_options: オプションを選択
+      send_emails: メールを配信
+      setup_group: グループを設定
+      update_addresses: 住所を更新
+    send_email_to_evaluator:
+      last_reminder_sent_on_surveyem: 前回のリマインダーは%{surveyemail_sent}に送信しました
+    send_email_to_participant:
+      last_reminder_sent_on_surveyem: 前回のリマインダーは%{surveyemail_sent}に送信しました
+    show_evaluator:
+      evaluation_status: アンケートの回答状況
+      language: 言語
+      last_reminder_never_sent: 前回のリマインダーは未送信です
+      last_reminder_sent_on: 前回のリマインダーを送信した日は
+      relationship: '関係:'
+      send_reminder: 招待メールを送信する
+      surveycompleted_questions_coun: "%{surveycompleted_questions_coun} %{tsharedof} %{surveyquestions_count} %{tsharedquestions}"
+      surveyevaluatortryfirst_name_s: "%{surveyevaluatortryfirst_name} %{surveyevaluatortrylast_name}"
+      tparticipantsshow_evaluatorlan: "%{tparticipantsshow_evaluatorlan}: %{surveyevaluatorlanguagename}"
+      tparticipantsshow_evaluatorlas: "%{tparticipantsshow_evaluatorlas} %{surveyemail_sent}"
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_atto_date_for}"
+    show_participant:
+      completed_on_lparticipantself_: "%{lparticipantself_surveycomplet}に完了しました"
+      edit_participant: 参加者を編集する
+      email_participantuseremail: 'メールアドレス: %{participantuseremail}'
+      language_participantuserlangua: '使用言語:  %{participantuserlanguagename}'
+      na: n/a
+      participantcompleted_evaluatio: "%{participantcompleted_evaluatio}FB提供者の%{participantevaluationscount}"
+      participantself_surveycomplete: "%{participantself_surveycomplete}質問の%{participantself_surveyquestion}"
+      participantuserfirst_name_part: "%{participantuserfirst_name} %{participantuserlast_name}"
+      resend_reports_to_gcsr: GCSRにレポートを送信
+      send_invite: 招待メールを送信
+    sort_options:
+      evaluator_status: FB提供者の状況順に並べ替える　
+      number_of_evaluators: FB提供者数順に並べ替える
+      participant_name: 参加者名順に並べ替える
+      survey_status: 自分自身のアンケートの状況順に並べ替える　
+  people:
+    account_notification_title: アカウントを更新
+    account_updated: アカウントが更新されました。　
+    active_management:
+      error: エラー
+      success: 成功
+    cannot_delete: 削除できません。このユーザーに紐付いているプロジェクトが存在します。
+    destroy:
+      success: 削除しました。
+    index:
+      disabled: 無効化
+      filtering_by_client: 'クライアントで検索:'
+      invite_new_users: 新規ユーザーを招待する
+      invited: 招待済み
+      join_date: アンケート開始日
+      self_assessment: 自分自身のアンケート
+      shared_organizations: シェアしている組織
+      sort_by: 順に並べ替える
+      sort_by_join_date: 参加開始日順に並べ替える
+      sort_by_org_number: 組織数順に並べ替える
+      sort_by_user_name: ユーザーネーム順に並べ替える
+      survey_takers: アンケート・テイカー
+      user_details: ユーザー詳細
+      users: ユーザー
+    manual_unlock:
+      error: エラーが発生しました。
+      success: 成功しました。
+    new:
+      choose_the_user_main_role_you_: ユーザーの主要な役割を選択してください。付与した権利は後で編集できます。
+      invite_another_user: 他のユーザーを招待する　
+      invite_new_users: 新しいユーザーを招待する
+    partials:
+      active_surveys:
+        company: 会社
+        completed: 完了
+        completion_date: 完了日
+        evaluated: アセスメント済み
+        evaluation_surveyscount_people: "%{evaluation_surveyscount}人々"
+        no_completed_evaluating_survey: 完了したアセスメントアンケートがありません。
+        no_completed_self_surveys: 完了したセルフ・アンケートがありません。
+        no_evaluating_surveys_to_compl: 完了すべきアセスメントアンケートはありません。
+        no_self_surveys_to_complete: 完了すべき自己評価アンケートはありません。
+        not_valid: 無効　
+        participant_and_product_type: 参加者と商品タイプ　
+        product_type: 商品タイプ　
+        project: プロジェクト
+        self_survey: 自己評価アンケート
+        self_surveyscount_self_survey: "%{self_surveyscount} 自己評価アンケート"
+        to_complete: '完了すべきもの:'
+        to_evaluate: 'アセスメントすべきもの:'
+      settings:
+        a_practitioner_that_does_not_w: １つの組織内に属さず、複数の組織やクライアントと働いている認定プラクティショナー　
+        account_status: アカウント状況
+        delete_account_person_pathuser: アカウントを削除する　
+        'false': いいえ
+        gcsr_or_system_administrator_h: GCSRまたはシステムアドミニストレータは、組織すべてにアクセスできます。
+        is_this_an_independent_practit: これは独立した認定プラクティショナーですか？　
+        'no': いいえ
+        practitioner_information: 認定プラクティショナーについての情報
+        the_referring_practitioner_wil: 紹介した認定プラクティショナーには無料のプロファイルが提供されます。　
+        this_user_has_been_active_sinc: このユーザーは～からアクティブ状態にあります。
+        user_role: ユーザーの役割　
+        users_can_only_manage_the_orga: ユーザーは、シェアされた組織のみ管理できます。
+        was_this_practitioner_referred: この認定プラクティショナーはシステム内の他の認定プラクティショナーから紹介されましたか？　
+        'yes': はい
+      shared_organization:
+        edit_user_role: ユーザーの役割編集　
+        shared_organizationorganizatio: "(%{shared_organizationorganizatio})"
+      shared_organizations:
+        are_being_shared_with: "～はｘｘｘとシェアされている"
+        new_shared_organization: 新しくシェアされた組織　
+        role: 役割
+        shared_organizations: シェアされた組織
+        type: タイプ
+        userfull_name: "%{userfull_name}:"
+        userorganization_userscount_or: "%{userorganization_userscount}組織"
+      surveys:
+        active_surveys_useractive_surv: 進行中のアンケート (%{useractive_surveyscount})
+        survey_history_userhistorical_: アンケート履歴 (%{userhistorical_surveyscount})
+      user_information:
+        address: 住所
+        date_of_birth: '生年月日:'
+        edit: 編集
+        education: '学歴:'
+        email: 'メールアドレス:'
+        full_name: '氏名:'
+        gender: '性別:'
+        language: '言語:'
+        number_of_direct_reports: '直属の部下の人数:'
+        organization_level: '役職:'
+        personal_information: 個人情報
+        phone_number: 電話番号
+        profession: '職業:'
+        professional_information: 職業についての情報
+        residing_country: '居住国:'
+        you_havent_added_any_addresses: まだ住所が追加されていません。
+        you_havent_added_any_phone_num: まだ電話番号が追加されていません。
+      user_information_address:
+        user_information_addressname: "%{user_information_addressname}:"
+        user_information_addressregion: "%{user_information_addresscity}, %{user_information_addressregion}"
+      user_information_phone:
+        user_information_phonename: "%{user_information_phonename}:"
+    person:
+      consultant: コンサルタント
+      csr: CSR
+      gcsr: GCSR
+      manage_user: ユーザーを管理する
+      system_administrator: システムアドミニストレーター
+    roles:
+      added_successfully: 組織にユーザーが正しく配属されました。
+      edit_user_role:
+        cancel: キャンセル
+        companyname: "''%{companyname}''"
+        remove_access_to_this_organiza: この組織へのアクセスをキャンセル　
+        role_on: "～への役割"
+        save: 保存する
+        select: 選択
+        userfirst_names: "%{userfirst_name}''s"
+      new_user_role:
+        choose_an_organization_to_shar: シェアする組織を選択
+        share_organization: 組織をシェアする
+        user_role: 'ユーザーの役割:'
+      title: ユーザーの役割
+    send_unlock_instructions:
+      error: エラーが発生しました。
+      success: 成功しました。
+    show:
+      account_status: 'アカウント状況:'
+      are_you_sure: これで良いですか？
+      delete_account: アカウントを削除
+      disable_account: アカウント無効化
+      enable_account: アカウント有効化
+      send_unlock_instructions: ロック解除方法を送信
+      settings: 設定
+      shared_organizations: シェアしている組織
+      surveys: アンケート
+      unlock_account: アカウントロックを解除
+      user_information: ユーザー情報
+    users:
+      sort_by: 並び替え
+      sort_by_join_date: 登録日で並べ替え
+      sort_by_org_number: 組織内の番号で並べ替え
+      sort_by_user_name: “ユーザー数で並べ替え"
+  phones:
+    index:
+      add_phone: 電話番号を追加
+      name: 名前
+      number: 番号
+    phone:
+      delete: 削除
+  project_steps:
+    contact_info:
+      create_project: プロジェクトを作成
+      previous: 前へ
+    deliverable_option:
+      next: 次へ
+      previous: 前へ
+    project_detail:
+      124_questions: 質問・124問
+      62_actual_and_62_ideal_culture: 現状のリーダーシップカルチャーに関する質問・62問と理想のリーダーシップカルチャーに関する質問・62問
+      84_questions: 質問・84問
+      8_summary_and_29_outer_dimensi: サマリー・6項目と側面・21項目　
+      8_summary_and_31_outer_dimensi: サマリー・8項目と側面・31項目　
+      audience_is_csuite_presidents_: 対象は、経営幹部レベル、社長、副社長、部長層、EMBA、将来性のあるリーダー
+      audience_is_midlevel_managers_: 対象は、中間管理職、管理職、MBA、チームリーダー、'次期リーダー候補'
+      choose_a_name_that_will_help_y: 参加者を特定できる名前を選択
+      choose_an_existing_client: 既存のクライアントを選択
+      client: クライアント
+      consulting_company: コンサルタント会社　
+      create_a_new_client: 新規クライアントを作成
+      focus_is_organization_or_team: 対象は組織もしくはチーム
+      leadership_circle_profile: リーダーシップ・サークル・プロファイル　
+      leadership_circle_profile_mana: リーダーシップ・サークル・マネージャーエディション
+      leadership_culture_survey: リーダーシップ・カルチャー・サーベイ
+      or: または
+      practitioner: 認定プラクティショナー
+      select_product: 商品を選択
+  projects:
+    collab:
+      add_and_delete_shared_users: シェアしているユーザーをいつでも追加・削除できます。
+      allow_users_edit_view: ユーザーが注文を印刷・閲覧することを許可する。
+      delete_collaborator: 協力者を削除する
+      invite_more_people: 追加で新たに招待する
+      invite_user_by_typing_email: 以下に招待したい人のメールアドレスを入力して新しいユーザーを招待する。
+      printers: プリンター
+      sharing_access_certified_consultant: アクセス権をシェアすることで、他のユーザーがこのオーダーにアクセスできるようになります。
+      this_licensor_is_not_shared: このプロジェクトは現在シェアされていません。
+    delete_collaborator:
+      success: ユーザーがこのプロジェクトから削除されました。
+    new:
+      itemparameterize: "#%{itemparameterize}"
+      next: 次へ
+      previous: 前へ
+    partials:
+      edit_form:
+        cancel_changes: 変更をキャンセル
+        deliverables_and_printing_opti: 納品と印刷オプション　
+        project_options: プロジェクトオプション　
+        save_all_changes: 変更をすべて保存
+      evaluator_invitation:
+        if_you_have_already_sent_a_mes: 参加者に既にご招待メールを送信済みであれば、システムから参加者およびFB提供者宛に更新されたメッセージを送信することができます。
+        invitations: 招待状
+        modifying_this_message_will_ch: このメッセージを変更すると、参加者に送られるご招待メールおよびリマインドメールが選択した使用言語で送信されます。　
+        please_do_not_modify_any_text_: 括弧 (*||*) 内の文字は変更しないでください。これらはメッセージを送信する際に、参加者の個人情報に置き換えられる箇所となります。
+        reminders: リマインダー
+        warnings: 警告
+      evaluators_blank_slate:
+        add_evaluator: FB提供者を追加　
+        import_evaluators: FB提供者をインポート　
+        start_adding_evaluators_now: FB提供者の追加を開始してください。
+        there_are_no_evaluators_in_thi: このプロジェクトにFB提供者は登録されていません。
+      header:
+        client: 'クライアント:'
+        completion_date: アンケート回答入力完了日
+        consulting_settings: コンサルティング設定
+        consutling_company: 'コンサルタント会社:'
+        create_group_report: グループレポートを作成
+        delete_project: プロジェクトを削除
+        deleteproject: プロジェクトを削除
+        generate_draft_reports: ドラフト・レポートを作成
+        practitioner: '認定プラクティショナー:'
+        printing_access: 印刷アクセス
+        project_id: 'プロジェクトID:'
+        project_time_zone: プロジェクトのタイムゾーン
+        rename_project: プロジェクト名を変更
+        run_new_report: 新しいレポートを作成
+        run_report_date: レポート作成日を抽出
+        send_all_reminders: リマインダーをすべて送信
+        send_new_emails_projectsurveys: 新しいメール (%{projectsurveyswhereemail_sent_})を送信
+        shared_with: "～とシェアしている"
+        show_orders: 注文を表示
+        starting_date: '開始日:'
+        status: 'ステータス:'
+        users_project_access: 共有設定
+        view_orders: 注文を閲覧
+      import_participants_modal:
+        cancel: キャンセル
+        import_participants_from_csv_f: CSVファイルから参加者情報をインポート
+        not_sure_about_the_format_of_t: ファイルフォーマットが分かりませんか？　 <a href='#'> CSVサンプルをダウンロードしてください。</a>
+        upload_participants: 参加者情報をアップロード
+        upload_your_csv_file: 'CSVファイルをアップロードします。:'
+      modals:
+        delete_project:
+          thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to}"
+          thomeindexunable_to_delete_pro: "%{thomeindexunable_to_delete_pro}"
+          thomeindexyes_delete_this_proj: "%{thomeindexyes_delete_this}プロジェクト"
+        no_data_for_preview_warning:
+          at_least_one_survey_must_be_co: レポートのプレビュー機能を使用するには、最低１件のアンケートを完了してください。
+          not_enough_data_to_generate_pr: レポートのプレビューを作成するためのデータが不十分です。
+        rename:
+          cancel: キャンセル
+          please_enter_a_new_name_for_th: '新規プロジェクト名を入力してください。:'
+          rename_project: プロジェクト名を変更
+          save_changes: 変更を保存
+        show_orders:
+          orderorder_number_click: "%{orderorder_number} (クリック),"
+          projects_orders: プロジェクトの注文
+          the_orders_created_by_a_projec: 注文はプロジェクトによって作成されました。
+      new_project:
+        address_form:
+          select_an_address_from_my_acco: マイ・アカウントから住所を選択
+        address_modal:
+          select_from_my_account_address: マイ・アカウントの住所から選択
+          there_are_no_addresses_related: ユーザーに紐付く住所がありません
+        contact_info:
+          billing_address: 請求先住所
+          binder_address: 解説マニュアルお届け先住所
+          contact_information: 連絡先情報
+          new_address: 新住所
+          same_as_shipping_address: お届け先住所と同じ
+          same_as_the_billing_address: 請求先住所と同じ
+          shipping_address: お届け先住所
+          this_contact_is_the_only_perso: ザ・リーダーシップ・サークルからの請求内容を見ることができるのは、この連絡先に登録されている個人のみです。
+          this_is_the_address_where_the_: この住所に、解説マニュアルがお届けされます。
+          this_is_the_address_where_the_3_ring: これは解説マニュアルが配達される住所です。
+        deliverable_options:
+          binder_with_tabs: '解説マニュアル'
+          coach_report: コーチ用レポート
+          digital_graph: PDF版サークル
+          group_report: グループレポート
+          how_many_copies_per_participan: 参加者１人あたり何部必要ですか？
+          i_want_pdf_and_printed_copies_: PDFファイルと印刷したレポートを希望します。
+          i_want_the_pdf_copies_only: PDFファイルのみ希望します。
+          participant_graph: 参加者用サークル
+          participant_report: 参加者用レポート
+          pdf_file_that_practitioner_ema: 認定プラクティショナーが参加者にメールするPDFファイル　
+          please_choose_below_which_ones: '下記からどれを印刷したいか選んでください:'
+          profile_interpretation_manual: 解説マニュアル　
+          reports: 'レポート:'
+          you_will_get_a_digital_version: '下記のPDFファイルをお届けします。:'
+          you_will_get_only_the_digital_: '解説マニュアルおよび下記レポートのPDFファイルのみをお届けします。:'
+          you_will_get_the_digital_versi: 解説マニュアルおよびすべてのレポートのPDFファイルをお届けします。
+          your_project_will_include: 'あなたのプロジェクトに含まれるのは:'
+        demographics:
+          custom:
+            age_ranges: 年齢層
+            all: すべて
+            country: 国
+            demographic_options: 人口統計データオプション
+            direct_report_ranges: 直属の部下の範囲
+            education_levels: 学歴
+            ethnic_groups: 民族グループ
+            female: 女性
+            gender: 性別
+            if_you_choose_to_run_a_custom_: カスタムレポートを作成する際、比較対象となる人口統計の母数が小さすぎる場合は、レポートが偏ったデータを含む可能性があります。リソースから、これまでの人口統計データを取得可能です。デモグラフィックの設定を初期設定に戻すことも可能です。ご質問がありましたら、各国のTLCオフィスまでお問合せください。
+            industries: 業界
+            male: 男性
+            management_levels: 管理職レベル
+            professions: 業種
+          summary:
+            age_ranges: '年齢層:'
+            countries: '国:'
+            demographic_definition: 人口統計の定義
+            demographic_details: '人口統計の詳細:'
+            demographic_size: '人口統計のサイズ:'
+            direct_report_ranges: '直属部下の範囲:'
+            education_levels: '学歴:'
+            ethnic_groups: '民族グループ:'
+            gender: '性別:'
+            industry: '業界:'
+            languages: '国:'
+            lcp_participants: LCP参加者
+            lcs_participants: LCS参加者
+            management_levels: '管理職レベル:'
+            me_participants: ME参加者
+            participants: 参加者
+            professions: '職業:'
+            sa_participants: SA参加者
+            this_is_the_number_of_people_y: この人数をあなたのプロジェクトメンバーと比較します。
+        project_details:
+          all_surveys_should_be_complete: この日までにアンケートすべてを完了させてください。
+          cancel: キャンセル
+          date_reports_are_available: レポートを入手できる日
+          next: 次へ
+          project_options: プロジェクト・オプション
+          specify_a_timeline_for_the_pro: プロジェクトのタイムラインを特定してください　
+        project_options:
+          1st_option: 'オプション１ '
+          2nd_option: 'オプション２ '
+          cancel_schedule_announcement: 'スケジュールをキャンセルする '
+          comment_questions_to_be_includ: アンケートに含まれるコメント質問　
+          evaluators_are_bosses_peers_di: FB提供者とは、参加者についてフィードバックを提供するために招待された、「上司の上司」「上司」「同僚」「直属の部下」「その他」を指します。
+          how_evaluators_are_invited_to_: FB提供者の招待方法　
+          i_will_invite: '私は招待します '
+          if_the_participant_is_responsi: 参加者がFB提供者を招待する場合、自分自身のアンケートを始める前に、指定された最低人数のFB提供者を招待してください。
+          in_this_section_you_will_be_ev: このセクションでは、あなたは～にフィードバックを提供します。
+          indicate_if_the_survey_will_be: アンケートが組織全体、または特定グループやチームを扱ったものなのか教えてください。
+          leaders_managers: リーダー/マネージャー
+          members_of_team: チームのメンバー
+          minimum_evaluations_per_partic: 参加者１人につき最低限必要なFB提供者の人数は？
+          my_participant_will_invite: '参加者がFB提供者を招待します。 '
+          organization: 組織
+          participants_will_see_the_focu: 参加者は、アンケート回答方法の焦点の定義を右ボックス内で確認してください。
+          q1_in_your_opinion_what_is_thi: 質問１:　この人の素晴らしいリーダーシップの資質、スキル、才能は何ですか。また、それを最大限活用する為に、あなたはこの人に何を提案しますか。
+          q1_what_should_heshe_stop_doin: 質問１:　彼/彼女がやめるべきことは何ですか。
+          q2_in_your_opinion_what_is_thi: '質問２: この人のリーダーシップに関する最も大きなチャレンジ（課題）は何でしょうか。さらに成長できるのはどんなところですか。また、これに取り組む為に、あなたは何を提案しますか。'
+          q2_what_can_heshe_improve: '質問２: 彼/彼女が始めるべきことは何ですか。'
+          q3_what_have_you_observed_abou: '質問３: これまでのこのアンケートで触れたこと以外に、さらに追加でこの人に伝えたいフィードバ ックは何ですか？あなたがこれまでこの人と接してきた経験からお答えください。'
+          q3_what_should_heshe_start_doi: '質問３: 彼/彼女が今後も続けるべきことは何ですか。'
+          regardless_of_who_invites_eval: 誰がFB提供者を招待したかに関わらず、認定プラクティショナーはいつでもプロジェクトダッシュボードからFB提供者の一覧を見ることができます。
+          report_demographics: レポート・デモグラフィック（人口統計）
+          schedule_sending_of_invitation: ご招待メールの自動送信を予約
+          send_now: 今すぐ送信
+          survey_focus: アンケートの対象
+          survey_focus_description: アンケートの対象を定義　
+          survey_instructions: 'アンケートの回答方法:'
+          team: チーム
+          the_invitations_can_be_schedul: ご招待メールが特定の日時に送信されるよう予約設定ができる　
+          this_is_the_minimum_number_of_: これは、参加者がレポート作成に必要な最低BF提供者数です。最低必要なFB提供者数は5名です。
+      participant_invitation:
+        if_you_have_already_sent_a_mes: 参加者に既にご招待メールを送信済みであれば、システムから参加者およびFB提供者宛に更新されたメッセージを送信することができます。
+        invitations: ご招待
+        modifying_this_message_will_ch: このメッセージを変更すると、参加者に送られるご招待メールおよびリマインドメールが選択した使用言語で送信されます。
+        please_do_not_modify_the_text_: 括弧 (*||*) 内の文字は変更しないでください。これらはメッセージを送信する際に、参加者の個人情報に置き換えられる箇所となります。
+        reminders: 注意
+        warnings: 警告
+      participants_blank_slate:
+        add_participant: 参加者を追加
+        import_participants: 参加者をインポート　
+        start_adding_participants_now: 参加者の追加を開始してください。　
+        there_are_no_participants_in_t: このプロジェクトにフィードバックが必要な参加者は存在しません。
+      reminders:
+        if_you_have_already_sent_a_mes: 参加者に既にご招待メールを送信済みであれば、システムから参加者およびFB提供者宛に更新されたメッセージを送信することができます。
+        langname_reminder: "%{langname}リマインダー"
+        modifying_this_message_will_ch: このメッセージを変更すると、参加者に送られるご招待メールおよびリマインドメールが選択した使用言語で送信されます。
+        please_do_not_modify_the_text_: 括弧 (*||*) 内の文字は変更しないでください。これらはメッセージを送信する際に、参加者の個人情報に置き換えられる箇所となります。
+        warnings: 警告
+      report_preview:
+        boss: 上司
+        bosss_boss: 上司の上司
+        direct_report: 直属の部下
+        evaluators: FB提供者
+        other: その他
+        participant: 参加者
+        peer: 同僚
+        select_categories: カテゴリーを選択
+        self: 自身
+        skill: 技能
+      resend_emails:
+        last_reminde: 前回のリマインダー
+        last_reminder_sent_on: 前回のリマインダー送信日は
+        never_sent: 未送信
+        participantuseremail: "(%{participantuseremail})"
+        select_all_participants_evalua: 参加者のFB提供者すべてを選ぶ
+        surveyevaluatoremail: "(%{surveyevaluatoremail})"
+      statuses:
+        completed_evaluating: アンケートの回答を完了
+        completed_selfsurveys: 自分自身のアンケート完了
+        in_progress: 処理中
+        not_started: 開始前
+        statcompleted_count_of_stattot: "%{stattotal_count} %{statrelation_namepluralize}のうち%{statcompleted_count}を完了"
+        statusestotal_relations_comple: " %{statusestotal_relations} の%{statusestotal_relations_comple}アンケートを完了"
+        total_of_evaluators: FB提供者の総数
+        total_of_participants: 参加者の総数
+        evaluations_completed: "%{completed}/%{total} アセスメント 完了した"
+        self_completed: "%{completed}/%{total} <b>自身</b> 完了した"
+        boss_completed: "%{completed}/%{total} <b>上司</b> 完了した"
+        peer_completed: "%{completed}/%{total} <b>同僚</b> 完了した"
+        direct_report_completed: "%{completed}/%{total} <b>直属の部下</b> 完了した"
+        other_completed: "%{completed}/%{total} <b>その他</b> 完了した"
+        boss_boss_completed: "%{completed}/%{total} <b>上司の上司</b> 完了した"
+      tooltip:
+        of: の
+        pluralizecompleted_count_relat: "%{pluralizecompleted_count_relat}完了"
+    project:
+      manage_project: プロジェクトを管理
+      resend_emails: メールを再送信
+    project_header:
+      create_group_report: グループレポートを作成　
+      create_new_project: 新規レポートを作成
+    project_table:
+      actions: アクション
+      all_projects: 'すべてのプロジェクト '
+      completion_date: アンケート回答入力完了日
+      last_reminder: 前回のリマインダー
+      product: 商品
+      project: プロジェクト
+      status: 状況
+    report_preview:
+      '0': 0%
+      categories: 'カテゴリー:'
+      evaluators: FB提供者
+      participant: '参加者:'
+      self: 自身
+      skill: 技能
+    resend_emails:
+      cancel: キャンセル
+      select_all_evaluators: 全FB提供者を選択
+      select_all_participants: 全参加者を選択
+      select_the_unfinished_particip: 回答未完了の参加者とFB提供者の中からメールを送信したい方を選んでください。選択した回答未完了者に送りたいメールの種類を選んでください。
+      send_emails_to_participants_ev: 参加者とFB提供者にメールを送信
+      send_invitation_email: ご招待メールを送信
+      send_reminder_email: リマインダーメールを送信
+    roles:
+      collaborator:
+        delete: 削除
+      collaborators:
+        torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{projectname}"
+        tsharedshared_with_project_use: "%{tsharedshared_with} %{project_userscount} %{tprojectscollabprinters}"
+    send_all_reminders:
+      close: 閉じる
+      please_wait: 少々お待ちください。
+      sending_all_reminders: 全てのリマインダーを送信中
+    share:
+      success: 成功
+    show:
+      evaluator_email: FB提供者のメールアドレス
+      evaluators: FB提供者
+      options: オプション
+      participant_email: 参加者のメールアドレス
+      participants: 参加者
+    show_consulting_settings:
+      consulting_company: コンサルティング会社
+      consulting_settings: コンサルティング設定
+      practitioner: 認定プラクティショナー
+    undo_share:
+      success: 成功
+  sa_survey_mailer:
+    request_invitation_email:
+      have_a_nice_day: よい一日をお過ごしください。
+      hello: こんにちは。
+      participant_email: '参加者のメールアドレス:'
+      participant_name: '参加者氏名:'
+      selfsurvey_completed_at: '自分自身のアンケート完了日:'
+      selfsurvey_id: '自分自身のアンケートID:'
+      we_recorded_a_new_request_for_: 'ユーザーからの新しい招待依頼がありました。:'
+    survey_completed_email:
+      age_range: 年齢層
+      basic_data: 基本データ
+      company_name: '会社名:'
+      company_revenue: 会社収益
+      country: 国
+      demographics: デモグラフィック（人口統計）
+      education_level: 学歴
+      ethnic_group: 民族グループ
+      gender: 性別
+      have_a_nice_day: よい一日をお過ごしください。
+      hello: こんにちは。
+      industry: 業界
+      management_level: 管理職レベル
+      organization_size: 組織の規模
+      participant_email: '参加者のメールアドレス:'
+      participant_name: '参加者氏名:'
+      participant_phone_number: '参加者の電話番号:'
+      please_check_the_attachment_re: 添付資料をご参照ください。レポートはPDFファイル形式です。
+      profession: 職業
+      reports: レポート
+      selfsurvey_completed_at: '自分自身のアンケート完了日:'
+      selfsurvey_created_at: '自分自身のアンケート作成日:'
+      selfsurvey_id: '自分自身のアンケートID:'
+      tlc_consultant_who_referred: 'を紹介したTLCコンサルタント:'
+      we_noticed_that_the_new_selfsu: '新しい自分自身のアンケートが完了したことを確認しました。下記の詳細をご覧ください。:'
+    survey_completed_participant_email:
+      dear_userfull_name: "%{userfull_name}様、"
+      if_youd_like_to_understand_how: リーダーとしてのあなたが周囲の人々へどのような印象を与えているか知りたい場合は、直属の部下や同僚、上司などからのフィードバックを反映した、フル・リーダーシップ・プロファイルについて喜んでお話ししたいと思います。
+      please_do_not_hesitate_to_reac: ご質問があれば遠慮なくお問合わせください。喜んで対応いたします。
+      request_a_full_lcp: フルLCPを申し込む
+      thank_you_again: 誠にありがとうございました。
+      thank_you_for_taking_the_leade: 'リーダーシップ・サークル・プロファイル、セルフ・アンケートへのご回答ありがとうございました。「マスターリング・リーダーシップ」を楽しんでいただけたこと、またあなたのリーダーとしてのこれからの躍進にこのレポートとフィードバックが役立ったことを願っております。 '
+      to_help_you_better_understand_: セルフ・アンケートのレポートをより理解していただくために、グラフやレポートの各ポイントを説明した解釈ガイドを添付しました。
+  sa_surveys:
+    demographics:
+      before_you_begin: 始める前に
+      company_details: 会社の詳細
+      continue_to_survey: アンケートを続ける
+      need_help: サポートが必要ですか？　
+      personal_information: 個人情報
+      tlc_would_like_to_gather_some_: 皆さまにご入力頂いた情報は、弊社内でのリサーチ目的のみに使用されます。第三者に情報提供をすることはありません。全ての質問にお答えいただければ幸いですが、回答を控えたい場合には、「回答しないことを希望」を選択してください。
+      we_need_a_little_more_informat: もう少しあなたのことを教えてください。
+      select_age: '選択してください。'
+      select_your_profession: '選択してください。'
+      select_your_education_level: '選択してください。'
+      select_your_residing_country: '選択してください。'
+      select_your_companys_industry: "選択してください。"
+      size_of_organization: "選択してください。"
+      select_your_management_level: "選択してください。"
+      company_revenue: "選択してください。"
+    expanding_development:
+      discover_more_about_the_leader: ザ・リーダーシップ・サークルについてもっと知る　
+      need_help: サポートが必要ですか？
+      request_invitation: 招待を依頼
+      would_you_like_to_continue_exp: リーダーとしての自己啓発を続けたいですか？
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    registration:
+      complete_the_registration_belo: アンケートに回答するには、以下で登録を完了してください。セルフ・アンケートを一気に終えることが出来ない場合は、ログイン情報を使って再開することが出来ます。セルフ・アンケート完了後、登録したメールアドレスに結果が送信されます。　
+      did_a_tlc_consultant_refer_you: TLCコンサルタントによって、弊社出版物<b>マスタリング・リーダーシップ</b>が紹介されましたか？　
+      'false': 偽
+      i_agree_to_tlc: TLCの～に同意します。
+      ja: 偽
+      need_help: サポートが必要ですか？
+      nein: いいえ
+      'no': いいえ
+      privacy_and_policy_terms: 個人情報保護方針
+      take_the_survey: アンケートに回答
+      thank_you_for_your_interest: ご興味をお持ちいただき、ありがとうございます。
+      'yes': はい
+    thank_you_participant:
+      did_you_enjoy_your_survey_shar: アンケートを楽しんでいただけましたか？お友達にシェアしてください。
+      discover_more_about_the_leader: リーダーシップサークルについてもっと知る　
+      facebook: Facebook
+      for_taking_the_leadership_circ: リーダーシップ・サークル・プロファイル:自分自身のアセスメントに答えていただき～　結果レポートが数分以内にメールで送られます。
+      linkedin: Linkedin
+      need_help: サポートが必要ですか？
+      request_invitation: 招待を依頼
+      thank_you_practitionerfull_nam: "%{practitionerfull_name}様、ありがとうございます。"
+      twitter: Twitter
+      would_you_like_to_take_the_bfu: "<b>Full 360 Profile</b>に答えて、あなたがスタッフ、同僚、上司からどのように思われているかを知ってみませんか？下記をクリックすると、その方法をお伝えできるコーチをご紹介します。"
+      wwwleadershipcirclecom: www.leadershipcircle.com
+    welcome:
+      bget_your_copy_hereb: "<b>あなたのコピーをここで手に入れましょう。</b>"
+      coming_back: 後で戻ってきますか？
+      login: ログイン
+      need_help: サポートが必要ですか？
+      sorry_but_your_answers_are_inc: 申し訳ありませんが、回答が間違っています。回答しなおしてください。
+      submit_answers: 回答提出
+      this_area_is_a_special_section: ここは我々の読者のための特別なセクションです。弊社出版物<b>マスタリング・リーダーシップ</b>を楽しんでいただけたことを願います。リーダーシップ・サークルのセルフ・アンケートを始める前に、下記の質問に答えてください。答えは本の中にあるはずです。本をお持ちではありませんか？
+      welcome_to: へようこそ
+  search:
+    index:
+      actions: 登録
+      client_name: クライアント名
+      clients: クライアント
+      consultant_companies: コンサルタント会社
+      created_at: 作成日
+      email: メールアドレス
+      evaluations: アセスメント
+      industry: 業界
+      name: 名前
+      number_of_participants: 参加者数
+      number_of_projects: プロジェクト名
+      order: 注文
+      order_date: 注文日
+      orders: 注文
+      practitioners: 認定プラクティショナー
+      product_type: 商品タイプ
+      projects: プロジェクト
+      report_name: レポート名
+      results_limited_to_20_please_u: 検索結果は20件までと限られています。もう少し正確な検索を使ってください。
+      search_results_total_count: 検索結果件数
+      selfsurveys: セルフ・アンケート
+      status: 状況
+    orders_search:
+      number_of_participants: 参加者数
+      order: 注文
+      order_date: 注文日
+      orders: 注文
+      product_type: 商品タイプ
+      report_name: レポート名
+      search_results_total_count: 検索結果(%{total_count})件
+      status: ステータス
+    partials:
+      index:
+        actions: アクション
+        client_name: クライアント名
+        clients: クライアント
+        completion_date: 完了日
+        created_at: 作成日
+        email: メールアドレス
+        evaluations: アセスメント
+        industry: 業界
+        last_reminder: 最終リマインダー
+        name: 名前
+        number_of_participants: 参加者数
+        number_of_projects: プロジェクト数
+        order: 注文
+        order_date: 注文日
+        orders: 注文
+        practitioners: 認定プラクティショナー
+        product: 商品
+        product_type: 商品タイプ
+        project: プロジェクト
+        projects: プロジェクト
+        report_name: レポート名
+        search_results: 検索結果
+        selfsurveys: セルフ・アンケート
+        status: 状況
+      order:
+        not_found_record_invalid: 該当がありませんでした。無効です。
+      organization:
+        create_group_report: グループレポートを作成
+        manage_client: クライアントを管理
+      practitioner:
+        preview_user: ユーザープレビュー
+    projects_search:
+      projects: プロジェクト
+      search_results_total_count: 検索結果(%{total_count})
+    surveys_search:
+      actions: アクション
+      completed_on: 終了日
+      completion_date: 終了日
+      delete: 削除
+      evaluating: 回答中
+      evaluations: アセスメント
+      language: 言語
+      last_logged_in: 最終ログイン日
+      more_actions: その他の機能
+      move: 移動
+      not_started: 開始前
+      of: の
+      project_name: プロジェクト名
+      questions: 質問
+      reset: 再設定
+      role: 役割
+      search_results_total_count: 検索結果(%{total_count})
+      self_surveys: 自分自身のアンケート
+      survey_taker_details: アンケート・テイカー詳細
+    users_search:
+      actions: アクション
+      created_at: 作成日
+      email: メールアドレス
+      evaluations: アセスメント
+      name: 姓
+      practitioners: 認定プラクティショナー
+      search_results_total_count: 検索結果 (%{total_count})件
+      selfsurveys: 自分自身のアンケート
+  shared:
+    1_printed_copy_per_participant: 参加者一人あたりの印刷部数１部
+    actions: アクション
+    add: 追加
+    add_participant: 参加者を追加
+    cancel: キャンセル
+    certified_consultants: 認定プラクティショナー
+    companies: クライアント
+    complete_by: までに完了
+    completed_at: 完了日
+    confirm: よろしいですか？
+    create_group_report: グループレポートを作成
+    created_at: 作成日
+    date_created: 作成日
+    delete: 削除
+    demographic: デモグラフィック（人口統計）
+    details: 詳細
+    edit: 編集
+    edit_evaluator: FB提供者を編集
+    email: メールアドレス
+    import_participants: 参加者情報をアップロード
+    kind: 種類
+    licensor: ライセンサー
+    manage_evaluators: FB提供者を管理
+    menu:
+      dashboard: ダッシュボード
+      disabled: 無効化済み
+      invited: 招待済み
+      orders: 注文
+      print_reports: レポートを印刷
+      project_center: プロジェクトセンター
+      survey_takers: アンケート・テイカー
+      utilities: ユーティリティー
+    more_actions: その他の機能
+    name: 名前
+    new:
+      footer:
+        current_useremail: "(%{current_useremail})"
+        go_back_to_the_csr_project_cen: CSRプロジェクトセンターへ戻る
+        you_true_useremail_are_imperso: あなた(%{true_useremail})は認定プラクティショナーとしてログインしています。
+        your_password_will_expire: あなたのパスワードは %{days_to_expire} 日で失効します。 
+        renew_your_password: パスワードを変更してください。
+      header:
+        go_to_project_center: プロジェクトセンターへ進む
+        link_to_class_logo__link_do: "/"
+        selfassessment: セルフ・アセスメント
+        the_leadership_circle: 'リーダーシップ・サークル:'
+        the_leadership_circle_profilet: リーダーシップ・サークル・プロファイル&trade;
+        the_leadership_circle_selfasse: リーダーシップ・サークル：セルフ・アセスメント
+      modal_search:
+        all: すべて
+        orders: 注文
+        projects: プロジェクト
+        survey_takers: アンケート・テイカー
+        users: ユーザー
+      modal_wait:
+        importing_participants: 参加者をインポート中
+        please_wait: 少々お待ちください。
+      nav:
+        my_clients: 私のクライアント
+        my_orders: 私のオーダー
+        people: 人々
+        print_reports: レポートを印刷
+        project_center: プロジェクト・センター
+        utilities: ユーティリティー
+        my_surveys: 私の進行中の アンケート
+        active_projects: 進行中のプロジェクト
+      navigation_mobile:
+        logout: ログアウト
+        my_account: マイ・アカウント
+      session_timeout_modal:
+        attention: 注意！
+        logout: ログアウト
+        more_time: ログイン状態を続ける
+        you_have_been_inactive_and_you: 一定の時間、画面上での入力がなかったため、<b class="remaining-time">5:00</b> 分後に自動的にログアウトされます。このまま続けますか？
+      session_timeout_remodal_modal:
+        attention: 注意！
+        logout: ログアウト
+        more_time: 入力を続ける
+        you_have_been_inactive_and_you: 一定の時間、画面上での入力がなかったため、<b class="remaining-time">5:00</b> 分後に自動的にログアウトされます。このまま続けますか？
+      user_navigation:
+        logout: ログアウト
+        my_account: マイ・アカウント
+        stop_impersonating_current_use: "%{current_userfull_name}としてのログインを停止してください。"
+        take_selfassessment: セルフ・アセスメントを実施する
+    next_page: 次のページ
+    not_set: 未設定
+    notify:
+      delete_warning: アンケートを完了したFB提供者は削除できません。
+      success: 日付が保存されました。
+      update_warning: アンケートを完了したFB提供者の変更はできません。
+    number: 数
+    of: の
+    old:
+      forbidden:
+        forbidden: アクセスできません
+    participants: 参加者
+    pdf_report: PDFレポート
+    people: 人々
+    percent_complete: "%完了"
+    please_remove_children: 従属データ（組織、プロジェクト）のためにデータ削除ができません。
+    preview: プレビュー
+    preview_report: レポートを見る
+    previous: 次へ
+    printing_access: 印刷アクセス
+    projects: プロジェクト
+    questions: 質問
+    rename: 名称変更
+    report: レポート
+    report_for: "～のレポート"
+    reset_password: パスワードの再設定
+    reset_password_confirm: 本当にパスワードを再設定してよいですか？
+    role: 役割
+    save: 保存
+    save_changes: 変更を保存
+    send_invitations: 招待メールを送信
+    shared_settings: シェアしている設定
+    shared_with: "～とシェアしている　"
+    status: 状態
+    system: システム
+    to: "～へ"
+    total: 総数
+    users: ユーザー
+    were_found: が見つかりました。
+    when: いつ
+    who: 誰
+  support:
+    array:
+      last_word_connector: ", と "
+      two_words_connector: " と "
+      words_connector: ", "
+  surveys:
+    another_show:
+      surveyproductname: "%{surveyproductname}"
+      tsurveysshowsurvey_for_surveye: "%{tsurveysshowsurvey_for} %{surveyevaluatorfull_name}"
+    answers:
+      are_you_sure_undone: これでよろしいですか？答えをすべて確認してください。このステップはやり直しが出来ません。
+      back_to_surveys: アンケートに戻る
+      finish_survey: アンケートを終了
+      next_section: 次セクション
+      previous_section: 前のセクション
+      questions_completed: 完了した質問
+    before_you_begin:
+      back_to_main_page: メインページへ戻る
+      before_you_begin: 始める前に
+      continue_to_survey: アンケートに続く
+      need_help: サポートが必要ですか？
+      tlc_would_like_to_gather_some_: 皆さまにご入力頂いた情報は、弊社内でのリサーチ目的のみに使用されます。第三者に情報提供をすることはありません。参加を控えたい場合は、「回答しないことを希望」を選び「アンケートを続ける」をクリックしてください。
+      we_need_a_little_more_informat: もう少しあなたのことを教えてください。　
+    demographic:
+      before_you_begin: 始める前に
+      tlc_would_like_to_gather_some_: 皆さまにご入力頂いた情報は、弊社内でのリサーチ目的のみに使用されます。第三者に情報提供をすることはありません。全ての質問にお答えいただければ幸いですが、「回答しないことを希望」という選択肢もありますので、ご利用ください。”.
+      we_need_a_little_more_informat: もう少しあなたのことを教えてください。　
+    done: アンケート回答を続けて下さい。
+    index:
+      active_surveys: 進行中のアンケート　
+      complete_active_surveys: 以下の進行中アンケートの回答をすべて終わらせてください。
+      content: コンテンツ　
+      my_active_surveys: 私の進行中のアンケート
+      need_help: サポートが必要ですか？
+      self_survey: セルフ・アンケート
+      survey_history: アンケート履歴　
+      take_survey: アンケートに回答
+    invite_evaluators:
+      last_name_placeholder: 山田
+      first_name_placeholder: 太郎
+      add_evaluator: フィードバック提供者を追加
+      back_to_survey_list: アンケート一覧に戻る
+      evaluators_provide_feedback_on: フィードバック提供者は、アンケート回答を通して、あなたのリーダーシップスキルやコンピテンシーについてのフィードバックを行います。
+      invite_evaluators: フィードバック提供者を招待　
+      need_help: サポートが必要ですか？
+      take_the_survey: アンケートに回答　
+      you_have_enough_evaluators_to_: アンケートに回答するのに必要なFB提供者数です。しかし、最低<span class='minimum-evaluators'><b>10人のFB提供者<b></span>を揃えていることが望ましいです。　
+      you_must_add_at_least_span_cla: 最低<span class='minimum-evaluators'>%{current_userinvitee_surveys}</span>名のFB提供者を追加してください。
+    not_enough_invited_evaluators: 参加者は、FB提供者を招待することができます。 アンケート実施に必要なFB提供者数を満たしていません。
+    not_valid: 申し訳ありませんが、このアンケートは既に無効となっています。
+    partials:
+      modals:
+        need_help:
+          description: 以下のリストからサポートが必要なアンケートをクリックしてください。担当のTLC認定プラクティショナーができるだけ速やかにご連絡いたします。
+          main_support: メイン・サポート（TLCアメリカ本国へのお問い合わせ）
+      continue_survey:
+        '100': 100%
+        culture_survey_for: Culture Survey for JP
+        current_userfirst_name_current: " %{current_userlast_name} %{current_userfirst_name}"
+        review_your_answers: 回答を見直す
+        self_survey_for: "対象となる参加者名（敬称略）:"
+        thanks_current_userfirst_name: "%{current_userfirst_name}様、ありがとうございます。"
+        you_are_currently_taking_secti: 現在、２つあるセクションのうち、セクション%{paramssection_page}に回答しています。
+        you_have_answered_all_the_ques: セクション%{paramssection_page}の回答を完了しました。
+      evaluator_form:
+        cancel: キャンセル
+        update_evaluator: 更新
+      evaluators:
+        edit_evaluator: FB提供者を編集
+        evaluator_details: FB提供者の詳細　
+        language: 言語
+        relationship: 関係性
+      modal:
+        add_evaluator: FB提供者を追加　
+        always: いつも
+        cancel: キャンセル
+        edit_evaluator: FB提供者を編集
+        na: 該当なし
+        never: 決してない
+        often: しばしば
+        once_added_an_email_will_be_im: メールアドレスを追加すると、FB提供者宛てにご招待メールが自動配信されます。
+        previous_question: 前の質問
+        review_your_answers: 回答を確認
+        seldom: まれに
+        self_survey_for_bthe_most_effe: "<b>私が知っている最も効果的なリーダーシップを発揮している人</b>についてのアンケート"
+        sometimes: 時々
+        adding_evaluator: 追加
+      my_active_surveys:
+        complete_by: "アンケート回答入力完了日："
+        current_userinvitee_completed_: アンケート%{current_userinvitee_surveyssel}件中の%{current_userinvitee_completed_}件を完了
+        evaluator_setup: フィードバック提供者を設定
+        my_active_surveys: 私の進行中のアンケート
+        please_complete_all_of_your_ac: 以下のすべての進行中のアンケートを完了してください。　
+        self_survey: 自分自身のアンケート
+        take_the_survey: アンケートに回答　
+        you_have_bpluralizecurrent_use: "<b>%{pluralizecurrent_useractive_ev}</b>件のアンケートに回答してください:"
+        self_evaluations_left:
+          one: "<b>1</b>件の自分自身のアンケートに回答してください。"
+          other: "<b>%{count}</b>件の自分自身のアンケートに回答してください。"
+        evaluations_self:
+          one: "<b>1</b>件のアンケートにフィードバック提供者として回答してください。"
+          other: "<b>%{count}</b>件のアンケートにフィードバック提供者として回答してください。"
+        you_must_invite_at_least_self_: アンケートを開始する前に、最低%{self_surveyprojectminimum_eval}名のフィードバック提供者を招待してください。
+      new_or_pending:
+        continue_the_survey: アンケートを続ける
+        current_sectionquestionscount_: "%{current_sectionquestionscount}個の質問"
+        go_back_to_survey_list: アンケート一覧に戻る
+        need_help: サポートが必要ですか？
+        of: の
+        previous_section: 前のページ
+        restart_previous_survey: 前のアンケートを再開する
+        start_the_survey: アンケートを開始　
+        you_have_answered: 答えました
+      no_evaluators:
+        add_evaluator: FB提供者を追加　　
+        why_do_i_have_to_invite_evalua: なぜFB提供者を登録する必要があるのですか？　
+        you_currently_do_not_have_any_: フィードバック提供者が未登録です。
+        you_need_to_have_at_least_span: アンケートを始める前に、最低<span class='minimum-evaluators'>%{minimum_evals}名のFB提供者</span>を追加してください。。 <br>FB提供者を一覧に追加するには、下のボタンをクリックしてください。
+      question:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: いつも
+        culture_survey_for: のためのカルチャー・サーベイ
+        na: 該当なし
+        never: 決してない
+        of: /
+        often: しばしば
+        perc_progress: "%{perc_progress}%"
+        previous_question: 前の質問
+        providing_feedback_for: "対象となる参加者名（敬称略）"
+        question: 質問
+        seldom: まれに
+        self_survey_for: "対象となる参加者名（敬称略）:"
+        sometimes: 時々
+        very_strongly_agree: 非常に 強く 同意 する
+        strongly_agree: 強く 同意 する
+        agree: 同意 する
+        slightly_agree: やや 同意 する
+        slightly_disagree: あまり 同意 しない
+        disagree: 同意 しない
+        strongly_disagree: S全く 同意 しない
+        very_strongly_disagree: あり 得ない
+        you_are_currently_taking_secti: "現在%{surveysectionscount}つあるセクションのうち、セクション%{sections_page}に回答しています。"
+        "×": "×"
+      review:
+        finish_your_survey: アンケートを終了する
+        need_help: サポートが必要ですか？
+        next_section: 次のセクション
+        previous_section: 前のページ
+        review_continue: 確認して続ける
+        review_your_answers_to_the_lea: 回答内容を確認してください。回答を修正する場合は「編集」をクリックしてください。
+        section_sectionscurrent_page_o: "セクション %{sectionscurrent_page}/%{sectionstotal_pages}"
+        your_survey_is_almost_complete: アンケートはもうすぐ完了です。セクション2の回答内容を確認してください。
+        your_survey_is_not_yet_complet: まだアンケートは完了していません。もう%{sectionstotal_pages_sectionscu}つセクションが残っています。
+      review_form:
+        '1': '1'
+        '15': '1.5'
+        '2': '2'
+        '25': '2.5'
+        '3': '3'
+        '35': '3.5'
+        '4': '4'
+        '45': '4.5'
+        '5': '5'
+        always: いつも
+        cancel: キャンセル
+        na: 該当なし
+        never: 決してない
+        often: しばしば
+        seldom: まれに
+        sometimes: 時々
+        update: 更新する
+        very_strongly_agree: 非常に 強く 同意 する
+        strongly_agree: 強く 同意 する
+        agree: 同意 する
+        slightly_agree: やや 同意 する
+        slightly_disagree: あまり 同意 しない
+        disagree: 同意 しない
+        strongly_disagree: 全く 同意 しない
+        very_strongly_disagree: あり 得ない
+      sections:
+        survey_taker_evaluator_section_1_description:
+          leadership_profile: リーダーシップ・サークル・プロファイル
+          providing_feedback_section_sec: 'セクション %{sectionscurrent_page}/%{sectionstotal_pages}'
+          you_will_be_able_to_review_and: 各セクションの最後に回答を確認、編集することが出来ます。
+        survey_taker_section_1_description:
+          culture_survey: カルチャー・サーベイ
+          leadership_profile: リーダーシップ・サークル・プロファイル　
+          section_sectionscurrent_page_o: 'セクション %{sectionscurrent_page}/%{sectionstotal_pages}'
+          you_will_be_able_to_review_and: 各セクションの最後に回答を確認、編集することが出来ます。
+        survey_taker_section_2_description:
+          at_the_end_of_this_section_you: セクションの最後で回答を確認、編集することができます。
+          most_effective_leader: 最も効果的なリーダーシップを発揮している人
+          section_sectionscurrent_page_o: 'セクション %{sectionscurrent_page}/%{sectionstotal_pages}'
+      survey_history:
+        completed_on: 完了日
+        expired_on: 期限切れ
+        evaluator_setup: フィードバック提供者の設定　
+        my_survey_history: 私のアンケート履歴　
+        self_survey: セルフ・アンケート
+        this_is_the_list_of_all_the_su: 以下は、あなたがこれまでに回答した全てのアンケート一覧です。
+        you_have_completed_bpluralizec: "<b>%{pluralizecurrent_usercompleted}</b>を完了しました:"
+        self_evaluations_completed:
+          one: "件のアンケートにフィードバック提供者として回答してください。"
+          other: "<b>%{count}</b>件の自分自身のアンケートに回答してください。"
+        evaluations_completed:
+          one: "<b>1</b>件のアンケートにフィードバック提供者として回答してください。"
+          other: "<b>%{count}</b>件のアンケートに回答完了済みです。"
+      thanks:
+        all_your_answers_have_been_sub: あなたの回答はすべて提出、保存されました。お時間ありがとうございました。
+        go_back_to_survey_list: アンケート一覧に戻る
+        log_out: ログアウト
+        thanks_current_userfirst_name_: "%{current_userfirst_name}様、アンケートへのご回答ありがとうございます。"
+    process_error: アンケート進行中に何かエラーがありました。システムでエラーが発生しました。
+    questions:
+      put_your_answer_here: 回答をここに入力してください。
+    questions_completed: 質問が完了しました。
+    sa_request: ありがとうございました。またご連絡いたします。
+    sections:
+      current_leadership_culture: このセクションでは、<b>%{participant}</b>をアセスメントします。最も一般的にリーダーによって実践、奨励、許可されているリーダーとしての行動について述べてください、。あなたの所属する組織やチームでのリーダーに関わる経験全体に影響する多くの要因があるかも知れません。例えば、リーダーとして全く異なるタイプの管理職が二人おり、両者ともに組織やチームにおけるリーダーのあり方に影響を持っている場合などです。あなた個人としての経験に最も影響のあった行動について述べてください。
+      desired_leadership_culture: このセクションでは、<b>%{participant}</b>に対してどのようなリーダーでいて欲しいかという質問に答えてください。各質問において、リーダーシップ風土が理想的である、つまり、現状また将来的な環境においてリーダーが成長できる環境であるとして答えてください。
+      ideal_to_ideal: ''
+      leadership_profile: このセクションは、<b>%{participant}</b>さんのリーダーシップ・プロファイル（LCP）を作成するためのものです。第一印象に基づいて質問に答えてください。質問に対する答えがわからない場合、また質問に当てはまらない場合は、「該当なし」を選択してください。
+      manager_profile: このセクションは、<b>%{participant}</b>のマネージャー・プロファイル構築のために設計されています。第一印象に基づいて質問に答えてください。質問への答えが分からない場合、また質問が当てはまらない場合は、「該当なし」と答えてください。
+      most_effective_leader: |-
+        このセクションでは、質問の対象となるのは<b>%{participant}</b>さんではありません。
+        ここでは、あなたがこれまでに一緒に仕事をした中で（直接または間接的に）、最も効果的なリーダーシップを発揮しているとあなたが思う人を思い浮かべ、
+        その人物について回答してください。
+      write_in_feedback: このセクションでは、<b>%{participant}</b>さんに対する追加コメントを記入してください。記入されたコメントは参加者がサーベイの結果を理解するため役立ちます。コメントには、アンケートで扱われていなかった内容や<b>%{participant}</b>さんについての特定のフィードバックの回答の理由、<b>%{participant}</b>さんに伝えたいことなどを書いてください。
+    self:
+      end_section: セクションの最後で、答えを見直し変更することができます。
+      identify_effective_leader: 代わりに、過去に一緒に働いたことのある（直接または間接的に）最も効率的なリーダーについて考えてください。<b>その人物を念頭に質問に答えてください。</b>
+      most_effective_leader: 最も効果的なリーダーシップを発揮している人　
+      no_longer_be_evaluating: このセクションでは、もはやアセスメントはしていません。　
+      surveyproductname: "%{surveyproductname}"
+      that_person_in_mind: 最も効果的なリーダーシップを発揮している人
+      tsurveysselfno_longer_be_evalu: "%{tsurveysselfno_longer_be_evalu} %{surveyevaluatorfull_name}."
+    show:
+      survey_for: についてのアンケート
+    survey:
+      tsharedcompleted_at_lsurveycom: "%{tsharedcompleted_at} %{lsurveycompleted_at_format_lon}"
+    survey_progress:
+      current_sectionanswers_forsurv: "%{current_sectionanswers_forsurv}/%{current_sectionquestionscount}"
+      current_sectionpercentage_comp: "%{current_sectionpercentage_comp}%{tsharedpercent_complete}"
+  system_history:
+    announcement_send_at_changed:  リマインダー送信日がに変更されました。 %{date}
+    change_history: 変更履歴
+    comment_questions_changed: コメントの質問が変更されました。 '%{value}'
+    completion_date_changed: 完了日がに変更されました %{date}
+    create_participant: 作成された参加者 %{participant}
+    delete_participant: 削除された参加者 %{participant}
+    demographics_policy_changed: レポートのデモグラフィック（人口統計）がに変更されました '%{value}'
+    description: この注文を発注後、加えられた変更は次のとおりです。 %{created_date}
+    pdf_copies_only_changed: 選択されたPDFファイルのコピーのみ
+    printed_copies_changed: PDFと印刷されたコピーを選択
+    project_created: プロジェクトが作成されました。
+    report_date_changed: 報告日が変更されました。 %{date}
+    retake_added: 再開する %{participant} 追加されました。
+    retake_removed: 再開する %{participant} 削除されました。
+  templates:
+    form:
+      form:
+        if_you_have_already_sent_the_m: すでに参加者へメッセージを送信している場合は、更新情報を届けるためにプロジェクト内から再送信してください。
+        modifying_this_message_will_ch: このメッセージを変更すると、参加者すべて送られる挨拶メールに英語版のアンケートが添付されるようになります。　
+        please_do_not_modify_any_text_: 括弧 (*||*) 内の文字は変更しないでください。これらはメッセージを送信する際に、参加者の個人情報に置き換えられる箇所となります。
+        reset_english_message: 英語のメッセージを再設定
+        return_to_list: 一覧に戻る　
+        update_english_message: 英語のメッセージを更新
+    participant_invitation_msg:
+      message: メッセージ
+      reset_english_message: 英語のメッセージを再設定
+      save_templatelanguagename_mess: "%{templatelanguagename}メッセージを保存"
+      subject: タイトル
+  time:
+    am: 午前
+    formats:
+      default: "%a, %d %b %Y %I:%M:%S %p %Z"
+      long: "%B %d, %Y %I:%M %p"
+      short: "%d %b %I:%M %p"
+    pm: 午後
+  timezones:
+    "International Date Line West": "日付変更線西側"
+    "Midway Island": "ミッドウェー島"
+    "American Samoa": "米領サモア"
+    "Samoa": "サモア"
+    "Hawaii": "ハワイ"
+    "Alaska": "アラスカ"
+    "Pacific Time (US & Canada)": "太平洋時間（米国とカナダ）"
+    "Tijuana": "ティファナ"
+    "Mountain Time (US & Canada)": "山岳部時間（米国とカナダ）"
+    "Arizona": "アリゾナ"
+    "Chihuahua": "チワワ"
+    "Mazatlan": "マサトラン"
+    "Central Time (US & Canada)": "中部時間（米国とカナダ）"
+    "Saskatchewan": "サスカチュワン"
+    "Guadalajara": "グアダラハラ"
+    "Mexico City": "メキシコシティ"
+    "Monterrey": "モントレー"
+    "Central America": "中央アメリカ"
+    "Eastern Time (US & Canada)": "東部時間（米国とカナダ）"
+    "Indiana (East)": "インディアナ（東）"
+    "Bogota": "ボゴタ"
+    "Lima": "リマ"
+    "Quito": "キト"
+    "Atlantic Time (Canada)": "大西洋時間（カナダ）"
+    "Caracas": "カラカス"
+    "La Paz": "ラパス"
+    "Santiago": "サンティアゴ"
+    "Newfoundland": "ニューファンドランド"
+    "Brasilia": "ブラジリア"
+    "Buenos Aires": "ブエノスアイレス"
+    "Georgetown": "ジョージタウン"
+    "Greenland": "グリーンランド"
+    "Mid-Atlantic": "中部大西洋"
+    "Azores": "アゾレス"
+    "Cape Verde Is.": "カーボベルデ諸島"
+    "Dublin": "ダブリン"
+    "Edinburgh": "エディンバラ"
+    "Lisbon": "リスボン"
+    "London": "ロンドン"
+    "Casablanca": "カサブランカ"
+    "Monrovia": "モンロビア"
+    "UTC": "協定世界時"
+    "Belgrade": "ベオグラード"
+    "Bratislava": "ブラチスラバ"
+    "Budapest": "ブダペスト"
+    "Ljubljana": "リュブリャナ"
+    "Prague": "プラハ"
+    "Sarajevo": "サラエボ"
+    "Skopje": "スコピエ"
+    "Warsaw": "ワルシャワ"
+    "Zagreb": "ザグレブ"
+    "Brussels": "ブリュッセル"
+    "Copenhagen": "コペンハーゲン"
+    "Madrid": "マドリード"
+    "Paris": "パリ"
+    "Amsterdam": "アムステルダム"
+    "Berlin": "ベルリン"
+    "Bern": "ベルン"
+    "Rome": "ローマ"
+    "Stockholm": "ストックホルム"
+    "Vienna": "ウィーン"
+    "West Central Africa": "西部中央アフリカ"
+    "Bucharest": "ブカレスト"
+    "Cairo": "カイロ"
+    "Helsinki": "ヘルシンキ"
+    "Kyiv": "キエフ"
+    "Riga": "リガ"
+    "Sofia": "ソフィア"
+    "Tallinn": "タリン"
+    "Vilnius": "ビリニュス"
+    "Athens": "アテネ"
+    "Istanbul": "イスタンブール"
+    "Minsk": "ミンスク"
+    "Jerusalem": "エルサレム"
+    "Harare": "ハラレ"
+    "Pretoria": "プレトリア"
+    "Kaliningrad": "カリーニングラード"
+    "Moscow": "モスクワ"
+    "St. Petersburg": "サンクトペテルブルク"
+    "Volgograd": "ボルゴグラード"
+    "Samara": "サマーラ"
+    "Kuwait": "クウェート"
+    "Riyadh": "リヤド"
+    "Nairobi": "ナイロビ"
+    "Baghdad": "バグダッド"
+    "Tehran": "テヘラン"
+    "Abu Dhabi": "アブダビ"
+    "Muscat": "マスカット"
+    "Baku": "バクー"
+    "Tbilisi": "トビリシ"
+    "Yerevan": "エレバン"
+    "Kabul": "カブール"
+    "Ekaterinburg": "エカテリンブルク"
+    "Islamabad": "イスラマバード"
+    "Karachi": "カラチ"
+    "Tashkent": "タシュケント"
+    "Chennai": "チェンナイ"
+    "Kolkata": "コルカタ"
+    "Mumbai": "ムンバイ"
+    "New Delhi": "ニューデリー"
+    "Kathmandu": "カトマンズ"
+    "Astana": "アスタナ"
+    "Dhaka": "ダッカ"
+    "Sri Jayawardenepura": "スリジャヤワルダナプラ"
+    "Almaty": "アルマトイ"
+    "Novosibirsk": "ノボシビルスク"
+    "Rangoon": "ヤンゴン"
+    "Bangkok": "バンコク"
+    "Hanoi": "ハノイ"
+    "Jakarta": "ジャカルタ"
+    "Krasnoyarsk": "クラスノヤルスク"
+    "Beijing": "北京"
+    "Chongqing": "重慶"
+    "Hong Kong": "香港"
+    "Urumqi": "ウルムチ"
+    "Kuala Lumpur": "クアラルンプール"
+    "Singapore": "シンガポール"
+    "Taipei": "台北"
+    "Perth": "パース"
+    "Irkutsk": "イルクーツク"
+    "Ulaan Bataar": "ウランバートル"
+    "Seoul": "ソウル"
+    "Osaka": "大阪"
+    "Sapporo": "札幌"
+    "Tokyo": "東京"
+    "Yakutsk": "ヤクーツク"
+    "Darwin": "ダーウィン"
+    "Adelaide": "アデレード"
+    "Canberra": "キャンベラ"
+    "Melbourne": "メルボルン"
+    "Sydney": "シドニー"
+    "Brisbane": "ブリスベン"
+    "Hobart": "ホバート"
+    "Vladivostok": "ウラジオストク"
+    "Srednekolymsk": "スレドネコリムスク"
+    "Guam": "グアム"
+    "Port Moresby": "ポートモレスビー"
+    "Magadan": "マガダン"
+    "Solomon Is.": "ソロモン諸島"
+    "New Caledonia": "ニューカレドニア"
+    "Fiji": "フィジー"
+    "Kamchatka": "カムチャツカ"
+    "Marshall Is.": "マーシャル諸島"
+    "Auckland": "オークランド"
+    "Wellington": "ウェリントン"
+    "Nuku'alofa": "ヌクアロファ"
+    "Tokelau Is.": "トケラウ諸島"
+    "Montevideo": "モンテビデオ"
+    "Ulaanbaatar": "ウランバートル"
+    "Chatham Is.": "チャタム島"
+    "Zurich": "チューリッヒ"
+  users:
+    avatar_upload:
+      error: アップロードにエラーがありました。再度試してください。
+      success: 画像のアップロードに成功しました。
+    demographic:
+      demographics: デモグラフィック（人口統計）
+    demographic_form:
+      company_details: 会社の詳細
+      continue_to_survey: アンケートを続ける
+      need_help: サポートが必要ですか？
+      personal_information: 個人情報
+    edit:
+      add_address: 住所を追加
+      add_phone: 電話番号を追加
+      address_type: アドレスの種類
+      addresses: 住所
+      age: '年令:'
+      back_to_settings: 設定へ戻る
+      cancel: キャンセル
+      change_password: パスワードを変更
+      change_profile_picture: プロファイル写真を変更
+      city: 住所（建物名など）
+      company_details: 会社の詳細
+      company_name: 会社名
+      company_revenue: 会社の収益
+      confirm_password: 'パスワードを確認:'
+      country_address: 国
+      current_password: 現在のパスワード
+      date_of_birth: 生年月日
+      education: 学歴
+      email: メールアドレス
+      ethnic_group: 民族グループ
+      fax: Fax
+      first_name: 姓
+      gender: 性別
+      home: ホーム
+      industry: 業界
+      language: 言語
+      last_name: 名
+      management_level: 管理職レベル
+      mobile: 携帯
+      new_password: 新しいパスワード
+      number_of_direct_reports: 直属の部下の人数
+      organization_level: 役職
+      password: パスワード
+      password_label: 'パスワード:'
+      personal_information: 個人情報
+      phone_numbers: 電話番号
+      please_enter_address_name: 住所と氏名を入力してください　
+      please_enter_email: メールアドレスを入力してください
+      please_enter_new_confirmation_: 新しく確認したパスワードを入力してください
+      please_enter_new_password: 新しいパスワードを入力してください
+      please_enter_phone_number: 電話番号を入力してください
+      please_enter_valid_confirmatio: 確認されたパスワードを入力してください
+      please_enter_valid_email: 有効なメールアドレスを入力してください
+      profession: 職業
+      professional_information: 仕事に関する情報
+      profile_picture: プロファイル写真
+      reenter_new_password: 新しいパスワードを再入力
+      remove_address: この住所を削除
+      remove_phone: この電話番号を削除
+      remove_profile_picture: プロファイル写真を削除
+      residing_country: 居住国
+      retype_password: 新しいパスワードを再入力してください。
+      save_changes: 変更を保存
+      size_of_organization: 組織の規模
+      state_province: 都道府県
+      street_address: 住所（町名、番地など）1
+      street_address_2: 住所（町名、番地など）2
+      city_placeholder: 大崎CNビル6階
+      use_the_form_below_to_change_t: TLCアカウントのパスワードを変更するには、下記のフォームをご使用ください。　
+      user_roles: ユーザーの役割
+      users_placeholder: ユーザーのために予約されたスペース
+      work: 勤務先
+      working_address: 作業アドレス
+      zip_code_address: 郵便番号
+      address_line1_placeholder: 品川区大崎
+      address_line2_placeholder: 5-10-10
+      password_must_have_at_least: "パスワードは以下の要件を満たす必要があります。"
+      9_characters: 9文字以上であること（全て半角）
+      1_lowercase_letter: 1つ以上の小文字のアルファベット
+      1_uppercase_letter: 1つ以上の大文字のアルファベット
+      1_number: 1つ以上の数字
+      1_special_character: 1特殊文字
+      passwords_dont_match: 「パスワードが一致しません」
+      good_so_far: これまでのところ良い
+      match: 一致
+      good: 良い
+      too_week: 弱すぎる
+    modify:
+      success: ユーザーの更新に成功しました。
+    take_self_assessment:
+      error: エラーが発生しました。
+    update_demographics:
+      error: デモグラフィック（人口統計データ）にエラーがあります。再度試してください。
+      success: 入力していただいた情報を保存しました。
+    update_password:
+      success: パスワード更新に成功しました。
+  utilities:
+    index:
+      all: すべて
+      billings: 請求
+      'false': いいえ
+      filter: フィルター
+      filter_by_in_voiced: '請求済みによるフィルター:'
+      filter_by_order_status: '注文状況によるフィルター:'
+      filter_by_region: '地域によるフィルター:'
+      finished: 終了
+      'no': いいえ
+      ordered: 注文済み
+      orders: 注文
+      orders_placeholder: 注文名または注文番号を入力してください。
+      projects: プロジェクト
+      projects_placeholder: プロジェクト名を入力してください。
+      search: 検索
+      survey_takers: アンケート・テイカー
+      surveys_placeholder: ユーザネームまたはメールアドレスを入力してください。
+      users: ユーザー
+      users_placeholder: ユーザーネームまたはメールアドレスを入力してください。
+      'yes': はい
+    new_sa:
+      generate: 作成
+      select_score_for_answers: '答えに対するスコアを選んでください:'
+      users_email: 'ユーザーのメールアドレス:'
+    partials:
+      billing_table:
+        invoiced: 請求済み
+      search_orders:
+        found_order: 注文が見つかりました
+        no_order_is_found: 注文が見つかりません。
+      search_orders_details:
+        ordercoach_report_qty: "%{ordercoach_report_qty}"
+        ordercoach_report_qty_tordersd: "%{ordercoach_report_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_graph_qty: "%{orderparticipant_graph_qty}"
+        orderparticipant_graph_qty_tor: "%{orderparticipant_graph_qty} %{tordersdetailscopies_per_parti}"
+        orderparticipant_report_qty: "%{orderparticipant_report_qty}"
+        orderparticipant_report_qty_to: "%{orderparticipant_report_qty} %{tordersdetailscopies_per_parti}"
+        pdf: PDF
+      search_projects:
+        no_projects_are_found: プロジェクトが見つかりません。
+      search_surveys:
+        actions: アクション
+        completed_on: 終了日
+        completion_date: 終了日
+        delete: 削除
+        evaluating: アンケート回答中
+        evaluations: アンケート
+        found_survey_taker: アンケート・テイカーが見つかりました
+        language: 言語
+        last_logged_in: 前回のログイン
+        more_actions: その他の機能
+        move: 移動
+        no_survey_is_found: アンケートが見つかりません。
+        not_started: 未開始
+        of: の
+        project_name: プロジェクト名
+        questions: 質問
+        reset: 再設定
+        role: 役割
+        self_surveys: セルフ・アンケート
+        survey_taker_details: アンケート・テイカー詳細
+      search_users:
+        back: 戻る
+        email: 'メールアドレス:'
+        found_user: ユーザーが見つかりました
+        impersonate: 他のユーザーとしてログイン
+        name: '氏名:'
+        no_user_is_found: ユーザーが見つかりません。
+      survey:
+        reset: 再設定
+    show_order:
+      billing_contact: 請求連絡先
+      binder_contact: バインダーお届け連絡先
+      coaching_report: 'コーチ用レポート:'
+      comment_questions: 'コメント質問:'
+      company: 会社
+      demographics: '人口統計:'
+      included_participants: '含まれている参加者:'
+      invoice_order: 請求書注文
+      invoiced: '請求済み:'
+      list_of_participants: 参加者一覧
+      mark_order_as_not_invoiced: 注文を未請求としてチェックする
+      order_details: 注文詳細
+      order_number: '注文番号:'
+      ordercoach_report_qty_copies: "%{ordercoach_report_qty}部"
+      orderparticipant_graph_qty_cop: 参加者一人あたり%{orderparticipant_graph_qty}部
+      orderparticipant_report_qty_co: 参加者一人あたり%{orderparticipant_report_qty}部
+      participant_graph: '参加者グラフ:'
+      participant_report: '参加者レポート:'
+      pdf: PDF
+      planned_completion_date: '完了予定日:'
+      processing_date: '処理日:'
+      product_type: '商品タイプ:'
+      profile_interpretation_manual: 'プロファイル解説マニュアル:'
+      report_contact: レポート連絡先
+      report_name: 'レポート名:'
+      report_type: 'レポートタイプ:'
+    surveys:
+      created_at: 作成日
+      evaluator: FB提供者
+      id: "#ID"
+      new_self_assessment: 新しいセルフ・アセスメント
+      regular: レギュラー
+      self_assessment: セルフ・アセスメント
+      status: ステータス
+  views:
+    pagination:
+      first: "&laquo; 最初"
+      last: 最後 &raquo;
+      next: 次 &rsaquo;
+      previous: "&lsaquo; 前"
+      truncate: "&hellip;"
+  graph_preview:
+    circle_within_circle: "サークルの中のサークル："
+    inner_circle_profiles: "内側のサークルは、外側のサークルを各項目ごとに集約したものです。それぞれパーセンタイルで示されています。"
+    percentile_scores: "パーセンタイル："
+    high: "高："
+    scores_from: "66から100パーセンタイルは高スコアです。"
+    medium: "中："
+    score_between: "66から33パーセンタイルは、長所と改善が必要とされる分野の混在を示します。"
+    low: "低："
+    score_below: "33パーセンタイル未満は低スコアです。"
+    identity: "アイデンティティ"
+    others_assessment: "他者フィードバック"
+    self_assessment: "自己評価"
+    print_graph: "プリントグラフ"
+    culture_survey: "カルチャー・サーベイ&trade;"
+    displayed_as_percentile: "スコアはすべてデータベースと比較したパーセンタイル（百分順位）で表示されます。"
+    high_scores_are_beyond: "677パーセンタイルを超えた場合は高スコアとなります。"
+    low_scores_are_below: "33パーセンタイル未満の場合は低スコアです。"
+    copy_right: "© The Leadership Circle® | All Rights Reserved"
+    desired_culture: "理想のリーダーシップカルチャー"
+    actual_culture: "理想のリーダーシップカルチャー"
+    manager_edition: "マネージャーバージョン"
+    protecting: '自己防衛'
+    evaluators: '他者FB'
+    self: '自己評価'
+    arrogance: '傲慢'
+    critical: '批判'
+    distance: '心理的な隔たり'
+    complying: '他者依存'
+    passive: '受け身'
+    belonging: '帰属'
+    pleasing: '他者の喜び優先'
+    conservative: '保守的'
+    relating: '他社との関わり'
+    caring_connection: '思いやりのある<br>つながり'
+    fosters_team_play: 'チームプレイ<br>推進'
+    collaborator: '協働'
+    mentoring_developing: 'メンタリング<br>と育成'
+    interpersonal_intelligence: '対人知性'
+    self_awareness: '自己意識'
+    selfless_leader: '無私'
+    balance: 'バランス'
+    composure: '落ち着き'
+    personal_learner: '自ら学ぶ'
+    authenticity: '本質'
+    integrity: '一貫性'
+    courageous_authenticity: '勇気ある本質'
+    systems_awareness: '全体認識'
+    community_concern: '社会・世界への配慮'
+    sustainable_productivity: '持続可能な生産性'
+    systems_thinker: 'システム思考'
+    achieving: '目標達成'
+    strategic_focus: '戦略思考'
+    purposeful_visionary: '目的とビジョン'
+    achieves_results: '結果を出す'
+    decisiveness: '決断力'
+    controlling: '操作'
+    perfect: '完璧主義'
+    driven: '過度な意欲'
+    ambition: '野心'
+    autocratic: '独裁'
+    general_abilities: '一般的能力'
+    leadership_potential_utilization: 'リーダーシップポテンシャルの活用'
+    reactive_creative_scale: 'リアクティブ-クリエイティブ スケール'
+    leadership_effectiveness: '効果的なリーダーシップの発現度'
+    relationship_task_balance: '関係性・任務バランス'
+    creative: 'クリエイティブ'
+    relationship: '関係性'
+    task: '任務'
+    reactive: 'リアクティブ'
+    graph_low: 低バランス
+    graph_medium: ミディアム
+    graph_high: 高バランス
+    graph_identity: アイデンティティ
