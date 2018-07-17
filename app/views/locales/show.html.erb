@@ -17,27 +17,26 @@ You're lookin for : <%=@search_phrase%>
   @previous_parent = ""
   number_of_px = 0;
   @file_lines.each do |line|%>
-    <%if(line['locale_value'].class!=Hash)
-      if(line['locale_parent']!=@previous_parent)
+    <%if(line['value'].class!=Hash)
+      if(line['parent']!=@previous_parent)
         %>
       </ul>
-        <div class="parent_node">parent node: <%=line['locale_parent_key']%> </div>
+        <div class="parent_node">parent node: <%=line['parent_key']%> </div>
         <ul style="display: block; clean: both">
       <%end
-      @previous_parent = line['locale_parent']
+      @previous_parent = line['parent']
       %>
       <li class="value" style="">
-        <input type="hidden" value="<%=line['locale_id']%>" name="lines[]locale_id">
-        <input type="hidden" value="<%=line['locale_key']%>" name="lines[]locale_key">
-        <div class="key" style="font-weight: bold"><%=line['locale_id']%>: <%=line['locale_key']%></div>
-        <textarea cols="40" rows="3" style="font-size: 100%;" name="lines[]locale_value"><%endline=""
-          if(line['locale_value'].class==String)
-            endline=line['locale_value'].gsub(/\A\p{Space}*|\p{Space}*\z/, '')
+        <input type="hidden" value="<%=line['id']%>" name="lines[]id">
+        <input type="hidden" value="<%=line['key']%>" name="lines[]key">
+        <div class="key" style="font-weight: bold"><%=line['id']%>: <%=line['key']%></div>
+         <%endline=""
+          if(line['value'].class==String)
+            endline=line['value']
           else
-            endline=line['locale_value']
-          end
-          %><%=endline%>
-        </textarea>
+            endline=line['value']
+          end%>
+          <textarea cols="40" rows="3" style="font-size: 100%;" name="lines[]value"><%=endline.squish!%></textarea>
       </li>
     <%end #end of "if" checking Hash%>
   <%end%>

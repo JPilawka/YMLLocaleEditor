@@ -8,7 +8,7 @@ en-EN:
             Password must contain 1 of the 3 following character groups: A-Z, a-z,
             0-9.'
           must_be_at_least: must be at least 8 characters long.
-          cannot_contain: zmiana
+          cannot_contain: "zmiana\r\n        "
         record_invalid: 'Validation failed: %{errors}'
         restrict_dependent_destroy:
           has_many: Cannot delete record because dependent %{record} exist
@@ -157,12 +157,12 @@ en-EN:
       reset_password_instructions:
         change_my_password: Change My Password
         hello_resourceemail: Hello %{resourceemail}!
-        if_you_didnt_request_this_plea: If you didn't request this, please ignore
+        if_you_didnt_request_this_plea: If you didn&#39;t request this, please ignore
           this email.
         someone_has_requested_a_link_t: Someone has requested a link to change your
           password. You can do this through the link below.
         user_subject: Reset password instructions
-        your_password_wont_change_unti: Your password won't change until you access
+        your_password_wont_change_unti: Your password won&#39;t change until you access
           the link above and create a new one.
       unlock_instructions:
         click_the_link_below_to_unlock: 'Click the link below to unlock your account:'
@@ -181,11 +181,11 @@ en-EN:
       edit:
         change_my_password: Change my password
         change_your_password: Change your password
-        dont_have_an_account: Don't have an account?
+        dont_have_an_account: Don&#39;t have an account?
         return_to_the_leadership_circl: 'Return to The Leadership Circle: Self-Assessment'
         sign_up: Sign up
       new:
-        dont_have_an_account: Don't have an account?
+        dont_have_an_account: Don&#39;t have an account?
         forgot_your_password: Forgot your password?
         log_in: Log in
         return_to_the_leadership_circl: 'Return to The Leadership Circle: Self-Assessment'
@@ -193,7 +193,7 @@ en-EN:
         sign_up: Sign up
       send_instructions: Send instructions
       user:
-        no_token: You can't access this page without coming from a password reset
+        no_token: You can&#39;t access this page without coming from a password reset
           email. If you do come from a password reset email, please make sure you
           used the full URL provided.
         send_instructions: You will receive an email with instructions on how to reset
@@ -233,7 +233,7 @@ en-EN:
       updated: Your account has been updated successfully.
     sessions:
       new:
-        dont_have_an_account: Don't have an account?
+        dont_have_an_account: Don&#39;t have an account?
         forgot_your_password: Forgot your password?
         login: Login
         login_to_your_account: Login to your Account
@@ -245,8 +245,8 @@ en-EN:
         signed_out: Signed out successfully.
     shared:
       links:
-        didnt_receive_confirmation_ins: Didn't receive confirmation instructions?
-        didnt_receive_unlock_instructi: Didn't receive unlock instructions?
+        didnt_receive_confirmation_ins: Didn&#39;t receive confirmation instructions?
+        didnt_receive_unlock_instructi: Didn&#39;t receive unlock instructions?
         forgot_your_password: Forgot Your Password?
         log_in: Log in
         sign_in_with_providerto_stitle: Sign in with %{providerto_stitleize}
@@ -262,14 +262,13 @@ en-EN:
   errors:
     format: "%{attribute} %{message}"
     messages:
-      other_than: must be other than %{count}
       accepted: must be accepted
       already_confirmed: was already confirmed, please try signing in
-      blank: can't be blank
-      confirmation: doesn't match %{attribute}
+      blank: can&#39;t be blank
+      confirmation: doesn&#39;t match %{attribute}
       confirmation_period_expired: needs to be confirmed within %{period}, please
         request a new one
-      empty: can't be empty
+      empty: can&#39;t be empty
       equal_to: must be equal to %{count}
       equal_to_current_password: must be different to the current password!
       even: must be even
@@ -290,6 +289,7 @@ en-EN:
         one: '1 error prevented this %{resource} from being updated:'
         other: "%{count} errors prohibited this %{resource} from being saved:"
       odd: must be odd
+      other_than: must be other than %{count}
       password_format: must contain big, small letters and digits
       password_not_saved: 1 error prevented password from being updated.
       present: must be blank
@@ -331,7 +331,7 @@ en-EN:
         first_name: First Name
         is_there_something_wrong_a_hre: Is there something wrong? <a href="#import--evaluators"
           class="open-popup-link">Upload a new file</a>
-        its_right_complete_import: It's right! Complete import
+        its_right_complete_import: It&#39;s right! Complete import
         language: Language
         last_name: Last Name
         participant: Participant
@@ -344,7 +344,8 @@ en-EN:
         cancel: Cancel
         import_evaluators_from_csv_fil: Import evaluators from CSV file
         not_sure_about_the_format_of_t: Not sure about the format of the file? <a
-          href="%{download_sample_csv_project_ev}" class='link'>Download the CSV sample</a>.
+          href="%{download_sample_csv_project_ev}" class=&#39;link&#39;>Download the
+          CSV sample</a>.
         upload_evaluators: Upload Evaluators
         upload_your_csv_file: 'Upload your CSV file:'
       index:
@@ -377,12 +378,12 @@ en-EN:
         add_participant: Add Participant
     sort_options:
       evaluation_status: Sort by Evaluations Status
-      evaluator_name: Sort by Evaluator's Name
+      evaluator_name: Sort by Evaluator&#39;s Name
       number_of_evaluations: Sort by Number of Evaluations
   gflash:
     titles:
-      notice: Notice
       error: Error
+      notice: Notice
       progress: Progress
       success: Success
       warning: Warning
@@ -410,16 +411,16 @@ en-EN:
   history:
     show:
       before: Before
-      by: by
-      changes_made_at: Changes made at
+      by: " by "
+      changes_made_at: 'Changes made at '
       field: Field
       now: Now
   home:
     index:
       agents: Agents
       are_you_sure_want_to_delete: Are you sure you want to delete
-      are_you_sure_want_to_delete_project: Deleting a project can't be undone. Are
-        you sure you want to delete this project?
+      are_you_sure_want_to_delete_project: Deleting a project can&#39;t be undone.
+        Are you sure you want to delete this project?
       are_you_sure_want_to_delete_project_with_expired_date_explanation: Sorry, You
         are unable to delete because completion date of this project is over.
       are_you_sure_want_to_delete_project_with_expired_date_title: Warning
@@ -429,7 +430,7 @@ en-EN:
       consultant_company: Consultant Company
       distributors: Distributors
       licensees: Licensees
-      no_dont_delete: No, don't delete
+      no_dont_delete: No, don&#39;t delete
       participants: Participants
       please_enter_a_new_name_for_the_organization: Please enter a new name for the
         %{organization_type}
@@ -475,7 +476,7 @@ en-EN:
         manage_consultants: "(manage Consultants)"
         organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization}
           %{tsharedwere_found}"
-        thomeindexare_you_sure_want_to: '"%{thomeindexare_you_sure_want_to} consultant?"'
+        thomeindexare_you_sure_want_to: ' "%{thomeindexare_you_sure_want_to} consultant?"'
         thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} consultant"
       sidebar:
         add: Add
@@ -502,8 +503,8 @@ en-EN:
     choose_industries: Choose Industries
     choose_management_levels: Choose Management Levels
     choose_professions: Choose Professions
-    click_the_link_below_and_we_will_contact: Click the link below and we'll get you
-      in contact with a coach who will guide you through the process.
+    click_the_link_below_and_we_will_contact: Click the link below and we&#39;ll get
+      you in contact with a coach who will guide you through the process.
     coach_report: Coach Report
     company_revenue: Company Revenue
     completion_date_asc: Completion Date (ascending)
@@ -552,7 +553,7 @@ en-EN:
     preparing: Preparing. Please wait.
     processing: Processing
     project_access_control: Project Access Control
-    project_access_control_description: Review User's Project Access
+    project_access_control_description: Review User&#39;s Project Access
     project_details: Project Details
     project_name_placeholder: 'i.e.: CEO, Director, Manager, Leadership Team, etc...'
     project_time_zone: Project Timezone
@@ -568,7 +569,7 @@ en-EN:
     select_industry: Select Industry
     select_practitioner: Select Practitioner
     select_region: Select State or Region
-    select_your_companys_industry: Select your Company's Industry
+    select_your_companys_industry: Select your Company&#39;s Industry
     select_your_education_level: Select your Education Level
     select_your_gender: Select your Gender
     select_your_management_level: Select your Management Level
@@ -578,7 +579,7 @@ en-EN:
     size_of_organization: Size of Organization
     street_address_example: Street Address (222 example avenue)...
     subject_required: Subject is required
-    surveys_focus: 'Define your survey''s focus (i.e.: Marketing, Sales, HR, etc...)'
+    surveys_focus: 'Define your survey&#39;s focus (i.e.: Marketing, Sales, HR, etc...)'
     team_small: team
     type: 'Type:'
     type_the_referral_email: Type the referral email
@@ -596,8 +597,8 @@ en-EN:
   low: Low
   mailer:
     reminder:
-      body_1: It looks like you haven't completed your survey yet. If you'd still
-        like to partcipate, click below!
+      body_1: It looks like you haven&#39;t completed your survey yet. If you&#39;d
+        still like to partcipate, click below!
       body_2: 'Follow this link to the Survey:'
       body_3: Please note that your survey needs to be completed by %{planned_completion_date}.
       header: Dear %{practitioner_full_name},
@@ -730,10 +731,10 @@ en-EN:
       choose_the_participants_you_wo: Choose the participants you would like to include
         in this report. You can
       next: Next
-      of: of
+      of: " of "
       only_add_participants_who_have: only add participants who have completed surveys.
       organizationname: "%{organizationname}"
-      participants_selected: participants selected
+      participants_selected: " participants selected"
       previous: Previous
       select_all_available_participa: Select all available participants from this
         company
@@ -916,7 +917,7 @@ en-EN:
       pdf: PDF
       pdfs: PDFs
       planned_completion_date: 'Planned Completion Date:'
-      print_and_ship_copies_of_the_f: 'Print and Ship copies of the following reports:'
+      print_and_ship_copies_of_the_f: 'Print and Ship copies  of the following reports:'
       printed: Printed
       printed_copies: 'Printed Copies:'
       processing_date: 'Processing Date:'
@@ -942,7 +943,7 @@ en-EN:
       send_digital_reports_to_practi: Send Digital Reports to Practitioner
   organization_users:
     new:
-      tsharedadd_consultant_tsharedt: "%{tsharedadd} Consultant %{tsharedto} '%{organizationname}'"
+      tsharedadd_consultant_tsharedt: "%{tsharedadd} Consultant %{tsharedto} &#39;%{organizationname}&#39;"
   organizations:
     actions:
       tsharedadd_typename: "%{tsharedadd} %{typename}"
@@ -974,7 +975,7 @@ en-EN:
         confirmation_text_goes_here: Confirmation text goes here ...
         finish: Finish
         next: Next
-        organizations_type: Organization's Type
+        organizations_type: Organization&#39;s Type
         please_confirm_user_permission: Please confirm user permissions for this organization.
           You do not have to change anything. Users assigned to the parent organizations
           will be added automatically.
@@ -1030,7 +1031,7 @@ en-EN:
       this_independent_consultant: This is an independent consultant
       top_node: Top Node
       torganizationsnewmust_be_certi: "(%{torganizationsnewmust_be_certi})"
-      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} '%{parentname}'"
+      tsharedadd_typename_tsharedto_: "%{tsharedadd} %{typename} %{tsharedto} &#39;%{parentname}&#39;"
       type_the_name_of_coach_consultant: Type the name of the Coach / Consultant
       type_the_name_of_company_client: Type the name of the Client
       type_the_name_of_the: Type the name of the
@@ -1060,11 +1061,11 @@ en-EN:
       tsharedadd_typename: "%{tsharedadd} %{typename}"
   participants:
     cannot_destroy:
-      cannot_delete_the_selected_par: 'Cannot delete the selected Particiapant because
-        the record is associated with other data that cannot be deleted. Please check
-        the list below:'
       orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
       orders: 'Orders:'
+      cannot_delete_the_selected_par: "Cannot delete the selected Particiapant because
+        the record is associated with other data that cannot be deleted. Please check
+        the list below:\r\n        "
     evaluators:
       add_evaluator: Add Evaluator
       start_adding_evaluators_now: Start adding evaluators now.
@@ -1085,7 +1086,7 @@ en-EN:
       existing_last_name: 'Existing last name:'
       first_name: First Name
       is_there_something_wrong_uploa: Is there something wrong? Upload a new file
-      its_right_complete_import: It's right! Complete import
+      its_right_complete_import: It&#39;s right! Complete import
       last_name: Last Name
       strongparticipantscount_partic: "<strong>%{participantscount} participants</strong>
         were found. Please confirm the match is right:"
@@ -1103,8 +1104,8 @@ en-EN:
       participant_details: Participant Details
       projectself_surveyswherestatus: "%{projectself_surveyswherestatus} participants
         have not finished their self-survey and %{projectparticipantswith_not_en}
-        don''t have enough evaluations. You can move participants to other projects
-        until the Run Report Date (%{projectreport_datestrftimeb_d_})."
+        don&#39;&#39;t have enough evaluations. You can move participants to other
+        projects until the Run Report Date (%{projectreport_datestrftimeb_d_})."
       self_survey_status: Self-Survey Status
     logs_modal:
       created_logsnew: 'Created: %{logsnew}'
@@ -1154,7 +1155,7 @@ en-EN:
       completed_on_lparticipantself_: Completed on %{lparticipantself_surveycomplet}
       edit_participant: Edit Participant
       email_participantuseremail: 'Email: %{participantuseremail}'
-      language_participantuserlangua: 'Language: %{participantuserlanguagename}'
+      language_participantuserlangua: 'Language:  %{participantuserlanguagename}'
       na: n/a
       participantcompleted_evaluatio: "%{participantcompleted_evaluatio} of %{participantevaluationscount}
         evaluators"
@@ -1166,7 +1167,7 @@ en-EN:
     sort_options:
       evaluator_status: Sort by Evaluator Status
       number_of_evaluators: Sort by Number of Evaluators
-      participant_name: Sort by Participant's Name
+      participant_name: Sort by Participant&#39;s Name
       survey_status: Sort by Self-Survey Status
   people:
     account_notification_title: Account Update
@@ -1174,7 +1175,6 @@ en-EN:
     active_management:
       error: Error
       success: Success
-    cannot_delete: Cannot delete; there are still projects attached to this user.
     destroy:
       success: Success!
     index:
@@ -1188,7 +1188,7 @@ en-EN:
       sort_by: Sort By
       sort_by_join_date: Sort By Join Date
       sort_by_org_number: Sort By Number of Organizations
-      sort_by_user_name: Sort By User's Name
+      sort_by_user_name: Sort By User&#39;s Name
       survey_takers: Survey Takers
       user_details: User Details
       users: Users
@@ -1269,8 +1269,8 @@ en-EN:
         profession: 'Profession:'
         professional_information: Professional Information
         residing_country: 'Residing Country:'
-        you_havent_added_any_addresses: You haven't added any addresses.
-        you_havent_added_any_phone_num: You haven't added any phone numbers.
+        you_havent_added_any_addresses: You haven&#39;t added any addresses.
+        you_havent_added_any_phone_num: You haven&#39;t added any phone numbers.
       user_information_address:
         user_information_addressname: "%{user_information_addressname}:"
         user_information_addressregion: "%{user_information_addresscity}, %{user_information_addressregion}"
@@ -1286,12 +1286,12 @@ en-EN:
       added_successfully: User has been properly assigned to the organization!
       edit_user_role:
         cancel: Cancel
-        companyname: "''%{companyname}''"
+        companyname: "&#39;&#39;%{companyname}&#39;&#39;"
         remove_access_to_this_organiza: Remove access to this organization
         role_on: role on
         save: Save
         select: Select
-        userfirst_names: "%{userfirst_name}''s"
+        userfirst_names: "%{userfirst_name}&#39;&#39;s"
       new_user_role:
         choose_an_organization_to_shar: Choose an organization to share with
         share_organization: Share Organization
@@ -1301,13 +1301,13 @@ en-EN:
       error: Something went wrong!
       success: Success!
     show:
-      settings: Settings
       account_status: 'Account Status:'
       are_you_sure: Are you sure?
       delete_account: Delete Account
       disable_account: Disable Account
       enable_account: Enable Account
       send_unlock_instructions: Send Unlock Instructions
+      settings: Settings
       shared_organizations: Shared Organizations
       surveys: Surveys
       unlock_account: Unlock Account
@@ -1317,6 +1317,8 @@ en-EN:
       sort_by_join_date: Sort by registration date
       sort_by_org_number: Sort by organization number
       sort_by_user_name: “Sort by user name"
+    cannot_delete: "Cannot delete; there are still projects attached to this user.\r\n
+      \       "
   phones:
     index:
       add_phone: Add Phone
@@ -1340,7 +1342,7 @@ en-EN:
       audience_is_csuite_presidents_: Audience is "C-suite", Presidents, Vice Presidents,
         Directors, EMBA, High potential leaders
       audience_is_midlevel_managers_: Audience is Mid-level managers, Supervisors,
-        MBA, Team leaders, 'emerging leaders'
+        MBA, Team leaders, &#39;emerging leaders&#39;
       choose_a_name_that_will_help_y: Choose a name that will help you identify the
         participants
       choose_an_existing_client: choose an existing client
@@ -1384,7 +1386,7 @@ en-EN:
         modifying_this_message_will_ch: Modifying this message will change the participant
           welcome email for all participants with an English language survey.
         please_do_not_modify_any_text_: Please do not modify any text within the square
-          brackets ([ ]). These are keywords that will be replaced with participant's
+          brackets ([ ]). These are keywords that will be replaced with participant&#39;s
           information when the message is sent
         reminders: REMINDERS
         warnings: Warnings
@@ -1421,7 +1423,7 @@ en-EN:
         cancel: Cancel
         import_participants_from_csv_f: Import participants from CSV file
         not_sure_about_the_format_of_t: Not sure about the format of the file? <a
-          href='#'>Download the CSV sample.</a>
+          href=&#39;#&#39;>Download the CSV sample.</a>
         upload_participants: Upload Participants
         upload_your_csv_file: 'Upload your CSV file:'
       modals:
@@ -1440,7 +1442,7 @@ en-EN:
           save_changes: Save Changes
         show_orders:
           orderorder_number_click: "%{orderorder_number} (click),"
-          projects_orders: Project's Orders
+          projects_orders: Project&#39;s Orders
           the_orders_created_by_a_projec: The orders created by a project.
       new_project:
         address_form:
@@ -1463,7 +1465,7 @@ en-EN:
           this_is_the_address_where_the_3_ring: This is the address where the 3-ring
             binder will be delivered to.
         deliverable_options:
-          binder_with_tabs: 3 Ring binder with tabs
+          binder_with_tabs: '3 Ring binder with tabs '
           coach_report: Coach Report
           digital_graph: Digital Graph
           group_report: Group Report
@@ -1542,7 +1544,7 @@ en-EN:
           evaluators_are_bosses_peers_di: Evaluators are bosses, peers, direct reports,
             and others who are invited to provide input about the participant.
           how_evaluators_are_invited_to_: How Evaluators Are Invited To Participate
-          i_will_invite: I will invite my participant's evaluators
+          i_will_invite: I will invite my participant&#39;s evaluators
           if_the_participant_is_responsi: If the participant is responsible for inviting
             his/her evaluators, he/she will have to invite this minimum evaluators
             before starting the self-survey.
@@ -1552,15 +1554,15 @@ en-EN:
           leaders_managers: Leaders/Managers
           members_of_team: Members of Team
           minimum_evaluations_per_partic: Minimum evaluations per participant?
-          my_participant_will_invite: My participant can invite their evaluators
+          my_participant_will_invite: 'My participant can invite their evaluators '
           organization: Organization
           participants_will_see_the_focu: Participants will see the focus definition
             in the survey instructions as shown in the box on the right
-          q1_in_your_opinion_what_is_thi: 'Q1: In your opinion, what is this person''s
+          q1_in_your_opinion_what_is_thi: 'Q1: In your opinion, what is this person&#39;s
             greatest leadership asset, skill, or talent, and what suggestions do you
             have for leveraging this?'
           q1_what_should_heshe_stop_doin: 'Q1: What should he/she stop doing?'
-          q2_in_your_opinion_what_is_thi: 'Q2: In your opinion, what is this person''s
+          q2_in_your_opinion_what_is_thi: 'Q2: In your opinion, what is this person&#39;s
             greatest leadership challenge or area for development, and what suggestions
             do you have for handling this?'
           q2_what_can_heshe_improve: 'Q2: What can he/she improve?'
@@ -1590,7 +1592,7 @@ en-EN:
         modifying_this_message_will_ch: Modifying this message will change the participants
           with an English language survey.
         please_do_not_modify_the_text_: Please do not modify the text within the brackets
-          (*| |*). These are keywords that will be replaced with the participant's
+          (*| |*). These are keywords that will be replaced with the participant&#39;s
           information when the message is sent.
         reminders: REMINDERS
         warnings: Warnings
@@ -1607,12 +1609,12 @@ en-EN:
         modifying_this_message_will_ch: Modifying this message will change the reminder
           message with an English language survey.
         please_do_not_modify_the_text_: Please do not modify the text within the brackets
-          (*| |*). These are keywords that will be replaced with the participant's
+          (*| |*). These are keywords that will be replaced with the participant&#39;s
           information when the message is sent.
         warnings: Warnings
       report_preview:
         boss: Boss
-        bosss_boss: Boss's Boss
+        bosss_boss: Boss&#39;s Boss
         direct_report: Direct Report
         evaluators: Evaluators
         other: Other
@@ -1626,7 +1628,7 @@ en-EN:
         last_reminder_sent_on: Last reminder sent on
         never_sent: Never sent
         participantuseremail: "(%{participantuseremail})"
-        select_all_participants_evalua: Select all participant's evaluators
+        select_all_participants_evalua: Select all participant&#39;s evaluators
         surveyevaluatoremail: "(%{surveyevaluatoremail})"
       statuses:
         completed_evaluating: Completed Evaluating
@@ -1650,7 +1652,7 @@ en-EN:
       create_new_project: Create new Project
     project_table:
       actions: Actions
-      all_projects: All projects
+      all_projects: 'All projects '
       completion_date: Completion Date
       last_reminder: Last Reminder
       product: Product
@@ -1738,10 +1740,10 @@ en-EN:
         completed. Below are the details:'
     survey_completed_participant_email:
       dear_userfull_name: Dear %{userfull_name},
-      if_youd_like_to_understand_how: If you'd like to understand how you are "showing
-        up" when it comes to leadership, I'd be happy to tell you about the full Leadership
-        Circle Profile, which provides feedback from those you lead and work with
-        — direct reports, peers and bosses.
+      if_youd_like_to_understand_how: If you&#39;d like to understand how you are
+        "showing up" when it comes to leadership, I&#39;d be happy to tell you about
+        the full Leadership Circle Profile, which provides feedback from those you
+        lead and work with — direct reports, peers and bosses.
       please_do_not_hesitate_to_reac: Please do not hesitate to reach out with any
         questions. I am happy to assist in any way.
       request_a_full_lcp: Request a Full LCP
@@ -1780,7 +1782,7 @@ en-EN:
       did_a_tlc_consultant_refer_you: Did a TLC consultant refer you to our book <b>Mastering
         Leadership</b>?
       'false': f
-      i_agree_to_tlc: I agree to TLC's
+      i_agree_to_tlc: I agree to TLC&#39;s
       ja: t
       need_help: Need Help?
       nein: f
@@ -1802,11 +1804,11 @@ en-EN:
       request_invitation: Request Invitation
       thank_you_practitionerfull_nam: Thank you, %{practitionerfull_name}
       twitter: Twitter
-      wwwleadershipcirclecom: www.leadershipcircle.com
       would_you_like_to_take_the_bfu: Would you like to take the <b>Full 360 Profile</b>
-        and find out where you stand with your staff, peers, and bosses? Click the
+        and find out where you stand with your staff, peers, and bosses? Click the
         link below and we’ll get you in contact with a coach who will guide you through
         the process.
+      wwwleadershipcirclecom: www.leadershipcircle.com
     welcome:
       bget_your_copy_hereb: "<b>Get your copy here</b>"
       coming_back: Coming back?
@@ -1815,11 +1817,11 @@ en-EN:
       sorry_but_your_answers_are_inc: Sorry, but your answers are incorrect. Please
         try again.
       submit_answers: Submit Answers
-      welcome_to: Welcome to
       this_area_is_a_special_section: 'This area is a special section for our readers.
         We hope you have enjoyed our book <b>Mastering Leadership</b>. Please answer
-        the question below to start The Leadership Circle: Self-Assessment. The answer
+        the question below to start The Leadership Circle: Self-Assessment. The answer
         can be found in the book. Don’t have it?'
+      welcome_to: Welcome to
   search:
     index:
       actions: Actions
@@ -1856,7 +1858,6 @@ en-EN:
       status: Status
     partials:
       index:
-        orders: Orders
         actions: Actions
         client_name: Client Name
         clients: Clients
@@ -1871,6 +1872,7 @@ en-EN:
         number_of_projects: Number of Projects
         order: Order
         order_date: Order Date
+        orders: Orders
         practitioners: Practitioners
         product: Product
         product_type: Product Type
@@ -2022,8 +2024,8 @@ en-EN:
     pdf_report: PDF Report
     people: people
     percent_complete: "% Complete"
-    please_remove_children: Can't delete data because of dependent data exist (organizations,
-      projects)
+    please_remove_children: Can&#39;t delete data because of dependent data exist
+      (organizations, projects)
     preview: Preview
     preview_report: Preview Report
     previous: Previous
@@ -2051,9 +2053,9 @@ en-EN:
     who: Who
   support:
     array:
-      last_word_connector: ", and"
-      two_words_connector: and
-      words_connector: ","
+      last_word_connector: ", and "
+      two_words_connector: " and "
+      words_connector: ", "
   surveys:
     another_show:
       surveyproductname: "%{surveyproductname}"
@@ -2102,9 +2104,9 @@ en-EN:
       need_help: Need Help?
       take_the_survey: Take the survey
       you_have_enough_evaluators_to_: You have enough evaluators to take the survey.
-        Though, we recommend you have at least <span class='minimum-evaluators'><b>10
+        Though, we recommend you have at least <span class=&#39;minimum-evaluators&#39;><b>10
         evaluators<b></span>.
-      you_must_add_at_least_span_cla: You must add at least <span class='minimum-evaluators'>%{current_userinvitee_surveys}
+      you_must_add_at_least_span_cla: You must add at least <span class=&#39;minimum-evaluators&#39;>%{current_userinvitee_surveys}
         more evaluators</span> to take the survey.
     not_enough_invited_evaluators: Participant can invite the evaluators. Not enough
       evaluators to take the survey.
@@ -2164,20 +2166,20 @@ en-EN:
         you_must_invite_at_least_self_: You must invite at least %{self_surveyprojectminimum_eval}
           evaluators in order to take the Survey.
       new_or_pending:
-        you_have_answered: You have answered
+        previous_section: Previous section
         continue_the_survey: Continue the Survey
         current_sectionquestionscount_: "%{current_sectionquestionscount} questions"
         go_back_to_survey_list: Go back to survey list
         need_help: Need Help?
         of: of
-        previous_section: Previous section
         restart_previous_survey: Restart previous survey
         start_the_survey: Start the Survey
+        you_have_answered: You have answered
       no_evaluators:
         add_evaluator: Add Evaluator
         why_do_i_have_to_invite_evalua: ''
         you_currently_do_not_have_any_: You currently do not have any evaluators.
-        you_need_to_have_at_least_span: You need to have at least <span class='minimum-evaluators'>%{minimum_evals}
+        you_need_to_have_at_least_span: You need to have at least <span class=&#39;minimum-evaluators&#39;>%{minimum_evals}
           evaluators</span> to take the survey.<br>Click the button below to add an
           evaluator to your list.
       question:
@@ -2297,14 +2299,14 @@ en-EN:
       leadership_profile: This section is designed to build a Leadership Profile for
         <b>%{participant}</b>. Work quickly through the questions using your first
         impression. Use the N/A option if you do not know the answer to the question
-        or the question doesn't apply.
+        or the question doesn&#39;t apply.
       manager_profile: This Section is designed to build a manager profile for <b>%{participant}</b>.
         Work quickly through the questions using your first impression. Use the N/A
-        option if you do not know the answer to the question or the question doesn't
+        option if you do not know the answer to the question or the question doesn&#39;t
         apply.
-      most_effective_leader: In this section, you will no longer be evaluating <b>%{participant}</b>.
-        Instead, identify who is the most effective leader you have ever worked with
-        (directly or indirectly). <b>Answer these questions with THAT person in mind.</b>
+      most_effective_leader: |-
+        In this section, you will no longer be evaluating <b>%{participant}</b>.
+        Instead, identify who is the most effective leader you have ever worked with (directly or indirectly). <b>Answer these questions with THAT person in mind.</b>
         At the end of this section, you will be able to review and modify your answers.
       write_in_feedback: In this section, please provide additional written feedback
         to <b>%{participant}</b>. Participants always find the write-in comments especially
@@ -2332,11 +2334,11 @@ en-EN:
   system_history:
     announcement_send_at_changed: Reminder sent date changed to %{date}
     change_history: Change History
-    comment_questions_changed: Comment questions changed to '%{value}'
+    comment_questions_changed: Comment questions changed to &#39;%{value}&#39;
     completion_date_changed: Completion date changed to %{date}
     create_participant: Created participant %{participant}
     delete_participant: Deleted participant %{participant}
-    demographics_policy_changed: Report demographics changed to '%{value}'
+    demographics_policy_changed: Report demographics changed to &#39;%{value}&#39;
     description: Below are the changes that have been made to this order since it
       was created on %{created_date}
     pdf_copies_only_changed: PDF copies only selected
@@ -2351,7 +2353,7 @@ en-EN:
         if_you_have_already_sent_the_m: If you have already sent the message to participants,you
           will have to resend it in project for them to get the updated message.
         modifying_this_message_will_ch: Modifying this message will change the participant
-          welcome email for all participants with English survey language.
+          welcome email for all participants with English survey  language.
         please_do_not_modify_any_text_: Please do not modify any text within (*||*)
           below.These are key that will be replaced with the participant information
           when the message is sent.
@@ -2463,7 +2465,7 @@ en-EN:
       filter_by_order_status: 'Filter by Order Status:'
       filter_by_region: 'Filter by Region:'
       finished: Finished
-      'no': 'No'
+      'no': 'No '
       ordered: Ordered
       orders: Orders
       orders_placeholder: Type order name or order number...
@@ -2478,7 +2480,7 @@ en-EN:
     new_sa:
       generate: Generate
       select_score_for_answers: 'Select score for answers:'
-      users_email: 'User''s email:'
+      users_email: 'User&#39;s email:'
     partials:
       billing_table:
         invoiced: Invoiced

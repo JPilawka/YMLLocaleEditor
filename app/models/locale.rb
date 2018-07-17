@@ -1,35 +1,25 @@
 class Locale < ApplicationRecord
-  attr_accessor :locale_id, :locale_key, :locale_value, :locale_parent, :locale_parent_key
+  #attr_accessor :id, :key, :value, :parent, :parent_key
 
-  def initialize(attributes={})
-    super
+  self.primary_key = 'id'
 
-  end
+  # def initialize(attributes={})
+  #   super
+
+  # end
 
   def conDB
     db = ActiveRecord::Base.connection.raw_connection
-    db.exec("DROP TABLE IF EXISTS locales")
-    db.exec("
-        CREATE TABLE locales (
-          locale_id SERIAL PRIMARY KEY,
-          locale_key VARCHAR(128) NOT NULL,
-          locale_value VARCHAR (1024),
-          locale_parent VARCHAR (128),
-          locale_parent_key VARCHAR (128)
-          )"
-      )
+    db.exec("TRUNCATE locales RESTART IDENTITY")
   end
 
-  def all
-    db = ActiveRecord::Base.connection.raw_connection
-    result = db.exec("SELECT * FROM locales WHERE locale_value != ''")
+  def ShowAll
+    result = Locale.where("value != ''")
     result
   end
 
   def insertLocale(key, value, parent, parent_key)
-    db = ActiveRecord::Base.connection.raw_connection
-    db.exec("
-      INSERT INTO locales (locale_key, locale_value, locale_parent, locale_parent_key) VALUES ('#{key}', '#{value}', '#{parent}', '#{parent_key}')")
+    Locale.create(key: key, value: value, parent: parent, parent_key: parent_key)
   end
 
   def dropTable
@@ -38,23 +28,27 @@ class Locale < ApplicationRecord
   end
 
   def selectLastId #Function for selection of parent's id
-    db = ActiveRecord::Base.connection.raw_connection
-    result = db.exec("SELECT locale_id FROM locales ORDER BY locale_id DESC LIMIT 1")
-    result = result.first.values[0]
+
+    result = Locale.order("id DESC").first
+    result['id']
   end
 
   def searchResults(phrase)
-    db = ActiveRecord::Base.connection.raw_connection
-    result = db.exec("SELECT * FROM locales
-      WHERE
-      locale_key LIKE '%#{phrase}%' AND locale_value != ''
-      OR
-      locale_value LIKE '%#{phrase}%' AND locale_value != ''")
+    Locale.where("key LIKE ? AND value!='' OR value LIKE ? AND value!=''","%#{phrase}%","%#{phrase}%")
+  end
+
+  def fileName
+    result = Locale.where("id='1'").first
+    result['key']
+  end
+ 
+  def searchForChildren(id)
+    result = Locale.where("parent='#{id}'")
     result
   end
 
-  def updateDB(db,locale_id, locale_value)
-    result=db.exec("UPDATE locales SET locale_value='#{locale_value}' WHERE locale_id='#{locale_id}' RETURNING locale_id, locale_value")
+  def updateDB(id, value)
+    result = Locale.find_by(id: id)
     result
   end
 

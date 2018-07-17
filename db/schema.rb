@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_02_091600) do
+ActiveRecord::Schema.define(version: 2018_07_16_093820) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "locales", force: :cascade do |t|
-    t.integer "locale_id"
-    t.string "locale_key"
-    t.string "locale_value"
-    t.string "locale_parent"
+    t.string "key"
+    t.string "value"
+    t.string "parent"
+    t.string "parent_key"
   end
 
 end

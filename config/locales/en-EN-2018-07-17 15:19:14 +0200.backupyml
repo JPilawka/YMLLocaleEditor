@@ -4,11 +4,9 @@ en-EN:
     errors:
       messages:
         passwords:
-          does_not_match_security_requirements: 'does not match the security requirements.
-            Password must contain 1 of the 3 following character groups: A-Z, a-z,
-            0-9.'
+          cannot_contain: cannot contain all or part of your name or email.
+          does_not_match_security_requirements: 'does not match the security requirements. Password must contain 1 of the 3 following character groups: A-Z, a-z, 0-9.'
           must_be_at_least: must be at least 8 characters long.
-          cannot_contain: zmiana
         record_invalid: 'Validation failed: %{errors}'
         restrict_dependent_destroy:
           has_many: Cannot delete record because dependent %{record} exist
@@ -18,8 +16,7 @@ en-EN:
     region:
       regionnametitleize_regionabbre: "%{regionnametitleize} (%{regionabbreviation})"
   application:
-    change_password_required: You must change your password before logging in for
-      the first time
+    change_password_required: You must change your password before logging in for the first time
     user_not_authorized:
       forbidden: Forbidden
   companies:
@@ -48,8 +45,7 @@ en-EN:
       delete_company:
         cname_corganization_typename: "%{cname} (%{corganization_typename})"
         existing_projects_top_10: 'Existing projects (top 10):'
-        please_notice_that_it_will_als: 'Please note that it will also delete the
-          following existing child organizations:'
+        please_notice_that_it_will_als: 'Please note that it will also delete the following existing child organizations:'
         thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} this company"
         thomeindexunable_to_delete_com: "%{thomeindexunable_to_delete_com}"
         thomeindexyes_delete_this_comp: "%{thomeindexyes_delete_this} company"
@@ -58,8 +54,7 @@ en-EN:
       create_new_project: Create new Project
       delete_company: Delete Client
       tsharedmore_actions: "%{tsharedmore_actions}"
-      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant}
-        %{tsharedcertified_consultants}"
+      tsharedshared_with_consultantc: "%{tsharedshared_with} %{consultantcertified_consultant} %{tsharedcertified_consultants}"
   concerns:
     role_management:
       create_user_role:
@@ -70,18 +65,58 @@ en-EN:
     saved_successfully: Consultant has been addedd successfully!
     title: Consultant
   date:
-    abbr_day_names: '["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]'
-    abbr_month_names: '[nil, "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug",
-      "Sep", "Oct", "Nov", "Dec"]'
-    day_names: '["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
-      "Saturday"]'
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
     formats:
       default: "%m-%d-%Y"
       long: "%B %d, %Y"
       short: "%b %d"
-    month_names: '[nil, "January", "February", "March", "April", "May", "June", "July",
-      "August", "September", "October", "November", "December"]'
-    order: "[:month, :day, :year]"
+    month_names:
+    -
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :month
+    - :day
+    - :year
   datetime:
     distance_in_words:
       about_x_hours:
@@ -130,11 +165,8 @@ en-EN:
       confirmed: Your email address has been successfully confirmed.
       new:
         resend_confirmation_instructio: Resend confirmation instructions
-      send_instructions: You will receive an email with instructions on how to confirm
-        your email address within a few minutes.
-      send_paranoid_instructions: If your email address exists in our database, you
-        will receive an email with instructions on how to confirm your email address
-        within a few minutes.
+      send_instructions: You will receive an email with instructions on how to confirm your email address within a few minutes.
+      send_paranoid_instructions: If your email address exists in our database, you will receive an email with instructions on how to confirm your email address within a few minutes.
     failure:
       user:
         already_authenticated: You are already signed in.
@@ -152,25 +184,20 @@ en-EN:
         confirm_my_account: Confirm My Account
         user_subject: Confirmation instructions
         welcome_email: Welcome %{email}!
-        you_can_confirm_your_account_e: 'You can confirm your account email through
-          the link below:'
+        you_can_confirm_your_account_e: 'You can confirm your account email through the link below:'
       reset_password_instructions:
         change_my_password: Change My Password
-        hello_resourceemail: Hello %{resourceemail}!
-        if_you_didnt_request_this_plea: If you didn't request this, please ignore
-          this email.
-        someone_has_requested_a_link_t: Someone has requested a link to change your
-          password. You can do this through the link below.
+        hello_resourceemail: 'Hello %{resourceemail}!'
+        if_you_didnt_request_this_plea: If you didn't request this, please ignore this email.
+        someone_has_requested_a_link_t: Someone has requested a link to change your password. You can do this through the link below.
         user_subject: Reset password instructions
-        your_password_wont_change_unti: Your password won't change until you access
-          the link above and create a new one.
+        your_password_wont_change_unti: Your password won't change until you access the link above and create a new one.
       unlock_instructions:
         click_the_link_below_to_unlock: 'Click the link below to unlock your account:'
         hello_resourceemail: Hello %{resourceemail}!
         unlock_my_account: Unlock my account
         user_subject: Unlock instructions
-        your_account_has_been_locked_d: Your account has been locked due to an excessive
-          number of unsuccessful sign in attempts.
+        your_account_has_been_locked_d: Your account has been locked due to an excessive number of unsuccessful sign in attempts.
     omniauth_callbacks:
       failure: Could not authenticate you from %{kind} because "%{reason}".
       success: Successfully authenticated from %{kind} account.
@@ -193,19 +220,13 @@ en-EN:
         sign_up: Sign up
       send_instructions: Send instructions
       user:
-        no_token: You can't access this page without coming from a password reset
-          email. If you do come from a password reset email, please make sure you
-          used the full URL provided.
-        send_instructions: You will receive an email with instructions on how to reset
-          your password in a few minutes.
-        send_paranoid_instructions: If your email address exists in our database,
-          you will receive a password recovery link at your email address in a few
-          minutes.
+        no_token: You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided.
+        send_instructions: You will receive an email with instructions on how to reset your password in a few minutes.
+        send_paranoid_instructions: If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes.
         updated: Your password has been changed successfully. You are now signed in.
         updated_not_active: Your password has been changed successfully.
     registrations:
-      destroyed: Bye! Your account has been successfully cancelled. We hope to see
-        you again soon.
+      destroyed: Bye! Your account has been successfully cancelled. We hope to see you again soon.
       edit:
         current_password: Current Password
         currently_waiting_confirmation: 'Currently waiting confirmation for: %{resourceunconfirmed_email}'
@@ -213,23 +234,16 @@ en-EN:
         password: Password
         password_confirmation: Password Confirmation
         update_password: Update Password
-        we_need_your_current_password_: we need your current password to confirm your
-          changes
-        you_must_change_your_password_: You must change your password before logging
-          in for the first time.
+        we_need_your_current_password_: we need your current password to confirm your changes
+        you_must_change_your_password_: You must change your password before logging in for the first time.
       new:
         log_in: Log in
         sign_up: Sign Up
       signed_up: Welcome! You have signed up successfully.
-      signed_up_but_inactive: You have signed up successfully. However, we could not
-        sign you in because your account is not yet activated.
-      signed_up_but_locked: You have signed up successfully. However, we could not
-        sign you in because your account is locked.
-      signed_up_but_unconfirmed: A message with a confirmation link has been sent
-        to your email address. Please follow the link to activate your account.
-      update_needs_confirmation: You updated your account successfully, but we need
-        to verify your new email address. Please check your email and follow the confirm
-        link to confirm your new email address.
+      signed_up_but_inactive: You have signed up successfully. However, we could not sign you in because your account is not yet activated.
+      signed_up_but_locked: You have signed up successfully. However, we could not sign you in because your account is locked.
+      signed_up_but_unconfirmed: A message with a confirmation link has been sent to your email address. Please follow the link to activate your account.
+      update_needs_confirmation: You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address.
       updated: Your account has been updated successfully.
     sessions:
       new:
@@ -254,21 +268,17 @@ en-EN:
     unlocks:
       new:
         resend_unlock_instructions: Resend unlock instructions
-      send_instructions: You will receive an email with instructions for how to unlock
-        your account in a few minutes.
-      send_paranoid_instructions: If your account exists, you will receive an email
-        with instructions for how to unlock it in a few minutes.
+      send_instructions: You will receive an email with instructions for how to unlock your account in a few minutes.
+      send_paranoid_instructions: If your account exists, you will receive an email with instructions for how to unlock it in a few minutes.
       unlocked: Your account has been unlocked successfully. Please sign in to continue.
   errors:
     format: "%{attribute} %{message}"
     messages:
-      other_than: must be other than %{count}
       accepted: must be accepted
       already_confirmed: was already confirmed, please try signing in
       blank: can't be blank
       confirmation: doesn't match %{attribute}
-      confirmation_period_expired: needs to be confirmed within %{period}, please
-        request a new one
+      confirmation_period_expired: needs to be confirmed within %{period}, please request a new one
       empty: can't be empty
       equal_to: must be equal to %{count}
       equal_to_current_password: must be different to the current password!
@@ -290,6 +300,7 @@ en-EN:
         one: '1 error prevented this %{resource} from being updated:'
         other: "%{count} errors prohibited this %{resource} from being saved:"
       odd: must be odd
+      other_than: must be other than %{count}
       password_format: must contain big, small letters and digits
       password_not_saved: 1 error prevented password from being updated.
       present: must be blank
@@ -329,22 +340,19 @@ en-EN:
       import_evaluators:
         email_address: Email Address
         first_name: First Name
-        is_there_something_wrong_a_hre: Is there something wrong? <a href="#import--evaluators"
-          class="open-popup-link">Upload a new file</a>
+        is_there_something_wrong_a_hre: Is there something wrong? <a href="#import--evaluators" class="open-popup-link">Upload a new file</a>
         its_right_complete_import: It's right! Complete import
         language: Language
         last_name: Last Name
         participant: Participant
         relationship: Relationship
-        strongevaluatorscount_evaluato: "<strong>%{evaluatorscount} evaluators</strong>
-          were found. Please confirm the match is right:"
+        strongevaluatorscount_evaluato: "<strong>%{evaluatorscount} evaluators</strong> were found. Please confirm the match is right:"
         survey_language: Survey Language
         were_almost_there: We’re almost there...
       import_evaluators_modal:
         cancel: Cancel
         import_evaluators_from_csv_fil: Import evaluators from CSV file
-        not_sure_about_the_format_of_t: Not sure about the format of the file? <a
-          href="%{download_sample_csv_project_ev}" class='link'>Download the CSV sample</a>.
+        not_sure_about_the_format_of_t: Not sure about the format of the file? <a href="%{download_sample_csv_project_ev}" class='link'>Download the CSV sample</a>.
         upload_evaluators: Upload Evaluators
         upload_your_csv_file: 'Upload your CSV file:'
       index:
@@ -360,8 +368,7 @@ en-EN:
         edit_participant: Edit Participant
         evaluation_status: Evaluation Status
         evaluatorevaluation_survey_for: "%{done} of %{all} questions"
-        evaluatorself_survey_forprojec: "%{evaluatorself_survey_forprojec} of %{evaluatorself_survey_forprojec}
-          questions of Self-Survey"
+        evaluatorself_survey_forprojec: "%{evaluatorself_survey_forprojec} of %{evaluatorself_survey_forprojec} questions of Self-Survey"
         language_evaluatorevaluation_s: 'Language: %{evaluatorevaluation_survey_for}'
         participantfull_name: "%{participantfull_name}"
         relationship: 'Relationship:'
@@ -381,8 +388,8 @@ en-EN:
       number_of_evaluations: Sort by Number of Evaluations
   gflash:
     titles:
-      notice: Notice
       error: Error
+      notice: Notice
       progress: Progress
       success: Success
       warning: Warning
@@ -410,18 +417,16 @@ en-EN:
   history:
     show:
       before: Before
-      by: by
-      changes_made_at: Changes made at
+      by: " by "
+      changes_made_at: 'Changes made at '
       field: Field
       now: Now
   home:
     index:
       agents: Agents
       are_you_sure_want_to_delete: Are you sure you want to delete
-      are_you_sure_want_to_delete_project: Deleting a project can't be undone. Are
-        you sure you want to delete this project?
-      are_you_sure_want_to_delete_project_with_expired_date_explanation: Sorry, You
-        are unable to delete because completion date of this project is over.
+      are_you_sure_want_to_delete_project: Deleting a project can't be undone. Are you sure you want to delete this project?
+      are_you_sure_want_to_delete_project_with_expired_date_explanation: Sorry, You are unable to delete because completion date of this project is over.
       are_you_sure_want_to_delete_project_with_expired_date_title: Warning
       coaches_or_consultants: Practitioners
       companies_or_clients: Clients
@@ -431,15 +436,12 @@ en-EN:
       licensees: Licensees
       no_dont_delete: No, don't delete
       participants: Participants
-      please_enter_a_new_name_for_the_organization: Please enter a new name for the
-        %{organization_type}
+      please_enter_a_new_name_for_the_organization: Please enter a new name for the %{organization_type}
       projects: Projects
       rename_organization: Rename %{organization_type}
-      unable_to_delete_company_warning: Cannot delete; there are still projects attached
-        to this company. Please delete projects first
+      unable_to_delete_company_warning: Cannot delete; there are still projects attached to this company. Please delete projects first
       unable_to_delete_got_it: Got it
-      unable_to_delete_project_warning: Cannot delete; there are still participants
-        attached to this company. Please delete participants first
+      unable_to_delete_project_warning: Cannot delete; there are still participants attached to this company. Please delete participants first
       yes_delete_this: Yes, delete this
     partials:
       blank_slate:
@@ -450,19 +452,16 @@ en-EN:
         coaches_consultants: Coaches / Consultants
         search_by: Search by
       child_node_content:
-        organizationorganization_typen: "%{organizationorganization_typen} (click
-          to manage)"
+        organizationorganization_typen: "%{organizationorganization_typen} (click to manage)"
         tsharedactions: "%{tsharedactions}"
         tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
-        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou}
-          %{tsharedcertified_consultants}"
+        tsharedshared_with_parentcerti: "%{tsharedshared_with} %{parentcertified_consultantscou} %{tsharedcertified_consultants}"
       content:
         thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} consultant?"
         thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} consultant"
         tsharedactions: "%{tsharedactions}"
         tshareddelete_parentorganizati: "%{tshareddelete} %{parentorganization_typename}"
-        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount}
-          %{tsharedpeople}"
+        tsharedshared_with_parentorgan: "%{tsharedshared_with} %{parentorganization_userscount} %{tsharedpeople}"
       modals:
         thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} %{parentorganization_typename}?"
         thomeindexyes_delete_this_pare: "%{thomeindexyes_delete_this} %{parentorganization_typename}"
@@ -473,9 +472,8 @@ en-EN:
       search_organization:
         click_to_manage: "(click to manage)"
         manage_consultants: "(manage Consultants)"
-        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization}
-          %{tsharedwere_found}"
-        thomeindexare_you_sure_want_to: '"%{thomeindexare_you_sure_want_to} consultant?"'
+        organizationstotal_count_type_: "%{organizationstotal_count} %{type_typepluralizeorganization} %{tsharedwere_found}"
+        thomeindexare_you_sure_want_to: ' "%{thomeindexare_you_sure_want_to} consultant?"'
         thomeindexyes_delete_this_cons: "%{thomeindexyes_delete_this} consultant"
       sidebar:
         add: Add
@@ -492,8 +490,7 @@ en-EN:
     apt_suite_bldg: Apt, Suite, Bldg...
     binder_with_tabs: 3-ring binder with tabs and printed pages to be given to participant
     browse_file: Browse File
-    cancel_schedule_announcement: Are you sure? The schedule will be canceled and
-      the emails will be sent within next 15 minutes.
+    cancel_schedule_announcement: Are you sure? The schedule will be canceled and the emails will be sent within next 15 minutes.
     choose_age_ranges: Choose Age Ranges
     choose_countries: Choose Countries
     choose_direct_report_ranges: Choose Direct Report Ranges
@@ -502,8 +499,7 @@ en-EN:
     choose_industries: Choose Industries
     choose_management_levels: Choose Management Levels
     choose_professions: Choose Professions
-    click_the_link_below_and_we_will_contact: Click the link below and we'll get you
-      in contact with a coach who will guide you through the process.
+    click_the_link_below_and_we_will_contact: Click the link below and we'll get you in contact with a coach who will guide you through the process.
     coach_report: Coach Report
     company_revenue: Company Revenue
     completion_date_asc: Completion Date (ascending)
@@ -515,11 +511,7 @@ en-EN:
     default_demographics: Default Demographics
     deliverable_options: Deliverable Options
     delivery_options: Delivery Options
-    did_you_enjoy_your_survey_taker: Did you enjoy your survey? Take the <b>Leadership
-      Cirlce Profile</b> full 360 assessment and learn how your key stakeholders (bosses,
-      peers, direct reports, and others) experience your leadership. The deep insight
-      that comes from the Leadership Cirlce Profile full 360 will allow you to become
-      much more effective and masterful in the art and practice of Leadership.
+    did_you_enjoy_your_survey_taker: Did you enjoy your survey? Take the <b>Leadership Cirlce Profile</b> full 360 assessment and learn how your key stakeholders (bosses, peers, direct reports, and others) experience your leadership. The deep insight that comes from the Leadership Cirlce Profile full 360 will allow you to become much more effective and masterful in the art and practice of Leadership.
     email_required: Email is required
     error: Something went wrong!
     filter_by_role: Filter By Role
@@ -535,13 +527,11 @@ en-EN:
     invite_another_user: Invite another user
     language_required: Please choose a Language
     last_name_required: Last Name is required
-    leaders_managers_eval: In this section you will be evaluating Leaders/Managers
-      of
+    leaders_managers_eval: In this section you will be evaluating Leaders/Managers of
     low: Low
     members_eval: In this section you will be evaluating members of
     message_required: Message is required
-    minimum_evaluations_per_participant: The minimum number of evaluators must be
-      invited to enable the self survey.
+    minimum_evaluations_per_participant: The minimum number of evaluators must be invited to enable the self survey.
     never_sent: Never sent
     no_record_found: 'No records found matching:'
     organization_and_report_type: Organization and Report Type
@@ -596,8 +586,7 @@ en-EN:
   low: Low
   mailer:
     reminder:
-      body_1: It looks like you haven't completed your survey yet. If you'd still
-        like to partcipate, click below!
+      body_1: It looks like you haven't completed your survey yet. If you'd still like to partcipate, click below!
       body_2: 'Follow this link to the Survey:'
       body_3: Please note that your survey needs to be completed by %{planned_completion_date}.
       header: Dear %{practitioner_full_name},
@@ -606,14 +595,9 @@ en-EN:
     welcome:
       subject: Welcome to The Leadership Circle Online Assessment System!
       header: Dear %{participant_full_name},
-      body_1: Welcome to The Leadership Circle Online Assessment System. Let’s get
-        you set up with a login and your own password so you can begin to use the
-        system.
-      body_2: Go to %{web_address} and use your new user account log in ID %{user_id}
-        with the temporary password of %{user_password}.
-      body_3: After you create your new password and answer a few demographic questions,
-        you can go directly to my surveys and complete any surveys that may be waiting
-        for you.
+      body_1: Welcome to The Leadership Circle Online Assessment System. Let’s get you set up with a login and your own password so you can begin to use the system.
+      body_2: Go to %{web_address} and use your new user account log in ID %{user_id} with the temporary password of %{user_password}.
+      body_3: After you create your new password and answer a few demographic questions, you can go directly to my surveys and complete any surveys that may be waiting for you.
       body_4: If you have any problems logging in please contact us at %{support_email_address}.
       regards: Warm regards,
       team: The Survey Taker Team
@@ -622,17 +606,17 @@ en-EN:
       format:
         delimiter: ","
         format: "%u%n"
-        precision: '2'
+        precision: 2
         separator: "."
-        significant: f
-        strip_insignificant_zeros: f
+        significant: false
+        strip_insignificant_zeros: false
         unit: "$"
     format:
       delimiter: ","
-      precision: '3'
+      precision: 3
       separator: "."
-      significant: f
-      strip_insignificant_zeros: f
+      significant: false
+      strip_insignificant_zeros: false
     human:
       decimal_units:
         format: "%n %u"
@@ -645,9 +629,9 @@ en-EN:
           unit: ''
       format:
         delimiter: ''
-        precision: '3'
-        significant: t
-        strip_insignificant_zeros: t
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
       storage_units:
         format: "%n %u"
         units:
@@ -700,10 +684,8 @@ en-EN:
         report_address: Report Address
         same_as_the_billing_address: Same as the Billing Address
         select_an_address_from_my_acco: Select an address from My Account
-        this_is_the_address_where_the_: This is the address where the printed copies
-          of Participant Report, Participant Graph and Coach Report will be delivered.
-        this_is_the_person_or_company_: This is the person or company that the order
-          invoice will be made out to.
+        this_is_the_address_where_the_: This is the address where the printed copies of Participant Report, Participant Graph and Coach Report will be delivered.
+        this_is_the_person_or_company_: This is the person or company that the order invoice will be made out to.
       deliverable_options:
         coach_report: Coach Report
         digital_graph: Digital Graph
@@ -714,29 +696,23 @@ en-EN:
         participant_graph: Participant Graph
         participant_report: Participant Report
         pdf_file_that_practitioner_ema: Pdf file that practitioner emails to participant
-        please_choose_below_which_ones: 'Please choose below which ones you would
-          like to have printed:'
+        please_choose_below_which_ones: 'Please choose below which ones you would like to have printed:'
         profile_interpretation_manual: Profile Interpretation Manual
         reports: 'Reports:'
-        you_will_get_a_digital_version: 'You will get a digital version of the following
-          items:'
-        you_will_get_only_the_digital_: 'You will get only the digital version of
-          the Profile Interpretation Manual and the following reports:'
-        you_will_get_the_digital_versi: You will get the digital version of the Profile
-          Interpretation Manual and all the reports.
+        you_will_get_a_digital_version: 'You will get a digital version of the following items:'
+        you_will_get_only_the_digital_: 'You will get only the digital version of the Profile Interpretation Manual and the following reports:'
+        you_will_get_the_digital_versi: You will get the digital version of the Profile Interpretation Manual and all the reports.
         your_project_will_include: 'Your project will include:'
     participants:
       cancel_order: Cancel Order
-      choose_the_participants_you_wo: Choose the participants you would like to include
-        in this report. You can
+      choose_the_participants_you_wo: Choose the participants you would like to include in this report. You can
       next: Next
-      of: of
+      of: " of "
       only_add_participants_who_have: only add participants who have completed surveys.
       organizationname: "%{organizationname}"
-      participants_selected: participants selected
+      participants_selected: " participants selected"
       previous: Previous
-      select_all_available_participa: Select all available participants from this
-        company
+      select_all_available_participa: Select all available participants from this company
       select_participants: Select Participants
     project:
       add_all_participants: Add All Participants
@@ -820,8 +796,7 @@ en-EN:
       digital_reports_to_be_sent_pdf: Digital Reports to be Sent (PDFs)
       download_copies_ordersingle_re: Download Copies (%{ordersingle_report_copies_coun})
       download_manual: Download Manual
-      evaluators_printed_participant: 'Evaluators: %{printed_participantparticipant}
-        of %{printed_participantparticipant} Complete'
+      evaluators_printed_participant: 'Evaluators: %{printed_participantparticipant} of %{printed_participantparticipant} Complete'
       manual_to_be_printed: Manual to be Printed
       mark_all_as_not_printed: Mark all as Not Printed
       mark_all_as_not_sent: Mark all as Not Sent
@@ -844,8 +819,7 @@ en-EN:
       demographics: 'Demographics:'
       download_profile_interpretatio: Download Profile Interpretation Manual (PDF)
       download_reports_zip: Download Reports (ZIP)
-      find_the_order_details_below_y: Find the order details below. You can also download
-        a zip file with all your PDF reports.
+      find_the_order_details_below_y: Find the order details below. You can also download a zip file with all your PDF reports.
       included_participants: 'Included Participants:'
       list_of_participants: List of Participants
       order_details: Order Details
@@ -891,8 +865,7 @@ en-EN:
       download_all_manuals_orderused: Download All Manuals (%{orderused_languagescount})
       english_manual: 'English Manual:'
       evaluators: Evaluators
-      find_below_all_the_deliverable: Find below all the deliverables for this order
-        as well as the shipping information for each of them.
+      find_below_all_the_deliverable: Find below all the deliverables for this order as well as the shipping information for each of them.
       graph: Graph
       included_participants: 'Included Participants:'
       manual: Manual
@@ -916,7 +889,7 @@ en-EN:
       pdf: PDF
       pdfs: PDFs
       planned_completion_date: 'Planned Completion Date:'
-      print_and_ship_copies_of_the_f: 'Print and Ship copies of the following reports:'
+      print_and_ship_copies_of_the_f: 'Print and Ship copies  of the following reports:'
       printed: Printed
       printed_copies: 'Printed Copies:'
       processing_date: 'Processing Date:'
@@ -930,8 +903,7 @@ en-EN:
       send_digital_reports_pdfs: Send Digital Reports (PDFs)
       send_the_pdf_version_of_the_fo: 'Send the PDF version of the following reports:'
       sent: Sent
-      ship_the_3ring_binder_with_tab: Ship the 3-ring binder with tabs and printed
-        pages
+      ship_the_3ring_binder_with_tab: Ship the 3-ring binder with tabs and printed pages
       shipping_info: 'SHIPPING INFO:'
       status: 'Status:'
       submit: Submit
@@ -954,17 +926,14 @@ en-EN:
       delete_collaborator: Delete Collaborator
       invite_more_people: Invite more people
       invite_user_by_typing_email: Invite a new user by typing their email below
-      sharing_access_certified_consultant: Sharing access gives another practitioner
-        the same funcionality you have as owner
-      sharing_top_level_company: Sharing at a top level (company) will grant access
-        to everything below it (product groups and participants)
+      sharing_access_certified_consultant: Sharing access gives another practitioner the same funcionality you have as owner
+      sharing_top_level_company: Sharing at a top level (company) will grant access to everything below it (product groups and participants)
       this_licensor_is_not_shared: This Organization is not currently shared
     collaborator:
       success: Success!
     collaborators:
       role_urolename: 'Role: %{urolename}'
-      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount}
-        %{torganizationscollabcertified_}"
+      tsharedshared_with_organizatio: "%{tsharedshared_with} %{organization_userscount} %{torganizationscollabcertified_}"
     delete_collaborator:
       success: Success!
     dnd:
@@ -975,16 +944,12 @@ en-EN:
         finish: Finish
         next: Next
         organizations_type: Organization's Type
-        please_confirm_user_permission: Please confirm user permissions for this organization.
-          You do not have to change anything. Users assigned to the parent organizations
-          will be added automatically.
+        please_confirm_user_permission: Please confirm user permissions for this organization. You do not have to change anything. Users assigned to the parent organizations will be added automatically.
         previous: Previous
         privilages: Privilages
         role: Role
         user: User
-        you_are_about_to_move_one_orga: You are about to move one organization to
-          another. Please check whether the type of organization you want to move
-          is correct. You can also change it here. Below are allowed types of organizations.
+        you_are_about_to_move_one_orga: You are about to move one organization to another. Please check whether the type of organization you want to move is correct. You can also change it here. Below are allowed types of organizations.
       user:
         remove: Remove
     form:
@@ -992,13 +957,9 @@ en-EN:
     help:
       tree_help:
         quick_help: Quick Help
-        to_edit_add_users_or_add_a_new: to edit, add users or add a new one, just
-          click it in the tree and select the desired action from the list in the
-          upper right corner of the tree panel
-        to_find_an_organization_simply: to find an organization simply start typing
-          in the search box below, when done hit enter
-        to_move_the_organization_to_an: to move the organization to another organization
-          simply drag and drop
+        to_edit_add_users_or_add_a_new: to edit, add users or add a new one, just click it in the tree and select the desired action from the list in the upper right corner of the tree panel
+        to_find_an_organization_simply: to find an organization simply start typing in the search box below, when done hit enter
+        to_move_the_organization_to_an: to move the organization to another organization simply drag and drop
     modals:
       delete_organization:
         thomeindexare_you_sure_want_to: "%{thomeindexare_you_sure_want_to} this organization"
@@ -1007,9 +968,7 @@ en-EN:
     move:
       success: Success!
     new:
-      active_consultant_label_info: If the consultant is not marked as active their
-        account will be suspended and he will not be allowed to have access to the
-        system
+      active_consultant_label_info: If the consultant is not marked as active their account will be suspended and he will not be allowed to have access to the system
       administrator_email: Administrator Email
       administrator_first_name: Administrator First Name
       administrator_last_name: Administrator Last Name
@@ -1019,8 +978,7 @@ en-EN:
       coach_consultant_last_name: Consultant Last Name
       coach_consultant_name: Consultant Full Name
       company_client_name: Client Name
-      consultant_label_info: A consultant that does not work internally to an organization
-        but rather with multiple clients and organizations
+      consultant_label_info: A consultant that does not work internally to an organization but rather with multiple clients and organizations
       contract_start_date: Contract Start Date
       countries_covered: Countries Covered
       must_be_certified: this must be Practitioner Email
@@ -1060,9 +1018,7 @@ en-EN:
       tsharedadd_typename: "%{tsharedadd} %{typename}"
   participants:
     cannot_destroy:
-      cannot_delete_the_selected_par: 'Cannot delete the selected Particiapant because
-        the record is associated with other data that cannot be deleted. Please check
-        the list below:'
+      cannot_delete_the_selected_par: 'Cannot delete the selected Particiapant because the record is associated with other data that cannot be deleted. Please check the list below:'
       orderorder_number_lordercreate: "%{orderorder_number}, %{lordercreated_atto_date_format}"
       orders: 'Orders:'
     evaluators:
@@ -1087,8 +1043,7 @@ en-EN:
       is_there_something_wrong_uploa: Is there something wrong? Upload a new file
       its_right_complete_import: It's right! Complete import
       last_name: Last Name
-      strongparticipantscount_partic: "<strong>%{participantscount} participants</strong>
-        were found. Please confirm the match is right:"
+      strongparticipantscount_partic: "<strong>%{participantscount} participants</strong> were found. Please confirm the match is right:"
       user_with_this_email_already_e: User with this email already exists
     import_participants_modal:
       cancel: Cancel
@@ -1101,10 +1056,7 @@ en-EN:
       evaluator_status: Evaluator Status
       got_it: Got it!
       participant_details: Participant Details
-      projectself_surveyswherestatus: "%{projectself_surveyswherestatus} participants
-        have not finished their self-survey and %{projectparticipantswith_not_en}
-        don''t have enough evaluations. You can move participants to other projects
-        until the Run Report Date (%{projectreport_datestrftimeb_d_})."
+      projectself_surveyswherestatus: "%{projectself_surveyswherestatus} participants have not finished their self-survey and %{projectparticipantswith_not_en} don''t have enough evaluations. You can move participants to other projects until the Run Report Date (%{projectreport_datestrftimeb_d_})."
       self_survey_status: Self-Survey Status
     logs_modal:
       created_logsnew: 'Created: %{logsnew}'
@@ -1120,8 +1072,7 @@ en-EN:
       continue_managing_your_group: Continue managing your group
       edit_evaluators_invitation: Edit Evaluators Invitation
       edit_participants_invitation: Edit Participants Invitation
-      participants_can_be_added_to_y: Participants can be added to your new group
-        now or a later date
+      participants_can_be_added_to_y: Participants can be added to your new group now or a later date
       send_all_new_emails: Send All New Emails
     participant_header:
       add_participants: ADD PARTICIPANTS
@@ -1144,8 +1095,7 @@ en-EN:
       last_reminder_sent_on: Last reminder sent on
       relationship: 'Relationship:'
       send_reminder: Send Invite
-      surveycompleted_questions_coun: "%{surveycompleted_questions_coun} %{tsharedof}
-        %{surveyquestions_count} %{tsharedquestions}"
+      surveycompleted_questions_coun: "%{surveycompleted_questions_coun} %{tsharedof} %{surveyquestions_count} %{tsharedquestions}"
       surveyevaluatortryfirst_name_s: "%{surveyevaluatortryfirst_name} %{surveyevaluatortrylast_name}"
       tparticipantsshow_evaluatorlan: "%{tparticipantsshow_evaluatorlan}: %{surveyevaluatorlanguagename}"
       tparticipantsshow_evaluatorlas: "%{tparticipantsshow_evaluatorlas} %{surveyemail_sent}"
@@ -1154,12 +1104,10 @@ en-EN:
       completed_on_lparticipantself_: Completed on %{lparticipantself_surveycomplet}
       edit_participant: Edit Participant
       email_participantuseremail: 'Email: %{participantuseremail}'
-      language_participantuserlangua: 'Language: %{participantuserlanguagename}'
+      language_participantuserlangua: 'Language:  %{participantuserlanguagename}'
       na: n/a
-      participantcompleted_evaluatio: "%{participantcompleted_evaluatio} of %{participantevaluationscount}
-        evaluators"
-      participantself_surveycomplete: "%{participantself_surveycomplete} of %{participantself_surveyquestion}
-        questions"
+      participantcompleted_evaluatio: "%{participantcompleted_evaluatio} of %{participantevaluationscount} evaluators"
+      participantself_surveycomplete: "%{participantself_surveycomplete} of %{participantself_surveyquestion} questions"
       participantuserfirst_name_part: "%{participantuserfirst_name} %{participantuserlast_name}"
       resend_reports_to_gcsr: Resend Reports to GCSR
       send_invite: Send Invite
@@ -1196,8 +1144,7 @@ en-EN:
       error: Something went wrong!
       success: Success!
     new:
-      choose_the_user_main_role_you_: Choose the user main role. You can edit privileges
-        later.
+      choose_the_user_main_role_you_: Choose the user main role. You can edit privileges later.
       invite_another_user: Invite another user
       invite_new_users: Invite New User(s)
     partials:
@@ -1220,24 +1167,19 @@ en-EN:
         to_complete: 'to complete:'
         to_evaluate: 'to evaluate:'
       settings:
-        a_practitioner_that_does_not_w: A practitioner that does not work internally
-          to an organization but rather with multiple clients and organizations.
+        a_practitioner_that_does_not_w: A practitioner that does not work internally to an organization but rather with multiple clients and organizations.
         account_status: Account Status
         delete_account_person_pathuser: Delete Account
         'false': 'No'
-        gcsr_or_system_administrator_h: GCSR or System Administrator have access to
-          all organizations.
+        gcsr_or_system_administrator_h: GCSR or System Administrator have access to all organizations.
         is_this_an_independent_practit: Is this an independent practitioner?
-        'no': f
+        'no': No
         practitioner_information: Practitioner Information
-        the_referring_practitioner_wil: The referring practitioner will receive a
-          free profile.
+        the_referring_practitioner_wil: The referring practitioner will receive a free profile.
         this_user_has_been_active_sinc: This user has been active since
         user_role: User Role
-        users_can_only_manage_the_orga: Users can only manage the organizations which
-          have been shared with them.
-        was_this_practitioner_referred: Was this practitioner referred by another
-          practitioner in the system?
+        users_can_only_manage_the_orga: Users can only manage the organizations which have been shared with them.
+        was_this_practitioner_referred: Was this practitioner referred by another practitioner in the system?
         'yes': 'Yes'
       shared_organization:
         edit_user_role: Edit User Role
@@ -1301,13 +1243,13 @@ en-EN:
       error: Something went wrong!
       success: Success!
     show:
-      settings: Settings
       account_status: 'Account Status:'
       are_you_sure: Are you sure?
       delete_account: Delete Account
       disable_account: Disable Account
       enable_account: Enable Account
       send_unlock_instructions: Send Unlock Instructions
+      settings: Settings
       shared_organizations: Shared Organizations
       surveys: Surveys
       unlock_account: Unlock Account
@@ -1337,12 +1279,9 @@ en-EN:
       84_questions: 84 questions
       8_summary_and_29_outer_dimensi: 8 summary and 29 outer dimensions
       8_summary_and_31_outer_dimensi: 8 summary and 31 outer dimensions
-      audience_is_csuite_presidents_: Audience is "C-suite", Presidents, Vice Presidents,
-        Directors, EMBA, High potential leaders
-      audience_is_midlevel_managers_: Audience is Mid-level managers, Supervisors,
-        MBA, Team leaders, 'emerging leaders'
-      choose_a_name_that_will_help_y: Choose a name that will help you identify the
-        participants
+      audience_is_csuite_presidents_: Audience is "C-suite", Presidents, Vice Presidents, Directors, EMBA, High potential leaders
+      audience_is_midlevel_managers_: Audience is Mid-level managers, Supervisors, MBA, Team leaders, 'emerging leaders'
+      choose_a_name_that_will_help_y: Choose a name that will help you identify the participants
       choose_an_existing_client: choose an existing client
       client: Client
       consulting_company: Consulting Company
@@ -1362,8 +1301,7 @@ en-EN:
       invite_more_people: Invite more people
       invite_user_by_typing_email: Invite a new user by typing his/her email below
       printers: Printers
-      sharing_access_certified_consultant: Sharing access gives another user access
-        to the orders
+      sharing_access_certified_consultant: Sharing access gives another user access to the orders
       this_licensor_is_not_shared: This Project is not currently shared
     delete_collaborator:
       success: User has been removed from the project.
@@ -1378,14 +1316,10 @@ en-EN:
         project_options: Project Options
         save_all_changes: Save all changes
       evaluator_invitation:
-        if_you_have_already_sent_a_mes: if you have already sent a message to participants,
-          you may send an updated message from within the project.
+        if_you_have_already_sent_a_mes: if you have already sent a message to participants, you may send an updated message from within the project.
         invitations: INVITATIONS
-        modifying_this_message_will_ch: Modifying this message will change the participant
-          welcome email for all participants with an English language survey.
-        please_do_not_modify_any_text_: Please do not modify any text within the square
-          brackets ([ ]). These are keywords that will be replaced with participant's
-          information when the message is sent
+        modifying_this_message_will_ch: Modifying this message will change the participant welcome email for all participants with an English language survey.
+        please_do_not_modify_any_text_: Please do not modify any text within the square brackets ([ ]). These are keywords that will be replaced with participant's information when the message is sent
         reminders: REMINDERS
         warnings: Warnings
       evaluators_blank_slate:
@@ -1420,8 +1354,7 @@ en-EN:
       import_participants_modal:
         cancel: Cancel
         import_participants_from_csv_f: Import participants from CSV file
-        not_sure_about_the_format_of_t: Not sure about the format of the file? <a
-          href='#'>Download the CSV sample.</a>
+        not_sure_about_the_format_of_t: Not sure about the format of the file? <a href='#'>Download the CSV sample.</a>
         upload_participants: Upload Participants
         upload_your_csv_file: 'Upload your CSV file:'
       modals:
@@ -1430,8 +1363,7 @@ en-EN:
           thomeindexunable_to_delete_pro: "%{thomeindexunable_to_delete_pro}"
           thomeindexyes_delete_this_proj: "%{thomeindexyes_delete_this} project"
         no_data_for_preview_warning:
-          at_least_one_survey_must_be_co: At least one survey must be complete before
-            the Preview Report will work.
+          at_least_one_survey_must_be_co: At least one survey must be complete before the Preview Report will work.
           not_enough_data_to_generate_pr: Not enough data to generate Preview
         rename:
           cancel: Cancel
@@ -1456,14 +1388,11 @@ en-EN:
           same_as_shipping_address: Same as Shipping Address
           same_as_the_billing_address: Same as the Billing Address
           shipping_address: Shipping Address
-          this_contact_is_the_only_perso: This contact is the ONLY person who will
-            see any billing information from The Leadership Circle
-          this_is_the_address_where_the_: This is the address where the coach report
-            will go to.
-          this_is_the_address_where_the_3_ring: This is the address where the 3-ring
-            binder will be delivered to.
+          this_contact_is_the_only_perso: This contact is the ONLY person who will see any billing information from The Leadership Circle
+          this_is_the_address_where_the_: This is the address where the coach report will go to.
+          this_is_the_address_where_the_3_ring: This is the address where the 3-ring binder will be delivered to.
         deliverable_options:
-          binder_with_tabs: 3 Ring binder with tabs
+          binder_with_tabs: '3 Ring binder with tabs '
           coach_report: Coach Report
           digital_graph: Digital Graph
           group_report: Group Report
@@ -1473,16 +1402,12 @@ en-EN:
           participant_graph: Participant Graph
           participant_report: Participant Report
           pdf_file_that_practitioner_ema: PDF file that practitioner emails to participant
-          please_choose_below_which_ones: 'Please choose below which ones you would
-            like to have printed:'
+          please_choose_below_which_ones: 'Please choose below which ones you would like to have printed:'
           profile_interpretation_manual: Profile Interpretation Manual
           reports: 'Reports:'
-          you_will_get_a_digital_version: 'You will get a digital version of the following
-            items:'
-          you_will_get_only_the_digital_: 'You will get only the digital (e-copies)
-            version of the Profile Interpretation Manual and the following reports:'
-          you_will_get_the_digital_versi: You will get the digital version of the
-            Profile Interpretation Manual and all the reports.
+          you_will_get_a_digital_version: 'You will get a digital version of the following items:'
+          you_will_get_only_the_digital_: 'You will get only the digital (e-copies) version of the Profile Interpretation Manual and the following reports:'
+          you_will_get_the_digital_versi: You will get the digital version of the Profile Interpretation Manual and all the reports.
           your_project_will_include: 'Your project will include:'
         demographics:
           custom:
@@ -1495,11 +1420,7 @@ en-EN:
             ethnic_groups: Ethnic Groups
             female: Female
             gender: Gender
-            if_you_choose_to_run_a_custom_: If you choose to run a custom report against
-              a demographic sample size that is too small, the result could be a report
-              with skewed data. Most demographic data is available under Resources.
-              You will have the option to change your selection back to default demographics.
-              Contact your client services representative with questions.
+            if_you_choose_to_run_a_custom_: If you choose to run a custom report against a demographic sample size that is too small, the result could be a report with skewed data. Most demographic data is available under Resources. You will have the option to change your selection back to default demographics. Contact your client services representative with questions.
             industries: Industries
             male: Male
             management_levels: Management Levels
@@ -1523,54 +1444,38 @@ en-EN:
             participants: participants
             professions: 'Professions:'
             sa_participants: SA participants
-            this_is_the_number_of_people_y: This is the number of people you will
-              compare your project members to.
+            this_is_the_number_of_people_y: This is the number of people you will compare your project members to.
         project_details:
-          all_surveys_should_be_complete: All surveys should be completed by this
-            date.
+          all_surveys_should_be_complete: All surveys should be completed by this date.
           cancel: Cancel
           date_reports_are_available: Date reports are available.
           next: Next
           project_options: Project Options
           specify_a_timeline_for_the_pro: Specify a timeline for the Project
         project_options:
-          1st_option: Option 1
-          2nd_option: Option 2
-          cancel_schedule_announcement: Cancel the scheduled emails
-          comment_questions_to_be_includ: Comment questions to be included in the
-            survey
-          evaluators_are_bosses_peers_di: Evaluators are bosses, peers, direct reports,
-            and others who are invited to provide input about the participant.
+          1st_option: 'Option 1'
+          2nd_option: 'Option 2'
+          cancel_schedule_announcement: 'Cancel the scheduled emails'
+          comment_questions_to_be_includ: Comment questions to be included in the survey
+          evaluators_are_bosses_peers_di: Evaluators are bosses, peers, direct reports, and others who are invited to provide input about the participant.
           how_evaluators_are_invited_to_: How Evaluators Are Invited To Participate
-          i_will_invite: I will invite my participant's evaluators
-          if_the_participant_is_responsi: If the participant is responsible for inviting
-            his/her evaluators, he/she will have to invite this minimum evaluators
-            before starting the self-survey.
+          i_will_invite: "I will invite my participant's evaluators"
+          if_the_participant_is_responsi: If the participant is responsible for inviting his/her evaluators, he/she will have to invite this minimum evaluators before starting the self-survey.
           in_this_section_you_will_be_ev: In this section you will be evaluating
-          indicate_if_the_survey_will_be: Indicate if the survey will be focused on
-            the Organization as a whole, or a group of team members.
+          indicate_if_the_survey_will_be: Indicate if the survey will be focused on the Organization as a whole, or a group of team members.
           leaders_managers: Leaders/Managers
           members_of_team: Members of Team
           minimum_evaluations_per_partic: Minimum evaluations per participant?
-          my_participant_will_invite: My participant can invite their evaluators
+          my_participant_will_invite: 'My participant can invite their evaluators '
           organization: Organization
-          participants_will_see_the_focu: Participants will see the focus definition
-            in the survey instructions as shown in the box on the right
-          q1_in_your_opinion_what_is_thi: 'Q1: In your opinion, what is this person''s
-            greatest leadership asset, skill, or talent, and what suggestions do you
-            have for leveraging this?'
+          participants_will_see_the_focu: Participants will see the focus definition in the survey instructions as shown in the box on the right
+          q1_in_your_opinion_what_is_thi: 'Q1: In your opinion, what is this person''s greatest leadership asset, skill, or talent, and what suggestions do you have for leveraging this?'
           q1_what_should_heshe_stop_doin: 'Q1: What should he/she stop doing?'
-          q2_in_your_opinion_what_is_thi: 'Q2: In your opinion, what is this person''s
-            greatest leadership challenge or area for development, and what suggestions
-            do you have for handling this?'
+          q2_in_your_opinion_what_is_thi: 'Q2: In your opinion, what is this person''s greatest leadership challenge or area for development, and what suggestions do you have for handling this?'
           q2_what_can_heshe_improve: 'Q2: What can he/she improve?'
-          q3_what_have_you_observed_abou: 'Q3: What have you observed about this person
-            about which you would like to provide additional feedback to him/her that
-            may not have been previously addressed in this assessment?'
+          q3_what_have_you_observed_abou: 'Q3: What have you observed about this person about which you would like to provide additional feedback to him/her that may not have been previously addressed in this assessment?'
           q3_what_should_heshe_start_doi: 'Q3: What should he/she start doing?'
-          regardless_of_who_invites_eval: Regardless of who invites evaluators, the
-            practitioner will always be able to see the list of evaluators in the
-            Project Dashboard
+          regardless_of_who_invites_eval: Regardless of who invites evaluators, the practitioner will always be able to see the list of evaluators in the Project Dashboard
           report_demographics: Report Demographics
           schedule_sending_of_invitation: Schedule sending of invitation emails
           send_now: Send Now
@@ -1578,37 +1483,25 @@ en-EN:
           survey_focus_description: Survey Focus Description
           survey_instructions: 'Survey Instructions:'
           team: Team
-          the_invitations_can_be_schedul: The invitations can be scheduled to go out
-            at a specified date and time
-          this_is_the_minimum_number_of_: This is the minimum number of complete evaluations
-            a participant has to have to be included in the report. The minimum eligible
-            is 5 evaluations.
+          the_invitations_can_be_schedul: The invitations can be scheduled to go out at a specified date and time
+          this_is_the_minimum_number_of_: This is the minimum number of complete evaluations a participant has to have to be included in the report. The minimum eligible is 5 evaluations.
       participant_invitation:
-        if_you_have_already_sent_a_mes: If you have already sent a message to participants,
-          updated messages may be sent from within the project.
+        if_you_have_already_sent_a_mes: If you have already sent a message to participants, updated messages may be sent from within the project.
         invitations: INVITATIONS
-        modifying_this_message_will_ch: Modifying this message will change the participants
-          with an English language survey.
-        please_do_not_modify_the_text_: Please do not modify the text within the brackets
-          (*| |*). These are keywords that will be replaced with the participant's
-          information when the message is sent.
+        modifying_this_message_will_ch: Modifying this message will change the participants with an English language survey.
+        please_do_not_modify_the_text_: Please do not modify the text within the brackets (*| |*). These are keywords that will be replaced with the participant's information when the message is sent.
         reminders: REMINDERS
         warnings: Warnings
       participants_blank_slate:
         add_participant: Add Participant
         import_participants: Import Participants
         start_adding_participants_now: Start adding participants now.
-        there_are_no_participants_in_t: There are no participants in this project
-          to be evaluated.
+        there_are_no_participants_in_t: There are no participants in this project to be evaluated.
       reminders:
-        if_you_have_already_sent_a_mes: If you have already sent a message to participants,
-          updated messages may be sent from within the project.
+        if_you_have_already_sent_a_mes: If you have already sent a message to participants, updated messages may be sent from within the project.
         langname_reminder: "%{langname} Reminder"
-        modifying_this_message_will_ch: Modifying this message will change the reminder
-          message with an English language survey.
-        please_do_not_modify_the_text_: Please do not modify the text within the brackets
-          (*| |*). These are keywords that will be replaced with the participant's
-          information when the message is sent.
+        modifying_this_message_will_ch: Modifying this message will change the reminder message with an English language survey.
+        please_do_not_modify_the_text_: Please do not modify the text within the brackets (*| |*). These are keywords that will be replaced with the participant's information when the message is sent.
         warnings: Warnings
       report_preview:
         boss: Boss
@@ -1633,10 +1526,8 @@ en-EN:
         completed_selfsurveys: Completed Self-Surveys
         in_progress: In Progress
         not_started: Not Started
-        statcompleted_count_of_stattot: "%{statcompleted_count} of %{stattotal_count}
-          %{statrelation_namepluralize} completed"
-        statusestotal_relations_comple: "%{statusestotal_relations_comple} of %{statusestotal_relations}
-          Evaluations Completed"
+        statcompleted_count_of_stattot: "%{statcompleted_count} of %{stattotal_count} %{statrelation_namepluralize} completed"
+        statusestotal_relations_comple: "%{statusestotal_relations_comple} of %{statusestotal_relations} Evaluations Completed"
         total_of_evaluators: Total of Evaluators
         total_of_participants: Total of Participants
       tooltip:
@@ -1650,7 +1541,7 @@ en-EN:
       create_new_project: Create new Project
     project_table:
       actions: Actions
-      all_projects: All projects
+      all_projects: 'All projects '
       completion_date: Completion Date
       last_reminder: Last Reminder
       product: Product
@@ -1667,9 +1558,7 @@ en-EN:
       cancel: Cancel
       select_all_evaluators: Select All Evaluators
       select_all_participants: Select All Participants
-      select_the_unfinished_particip: Select the unfinished participants and evaluators
-        you would like to send emails to. Choose the type of email to send the message
-        to your selected survey users.
+      select_the_unfinished_particip: Select the unfinished participants and evaluators you would like to send emails to. Choose the type of email to send the message to your selected survey users.
       send_emails_to_participants_ev: Send emails to participants & evaluators
       send_invitation_email: Send Invitation Email
       send_reminder_email: Send Reminder Email
@@ -1678,8 +1567,7 @@ en-EN:
         delete: Delete
       collaborators:
         torganizationscollabcollaborat: "%{torganizationscollabcollaborat} %{projectname}"
-        tsharedshared_with_project_use: "%{tsharedshared_with} %{project_userscount}
-          %{tprojectscollabprinters}"
+        tsharedshared_with_project_use: "%{tsharedshared_with} %{project_userscount} %{tprojectscollabprinters}"
     send_all_reminders:
       close: Close
       please_wait: Please wait ...
@@ -1706,8 +1594,7 @@ en-EN:
       participant_name: 'Participant Name:'
       selfsurvey_completed_at: 'Self-Survey completed at:'
       selfsurvey_id: 'Self-Survey #ID:'
-      we_recorded_a_new_request_for_: 'we recorded a new request for an invitation
-        from a user:'
+      we_recorded_a_new_request_for_: 'we recorded a new request for an invitation from a user:'
     survey_completed_email:
       age_range: Age Range
       basic_data: Basic Data
@@ -1726,33 +1613,22 @@ en-EN:
       participant_email: 'Participant Email:'
       participant_name: 'Participant Name:'
       participant_phone_number: 'Participant Phone Number:'
-      please_check_the_attachment_re: Please check the attachment - reports are in
-        PDF format.
+      please_check_the_attachment_re: Please check the attachment - reports are in PDF format.
       profession: Profession
       reports: Reports
       selfsurvey_completed_at: 'Self-Survey completed at:'
       selfsurvey_created_at: 'Self-Survey created at:'
       selfsurvey_id: 'Self-Survey #ID:'
       tlc_consultant_who_referred: 'TLC consultant who referred:'
-      we_noticed_that_the_new_selfsu: 'we noticed that the new self-survey has been
-        completed. Below are the details:'
+      we_noticed_that_the_new_selfsu: 'we noticed that the new self-survey has been completed. Below are the details:'
     survey_completed_participant_email:
       dear_userfull_name: Dear %{userfull_name},
-      if_youd_like_to_understand_how: If you'd like to understand how you are "showing
-        up" when it comes to leadership, I'd be happy to tell you about the full Leadership
-        Circle Profile, which provides feedback from those you lead and work with
-        — direct reports, peers and bosses.
-      please_do_not_hesitate_to_reac: Please do not hesitate to reach out with any
-        questions. I am happy to assist in any way.
+      if_youd_like_to_understand_how: If you'd like to understand how you are "showing up" when it comes to leadership, I'd be happy to tell you about the full Leadership Circle Profile, which provides feedback from those you lead and work with — direct reports, peers and bosses.
+      please_do_not_hesitate_to_reac: Please do not hesitate to reach out with any questions. I am happy to assist in any way.
       request_a_full_lcp: Request a Full LCP
       thank_you_again: Thank you again,
-      thank_you_for_taking_the_leade: 'Thank you for taking the Leadership Circle
-        Profile: Self-Assessment. We hope that you have enjoyed reading Mastering
-        Leadership, and that you find the report and feedback useful as you continue
-        your leadership journey.'
-      to_help_you_better_understand_: To help you better understand your Self-Assessment
-        report, I have included an Interpretation Guide that explains each aspect
-        of your graph and report.
+      thank_you_for_taking_the_leade: 'Thank you for taking the Leadership Circle Profile: Self-Assessment. We hope that you have enjoyed reading Mastering Leadership, and that you find the report and feedback useful as you continue your leadership journey.'
+      to_help_you_better_understand_: To help you better understand your Self-Assessment report, I have included an Interpretation Guide that explains each aspect of your graph and report.
   sa_surveys:
     demographics:
       before_you_begin: Before you begin
@@ -1760,66 +1636,48 @@ en-EN:
       continue_to_survey: Continue to Survey
       need_help: Need Help?
       personal_information: Personal Information
-      tlc_would_like_to_gather_some_: TLC would like to gather some information for
-        internal research purposes only. TLC does not share your information. We would
-        be grateful if you would answer the questions; however, you can always select
-        “Prefer not to answer”.
+      tlc_would_like_to_gather_some_: TLC would like to gather some information for internal research purposes only. TLC does not share your information. We would be grateful if you would answer the questions; however, you can always select “Prefer not to answer”.
       we_need_a_little_more_informat: We need a little more information about you...
     expanding_development:
       discover_more_about_the_leader: Discover more about the Leadership Circle
       need_help: Need Help?
       request_invitation: Request Invitation
-      would_you_like_to_continue_exp: Would you like to continue expanding your leadership
-        development?
+      would_you_like_to_continue_exp: Would you like to continue expanding your leadership development?
       wwwleadershipcirclecom: www.leadershipcircle.com
     registration:
-      complete_the_registration_belo: Complete the registration below to take your
-        survey. If you are not able to complete your Self Assessment in one sitting
-        you’ll be able to use your login to continue it later. The results will be
-        sent to the registered email after the completion of the Self Assessment.
-      did_a_tlc_consultant_refer_you: Did a TLC consultant refer you to our book <b>Mastering
-        Leadership</b>?
-      'false': f
+      complete_the_registration_belo: Complete the registration below to take your survey. If you are not able to complete your Self Assessment in one sitting you’ll be able to use your login to continue it later. The results will be sent to the registered email after the completion of the Self Assessment.
+      did_a_tlc_consultant_refer_you: Did a TLC consultant refer you to our book <b>Mastering Leadership</b>?
+      'false': False
       i_agree_to_tlc: I agree to TLC's
-      ja: t
+      ja: Yes
       need_help: Need Help?
-      nein: f
+      nein: No
       'no': 'No'
       privacy_and_policy_terms: privacy and policy terms
       take_the_survey: Take the Survey
       thank_you_for_your_interest: Thank you for your interest.
       'yes': 'Yes'
     thank_you_participant:
-      did_you_enjoy_your_survey_shar: Did you enjoy your survey? Share it with your
-        friends.
+      did_you_enjoy_your_survey_shar: Did you enjoy your survey? Share it with your friends.
       discover_more_about_the_leader: Discover more about the Leadership Circle
       facebook: Facebook
-      for_taking_the_leadership_circ: for taking the Leadership Circle Profile - Self
-        Assessment. The reports with your results will arrive in your email in a few
-        minutes.
+      for_taking_the_leadership_circ: for taking the Leadership Circle Profile - Self Assessment. The reports with your results will arrive in your email in a few minutes.
       linkedin: Linkedin
       need_help: Need Help?
       request_invitation: Request Invitation
       thank_you_practitionerfull_nam: Thank you, %{practitionerfull_name}
       twitter: Twitter
+      would_you_like_to_take_the_bfu: Would you like to take the <b>Full 360 Profile</b> and find out where you stand with your staff, peers, and bosses? Click the link below and we’ll get you in contact with a coach who will guide you through the process.
       wwwleadershipcirclecom: www.leadershipcircle.com
-      would_you_like_to_take_the_bfu: Would you like to take the <b>Full 360 Profile</b>
-        and find out where you stand with your staff, peers, and bosses? Click the
-        link below and we’ll get you in contact with a coach who will guide you through
-        the process.
     welcome:
       bget_your_copy_hereb: "<b>Get your copy here</b>"
       coming_back: Coming back?
       login: Login
       need_help: Need Help?
-      sorry_but_your_answers_are_inc: Sorry, but your answers are incorrect. Please
-        try again.
+      sorry_but_your_answers_are_inc: Sorry, but your answers are incorrect. Please try again.
       submit_answers: Submit Answers
+      this_area_is_a_special_section: 'This area is a special section for our readers. We hope you have enjoyed our book <b>Mastering Leadership</b>. Please answer the question below to start The Leadership Circle: Self-Assessment. The answer can be found in the book. Don’t have it?'
       welcome_to: Welcome to
-      this_area_is_a_special_section: 'This area is a special section for our readers.
-        We hope you have enjoyed our book <b>Mastering Leadership</b>. Please answer
-        the question below to start The Leadership Circle: Self-Assessment. The answer
-        can be found in the book. Don’t have it?'
   search:
     index:
       actions: Actions
@@ -1840,8 +1698,7 @@ en-EN:
       product_type: Product Type
       projects: Projects
       report_name: Report Name
-      results_limited_to_20_please_u: Results limited to 20, please use more exact
-        search
+      results_limited_to_20_please_u: Results limited to 20, please use more exact search
       search_results_total_count: Search Results
       selfsurveys: Self-Surveys
       status: Status
@@ -1856,7 +1713,6 @@ en-EN:
       status: Status
     partials:
       index:
-        orders: Orders
         actions: Actions
         client_name: Client Name
         clients: Clients
@@ -1871,6 +1727,7 @@ en-EN:
         number_of_projects: Number of Projects
         order: Order
         order_date: Order Date
+        orders: Orders
         practitioners: Practitioners
         product: Product
         product_type: Product Type
@@ -1958,8 +1815,7 @@ en-EN:
       footer:
         current_useremail: "(%{current_useremail})"
         go_back_to_the_csr_project_cen: Go back to the CSR Project Center
-        you_true_useremail_are_imperso: You (%{true_useremail}) are impersonating
-          the practitioner
+        you_true_useremail_are_imperso: You (%{true_useremail}) are impersonating the practitioner
       header:
         go_to_project_center: Go to Project Center
         link_to_class_logo__link_do: "/"
@@ -1992,16 +1848,12 @@ en-EN:
         attention: Attention!
         logout: Logout
         more_time: More time
-        you_have_been_inactive_and_you: You have been inactive and you will be automatically
-          logged out in <b class="remaining-time">5:00</b> minutes. Would you like
-          more time?
+        you_have_been_inactive_and_you: You have been inactive and you will be automatically logged out in <b class="remaining-time">5:00</b> minutes. Would you like more time?
       session_timeout_remodal_modal:
         attention: Attention!
         logout: Logout
         more_time: More time
-        you_have_been_inactive_and_you: You have been inactive and you will be automatically
-          logged out in <b class="remaining-time">5:00</b> minutes. Would you like
-          more time?
+        you_have_been_inactive_and_you: You have been inactive and you will be automatically logged out in <b class="remaining-time">5:00</b> minutes. Would you like more time?
       user_navigation:
         logout: Logout
         my_account: My Account
@@ -2022,8 +1874,7 @@ en-EN:
     pdf_report: PDF Report
     people: people
     percent_complete: "% Complete"
-    please_remove_children: Can't delete data because of dependent data exist (organizations,
-      projects)
+    please_remove_children: Can't delete data because of dependent data exist (organizations, projects)
     preview: Preview
     preview_report: Preview Report
     previous: Previous
@@ -2051,16 +1902,15 @@ en-EN:
     who: Who
   support:
     array:
-      last_word_connector: ", and"
-      two_words_connector: and
-      words_connector: ","
+      last_word_connector: ", and "
+      two_words_connector: " and "
+      words_connector: ", "
   surveys:
     another_show:
       surveyproductname: "%{surveyproductname}"
       tsurveysshowsurvey_for_surveye: "%{tsurveysshowsurvey_for} %{surveyevaluatorfull_name}"
     answers:
-      are_you_sure_undone: Are you sure? Please, check all your answers. This step
-        can not be undone
+      are_you_sure_undone: Are you sure? Please, check all your answers. This step can not be undone
       back_to_surveys: Back to Surveys
       finish_survey: Finish Survey
       next_section: Next section
@@ -2071,17 +1921,11 @@ en-EN:
       before_you_begin: Before you begin
       continue_to_survey: Continue to Survey
       need_help: Need Help?
-      tlc_would_like_to_gather_some_: TLC would like to gather some information for
-        internal research process only. TLC does not share your information. We would
-        be grateful if you would answer the questions. Should you choose not to participate,
-        please select “Prefer not to answer” and click the “Continue to survey” button.
+      tlc_would_like_to_gather_some_: TLC would like to gather some information for internal research process only. TLC does not share your information. We would be grateful if you would answer the questions. Should you choose not to participate, please select “Prefer not to answer” and click the “Continue to survey” button.
       we_need_a_little_more_informat: We need a little more information about you...
     demographic:
       before_you_begin: Before you begin
-      tlc_would_like_to_gather_some_: TLC would like to gather some information for
-        internal research purposes only. TLC does not share your information. We would
-        be grateful if you would answer the questions; however, you can always select
-        “Prefer not to answer”.
+      tlc_would_like_to_gather_some_: TLC would like to gather some information for internal research purposes only. TLC does not share your information. We would be grateful if you would answer the questions; however, you can always select “Prefer not to answer”.
       we_need_a_little_more_informat: We need a little more information about you...
     done: Survey completed successfully.
     index:
@@ -2096,18 +1940,13 @@ en-EN:
     invite_evaluators:
       add_evaluator: Add Evaluator
       back_to_survey_list: Back to Survey List
-      evaluators_provide_feedback_on: Evaluators provide feedback on your leadership
-        skills and competencies by completing the survey.
+      evaluators_provide_feedback_on: Evaluators provide feedback on your leadership skills and competencies by completing the survey.
       invite_evaluators: Invite Evaluators
       need_help: Need Help?
       take_the_survey: Take the survey
-      you_have_enough_evaluators_to_: You have enough evaluators to take the survey.
-        Though, we recommend you have at least <span class='minimum-evaluators'><b>10
-        evaluators<b></span>.
-      you_must_add_at_least_span_cla: You must add at least <span class='minimum-evaluators'>%{current_userinvitee_surveys}
-        more evaluators</span> to take the survey.
-    not_enough_invited_evaluators: Participant can invite the evaluators. Not enough
-      evaluators to take the survey.
+      you_have_enough_evaluators_to_: You have enough evaluators to take the survey. Though, we recommend you have at least <span class='minimum-evaluators'><b>10 evaluators<b></span>.
+      you_must_add_at_least_span_cla: You must add at least <span class='minimum-evaluators'>%{current_userinvitee_surveys} more evaluators</span> to take the survey.
+    not_enough_invited_evaluators: Participant can invite the evaluators. Not enough evaluators to take the survey.
     not_valid: Sorry, but this survey is not valid anymore.
     partials:
       continue_survey:
@@ -2117,10 +1956,8 @@ en-EN:
         review_your_answers: Review your Answers
         self_survey_for: Self Survey for
         thanks_current_userfirst_name: Thanks %{current_userfirst_name},
-        you_are_currently_taking_secti: You are currently taking section %{paramssection_page}
-          of 2
-        you_have_answered_all_the_ques: You have answered all the questions for Section
-          %{paramssection_page}.
+        you_are_currently_taking_secti: You are currently taking section %{paramssection_page} of 2
+        you_have_answered_all_the_ques: You have answered all the questions for Section %{paramssection_page}.
       evaluator_form:
         cancel: Cancel
         update_evaluator: Update Evaluator
@@ -2137,34 +1974,28 @@ en-EN:
         na: N/A
         never: Never
         often: Often
-        once_added_an_email_will_be_im: Once added an email will be immediately sent
-          to the evaluator inviting them to participate
+        once_added_an_email_will_be_im: Once added an email will be immediately sent to the evaluator inviting them to participate
         previous_question: Previous Question
         review_your_answers: Review your Answers
         seldom: Seldom
-        self_survey_for_bthe_most_effe: Self Survey for <b>The Most Effective Leader
-          I Know</b>
+        self_survey_for_bthe_most_effe: Self Survey for <b>The Most Effective Leader I Know</b>
         sometimes: Sometimes
       my_active_surveys:
         complete_by: Complete by
-        current_userinvitee_completed_: "%{current_userinvitee_completed_} of %{current_userinvitee_surveyssel}
-          evaluations completed"
+        current_userinvitee_completed_: "%{current_userinvitee_completed_} of %{current_userinvitee_surveyssel} evaluations completed"
         evaluator_setup: Evaluator Setup
         my_active_surveys: My Active Surveys
-        please_complete_all_of_your_ac: Please complete all of your active surveys
-          below.
+        please_complete_all_of_your_ac: Please complete all of your active surveys below.
         self_survey: Self Survey
         take_the_survey: Take the Survey
         self_evaluations_left:
-          one: 'You have <b>one self-evaluation</b> to complete:'
-          other: 'You have <b>%{count} self-evaluations</b> to complete:'
+          one: "You have <b>one self-evaluation</b> to complete:"
+          other: "You have <b>%{count} self-evaluations</b> to complete:"
         evaluations_self:
-          one: 'You have <b>one evaluation</b> to complete:'
-          other: 'You have <b>%{count} evaluations</b> to complete:'
-        you_must_invite_at_least_self_: You must invite at least %{self_surveyprojectminimum_eval}
-          evaluators in order to take the Survey.
+          one: "You have <b>one evaluation</b> to complete:"
+          other: "You have <b>%{count} evaluations</b> to complete:"
+        you_must_invite_at_least_self_: You must invite at least %{self_surveyprojectminimum_eval} evaluators in order to take the Survey.
       new_or_pending:
-        you_have_answered: You have answered
         continue_the_survey: Continue the Survey
         current_sectionquestionscount_: "%{current_sectionquestionscount} questions"
         go_back_to_survey_list: Go back to survey list
@@ -2173,13 +2004,12 @@ en-EN:
         previous_section: Previous section
         restart_previous_survey: Restart previous survey
         start_the_survey: Start the Survey
+        you_have_answered: You have answered
       no_evaluators:
         add_evaluator: Add Evaluator
-        why_do_i_have_to_invite_evalua: ''
+        why_do_i_have_to_invite_evalua: ""
         you_currently_do_not_have_any_: You currently do not have any evaluators.
-        you_need_to_have_at_least_span: You need to have at least <span class='minimum-evaluators'>%{minimum_evals}
-          evaluators</span> to take the survey.<br>Click the button below to add an
-          evaluator to your list.
+        you_need_to_have_at_least_span: You need to have at least <span class='minimum-evaluators'>%{minimum_evals} evaluators</span> to take the survey.<br>Click the button below to add an evaluator to your list.
       question:
         '1': '1'
         '15': '1.5'
@@ -2203,8 +2033,7 @@ en-EN:
         seldom: Seldom
         self_survey_for: Self Survey for
         sometimes: Sometimes
-        you_are_currently_taking_secti: You are currently taking section %{sections_page}
-          of %{surveysectionscount}
+        you_are_currently_taking_secti: You are currently taking section %{sections_page} of %{surveysectionscount}
         "×": "×"
       review:
         finish_your_survey: Finish Your Survey
@@ -2212,13 +2041,10 @@ en-EN:
         next_section: Next Section
         previous_section: Previous section
         review_continue: Review & Continue
-        review_your_answers_to_the_lea: Review your answers to the Leadership Profile.
-          Change any answer by clicking on it.
+        review_your_answers_to_the_lea: Review your answers to the Leadership Profile. Change any answer by clicking on it.
         section_sectionscurrent_page_o: Section %{sectionscurrent_page} of %{sectionstotal_pages}
-        your_survey_is_almost_complete: Your survey is almost complete. Please review
-          your answers for Section 2 below.
-        your_survey_is_not_yet_complet: Your survey is not yet complete. You have
-          %{sectionstotal_pages_sectionscu} more section to complete.
+        your_survey_is_almost_complete: Your survey is almost complete. Please review your answers for Section 2 below.
+        your_survey_is_not_yet_complet: Your survey is not yet complete. You have %{sectionstotal_pages_sectionscu} more section to complete.
       review_form:
         '1': '1'
         '15': '1.5'
@@ -2240,19 +2066,15 @@ en-EN:
       sections:
         survey_taker_evaluator_section_1_description:
           leadership_profile: Leadership Profile
-          providing_feedback_section_sec: '"Providing Feedback Section %{sectionscurrent_page}
-            of %{sectionstotal_pages}"'
-          you_will_be_able_to_review_and: You will be able to review and modify your
-            answers at the end of this section.
+          providing_feedback_section_sec: '"Providing Feedback Section %{sectionscurrent_page} of %{sectionstotal_pages}"'
+          you_will_be_able_to_review_and: You will be able to review and modify your answers at the end of this section.
         survey_taker_section_1_description:
           culture_survey: Culture Survey
           leadership_profile: Leadership Profile
           section_sectionscurrent_page_o: '"Section %{sectionscurrent_page} of %{sectionstotal_pages}"'
-          you_will_be_able_to_review_and: You will be able to review and modify your
-            answers at the end of this section.
+          you_will_be_able_to_review_and: You will be able to review and modify your answers at the end of this section.
         survey_taker_section_2_description:
-          at_the_end_of_this_section_you: At the end of this section, you will be
-            able to review and modify your answers.
+          at_the_end_of_this_section_you: At the end of this section, you will be able to review and modify your answers.
           most_effective_leader: Most Effective Leader
           section_sectionscurrent_page_o: Section %{sectionscurrent_page} of %{sectionstotal_pages}
       survey_history:
@@ -2260,63 +2082,38 @@ en-EN:
         evaluator_setup: Evaluator Setup
         my_survey_history: My Survey History
         self_survey: Self Survey
-        this_is_the_list_of_all_the_su: This is the list of all the surveys you have
-          participated.
+        this_is_the_list_of_all_the_su: This is the list of all the surveys you have participated.
         you_have_completed_bpluralizec: 'You have completed <b>%{pluralizecurrent_usercompleted}</b>:'
         self_evaluations_completed:
-          one: 'You have completed <b>one self-evaluation</b>:'
-          other: 'You have completed <b>%{count} self-evaluations</b>:'
+          one: "You have completed <b>one self-evaluation</b>:"
+          other: "You have completed <b>%{count} self-evaluations</b>:"
         evaluations_completed:
-          one: 'You have completed <b>one evaluation</b>:'
-          other: 'You have completed <b>%{count} evaluations</b>:'
+          one: "You have completed <b>one evaluation</b>:"
+          other: "You have completed <b>%{count} evaluations</b>:"
       thanks:
-        all_your_answers_have_been_sub: All your answers have been submited and saved.
-          Thank you for your time.
+        all_your_answers_have_been_sub: All your answers have been submited and saved. Thank you for your time.
         go_back_to_survey_list: Go back to survey list
         log_out: Log out
-        thanks_current_userfirst_name_: Thanks %{current_userfirst_name} for taking
-          this Survey.
+        thanks_current_userfirst_name_: Thanks %{current_userfirst_name} for taking this Survey.
     process_error: Something goes wrong with the survey process.
     questions:
       put_your_answer_here: Put your answer here
     questions_completed: Questions Completed
     sa_request: Thank you, we’ll be in touch.
     sections:
-      current_leadership_culture: In this section, you will be evaluating <b>%{participant}</b>.
-        Your task is to describe the leadership behaviors that are most commonly practiced,
-        encouraged, or allowed by leaders. There may be many factors that influence
-        your overall experience of leadership within your organization or team. For
-        example, two different managers have contrasting leadership styles, and both
-        are having an influence on the leadership culture of this organization or
-        team. Describe the behavior that is having the most influence on your experience.
-      desired_leadership_culture: In this section, please answer the questions based
-        on how you desire or wish the leadership culture of the <b>%{participant}</b>
-        to be. Answer each question as if the leadership culture were ideal - one
-        that would allow it to thrive in the current and future environments.
+      current_leadership_culture: In this section, you will be evaluating <b>%{participant}</b>. Your task is to describe the leadership behaviors that are most commonly practiced, encouraged, or allowed by leaders. There may be many factors that influence your overall experience of leadership within your organization or team. For example, two different managers have contrasting leadership styles, and both are having an influence on the leadership culture of this organization or team. Describe the behavior that is having the most influence on your experience.
+      desired_leadership_culture: In this section, please answer the questions based on how you desire or wish the leadership culture of the <b>%{participant}</b> to be. Answer each question as if the leadership culture were ideal - one that would allow it to thrive in the current and future environments.
       ideal_to_ideal: ''
-      leadership_profile: This section is designed to build a Leadership Profile for
-        <b>%{participant}</b>. Work quickly through the questions using your first
-        impression. Use the N/A option if you do not know the answer to the question
-        or the question doesn't apply.
-      manager_profile: This Section is designed to build a manager profile for <b>%{participant}</b>.
-        Work quickly through the questions using your first impression. Use the N/A
-        option if you do not know the answer to the question or the question doesn't
-        apply.
-      most_effective_leader: In this section, you will no longer be evaluating <b>%{participant}</b>.
-        Instead, identify who is the most effective leader you have ever worked with
-        (directly or indirectly). <b>Answer these questions with THAT person in mind.</b>
+      leadership_profile: This section is designed to build a Leadership Profile for <b>%{participant}</b>. Work quickly through the questions using your first impression. Use the N/A option if you do not know the answer to the question or the question doesn't apply.
+      manager_profile: This Section is designed to build a manager profile for <b>%{participant}</b>. Work quickly through the questions using your first impression. Use the N/A option if you do not know the answer to the question or the question doesn't apply.
+      most_effective_leader: |-
+        In this section, you will no longer be evaluating <b>%{participant}</b>.
+        Instead, identify who is the most effective leader you have ever worked with (directly or indirectly). <b>Answer these questions with THAT person in mind.</b>
         At the end of this section, you will be able to review and modify your answers.
-      write_in_feedback: In this section, please provide additional written feedback
-        to <b>%{participant}</b>. Participants always find the write-in comments especially
-        helpful in understanding their results. Your feedback could include areas
-        this survey did not cover, or examples that illustrate why you evaluated <b>%{participant}</b>
-        the way you did, or anything else that is important for <b>%{participant}</b>
-        to know.
+      write_in_feedback: In this section, please provide additional written feedback to <b>%{participant}</b>. Participants always find the write-in comments especially helpful in understanding their results. Your feedback could include areas this survey did not cover, or examples that illustrate why you evaluated <b>%{participant}</b> the way you did, or anything else that is important for <b>%{participant}</b> to know.
     self:
-      end_section: At the end of this section, you will be able to review and modify
-        your answers
-      identify_effective_leader: Instead, identify whis is the most effective leader
-        you have ever worked with (directly or indirectly)
+      end_section: At the end of this section, you will be able to review and modify your answers
+      identify_effective_leader: Instead, identify whis is the most effective leader you have ever worked with (directly or indirectly)
       most_effective_leader: Most Effective Leader
       no_longer_be_evaluating: In this section you will no longer be evaluating
       surveyproductname: "%{surveyproductname}"
@@ -2337,8 +2134,7 @@ en-EN:
     create_participant: Created participant %{participant}
     delete_participant: Deleted participant %{participant}
     demographics_policy_changed: Report demographics changed to '%{value}'
-    description: Below are the changes that have been made to this order since it
-      was created on %{created_date}
+    description: Below are the changes that have been made to this order since it was created on %{created_date}
     pdf_copies_only_changed: PDF copies only selected
     printed_copies_changed: PDF and printed copies selected
     project_created: Project created
@@ -2348,13 +2144,9 @@ en-EN:
   templates:
     form:
       form:
-        if_you_have_already_sent_the_m: If you have already sent the message to participants,you
-          will have to resend it in project for them to get the updated message.
-        modifying_this_message_will_ch: Modifying this message will change the participant
-          welcome email for all participants with English survey language.
-        please_do_not_modify_any_text_: Please do not modify any text within (*||*)
-          below.These are key that will be replaced with the participant information
-          when the message is sent.
+        if_you_have_already_sent_the_m: If you have already sent the message to participants,you will have to resend it in project for them to get the updated message.
+        modifying_this_message_will_ch: Modifying this message will change the participant welcome email for all participants with English survey  language.
+        please_do_not_modify_any_text_: Please do not modify any text within (*||*) below.These are key that will be replaced with the participant information when the message is sent.
         reset_english_message: Reset English Message
         return_to_list: Return to List
         update_english_message: Update English Message
@@ -2463,7 +2255,7 @@ en-EN:
       filter_by_order_status: 'Filter by Order Status:'
       filter_by_region: 'Filter by Region:'
       finished: Finished
-      'no': 'No'
+      'no': 'No '
       ordered: Ordered
       orders: Orders
       orders_placeholder: Type order name or order number...

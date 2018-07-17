@@ -67,4 +67,36 @@ allKeys
     <%= line['locale_key']%>
     <%= line['locale_value']%>
     <%= line['locale_parent']%>
-  </p>
+  </p>--->
+
+
+
+
+
+
+
+  def findChildTemp(id)
+    db=Locale.new
+    key = Locale.find(id)['key']
+    puts "id: "+id.to_s+" => key: "+key
+
+    children = findChildren(id)
+
+    allChildrenHash = Hash.new{|hsh,key| hsh[key] = []}
+    grandchildrenHash = Hash.new{|hsh,key| hsh[key] = []}
+    children.each do |child|
+      #<--------
+        grandchildren = findChildren(child['id']) #znajdujemy wszystkie wnuki
+        #tworzymy Hash zawierający wszystki wnuki danego dziecka
+        grandgrandchildrenHash = Hash.new{|hsh,key| hsh[key] = []}
+        grandchildren.each do |grand|
+          grandgrandchildrenHash.merge!(grand['key']=>grand['value'])
+        end
+        #------> dotąd na pewno możemy zastąpić samą sobą
+        grandchildrenHash.merge!(child['key'].to_s=>grandgrandchildrenHash)
+        #dla każdego granchilden zrobić hash klucz => wartość
+      allChildrenHash.merge!(key=>grandchildrenHash)
+    end
+
+    allChildrenHash
+  end
