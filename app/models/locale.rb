@@ -13,9 +13,9 @@ class Locale < ApplicationRecord
     db.exec("TRUNCATE locales RESTART IDENTITY")
   end
 
-  def ShowAll
+  def ShowAll(page)
     result = Locale.where("value != ''")
-    result
+    result.paginate(:page =>page, :per_page => 10)
   end
 
   def insertLocale(key, value, parent, parent_key)

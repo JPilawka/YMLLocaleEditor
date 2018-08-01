@@ -33,7 +33,7 @@ class LocalesController < ApplicationController
       end
 
     #@file_lines = @db.ShowAll
-      @file_lines = Locale.paginate(:page =>params[:page], :per_page => 10)
+      @file_lines = @db.ShowAll(params[:page])
     end
 
   end
