@@ -33,15 +33,16 @@ class Locale < ApplicationRecord
     result['id']
   end
 
-  def searchResults(phrase)
-    Locale.where("key LIKE ? AND value!='' OR value LIKE ? AND value!=''","%#{phrase}%","%#{phrase}%")
+  def searchResults(phrase, page)
+    result = Locale.where("key LIKE ? AND value!='' OR value LIKE ? AND value!=''","%#{phrase}%","%#{phrase}%")
+    result.paginate(:page =>page, :per_page => 10)
   end
 
   def fileName
     result = Locale.where("id='1'").first
     result['key']
   end
- 
+
   def searchForChildren(id)
     result = Locale.where("parent='#{id}'")
     result

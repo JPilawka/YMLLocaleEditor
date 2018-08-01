@@ -1,3 +1,5 @@
+
+#require 'gitHub'
 class LocalesController < ApplicationController
   def index
     config = "#{Rails.root}/config/locales/"
@@ -14,7 +16,7 @@ class LocalesController < ApplicationController
     if(params[:search_phrase]!=nil) #Returning results of search form
       #render plain: params[:search_phrase].inspect
       @search_phrase=params[:search_phrase]
-      @file_lines = @db.searchResults(params[:search_phrase])
+      @file_lines = @db.searchResults(params[:search_phrase], params[:page])
     else
       @db.conDB
       #keyValueArr = Array.new
@@ -30,7 +32,8 @@ class LocalesController < ApplicationController
         isHash(key, value, parent, parent_key)
       end
 
-      @file_lines = @db.ShowAll
+    #@file_lines = @db.ShowAll
+      @file_lines = Locale.paginate(:page =>params[:page], :per_page => 10)
     end
 
   end
@@ -62,7 +65,7 @@ class LocalesController < ApplicationController
     File.rename("#{Rails.root}/config/locales/" + file+'.yml', "#{Rails.root}/config/locales/" + file+'-'+Time.now.to_s+'.backupyml')
     #Saving to database
     @h = Hash.new{|hsh,key| hsh[key] = []}
- 
+
     params[:lines].each do |param|
 
       @h[param[:id]] = {'key' => param[:key]}
@@ -113,5 +116,25 @@ class LocalesController < ApplicationController
     children = db.searchForChildren(id)
     children
   end
+
+=begin
+  def commit
+    github = Github.new client_id: , client_secret:
+    github = github::GitData.new :basic_auth => 'JPilawka:BreatheOf2Wines'
+    filepath = "config/locales/#{@file}"
+    github.authorize_url scope: 'repo'
+    token = github.get_token('repo')
+    config = Github::Client::Repos::Contents.new :user=>'JPilawka', :password=>'BreatheOf2Wines' oauth_token: token
+    file = config.find repo: 'YMLLocaleEditor', path: filepath #to działa, brak autoryzacji
+    config.update 'JPilawka', 'YMLLocaleEditor' ,'config/locales/en-EN.yml', path: 'config/locales/en-EN.yml', message: 'dobra zmiana', content: filepath, sha: file.sha
+    #config/locales/en-EN.yml
+    #contents = Github::Client::Repos::Contents.new oauth_token: '...'
+    #file = contents.find path: filepath
+    #contents.update 'JPilawka','master', filepath,
+    #  path: filepath
+    #  message: 'updating yml file: '+filepath
+    #  sha: file.sha
+  end
+=end
 
 end

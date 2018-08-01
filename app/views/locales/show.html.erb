@@ -3,15 +3,18 @@
 
   <form action="/locales/find" method="get">
     <input type="hidden" value="<%=@file%>" name='locale_file'>
-    <input style="width: 400px" type="text" name="search_phrase" placeholder="Put needed key or value phrase or partial in <%=@file%>">
-    <input type="submit" value="SEARCH">
+    <div class="input-group">
+    <input style="width: 400px" class="form-control" type="text" name="search_phrase" placeholder="Put needed key or value phrase or partial in <%=@file%>">
+    <input type="submit" value="SEARCH" class="btn btn-primary input-group-append">
+  </div>
   </form>
 
 You're lookin for : <%=@search_phrase%>
 <hr/>
 <%= form_for (@file), url: { action: 'create', controller: 'locales' }, :authenticity_token => true do |s| %>
 <!--<form action="/locales/create" id="update" method="post">-->
-  <input type="submit" value="SAVE" class="save_btn" style="font-weight: bold; font-size: 120%">
+  <input type="hidden" value="<%=@file%>" name='id'>
+  <input type="submit" value="SAVE" class="btn btn-danger" style="font-weight: bold; font-size: 120%">
   <!--wyszukiwanie po klucz u i po wartości-->
   <%=
   @previous_parent = ""
@@ -36,9 +39,10 @@ You're lookin for : <%=@search_phrase%>
           else
             endline=line['value']
           end%>
-          <textarea cols="40" rows="3" style="font-size: 100%;" name="lines[]value"><%=endline.squish!%></textarea>
+          <textarea cols="40" rows="3" style="font-size: 100%;" class="form-control shadow-textarea" name="lines[]value"><%=endline%></textarea>
       </li>
     <%end #end of "if" checking Hash%>
   <%end%>
-</form>
+  <%=will_paginate @file_lines, renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer%>
+<!--</form>-->
 <%end%>

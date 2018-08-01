@@ -1,1 +1,6 @@
 <h1>Zapisano plik<%=@file%></h1>
+
+<%= form_for (@file), url: { action: 'commit', controller: 'locales' }, :authenticity_token => true do |s| %>
+<!--<form action="/locales/create" id="update" method="post">-->
+  <input type="submit" value="COMMIT" class="btn btn-danger" style="font-weight: bold; font-size: 120%">
+<%end%>

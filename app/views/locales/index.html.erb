@@ -1,6 +1,6 @@
 <h3>Choose localization file</h3>
 <form action="/locales/show" method="get">
-<select name="locale_file">
+<select name="locale_file" class="form-control">
 <%=
 x=0
 #@all_files = Array.new
@@ -17,5 +17,5 @@ end%>
 #  submit_tag("Edit")
 #end%>
 </select>
-<input type="submit" value ="EDIT">
+<input type="submit" value ="EDIT" class="btn btn-lg bg-primary">
 </form>

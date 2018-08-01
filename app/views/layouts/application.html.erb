@@ -4,12 +4,33 @@
     <title>Tutorial</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="container">
     <%= yield %>
+  </div>
+
+  <script>
+
+      $(document).ready(function () {
+      $('.pagination .previous_page').text('«');
+      $('.pagination .next_page').text('»');
+
+      $('.pagination').each(function () {
+        var $bar = $(this);
+        $bar.find('a, .current, span').wrapAll('<ul>');
+        $bar.find('a, .current, span').wrap('<li>');
+
+        $bar.find('em').each(function () {
+          $(this).parent().addClass('disabled');
+          $(this).replaceWith('<a href="#">' + $(this).text() + '</a>');
+        });
+      });
+    });
+  </script>
   </body>
 </html>
