@@ -7,6 +7,12 @@
     <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <style>
+      .hidden{
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
@@ -15,6 +21,11 @@
   </div>
 
   <script>
+
+      function changeclass(){
+        var element = document.getElementById("loading");
+        element.classList.remove("hidden");
+      }
 
       $(document).ready(function () {
       $('.pagination .previous_page').text('«');

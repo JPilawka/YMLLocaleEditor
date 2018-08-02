@@ -1,21 +1,16 @@
 <h3>Choose localization file</h3>
 <form action="/locales/show" method="get">
 <select name="locale_file" class="form-control">
-<%=
-x=0
-#@all_files = Array.new
-@files.each do |file|%>
+<%@files.each do |file|%>
   <option value="<%=file%>"><%=file%> </option>
 <%
-x+=1
 end%>
-  #collection_select(:locale, :locale_id, @files, :to_s, :to_s)
-  #submit_tag("Edit")
-
-#form_for :locale, :url => {:action => "edit"} do |m|
-#  collection_select(:locale, :locale_id, @files, :to_s, :to_s)
-#  submit_tag("Edit")
-#end%>
 </select>
-<input type="submit" value ="EDIT" class="btn btn-lg bg-primary">
+<input type="submit" value ="EDIT" class="btn btn-lg bg-primary" onClick="changeclass()">
 </form>
+<div class="hidden card text-center align-self-center" id="loading">
+  <h4>Data Processing</h4>
+  <div class="progress">
+     <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" style="width: 100%"></div>
+  </div>
+</div>

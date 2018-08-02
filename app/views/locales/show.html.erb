@@ -1,20 +1,26 @@
-<H1> Edit selected file: <%=@file%></h1>
-  <%=@gg%>
 
-  <form action="/locales/find" method="get">
+<div class="navbar sticky-top" style="box-shadow: 0 4px 2px -2px silver;
+    position: -webkit-sticky;  // required for Safari
+    position: sticky;
+    top: 0;
+    background-color: white;">
+<h2> <%=link_to "<= Back To Filelist ", root_path, class: "btn btn-primary"%> You're editing file: <%=@file%></h2>
+<form action="/locales/find" method="get" >
     <input type="hidden" value="<%=@file%>" name='locale_file'>
-    <div class="input-group">
-    <input style="width: 400px" class="form-control" type="text" name="search_phrase" placeholder="Put needed key or value phrase or partial in <%=@file%>">
+    <div class="input-group d-inline-block">
+    <input style="width: 400px" class="form-control" type="text" name="search_phrase" placeholder="Put needed key or value phrase or partial in <%=@file%>"
+    <% if(@search_phrase!="")%>
+        value="<%=@search_phrase%>"
+    <%end%>
+    >
     <input type="submit" value="SEARCH" class="btn btn-primary input-group-append">
   </div>
   </form>
-
-You're lookin for : <%=@search_phrase%>
-<hr/>
 <%= form_for (@file), url: { action: 'create', controller: 'locales' }, :authenticity_token => true do |s| %>
-<!--<form action="/locales/create" id="update" method="post">-->
-  <input type="hidden" value="<%=@file%>" name='id'>
-  <input type="submit" value="SAVE" class="btn btn-danger" style="font-weight: bold; font-size: 120%">
+
+    <input type="hidden" value="<%=@file%>" name='id'>
+    <input type="submit" value="SAVE CHANGES" class="btn btn-danger" style="font-weight: bold; font-size: 120%; float: right">
+  </div>
   <!--wyszukiwanie po klucz u i po wartości-->
   <%=
   @previous_parent = ""

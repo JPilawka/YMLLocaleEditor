@@ -14,25 +14,20 @@ class LocalesController < ApplicationController
 
     @db = Locale.new
     if(params[:search_phrase]!=nil) #Returning results of search form
-      #render plain: params[:search_phrase].inspect
       @search_phrase=params[:search_phrase]
       @file_lines = @db.searchResults(params[:search_phrase], params[:page])
     else
       @db.conDB
-      #keyValueArr = Array.new
       f=Psych.load_file("config/locales/#{@file}") #opening file to read
       g=f.first
       gg = g.first
       g=g[1]
       parent_key = gg
       @db.insertLocale(gg,'','','')
-      #arra = Array.new #tabela tymczasowa
       parent = @db.selectLastId
       g.each do |key, value|
         isHash(key, value, parent, parent_key)
       end
-
-    #@file_lines = @db.ShowAll
       @file_lines = @db.ShowAll(params[:page])
     end
 
