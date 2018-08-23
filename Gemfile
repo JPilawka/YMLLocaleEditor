@@ -61,5 +61,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "github_api"
+#pagination addon
 gem 'will_paginate', '~> 3.1.1'
+#boostrap-will-paginate converts will_paginate class elements into bootstrap elements. Require also adding script into application view.
 gem 'bootstrap-will_paginate'

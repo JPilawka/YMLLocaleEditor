@@ -114,14 +114,15 @@ class LocalesController < ApplicationController
 
 =begin
   def commit
-    github = Github.new client_id: , client_secret:
+    github = Github.new client_id: 'clientid', client_secret: 'client_secret'      code = 9c809cc1d247e4586519
+
     github = github::GitData.new :basic_auth => 'JPilawka:BreatheOf2Wines'
-    filepath = "config/locales/#{@file}"
+    filecontent = File.read('config/locales/en-EN.yml')
     github.authorize_url scope: 'repo'
     token = github.get_token('repo')
     config = Github::Client::Repos::Contents.new :user=>'JPilawka', :password=>'BreatheOf2Wines' oauth_token: token
-    file = config.find repo: 'YMLLocaleEditor', path: filepath #to działa, brak autoryzacji
-    config.update 'JPilawka', 'YMLLocaleEditor' ,'config/locales/en-EN.yml', path: 'config/locales/en-EN.yml', message: 'dobra zmiana', content: filepath, sha: file.sha
+    file = config.find repo: 'YMLLocaleEditor', path: filecontent #to działa   "#{Rails.root}/config/locales/en-EN.yml"
+    config.update 'JPilawka', 'YMLLocaleEditor' ,'config/locales/en-EN.yml', path: 'config/locales/en-EN.yml', message: 'dobra zmiana', content: filecontent, sha: file.sha
     #config/locales/en-EN.yml
     #contents = Github::Client::Repos::Contents.new oauth_token: '...'
     #file = contents.find path: filepath
