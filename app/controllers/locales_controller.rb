@@ -1,7 +1,14 @@
 
 #require 'gitHub'
 class LocalesController < ApplicationController
+
   def index
+
+    if(flash[:alert]!=nil)
+      @alert = alert
+    else
+      @alert =''
+    end
     config = "#{Rails.root}/config/locales/"
     files = Dir["#{config}*.yml"]
     @files = files.map{|n| n.split("/").last}
@@ -112,25 +119,31 @@ class LocalesController < ApplicationController
     children
   end
 
-=begin
-  def commit
-    github = Github.new client_id: 'clientid', client_secret: 'client_secret'      code = 9c809cc1d247e4586519
 
-    github = github::GitData.new :basic_auth => 'JPilawka:BreatheOf2Wines'
-    filecontent = File.read('config/locales/en-EN.yml')
-    github.authorize_url scope: 'repo'
-    token = github.get_token('repo')
-    config = Github::Client::Repos::Contents.new :user=>'JPilawka', :password=>'BreatheOf2Wines' oauth_token: token
-    file = config.find repo: 'YMLLocaleEditor', path: filecontent #to działa   "#{Rails.root}/config/locales/en-EN.yml"
-    config.update 'JPilawka', 'YMLLocaleEditor' ,'config/locales/en-EN.yml', path: 'config/locales/en-EN.yml', message: 'dobra zmiana', content: filecontent, sha: file.sha
-    #config/locales/en-EN.yml
-    #contents = Github::Client::Repos::Contents.new oauth_token: '...'
-    #file = contents.find path: filepath
-    #contents.update 'JPilawka','master', filepath,
-    #  path: filepath
-    #  message: 'updating yml file: '+filepath
-    #  sha: file.sha
+  def commit
+    config = YAML.load_file("#{Rails.root}/config/config.yml")
+    client_id = ENV['gh_client_id']
+    client_secret = ENV['gh_client_secret']
+    token = ENV['gh_token']
+    user = ENV['gh_user']
+    password = ENV['gh_password']
+    repo = 'YMLLocaleEditor'
+    #TRZEBA DODAĆ POLE MESSAGE DO COMMITA, ŻEBY BYŁO INFO Z NIEGO DO "message"
+    message = params[:message_for_gh].to_s
+    github = Github.new client_id: client_id, client_secret: client_secret
+    #github = github::GitData.new :basic_auth => 'JPilawka:BreatheOf2Wines'
+    filepath = 'config/locales/'+params[:file]
+    filecontent = File.read(filepath)
+
+    github.authorize_url scope: 'repo, user'
+    config = Github::Client::Repos::Contents.new :user=> user, :password=>password, oauth_token: token
+
+    file = config.find user: user, repo: repo, path: filepath
+
+    config.update user, repo, filepath, path: filepath, message: message, content: filecontent, sha: file.sha
+    flash[:alert] = "File: "+params[:file]+" succesfully committed"
+    redirect_to action: "index"
   end
-=end
+
 
 end

@@ -1,6 +1,11 @@
-<h1>Zapisano plik<%=@file%></h1>
-
+<h1>File: "<%=@file%>" saved!</h1>
+<div>
+  Do you want to commit changes to github?
+</div>
 <%= form_for (@file), url: { action: 'commit', controller: 'locales' }, :authenticity_token => true do |s| %>
 <!--<form action="/locales/create" id="update" method="post">-->
+  Enter commit message:
+  <input type="text" value="" name='message_for_gh'>
+  <input type="hidden" value="<%=@file%>" name='file'>
   <input type="submit" value="COMMIT" class="btn btn-danger" style="font-weight: bold; font-size: 120%">
 <%end%>

@@ -8,7 +8,7 @@ en-EN:
             Password must contain 1 of the 3 following character groups: A-Z, a-z,
             0-9.'
           must_be_at_least: must be at least 8 characters long.
-          cannot_contain: kolejna dobra zmina
+          cannot_contain: porządna zmiana, a nie taka o
         record_invalid: 'Validation failed: %{errors}'
         restrict_dependent_destroy:
           has_many: Cannot delete record because dependent %{record} exist
@@ -125,20 +125,6 @@ en-EN:
       month: Month
       second: Seconds
       year: Year
-  gflash:
-    titles:
-      notice: Notice
-      error: Error
-      progress: Progress
-      success: Success
-      warning: Warning
-    users:
-      impersonate:
-        notice: You are impersonating somebody else.
-        title: Impersonate User
-      stop_impersonating:
-        notice: You are back now.
-        title: Impersonate User
   devise:
     confirmations:
       confirmed: Your email address has been successfully confirmed.
@@ -393,6 +379,20 @@ en-EN:
       evaluation_status: Sort by Evaluations Status
       evaluator_name: Sort by Evaluator's Name
       number_of_evaluations: Sort by Number of Evaluations
+  gflash:
+    titles:
+      notice: Notice
+      error: Error
+      progress: Progress
+      success: Success
+      warning: Warning
+    users:
+      impersonate:
+        notice: You are impersonating somebody else.
+        title: Impersonate User
+      stop_impersonating:
+        notice: You are back now.
+        title: Impersonate User
   helpers:
     label:
       project:
@@ -1971,9 +1971,9 @@ en-EN:
         the_leadership_circle_profilet: The Leadership Circle Profile&trade;
         the_leadership_circle_selfasse: 'The Leadership Circle: Self-Assessment'
       modal_search:
+        users: Users
         all: All
         orders: Orders
-        users: Users
         projects: Projects
         survey_takers: Survey Takers
       nav:
