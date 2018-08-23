@@ -128,10 +128,8 @@ class LocalesController < ApplicationController
     user = ENV['gh_user']
     password = ENV['gh_password']
     repo = 'YMLLocaleEditor'
-    #TRZEBA DODAĆ POLE MESSAGE DO COMMITA, ŻEBY BYŁO INFO Z NIEGO DO "message"
     message = params[:message_for_gh].to_s
     github = Github.new client_id: client_id, client_secret: client_secret
-    #github = github::GitData.new :basic_auth => 'JPilawka:BreatheOf2Wines'
     filepath = 'config/locales/'+params[:file]
     filecontent = File.read(filepath)
 
