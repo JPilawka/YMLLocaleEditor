@@ -15,7 +15,7 @@ class Locale < ApplicationRecord
 
   def ShowAll(page)
     result = Locale.where("value != ''")
-    result.paginate(:page =>page, :per_page => 10)
+    #result.paginate(:page =>page, :per_page => 10)
   end
 
   def insertLocale(key, value, parent, parent_key)

@@ -8,7 +8,7 @@ en-EN:
             Password must contain 1 of the 3 following character groups: A-Z, a-z,
             0-9.'
           must_be_at_least: must be at least 8 characters long.
-          cannot_contain: zmiana kolejna
+          cannot_contain: Zmiania na coraz lepsze
         record_invalid: 'Validation failed: %{errors}'
         restrict_dependent_destroy:
           has_many: Cannot delete record because dependent %{record} exist
@@ -24,22 +24,23 @@ en-EN:
       forbidden: Forbidden
   companies:
     edit:
-      manage_users: Manage Users
-      edit_company: kolejna zmiana
+      edit_company: Cannot delete record because dependent %{record} exist
+      manage_users: Zmiana na konkrety konkrety
     index:
-      companiestotal_count: "(%{companiestotal_count})"
-      company_name: Client Name
       create_company: Create Client
       industry: Industry
-      manage_company: Manage Client
       my_clients: My Clients
-      number_of_projects: Number of Projects
       sort_by_company_name: Sort by Client Name
       sort_by_created_date: Sort by Created Date
       sort_by_industry: Sort by Industry
       sort_by_number_of_projects: Sort by Number of Projects
       start_creating_companies_now: Start creating clients now
       you_have_no_companies_to_manage: You have no clients to manage
+      company_name: 'does not match the security requirements. Password must contain
+        1 of the 3 following character groups: A-Z, a-z, 0-9.'
+      number_of_projects: Zmiania na lepsze
+      companiestotal_count: Cannot delete record because a dependent %{record} exists
+      manage_company: must be at least 8 characters long.
     new:
       consulting_company: Consulting Company
       create_company: Create Client
@@ -761,8 +762,8 @@ en-EN:
       participant_graph: 'Participant Graph:'
       participant_report: 'Participant Report:'
       participants:
-        one: 1 participant
         other: "%{count} participants"
+        one: 1 participant
       processing_date: 'Processing Date:'
       product_type: 'Product Type:'
       profile_interpretation_manual: 'Profile Interpretation Manual:'
@@ -1059,6 +1060,16 @@ en-EN:
     アクション:
       tsharedadd_typename: "%{tsharedadd} %{typename}"
   participants:
+    participant_header:
+      add_participants: ADD PARTICIPANTS
+      choose_products: Choose Products
+      confirm_order: CONFIRM ORDER
+      edit_invitation_email: Edit Invitation Email
+      review_order_details: Review Order Details
+      select_options: Select Options
+      send_emails: Send Emails
+      setup_group: SETUP GROUP
+      update_addresses: Update Addresses
     cannot_destroy:
       cannot_delete_the_selected_par: 'Cannot delete the selected Particiapant because
         the record is associated with other data that cannot be deleted. Please check
@@ -1123,16 +1134,6 @@ en-EN:
       participants_can_be_added_to_y: Participants can be added to your new group
         now or a later date
       send_all_new_emails: Send All New Emails
-    participant_header:
-      add_participants: ADD PARTICIPANTS
-      choose_products: Choose Products
-      confirm_order: CONFIRM ORDER
-      edit_invitation_email: Edit Invitation Email
-      review_order_details: Review Order Details
-      select_options: Select Options
-      send_emails: Send Emails
-      setup_group: SETUP GROUP
-      update_addresses: Update Addresses
     send_email_to_evaluator:
       last_reminder_sent_on_surveyem: Last Reminder sent on %{surveyemail_sent}
     send_email_to_participant:
@@ -1169,6 +1170,18 @@ en-EN:
       participant_name: Sort by Participant's Name
       survey_status: Sort by Self-Survey Status
   people:
+    show:
+      settings: Settings
+      account_status: 'Account Status:'
+      are_you_sure: Are you sure?
+      delete_account: Delete Account
+      disable_account: Disable Account
+      enable_account: Enable Account
+      send_unlock_instructions: Send Unlock Instructions
+      shared_organizations: Shared Organizations
+      surveys: Surveys
+      unlock_account: Unlock Account
+      user_information: User Information
     account_notification_title: Account Update
     account_updated: Account has been updated!
     active_management:
@@ -1283,6 +1296,10 @@ en-EN:
       manage_user: Manage User
       system_administrator: System Administrator
     roles:
+      new_user_role:
+        choose_an_organization_to_shar: Choose an organization to share with
+        share_organization: Share Organization
+        user_role: 'User Role:'
       added_successfully: User has been properly assigned to the organization!
       edit_user_role:
         cancel: Cancel
@@ -1292,26 +1309,10 @@ en-EN:
         save: Save
         select: Select
         userfirst_names: "%{userfirst_name}''s"
-      new_user_role:
-        choose_an_organization_to_shar: Choose an organization to share with
-        share_organization: Share Organization
-        user_role: 'User Role:'
       title: User Roles
     send_unlock_instructions:
       error: Something went wrong!
       success: Success!
-    show:
-      settings: Settings
-      account_status: 'Account Status:'
-      are_you_sure: Are you sure?
-      delete_account: Delete Account
-      disable_account: Disable Account
-      enable_account: Enable Account
-      send_unlock_instructions: Send Unlock Instructions
-      shared_organizations: Shared Organizations
-      surveys: Surveys
-      unlock_account: Unlock Account
-      user_information: User Information
     users:
       sort_by: Sorty By
       sort_by_join_date: Sort by registration date
@@ -1443,6 +1444,47 @@ en-EN:
           projects_orders: Project's Orders
           the_orders_created_by_a_projec: The orders created by a project.
       new_project:
+        demographics:
+          custom:
+            country: Country
+            all: All
+            age_ranges: Age Ranges
+            demographic_options: Demographic Options
+            direct_report_ranges: Direct Report Ranges
+            education_levels: Education Levels
+            ethnic_groups: Ethnic Groups
+            female: Female
+            gender: Gender
+            if_you_choose_to_run_a_custom_: If you choose to run a custom report against
+              a demographic sample size that is too small, the result could be a report
+              with skewed data. Most demographic data is available under Resources.
+              You will have the option to change your selection back to default demographics.
+              Contact your client services representative with questions.
+            industries: Industries
+            male: Male
+            management_levels: Management Levels
+            professions: Professions
+          summary:
+            age_ranges: 'Age Ranges:'
+            countries: 'Countries:'
+            demographic_definition: Demographic Definition
+            demographic_details: 'Demographic Details:'
+            demographic_size: 'Demographic Size:'
+            direct_report_ranges: 'Direct Report Ranges:'
+            education_levels: 'Education Levels:'
+            ethnic_groups: 'Ethnic Groups:'
+            gender: 'Gender:'
+            industry: 'Industry:'
+            languages: 'Languages:'
+            lcp_participants: LCP participants
+            lcs_participants: LCS participants
+            management_levels: 'Management Levels:'
+            me_participants: ME participants
+            participants: participants
+            professions: 'Professions:'
+            sa_participants: SA participants
+            this_is_the_number_of_people_y: This is the number of people you will
+              compare your project members to.
         address_form:
           select_an_address_from_my_acco: Select an address from My Account
         address_modal:
@@ -1484,47 +1526,6 @@ en-EN:
           you_will_get_the_digital_versi: You will get the digital version of the
             Profile Interpretation Manual and all the reports.
           your_project_will_include: 'Your project will include:'
-        demographics:
-          custom:
-            all: All
-            country: Country
-            age_ranges: Age Ranges
-            demographic_options: Demographic Options
-            direct_report_ranges: Direct Report Ranges
-            education_levels: Education Levels
-            ethnic_groups: Ethnic Groups
-            female: Female
-            gender: Gender
-            if_you_choose_to_run_a_custom_: If you choose to run a custom report against
-              a demographic sample size that is too small, the result could be a report
-              with skewed data. Most demographic data is available under Resources.
-              You will have the option to change your selection back to default demographics.
-              Contact your client services representative with questions.
-            industries: Industries
-            male: Male
-            management_levels: Management Levels
-            professions: Professions
-          summary:
-            age_ranges: 'Age Ranges:'
-            countries: 'Countries:'
-            demographic_definition: Demographic Definition
-            demographic_details: 'Demographic Details:'
-            demographic_size: 'Demographic Size:'
-            direct_report_ranges: 'Direct Report Ranges:'
-            education_levels: 'Education Levels:'
-            ethnic_groups: 'Ethnic Groups:'
-            gender: 'Gender:'
-            industry: 'Industry:'
-            languages: 'Languages:'
-            lcp_participants: LCP participants
-            lcs_participants: LCS participants
-            management_levels: 'Management Levels:'
-            me_participants: ME participants
-            participants: participants
-            professions: 'Professions:'
-            sa_participants: SA participants
-            this_is_the_number_of_people_y: This is the number of people you will
-              compare your project members to.
         project_details:
           all_surveys_should_be_complete: All surveys should be completed by this
             date.
@@ -1762,10 +1763,10 @@ en-EN:
         development?
       wwwleadershipcirclecom: www.leadershipcircle.com
     demographics:
-      before_you_begin: Before you begin
-      company_details: Company Details
       need_help: Need Help?
       personal_information: Personal Information
+      before_you_begin: Before you begin
+      company_details: Company Details
       continue_to_survey: Continue to Survey
       tlc_would_like_to_gather_some_: TLC would like to gather some information for
         internal research purposes only. TLC does not share your information. We would
@@ -1971,8 +1972,8 @@ en-EN:
         the_leadership_circle_profilet: The Leadership Circle Profile&trade;
         the_leadership_circle_selfasse: 'The Leadership Circle: Self-Assessment'
       modal_search:
-        orders: Orders
         users: Users
+        orders: Orders
         all: All
         projects: Projects
         survey_takers: Survey Takers
@@ -2455,9 +2456,9 @@ en-EN:
       success: Password has been updated successfully.
   utilities:
     index:
+      'false': 'No'
       all: All
       billings: Billings
-      'false': 'No'
       filter: Filter
       filter_by_in_voiced: 'Filter by In voiced:'
       filter_by_order_status: 'Filter by Order Status:'

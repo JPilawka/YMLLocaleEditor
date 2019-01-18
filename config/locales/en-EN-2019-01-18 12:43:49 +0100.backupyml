@@ -8,7 +8,7 @@ en-EN:
             Password must contain 1 of the 3 following character groups: A-Z, a-z,
             0-9.'
           must_be_at_least: must be at least 8 characters long.
-          cannot_contain: dobra zminaa
+          cannot_contain: kolejna zmiana
         record_invalid: 'Validation failed: %{errors}'
         restrict_dependent_destroy:
           has_many: Cannot delete record because dependent %{record} exist
@@ -24,8 +24,8 @@ en-EN:
       forbidden: Forbidden
   companies:
     edit:
-      edit_company: Edit Client
       manage_users: Manage Users
+      edit_company: kolejna zmiana
     index:
       companiestotal_count: "(%{companiestotal_count})"
       company_name: Client Name
@@ -836,7 +836,6 @@ en-EN:
       status_printed_participantprin: 'Status: %{printed_participantprint_repor}'
       status_printed_participantsend: 'Status: %{printed_participantsend_report}'
     show:
-      pdf: PDF
       billing_contact: Billing Contact
       binder_contact: Binder Contact
       coaching_report: 'Coaching Report:'
@@ -856,6 +855,7 @@ en-EN:
       orderparticipant_report_qty_co: "%{orderparticipant_report_qty} copies per participant"
       participant_graph: 'Participant Graph:'
       participant_report: 'Participant Report:'
+      pdf: PDF
       planned_completion_date: 'Planned Completion Date:'
       print_order_details_pdf: Print Order Details (PDF)
       processing_date: 'Processing Date:'
@@ -1486,9 +1486,9 @@ en-EN:
           your_project_will_include: 'Your project will include:'
         demographics:
           custom:
+            age_ranges: Age Ranges
             all: All
             country: Country
-            age_ranges: Age Ranges
             demographic_options: Demographic Options
             direct_report_ranges: Direct Report Ranges
             education_levels: Education Levels
@@ -1754,6 +1754,17 @@ en-EN:
         report, I have included an Interpretation Guide that explains each aspect
         of your graph and report.
   sa_surveys:
+    demographics:
+      before_you_begin: Before you begin
+      company_details: Company Details
+      continue_to_survey: Continue to Survey
+      need_help: Need Help?
+      personal_information: Personal Information
+      tlc_would_like_to_gather_some_: TLC would like to gather some information for
+        internal research purposes only. TLC does not share your information. We would
+        be grateful if you would answer the questions; however, you can always select
+        “Prefer not to answer”.
+      we_need_a_little_more_informat: We need a little more information about you...
     expanding_development:
       discover_more_about_the_leader: Discover more about the Leadership Circle
       need_help: Need Help?
@@ -1761,17 +1772,6 @@ en-EN:
       would_you_like_to_continue_exp: Would you like to continue expanding your leadership
         development?
       wwwleadershipcirclecom: www.leadershipcircle.com
-    demographics:
-      need_help: Need Help?
-      personal_information: Personal Information
-      before_you_begin: Before you begin
-      company_details: Company Details
-      continue_to_survey: Continue to Survey
-      tlc_would_like_to_gather_some_: TLC would like to gather some information for
-        internal research purposes only. TLC does not share your information. We would
-        be grateful if you would answer the questions; however, you can always select
-        “Prefer not to answer”.
-      we_need_a_little_more_informat: We need a little more information about you...
     registration:
       complete_the_registration_belo: Complete the registration below to take your
         survey. If you are not able to complete your Self Assessment in one sitting
@@ -1802,11 +1802,11 @@ en-EN:
       request_invitation: Request Invitation
       thank_you_practitionerfull_nam: Thank you, %{practitionerfull_name}
       twitter: Twitter
-      wwwleadershipcirclecom: www.leadershipcircle.com
       would_you_like_to_take_the_bfu: Would you like to take the <b>Full 360 Profile</b>
-        and find out where you stand with your staff, peers, and bosses? Click the
+        and find out where you stand with your staff, peers, and bosses? Click the
         link below and we’ll get you in contact with a coach who will guide you through
         the process.
+      wwwleadershipcirclecom: www.leadershipcircle.com
     welcome:
       bget_your_copy_hereb: "<b>Get your copy here</b>"
       coming_back: Coming back?
@@ -1815,11 +1815,11 @@ en-EN:
       sorry_but_your_answers_are_inc: Sorry, but your answers are incorrect. Please
         try again.
       submit_answers: Submit Answers
-      welcome_to: Welcome to
       this_area_is_a_special_section: 'This area is a special section for our readers.
         We hope you have enjoyed our book <b>Mastering Leadership</b>. Please answer
-        the question below to start The Leadership Circle: Self-Assessment. The answer
+        the question below to start The Leadership Circle: Self-Assessment. The answer
         can be found in the book. Don’t have it?'
+      welcome_to: Welcome to
   search:
     index:
       actions: Actions
@@ -1856,9 +1856,6 @@ en-EN:
       status: Status
     partials:
       index:
-        name: Name
-        industry: Industry
-        evaluations: Evaluations
         order: Order
         number_of_participants: Number of Participants
         number_of_projects: Number of Projects
@@ -1869,7 +1866,10 @@ en-EN:
         completion_date: Completion Date
         created_at: Created at
         email: Email
+        evaluations: Evaluations
+        industry: Industry
         last_reminder: Last Reminder
+        name: Name
         order_date: Order Date
         practitioners: Practitioners
         product: Product
@@ -1955,9 +1955,6 @@ en-EN:
     more_actions: More Actions
     name: Name
     new:
-      modal_wait:
-        importing_participants: Importing Participants
-        please_wait: Please wait ...
       footer:
         current_useremail: "(%{current_useremail})"
         go_back_to_the_csr_project_cen: Go back to the CSR Project Center
@@ -1971,11 +1968,14 @@ en-EN:
         the_leadership_circle_profilet: The Leadership Circle Profile&trade;
         the_leadership_circle_selfasse: 'The Leadership Circle: Self-Assessment'
       modal_search:
-        orders: Orders
-        users: Users
         all: All
+        orders: Orders
         projects: Projects
         survey_takers: Survey Takers
+        users: Users
+      modal_wait:
+        importing_participants: Importing Participants
+        please_wait: Please wait ...
       nav:
         my_clients: My Clients
         my_orders: My Reports
@@ -2164,7 +2164,6 @@ en-EN:
         you_must_invite_at_least_self_: You must invite at least %{self_surveyprojectminimum_eval}
           evaluators in order to take the Survey.
       new_or_pending:
-        start_the_survey: Start the Survey
         you_have_answered: You have answered
         continue_the_survey: Continue the Survey
         current_sectionquestionscount_: "%{current_sectionquestionscount} questions"
@@ -2173,6 +2172,7 @@ en-EN:
         of: of
         previous_section: Previous section
         restart_previous_survey: Restart previous survey
+        start_the_survey: Start the Survey
       no_evaluators:
         add_evaluator: Add Evaluator
         why_do_i_have_to_invite_evalua: ''

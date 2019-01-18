@@ -65,3 +65,5 @@ gem "github_api"
 gem 'will_paginate', '~> 3.1.1'
 #boostrap-will-paginate converts will_paginate class elements into bootstrap elements. Require also adding script into application view.
 gem 'bootstrap-will_paginate'
+
+gem 'webpacker'

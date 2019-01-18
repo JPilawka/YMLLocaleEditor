@@ -7,7 +7,8 @@
     <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+    <%= javascript_pack_tag 'showfile' %>
+    <%= stylesheet_pack_tag 'showfile' %>
     <style>
       .hidden{
         display: none;
@@ -21,8 +22,7 @@
   </div>
 
   <script>
-
-      function changeclass(){
+      /*function changeclass(){
         var element = document.getElementById("loading");
         element.classList.remove("hidden");
       }
@@ -41,7 +41,7 @@
           $(this).replaceWith('<a href="#">' + $(this).text() + '</a>');
         });
       });
-    });
+    });*/
   </script>
   </body>
 </html>

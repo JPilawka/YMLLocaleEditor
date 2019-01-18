@@ -8,7 +8,7 @@ en-EN:
             Password must contain 1 of the 3 following character groups: A-Z, a-z,
             0-9.'
           must_be_at_least: must be at least 8 characters long.
-          cannot_contain: najlepsza zmiana
+          cannot_contain: zmiana
         record_invalid: 'Validation failed: %{errors}'
         restrict_dependent_destroy:
           has_many: Cannot delete record because dependent %{record} exist
@@ -24,8 +24,8 @@ en-EN:
       forbidden: Forbidden
   companies:
     edit:
-      edit_company: Edit Client
       manage_users: Manage Users
+      edit_company: kolejna zmiana
     index:
       companiestotal_count: "(%{companiestotal_count})"
       company_name: Client Name
@@ -125,20 +125,6 @@ en-EN:
       month: Month
       second: Seconds
       year: Year
-  gflash:
-    titles:
-      notice: Notice
-      error: Error
-      progress: Progress
-      success: Success
-      warning: Warning
-    users:
-      impersonate:
-        notice: You are impersonating somebody else.
-        title: Impersonate User
-      stop_impersonating:
-        notice: You are back now.
-        title: Impersonate User
   devise:
     confirmations:
       confirmed: Your email address has been successfully confirmed.
@@ -393,6 +379,20 @@ en-EN:
       evaluation_status: Sort by Evaluations Status
       evaluator_name: Sort by Evaluator's Name
       number_of_evaluations: Sort by Number of Evaluations
+  gflash:
+    titles:
+      notice: Notice
+      error: Error
+      progress: Progress
+      success: Success
+      warning: Warning
+    users:
+      impersonate:
+        notice: You are impersonating somebody else.
+        title: Impersonate User
+      stop_impersonating:
+        notice: You are back now.
+        title: Impersonate User
   helpers:
     label:
       project:
@@ -1486,9 +1486,9 @@ en-EN:
           your_project_will_include: 'Your project will include:'
         demographics:
           custom:
-            all: All
             country: Country
             age_ranges: Age Ranges
+            all: All
             demographic_options: Demographic Options
             direct_report_ranges: Direct Report Ranges
             education_levels: Education Levels
@@ -1762,11 +1762,11 @@ en-EN:
         development?
       wwwleadershipcirclecom: www.leadershipcircle.com
     demographics:
-      need_help: Need Help?
-      personal_information: Personal Information
       before_you_begin: Before you begin
       company_details: Company Details
       continue_to_survey: Continue to Survey
+      need_help: Need Help?
+      personal_information: Personal Information
       tlc_would_like_to_gather_some_: TLC would like to gather some information for
         internal research purposes only. TLC does not share your information. We would
         be grateful if you would answer the questions; however, you can always select
@@ -1802,11 +1802,11 @@ en-EN:
       request_invitation: Request Invitation
       thank_you_practitionerfull_nam: Thank you, %{practitionerfull_name}
       twitter: Twitter
-      wwwleadershipcirclecom: www.leadershipcircle.com
       would_you_like_to_take_the_bfu: Would you like to take the <b>Full 360 Profile</b>
-        and find out where you stand with your staff, peers, and bosses? Click the
+        and find out where you stand with your staff, peers, and bosses? Click the
         link below and we’ll get you in contact with a coach who will guide you through
         the process.
+      wwwleadershipcirclecom: www.leadershipcircle.com
     welcome:
       bget_your_copy_hereb: "<b>Get your copy here</b>"
       coming_back: Coming back?
@@ -1815,11 +1815,11 @@ en-EN:
       sorry_but_your_answers_are_inc: Sorry, but your answers are incorrect. Please
         try again.
       submit_answers: Submit Answers
-      welcome_to: Welcome to
       this_area_is_a_special_section: 'This area is a special section for our readers.
         We hope you have enjoyed our book <b>Mastering Leadership</b>. Please answer
-        the question below to start The Leadership Circle: Self-Assessment. The answer
+        the question below to start The Leadership Circle: Self-Assessment. The answer
         can be found in the book. Don’t have it?'
+      welcome_to: Welcome to
   search:
     index:
       actions: Actions
@@ -1856,7 +1856,6 @@ en-EN:
       status: Status
     partials:
       index:
-        name: Name
         industry: Industry
         evaluations: Evaluations
         order: Order
@@ -1870,6 +1869,7 @@ en-EN:
         created_at: Created at
         email: Email
         last_reminder: Last Reminder
+        name: Name
         order_date: Order Date
         practitioners: Practitioners
         product: Product
@@ -1971,11 +1971,11 @@ en-EN:
         the_leadership_circle_profilet: The Leadership Circle Profile&trade;
         the_leadership_circle_selfasse: 'The Leadership Circle: Self-Assessment'
       modal_search:
-        users: Users
         all: All
         orders: Orders
         projects: Projects
         survey_takers: Survey Takers
+        users: Users
       nav:
         my_clients: My Clients
         my_orders: My Reports
@@ -2164,7 +2164,6 @@ en-EN:
         you_must_invite_at_least_self_: You must invite at least %{self_surveyprojectminimum_eval}
           evaluators in order to take the Survey.
       new_or_pending:
-        start_the_survey: Start the Survey
         you_have_answered: You have answered
         continue_the_survey: Continue the Survey
         current_sectionquestionscount_: "%{current_sectionquestionscount} questions"
@@ -2173,6 +2172,7 @@ en-EN:
         of: of
         previous_section: Previous section
         restart_previous_survey: Restart previous survey
+        start_the_survey: Start the Survey
       no_evaluators:
         add_evaluator: Add Evaluator
         why_do_i_have_to_invite_evalua: ''

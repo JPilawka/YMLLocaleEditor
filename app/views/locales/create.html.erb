@@ -5,7 +5,9 @@
 <%= form_for (@file), url: { action: 'commit', controller: 'locales' }, :authenticity_token => true do |s| %>
 <!--<form action="/locales/create" id="update" method="post">-->
   Enter commit message:
-  <input type="text" value="" name='message_for_gh'>
+  <input type="text" value="" name='message_for_gh' class="form-control">
   <input type="hidden" value="<%=@file%>" name='file'>
   <input type="submit" value="COMMIT" class="btn btn-danger" style="font-weight: bold; font-size: 120%">
 <%end%>
+<hr>
+<button class="btn btn-success"><%=link_to "RETURN TO FILE LIST", controller: "locales"%></button>

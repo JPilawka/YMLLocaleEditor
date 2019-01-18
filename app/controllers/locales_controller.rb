@@ -67,6 +67,7 @@ class LocalesController < ApplicationController
     File.rename("#{Rails.root}/config/locales/" + file+'.yml', "#{Rails.root}/config/locales/" + file+'-'+Time.now.to_s+'.backupyml')
     #Saving to database
     @h = Hash.new{|hsh,key| hsh[key] = []}
+    #params[:file_lines].each do |param|
 
     params[:lines].each do |param|
 
@@ -119,7 +120,6 @@ class LocalesController < ApplicationController
     children
   end
 
-
   def commit
     config = YAML.load_file("#{Rails.root}/config/config.yml")
     client_id = ENV['gh_client_id']
@@ -128,20 +128,20 @@ class LocalesController < ApplicationController
     user = ENV['gh_user']
     password = ENV['gh_password']
     repo = 'YMLLocaleEditor'
+
     message = params[:message_for_gh].to_s
-    github = Github.new client_id: client_id, client_secret: client_secret
     filepath = 'config/locales/'+params[:file]
+
     filecontent = File.read(filepath)
 
+    github = Github.new client_id: client_id, client_secret: client_secret
     github.authorize_url scope: 'repo, user'
     config = Github::Client::Repos::Contents.new :user=> user, :password=>password, oauth_token: token
-
     file = config.find user: user, repo: repo, path: filepath
-
     config.update user, repo, filepath, path: filepath, message: message, content: filecontent, sha: file.sha
+
     flash[:alert] = "File: "+params[:file]+" succesfully committed"
     redirect_to action: "index"
   end
-
 
 end
