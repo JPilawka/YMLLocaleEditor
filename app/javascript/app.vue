@@ -22,6 +22,15 @@
              class="btn btn-primary input-group-append">
       </div>
     </form>
+    <div>
+      Number of items on page:
+      <select v-model="itemsOnPage" class="form-control itemsOnPage">
+        <option
+            v-for="opt in itemsOnPageOptions"
+            :itemsOnPage="opt"
+            :value="opt">{{opt}}</option>
+      </select>
+    </div>
     </div>
 
       <div v-if="showAll">
@@ -36,7 +45,7 @@
                    class="btn btn-danger"
                    style="font-weight: bold; font-size: 120%; float: right">
           </div>
-          <li style="" v-for="(line, index) in file_lines" v-bind:currentPage="currentPage" v-bind:class="{'invisible':(index<firstElementOnPage || index>lastElementOnPage)}">
+          <li style="" v-for="(line, index) in file_lines" :currentPage="currentPage" :class="{'invisible':(index<firstElementOnPage || index>lastElementOnPage)}">
 
               <div class="parent">
                 {{line.parent_key}}
@@ -54,10 +63,10 @@
 
         </form>
         <pagination
-            v-bind:items="file_lines"
-            v-on:page:update="updatePage"
-            v-bind:currentPage="currentPage"
-            v-bind:pageSize="itemsOnPage">
+            :items="file_lines"
+            @page:update="updatePage"
+            :currentPage="currentPage"
+            :pageSize="itemsOnPage">
         </pagination>
     </div>
     <div v-if="!showAll" >
@@ -81,14 +90,9 @@ export default {
       csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
       currentPage: 0,
       itemsOnPage: 10,
-      showAll: true
+      showAll: true,
+      itemsOnPageOptions: [10,20,30]
     }
-  },
-  created: function(){
-
-  },
-  beforeDestroy: function() {
-
   },
   computed: {
     firstElementOnPage: function(){
@@ -96,7 +100,7 @@ export default {
     },
 
     lastElementOnPage: function(){
-      return (this.currentPage*this.itemsOnPage) + 9;
+      return (this.currentPage*this.itemsOnPage) + (this.itemsOnPage-1);
     },
   },
   components: {
@@ -161,6 +165,10 @@ export default {
 .loadingStar{
   -animation: spin .7s infinite linear;
     -webkit-animation: spin2 .7s infinite linear;
+}
+.itemsOnPage{
+  display: inline-block;
+  width: 50px;
 }
 
 
